@@ -1,0 +1,9 @@
+Dans un code python, considerer ceci comme une chaine de caractere:
+"This Game - OP Full - No Game No Life by Konomi Suzuki (Lyrics).mp4 - VLC media player"
+on se place a la fin de la chaine(donc ici c'est le 'e' de Code),
+En allant de la fin de la chaine jusqu'au debut, on cherche le caractere '.', si on e trouve,
+on arrete et on stocke tous les caracteres devant lui dans un chaine1 et
+les caracteres apres lui dans un autre chaine2, 
+Pour les caractere apres lui, on va garder les lettres qui etaient colles avec le '.', puis 
+on efface tous ce qui se trouve apres (il s'agit des fichiers donc la on garde l'extension)
+Finalement, on combine chaine1 et chaine2 en un seul chaine et c'est notre output. Donner le code python pour faire cela

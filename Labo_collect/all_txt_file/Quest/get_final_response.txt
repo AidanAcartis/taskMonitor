@@ -1,0 +1,44 @@
+Voici le script 'try_script.sh' pour afficher tous les fichiers ouverts aujourd'hui:
+'#!/bin/bash
+
+# Obtenir la date actuelle
+today=$(date '+%Y-%m-%d')
+
+# Trouver les fichiers ouverts aujourd'hui uniquement
+find /home/aidan/ -type f ! -path '*/.*' -atime 0 2>/dev/null | while read file; do
+    # Récupérer la date et l'heure d'accès (ouverture)
+    open_time=$(stat --format='%x' "$file" | awk '{print $1, $2}')
+
+    # Vérifier si la date d'ouverture correspond à aujourd'hui
+    if [[ $(echo "$open_time" | awk '{print $1}') == "$today" ]]; then
+        # Vérifier si le fichier est encore ouvert avec `lsof`
+        if lsof -t -- "$file" > /dev/null 2>&1; then
+            close_time="N/A"
+        else
+            # Si le fichier est fermé, récupérer la date de dernière modification
+            close_time=$(stat --format='%y' "$file" | awk '{print $2}')
+        fi
+
+        # Afficher le résultat formaté
+        echo "$(basename "$file")"
+    fi
+done | sort -k1,1 -k2,2
+'
+et voici une commande qui donne l'heure d'ouverture de tous les fichiers et fenetres ouverts avec les fichiers et fenetres ouverts :
+'paste <(grep -A 0 "Nouvelles fenêtres ajoutées" ~/window_changes.log | grep -v "^--$" | awk '{print $2}') <(grep -A 1 "Nouvelles fenêtres ajoutées" ~/window_changes.log | grep -v "^--$" | awk -F ' aidan ' 'NF>1 {split($2, arr, " - "); title=""; for (i=1; i<=length(arr)-2; i++) title = title (i>1 ? " - " : "") arr[i]; print title ? title : arr[1]}')'
+Mais je veux filtrer la sortie de cette commande pour ne faire sortir que les fichiers presentes dans la sortie
+du script 'try_script.sh'. et aussi corriger les noms des fichiers dans l'output de cette commande.
+C'est-a-dire que si le nom du fichier que sort cette commande correspond un petit peu mais pas entierement 
+au nom du fichier donne par le script alors on le change par le vrai nom de celui qui est la sortie du script.
+par exemple:
+
+Dans la sortie du commande, on a :
+21:41:11	Ai no Yokan
+
+Mais dans la sortie du script, on a:
+Ai no Yokan - Itou Kanae & more 【Lyrics】.mp4
+
+et donc on change ceci '21:41:11	Ai no Yokan' en 
+'21:41:11	Ai no Yokan - Itou Kanae & more 【Lyrics】.mp4'
+
+Aider moi a realiser cela 

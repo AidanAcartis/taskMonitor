@@ -1,0 +1,107 @@
+Quest1:
+Pourquoi il y a ces chiffres avec '#', avant mes commandes:"clear
+#1740645445
+cat ~/.bash_history
+#1740645445
+cat ~/.bash_history
+#1740645474
+cat ~/.bash_history
+#1740645505
+ls -l
+#1740645509
+cat ~/.bash_history
+#1740645557
+ls 
+"
+c'est la sortie de 'cat ~/.bash_history'
+
+Voici une configuration dans '~/.bashrc':
+# Ajouter le 26 février 2025
+HISTTIMEFORMAT='%T '  # Afficher uniquement l'heure
+export HISTTIMEFORMAT
+export PROMPT_COMMAND="history -n; history -a; history -c; history -r; $PROMPT_COMMAND"
+
+Quest2:
+Mon probleme avec 'history' c'est qu'elle ne peut pas etre mise a jour avec les commandes lances dans d'autres terminaux 
+pour d'autres directory. Je prefere utiliser 'cat ~/.bash_history' pour voir tous les commandes lances dans la machine.
+Et mon but c'est de stocker les commandes lances (resultats de 'cat bash_history'), dans une base de donne
+:"# Configuration de la connexion à la base de données
+db_config = {
+    "host": "localhost",
+    "user": "jennie",  # Remplace par ton utilisateur MySQL
+    "password": "nerd",  # Remplace par ton mot de passe MySQL
+    "database": "commandes_db"
+}
+" like this 'INSERT INTO historique_commandes (type, Nom, heure_ouverture, heure_fermeture, date)'
+dans type, on met Commande, dans Nom, on met la commande elle meme, 
+dans 'heure_ouverture', on met l'heure de lancement du commande, 
+dans 'heure_fermeture', on met l'heure de fin de lancement du commande,
+et dans date on met la date d'aujourd'hui puisque le but c'est de stocker tous les commandes lances aujourd'hui
+dans la table, donner comment le faire selon ce resultat:"#1740645474
+cat ~/.bash_history
+#1740645505
+ls -l
+#1740645509
+cat ~/.bash_history
+#1740645557
+ls 
+" de '~/.bash_history' et le script python pour le faire
+
+Quest3:
+error:"aidan@aidan:~/Documents/Projects/Visualisation/Collect_info$ python3 save_history.py 
+Traceback (most recent call last):
+  File "/home/aidan/Documents/Projects/Visualisation/Collect_info/save_history.py", line 42, in <module>
+    timedelta(seconds=2)).strftime("%H:%M:%S")
+NameError: name 'timedelta' is not defined
+aidan@aidan:~/Documents/Projects/Visualisation/Collect_info$ 
+"
+Quest4:
+je veux qu'ils soient ranges par ordre du temps et du date dans la base de donne, du plus ancien au plus recent
+
+Quest5:
+j'ai execute ceci :"lsof +D /home/aidan/ | grep -Ev 'bash|vi|vim|nano|emacs|firefox|chrome|brave|python|java|node|gcc|code'
+"
+dans la colonne commandes je ne veux voir que 'bash|vi|vim|nano|emacs|firefox|chrome|brave|python|java|node|gcc|code', alors
+que je vois encore d'autres'gvfsd-mtp 22879 aidan  cwd    DIR    8,2      4096 5767170 /home/aidan
+gvfsd-mtp 
+gjs       
+gjs       
+gjs       
+gjs       
+gjs       
+gjs       
+gjs       
+gnome-ter 
+gnome-ter 
+gnome-ter 
+gnome-ter
+gvfsd-net 
+gvfsd-net 
+gvfsd-dns 
+lsof      
+grep      
+lsof      
+sleep, nautilus, update-no, gvfsd-met, obexd, tracker-m, ibus-engi, snap-stor, gsd-print, xdg-deskt, gsd-house,
+,...
+
+aidan@aidan:~/Documents/Projects/Visualisation/Collect_info$ lsof +D /home/aidan/ | awk '{if ($1 ~ /^(bash|vi|vim|nano|emacs|firefox|chrome|brave|python|java|node|gcc|clang|code|subl|gedit|atom|tmux|ssh|curl|wget|java|ruby|perl|php|zsh|fish|gnome-terminal|xterm|konsole|gnome-shell|nautilus|docker|vscode|matlab|sqlite3|mongod|mysql|redis-server|postgres|nmap|wget|curl|gimp|inkscape|blender|steam|zoom|spotify|vlc)$/ && $9 !~ /^\/home\/aidan\/\./) print $0}'
+
+code      32468 aidan  cwd    DIR    8,2      4096 6111539 /home/aidan/Documents/Projects/Visualisation/Collect_info/collect_command.py
+code      32485 aidan  cwd    DIR    8,2      4096 6111539 /home/aidan/Documents/Projects/Visualisation/Collect_info/collection.py
+code      32502 aidan  cwd    DIR    8,2      4096 6111539 /home/aidan/Documents/Projects/Visualisation/Collect_info/save_history.py
+aidan@aidan:~/Documents/Projects/Visualisation/Collect_info$ 
+
+
+lsof +D /home/aidan/ | awk '{if ($1 ~ /^(bash|vi|vim|nano|emacs|firefox|chrome|brave|python|java|node|gcc|clang|code|subl|gedit|atom|tmux|ssh|curl|wget|java|ruby|perl|php|zsh|fish|gnome-terminal|xterm|konsole|gnome-shell|nautilus|docker|vscode|matlab|sqlite3|mongod|mysql|redis-server|postgres|nmap|wget|curl|gimp|inkscape|blender|steam|zoom|spotify|vlc)$/ && $9 !~ /^\/home\/aidan\/\./) print $0}'
+
+
+aidan@aidan:~/Documents/Projects/Visualisation/Collect_info$ ./try_script.sh
+/home/aidan/Documents/Projects/Visualisation/Collect_info/FD_lsof.md                      2025-02-28           19:09:05.147862857    19:09:05.136862857  
+/home/aidan/Documents/Projects/Visualisation/Collect_info/COMMAND_lsof.md                 2025-02-28           19:05:59.174866187    19:05:59.138866188  
+/home/aidan/Documents/Projects/Visualisation/Collect_info/try_script.sh                   2025-03-01           00:35:24.925512220    N/A                 
+/home/aidan/Documents/Projects/Visualisation/Collect_info/about_site.md                   2025-02-28           23:45:20.299566027    11:14:02.315870061  
+/home/aidan/Documents/Projects/Visualisation/Collect_info/Collect_command/script.sh       2025-02-28           23:45:21.166566012    14:20:42.053982179  
+/home/aidan/Documents/Projects/Visualisation/Collect_info/quest.txt                       2025-02-28           23:42:32.395569034    23:42:32.361569035  
+/home/aidan/Downloads/Processus Stochastique (1).pdf                                      2025-02-28           11:39:28.856991051    11:39:29.122991046  
+/home/aidan/Pictures/Wallpapers/Babe.png                                                  2025-02-28           10:05:19.846092214    10:07:29.000000000  
+aidan@aidan:~/Documents/Projects/Visualisation/Collect_info$ 

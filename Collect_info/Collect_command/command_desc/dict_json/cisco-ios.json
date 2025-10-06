@@ -1,0 +1,676 @@
+{
+  "enable": [
+    {
+      "description": "Enter privileged execution mode",
+      "cmd": "enable"
+    }
+  ],
+  "transport": [
+    {
+      "description": "Restrict line protocols to `ssh`",
+      "cmd": "transport input ssh"
+    },
+    {
+      "description": "Restrict line protocols to `telnet`",
+      "cmd": "transport input telnet"
+    }
+  ],
+  "configure": [
+    {
+      "description": "Configure from the terminal",
+      "cmd": "{{[conf|configure]}} {{[t|terminal]}}"
+    },
+    {
+      "description": "Back out one level in configuration mode",
+      "cmd": "exit"
+    },
+    {
+      "description": "Exit out of configuration mode",
+      "cmd": "end"
+    }
+  ],
+  "question-mark": [
+    {
+      "description": "Get available commands",
+      "cmd": "?"
+    },
+    {
+      "description": "Get storages that are listable",
+      "cmd": "dir ?"
+    },
+    {
+      "description": "Show what IP information is viewable",
+      "cmd": "ip show ?"
+    }
+  ],
+  "show": [
+    {
+      "description": "Show switch IP addresses",
+      "cmd": "{{[sh|show]}} ip interface brief"
+    },
+    {
+      "description": "Show specific interface configuration",
+      "cmd": "{{[sh|show]}} ip interface {{vlan1}}"
+    },
+    {
+      "description": "Show vlan configuration",
+      "cmd": "{{[sh|show]}} vlan"
+    },
+    {
+      "description": "Show currently running configuration",
+      "cmd": "{{[sh|show]}} running-config"
+    },
+    {
+      "description": "Show SSH configuration",
+      "cmd": "{{[sh|show]}} ip ssh"
+    }
+  ],
+  "dir": [
+    {
+      "description": "List files in the current working directory",
+      "cmd": "dir"
+    },
+    {
+      "description": "List files in a specific filesystem",
+      "cmd": "dir {{flash}}:"
+    },
+    {
+      "description": "List available filesystems",
+      "cmd": "dir ?"
+    },
+    {
+      "description": "do not ignore entries starting with .",
+      "cmds": [
+        "dir -a <arg>",
+        "dir --all <arg>"
+      ]
+    },
+    {
+      "description": "do not list implied . and .. --author               with -l, print the author of each file",
+      "cmds": [
+        "dir -A <path>",
+        "dir --almost-all <path>"
+      ]
+    },
+    {
+      "description": "print C-style escapes for nongraphic characters --block-size=SIZE      with -l, scale sizes by SIZE when printing them; e.g., '--block-size=M'; see SIZE format below",
+      "cmds": [
+        "dir -b <arg>",
+        "dir --escape <arg>"
+      ]
+    },
+    {
+      "description": "do not list implied entries ending with ~",
+      "cmds": [
+        "dir -B <arg>",
+        "dir --ignore-backups <arg>"
+      ]
+    },
+    {
+      "description": "with -lt: sort by, and show, ctime (time of last change of file status information); with -l: show ctime and sort by name; otherwise: sort by ctime, newest first",
+      "cmds": [
+        "dir -c <path>"
+      ]
+    },
+    {
+      "description": "list entries by columns --color[=WHEN]         color the output WHEN; more info below",
+      "cmds": [
+        "dir -C"
+      ]
+    },
+    {
+      "description": "list directories themselves, not their contents",
+      "cmds": [
+        "dir -d <path>",
+        "dir --directory <path>"
+      ]
+    },
+    {
+      "description": "generate output designed for Emacs' dired mode",
+      "cmds": [
+        "dir -D <path>",
+        "dir --dired <path>"
+      ]
+    },
+    {
+      "description": "list all entries in directory order",
+      "cmds": [
+        "dir -f <path>"
+      ]
+    },
+    {
+      "description": "append indicator (one of */=>@|) to entries WHEN --file-type            likewise, except do not append '*' --format=WORD          across -x, commas -m, horizontal -x, long -l, single-column -1, verbose -l, vertical -C",
+      "cmds": [
+        "dir -F <path>",
+        "dir --classify[=WHEN] <path>"
+      ]
+    },
+    {
+      "description": "like -l --time-style=full-iso",
+      "cmds": [
+        "dir --full-time <arg>"
+      ]
+    },
+    {
+      "description": "like -l, but do not list owner --group-directories-first group directories before files; can be augmented with a --sort option, but any use of --sort=none (-U) disables grouping",
+      "cmds": [
+        "dir -g <path>"
+      ]
+    },
+    {
+      "description": "in a long listing, don't print group names",
+      "cmds": [
+        "dir -G <string>",
+        "dir --no-group <string>"
+      ]
+    },
+    {
+      "description": "with -l and -s, print sizes like 1K 234M 2G etc. --si                   likewise, but use powers of 1000 not 1024",
+      "cmds": [
+        "dir -h <arg>",
+        "dir --human-readable <arg>"
+      ]
+    },
+    {
+      "description": "do not list implied entries matching shell PATTERN (overridden by -a or -A)",
+      "cmds": [
+        "dir --hide=PATTERN <id>",
+        "dir --ignore=PATTERN <string>",
+        "dir -I <string>"
+      ]
+    },
+    {
+      "description": "hyperlink file names WHEN --indicator-style=WORD append indicator with style WORD to entry names: none (default), slash (-p), file-type (--file-type), classify (-F)",
+      "cmds": [
+        "dir --hyperlink[=WHEN] <path>"
+      ]
+    },
+    {
+      "description": "print the index number of each file",
+      "cmds": [
+        "dir -i <path>",
+        "dir --inode <path>"
+      ]
+    },
+    {
+      "description": "default to 1024-byte blocks for file system usage; used only with -s and per directory totals",
+      "cmds": [
+        "dir -k <path>",
+        "dir --kibibytes <path>"
+      ]
+    },
+    {
+      "description": "use a long listing format",
+      "cmds": [
+        "dir -l"
+      ]
+    },
+    {
+      "description": "when showing file information for a symbolic link, show information for the file the link references rather than for the link itself",
+      "cmds": [
+        "dir -L <path>",
+        "dir --dereference <path>"
+      ]
+    },
+    {
+      "description": "fill width with a comma separated list of entries",
+      "cmds": [
+        "dir -m <id>"
+      ]
+    },
+    {
+      "description": "like -l, but list numeric user and group IDs",
+      "cmds": [
+        "dir -n <id>",
+        "dir --numeric-uid-gid <id>"
+      ]
+    },
+    {
+      "description": "print entry names without quoting",
+      "cmds": [
+        "dir -N <string>",
+        "dir --literal <string>"
+      ]
+    },
+    {
+      "description": "like -l, but do not list group information",
+      "cmds": [
+        "dir -o"
+      ]
+    },
+    {
+      "description": "print ? instead of nongraphic characters --show-control-chars   show nongraphic characters as-is (the default, unless program is 'ls' and output is a terminal)",
+      "cmds": [
+        "dir -q <arg>",
+        "dir --hide-control-chars <arg>"
+      ]
+    },
+    {
+      "description": "enclose entry names in double quotes --quoting-style=WORD   use quoting style WORD for entry names: literal, locale, shell, shell-always, shell-escape, shell-escape-always, c, escape (overrides QUOTING_STYLE environment variable)",
+      "cmds": [
+        "dir -Q <string>",
+        "dir --quote-name <string>"
+      ]
+    },
+    {
+      "description": "reverse order while sorting",
+      "cmds": [
+        "dir -r <arg>",
+        "dir --reverse <arg>"
+      ]
+    },
+    {
+      "description": "list subdirectories recursively",
+      "cmds": [
+        "dir -R <path>",
+        "dir --recursive <path>"
+      ]
+    },
+    {
+      "description": "print the allocated size of each file, in blocks",
+      "cmds": [
+        "dir -s <path>",
+        "dir --size <path>"
+      ]
+    },
+    {
+      "description": "sort by file size, largest first --sort=WORD            sort by WORD instead of name: none (-U), size (-S), time (-t), version (-v), extension (-X), width",
+      "cmds": [
+        "dir -S <path>"
+      ]
+    },
+    {
+      "description": "select which timestamp used to display or sort; access time (-u): atime, access, use; metadata change time (-c): ctime, status; modified time (default): mtime, modification; birth time: birth, creation; with -l, WORD determines which time to show; with --sort=time, sort by WORD (newest first)",
+      "cmds": [
+        "dir --time=WORD <arg>"
+      ]
+    },
+    {
+      "description": "sort by time, newest first; see --time",
+      "cmds": [
+        "dir -t"
+      ]
+    },
+    {
+      "description": "assume tab stops at each COLS instead of 8",
+      "cmds": [
+        "dir -T <arg>",
+        "dir --tabsize=COLS <arg>"
+      ]
+    },
+    {
+      "description": "with -lt: sort by, and show, access time; with -l: show access time and sort by name; otherwise: sort by access time, newest first",
+      "cmds": [
+        "dir -u <string>"
+      ]
+    },
+    {
+      "description": "do not sort; list entries in directory order",
+      "cmds": [
+        "dir -U <path>"
+      ]
+    },
+    {
+      "description": "natural sort of (version) numbers within text",
+      "cmds": [
+        "dir -v <id>"
+      ]
+    },
+    {
+      "description": "set output width to COLS.  0 means no limit",
+      "cmds": [
+        "dir -w <id>",
+        "dir --width=COLS <id>"
+      ]
+    },
+    {
+      "description": "list entries by lines instead of by columns",
+      "cmds": [
+        "dir -x"
+      ]
+    },
+    {
+      "description": "sort alphabetically by entry extension",
+      "cmds": [
+        "dir -X"
+      ]
+    },
+    {
+      "description": "print any security context of each file --zero                 end each output line with NUL, not newline",
+      "cmds": [
+        "dir -Z <path>",
+        "dir --context <path>"
+      ]
+    },
+    {
+      "description": "list one file per line --help        display this help and exit --version     output version information and exit",
+      "cmds": [
+        "dir -1 <path>"
+      ]
+    },
+    {
+      "description": "with -l, print the author of each file",
+      "cmd": "dir --author"
+    },
+    {
+      "description": "with -lt: sort by, and show, ctime (time of last",
+      "cmd": "dir -c"
+    },
+    {
+      "description": "of file status information);",
+      "cmd": "dir change"
+    },
+    {
+      "description": "-l: show ctime and sort by name;",
+      "cmd": "dir with"
+    },
+    {
+      "description": "list all entries in directory order",
+      "cmd": "dir -f"
+    },
+    {
+      "description": "likewise, except do not append '*'",
+      "cmd": "dir --file-type"
+    },
+    {
+      "description": "-1, verbose -l, vertical -C",
+      "cmd": "dir single-column"
+    },
+    {
+      "description": "like -l --time-style=full-iso",
+      "cmd": "dir --full-time"
+    },
+    {
+      "description": "like -l, but do not list owner",
+      "cmd": "dir -g"
+    },
+    {
+      "description": "directories before files;",
+      "cmd": "dir group"
+    },
+    {
+      "description": "be augmented with a --sort option, but any",
+      "cmd": "dir can"
+    },
+    {
+      "description": "of --sort=none (-U) disables grouping",
+      "cmd": "dir use"
+    },
+    {
+      "description": "likewise, but use powers of 1000 not 1024",
+      "cmd": "dir --si"
+    },
+    {
+      "description": "symbolic links listed on the command line",
+      "cmd": "dir follow"
+    },
+    {
+      "description": "each command line symbolic link",
+      "cmd": "dir follow"
+    },
+    {
+      "description": "points to a directory",
+      "cmd": "dir that"
+    },
+    {
+      "description": "indicator with style WORD to entry names:",
+      "cmd": "dir append"
+    },
+    {
+      "description": "(default), slash (-p),",
+      "cmd": "dir none"
+    },
+    {
+      "description": "(--file-type), classify (-F)",
+      "cmd": "dir file-type"
+    },
+    {
+      "description": "only with -s and per directory totals",
+      "cmd": "dir used"
+    },
+    {
+      "description": "use a long listing format",
+      "cmd": "dir -l"
+    },
+    {
+      "description": "rather than for the link itself",
+      "cmd": "dir references"
+    },
+    {
+      "description": "fill width with a comma separated list of entries",
+      "cmd": "dir -m"
+    },
+    {
+      "description": "like -l, but do not list group information",
+      "cmd": "dir -o"
+    },
+    {
+      "description": "/ indicator to directories",
+      "cmd": "dir append"
+    },
+    {
+      "description": "show nongraphic characters as-is (the default,",
+      "cmd": "dir --show-control-chars"
+    },
+    {
+      "description": "program is 'ls' and output is a terminal)",
+      "cmd": "dir unless"
+    },
+    {
+      "description": "(-t), version (-v), extension (-X), width",
+      "cmd": "dir time"
+    },
+    {
+      "description": "time (-u): atime, access, use;",
+      "cmd": "dir access"
+    },
+    {
+      "description": "change time (-c): ctime, status;",
+      "cmd": "dir metadata"
+    },
+    {
+      "description": "time (default): mtime, modification;",
+      "cmd": "dir modified"
+    },
+    {
+      "description": "time: birth, creation;",
+      "cmd": "dir birth"
+    },
+    {
+      "description": "-l, WORD determines which time to show;",
+      "cmd": "dir with"
+    },
+    {
+      "description": "--sort=time, sort by WORD (newest first)",
+      "cmd": "dir with"
+    },
+    {
+      "description": "sort by time, newest first; see --time",
+      "cmd": "dir -t"
+    },
+    {
+      "description": "with -lt: sort by, and show, access time;",
+      "cmd": "dir -u"
+    },
+    {
+      "description": "-l: show access time and sort by name;",
+      "cmd": "dir with"
+    },
+    {
+      "description": "natural sort of (version) numbers within text",
+      "cmd": "dir -v"
+    },
+    {
+      "description": "list entries by lines instead of by columns",
+      "cmd": "dir -x"
+    },
+    {
+      "description": "end each output line with NUL, not newline",
+      "cmd": "dir --zero"
+    },
+    {
+      "description": "list one file per line",
+      "cmd": "dir -1"
+    },
+    {
+      "description": "display this help and exit",
+      "cmd": "dir --help"
+    },
+    {
+      "description": "output version information and exit",
+      "cmd": "dir --version"
+    },
+    {
+      "description": "if OK,",
+      "cmd": "dir 0"
+    },
+    {
+      "description": "if minor problems (e.g., cannot access subdirectory),",
+      "cmd": "dir 1"
+    },
+    {
+      "description": "if serious trouble (e.g., cannot access command-line argument).",
+      "cmd": "dir 2"
+    }
+  ],
+  "ip": [
+    {
+      "description": "Set the SSH version",
+      "cmd": "ip ssh version {{2}}"
+    },
+    {
+      "description": "Set the address of the device (This is done under `interface command`)",
+      "cmd": "ip address {{10.0.0.1}} {{255.255.255.0}}"
+    },
+    {
+      "description": "Set the address to be determined with DHCP (This is done under `interface command`)",
+      "cmd": "ip address dhcp"
+    },
+    {
+      "description": "Define a domain name",
+      "cmd": "ip domain-name {{example.com}}"
+    }
+  ],
+  "username": [
+    {
+      "description": "Set up an admin account",
+      "cmd": "username {{admin}} privilege 15 secret {{password}}"
+    }
+  ],
+  "delete": [
+    {
+      "description": "Delete a file from flash memory",
+      "cmd": "delete {{vlan.dat}}"
+    }
+  ],
+  "write": [
+    {
+      "description": "Write current configuration to memory",
+      "cmd": "write memory"
+    },
+    {
+      "description": "Delete the configuration in memory",
+      "cmd": "write erase"
+    },
+    {
+      "description": "Display help",
+      "cmd": "write ?"
+    },
+    {
+      "description": "display this help",
+      "cmds": [
+        "write -h <arg>",
+        "write --help <arg>"
+      ]
+    },
+    {
+      "description": "display version",
+      "cmds": [
+        "write -V <arg>",
+        "write --version <arg>"
+      ]
+    },
+    {
+      "description": "[options] <user> [<ttyname>]",
+      "cmd": "write write"
+    }
+  ],
+  "interface": [
+    {
+      "description": "Configure a VLAN",
+      "cmd": "interface vlan {{1}}"
+    },
+    {
+      "description": "Set an interface to be active or inactive (this is run inside the interface command)",
+      "cmd": "{{no shutdown|shutdown}}"
+    }
+  ],
+  "erase": [
+    {
+      "description": "Erase the startup configuration",
+      "cmd": "erase startup-config"
+    },
+    {
+      "description": "Erase a filesystem",
+      "cmd": "erase {{flash}}:"
+    }
+  ],
+  "reload": [
+    {
+      "description": "Reboot the system",
+      "cmd": "reload"
+    },
+    {
+      "description": "Reboot after `n` seconds",
+      "cmd": "reload in {{n}}"
+    },
+    {
+      "description": "Cancel pending reboots",
+      "cmd": "reload cancel"
+    }
+  ],
+  "login": [
+    {
+      "description": "Use local username and password for authentication",
+      "cmd": "login local"
+    }
+  ],
+  "clock": [
+    {
+      "description": "Enter privileged execution mode",
+      "cmd": "clock set {{23}}:{{59}}:{{59}} {{31}} {{april}} {{2000}}"
+    },
+    {
+      "description": "Auto negotiate with the far end of the link, defaulting to active-clock",
+      "cmd": "clock active prefer"
+    },
+    {
+      "description": "Auto negotiate with the far end of the link, defaulting to passive-clock",
+      "cmd": "clock passive prefer"
+    },
+    {
+      "description": "Show the current clock mode negotiated by the firmware",
+      "cmd": "clock show interfaces"
+    }
+  ],
+  "crypto": [
+    {
+      "description": "Generate an `rsa` key",
+      "cmd": "crypto key generate rsa"
+    },
+    {
+      "description": "Define a modulus for a key",
+      "cmd": "crypto key generate rsa modulus {{1024}}"
+    },
+    {
+      "description": "Remove all keys",
+      "cmd": "crypto key zeroize"
+    }
+  ],
+  "line": [
+    {
+      "description": "Configure lines from 0 to 15",
+      "cmd": "line vty 0 15"
+    }
+  ]
+}

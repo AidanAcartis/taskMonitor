@@ -1,0 +1,61 @@
+Les heures de fermeture des fichiers affichés par ceci sont faux:
+        else
+            # Si le fichier est fermé, récupérer la date de dernière modification
+            close_time=$(stat --format='%y' "$file" | awk '{print $2}')
+        fi
+
+Pour afficher le vrai heure de fermeture on va utiliser ceci:
+cette commande affiche les heures de fermeture des fichiers et les fichiers fermés:
+
+paste <(grep -A 0 "Fenêtres fermées" ~/window_changes.log | grep -v "^--$" | awk '{print $2}') <(grep -A 1 "Fenêtres fermées" ~/window_changes.log | grep -v "^--$" | awk -F ' aidan ' 'NF>1 {split($2, arr, " - "); title=""; for (i=1; i<=length(arr)-2; i++) title = title (i>1 ? " - " : "") arr[i]; print title ? title : arr[1]}')
+
+dont le resultat est:
+11:25:05	Aya: Post-release possibilities, with Nathanael Carraz Rakotonirina
+11:25:09	Start Automating Your Life Using Python! (File Management with Python Tutorial)
+11:25:22	(16) Start Automating Your Life Using Python! (File Management with Python Tutorial)
+11:28:40	(16) lisa futw
+11:28:42	(16) Start Automating Your Life Using Python! (File Management with Python Tutorial)
+11:35:24	(16) LISA - FUTW (Vixi Solo Version) (Official Music Video)
+11:38:23	(16) Lisa - FUTW (Vixi Solo Version)
+11:41:50	fermeture.sh
+11:42:37	window_changes.log
+
+Pour les fichiers listés par ce script:
+#!/bin/bash
+
+# Obtenir la date actuelle
+today=$(date '+%Y-%m-%d')
+
+# Trouver les fichiers ouverts aujourd'hui uniquement
+find /home/aidan/ -type f ! -path '*/.*' -atime 0 2>/dev/null | while read file; do
+    # Récupérer la date et l'heure d'accès (ouverture)
+    open_time=$(stat --format='%x' "$file" | awk '{print $1, $2}')
+
+    # Vérifier si la date d'ouverture correspond à aujourd'hui
+    if [[ $(echo "$open_time" | awk '{print $1}') == "$today" ]]; then
+        # Vérifier si le fichier est encore ouvert avec `lsof`
+        if lsof -t -- "$file" > /dev/null 2>&1; then
+            close_time="N/A"
+        else
+            # Si le fichier est fermé, récupérer la date de dernière modification
+            close_time=$(stat --format='%y' "$file" | awk '{print $2}')
+        fi
+
+        # Afficher le résultat formaté
+        echo "$open_time $close_time $file"
+    fi
+done | sort -k1,1 -k2,2
+
+dont le resultat est :
+2025-03-05 09:34:55.406052097 N/A /home/aidan/Documents/Projects/Visualisation/Collect_info/monitor_vscode.sh
+2025-03-05 09:36:16.303050649 10:07:29.000000000 /home/aidan/Pictures/Wallpapers/Babe.png
+
+on va chercher chacune de ces fichiers dans le resultat de cette commande :
+paste <(grep -A 0 "Fenêtres fermées" ~/window_changes.log | grep -v "^--$" | awk '{print $2}') <(grep -A 1 "Fenêtres fermées" ~/window_changes.log | grep -v "^--$" | awk -F ' aidan ' 'NF>1 {split($2, arr, " - "); title=""; for (i=1; i<=length(arr)-2; i++) title = title (i>1 ? " - " : "") arr[i]; print title ? title : arr[1]}')
+mais depuis la derniere ligne en montant, si on ne le trouve il n'est pas encore ferme.
+si, on le trouve on prend son heure de fermeture a cote de lui et on le met a la place de ceci:
+'       else
+            # Si le fichier est fermé, récupérer la date de dernière modification
+            close_time=$(stat --format='%y' "$file" | awk '{print $2}')
+        fi'
+parce que ce dernier est erroné. Donner donc le script corrigé pour cela 

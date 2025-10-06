@@ -1,0 +1,5 @@
+Une route comprend 4 pistes. Chacune peut d'entre elles peut etre traversee en une seconde.
+ LA probabilite pour qu'une automobile arrive prendant une seconde determinee est 0,8.
+ Quelle est pour un pieton la probabilite de traverser en 4secondes, 5 secondes, 6 secondes, etc,...
+
+ Faire le graphe dy systeme

@@ -1,0 +1,83 @@
+2025-07-22	12:27:47	12:28:51	174.67	file-directory-App	extract_window_events.sh - Collect_file - Visual Studio Code
+2025-07-22	12:27:47	12:28:51	120.02	file-directory-App	script_to_get_title.sh - all_script - Visual Studio Code
+2025-07-22	12:27:47	12:28:51	116.28	file-directory-App	corrected_monitor_windows.sh - all_script - Visual Studio Code
+2025-07-22	12:27:47	12:28:51	109.73	file-directory-App	window_changes.log - Collect_file - Visual Studio Code
+2025-07-22	12:27:47	12:28:51	107.88	file-directory-App	monitor_vscode.sh - all_script - Visual Studio Code
+2025-07-22	12:27:47	12:28:51	107.55	file-directory-App	fermeture.sh - all_script - Visual Studio Code
+2025-07-22	12:27:47	12:28:51	105.88	file-directory-App	monitor_windos.sh - all_script - Visual Studio Code
+2025-07-22	12:27:47	12:28:51	105.85	file-directory-App	Home
+2025-07-22	12:27:47	12:28:51	105.77	file-directory-App	_window.sh - all_script - Visual Studio Code
+2025-07-22	12:27:47	12:28:51	98.50	file-directory-App	corrected_try_script.sh - all_script - Visual Studio Code
+2025-07-22	12:27:47	12:28:51	96.27	file-directory-App	new_script_open.sh - all_script - Visual Studio Code
+2025-07-22	12:27:47	12:28:51	95.98	file-directory-App	try_script.sh - all_script - Visual Studio Code
+2025-07-22	12:27:47	12:28:51	95.78	file-directory-App	with_audit.sh - all_script - Visual Studio Code
+2025-07-22	12:27:47	12:28:51	88.12	file-directory-App	Collect_info
+2025-07-22	12:27:47	12:28:51	82.10	file-directory-App	test.txt - Collect_file - Visual Studio Code
+2025-07-22	12:27:47	12:28:51	82.02	file-directory-App	Opened_file.txt - Collect_file - Visual Studio Code
+2025-07-22	12:27:47	12:28:51	74.78	file-directory-App	Documents
+2025-07-22	12:27:47	12:28:51	74.65	file-directory-App	Projects
+2025-07-22	12:27:47	12:28:51	71.47	file-directory-App	Closed_file.txt - Collect_file - Visual Studio Code
+2025-07-22	12:27:47	12:28:51	66.77	file-directory-App	THE_COMMAND.txt - all_script - Visual Studio Code
+2025-07-22	12:27:47	12:28:51	65.80	file-directory-App	window_changes.log - all_script - Visual Studio Code
+2025-07-22	12:27:47	12:28:51	65.15	file-directory-App	corrected_monitor_windows.sh - Collect_file - Visual Studio Code
+2025-07-22	12:27:47	12:28:51	53.48	file-directory-App	Opened_file_true.txt - Collect_file - Visual Studio Code
+2025-07-22	12:27:47	12:28:51	47.90	file-directory-App	get_collect_file.py - Collect_file - Visual Studio Code
+2025-07-22	12:27:47	12:28:51	44.95	file-directory-App	/
+2025-07-22	12:27:47	12:28:51	43.98	file-directory-App	aidan@aidan-Lenovo-N50-70: ~/Documents/Projects/Visualisation/Collect_info/all_script
+2025-07-22	12:27:47	12:28:51	42.45	file-directory-App	Closed_file_true.txt - Collect_file - Visual Studio Code
+2025-07-22	12:27:47	12:28:51	36.12	file-directory-App	aidan@aidan-Lenovo-N50-70: ~/Documents/Projects/Visualisation/Collect_info/all_script/monitor_windows_lab
+2025-07-22	12:27:47	12:28:51	35.80	file-directory-App	opened_test.txt - Collect_file - Visual Studio Code
+2025-07-22	12:27:47	12:28:51	35.33	file-directory-App	test1 - Collect_file - Visual Studio Code
+2025-07-22	12:27:47	12:28:51	28.22	file-directory-App	aidan@aidan-Lenovo-N50-70: ~
+2025-07-22	12:27:47	12:28:51	16.98	file-directory-App	Titles.txt - all_script - Visual Studio Code
+2025-07-22	12:27:47	12:28:51	14.50	file-directory-App	all_script
+2025-07-22	12:27:47	12:28:51	14.33	file-directory-App	prev_windows.txt - Collect_file - Visual Studio Code
+2025-07-22	12:27:47	12:28:51	12.63	file-directory-App	corrected_opened_closed_file2.py - Collect_file - Visual Studio Code
+2025-07-22	12:27:47	12:28:51	12.23	file-directory-App	monitor_windows_lab
+2025-07-22	12:27:47	12:28:51	11.32	file-directory-App	test1.txt - Collect_file - Visual Studio Code
+2025-07-22	12:27:47	12:28:51	9.98	file-directory-App	collect_script.sh - Collect_file - Visual Studio Code
+2025-07-22	12:27:47	12:28:51	9.47	file-directory-App	all_txt_file
+2025-07-22	12:27:47	12:28:51	8.82	file-directory-App	test_file_opened.txt - all_script - Visual Studio Code
+2025-07-22	12:27:47	12:28:51	6.38	file-directory-App	code - all_script - Visual Studio Code
+2025-07-22	12:27:47	12:28:51	5.70	file-directory-App	Google Calendar - Week of July 20, 2025 - Google Chrome
+2025-07-22	12:27:47	12:28:51	2.98	file-directory-App	Preview READme.md - Collect_file - Visual Studio Code
+2025-07-22	12:27:47	12:28:51	2.17	file-directory-App	correct_opened-closed_file.py - Collect_file - Visual Studio Code
+2025-07-22	12:27:47	12:28:51	1.07	file-directory-App	Collect_command
+2025-07-22	12:27:47	12:28:51	0.55	file-directory-App	correct_Opened_file.py - Collect_file - Visual Studio Code
+2025-07-22	12:27:47	12:28:51	0.13	file-directory-App	With_audit
+2025-07-22	12:27:47	12:28:51	0.10	file-directory-App	READme.md - Collect_file - Visual Studio Code
+2025-07-22	12:27:47	12:28:51	0.10	file-directory-App	Visual Studio Code
+2025-07-22	12:27:47	12:28:51	0.10	file-directory-App	Search for “code”
+2025-07-22	12:27:47	12:28:51	0.10	file-directory-App	all_mardown
+2025-07-22	12:27:47	12:28:51	0.10	file-directory-App	all_code
+2025-07-22	12:27:47	12:28:51	0.03	file-directory-App	THE_COMMAND.txt - Collect_file - Visual Studio Code
+2025-07-22	12:27:47	12:28:51	0.03	file-directory-App	vs_code_monitor
+2025-07-22	12:27:47	12:28:51	0.03	file-directory-App	Mikitika_BDD
+2025-07-23	12:04:36	12:04:38	0.033	Commande	pgrep -a xwinwrap
+2025-07-23	12:04:42	12:04:44	0.033	Commande	kill 3323
+2025-07-23	12:04:43	12:04:45	0.033	Commande	exit
+2025-07-23	12:05:33	12:05:35	0.033	Commande	code .
+2025-07-23	12:07:14	12:07:16	0.033	Commande	code .
+2025-07-23	12:08:12	12:08:14	0.033	Commande	code .
+2025-07-23	13:16:49	13:16:51	0.033	Commande	exit
+2025-07-23	13:16:53	13:16:55	0.033	Commande	exit
+2025-07-23	13:17:00	13:17:02	0.033	Commande	./extract_window_events.sh
+2025-07-23	13:19:13	13:19:15	0.033	Commande	clear
+2025-07-23	13:19:15	13:19:17	0.033	Commande	ls
+2025-07-23	13:19:43	13:19:45	0.033	Commande	python3 correct_opened-closed_file.py
+2025-07-23	13:20:37	13:20:39	0.033	Commande	cler
+2025-07-23	13:20:38	13:20:40	0.033	Commande	clear
+2025-07-23	13:20:39	13:20:41	0.033	Commande	s
+2025-07-23	13:20:41	13:20:43	0.033	Commande	clear
+2025-07-23	13:20:42	13:20:44	0.033	Commande	ls
+2025-07-23	13:20:50	13:20:52	0.033	Commande	python3 get_collect_file.py
+2025-07-23	13:29:07	13:29:09	0.033	Commande	./collect_script.sh
+2025-07-23	13:29:21	13:29:23	0.033	Commande	clear
+2025-07-23	14:02:27	14:02:29	0.033	Commande	ls
+2025-07-23	14:02:40	14:02:42	0.033	Commande	touch Read_line.sh
+2025-07-23	14:04:53	14:04:55	0.033	Commande	chmod +x Read_line.sh
+2025-07-23	14:04:55	14:04:57	0.033	Commande	clear
+2025-07-23	14:04:55	14:04:57	0.033	Commande	ls
+2025-07-23	14:05:01	14:05:03	0.033	Commande	./Read_line.sh
+2025-07-23	14:05:45	14:05:47	0.033	Commande	clear
+2025-07-23	14:05:46	14:05:48	0.033	Commande	./Read_line.sh

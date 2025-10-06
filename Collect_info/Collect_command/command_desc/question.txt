@@ -1,0 +1,8 @@
+Pour decomposer la commande entre en input et les pattern dans le db:
+- definir dabord la commande principale 
+- s'il y en a une option (un mot sans - ni -- devant mais qui n'est pas un fichier ni un url, ni un dossier,
+ni un IP, ni un PORT), il doit etre accompagne du commande principale devant
+- maintenant s'il y en a un argument commencant avec - ou -- elle doit etre accompagne de la commande principale
++ l'option, sinon accompagne de la commande principale seule
+- les directory, file, url, ip, port vont tous seuls
+

@@ -1,0 +1,466 @@
+{
+  "svccfg": [
+    {
+      "description": "Validate configuration file",
+      "cmd": "svccfg validate {{path/to/smf_file.xml}}"
+    },
+    {
+      "description": "Export service configurations to file",
+      "cmd": "svccfg export {{servicename}} > {{path/to/smf_file.xml}}"
+    },
+    {
+      "description": "Import/update service configurations from file",
+      "cmd": "svccfg import {{path/to/smf_file.xml}}"
+    }
+  ],
+  "share": [
+    {
+      "description": "List all currently shared file systems",
+      "cmd": "share"
+    },
+    {
+      "description": "Share a directory with read/write access",
+      "cmd": "share -F nfs -o rw /{{path/to/directory}}"
+    },
+    {
+      "description": "Share a directory with read-only access",
+      "cmd": "share -F nfs -o ro /{{path/to/directory}}"
+    },
+    {
+      "description": "Share a directory with specific options (e.g., allow root access from a specific host)",
+      "cmd": "share -F nfs -o rw,root={{hostname}} /{{path/to/directory}}"
+    },
+    {
+      "description": "Make sharing persistent by adding entries to `/etc/dfs/dfstab`",
+      "cmd": "echo \"share -F nfs -o rw /{{path/to/directory}}\" >> /etc/dfs/dfstab"
+    }
+  ],
+  "dmesg": [
+    {
+      "description": "Show kernel messages",
+      "cmd": "dmesg"
+    },
+    {
+      "description": "Show how much physical memory is available on this system",
+      "cmd": "dmesg | grep -i memory"
+    },
+    {
+      "description": "Show kernel messages 1 page at a time",
+      "cmd": "dmesg | less"
+    },
+    {
+      "description": "clear the kernel ring buffer",
+      "cmds": [
+        "dmesg -C <arg>",
+        "dmesg --clear <arg>"
+      ]
+    },
+    {
+      "description": "read and clear all messages",
+      "cmds": [
+        "dmesg -c <arg>",
+        "dmesg --read-clear <arg>"
+      ]
+    },
+    {
+      "description": "disable printing messages to console",
+      "cmds": [
+        "dmesg -D <arg>",
+        "dmesg --console-off <arg>"
+      ]
+    },
+    {
+      "description": "enable printing messages to console",
+      "cmds": [
+        "dmesg -E <arg>",
+        "dmesg --console-on <arg>"
+      ]
+    },
+    {
+      "description": "use the file instead of the kernel log buffer",
+      "cmds": [
+        "dmesg -F <path>",
+        "dmesg --file <path>"
+      ]
+    },
+    {
+      "description": "restrict output to defined facilities",
+      "cmds": [
+        "dmesg -f <arg>",
+        "dmesg --facility <arg>"
+      ]
+    },
+    {
+      "description": "human readable output",
+      "cmds": [
+        "dmesg -H <arg>",
+        "dmesg --human <arg>"
+      ]
+    },
+    {
+      "description": "use JSON output format",
+      "cmds": [
+        "dmesg -J <arg>",
+        "dmesg --json <arg>"
+      ]
+    },
+    {
+      "description": "display kernel messages",
+      "cmds": [
+        "dmesg -k <arg>",
+        "dmesg --kernel <arg>"
+      ]
+    },
+    {
+      "description": "colorize messages (auto, always or never) colors are enabled by default",
+      "cmds": [
+        "dmesg -L <arg>",
+        "dmesg --color[=<when>] <arg>"
+      ]
+    },
+    {
+      "description": "restrict output to defined levels",
+      "cmds": [
+        "dmesg -l <arg>",
+        "dmesg --level <arg>"
+      ]
+    },
+    {
+      "description": "do not pipe output into a pager",
+      "cmds": [
+        "dmesg -P <arg>",
+        "dmesg --nopager <arg>"
+      ]
+    },
+    {
+      "description": "force timestamp output on each line of multi-line messages",
+      "cmds": [
+        "dmesg -p <arg>",
+        "dmesg --force-prefix <arg>"
+      ]
+    },
+    {
+      "description": "print the raw message buffer --noescape              don't escape unprintable character",
+      "cmds": [
+        "dmesg -r <arg>",
+        "dmesg --raw <arg>"
+      ]
+    },
+    {
+      "description": "force to use syslog(2) rather than /dev/kmsg",
+      "cmds": [
+        "dmesg -S <arg>",
+        "dmesg --syslog <arg>"
+      ]
+    },
+    {
+      "description": "buffer size to query the kernel ring buffer",
+      "cmds": [
+        "dmesg -s <arg>",
+        "dmesg --buffer-size <arg>"
+      ]
+    },
+    {
+      "description": "display userspace messages",
+      "cmds": [
+        "dmesg -u <user>",
+        "dmesg --userspace <user>"
+      ]
+    },
+    {
+      "description": "wait for new messages",
+      "cmds": [
+        "dmesg -w <arg>",
+        "dmesg --follow <arg>"
+      ]
+    },
+    {
+      "description": "wait and print only new messages",
+      "cmds": [
+        "dmesg -W <arg>",
+        "dmesg --follow-new <arg>"
+      ]
+    },
+    {
+      "description": "decode facility and level to readable string",
+      "cmds": [
+        "dmesg -x <string>",
+        "dmesg --decode <string>"
+      ]
+    },
+    {
+      "description": "show time delta between printed messages",
+      "cmds": [
+        "dmesg -d <arg>",
+        "dmesg --show-delta <arg>"
+      ]
+    },
+    {
+      "description": "show local time and time delta in readable format",
+      "cmds": [
+        "dmesg -e <arg>",
+        "dmesg --reltime <arg>"
+      ]
+    },
+    {
+      "description": "show human-readable timestamp (may be inaccurate!)",
+      "cmds": [
+        "dmesg -T <arg>",
+        "dmesg --ctime <arg>"
+      ]
+    },
+    {
+      "description": "don't show any timestamp with messages --time-format <format>  show timestamp using the given format: [delta|reltime|ctime|notime|iso]",
+      "cmds": [
+        "dmesg -t <arg>",
+        "dmesg --notime <arg>"
+      ]
+    },
+    {
+      "description": "display the lines since the specified time --until <time>          display the lines until the specified time",
+      "cmds": [
+        "dmesg --since <arg>"
+      ]
+    },
+    {
+      "description": "display this help",
+      "cmds": [
+        "dmesg -h <arg>",
+        "dmesg --help <arg>"
+      ]
+    },
+    {
+      "description": "display version",
+      "cmds": [
+        "dmesg -V <arg>",
+        "dmesg --version <arg>"
+      ]
+    },
+    {
+      "description": "[options]",
+      "cmd": "dmesg dmesg"
+    },
+    {
+      "description": "are enabled by default",
+      "cmd": "dmesg colors"
+    },
+    {
+      "description": "don't escape unprintable character",
+      "cmd": "dmesg --noescape"
+    },
+    {
+      "description": "<format> show timestamp using the given format:",
+      "cmd": "dmesg --time-format"
+    },
+    {
+      "description": "<time> display the lines since the specified time",
+      "cmd": "dmesg --since"
+    },
+    {
+      "description": "<time> display the lines until the specified time",
+      "cmd": "dmesg --until"
+    },
+    {
+      "description": "- kernel messages",
+      "cmd": "dmesg kern"
+    },
+    {
+      "description": "- random user-level messages",
+      "cmd": "dmesg user"
+    },
+    {
+      "description": "- mail system",
+      "cmd": "dmesg mail"
+    },
+    {
+      "description": "- system daemons",
+      "cmd": "dmesg daemon"
+    },
+    {
+      "description": "- security/authorization messages",
+      "cmd": "dmesg auth"
+    },
+    {
+      "description": "- messages generated internally by syslogd",
+      "cmd": "dmesg syslog"
+    },
+    {
+      "description": "- line printer subsystem",
+      "cmd": "dmesg lpr"
+    },
+    {
+      "description": "- network news subsystem",
+      "cmd": "dmesg news"
+    },
+    {
+      "description": "- system is unusable",
+      "cmd": "dmesg emerg"
+    },
+    {
+      "description": "- action must be taken immediately",
+      "cmd": "dmesg alert"
+    },
+    {
+      "description": "- critical conditions",
+      "cmd": "dmesg crit"
+    },
+    {
+      "description": "- error conditions",
+      "cmd": "dmesg err"
+    },
+    {
+      "description": "- warning conditions",
+      "cmd": "dmesg warn"
+    },
+    {
+      "description": "- normal but significant condition",
+      "cmd": "dmesg notice"
+    },
+    {
+      "description": "- informational",
+      "cmd": "dmesg info"
+    },
+    {
+      "description": "- debug-level messages",
+      "cmd": "dmesg debug"
+    }
+  ],
+  "prstat": [
+    {
+      "description": "Examine all processes and reports statistics sorted by CPU usage",
+      "cmd": "prstat"
+    },
+    {
+      "description": "Examine all processes and reports statistics sorted by memory usage",
+      "cmd": "prstat -s rss"
+    },
+    {
+      "description": "Report total usage summary for each user",
+      "cmd": "prstat -t"
+    },
+    {
+      "description": "Report microstate process accounting information",
+      "cmd": "prstat -m"
+    },
+    {
+      "description": "Print out a list of top 5 CPU using processes every second",
+      "cmd": "prstat -c -n 5 -s cpu 1"
+    }
+  ],
+  "devfsadm": [
+    {
+      "description": "Scan for new disks",
+      "cmd": "devfsadm -c disk"
+    },
+    {
+      "description": "Cleanup any dangling /dev links and scan for new device",
+      "cmd": "devfsadm -C -v"
+    },
+    {
+      "description": "Dry-run - output what would be changed but make no modifications",
+      "cmd": "devfsadm -C -v -n"
+    }
+  ],
+  "truss": [
+    {
+      "description": "Start tracing a program by executing it, following all child processes",
+      "cmd": "truss -f {{program}}"
+    },
+    {
+      "description": "Start tracing a specific process by its PID",
+      "cmd": "truss -p {{pid}}"
+    },
+    {
+      "description": "Start tracing a program by executing it, showing arguments and environment variables",
+      "cmd": "truss -a -e {{program}}"
+    },
+    {
+      "description": "Count time, calls, and errors for each system call and report a summary on program exit",
+      "cmd": "truss -c -p {{pid}}"
+    },
+    {
+      "description": "Trace a process filtering output by system call",
+      "cmd": "truss -p {{pid}} -t {{system_call_name}}"
+    }
+  ],
+  "prctl": [
+    {
+      "description": "Examine process limits and permissions",
+      "cmd": "prctl {{pid}}"
+    },
+    {
+      "description": "Examine process limits and permissions in machine parsable format",
+      "cmd": "prctl -P {{pid}}"
+    },
+    {
+      "description": "Get specific limit for a running process",
+      "cmd": "prctl -n process.max-file-descriptor {{pid}}"
+    }
+  ],
+  "svcadm": [
+    {
+      "description": "Enable a service in the service database",
+      "cmd": "svcadm enable {{service_name}}"
+    },
+    {
+      "description": "Disable service",
+      "cmd": "svcadm disable {{service_name}}"
+    },
+    {
+      "description": "Restart a running service",
+      "cmd": "svcadm restart {{service_name}}"
+    },
+    {
+      "description": "Command service to re-read configuration files",
+      "cmd": "svcadm refresh {{service_name}}"
+    },
+    {
+      "description": "Clear a service from maintenance state and command it to start",
+      "cmd": "svcadm clear {{service_name}}"
+    }
+  ],
+  "snoop": [
+    {
+      "description": "Capture packets on a specific network interface",
+      "cmd": "snoop -d {{e1000g0}}"
+    },
+    {
+      "description": "Save captured packets in a file instead of displaying them",
+      "cmd": "snoop -o {{path/to/file}}"
+    },
+    {
+      "description": "Display verbose protocol layer summary of packets from a file",
+      "cmd": "snoop -V -i {{path/to/file}}"
+    },
+    {
+      "description": "Capture network packets that come from a hostname and go to a given port",
+      "cmd": "snoop to port {{port}} from host {{hostname}}"
+    },
+    {
+      "description": "Capture and show a hex-dump of network packets exchanged between two IP addresses",
+      "cmd": "snoop -x0 -p4 {{ip1}} {{ip2}}"
+    }
+  ],
+  "svcs": [
+    {
+      "description": "List all running services",
+      "cmd": "svcs"
+    },
+    {
+      "description": "List services that are not running",
+      "cmd": "svcs -vx"
+    },
+    {
+      "description": "List information about a service",
+      "cmd": "svcs apache"
+    },
+    {
+      "description": "Show location of service log file",
+      "cmd": "svcs -L apache"
+    },
+    {
+      "description": "Display end of a service log file",
+      "cmd": "tail $(svcs -L apache)"
+    }
+  ]
+}

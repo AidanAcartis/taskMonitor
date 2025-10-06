@@ -1,0 +1,14 @@
+grep -A 1 "Fenêtres fermées" ~/window_changes.log | grep -v "^--$" | awk -F ' aidan ' 'NF>1 {split($2, arr, " - "); title=""; for (i=1; i<=length(arr)-2; i++) title = title (i>1 ? " - " : "") arr[i]; print title ? title : arr[1]}'
+
+
+Get all title :
+grep -A 1 "Fenêtres fermées" ~/window_changes.log | grep -v "^--$" | awk -F ' aidan ' '{print $2}' | sed 's/^[[:space:]]*//'
+
+
+Les commandes:
+
+1-Commandes pour lister les fichiers ouverts avec les heures d'ouverture a cote:
+paste -d ' ' <(grep -A 0 "Nouvelles fenêtres ajoutées" ~/window_changes.log | grep -v "^--$" | awk '{print $2}' | grep .)              <(grep -A 1 "Nouvelles fenêtres ajoutées" ~/window_changes.log | grep -v "^--$" | awk -F ' aidan ' '{print $2}' | grep .)
+
+2-Commandes pour lister les fichiers fermes avec les heures de fermeture a cote:
+paste -d ' ' <(grep -A 0 "Fenêtres fermées" ~/window_changes.log | grep -v "^--$" | awk '{print $2}' | grep .)              <(grep -A 1 "Fenêtres fermées" ~/window_changes.log | grep -v "^--$" | awk -F ' aidan ' '{print $2}' | grep .)

@@ -1,0 +1,4 @@
+ALTER USER 'root'@'localhost' IDENTIFIED BY 'nerd';
+CREATE USER 'jennie'@'localhost' IDENTIFIED BY 'nerd';
+GRANT ALL PRIVILEGES ON *.* TO 'jennie'@'localhost' WITH GRANT OPTION;
+CREATE DATABASE cours_alg_rel;

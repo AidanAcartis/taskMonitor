@@ -1,0 +1,86 @@
+Je vais choisir ce moyen de stockage:
+2️⃣ Base de données SQLite
+Meilleur pour faire des requêtes et analyses :
+🗃 Table activites :
+
+ID	Type	Nom	Heure
+1	Commande	ls -l	2025-02-24 08:12:34
+2	Fichier	/home/user/rapport.docx	2025-02-24 08:15:00
+3	Programme	firefox	2025-02-24 08:30:20
+4	Site	https://openai.com	2025-02-24 08:35:45
+✔ Organisé et structuré
+✔ Requêtage facile avec SQL
+❌ Besoin d'utiliser SQLite
+
+Je veux les colonnes suivantes (ID, type, Nom, heure d'ouverture, heure de fermeture, jour)
+et je veux que les donnees s'organisent par ordre de l'heure du plus anciens depuis 00:00 au plus recents.
+Il faut le faire chaque jour(dans la colonne jour) du lundi au dimanche(c'est-a-dire que je veux les datas du lundi, mardi, mercredi, jeudi, vendredi, samedi et dimanche),
+les datas seront mise a jour tous les lundis a 00:00
+Seuls les 'commandes', je crois, n'ont pas d'ouverture et de fermeture sinon s'il y en a detailler
+comment les recuperer ?
+On ne peut pas encore recuperer l'heure de la fermeture du (site, fichier, application, logiciel)
+chacune par la facon qui nous permettrait de le faire.
+
+Donner en details comment faire cela. Comme ceci:
+- comment recuperer tous les fichiers qui ont été ouverts depuis 00:00 jusqu'a l'heure actuel de lancement du script de collection.
+- Comment recuperer tous les commandes qui ont été lancés depuis 00:00 jusqu'a l'heure actuel de lancement du script de collection.
+- comment recuperer tous les programmes qui ont été lancés depuis 00:00 jusqu'a l'heure actuel de lancement du script de collection.
+- comment recuperer tous les applications et logiciels qui ont été demarrés jusqu'a l'heure actuel de lancement du script de collection.
+- comment recuperer tous les sites qui ont été ouverts depuis 00:00 jusqu'a l'heure actuel de lancement du script de collection.
+ 
+Puis, le plus grand defi c'est comment recuperer les 'heures de fermeture'.
+- Comment recuperer à quel heure a été fermé chaque fichiers ?
+- Comment recuperer à quel heure a été fini l'heure d'exécution chaque commandes ?
+- Comment recuperer à quel heure a été fermé chaque programmes ?
+- Comment recuperer à quel heure a été fermé chaque applications/logiciels ?
+- Comment recuperer à quel heure a été fermé chaque sites ?
+
+C'est ainsi qu'on peut completer le tableau.
+Donner le script bien complet 'collection' pour realiser cela tous les jours de la semaine et mettre a jour les donnes le lundi 00:00.
+
+- Par exemple pour le site:"
+Méthode 3 : Utiliser un script Python pour surveiller les onglets
+Python peut surveiller les fenêtres ouvertes et détecter les changements :
+
+import time
+import psutil
+from datetime import datetime
+
+visited_sites = {}
+
+def get_active_window():
+    try:
+        import pygetwindow as gw
+        return gw.getActiveWindow().title
+    except:
+        return None
+
+while True:
+    active_window = get_active_window()
+    
+    if active_window and ("Firefox" in active_window or "Chrome" in active_window):
+        now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        
+        if active_window not in visited_sites:
+            visited_sites[active_window] = {'open_time': now, 'close_time': None}
+        
+        visited_sites[active_window]['close_time'] = now
+    
+    time.sleep(5)
+    
+    # Sauvegarde des données
+    with open("sites_visites.log", "w") as f:
+        for site, times in visited_sites.items():
+            f.write(f"{site} | Ouvert : {times['open_time']} | Fermé : {times['close_time']}\n")
+📌 Avantage : Cela enregistre l'heure d’ouverture ET de fermeture d’un site.
+📌 Limite : Ce script surveille les fenêtres visibles et ne peut pas voir les onglets en arrière-plan.
+"
+mais expliquer encore un peu plus
+
+- comment recuperer l'heure de fermeture des fichiers?
+- comment recuperer l'heure de fermeture des programmes ?
+-comment recuperer l'haure de fermeture des applications/logiciels
+
+On va les faire entrer dans la colonnes 'heure_fermeture' puis on a notre data 
+Il faut le faire chaque jour du lundi au dimanche(c'est-a-dire que je veux les datas du lundi, mardi, mercredi, jeudi, vendredi, samedi et dimanche),
+les datas seront mise a jour tous les lundis a 00:00

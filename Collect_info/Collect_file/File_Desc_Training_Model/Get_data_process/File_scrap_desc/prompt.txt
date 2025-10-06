@@ -1,0 +1,12 @@
+Dans `Files_list.txt` qui contient une liste numérotée de fichiers de ce format :
+"24 Titles.txt - all_script - Visual Studio Code"
+Chaque ligne suit la structure :
+<numero> <nom_fichier> - <dossier> - <application>
+Génère exactement 35 nouvelles lignes. Les numéros doivent commencer à {start_num} et s'incrémenter de 1.
+Les noms de fichier doivent être variés (extensions : .sh, .txt, .py, .log, .md, .json, .xml, .cfg).
+Inventer des répertoires comme : Collect_file, all_script, system_logs, utils, configs.
+avec des applications comme : Visual Studio Code, Google Chrome, Notepad++, Sublime Text, PyCharm.
+Pas de doublons exacts avec les lignes déjà présentes dans `Files_list.txt`.
+Donne-moi directement les 35 lignes dans le format attendu, sans explication.
+
+MlayBe@2025

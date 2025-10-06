@@ -1,0 +1,440 @@
+{
+  "df": [
+    {
+      "description": "Display all filesystems and their disk usage using 512-byte units",
+      "cmd": "df"
+    },
+    {
+      "description": "Display all filesystems and their disk usage in [h]uman-readable form (based on powers of 1024)",
+      "cmd": "df -h"
+    },
+    {
+      "description": "Display the filesystem and its disk usage containing the given file or directory",
+      "cmd": "df {{path/to/file_or_directory}}"
+    },
+    {
+      "description": "Include statistics on the number of free and used [i]nodes",
+      "cmd": "df -i"
+    },
+    {
+      "description": "Use 1024-byte units when writing space figures",
+      "cmd": "df -k"
+    },
+    {
+      "description": "Display information in a [P]ortable way",
+      "cmd": "df -P"
+    },
+    {
+      "description": "include pseudo, duplicate, inaccessible file systems",
+      "cmds": [
+        "df -a <path>",
+        "df --all <path>"
+      ]
+    },
+    {
+      "description": "scale sizes by SIZE before printing them; e.g., '-BM' prints sizes in units of 1,048,576 bytes; see SIZE format below",
+      "cmds": [
+        "df -B <arg>",
+        "df --block-size=SIZE <arg>"
+      ]
+    },
+    {
+      "description": "print sizes in powers of 1024 (e.g., 1023M)",
+      "cmds": [
+        "df -h <arg>",
+        "df --human-readable <arg>"
+      ]
+    },
+    {
+      "description": "print sizes in powers of 1000 (e.g., 1.1G)",
+      "cmds": [
+        "df -H <arg>",
+        "df --si <arg>"
+      ]
+    },
+    {
+      "description": "list inode information instead of block usage",
+      "cmds": [
+        "df -i <arg>",
+        "df --inodes <arg>"
+      ]
+    },
+    {
+      "description": "limit listing to local file systems --no-sync         do not invoke sync before getting usage info (default) --output[=FIELD_LIST]  use the output format defined by FIELD_LIST, or print all fields if FIELD_LIST is omitted.",
+      "cmds": [
+        "df -l <path>",
+        "df --local <path>"
+      ]
+    },
+    {
+      "description": "use the POSIX output format --sync            invoke sync before getting usage info --total           elide all entries insignificant to available space, and produce a grand total",
+      "cmds": [
+        "df -P <id>",
+        "df --portability <id>"
+      ]
+    },
+    {
+      "description": "limit listing to file systems of type TYPE",
+      "cmds": [
+        "df -t <path>",
+        "df --type=TYPE <path>"
+      ]
+    },
+    {
+      "description": "print file system type",
+      "cmds": [
+        "df -T <path>",
+        "df --print-type <path>"
+      ]
+    },
+    {
+      "description": "limit listing to file systems not of type TYPE",
+      "cmds": [
+        "df -x <path>",
+        "df --exclude-type=TYPE <path>"
+      ]
+    },
+    {
+      "description": "(ignored) --help        display this help and exit --version     output version information and exit",
+      "cmds": [
+        "df -v"
+      ]
+    },
+    {
+      "description": "SIZE format below",
+      "cmd": "df see"
+    },
+    {
+      "description": "do not invoke sync before getting usage info (default)",
+      "cmd": "df --no-sync"
+    },
+    {
+      "description": "print all fields if FIELD_LIST is omitted.",
+      "cmd": "df or"
+    },
+    {
+      "description": "invoke sync before getting usage info",
+      "cmd": "df --sync"
+    },
+    {
+      "description": "elide all entries insignificant to available space,",
+      "cmd": "df --total"
+    },
+    {
+      "description": "produce a grand total",
+      "cmd": "df and"
+    },
+    {
+      "description": "(ignored)",
+      "cmd": "df -v"
+    },
+    {
+      "description": "display this help and exit",
+      "cmd": "df --help"
+    },
+    {
+      "description": "output version information and exit",
+      "cmd": "df --version"
+    }
+  ],
+  "pkg_info": [
+    {
+      "description": "Search for a package using the package name",
+      "cmd": "pkg_info -Q {{package}}"
+    },
+    {
+      "description": "Output a list of installed packages for use with `pkg_add -l`",
+      "cmd": "pkg_info -mz"
+    }
+  ],
+  "pkg": [
+    {
+      "description": "View documentation for installing/updating packages",
+      "cmd": "tldr pkg_add"
+    },
+    {
+      "description": "View documentation for removing packages",
+      "cmd": "tldr pkg_delete"
+    },
+    {
+      "description": "View documentation for viewing information about packages",
+      "cmd": "tldr pkg_info"
+    }
+  ],
+  "sed": [
+    {
+      "description": "Replace all `apple` (basic `regex`) occurrences with `mango` (basic `regex`) in all input lines and print the result to `stdout`",
+      "cmd": "{{command}} | sed 's/apple/mango/g'"
+    },
+    {
+      "description": "Execute a specific script [f]ile and print the result to `stdout`",
+      "cmd": "{{command}} | sed -f {{path/to/script.sed}}"
+    },
+    {
+      "description": "Delay opening each file until a command containing the related `w` function or flag is applied to a line of input",
+      "cmd": "{{command}} | sed -fa {{path/to/script.sed}}"
+    },
+    {
+      "description": "Replace all `apple` (extended `regex`) occurrences with `APPLE` (extended `regex`) in all input lines and print the result to `stdout`",
+      "cmd": "{{command}} | sed -E 's/(apple)/\\U\\1/g'"
+    },
+    {
+      "description": "Print just a first line to `stdout`",
+      "cmd": "{{command}} | sed -n '1p'"
+    },
+    {
+      "description": "Replace all `apple` (basic `regex`) occurrences with `mango` (basic `regex`) in a specific file and overwrite the original file in place",
+      "cmd": "sed -i 's/apple/mango/g' {{path/to/file}}"
+    },
+    {
+      "description": "display this help and exit --version  output version information and exit",
+      "cmds": [
+        "sed -z <arg>",
+        "sed --null-data <arg>",
+        "sed --help <arg>"
+      ]
+    },
+    {
+      "description": "automatic printing of pattern space",
+      "cmd": "sed suppress"
+    },
+    {
+      "description": "program execution",
+      "cmd": "sed annotate"
+    },
+    {
+      "description": "script, --expression=script",
+      "cmd": "sed -e"
+    },
+    {
+      "description": "the script to the commands to be executed",
+      "cmd": "sed add"
+    },
+    {
+      "description": "script-file, --file=script-file",
+      "cmd": "sed -f"
+    },
+    {
+      "description": "the contents of script-file to the commands to be executed",
+      "cmd": "sed add"
+    },
+    {
+      "description": "symlinks when processing in place",
+      "cmd": "sed follow"
+    },
+    {
+      "description": "files in place (makes backup if SUFFIX supplied)",
+      "cmd": "sed edit"
+    },
+    {
+      "description": "N, --line-length=N",
+      "cmd": "sed -l"
+    },
+    {
+      "description": "the desired line-wrap length for the `l' command",
+      "cmd": "sed specify"
+    },
+    {
+      "description": "all GNU extensions.",
+      "cmd": "sed disable"
+    },
+    {
+      "description": "extended regular expressions in the script",
+      "cmd": "sed use"
+    },
+    {
+      "description": "files as separate rather than as a single,",
+      "cmd": "sed consider"
+    },
+    {
+      "description": "long stream.",
+      "cmd": "sed continuous"
+    },
+    {
+      "description": "in sandbox mode (disable e/r/w commands).",
+      "cmd": "sed operate"
+    },
+    {
+      "description": "minimal amounts of data from the input files and flush",
+      "cmd": "sed load"
+    },
+    {
+      "description": "output buffers more often",
+      "cmd": "sed the"
+    },
+    {
+      "description": "lines by NUL characters",
+      "cmd": "sed separate"
+    },
+    {
+      "description": "display this help and exit",
+      "cmd": "sed --help"
+    },
+    {
+      "description": "output version information and exit",
+      "cmd": "sed --version"
+    }
+  ],
+  "chpass": [
+    {
+      "description": "Set a specific login shell for the current user interactively",
+      "cmd": "doas chpass"
+    },
+    {
+      "description": "Set a specific login [s]hell for the current user",
+      "cmd": "doas chpass -s {{path/to/shell}}"
+    },
+    {
+      "description": "Set a login [s]hell for a specific user",
+      "cmd": "doas chpass -s {{path/to/shell}} {{username}}"
+    },
+    {
+      "description": "Specify a user database entry in the `passwd` file format",
+      "cmd": "doas chpass -a {{username:encrypted_password:uid:gid:...}}"
+    }
+  ],
+  "pkg_delete": [
+    {
+      "description": "Delete a package",
+      "cmd": "pkg_delete {{package}}"
+    },
+    {
+      "description": "Delete a package, including its unused dependencies",
+      "cmd": "pkg_delete -a {{package}}"
+    },
+    {
+      "description": "Dry-run deletion of a package",
+      "cmd": "pkg_delete -n {{package}}"
+    }
+  ],
+  "pkg_add": [
+    {
+      "description": "Update all packages, including dependencies",
+      "cmd": "pkg_add -u"
+    },
+    {
+      "description": "Install a new package",
+      "cmd": "pkg_add {{package}}"
+    },
+    {
+      "description": "Install packages from the raw output of `pkg_info`",
+      "cmd": "pkg_add -l {{path/to/file}}"
+    }
+  ],
+  "chfn": [
+    {
+      "description": "View documentation for the original command",
+      "cmd": "tldr chpass"
+    },
+    {
+      "description": "change user's full name",
+      "cmds": [
+        "chfn -f <string>",
+        "chfn --full-name <string>"
+      ]
+    },
+    {
+      "description": "change user's home phone number",
+      "cmds": [
+        "chfn -h <user>",
+        "chfn --home-phone <user>"
+      ]
+    },
+    {
+      "description": "change user's other GECOS information",
+      "cmds": [
+        "chfn -o <user>",
+        "chfn --other <user>"
+      ]
+    },
+    {
+      "description": "change user's room number",
+      "cmds": [
+        "chfn -r <user>",
+        "chfn --room <user>"
+      ]
+    },
+    {
+      "description": "directory to chroot into",
+      "cmds": [
+        "chfn -R <path>",
+        "chfn --root <path>"
+      ]
+    },
+    {
+      "description": "display this help message and exit",
+      "cmds": [
+        "chfn -u <arg>",
+        "chfn --help <arg>"
+      ]
+    },
+    {
+      "description": "change user's office phone number --extrausers              Use the extra users database",
+      "cmds": [
+        "chfn -w <user>",
+        "chfn --work-phone <user>"
+      ]
+    },
+    {
+      "description": "Use the extra users database",
+      "cmd": "chfn --extrausers"
+    }
+  ],
+  "chsh": [
+    {
+      "description": "View documentation for the original command",
+      "cmd": "tldr chpass"
+    },
+    {
+      "description": "display this help message and exit",
+      "cmds": [
+        "chsh -h <arg>",
+        "chsh --help <arg>"
+      ]
+    },
+    {
+      "description": "directory to chroot into",
+      "cmds": [
+        "chsh -R <path>",
+        "chsh --root <path>"
+      ]
+    },
+    {
+      "description": "new login shell for the user account",
+      "cmds": [
+        "chsh -s <user>",
+        "chsh --shell <user>"
+      ]
+    }
+  ],
+  "cal": [
+    {
+      "description": "Display a calendar for the current month",
+      "cmd": "cal"
+    },
+    {
+      "description": "Display a calendar for a specific year",
+      "cmd": "cal {{year}}"
+    },
+    {
+      "description": "Display a calendar for a specific month and year",
+      "cmd": "cal {{month}} {{year}}"
+    },
+    {
+      "description": "Display a calendar for the current [y]ear",
+      "cmd": "cal -y"
+    },
+    {
+      "description": "Display [j]ulian days (starting from one, numbered from January 1)",
+      "cmd": "cal -j"
+    },
+    {
+      "description": "Use [m]onday as week start instead of Sunday",
+      "cmd": "cal -m"
+    },
+    {
+      "description": "Number [w]eek numbers (incompatible with `-j`)",
+      "cmd": "cal -w"
+    }
+  ]
+}

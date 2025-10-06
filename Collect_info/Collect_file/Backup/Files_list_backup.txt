@@ -1,0 +1,36 @@
+1 extract_window_events.sh - Collect_file - Visual Studio Code
+2 script_to_get_title.sh - all_script - Visual Studio Code
+3 corrected_monitor_windows.sh - all_script - Visual Studio Code
+4 window_changes.log - Collect_file - Visual Studio Code
+5 monitor_vscode.sh - all_script - Visual Studio Code
+6 fermeture.sh - all_script - Visual Studio Code
+7 monitor_windos.sh - all_script - Visual Studio Code
+8 _window.sh - all_script - Visual Studio Code
+9 corrected_try_script.sh - all_script - Visual Studio Code
+10 new_script_open.sh - all_script - Visual Studio Code
+11 try_script.sh - all_script - Visual Studio Code
+12 with_audit.sh - all_script - Visual Studio Code
+13 test.txt - Collect_file - Visual Studio Code
+14 Opened_file.txt - Collect_file - Visual Studio Code
+15 Closed_file.txt - Collect_file - Visual Studio Code
+16 THE_COMMAND.txt - all_script - Visual Studio Code
+17 window_changes.log - all_script - Visual Studio Code
+18 corrected_monitor_windows.sh - Collect_file - Visual Studio Code
+19 Opened_file_true.txt - Collect_file - Visual Studio Code
+20 get_collect_file.py - Collect_file - Visual Studio Code
+21 Closed_file_true.txt - Collect_file - Visual Studio Code
+22 opened_test.txt - Collect_file - Visual Studio Code
+23 test1 - Collect_file - Visual Studio Code
+24 Titles.txt - all_script - Visual Studio Code
+25 prev_windows.txt - Collect_file - Visual Studio Code
+26 corrected_opened_closed_file2.py - Collect_file - Visual Studio Code
+27 test1.txt - Collect_file - Visual Studio Code
+28 collect_script.sh - Collect_file - Visual Studio Code
+29 test_file_opened.txt - all_script - Visual Studio Code
+30 code - all_script - Visual Studio Code
+31 Google Calendar - Week of July 20, 2025 - Google Chrome
+32 Preview READme.md - Collect_file - Visual Studio Code
+33 correct_opened-closed_file.py - Collect_file - Visual Studio Code
+34 correct_Opened_file.py - Collect_file - Visual Studio Code
+35 READme.md - Collect_file - Visual Studio Code
+36 THE_COMMAND.txt - Collect_file - Visual Studio Code

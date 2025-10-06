@@ -1,0 +1,5 @@
+Train(|num|, prix, date_creation, #num_type, #num_constructeur)
+Type(|num|, nom, vitesseMax)
+Constructeur(|num|, nom, note, adresse)
+Technicien(|num|, nom, genre, date_entre, salaire, conges, heures)
+Repare(#numero_Train, #numero_Technicien)

@@ -1,0 +1,246 @@
+{
+  "dumpsys": [
+    {
+      "description": "Get diagnostic output for all system services",
+      "cmd": "dumpsys"
+    },
+    {
+      "description": "Get diagnostic output for a specific system service",
+      "cmd": "dumpsys {{service}}"
+    },
+    {
+      "description": "List all services `dumpsys` can give information about",
+      "cmd": "dumpsys -l"
+    },
+    {
+      "description": "List service-specific arguments for a service",
+      "cmd": "dumpsys {{service}} -h"
+    },
+    {
+      "description": "Exclude a specific service from the diagnostic output",
+      "cmd": "dumpsys --skip {{service}}"
+    },
+    {
+      "description": "Specify a [t]imeout period in seconds (defaults to 10s)",
+      "cmd": "dumpsys -t {{8}}"
+    }
+  ],
+  "wm": [
+    {
+      "description": "Display the physical size of an Android device's screen",
+      "cmd": "wm size"
+    },
+    {
+      "description": "Display the physical density of an Android device's screen",
+      "cmd": "wm density"
+    }
+  ],
+  "pkg": [
+    {
+      "description": "Upgrade all installed packages",
+      "cmd": "pkg upgrade"
+    },
+    {
+      "description": "Install a package",
+      "cmd": "pkg install {{package}}"
+    },
+    {
+      "description": "Uninstall a package",
+      "cmd": "pkg uninstall {{package}}"
+    },
+    {
+      "description": "Reinstall a package",
+      "cmd": "pkg reinstall {{package}}"
+    },
+    {
+      "description": "Search for a package",
+      "cmd": "pkg search {{package}}"
+    }
+  ],
+  "bugreportz": [
+    {
+      "description": "Generate a complete zipped bug report of an Android device",
+      "cmd": "bugreportz"
+    },
+    {
+      "description": "Show the progress of a running `bugreportz` operation",
+      "cmd": "bugreportz -p"
+    },
+    {
+      "description": "Write the content of an Android bug report to `stdout`",
+      "cmd": "bugreportz -s"
+    },
+    {
+      "description": "Display help",
+      "cmd": "bugreportz -h"
+    },
+    {
+      "description": "Display version",
+      "cmd": "bugreportz -v"
+    }
+  ],
+  "getprop": [
+    {
+      "description": "Display information about Android system properties",
+      "cmd": "getprop"
+    },
+    {
+      "description": "Display information about a specific property",
+      "cmd": "getprop {{property}}"
+    },
+    {
+      "description": "Display the SDK API level",
+      "cmd": "getprop {{ro.build.version.sdk}}"
+    },
+    {
+      "description": "Display the Android version",
+      "cmd": "getprop {{ro.build.version.release}}"
+    },
+    {
+      "description": "Display the Android device model",
+      "cmd": "getprop {{ro.vendor.product.model}}"
+    },
+    {
+      "description": "Display the OEM unlock status",
+      "cmd": "getprop {{ro.oem_unlock_supported}}"
+    },
+    {
+      "description": "Display the MAC address of the Android's Wi-Fi card",
+      "cmd": "getprop {{ro.boot.wifimacaddr}}"
+    }
+  ],
+  "pm": [
+    {
+      "description": "List all installed apps",
+      "cmd": "pm list packages"
+    },
+    {
+      "description": "List all installed [s]ystem apps",
+      "cmd": "pm list packages -s"
+    },
+    {
+      "description": "List all installed [3]rd-party apps",
+      "cmd": "pm list packages -3"
+    },
+    {
+      "description": "List apps matching specific keywords",
+      "cmd": "pm list packages {{keyword1 keyword2 ...}}"
+    },
+    {
+      "description": "Display a path of the APK of a specific app",
+      "cmd": "pm path {{app}}"
+    }
+  ],
+  "logcat": [
+    {
+      "description": "Display system logs",
+      "cmd": "logcat"
+    },
+    {
+      "description": "Write system logs to a [f]ile",
+      "cmd": "logcat -f {{path/to/file}}"
+    },
+    {
+      "description": "Display lines that match a `regex`",
+      "cmd": "logcat --regex {{regex}}"
+    },
+    {
+      "description": "Display logs for a specific PID",
+      "cmd": "logcat --pid {{pid}}"
+    },
+    {
+      "description": "Display logs for the process of a specific package",
+      "cmd": "logcat --pid $(pidof -s {{package}})"
+    }
+  ],
+  "am": [
+    {
+      "description": "Start the activity with a specific component and package [n]ame",
+      "cmd": "am start -n {{com.android.settings/.Settings}}"
+    },
+    {
+      "description": "Start an intent [a]ction and pass [d]ata to it",
+      "cmd": "am start -a {{android.intent.action.VIEW}} -d {{tel:123}}"
+    },
+    {
+      "description": "Start an activity matching a specific action and [c]ategory",
+      "cmd": "am start -a {{android.intent.action.MAIN}} -c {{android.intent.category.HOME}}"
+    },
+    {
+      "description": "Convert an intent to a URI",
+      "cmd": "am to-uri -a {{android.intent.action.VIEW}} -d {{tel:123}}"
+    }
+  ],
+  "settings": [
+    {
+      "description": "List the settings in the `global` namespace",
+      "cmd": "settings list {{global}}"
+    },
+    {
+      "description": "Get a value of a specific setting",
+      "cmd": "settings get {{global}} {{airplane_mode_on}}"
+    },
+    {
+      "description": "Set a specific value of a setting",
+      "cmd": "settings put {{system}} {{screen_brightness}} {{42}}"
+    },
+    {
+      "description": "Delete a specific setting",
+      "cmd": "settings delete {{secure}} {{screensaver_enabled}}"
+    }
+  ],
+  "screencap": [
+    {
+      "description": "Take a screenshot",
+      "cmd": "screencap {{path/to/file}}"
+    }
+  ],
+  "bugreport": [
+    {
+      "description": "Display a complete bug report of an Android device",
+      "cmd": "bugreport"
+    }
+  ],
+  "input": [
+    {
+      "description": "Send an event code for a single character to an Android device",
+      "cmd": "input keyevent {{event_code}}"
+    },
+    {
+      "description": "Send a text to an Android device (`%s` represents spaces)",
+      "cmd": "input text \"{{text}}\""
+    },
+    {
+      "description": "Send a single tap to an Android device",
+      "cmd": "input tap {{x_position}} {{y_position}}"
+    },
+    {
+      "description": "Send a swipe gesture to an Android device",
+      "cmd": "input swipe {{x_start}} {{y_start}} {{x_end}} {{y_end}} {{duration_in_ms}}"
+    },
+    {
+      "description": "Send a long press to an Android device using a swipe gesture",
+      "cmd": "input swipe {{x_position}} {{y_position}} {{x_position}} {{y_position}} {{duration_in_ms}}"
+    }
+  ],
+  "dalvikvm": [
+    {
+      "description": "Start a specific Java program",
+      "cmd": "dalvikvm -classpath {{path/to/file.jar}} {{classname}}"
+    }
+  ],
+  "cmd": [
+    {
+      "description": "[l]ist all running services",
+      "cmd": "cmd -l"
+    },
+    {
+      "description": "Call a specific service",
+      "cmd": "cmd {{service}}"
+    },
+    {
+      "description": "Call a service with specific arguments",
+      "cmd": "cmd {{service}} {{argument1 argument2 ...}}"
+    }
+  ]
+}
