@@ -47,6 +47,13 @@ def tokenize_input_to_elements(user_input: str) -> List[str]:
             attachable_allowed = False
             continue
         if looks_like_option(t):
+            # --- ✅ Gestion des options combinées (ex: -xzf) ---
+            if re.match(r"^-[a-zA-Z]{2,}$", t):
+                combined_opts = [f"-{ch}" for ch in t[1:]]
+                for opt in combined_opts:
+                    elems.append(f"{cmd} {opt}")
+                continue
+            # --- Fin du correctif ---
             if option_attachable:
                 elems.append(f"{cmd} {option_attachable} {t}")
             else:
