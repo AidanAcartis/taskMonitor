@@ -28,6 +28,39 @@ def looks_like_subcommand(tok: str) -> bool:
         return False
     return bool(re.match(r"^[a-zA-Z]+$", tok))
 
+def split_input_by_commands(user_input: str) -> List[str]:
+    """
+    Sépare l'input en plusieurs commandes si un séparateur est présent.
+    Séparateurs classiques: |, &&, ;, || 
+    """
+    # regex simple pour détecter les séparateurs au top-level (pas à l'intérieur de quotes)
+    parts = []
+    cur = []
+    in_s = None
+    i = 0
+    while i < len(user_input):
+        ch = user_input[i]
+        if ch in ("'", '"'):
+            if in_s is None:
+                in_s = ch
+            elif in_s == ch:
+                in_s = None
+            cur.append(ch)
+        elif in_s is None and user_input[i:i+2] in ("&&", "||"):
+            parts.append("".join(cur).strip())
+            cur = []
+            i += 1  # skip next char of &&
+        elif in_s is None and ch in ("|", ";"):
+            parts.append("".join(cur).strip())
+            cur = []
+        else:
+            cur.append(ch)
+        i += 1
+    if cur:
+        parts.append("".join(cur).strip())
+    return [p for p in parts if p != ""]
+
+
 # -------------------------
 # 2. Tokenization contextuelle
 # -------------------------
@@ -47,13 +80,6 @@ def tokenize_input_to_elements(user_input: str) -> List[str]:
             attachable_allowed = False
             continue
         if looks_like_option(t):
-            # --- ✅ Gestion des options combinées (ex: -xzf) ---
-            if re.match(r"^-[a-zA-Z]{2,}$", t):
-                combined_opts = [f"-{ch}" for ch in t[1:]]
-                for opt in combined_opts:
-                    elems.append(f"{cmd} {opt}")
-                continue
-            # --- Fin du correctif ---
             if option_attachable:
                 elems.append(f"{cmd} {option_attachable} {t}")
             else:
@@ -74,15 +100,61 @@ def tokenize_input_to_elements(user_input: str) -> List[str]:
 # 3. Type detection simple
 # -------------------------
 TYPE_REGEX = {
+    # Chemins et fichiers
+    "folder": re.compile(r"^(/|~)[\w\-/\.]+/?$"),
+    "file": re.compile(r"^(?!\d{1,3}(?:\.\d{1,3}){3}$)(?:[\w\-.]+|\./[\w\-.]+)$"),
+    "device": re.compile(r"^/dev/[^\s]+$"),
+    "envfile": re.compile(r"^(?:\.|/)?[\w\.-]+\.(?:env|conf|ini)$"),
+    "script": re.compile(r"^\./[\w\.-]+\.sh$"),
+    "archive": re.compile(r"^[\w\.-]+\.(?:tar|gz|zip|bz2|xz)$"),
+
+    # Réseau
+    "ip": re.compile(
+        r"^(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)"
+        r"\.(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)"
+        r"\.(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)"
+        r"\.(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)$"
+    ),
+    "ipv6": re.compile(r"^([0-9a-fA-F]{0,4}:){1,7}[0-9a-fA-F]{0,4}$"),
+    "port": re.compile(r"^\d{1,5}$"),
     "url": re.compile(r"^https?://[^\s]+$", re.IGNORECASE),
-    "ip": re.compile(r"^\d{1,3}(?:\.\d{1,3}){3}$"),
-    "port": re.compile(r"^\d+$"),
-    "file": re.compile(r"^[^\s]+\.[a-zA-Z0-9]+$"),
+    "remote_target": re.compile(r"^[\w.-]+@[\w\.-]+(:/[\w\./-]*)?$"),
+
+    # Données
+    "json": re.compile(r"^\{.*\}$"),
     "string": re.compile(r"^(['\"]).*\1$"),
+
+    # Nombres et unités
+    "number": re.compile(r"^-?\d+(\.\d+)?$"),
 }
 
-def detect_type(token: str, main_cmd: Optional[str] = None) -> str:
+# -------------------------------
+# 🔹 Dictionnaire de descriptions
+# -------------------------------
+TYPE_DESCRIPTION = {
+    "file": "File",
+    "folder": "Folder",
+    "device": "Device",
+    "envfile": "Environment file",
+    "script": "Script",
+    "archive": "Archive",
+    "ip": "IP address",
+    "ipv6": "IPv6 address",
+    "port": "Port number",
+    "url": "URL",
+    "json": "JSON",
+    "string": "String",
+    "number": "Number",
+    "remote_target": "Remote target",
+    "arg": "Argument",
+}
+
+def detect_type(token: str, main_cmd: Optional[str] = None, prev_token: Optional[str] = None) -> str:
     token = token.strip()
+    if not token:
+        return "arg"
+
+    # Commande principale
     if main_cmd and token == main_cmd:
         return "cmd"
     if main_cmd and token.startswith(main_cmd + " "):
@@ -92,12 +164,51 @@ def detect_type(token: str, main_cmd: Optional[str] = None) -> str:
             return "cmdopt"
     if " " in token and any(tok.startswith("-") for tok in token.split()[1:]):
         return "cmdopt"
-    for name, rx in TYPE_REGEX.items():
-        if rx.match(token):
+
+    # String / JSON
+    if (token.startswith('"') and token.endswith('"')) or (token.startswith("'") and token.endswith("'")):
+        inner = token[1:-1]
+        if TYPE_REGEX["json"].match(inner):
+            return "json"
+        return "string"
+
+    # Remote target
+    if TYPE_REGEX["remote_target"].match(token):
+        return "remote_target"
+
+    # IP, IPv6, URL
+    for name in ["ip", "ipv6", "url"]:
+        if TYPE_REGEX[name].match(token):
             return name
+
+    # -------------------------------
+    # 🎯 Détection contextuelle Port vs Nombre
+    # -------------------------------
+    if TYPE_REGEX["port"].match(token):
+        num = int(token)
+        # Si précédé d'une option de port explicite
+        if prev_token in ("-p", "--port", "--listen-port", "--connect-port"):
+            return "port"
+        # Si c’est un port probable (dans une commande réseau)
+        if main_cmd in ("ssh", "nc", "nmap", "telnet", "curl", "ftp") and 1 <= num <= 65535:
+            return "port"
+        # Sinon, c’est probablement un nombre
+        return "number"
+
+    # Nombres généraux
+    if TYPE_REGEX["number"].match(token):
+        return "number"
+
+    # Fichiers, dossiers...
+    for name in ["folder", "file", "device", "envfile", "script", "archive"]:
+        if TYPE_REGEX[name].match(token):
+            return name
+
     if token.startswith("-"):
         return "option"
+
     return "arg"
+
 
 def normalize_token(tok: str) -> str:
     return " ".join(tok.strip().split())
@@ -172,6 +283,7 @@ def expand_alternatives(pattern) -> List[str]:
 # -------------------------
 # 6. Description matching
 # -------------------------
+
 def describe_input_elements(input_elems: List[str], db: Dict[str, Any]) -> List[str]:
     results: List[str] = []
     if not input_elems:
@@ -238,24 +350,14 @@ def describe_input_elements(input_elems: List[str], db: Dict[str, Any]) -> List[
         print("\n=== FULL DESCRIPTION APPLIED ===")
         desc_full = matched_entry.get("description", "No description")
         for i, el in enumerate(input_elems):
+            prev_token = input_elems[i - 1] if i > 0 else None
+            el_type = detect_type(el, cmdname, prev_token)
+
             if i in matched_input_cmd_indices:
                 results.append(f"desc_{i}: {desc_full}")
-                # print(f" el_{i}: '{el}' -> FULL MATCH -> description: {desc_full}")
             else:
-                # fallback pour les éléments non-commande (args, url, string...)
-                el_type = input_types[i]
-                if el_type == "url":
-                    desc = f"URL '{el}'"
-                elif el_type == "file":
-                    desc = f"File '{el}'"
-                elif el_type == "string":
-                    desc = f"String {el}"
-                elif el_type == "cmdopt":
-                    desc = f"Option {el}"
-                elif el_type == "cmd":
-                    desc = f"Command '{el}'"
-                else:
-                    desc = f"Argument {el}"
+                desc_label = TYPE_DESCRIPTION.get(el_type, "Argument")
+                desc = f"{desc_label} '{el}'"
                 results.append(f"desc_{i}: {desc}")
                 # print(f" el_{i}: '{el}' -> fallback type '{el_type}' -> description: {desc}")
         return results
@@ -327,21 +429,13 @@ def describe_input_elements(input_elems: List[str], db: Dict[str, Any]) -> List[
         # assign description (matched_sub_desc ou fallback)
         if matched_sub_desc:
             desc = matched_sub_desc
-            # print(f" el_{i}: '{el}' -> matched sub-command -> description: {desc}")
         else:
-            el_type = input_types[i]
-            if el_type == "url":
-                desc = f"URL '{el}'"
-            elif el_type == "file":
-                desc = f"File '{el}'"
-            elif el_type == "string":
-                desc = f"String {el}"
-            elif el_type == "cmdopt":
-                desc = f"Option {el}"
-            elif el_type == "cmd":
-                desc = f"Command '{el}'"
-            else:
-                desc = f"Argument {el}"
+            prev_token = input_elems[i - 1] if i > 0 else None
+            el_type = detect_type(el, cmdname, prev_token)
+            desc_label = TYPE_DESCRIPTION.get(el_type, "Argument")
+            desc = f"{desc_label} '{el}'"
+
+
             # print(f" el_{i}: '{el}' -> fallback type '{el_type}' -> description: {desc}")
 
         results.append(f"desc_{i}: {desc}")
@@ -362,15 +456,19 @@ def main():
         print("Empty input.")
         return
 
-    input_elems = tokenize_input_to_elements(user_input)
-    print("\nElement analysis:")
-    for i, e in enumerate(input_elems):
-        print(f"  el_{i}: {e}")
+    # Séparer l'input en plusieurs commandes
+    commands = split_input_by_commands(user_input)
+    for idx, cmd in enumerate(commands):
+        print(f"\n=== Command {idx+1} ===")
+        input_elems = tokenize_input_to_elements(cmd)
+        print("Element analysis:")
+        for i, e in enumerate(input_elems):
+            print(f"  el_{i}: {e}")
+        results = describe_input_elements(input_elems, db)
+        print("Descriptions found:")
+        for r in results:
+            print(" ", r)
 
-    results = describe_input_elements(input_elems, db)
-    print("\nDescriptions found:")
-    for r in results:
-        print(" ", r)
 
 if __name__ == "__main__":
     main()
