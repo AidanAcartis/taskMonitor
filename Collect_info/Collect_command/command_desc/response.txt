@@ -1,0 +1,106 @@
+(myenv) aidan@aidan-Lenovo-N50-70:~/Documents/Projects/Visualization/Collect_info/Collect_command/command_desc$ python3 test3.py 
+Enter command: curl -d '{"name":"bob"}' -H "Content-Type: application/json" https://example.com/users/1234
+
+Element analysis:
+  el_0: curl
+  el_1: curl -d
+  el_2: '{"name":"bob"}'
+  el_3:curl -H
+  el_4: "Content-Type: application/json"
+  el_5: https://example.com/users/1234
+
+=== FULL DESCRIPTION CHECK ===
+On a dabord input: ["curl", "curl -d", "'{"name":"bob"}'", "curl -H", "Content-Type: application/json", "https://example.com/users/1234"]
+only cmd:[el_0:"curl", el_1:"curl -d", el_2"curl -H"]
+
+check cmd_0: ["curl", "{{https://example.com}}"] => only cmd [pe_0: curl]
+=> Pour cmd_0, el_0 et pe_0 correspondent
+mais ce n'est pas encore un full match
+
+el_1 et pe_1 ne correspondent pas , alors pas de full match, on passe a cmd_1,
+....
+quelque part, on :
+{
+      "description": "Send data in JSON format, specifying the appropriate Content-Type header",
+      "cmd": "curl {{[-d|--data]}} {{'{\"name\":\"bob\"}'}} {{[-H|--header]}} {{'Content-Type: application/json'}} {{http://example.com/users/1234}}"
+    }, 
+
+notons cmd_{x}:
+pattern_token : ["curl", "curl -d/curl --data", "\"name\":\"bob\", "curl -H/curl --header", "{{'Content-Type: application/json'}}", "{{http://example.com/users/1234}}"]
+seulement les commandes : [pe_0:"curl", pe_1:"curl -d/curl --data", pe_2"curl -H/curl --header"]
+
+Ici => toutes les el_i correspondent au pe_i
+=> On a un full match
+desc: "Send data in JSON format, specifying the appropriate Content-Type header",
+
+Dans le cas, ou on a pas un full match :
+
+=== DESCRIPTION SEQUENTIELLE (fallback, retokenized) ===
+el_0: 'curl' 
+el_1: 'curl -d' 
+el_2: ''{"name":"bob"}'' 
+el_3: 'curl -H' 
+el_4: '"Content-Type: application/json"'
+el_5: 'https://example.com/users/1234' 
+
+input-token : ["curl", "curl -d", "'{"name":"bob"}'", "curl -H", "Content-Type: application/json", "https://example.com/users/1234"]
+only cmd:[el_0:"curl", el_1:"curl -d", el_2"curl -H"]
+
+Puisque qu'on avait pas de full match, on va trouver une correspondance pour chaque el_i:
+on va nommer input_i:
+
+el_0 -> input_0 : ["curl"] 
+el_1 -> input_1 : ["curl -d"]
+el_2 -> input_2 : ["curl -H"]
+
+On va chercher un match pour chaque input_i:
+** input_0 : ["curl"] 
+il correspond a cmd_0: [pe_0:"curl"]
+
+** input_1: [el_0:"curl", el_1:"curl -d"](on tokenize)
+dans le db, on a :"{
+      "description": "HTTP POST data",
+      "cmds": [
+        "curl -d <arg>",
+        "curl --data <arg>"
+      ]
+    },"
+cmd : [pe_0:"curl", pe_1:"culd -d/curl --data", "<arg>"],
+seulement les cmd : [pe_0:"curl", pe_1:"culd -d/curl --data"]
+input_1: [el_0:"curl", el_1:"curl -d"]
+cmd : [pe_0:"curl", pe_1:"culd -d/curl --data"]
+
+=>On a full match pour les el_i et pe_i
+
+Descriptions found:
+  desc_0: "Make an HTTP GET request and dump the contents in `stdout`"
+  desc_1: "HTTP POST data"
+  desc_2: Argument '{"name":"bob"}'
+  desc_3: commande curl -H
+  desc_4: Argument "Content-Type: application/json"
+  desc_5: URL 'https://example.com/users/1234' 
+
+
+db:"{
+      "description": "Send data in JSON format, specifying the appropriate Content-Type header",
+      "cmd": "curl {{[-d|--data]}} {{'{\"name\":\"bob\"}'}} {{[-H|--header]}} {{'Content-Type: application/json'}} {{http://example.com/users/1234}}"
+    }, {
+      "description": "HTTP POST data",
+      "cmds": [
+        "curl -d <arg>",
+        "curl --data <arg>"
+      ]
+    },
+    {
+      "description": "HTTP header",
+      "cmds": [
+        "curl -H <arg>",
+        "curl --header <arg>"
+      ]
+    },
+
+Mon erreur est de pratiquer ceci 
+'Remarque: meme si il y en a encore el_3, jusqu'a el_p, mais el_0 jusqu'a el_3 correspond a 
+tous les tokens de type commande du pattern, on ajoute une description' dans le code 
+=> Gravement faux,
+On ne doit accepter que si tous les el_i correspond a tous les pe_i
