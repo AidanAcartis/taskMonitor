@@ -88,7 +88,7 @@ def repair_combined_flags_in_command(cmd: str) -> str:
     repaired_tokens = []
 
     # Commandes pour lesquelles on ne splitte pas les flags (case-insensitive)
-    SKIP_SPLIT_CMDS = {"nmap", "openssl"}
+    SKIP_SPLIT_CMDS = {"nmap", "openssl", "ntlmrelayx"}
 
     # Repérer la commande principale (si présente)
     main_cmd = tokens[0] if tokens else ""
@@ -344,6 +344,9 @@ def detect_type(token: str, main_cmd: Optional[str] = None, prev_token: Optional
 
     if main_cmd == "python" and prev_token and prev_token.strip().endswith("-m"):
         return "python_module"
+    
+    if token.lower() in SERVER:
+                return "server"
 
     if TYPE_REGEX["arg_type"].match(token):
         # But be careful: don't treat things that look like domain/ip/url as arg
@@ -374,8 +377,8 @@ def detect_type(token: str, main_cmd: Optional[str] = None, prev_token: Optional
                 return "network_interface"
 
             # si c’est "nginx" ou "apache", on renvoie "server" show
-            if token.lower() in SERVER:
-                return "server"
+            # if token.lower() in SERVER:
+            #     return "server"
             
             return name
 
@@ -537,20 +540,43 @@ def describe_input_elements(input_elems: List[str], db: Dict[str, Any]) -> List[
 
     # si full match, on applique la description sur les éléments de type commande correspondants
     if matched_entry:
+        # print("\n=== FULL DESCRIPTION APPLIED ===")
+        # desc_full = matched_entry.get("description", "No description")
+        # for i, el in enumerate(input_elems):
+        #     prev_token = input_elems[i - 1] if i > 0 else None
+        #     el_type = detect_type(el, cmdname, prev_token, index=i)
+
+        #     if i in matched_input_cmd_indices:
+        #         results.append(f"desc_{i}: {desc_full}")
+        #     else:
+        #         desc_label = TYPE_DESCRIPTION.get(el_type, "Argument")
+        #         desc = f"{desc_label} '{el}'"
+        #         results.append(f"desc_{i}: {desc}")
+        #         # print(f" el_{i}: '{el}' -> fallback type '{el_type}' -> description: {desc}")
+        # return results
         print("\n=== FULL DESCRIPTION APPLIED ===")
         desc_full = matched_entry.get("description", "No description")
+        results_dict = {}
+
         for i, el in enumerate(input_elems):
             prev_token = input_elems[i - 1] if i > 0 else None
             el_type = detect_type(el, cmdname, prev_token, index=i)
 
+            # description principale
             if i in matched_input_cmd_indices:
-                results.append(f"desc_{i}: {desc_full}")
+                results_dict["desc_cmd"] = desc_full
             else:
                 desc_label = TYPE_DESCRIPTION.get(el_type, "Argument")
-                desc = f"{desc_label} '{el}'"
-                results.append(f"desc_{i}: {desc}")
-                # print(f" el_{i}: '{el}' -> fallback type '{el_type}' -> description: {desc}")
-        return results
+                results_dict[f"desc_arg_{i}"] = f"{desc_label} '{el}'"
+
+        # affichage
+        # print("Descriptions found:")
+        # for k, v in results_dict.items():
+        #     print(f"  {k}: {v}")
+
+        # retour optionnel si tu veux l'utiliser ailleurs
+        return [f"{k}: {v}" for k, v in results_dict.items()]
+
 
     # Sinon -> DESCRIPTION SEQUENTIELLE (retokenize each el_i and try to match)
     print("\n=== DESCRIPTION SEQUENTIELLE (retokenized per element) ===")
