@@ -166,11 +166,11 @@
     },
     {
       "description": "Encode from `stdin` to `stdout`",
-      "cmd": "{{command}} | base64"
+      "cmd": "base64"
     },
     {
       "description": "Decode from `stdin` to `stdout`",
-      "cmd": "{{command}} | base64 {{[-d|--decode]}}"
+      "cmd": "base64 {{[-d|--decode]}}"
     },
     {
       "description": "decode data",
@@ -237,23 +237,23 @@
   "sed": [
     {
       "description": "Replace all `apple` (basic `regex`) occurrences with `mango` (basic `regex`) in all input lines and print the result to `stdout`",
-      "cmd": "{{command}} | sed 's/apple/mango/g'"
+      "cmd": "sed 's/apple/mango/g'"
     },
     {
       "description": "Execute a specific script [f]ile and print the result to `stdout`",
-      "cmd": "{{command}} | sed -f {{path/to/script.sed}}"
+      "cmd": "sed -f {{path/to/script.sed}}"
     },
     {
       "description": "Delay opening each file until a command containing the related `w` function or flag is applied to a line of input",
-      "cmd": "{{command}} | sed -fa {{path/to/script.sed}}"
+      "cmd": "sed -fa {{path/to/script.sed}}"
     },
     {
       "description": "Replace all `apple` (extended `regex`) occurrences with `APPLE` (extended `regex`) in all input lines and print the result to `stdout`",
-      "cmd": "{{command}} | sed -E 's/(apple)/\\U\\1/g'"
+      "cmd": "sed -E 's/(apple)/\\U\\1/g'"
     },
     {
       "description": "Print just a first line to `stdout`",
-      "cmd": "{{command}} | sed -n '1p'"
+      "cmd": "sed -n '1p'"
     },
     {
       "description": "Replace all `apple` (basic `regex`) occurrences with `mango` (basic `regex`) in a specific file and overwrite the original file in place",

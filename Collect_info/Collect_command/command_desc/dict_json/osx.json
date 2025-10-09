@@ -1397,11 +1397,11 @@
     },
     {
       "description": "Encode from `stdin` to `stdout`",
-      "cmd": "{{command}} | base64"
+      "cmd": "base64"
     },
     {
       "description": "Decode from `stdin` to `stdout`",
-      "cmd": "{{command}} | base64 {{[-d|--decode]}}"
+      "cmd": "base64 {{[-d|--decode]}}"
     },
     {
       "description": "decode data",
@@ -1610,11 +1610,11 @@
   "cut": [
     {
       "description": "Print a specific character/field range of each line",
-      "cmd": "{{command}} | cut -{{c|f}} {{1|1,10|1-10|1-|-10}}"
+      "cmd": "cut -{{c|f}} {{1|1,10|1-10|1-|-10}}"
     },
     {
       "description": "Print a field range of each line with a specific delimiter",
-      "cmd": "{{command}} | cut -d \"{{,}}\" -f {{1}}"
+      "cmd": "cut -d \"{{,}}\" -f {{1}}"
     },
     {
       "description": "Print a character range of each line of a specific file",
@@ -3010,23 +3010,23 @@
   "rargs": [
     {
       "description": "Execute a command for every line of input, just like `xargs` (`{0}` indicates where to substitute in the text)",
-      "cmd": "{{command}} | rargs {{command}} {0}"
+      "cmd": "rargs {{command}} {0}"
     },
     {
       "description": "Do a dry run, which prints the commands that would be run instead of executing them",
-      "cmd": "{{command}} | rargs -e {{command}} {0}"
+      "cmd": "rargs -e {{command}} {0}"
     },
     {
       "description": "Remove the `.bak` extension from every file in a list",
-      "cmd": "{{command}} | rargs -p '(.*).bak mv {0} {1}"
+      "cmd": "rargs -p '(.*).bak mv {0} {1}"
     },
     {
       "description": "Execute commands in parallel",
-      "cmd": "{{command}} | rargs -w {{max-procs}}"
+      "cmd": "rargs -w {{max-procs}}"
     },
     {
       "description": "Consider each line of input to be separated by a NUL character (`\\0`) instead of a newline (`\\n`)",
-      "cmd": "{{command}} | rargs -0 {{command}} {0}"
+      "cmd": "rargs -0 {{command}} {0}"
     }
   ],
   "safeejectgpu": [
@@ -3116,19 +3116,19 @@
   "sed": [
     {
       "description": "Replace all `apple` (basic `regex`) occurrences with `mango` (basic `regex`) in all input lines and print the result to `stdout`",
-      "cmd": "{{command}} | sed 's/apple/mango/g'"
+      "cmd": "sed 's/apple/mango/g'"
     },
     {
       "description": "Execute a specific script [f]ile and print the result to `stdout`",
-      "cmd": "{{command}} | sed -f {{path/to/script_file.sed}}"
+      "cmd": "sed -f {{path/to/script_file.sed}}"
     },
     {
       "description": "Replace all `apple` (extended `regex`) occurrences with `APPLE` (extended `regex`) in all input lines and print the result to `stdout`",
-      "cmd": "{{command}} | sed -E 's/(apple)/\\U\\1/g'"
+      "cmd": "sed -E 's/(apple)/\\U\\1/g'"
     },
     {
       "description": "Print just a first line to `stdout`",
-      "cmd": "{{command}} | sed -n '1p'"
+      "cmd": "sed -n '1p'"
     },
     {
       "description": "Replace all `apple` (basic `regex`) occurrences with `mango` (basic `regex`) in a `file` and save a backup of the original to `file.bak`",
@@ -3252,7 +3252,7 @@
     },
     {
       "description": "Reverse each line from `stdin` to `stdout`",
-      "cmd": "{{command}} | rev"
+      "cmd": "rev"
     },
     {
       "description": "display this help",

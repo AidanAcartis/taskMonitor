@@ -18918,6 +18918,12 @@
       ]
     },
     {
+      "description": "Display the current firewall rules and chains configured in iptables.",
+      "cmds": [
+        "iptables -L <arg>"
+      ]
+    },
+    {
       "description": "-C chain\t\tCheck for the existence of a rule",
       "cmds": [
         "iptables --check <arg>"
@@ -31524,6 +31530,12 @@
     }
   ],
   "systemd-resolve": [
+    {
+      "description": "Displays the current DNS and network resolver status.",
+      "cmd": [
+        "systemd-resolve --status"
+      ]
+    },
     {
       "description": "View documentation for `resolvectl`",
       "cmd": "tldr resolvectl"

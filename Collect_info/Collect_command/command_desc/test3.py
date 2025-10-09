@@ -60,12 +60,56 @@ def split_input_by_commands(user_input: str) -> List[str]:
         parts.append("".join(cur).strip())
     return [p for p in parts if p != ""]
 
+def split_combined_flags(token: str) -> List[str]:
+    """
+    Si token = '-xvz', renvoie ['-x', '-v', '-z'].
+    Sinon renvoie [token].
+    Ne touche pas aux options longues comme --help.
+    """
+    if token.startswith("--") or len(token) <= 2 or not token.startswith("-"):
+        return [token]
+    return [f"-{c}" for c in token[1:]]
+
+def describe_script_input(token: str) -> Optional[str]:
+    """
+    If the token is a local script like './script.sh', return a description.
+    """
+    if TYPE_REGEX["script"].match(token):
+        return f"Run the script '{token}'"
+    return None
+
+def repair_combined_flags_in_command(cmd: str) -> str:
+    """
+    Remplace les flags combinés dans une commande par leur version séparée.
+    Ex: 'tar -xvz /tmp' -> 'tar -x -v -z /tmp'
+    ⚠️ Nmap et OpenSSL sont épargnés pour ne pas casser leurs options/sous-commandes.
+    """
+    tokens = safe_shlex_split(cmd)
+    repaired_tokens = []
+
+    # Commandes pour lesquelles on ne splitte pas les flags (case-insensitive)
+    SKIP_SPLIT_CMDS = {"nmap", "openssl"}
+
+    # Repérer la commande principale (si présente)
+    main_cmd = tokens[0] if tokens else ""
+    is_skip_cmd = main_cmd.lower() in SKIP_SPLIT_CMDS
+
+    for t in tokens:
+        if is_skip_cmd:
+            # Ne rien splitter pour les commandes listées, juste ajouter le token
+            repaired_tokens.append(t)
+        else:
+            repaired_tokens.extend(split_combined_flags(t))
+
+    return " ".join(repaired_tokens)
+
 
 # -------------------------
 # 2. Tokenization contextuelle
 # -------------------------
 def tokenize_input_to_elements(user_input: str) -> List[str]:
     toks = safe_shlex_split(user_input)
+
     if not toks:
         return []
 
@@ -75,10 +119,12 @@ def tokenize_input_to_elements(user_input: str) -> List[str]:
     attachable_allowed = True
 
     for t in toks[1:]:
+
         if is_quoted(t):
             elems.append(t)
             attachable_allowed = False
             continue
+
         if looks_like_option(t):
             if option_attachable:
                 elems.append(f"{cmd} {option_attachable} {t}")
@@ -86,6 +132,7 @@ def tokenize_input_to_elements(user_input: str) -> List[str]:
                 elems.append(f"{cmd} {t}")
             attachable_allowed = False
             continue
+
         if attachable_allowed and looks_like_subcommand(t):
             option_attachable = t
             elems.append(f"{cmd} {t}")
@@ -99,10 +146,22 @@ def tokenize_input_to_elements(user_input: str) -> List[str]:
 # -------------------------
 # 3. Type detection simple
 # -------------------------
+HTTP_METHODS = ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS", "HEAD"]
+SERVER = ["nginx", "apache"]
+GATEWAY = ["gw"]
+TCPDUMP_OPTIONS = {
+    "-i": "network_interface",
+    "-w": "file"
+}
+HYDRA_OPTIONS = {
+    "-l": "username"
+}
+ARG_TYPE = ["root", "ssh", "port", "verbose", "show", "default", "get"]
+INTERFACE_CMDS = ["ethtool", "ip", "ifconfig", "tcpdump"]
 TYPE_REGEX = {
     # Chemins et fichiers
-    "folder": re.compile(r"^(/|~)[\w\-/\.]+/?$"),
-    "file": re.compile(r"^(?!\d{1,3}(?:\.\d{1,3}){3}$)(?:[\w\-.]+|\./[\w\-.]+)$"),
+    "folder": re.compile(r"^(/|~)[\w\-/]+/?$"),
+    "file": re.compile(r"^(?:/[\w\-/]+|\.?/[\w\-/]+|[\w\-.]+)\.[\w]+$"),
     "device": re.compile(r"^/dev/[^\s]+$"),
     "envfile": re.compile(r"^(?:\.|/)?[\w\.-]+\.(?:env|conf|ini)$"),
     "script": re.compile(r"^\./[\w\.-]+\.sh$"),
@@ -119,6 +178,22 @@ TYPE_REGEX = {
     "port": re.compile(r"^\d{1,5}$"),
     "url": re.compile(r"^https?://[^\s]+$", re.IGNORECASE),
     "remote_target": re.compile(r"^[\w.-]+@[\w\.-]+(:/[\w\./-]*)?$"),
+    "http_method": re.compile(r"^(?:" + "|".join(HTTP_METHODS) + r")$", re.IGNORECASE),
+    "server": re.compile(r"^(?:" + "|".join(SERVER) + r")$", re.IGNORECASE),
+    "domain": re.compile(
+            r"^(?:[a-zA-Z0-9][a-zA-Z0-9-]*\.)+"  # sous-domaines
+            r"(com|net|org|info|biz|name|xyz|online|site|tech|app|"  # gTLD modernes
+            r"fr|us|uk|de|jp|io|"                                      # ccTLD
+            r"edu|gov|mil)"                                           # spécial/sponsorisé
+            r"(?::\d{1,5})?$"                                         # port optionnel
+        ),
+    "dns_type": re.compile(r"^(A|AAAA|MX|CNAME|TXT|NS|SOA|PTR|SRV|CAA)$", re.IGNORECASE),
+    "port_range": re.compile(r"^\d{1,5}-\d{1,5}$"),
+    # cidr IPv4 simple ex: 192.168.1.0/24
+    "cidr": re.compile(r"^(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)"
+                       r"(?:\.(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)){3}"
+                       r"/(?:[0-9]|[12]\d|3[0-2])$"),
+    "arg_type": re.compile(r"^[a-zA-Z][a-zA-Z0-9_-]{0,19}$"),
 
     # Données
     "json": re.compile(r"^\{.*\}$"),
@@ -147,12 +222,25 @@ TYPE_DESCRIPTION = {
     "number": "Number",
     "remote_target": "Remote target",
     "arg": "Argument",
+    "server": "Server",
+    "http_method": "Http method",
+    "domain": "Website / Domain",
+    "dns_type": "DNS record type",
+    "network_interface": "Network interface",
+    "port_range": "Port range",
+    "cidr": "Network (CIDR)",
+    "gateway": "Gateway",
+    "username": "Username",
+    "python_module": "Python module"
 }
 
-def detect_type(token: str, main_cmd: Optional[str] = None, prev_token: Optional[str] = None) -> str:
+def detect_type(token: str, main_cmd: Optional[str] = None, prev_token: Optional[str] = None, index: Optional[int] = None) -> str:
     token = token.strip()
     if not token:
         return "arg"
+
+    if index == 0:
+        return "cmd"
 
     # Commande principale
     if main_cmd and token == main_cmd:
@@ -164,30 +252,61 @@ def detect_type(token: str, main_cmd: Optional[str] = None, prev_token: Optional
             return "cmdopt"
     if " " in token and any(tok.startswith("-") for tok in token.split()[1:]):
         return "cmdopt"
-
-    # String / JSON
-    if (token.startswith('"') and token.endswith('"')) or (token.startswith("'") and token.endswith("'")):
+    
+    prev_last = None
+    if prev_token:
+        prev_last = prev_token.strip().split()[-1]
+    
+    # String / JSON / URL
+    if is_quoted(token):
         inner = token[1:-1]
+        # JSON check
         if TYPE_REGEX["json"].match(inner):
             return "json"
+        # URL check
+        if TYPE_REGEX["url"].match(inner):
+            return "url"
         return "string"
-
+    
+    # if token in ARG_TYPE:
+    #     return "arg"
+    if main_cmd == "python" and prev_token == "-m":
+        return "python_module"
+    
     # Remote target
     if TYPE_REGEX["remote_target"].match(token):
         return "remote_target"
-
+    
+    if TYPE_REGEX["domain"].match(token):
+        return "domain"
+    
     # IP, IPv6, URL
     for name in ["ip", "ipv6", "url"]:
         if TYPE_REGEX[name].match(token):
             return name
+    
+     # CIDR (ex: 192.168.1.0/24)
+    if TYPE_REGEX["cidr"].match(token):
+        return "cidr"
 
+    # Port range (ex: 1-1024)
+    if TYPE_REGEX["port_range"].match(token):
+        # valider les bornes numériquement (optionnel mais recommandé)
+        a, b = token.split("-", 1)
+        try:
+            ai = int(a); bi = int(b)
+            if 0 <= ai <= 65535 and 0 <= bi <= 65535:
+                return "port_range"
+        except Exception:
+            pass
+    
     # -------------------------------
     # 🎯 Détection contextuelle Port vs Nombre
     # -------------------------------
     if TYPE_REGEX["port"].match(token):
         num = int(token)
         # Si précédé d'une option de port explicite
-        if prev_token in ("-p", "--port", "--listen-port", "--connect-port"):
+        if prev_token in ("-p", "--port", "--listen-port", "--connect-port", "port", "http.server", "redis-cli -p"):
             return "port"
         # Si c’est un port probable (dans une commande réseau)
         if main_cmd in ("ssh", "nc", "nmap", "telnet", "curl", "ftp") and 1 <= num <= 65535:
@@ -198,11 +317,68 @@ def detect_type(token: str, main_cmd: Optional[str] = None, prev_token: Optional
     # Nombres généraux
     if TYPE_REGEX["number"].match(token):
         return "number"
+    
+    if main_cmd == "tcpdump" and prev_token:
+        last = prev_token.split()[-1]
+        if last == "port":
+            return "port" if TYPE_REGEX["port"].match(token) else "arg"
+
+    # TCPDUMP contextual detection
+    if main_cmd == "tcpdump" and prev_token:
+        last = prev_token.split()[-1]
+        if last in TCPDUMP_OPTIONS:
+            return TCPDUMP_OPTIONS[last]
+        
+    if token.lower() in GATEWAY:
+                return "gateway"
+    
+    if main_cmd == "hydra" and prev_last:
+                if prev_last in HYDRA_OPTIONS:
+                    return HYDRA_OPTIONS[prev_last]
+                
+    if token.upper() in HTTP_METHODS:
+        return "http_method"
+    
+    if TYPE_REGEX["domain"].match(token):
+        return "domain"
+
+    if main_cmd == "python" and prev_token and prev_token.strip().endswith("-m"):
+        return "python_module"
+
+    if TYPE_REGEX["arg_type"].match(token):
+        # But be careful: don't treat things that look like domain/ip/url as arg
+        if not (TYPE_REGEX["domain"].match(token) or TYPE_REGEX["ip"].match(token) or TYPE_REGEX["url"].match(token) or TYPE_REGEX["dns_type"].match(token)):
+            return "arg"
 
     # Fichiers, dossiers...
     for name in ["folder", "file", "device", "envfile", "script", "archive"]:
         if TYPE_REGEX[name].match(token):
+            if TYPE_REGEX[name].match(token) or token == ".":
+                return "folder" if token == "." else name
+            # if main_cmd and "." in token:
+            #     return "domain"  # ou "Website / Domain"
+            # #in ("dig", "ping", "host", "openssl")
+
+            # if main_cmd and token.upper() in HTTP_METHODS:
+            #     return "http_method"
+            # #in ("curl", "http", "wget")
+            # Python module detection
+            
+            if main_cmd == "host" and TYPE_REGEX["dns_type"].match(token):
+                return "dns_type"
+            
+            if main_cmd == "tcpdump" and prev_token in TCPDUMP_OPTIONS:
+                return TCPDUMP_OPTIONS[prev_token]
+            
+            if main_cmd == "ethtool" and prev_token in INTERFACE_CMDS:
+                return "network_interface"
+
+            # si c’est "nginx" ou "apache", on renvoie "server" show
+            if token.lower() in SERVER:
+                return "server"
+            
             return name
+
 
     if token.startswith("-"):
         return "option"
@@ -280,6 +456,18 @@ def expand_alternatives(pattern) -> List[str]:
         expanded.append(" ".join(out.split()))
     return expanded
 
+def norm_cmd_token_for_match(s: str) -> str:
+    """
+    Normalize a command-type token for robust matching:
+    - collapse multiple spaces
+    - for options with =value, replace value with ={{}} so --wordlist=rockyou -> --wordlist={{}}
+    """
+    s = " ".join(s.split())
+    # replace any =value occurrence within a token with ={{}} (first occurrence)
+    s = re.sub(r'(=\S+)', '={{}}', s, count=1)
+    return s
+
+
 # -------------------------
 # 6. Description matching
 # -------------------------
@@ -294,7 +482,7 @@ def describe_input_elements(input_elems: List[str], db: Dict[str, Any]) -> List[
 
     # Normalisation + types globaux
     input_norm_elems = [normalize_token(el) for el in input_elems]
-    input_types = [detect_type(el, main_cmd=cmdname) for el in input_elems]
+    input_types = [detect_type(el, main_cmd=cmdname, index=i) for i, el in enumerate(input_elems)]
 
     # indices et valeurs des tokens de type commande dans l'input
     input_cmd_indices = [i for i, t in enumerate(input_types) if t in ("cmd", "cmdopt")]
@@ -320,19 +508,21 @@ def describe_input_elements(input_elems: List[str], db: Dict[str, Any]) -> List[
             for ex in expand_alternatives(cp):
                 pat_elems = tokenize_input_to_elements(ex)
                 pat_elems_norm = [normalize_token(pe) for pe in pat_elems]
-                pat_types = [detect_type(pe, main_cmd=cmdname) for pe in pat_elems]
+                pat_types = [detect_type(pe, main_cmd=cmdname, index=k) for k, pe in enumerate(pat_elems)]
                 # on ne garde que les tokens de type commande du pattern
                 pat_cmd_indices = [i for i, t in enumerate(pat_types) if t in ("cmd", "cmdopt")]
                 pat_cmd_norms = [pat_elems_norm[i] for i in pat_cmd_indices]
 
-                # print(f" Pattern: '{ex}'")
+                # print(f" Pattern: '{ex}'") 
                 # print(f"  Pattern tokens: {pat_elems_norm}")
                 # print(f"  Pattern command-type tokens (indices -> token):",
                 #       [(i, pat_elems_norm[i]) for i in pat_cmd_indices])
 
                 # Strict full match: la sequence des tokens de type commande doit être exactement identique
                 # (même longueur et mêmes éléments dans le même ordre)
-                if pat_cmd_norms and pat_cmd_norms == input_cmd_norms:
+                # if pat_cmd_norms and pat_cmd_norms == input_cmd_norms:
+                if pat_cmd_norms and [norm_cmd_token_for_match(x) for x in pat_cmd_norms] == [norm_cmd_token_for_match(x) for x in input_cmd_norms]:
+
                     # print("  ✅ FULL MATCH (command-type sequences are exactly equal)")
                     matched_entry = entry
                     matched_input_cmd_indices = input_cmd_indices.copy()
@@ -351,7 +541,7 @@ def describe_input_elements(input_elems: List[str], db: Dict[str, Any]) -> List[
         desc_full = matched_entry.get("description", "No description")
         for i, el in enumerate(input_elems):
             prev_token = input_elems[i - 1] if i > 0 else None
-            el_type = detect_type(el, cmdname, prev_token)
+            el_type = detect_type(el, cmdname, prev_token, index=i)
 
             if i in matched_input_cmd_indices:
                 results.append(f"desc_{i}: {desc_full}")
@@ -366,10 +556,21 @@ def describe_input_elements(input_elems: List[str], db: Dict[str, Any]) -> List[
     print("\n=== DESCRIPTION SEQUENTIELLE (retokenized per element) ===")
     for i, el in enumerate(input_elems):
         print(f"\nWorking on el_{i}: '{el}'")
+
+        # Special case: local script
+        script_desc = describe_script_input(el)
+        if script_desc:
+            results.append(f"desc_{i}: {script_desc}")
+            continue
+
+        if i == 0:
+            results.append(f"desc_{i}: Command '{el}'")
+            continue
+
         # retokenize this element alone
         sub_inputs = tokenize_input_to_elements(el)
         sub_norms = [normalize_token(s) for s in sub_inputs]
-        sub_types = [detect_type(s, main_cmd=cmdname) for s in sub_inputs]
+        sub_types = [detect_type(s, main_cmd=cmdname, index=j) for j, s in enumerate(sub_inputs)]
         sub_cmd_indices = [j for j, t in enumerate(sub_types) if t in ("cmd", "cmdopt")]
         sub_cmd_norms = [sub_norms[j] for j in sub_cmd_indices]
 
@@ -399,7 +600,7 @@ def describe_input_elements(input_elems: List[str], db: Dict[str, Any]) -> List[
                     for ex in expand_alternatives(cp):
                         pat_elems = tokenize_input_to_elements(ex)
                         pat_elems_norm = [normalize_token(pe) for pe in pat_elems]
-                        pat_types = [detect_type(pe, main_cmd=cmdname) for pe in pat_elems]
+                        pat_types = [detect_type(pe, main_cmd=cmdname, index=k) for k, pe in enumerate(pat_elems)]
                         pat_cmd_indices = [k for k, t in enumerate(pat_types) if t in ("cmd", "cmdopt")]
                         pat_cmd_norms = [pat_elems_norm[k] for k in pat_cmd_indices]
 
@@ -409,12 +610,22 @@ def describe_input_elements(input_elems: List[str], db: Dict[str, Any]) -> List[
                         if not pat_cmd_norms:
                             continue
 
-                        # règle : si sub length == 1, n'accepter que si pattern n'a qu'1 token total
+                        # # règle : si sub length == 1, n'accepter que si pattern n'a qu'1 token total
+                        # if len(sub_cmd_norms) == 1:
+                        #     if pat_cmd_norms == sub_cmd_norms and len(pat_elems_norm) == 1:
+                        #         matched_sub_desc = entry.get("description")
+
+                        #         # print(f"   -> matched (single-token exact short pattern): '{ex}'")
+                        #         break
+                        # rule: handle the single-token sub-input case more robustly
                         if len(sub_cmd_norms) == 1:
-                            if pat_cmd_norms == sub_cmd_norms and len(pat_elems_norm) == 1:
+                            # normalize both sides to ignore concrete values after '='
+                            sub_normed = [norm_cmd_token_for_match(x) for x in sub_cmd_norms]
+                            pat_normed = [norm_cmd_token_for_match(x) for x in pat_cmd_norms]
+                            if pat_normed == sub_normed:
                                 matched_sub_desc = entry.get("description")
-                                # print(f"   -> matched (single-token exact short pattern): '{ex}'")
                                 break
+
                         else:
                             # pour multi-token sub-input, on exige égalité exacte des command-type tokens
                             if pat_cmd_norms == sub_cmd_norms:
@@ -431,7 +642,7 @@ def describe_input_elements(input_elems: List[str], db: Dict[str, Any]) -> List[
             desc = matched_sub_desc
         else:
             prev_token = input_elems[i - 1] if i > 0 else None
-            el_type = detect_type(el, cmdname, prev_token)
+            el_type = detect_type(el, cmdname, prev_token, index=i)
             desc_label = TYPE_DESCRIPTION.get(el_type, "Argument")
             desc = f"{desc_label} '{el}'"
 
@@ -455,16 +666,32 @@ def main():
     if not user_input:
         print("Empty input.")
         return
+    
+    # ----------------------------
+    # Check for sudo prefix
+    # ----------------------------
+    has_sudo = False
+    if user_input.startswith("sudo "):
+        has_sudo = True
+        user_input = user_input[5:].strip()  # remove 'sudo ' from the input
 
     # Séparer l'input en plusieurs commandes
     commands = split_input_by_commands(user_input)
+
+    # Réparer les flags combinés dans chaque commande
+    commands = [repair_combined_flags_in_command(c) for c in commands]
+
     for idx, cmd in enumerate(commands):
         print(f"\n=== Command {idx+1} ===")
         input_elems = tokenize_input_to_elements(cmd)
         print("Element analysis:")
         for i, e in enumerate(input_elems):
             print(f"  el_{i}: {e}")
-        results = describe_input_elements(input_elems, db)
+        results = describe_input_elements(input_elems, db)  # <-- toujours appelé
+
+        if has_sudo and results:
+            results[0] = f"with sudo privilege: {results[0]}"
+
         print("Descriptions found:")
         for r in results:
             print(" ", r)
