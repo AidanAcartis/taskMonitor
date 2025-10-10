@@ -1,0 +1,20 @@
+[project]
+name = "command_describer"
+version = "0.1.0"
+description = "A CLI tool to describe command-line inputs"
+authors = [
+    { name="AidanAcartis" }
+]
+dependencies = []
+
+# Déclare le CLI ici
+[project.scripts]
+cmddesc = "command_describer.main:main"
+
+[build-system]
+requires = ["setuptools>=65", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+
