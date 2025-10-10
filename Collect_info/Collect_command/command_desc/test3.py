@@ -5,8 +5,9 @@ from pathlib import Path
 from typing import List, Dict, Any, Optional
 import itertools
 import json
+from pathlib import Path
 
-JSON_DIR = Path("dict_json")  # Répertoire JSON
+JSON_DIR = Path(__file__).parent / "command_describer" / "command_describer" / "data" / "dict_json"
 
 # -------------------------
 # 1. Parsing sécurisé
