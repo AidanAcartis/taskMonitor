@@ -359,6 +359,14 @@ def detect_type(token: str, main_cmd: Optional[str] = None, prev_token: Optional
         if TYPE_REGEX[name].match(token):
             if TYPE_REGEX[name].match(token) or token == ".":
                 return "folder" if token == "." else name
+            # if main_cmd and "." in token:
+            #     return "domain"  # ou "Website / Domain"
+            # #in ("dig", "ping", "host", "openssl")
+
+            # if main_cmd and token.upper() in HTTP_METHODS:
+            #     return "http_method"
+            # #in ("curl", "http", "wget")
+            # Python module detection
             
             if main_cmd == "host" and TYPE_REGEX["dns_type"].match(token):
                 return "dns_type"
@@ -369,6 +377,10 @@ def detect_type(token: str, main_cmd: Optional[str] = None, prev_token: Optional
             if main_cmd == "ethtool" and prev_token in INTERFACE_CMDS:
                 return "network_interface"
 
+            # si c’est "nginx" ou "apache", on renvoie "server" show
+            # if token.lower() in SERVER:
+            #     return "server"
+            
             return name
 
 
@@ -512,12 +524,15 @@ def describe_input_elements(input_elems: List[str], db: Dict[str, Any]) -> List[
 
                 # Strict full match: la sequence des tokens de type commande doit être exactement identique
                 # (même longueur et mêmes éléments dans le même ordre)
+                # if pat_cmd_norms and pat_cmd_norms == input_cmd_norms:
                 if pat_cmd_norms and [norm_cmd_token_for_match(x) for x in pat_cmd_norms] == [norm_cmd_token_for_match(x) for x in input_cmd_norms]:
 
                     # print("  ✅ FULL MATCH (command-type sequences are exactly equal)")
                     matched_entry = entry
                     matched_input_cmd_indices = input_cmd_indices.copy()
                     break
+                # else:
+                #     print("  ❌ Not a full match (command-type sequences differ)")
 
             if matched_entry:
                 break
@@ -526,6 +541,20 @@ def describe_input_elements(input_elems: List[str], db: Dict[str, Any]) -> List[
 
     # si full match, on applique la description sur les éléments de type commande correspondants
     if matched_entry:
+        # print("\n=== FULL DESCRIPTION APPLIED ===")
+        # desc_full = matched_entry.get("description", "No description")
+        # for i, el in enumerate(input_elems):
+        #     prev_token = input_elems[i - 1] if i > 0 else None
+        #     el_type = detect_type(el, cmdname, prev_token, index=i)
+
+        #     if i in matched_input_cmd_indices:
+        #         results.append(f"desc_{i}: {desc_full}")
+        #     else:
+        #         desc_label = TYPE_DESCRIPTION.get(el_type, "Argument")
+        #         desc = f"{desc_label} '{el}'"
+        #         results.append(f"desc_{i}: {desc}")
+        #         # print(f" el_{i}: '{el}' -> fallback type '{el_type}' -> description: {desc}")
+        # return results
         print("\n=== FULL DESCRIPTION APPLIED ===")
         desc_full = matched_entry.get("description", "No description")
         results_dict = {}
@@ -541,7 +570,12 @@ def describe_input_elements(input_elems: List[str], db: Dict[str, Any]) -> List[
                 desc_label = TYPE_DESCRIPTION.get(el_type, "Argument")
                 results_dict[f"desc_arg_{i}"] = f"{desc_label} '{el}'"
 
+        # affichage
+        # print("Descriptions found:")
+        # for k, v in results_dict.items():
+        #     print(f"  {k}: {v}")
 
+        # retour optionnel si tu veux l'utiliser ailleurs
         return [f"{k}: {v}" for k, v in results_dict.items()]
 
 
@@ -604,6 +638,13 @@ def describe_input_elements(input_elems: List[str], db: Dict[str, Any]) -> List[
                             continue
 
                         # # règle : si sub length == 1, n'accepter que si pattern n'a qu'1 token total
+                        # if len(sub_cmd_norms) == 1:
+                        #     if pat_cmd_norms == sub_cmd_norms and len(pat_elems_norm) == 1:
+                        #         matched_sub_desc = entry.get("description")
+
+                        #         # print(f"   -> matched (single-token exact short pattern): '{ex}'")
+                        #         break
+                        # rule: handle the single-token sub-input case more robustly
                         if len(sub_cmd_norms) == 1:
                             # normalize both sides to ignore concrete values after '='
                             sub_normed = [norm_cmd_token_for_match(x) for x in sub_cmd_norms]
