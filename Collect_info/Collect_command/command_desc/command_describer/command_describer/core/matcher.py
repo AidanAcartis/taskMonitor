@@ -1,9 +1,9 @@
 from typing import Optional, List, Dict, Any
 from .tokenizer import safe_shlex_split, split_combined_flags
 from .constants import TYPE_REGEX, TYPE_DESCRIPTION
-from type_detector import normalize_token, detect_type
-from pattern_expander import expand_alternatives, norm_cmd_token_for_match
-from tokenizer import tokenize_input_to_elements
+from .type_detector import normalize_token, detect_type
+from .pattern_expander import expand_alternatives, norm_cmd_token_for_match
+from .tokenizer import tokenize_input_to_elements
 
 def describe_script_input(token: str) -> Optional[str]:
     """
