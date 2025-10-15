@@ -1,2 +1,3 @@
+cmddesc_executable
 command_describer
-tests
+dist

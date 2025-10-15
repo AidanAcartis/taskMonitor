@@ -15,5 +15,16 @@ command_describer/core/matcher.py
 command_describer/core/pattern_expander.py
 command_describer/core/tokenizer.py
 command_describer/core/type_detector.py
+command_describer/data/config.json
+command_describer/data/dict_json/android.json
+command_describer/data/dict_json/cisco-ios.json
+command_describer/data/dict_json/common.json
+command_describer/data/dict_json/freebsd.json
+command_describer/data/dict_json/linux.json
+command_describer/data/dict_json/netbsd.json
+command_describer/data/dict_json/openbsd.json
+command_describer/data/dict_json/osx.json
+command_describer/data/dict_json/sunos.json
+command_describer/data/dict_json/windows.json
 command_describer/ml/model.py
 command_describer/ml/preprocessing.py
