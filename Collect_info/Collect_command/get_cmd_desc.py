@@ -1,8 +1,8 @@
 import json
 import subprocess
 
-input_file = "data_command.txt"
-output_file = "commands_descriptions.jsonl"
+input_file = "100_unique_commands.txt"
+output_file = "commands_descriptions_1.jsonl"
 
 with (
     open(input_file, "r", encoding="utf-8") as f_in,

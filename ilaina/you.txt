@@ -12,3 +12,6 @@ https://mail.google.com/mail/u/1/#inbox
 https://www.facebook.com/share/p/1YJtvRJDZV/
 
 https://academy.hackthebox.com/module/details/81
+
+Samsung account:
+mdp : 1m@G34kN3rdG1rl!
