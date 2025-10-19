@@ -1,0 +1,250 @@
+Develop and maintain responsive websites for desktop and mobile devices
+Design and implement user interfaces using HTML, CSS, and JavaScript frameworks
+Create and manage backend services and APIs for dynamic web applications
+Integrate databases and retrieve or store data efficiently
+Collaborate with designers and product teams to translate concepts into functional features
+Optimize websites for performance, accessibility, and SEO compliance
+Deploy and monitor applications on web servers or cloud platforms
+Implement user authentication and secure data handling mechanisms
+Maintain version control and manage project repositories with Git
+Debug, test, and troubleshoot code across multiple environments
+Automate build and deployment processes using CI/CD pipelines
+Refactor legacy codebases to improve readability and maintainability
+Write technical documentation for APIs, workflows, and systems
+Ensure cross-browser and cross-platform compatibility for web interfaces
+Integrate third-party services such as payment gateways
+Conduct code reviews and provide feedback to other developers
+Implement responsive layouts and adaptive designs for mobile and desktop
+Manage application state and data flow in single-page applications
+Use performance profiling tools to identify and fix bottlenecks
+Implement caching strategies for improved speed and scalability
+Develop custom CMS features or plugins for specific business requirements
+Monitor site uptime and address issues related to hosting and DNS
+Create reusable UI components and maintain a design system
+Track user interactions and improve UX with analytics tools
+Plan, develop, and launch new product features based on feedback
+Write and execute automated tests in collaboration with QA teams
+Ensure compliance with web standards, accessibility, and privacy regulations
+Participate in sprint planning, retrospectives, and daily standups
+Review pull requests and manage production releases
+Integrate email services and notifications into applications
+Manage environment variables and configuration files securely
+Perform load testing and scalability assessments
+Use containerization tools like Docker to maintain consistent environments
+Maintain project dependencies and upgrade libraries as required
+Research and implement new technologies to improve development workflow
+Deploy RESTful or GraphQL APIs for frontend integration
+Configure content delivery networks (CDN) to enhance global performance
+Set up and maintain staging environments for pre-production testing
+Use caching layers like Redis for optimized performance
+Configure web security headers and manage HTTPS certificates
+Manage user roles and permissions within applications
+Build progressive web apps (PWAs) with offline support
+Handle file uploads, storage, and retrieval efficiently
+Integrate analytics and tracking tools for marketing purposes
+Collaborate with DevOps teams to improve deployment reliability
+Execute website migrations or domain transitions
+Optimize images, scripts, and assets for faster loading times
+Monitor application logs and track errors systematically
+Implement lazy loading and code splitting to improve performance
+Document coding standards and contribute to team best practices
+Configure database indexes and optimize queries for faster data retrieval
+Implement server-side caching to reduce API response times
+Track user interactions with analytics tools and generate behavior reports
+Set up email notifications for user activities and system alerts
+Integrate payment processing workflows and handle transaction validation
+Develop custom admin dashboards for monitoring website performance
+Secure API endpoints by validating input and implementing rate limiting
+Create automated scripts to populate databases with test data
+Implement role-based access control for different user types
+Monitor application performance metrics and identify resource bottlenecks
+Migrate data from legacy systems to modern database structures
+Configure web application firewall rules to block malicious traffic
+Set up log aggregation to centralize error and access logs
+Automate repetitive tasks with build scripts and scheduled jobs
+Integrate live chat or support widgets into a website for user assistance
+Implement SEO-friendly URL structures and metadata across pages
+Develop custom search functionality with filtering and sorting options
+Handle file uploads securely and store them in structured directories
+Monitor third-party service integrations and handle failures gracefully
+Implement progressive enhancement to support older browsers while enabling modern features
+Schedule and automate regular backups of databases and critical files
+Optimize server configurations for high-traffic periods
+Configure HTTPS certificates and redirect all HTTP traffic securely
+Set up automated regression tests to catch errors during code updates
+Integrate push notifications for web users based on activity triggers
+Create multi-language support with language detection and content switching
+Handle session expiration and automatic logout for inactive users
+Monitor server health and restart services automatically in case of failures
+Implement API versioning to maintain backward compatibility
+Track error rates and performance issues using monitoring tools
+Set up container orchestration with Docker Compose for multi-service applications
+Configure environment-specific logging to separate development, staging, and production data
+Implement bulk data import and export functionality for users
+Monitor user authentication attempts and block suspicious activities
+Integrate social login options and handle token verification securely
+Implement lazy loading of images and scripts to improve page speed
+Configure automated alerts for downtime and service interruptions
+Develop custom form submission workflows with validation and notifications
+Track and log user consent for privacy compliance and auditing
+Optimize server-side rendering for faster initial page load
+Configure CDN caching rules to improve global access speeds
+Implement data encryption for sensitive information in transit and at rest
+Set up automated unit and integration testing for continuous quality checks
+Monitor memory usage and clean up unused objects in the backend
+Implement feature toggles to enable or disable functionalities safely
+Develop content import pipelines to handle structured data from external sources
+Monitor API rate limits and queue requests when limits are reached
+Build interactive charts and data visualizations for web dashboards
+Implement web accessibility features such as keyboard navigation and screen reader support
+Set up automated deployment rollback in case of critical errors during release
+Refactor frontend architecture for maintainability
+Implement service workers for offline caching
+Monitor frontend bundle sizes and optimize delivery
+Integrate real-time notifications using WebSockets
+Configure automated linting and code formatting checks
+Develop custom middleware for backend request handling
+Set up role-based dashboards for different user types
+Implement automated image optimization pipelines
+Coordinate feature deployments with QA and DevOps teams
+Conduct A/B testing for UI component variations
+Maintain shared component libraries across multiple projects
+Integrate analytics for tracking conversion funnels
+Configure CI/CD pipelines for multiple environments
+Implement server-side rendering for SEO-critical pages
+Track web performance metrics with Lighthouse audits
+Develop dynamic routing for single-page applications
+Set up automated database migrations during deployments
+Integrate logging frameworks for backend monitoring
+Implement throttling for high-frequency API requests
+Create automated test data generators for QA
+Monitor user session patterns and optimize authentication flows
+Implement dynamic theming for web applications
+Develop interactive tutorials or onboarding flows for users
+Configure reverse proxies for backend services
+Optimize GraphQL queries to reduce server load
+Implement conditional rendering based on user permissions
+Set up monitoring for third-party API health
+Develop internal admin tools for content management
+Configure background job queues for long-running tasks
+Integrate automated notifications for system events
+Maintain documentation for API endpoints and usage
+Implement structured error reporting for frontend applications
+Optimize database relationships for query performance
+Develop reusable hooks or utilities for React/Vue projects
+Implement feature flags to gradually release new features
+Monitor and resolve CORS issues in cross-domain applications
+Build real-time dashboards for application metrics
+Automate dependency updates and security patching
+Implement dynamic content loading to reduce initial page load
+Configure monitoring alerts for frontend JavaScript errors
+Develop automated scripts for data validation and cleaning
+Integrate search indexing for large datasets
+Implement responsive navigation components across devices
+Maintain coding standards and style guides for the team
+Develop multi-step forms with validation and progress tracking
+Configure webhooks for event-driven integrations
+Implement PDF or report generation from web applications
+Monitor and optimize memory usage in frontend applications
+Develop custom analytics dashboards for business stakeholders
+Implement automated rollback strategies for failed releases
+Implement dynamic content loading from multiple APIs
+Configure automated backups for web application databases
+Monitor frontend error logs and track recurring issues
+Develop reusable form components with validation
+Optimize server response times with query caching
+Implement content versioning for blog or news sections
+Build interactive maps or geolocation features
+Integrate authentication with OAuth or SSO providers
+Configure deployment pipelines for blue-green releases
+Implement advanced search with filters and facets
+Maintain documentation for deployment procedures
+Develop API rate limiting strategies for backend endpoints
+Monitor server CPU and memory usage in real-time
+Implement live chat support for customer interactions
+Configure email templates and automated notifications
+Build dashboards to track user engagement metrics
+Implement cross-domain authentication for multiple applications
+Integrate payment fraud detection mechanisms
+Maintain versioned API documentation for external developers
+Configure web application firewall for added security
+Develop multilingual content support for international users
+Monitor SSL certificate expiry and renew proactively
+Implement progressive image loading for large galleries
+Optimize CSS and JavaScript delivery using bundlers
+Develop interactive data visualization components
+Integrate external analytics services like Google Analytics or Mixpanel
+Configure feature flag management for staged rollouts
+Monitor error rates during peak traffic hours
+Implement automated rollback on failed deployments
+Build modular backend services for easier maintenance
+Configure staging and production database synchronization
+Implement access logging for auditing purposes
+Monitor API endpoint performance and response times
+Develop automated scripts for repetitive frontend tasks
+Implement advanced caching for frequently requested data
+Integrate push notification services for web users
+Maintain a shared design system for consistent UI/UX
+Configure load balancers to handle high traffic volumes
+Implement server-side input sanitization for security
+Develop tools to automate testing of frontend components
+Monitor web traffic and identify bottlenecks
+Implement image compression workflows for faster loading
+Develop dashboards for monitoring backend service health
+Integrate third-party authentication flows into applications
+Configure custom error pages for improved UX
+Implement bulk data import and export for users
+Build interactive charts with real-time data updates
+Monitor third-party library updates and vulnerabilities
+Configure CI pipelines for automated testing and deployment
+Implement analytics tracking for marketing campaigns
+Implement lazy loading for content-heavy pages
+Monitor and optimize API response payload sizes
+Configure automated security scans for web applications
+Develop reusable JavaScript utility functions
+Implement user activity logging for auditing purposes
+Configure continuous monitoring for website uptime
+Build custom widgets for interactive dashboards
+Integrate serverless functions for lightweight backend tasks
+Implement content approval workflows for editors
+Monitor cache hit and miss rates for optimization
+Build multi-tenant web applications with separate user data
+Implement web push notifications for user engagement
+Configure automated alerts for critical system failures
+Develop dynamic forms with conditional logic
+Integrate A/B testing frameworks for frontend experiments
+Optimize SVG graphics for faster rendering
+Implement advanced routing strategies for SPAs
+Maintain automated test suites for regression testing
+Build custom authentication middleware for APIs
+Monitor and optimize SQL query performance
+Implement web analytics dashboards for stakeholders
+Configure role-based access for admin and regular users
+Develop scripts for automated database backups
+Integrate versioned static assets for cache control
+Implement custom error logging and reporting services
+Configure automated deployment notifications
+Build reusable React or Vue component libraries
+Implement server-side rendering for dynamic pages
+Monitor third-party API integrations for failures
+Configure CORS policies to secure cross-origin requests
+Implement file versioning for uploaded documents
+Build interactive charts using D3.js or Chart.js
+Monitor site performance using real-time metrics
+Implement API request throttling to prevent abuse
+Develop admin panels for managing users and content
+Integrate payment gateways with secure transaction handling
+Configure application monitoring using Prometheus or similar
+Implement automated data validation pipelines
+Build dashboards to monitor user engagement trends
+Implement content tagging and categorization features
+Monitor security logs for unauthorized access attempts
+Configure CDNs for faster asset delivery globally
+Develop reusable backend service modules
+Implement caching strategies for database-heavy queries
+Monitor frontend JavaScript errors in production
+Integrate automated SEO audits into CI pipelines
+Implement multi-step user registration workflows
+Build dynamic notification centers for web users
+Configure logging for third-party service interactions
+Implement continuous deployment for incremental updates

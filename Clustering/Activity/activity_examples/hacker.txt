@@ -1,0 +1,250 @@
+Assess web application security configurations
+Review network access controls for vulnerabilities
+Test authentication mechanisms under authorization
+Monitor system logs for unusual patterns
+Evaluate encryption usage in data storage
+Audit API endpoints for unexpected responses
+Check session management behavior for flaws
+Inspect file upload handling in applications
+Analyze rate-limiting and abuse protections
+Review third-party service integrations
+Verify secure storage of credentials
+Audit container configurations for risks
+Examine cloud resource permissions
+Inspect staging environments for gaps
+Validate input validation processes
+Review error handling for information leaks
+Assess multi-factor authentication flows
+Monitor backup and recovery processes
+Audit role-based access controls
+Evaluate dependency management practices
+Check CORS and security policies
+Monitor intrusion detection alerts
+Validate audit trails for critical actions
+Inspect firewall and network ACLs
+Test API versioning for security gaps
+Examine logging and monitoring coverage
+Review certificate management practices
+Assess session cookie attributes
+Audit CI/CD secrets handling
+Evaluate user privilege escalation protections
+Monitor telemetry for privacy leaks
+Validate service-to-service authentication
+Check database access permissions
+Review caching and header configurations
+Inspect content security policies
+Audit mobile application endpoints
+Validate secure handling of sensitive files
+Monitor batch jobs for security issues
+Assess feature toggles for safe rollout
+Review system alerts for false negatives
+Audit encryption of backups and keys
+Evaluate SSO and federated identity flows
+Monitor automated tests for coverage gaps
+Inspect browser security headers
+Audit uploaded content storage permissions
+Evaluate logging frameworks for completeness
+Monitor queue processing for anomalies
+Review system configuration drift
+Validate rate and quota handling
+Produce a summary security assessment report
+Conduct authorized assessments of web and mobile applications to identify potential security weaknesses
+Evaluate overall network security posture and report configuration gaps
+Analyze authentication and access control mechanisms across multiple systems
+Monitor system and application logs for anomalous activity patterns
+Review cloud infrastructure and enforce secure configuration baselines
+Audit third-party integrations and ensure compliance with security policies
+Test input validation and data handling processes across multiple services
+Assess encryption usage for data at rest and in transit across applications
+Evaluate session management and token handling for potential vulnerabilities
+Review API interactions and detect potential data exposure risks
+Audit containerized environments and orchestration platforms for security gaps
+Assess backup, recovery, and disaster recovery processes for integrity and security
+Monitor application performance metrics for potential security implications
+Validate secure deployment pipelines and configuration management processes
+Assess system-level configurations and firewall rules for risk exposure
+Evaluate database access patterns and privilege enforcement across projects
+Audit logging and monitoring coverage for completeness and effectiveness
+Test multi-factor authentication implementations and enforce best practices
+Review software dependencies and verify security patching across services
+Assess compliance with internal and regulatory security standards across projects
+Monitor anomaly detection alerts and correlate across multiple applications
+Review access control policies for role-based and least-privilege enforcement
+Validate secure handling of sensitive files and uploaded content
+Assess network segmentation and traffic flow configurations for vulnerabilities
+Evaluate mobile application permissions and integration points for privacy compliance
+Audit content security policies and headers across multiple web applications
+Review code repository and CI/CD configurations for potential exposure
+Validate encryption key management processes across multiple systems
+Assess monitoring dashboards and reporting pipelines for coverage gaps
+Evaluate system and application incident response readiness across projects
+Audit account lifecycle processes including onboarding, privilege changes, and offboarding
+Assess user session behavior across applications for potential security gaps
+Monitor data retention and archival policies for compliance and security
+Validate secure communication channels and VPN usage across teams
+Evaluate system hardening and baseline configurations for production servers
+Assess integration of logging frameworks and centralized monitoring solutions
+Review patch management effectiveness across multiple environments
+Validate automated security testing and vulnerability scanning pipelines
+Assess cloud IAM roles and policies for adherence to least-privilege principle
+Monitor and evaluate incident detection and response effectiveness
+Audit feature rollout controls and deployment safeguards across services
+Review telemetry and auditing coverage for forensic and compliance purposes
+Assess storage and access of sensitive data across cloud and on-prem systems
+Monitor and validate alerting thresholds across multiple monitoring tools
+Evaluate threat detection strategies and mitigation workflows
+Assess configuration drift and ensure secure baselines are enforced
+Review internal policies and procedures for adherence to security best practices
+Validate secure integration of external APIs and SDKs across applications
+Audit reporting mechanisms and dashboards for actionable security insights
+Conduct comprehensive authorized security assessments and provide executive-level recommendations
+Evaluate VPN and remote access configurations for vulnerabilities
+Assess phishing susceptibility across internal teams
+Simulate social engineering attacks to test security awareness
+Conduct penetration tests on internal web applications
+Identify weak encryption protocols in network communications
+Exploit misconfigured servers to validate security controls
+Audit wireless network configurations for unauthorized access
+Test privilege escalation vectors on critical servers
+Analyze packet captures for sensitive data exposure
+Assess multi-tenant cloud environments for isolation issues
+Validate secure key exchange protocols between services
+Review API authentication mechanisms for robustness
+Test role-based access restrictions in applications
+Identify unpatched vulnerabilities in software and libraries
+Evaluate endpoint security posture across devices
+Assess internal DNS configurations for leakage risks
+Conduct internal network segmentation tests
+Test remote code execution vectors in applications
+Review session timeout policies and enforcement
+Evaluate logging and alerting for timely detection
+Test password policies for strength and enforcement
+Audit cloud storage buckets for public exposure
+Validate encryption of sensitive configuration files
+Conduct attack simulations on CI/CD pipelines
+Assess container orchestration for privilege misuse
+Identify exposed service ports on internal networks
+Evaluate lateral movement detection within environments
+Test authentication token lifecycle management
+Audit endpoint applications for insecure default settings
+Simulate ransomware scenarios to test backup integrity
+Monitor API gateways for abuse patterns
+Evaluate firewall rule effectiveness against simulated attacks
+Test webhooks for secure data transmission
+Review cross-site scripting (XSS) protections
+Assess SQL injection protections in application endpoints
+Test brute-force protections on login systems
+Validate secure handling of sensitive environment variables
+Review server hardening configurations against benchmarks
+Audit third-party libraries for known vulnerabilities
+Conduct red team exercises to simulate real-world attacks
+Test network monitoring and intrusion detection alert accuracy
+Assess compliance of endpoints with corporate security policies
+Simulate data exfiltration attempts and monitor detection
+Evaluate disaster recovery plans through controlled drills
+Audit logging of privileged administrative actions
+Test API throttling and rate-limit enforcement
+Assess integration points of external SaaS services
+Conduct wireless penetration tests in corporate facilities
+Evaluate alert escalation procedures during simulated attacks
+Test the effectiveness of endpoint detection and response tools
+Coordinate scoped red team engagements with stakeholders
+Develop threat models for critical business workflows
+Assess physical access controls around sensitive infrastructure
+Validate phishing resilience through authorized simulations
+Evaluate multi-factor authentication coverage across systems
+Review supply‑chain security posture for third‑party components
+Assess cloud tenant isolation and cross‑tenant risks
+Validate secure configuration of CI/CD pipelines under authorization
+Analyze historical incident data to identify recurring gaps
+Evaluate privileged access governance and just‑in‑time controls
+Validate logging completeness for forensic readiness
+Assess least‑privilege enforcement across service accounts
+Develop prioritized remediation roadmaps from assessment findings
+Validate data loss prevention controls for sensitive data flows
+Assess integrity protections for critical configuration files
+Evaluate secure onboarding and offboarding processes for accounts
+Analyze service dependency maps for concentration risks
+Validate encryption key rotation and access controls
+Assess telemetry coverage for anomaly detection effectiveness
+Coordinate multi‑team tabletop exercises for incident response
+Validate secure API gateway configurations for exposure control
+Review credential lifecycle management and rotation practices
+Assess remote administration controls and audit trails
+Validate containment and isolation procedures for compromised hosts
+Assess backup consistency and restoration verification processes
+Develop prioritized risk metrics for executive reporting
+Validate secure defaults in infrastructure‑as‑code templates
+Assess secrets sprawl in code and configuration repositories
+Evaluate detection coverage for lateral movement indicators
+Validate secure exposure of developer and staging environments
+Assess vulnerability remediation cadence against risk thresholds
+Validate segregation of duties in privileged operations workflows
+Assess observability for critical business transactions
+Validate vendor onboarding security requirements and attestations
+Assess threat intel integration into detection workflows
+Validate secure baselines for container images and runtimes
+Assess data classification usage and enforcement across systems
+Validate incident escalation paths and SLA adherence
+Assess privacy controls for regulated personal data handling
+Validate network micro‑segmentation for sensitive zones
+Assess automated response playbooks for common incidents
+Validate endpoint posture enforcement and drift monitoring
+Assess maturity of application security testing programs
+Validate emergency rollback and patch deployment plans
+Assess orchestration of cross‑team remediation efforts
+Validate secure telemetry retention and access controls
+Assess business continuity alignment with security controls
+Validate attack surface inventories for completeness and accuracy
+Assess the effectiveness of tabletop recommendations after remediation
+Validate executive‑level dashboards for security risk visibility
+Assess public attack surface exposure from internet-facing assets
+Review exposed subdomains and certificate transparency records
+Validate data anonymization and masking for sensitive datasets
+Assess IoT device configurations and inventory completeness
+Review cloud storage lifecycle and access expiration policies
+Validate segregation of development, staging, and production tenants
+Assess credential storage patterns in deployed applications
+Review telemetry retention policies against forensic needs
+Validate anomaly detection coverage for high-value assets
+Assess threat actor TTPs relevance to the organization
+Validate secure defaults in commonly used developer templates
+Assess external dependency supply-chain risk posture
+Review user provisioning flows for unnecessary privilege grants
+Validate incident evidence preservation procedures and integrity
+Assess encryption key escrow and recovery processes
+Review inter-service permission mappings for excessive access
+Validate monitoring of wildcard DNS and certificate changes
+Assess cloud network peering and unintended exposure risks
+Review API gateway request transformation and logging fidelity
+Validate protections around administrative interfaces and consoles
+Assess telemetry correlation between network and host sensors
+Review retention and disposal policies for archived logs
+Validate exposures introduced by third-party widgets and plugins
+Assess privileged session recording and review processes
+Review anomaly detection tuning to reduce alert fatigue
+Validate the security posture of partner integration endpoints
+Assess the effectiveness of remediation verification workflows
+Review incident categorization and playbook selection criteria
+Validate runtime protection coverage for container workloads
+Assess data exfiltration detection capabilities across channels
+Review cross-account trust relationships in cloud environments
+Validate change control enforcement for critical system settings
+Assess threat modeling adoption for high-risk application areas
+Review automated triage workflows for incoming vulnerability reports
+Validate mobile backend protections for authentication flows
+Assess exposure of developer tools and CI artifacts to the internet
+Review security tagging and metadata for asset prioritization
+Validate external scanning cadence and scope coverage
+Assess backup isolation to prevent lateral compromise during incidents
+Review vendor-supplied integrations for default insecure configs
+Validate secure onboarding checks for new infrastructure components
+Assess DNS security controls including response policy zones
+Review playbook effectiveness after tabletop exercises and drills
+Validate tracking of open remediation tasks against SLAs
+Assess controls around privileged credential vault access audits
+Review telemetry sampling strategies for high-volume sources
+Validate escalation paths for critical vulnerability disclosures
+Assess resilience of service meshes and internal proxies to misuse
+Review external sharing controls for sensitive documentation stores
+Validate executive communication procedures during active incidents

@@ -1,0 +1,300 @@
+Provision virtual machines and apply base OS images
+Configure network interfaces and routing on host systems
+Manage package repository mirrors for internal updates
+Orchestrate kernel update testing and staged rollouts
+Maintain logical volumes and resize filesystems as needed
+Implement full‑disk encryption for critical hosts
+Configure systemd services and scheduled timers centrally
+Enforce central SSH key distribution and rotation policies
+Harden OS baselines and enforce configuration templates
+Manage DNS records and host entries for infrastructure
+Perform capacity planning for CPU, memory, and disk resources
+Configure NTP/time synchronization across the fleet
+Implement host‑level resource quotas for multi‑tenant systems
+Coordinate live migration of virtual machines between hosts
+Build and maintain golden images for rapid provisioning
+Manage container host runtime configuration and updates
+Implement centralized log forwarding and retention policies
+Administer host firewall rulesets and zone configurations
+Maintain OS-level audit rules and forward audit trails
+Orchestrate patch windows and verify post‑patch health checks
+Configure storage arrays and export block devices to hosts
+Automate host provisioning using infrastructure-as-code templates
+Verify host boot integrity and manage secure boot keys
+Implement host-level backup schedules and snapshot policies
+Configure TLS/SSL certificates for system daemons and services
+Manage user account lifecycle and centralized authentication integration
+Tune kernel parameters for network and I/O performance
+Manage swap usage and adjust memory overcommit settings
+Coordinate host decommissioning and secure data erasure
+Implement predictable host naming and inventory tagging schemes
+Configure RAID and monitor disk health for server arrays
+Maintain platform-level monitoring checks and alert routing
+Enforce sudo policies and centrally manage privileged access
+Verify service dependency ordering and startup reliability
+Integrate hosts with central configuration management tools
+Manage host bootloaders and recovery partition workflows
+Coordinate firmware and BIOS updates for server hardware
+Implement journald or syslog rotation and compression policies
+Orchestrate cluster node replacement with minimal disruption
+Manage ephemeral instance lifecycle in cloud environments
+Apply security baselines and validate compliance reporting
+Configure network bonding and high‑availability interfaces
+Maintain time‑series metrics collection for host resources
+Implement host quarantine procedures for compromised machines
+Manage driver and module versions for hardware compatibility
+Coordinate encrypted remote access gateways for administrators
+Create and validate disaster recovery runbooks for OS layer
+Schedule periodic integrity checks of critical system files
+Maintain storage tiering policies and migrate cold data offline
+Configure central credential vault access for system services
+Monitor system uptime and generate weekly reports
+Audit installed software and verify license compliance
+Manage host-level security patches and track updates
+Configure automated snapshot policies for virtual hosts
+Validate disk I/O performance and adjust tuning parameters
+Implement centralized authentication for multi-host environments
+Review system logs for anomalies and correlate across servers
+Maintain OS-level firewall rules for internal and external traffic
+Apply security templates across all production servers
+Manage CPU affinity and process scheduling policies
+Configure host-level network load balancing
+Maintain central configuration for system environment variables
+Implement scheduled cleanup of temporary files and caches
+Monitor memory utilization trends and plan capacity expansion
+Validate boot sequence and ensure recovery partition accessibility
+Manage central package signing keys and trust stores
+Enforce password policies and expiration for all system accounts
+Monitor storage array usage and plan disk expansion
+Configure alerting for host resource thresholds
+Apply OS hardening guides and verify compliance via scripts
+Coordinate host upgrades to new OS versions
+Maintain system inventory and track hardware lifecycle
+Validate SELinux or AppArmor policies for all hosts
+Automate backup verification and retention enforcement
+Review scheduled cron jobs and ensure correct execution
+Configure high-availability clusters for critical services
+Monitor network latency and interface errors on hosts
+Implement host-based intrusion detection alerts
+Verify integrity of critical binaries and system libraries
+Configure logging levels and retention for system daemons
+Manage host certificates and rotate SSL keys periodically
+Apply storage quotas and enforce usage limits per user or group
+Coordinate patch deployment with application teams
+Monitor swap usage and optimize virtual memory allocation
+Enforce secure remote administration access policies
+Validate container host security settings and kernel parameters
+Schedule automated performance benchmarking for servers
+Maintain central host naming conventions and metadata tags
+Audit system startup and shutdown scripts for compliance
+Implement host-level encryption for sensitive partitions
+Monitor CPU temperature and hardware health metrics
+Manage multiple storage pools and volume assignments
+Apply centralized time synchronization and drift correction
+Coordinate firmware updates with minimal system downtime
+Maintain redundancy and failover configurations for critical hosts
+Monitor host resource consumption and plan optimization
+Verify OS-level event logging for auditing and forensics
+Implement centralized patch reporting and compliance dashboards
+Manage ephemeral virtual host lifecycle and cleanup
+Enforce secure inter-host communication and network isolation
+Automate OS deployment for new servers
+Monitor system health across multiple hosts
+Audit configuration drift against baseline templates
+Validate host authentication logs for anomalies
+Enforce mandatory access control policies on all servers
+Configure centralized syslog forwarding for analysis
+Manage kernel module loading policies for security
+Coordinate cluster-wide OS patching
+Maintain OS version inventory for all hosts
+Validate filesystem integrity on production servers
+Implement host isolation during maintenance windows
+Monitor resource contention for virtualized environments
+Enforce encryption for sensitive host partitions
+Validate compliance with internal OS hardening standards
+Monitor event logs for repeated system warnings
+Automate OS rollback procedures for failed updates
+Implement centralized management for host service states
+Monitor and optimize CPU and memory allocation
+Audit installed software against approved lists
+Enforce consistent host naming conventions across environments
+Maintain secure boot configurations on all systems
+Implement proactive disk health monitoring and alerting
+Validate OS patch levels against regulatory requirements
+Monitor network interfaces for packet loss or errors
+Audit service dependencies and startup sequences
+Automate reporting of system uptime and availability
+Configure automated host snapshot retention
+Monitor host-level firewall activity for anomalies
+Validate secure remote login policies across hosts
+Coordinate decommissioning of legacy servers securely
+Maintain standardized OS configuration templates
+Monitor memory leak trends across critical applications
+Validate time synchronization consistency for clustered hosts
+Enforce central policies for process and job scheduling
+Audit ephemeral host cleanup procedures
+Implement host quarantine procedures for detected threats
+Monitor host metrics to inform capacity planning
+Validate backup success across critical servers
+Audit access to sensitive OS directories and files
+Enforce CPU and I/O resource quotas for multi-tenant hosts
+Monitor OS-level security alerts and escalate incidents
+Validate network routing and interface configurations
+Maintain high-availability configurations for essential services
+Coordinate OS upgrades with minimal impact on production
+Automate host log rotation and archival
+Validate integrity of OS patches before deployment
+Monitor virtual host performance trends over time
+Audit system authentication logs for compliance reporting
+Implement OS-level disaster recovery validation tests
+Enforce central policies for host configuration changes
+Plan OS capacity for upcoming application workloads
+Monitor host I/O latency and throughput
+Validate kernel security patches before production rollout
+Enforce host account lockout policies for failed logins
+Audit process scheduling and CPU usage across hosts
+Maintain centralized host inventory with metadata
+Monitor OS-level error rates and system warnings
+Implement host isolation during network attacks
+Validate automated backup restoration procedures
+Monitor virtual machine host density and utilization
+Enforce encryption for inter-host communication
+Audit file permission changes across critical directories
+Validate OS compliance reports for regulatory audits
+Coordinate patch deployment across multiple clusters
+Monitor host CPU temperature and fan status
+Enforce sudo and root access restrictions centrally
+Audit OS service configurations for consistency
+Validate log forwarding to SIEM or analytics platforms
+Monitor memory usage trends to prevent resource exhaustion
+Implement OS-level rollback plans for failed updates
+Validate RAID health and rebuild status
+Audit system boot and shutdown logs for anomalies
+Monitor ephemeral storage usage and clean temporary data
+Enforce host baseline compliance across cloud instances
+Validate firewall rule effectiveness across hosts
+Monitor disk space consumption trends for proactive management
+Audit system cron jobs and automated tasks for security
+Validate host firmware versions and patch levels
+Coordinate OS upgrades with minimal downtime
+Monitor I/O bottlenecks for storage-intensive workloads
+Enforce mandatory logging for all system changes
+Validate VM migration procedures across clusters
+Audit host network configurations for security gaps
+Monitor critical system daemons for unexpected crashes
+Enforce centralized policies for scheduled maintenance
+Validate backup integrity for critical partitions
+Monitor container host resources for performance issues
+Audit system configuration changes for compliance
+Enforce host naming and tagging conventions across environments
+Validate OS service dependencies and recovery order
+Monitor virtualization overhead and optimize resource allocation
+Audit host security logs for failed authentication attempts
+Enforce centralized OS patch compliance across all hosts
+Monitor OS-level latency for high-performance applications
+Validate TLS/SSL configurations for system services
+Audit access to sensitive system files across hosts
+Enforce host CPU and memory limits for shared environments
+Monitor kernel module loading for security compliance
+Validate storage tiering and migration policies
+Audit automated OS provisioning scripts for correctness
+Monitor OS boot times across multiple hosts
+Validate system integrity after emergency shutdowns
+Audit scheduled update windows for conflicts
+Implement host-level monitoring for unusual process activity
+Verify encryption policies on removable media
+Coordinate patch verification in staging environments
+Monitor virtualization host logs for anomalies
+Enforce standardized OS configuration templates
+Validate multi-host clustering for fault tolerance
+Audit container runtime security across hosts
+Monitor disk I/O patterns for predictive maintenance
+Verify kernel tuning parameters for performance compliance
+Enforce centralized SSH configuration policies
+Audit OS-level firewall changes for unauthorized modifications
+Monitor swap activity for optimal memory usage
+Validate automated host provisioning scripts
+Audit backup schedules for redundancy and coverage
+Monitor host CPU load during peak operational hours
+Implement host quarantine procedures for compromised systems
+Verify host storage allocation against organizational policies
+Audit system logs for repeated security warnings
+Monitor network interface utilization across hosts
+Validate OS update rollback procedures
+Implement centralized logging for system error correlation
+Audit scheduled cron jobs for correct execution frequency
+Monitor ephemeral VM lifecycle for resource optimization
+Validate disk encryption compliance across production hosts
+Enforce secure remote access protocols
+Monitor OS-level metrics to identify performance trends
+Audit system daemons for unauthorized configuration changes
+Validate NTP synchronization across all hosts
+Monitor filesystem usage and alert on threshold breaches
+Audit OS patches applied in production versus staging
+Enforce baseline security checks after system rebuilds
+Monitor container host security settings continuously
+Verify storage pool configurations for redundancy
+Audit sudoers and administrative group memberships
+Monitor bootloader configurations for consistency
+Enforce host-level process limits to prevent overutilization
+Validate recovery procedures after host failures
+Monitor disk health and predict potential failures
+Audit TLS certificate expiration dates across hosts
+Enforce system-level auditing of critical directories
+Monitor host uptime and generate periodic summaries
+Validate inter-host communication for secure data transfer
+Audit resource allocation in multi-tenant OS environments
+Monitor kernel logs for unusual warnings or errors
+Enforce scheduled cleanup of temporary system files
+Validate compliance with internal OS hardening guidelines
+Monitor performance impact of deployed OS updates
+Monitor I/O latency across critical storage devices
+Validate kernel module loading policies
+Audit system startup dependencies for efficiency
+Monitor host resource usage trends over time
+Enforce centralized logging format standards
+Validate integrity of configuration management scripts
+Monitor host memory paging and swapping patterns
+Audit scheduled backup retention policies
+Validate OS-level patch compliance in test environments
+Monitor host CPU utilization spikes during maintenance windows
+Enforce secure default permissions on new filesystems
+Validate firewall rule consistency across all hosts
+Monitor disk space utilization for temporary directories
+Audit process priority and CPU scheduling policies
+Validate SSL/TLS enforcement for local services
+Monitor kernel panic events and trigger alerts
+Enforce standardized OS image versioning
+Validate access to critical configuration files
+Monitor storage array performance and alert anomalies
+Audit privileged user activity on hosts
+Validate host-level auditing for compliance reports
+Monitor multi-host failover procedures
+Enforce consistent OS timezone settings across environments
+Validate host-level encryption key rotation
+Monitor system log size and trigger archival
+Audit container host network isolation configurations
+Validate host CPU and memory reservations for critical VMs
+Monitor service response times after OS upgrades
+Enforce consistent OS package versioning
+Validate integrity of automated patching pipelines
+Monitor virtualization host disk provisioning trends
+Audit OS configuration deviations from baseline templates
+Validate scheduled snapshot creation for critical systems
+Monitor host resource allocation in virtual clusters
+Enforce secure host authentication policies
+Validate automated rollback mechanisms for failed updates
+Monitor RAID array rebuild processes
+Audit system logging for critical event detection
+Validate consistency of host time synchronization logs
+Monitor OS-level metrics for performance regression
+Enforce compliance with internal OS hardening standards
+Validate host network bonding configurations
+Monitor container runtime logs for unexpected behavior
+Audit storage tiering and migration operations
+Validate automated provisioning against golden images
+Monitor ephemeral host creation for resource efficiency
+Enforce OS-level access control on sensitive directories
+Validate backup integrity through periodic restore tests
+Monitor host firmware update status and compliance
+Audit system-level certificate deployments and renewals

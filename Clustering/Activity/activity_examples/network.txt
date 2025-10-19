@@ -1,0 +1,300 @@
+Design network topology for enterprise infrastructure
+Configure VLANs and segment traffic between departments
+Monitor network performance and generate weekly reports
+Manage firewall rules and access control lists
+Implement VPN access for remote employees
+Optimize routing protocols for latency and redundancy
+Deploy and maintain wireless access points across sites
+Coordinate bandwidth allocation and traffic shaping policies
+Audit network devices for firmware and configuration compliance
+Monitor intrusion detection alerts and escalate incidents
+Configure high-availability links between data centers
+Maintain IP address allocation and DHCP scopes
+Implement network monitoring dashboards for visibility
+Evaluate new networking hardware and plan upgrades
+Troubleshoot WAN and LAN connectivity issues
+Manage NAT and port forwarding for external services
+Plan network capacity for future growth and expansion
+Configure load balancers for critical services
+Review network logs for anomalous traffic patterns
+Maintain central DNS and domain configuration
+Coordinate network segmentation for security compliance
+Deploy redundancy for core switches and routers
+Implement QoS policies for critical applications
+Validate firewall and security appliance rules regularly
+Maintain VPN concentrators and remote access policies
+Monitor bandwidth usage and enforce fair usage policies
+Configure network access for new office locations
+Implement secure Wi-Fi encryption and authentication
+Manage MPLS or SD-WAN connections between sites
+Coordinate disaster recovery connectivity plans
+Audit network device configurations for unauthorized changes
+Monitor latency and packet loss across WAN links
+Implement port security and MAC filtering on switches
+Plan network upgrades to support new applications
+Configure SNMP monitoring for network devices
+Validate redundancy in routing and failover configurations
+Maintain network documentation and topology diagrams
+Implement secure remote management for devices
+Monitor VPN usage and session activity logs
+Coordinate patching and firmware updates for network appliances
+Manage inter-VLAN routing and gateway configurations
+Configure access policies for guest networks
+Monitor interface errors and device health metrics
+Implement centralized authentication for network devices
+Review routing tables and optimize path selection
+Deploy firewalls for DMZ and public-facing services
+Maintain traffic logs for compliance and audit purposes
+Configure network segmentation for multi-tenant environments
+Plan network expansions in coordination with infrastructure teams
+Produce quarterly network performance and capacity reports
+Implement redundancy for core routing paths
+Monitor VPN gateways for connectivity issues
+Coordinate bandwidth upgrades with ISP providers
+Audit switch configurations for policy compliance
+Optimize firewall rule ordering for performance
+Configure port aggregation on network devices
+Maintain network time synchronization across devices
+Deploy intrusion prevention rules for perimeter security
+Monitor wireless coverage and adjust AP placement
+Validate failover paths for critical links
+Review BGP advertisements and route policies
+Implement traffic encryption across WAN links
+Manage network certificates for secure device communication
+Monitor SNMP traps and system notifications
+Coordinate VLAN changes during mergers or reorganizations
+Configure ACLs for cross-department traffic separation
+Monitor link utilization and plan capacity scaling
+Evaluate new network protocols and deployment feasibility
+Maintain high-availability clusters for load balancers
+Audit remote access logs for compliance verification
+Implement secure tunneling for inter-office connections
+Validate firewall rules against security baseline standards
+Monitor packet captures to detect anomalies
+Manage IP address reservations for critical devices
+Configure DHCP failover between servers
+Monitor QoS adherence for latency-sensitive applications
+Implement rate limiting for external service endpoints
+Maintain device inventory with configuration snapshots
+Review routing convergence after topology changes
+Configure logging and alerting for core switches
+Audit WAN links for redundancy and uptime SLA adherence
+Deploy new wireless SSIDs according to organizational needs
+Manage NAT translation rules for public IP usage
+Monitor interface errors and perform proactive maintenance
+Validate backup configurations for network device settings
+Coordinate network testing during major system upgrades
+Implement network segmentation for sensitive data zones
+Review VPN policies for inactive or expired accounts
+Configure remote site connectivity via secure tunnels
+Maintain firewall backup configurations and change logs
+Monitor traffic anomalies during peak hours
+Validate inter-device trust relationships and credentials
+Coordinate multi-site link failover drills
+Configure multicast routing for internal applications
+Monitor load balancer health checks and backend availability
+Implement redundancy for DNS and DHCP servers
+Review wireless access logs for unauthorized connections
+Plan network expansion for new business units
+Validate SLA compliance for ISP-provided links
+Produce monthly network health and performance reports
+Assess network security posture across enterprise systems
+Monitor inter-office WAN latency and optimize routes
+Implement automated network configuration backups
+Audit VPN access logs for anomalous activity
+Evaluate network device performance under peak load
+Monitor SNMP alerts for critical infrastructure
+Assess network segmentation effectiveness for security zones
+Implement monitoring for DNS query performance
+Validate routing protocol convergence after updates
+Monitor traffic flows for unauthorized protocol usage
+Audit firewall configurations for compliance gaps
+Assess redundancy of core network links
+Validate QoS policies across multiple branches
+Monitor bandwidth usage trends and forecast capacity
+Assess inter-VLAN communication and security rules
+Validate remote access policies for employees
+Monitor AP coverage and channel interference
+Audit switch firmware and patch levels
+Assess security of cloud-connected network endpoints
+Implement automated alerts for network outages
+Monitor network device CPU and memory utilization
+Validate high-availability failover configurations
+Assess VPN performance for mobile and remote users
+Monitor MPLS and SD-WAN link stability
+Validate firewall rule efficiency for performance
+Audit access control logs for compliance verification
+Monitor DHCP leases and resolve conflicts
+Assess latency impact of new network services
+Implement network policy validation for endpoint compliance
+Monitor WAN and LAN interface errors
+Validate secure communication between data centers
+Assess BGP routing changes for network impact
+Monitor VPN concentrator session activity
+Audit network documentation for accuracy and completeness
+Validate disaster recovery connectivity readiness
+Monitor multicast routing efficiency for applications
+Assess wireless network encryption configurations
+Monitor load balancer distribution across servers
+Validate DNS failover and redundancy mechanisms
+Audit device inventory against deployed network hardware
+Monitor network traffic for abnormal spikes
+Validate remote site connectivity under failover scenarios
+Assess internal network trust relationships
+Monitor packet capture data for intrusion indicators
+Audit ACL implementation for department segmentation
+Validate network device logging and syslog forwarding
+Monitor SLA adherence for critical external links
+Assess impact of network topology changes on performance
+Validate rate-limiting rules for external services
+Monitor inter-branch link utilization and adjust capacity
+Implement network traffic encryption for internal systems
+Monitor firewall throughput and optimize configurations
+Validate high-availability setup for critical routers
+Audit network device access permissions
+Monitor VPN bandwidth utilization for remote teams
+Assess wireless network interference and channel usage
+Validate network change management procedures
+Monitor router and switch CPU loads under stress
+Implement centralized SNMP monitoring dashboards
+Audit network logs for compliance with internal policies
+Monitor DNS resolution times for performance issues
+Assess failover configurations for load balancers
+Validate QoS policies for video conferencing traffic
+Monitor network link redundancy across multiple sites
+Audit IP address allocation for potential conflicts
+Assess security compliance of network appliances
+Monitor latency and jitter in WAN links
+Validate ACLs for internal traffic segmentation
+Implement automated alerting for device failures
+Monitor backup and restore processes for network configs
+Assess redundancy in wireless access point deployments
+Validate routing updates for potential disruptions
+Monitor packet loss in critical network segments
+Audit cloud VPN connections for security compliance
+Assess MPLS network performance and reliability
+Monitor wireless client connectivity and authentication
+Validate firewall policies against security baselines
+Implement monitoring for network device temperature and power
+Audit inter-office link utilization and balance traffic loads
+Monitor NAT translation tables for anomalies
+Assess DNS and DHCP server performance under load
+Validate secure remote management protocols
+Monitor interface error counters on switches and routers
+Audit VPN configuration for multi-factor authentication
+Assess impact of network segmentation on application traffic
+Monitor inter-VLAN traffic for policy compliance
+Validate network documentation after topology changes
+Implement redundant connections for critical endpoints
+Monitor firewall rule hit counts for optimization
+Assess security of wireless guest networks
+Monitor BGP route propagation and stability
+Validate SSL/TLS configurations for network services
+Implement logging aggregation for network events
+Monitor load balancer session persistence settings
+Assess WAN link redundancy against SLA requirements
+Validate VPN client configuration for compliance
+Monitor switch port utilization and optimize allocations
+Audit access to network management consoles
+Assess network impact of scheduled maintenance windows
+Monitor wireless signal strength and adjust AP placement
+Evaluate network protocol compliance across devices
+Monitor interface traffic patterns for anomalies
+Implement redundant WAN connections for disaster recovery
+Audit network device logs for unauthorized access
+Validate firewall configurations after firmware upgrades
+Monitor VPN tunnels for stability and uptime
+Assess wireless coverage gaps in office locations
+Validate QoS policies for cloud-based applications
+Monitor DNS propagation times after updates
+Audit router configurations for security compliance
+Evaluate load balancer distribution under peak traffic
+Monitor SNMP traps for unusual network events
+Implement automated network performance reports
+Validate VLAN segmentation against network design
+Assess bandwidth utilization trends for forecasting
+Monitor DHCP lease assignments and conflicts
+Audit access control changes on critical network devices
+Validate redundancy in core switch configurations
+Monitor inter-office link latency and packet loss
+Assess firewall rule effectiveness for threat mitigation
+Implement secure remote management for routers and switches
+Monitor wireless client authentication success rates
+Audit VPN access policies for inactive accounts
+Validate failover configurations for critical services
+Monitor interface errors and perform proactive maintenance
+Assess routing protocol efficiency after network changes
+Audit network time synchronization across devices
+Monitor load balancer health checks and backend availability
+Validate DNS server configurations for redundancy
+Implement traffic shaping policies for priority applications
+Monitor MPLS or SD-WAN performance metrics
+Assess firewall policy changes for potential conflicts
+Audit ACLs across all department networks
+Validate VPN client compliance with security policies
+Monitor network jitter for voice and video traffic
+Assess impact of topology changes on WAN stability
+Validate logging and alerting mechanisms on network devices
+Monitor wireless spectrum usage for interference
+Implement automated failover tests for critical links
+Audit inter-VLAN traffic for security and compliance
+Validate SSL/TLS configurations on network appliances
+Monitor NAT table utilization for external services
+Assess bandwidth allocation across multiple sites
+Audit BGP route advertisements for consistency
+Validate network backup and restore procedures
+Monitor remote site connectivity during peak hours
+Assess device firmware patching status across all network nodes
+Implement centralized dashboard for multi-site monitoring
+Validate access control for wireless guest networks
+Monitor core network link redundancy and failover behavior
+Implement network access segmentation for sensitive data
+Monitor bandwidth usage for critical applications
+Validate inter-site VPN performance and latency
+Audit wireless network security protocols
+Monitor DNS query resolution times across sites
+Assess failover readiness for core network links
+Validate routing redundancy after topology updates
+Implement alerting for abnormal network traffic
+Monitor load balancer session distribution accuracy
+Audit firewall rule changes for compliance violations
+Validate DHCP scope assignments for correctness
+Monitor SNMP data for unusual patterns
+Assess MPLS network health and route availability
+Implement redundancy for core routers and switches
+Validate wireless network encryption standards
+Monitor inter-VLAN routing performance
+Audit VPN access logs for anomalies
+Assess QoS adherence for voice over IP traffic
+Validate centralized network management settings
+Monitor WAN link utilization for bottlenecks
+Implement automated configuration backup for devices
+Audit ACLs for new and existing network segments
+Validate failover paths for load balancers
+Monitor firewall logs for unauthorized connection attempts
+Assess redundancy of DNS and DHCP servers
+Validate remote management protocol security
+Monitor device uptime across multiple sites
+Audit network device certificates for expiration
+Assess traffic shaping impact on application performance
+Implement logging aggregation for WAN devices
+Monitor VPN tunnel encryption and authentication
+Validate core switch redundancy under load
+Audit router and switch configurations after updates
+Assess wireless AP placement for optimal coverage
+Monitor network latency for critical SaaS applications
+Validate firewall and security appliance firmware
+Implement automated monitoring of network thresholds
+Audit inter-office link traffic patterns
+Monitor SNMP trap delivery and alert accuracy
+Assess impact of VLAN changes on application access
+Validate redundancy for network management servers
+Monitor BGP route consistency across providers
+Audit NAT and port forwarding configurations
+Assess security compliance of remote access VPNs
+Monitor interface error counts for proactive maintenance
+Validate backup and restore procedures for core devices
+Implement network performance dashboards for executives
+Audit inter-VLAN ACL rules for policy compliance
+Monitor wireless network client distribution
+Validate QoS configurations for cloud-based video services
