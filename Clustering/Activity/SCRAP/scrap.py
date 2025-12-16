@@ -9,7 +9,7 @@ from selenium.webdriver.support import expected_conditions as EC
 # -------------------------
 # Fichiers d'entrée et sortie
 # -------------------------
-input_file = "input.txt"  # ton fichier .txt avec une global_task par ligne
+input_file = "input.txt"  # fichier .txt avec une global_task par ligne
 output_file = "task_items_responses.jsonl"
 
 # -------------------------

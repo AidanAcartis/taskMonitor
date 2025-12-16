@@ -1,3 +1,0 @@
-'textarea.block.h-10.w-full.resize-none.border-0.bg-transparent.px-0.py-2.text-token-text-primary.placeholder\\:text-token-text-tertiary'
-textarea.block h-10 w-full.resize-none.border-0.bg-transparent.px-0.py-2.text-token-text-primary.placeholder\\:text-token-text-tertiary' autofocus placeholder="Ask Anything"
-                                             data-virtualkeyboard="true" style="display: one;">

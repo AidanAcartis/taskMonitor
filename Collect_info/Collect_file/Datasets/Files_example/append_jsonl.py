@@ -49,4 +49,4 @@ with open(input_file, "r", encoding="utf-8") as f_in, open(output_file, "a", enc
 
         f_out.write(json.dumps(obj, ensure_ascii=False) + "\n")
 
-print(f"✅ JSON mis à jour dans {output_file}, à partir du numéro 36 de Files_list.txt")
+print(f"JSON mis à jour dans {output_file}, à partir du numéro 36 de Files_list.txt")

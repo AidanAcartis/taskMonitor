@@ -1,8 +1,0 @@
-export PROMPT_COMMAND='echo "$(date "+%F %T") $(history 1 | sed "s/^ *[0-9]* *//")" >> ~/.bash_history'
-
-
-| ID | type     | Nom                                                  | heure_ouverture     | heure_fermeture     | jour       |
-+----+----------+------------------------------------------------------+---------------------+---------------------+------------+
-|  1 | Commande | source ~/.bashrc                                     | 14:24:22            | 14:24:22            | 2025-02-26 |
-|  2 | Commande | cat ~/.bash_history                                  | 14:24:41            | 14:24:41            | 2025-02-26 |
-

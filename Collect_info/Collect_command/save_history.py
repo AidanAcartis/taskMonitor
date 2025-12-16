@@ -5,8 +5,8 @@ from datetime import datetime, timedelta
 # Configuration de la connexion à la base de données
 db_config = {
     "host": "localhost",
-    "user": "jennie",        # Remplace par ton utilisateur MySQL
-    "password": "nerd",      # Remplace par ton mot de passe MySQL
+    "user": "jennie",        
+    "password": "...",      
     "database": "commandes_db"
 }
 

@@ -1,4 +1,10 @@
-Tener compte de ceci, avant le code se presente comme ceci '
+# Vérification du rôle sémantique de `lexical_embeds`
+
+## Contexte initial du dataset
+
+Au départ, mon dataset est stocké sous forme JSONL et chargé avec `datasets` de Hugging Face :
+
+```python
 my_dataset = "/content/drive/MyDrive/file_desc_data/file_description.jsonl"
 
 dataset = load_dataset(
@@ -10,39 +16,60 @@ dataset = load_dataset(
         "test": "train[95%:]"
     }
 )
+````
 
-dataset
-', result 'Generating train split: 
- 2008/0 [00:00<00:00, 41271.15 examples/s]
-DatasetDict({
-    train: Dataset({
-        features: ['id', 'filename', 'file_desc'],
-        num_rows: 1707
-    })
-    validation: Dataset({
-        features: ['id', 'filename', 'file_desc'],
-        num_rows: 201
-    })
-    test: Dataset({
-        features: ['id', 'filename', 'file_desc'],
-        num_rows: 100
-    })
-})', mais apres ce pre-processing :"
-# Linear layer to project external embedding into Flan-T5 space
+Après chargement, j’obtiens la structure suivante :
+
+* **Train** : 1707 exemples
+* **Validation** : 201 exemples
+* **Test** : 100 exemples
+
+Chaque entrée contient initialement :
+
+* `id`
+* `filename`
+* `file_desc`
+
+---
+
+## Préprocessing et intégration de `lexical_embeds`
+
+L’objectif du préprocessing est d’enrichir chaque exemple avec un **embedding externe du nom de fichier**, supposé capturer une information sémantique globale.
+
+### Projection dans l’espace de Flan-T5
+
+Comme les embeddings produits par mon modèle lexical (dimension 384) ne sont pas dans le même espace que Flan-T5 (dimension 512), j’utilise une couche linéaire de projection :
+
+```python
 hidden_size = config.d_model  # dimension interne de flan-t5-small
 proj_layer = nn.Linear(embedding_dim, hidden_size)
 proj_layer = proj_layer.eval()
+```
 
-# Tokenization function
+Cette couche permet d’aligner l’espace sémantique externe avec l’espace interne du modèle génératif.
+
+---
+
+### Fonction de tokenisation
+
+Pour chaque exemple :
+
+1. Je récupère le `filename` et la description cible `file_desc`.
+2. Je calcule un embedding sémantique global du nom de fichier.
+3. Je projette cet embedding dans l’espace de Flan-T5.
+4. Je construis un prompt textuel standard.
+5. Je stocke l’embedding projeté comme `lexical_embeds`.
+
+```python
 def tokenize_function(example):
     filename = example["filename"]
     file_desc = example["file_desc"]
 
-    # --- External embedding ---
+    # Embedding externe du filename
     filename_embedding = torch.tensor(lex_model.encode(filename))  # (384,)
     filename_proj = proj_layer(filename_embedding.float())  # (512,)
 
-    # --- Prompt ---
+    # Prompt
     prompt = f"""
     Given the following filename, generate a short description of what the file is likely about.
 
@@ -51,43 +78,109 @@ def tokenize_function(example):
     Description:
     """
 
-    # --- Tokenization ---
+    # Tokenisation
     tokenized_inputs = tokenizer(prompt, padding="max_length", truncation=True)
     tokenized_labels = tokenizer(file_desc, padding="max_length", truncation=True)
 
-    # --- Store ---
     tokenized_inputs["labels"] = tokenized_labels["input_ids"]
-    tokenized_inputs["lexical_embeds"] = filename_proj.detach().numpy()  # sera injecté dans le modèle
+    tokenized_inputs["lexical_embeds"] = filename_proj.detach().numpy()
 
     return tokenized_inputs
+```
 
-tokenized_datasets = dataset.map(tokenize_function, batched=False)
-tokenized_datasets = tokenized_datasets.remove_columns(['id', 'filename', 'file_desc'])
+Après application de cette fonction et suppression des colonnes inutiles, le dataset devient :
 
-print(f"Training: {tokenized_datasets['train'].shape}")
-print(f"Validation: {tokenized_datasets['validation'].shape}")
-print(f"Test: {tokenized_datasets['test'].shape}")
+* `input_ids`
+* `attention_mask`
+* `labels`
+* `lexical_embeds`
 
-print(tokenized_datasets)", result :"Map: 100%
- 1707/1707 [00:39<00:00, 38.63 examples/s]
-Map: 100%
- 201/201 [00:03<00:00, 52.62 examples/s]
-Map: 100%
- 100/100 [00:02<00:00, 54.25 examples/s]
-Training: (1707, 4)
-Validation: (201, 4)
-Test: (100, 4)
-DatasetDict({
-    train: Dataset({
-        features: ['input_ids', 'attention_mask', 'labels', 'lexical_embeds'],
-        num_rows: 1707
-    })
-    validation: Dataset({
-        features: ['input_ids', 'attention_mask', 'labels', 'lexical_embeds'],
-        num_rows: 201
-    })
-    test: Dataset({
-        features: ['input_ids', 'attention_mask', 'labels', 'lexical_embeds'],
-        num_rows: 100
-    })
-})". Et moi je veux prouver si lexical_embeds est vraiment un vecteur de semantique global du filename qui capture le sens combine de tous ces sequences ou pas du tout.
+Chaque split conserve le même nombre d’exemples qu’au départ.
+
+---
+
+## Problématique scientifique
+
+La question centrale que je cherche à traiter est la suivante :
+
+> **Est-ce que `lexical_embeds` représente réellement un vecteur de sémantique globale du nom de fichier, capturant le sens combiné de la séquence entière, ou s’agit-il simplement d’un signal faible ou redondant ?**
+
+Autrement dit, je veux déterminer si :
+
+* `lexical_embeds` apporte une information **complémentaire** aux tokens textuels,
+* ou si le modèle pourrait atteindre les mêmes performances sans cette composante.
+
+---
+
+## Hypothèse de travail
+
+Mon hypothèse est que :
+
+* Le nom de fichier contient une **sémantique compacte et globale** (ex. type de document, domaine, usage),
+* Cette information est difficile à reconstruire uniquement à partir d’un prompt textuel standard,
+* En l’injectant sous forme de vecteur dense unique, le modèle peut exploiter cette information dès les premières couches d’attention.
+
+Dans cette configuration, `lexical_embeds` agit comme un **résumé sémantique global**, analogue à un token spécial porteur de contexte.
+
+---
+
+## Comment démontrer empiriquement son utilité
+
+Pour prouver que `lexical_embeds` capture effectivement une sémantique globale pertinente, je peux procéder de plusieurs manières :
+
+### 1. Étude d’ablation
+
+* Entraîner un modèle **avec** `lexical_embeds`.
+* Entraîner un modèle **sans** `lexical_embeds`.
+* Comparer :
+
+  * la loss,
+  * la qualité des descriptions générées,
+  * la vitesse de convergence.
+
+Une amélioration systématique indique que l’embedding apporte une information utile.
+
+---
+
+### 2. Perturbation contrôlée
+
+* Remplacer `lexical_embeds` par :
+
+  * du bruit,
+  * un vecteur constant,
+  * un embedding d’un autre filename.
+* Observer la dégradation des performances.
+
+Si les performances chutent, cela indique que le modèle utilisait activement l’information sémantique contenue dans `lexical_embeds`.
+
+---
+
+### 3. Analyse géométrique de l’espace des embeddings
+
+* Projeter les `lexical_embeds` (PCA / t-SNE / UMAP).
+* Vérifier si des noms de fichiers sémantiquement proches se regroupent.
+
+Un regroupement cohérent renforce l’hypothèse d’une représentation globale du sens.
+
+---
+
+### 4. Analyse de l’attention
+
+* Examiner les poids d’attention associés au token issu de `lexical_embeds`.
+* Vérifier s’il est utilisé de manière non triviale par le modèle, notamment dans les premières couches.
+
+---
+
+## Conclusion intermédiaire
+
+Dans cette architecture, `lexical_embeds` n’est pas un simple ajout technique.
+Il constitue une **hypothèse de représentation sémantique globale**, injectée explicitement dans le modèle pour guider la génération.
+
+La validation de cette hypothèse repose sur :
+
+* des comparaisons expérimentales rigoureuses,
+* des analyses d’ablation,
+* et une étude du comportement interne du modèle.
+
+C’est précisément ce que je cherche à démontrer à travers ce pipeline.
+

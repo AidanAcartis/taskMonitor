@@ -8,5 +8,3 @@ Inventer des répertoires comme : Collect_file, all_script, system_logs, utils, 
 avec des applications comme : Visual Studio Code, Google Chrome, Notepad++, Sublime Text, PyCharm.
 Pas de doublons exacts avec les lignes déjà présentes dans `Files_list.txt`.
 Donne-moi directement les 35 lignes dans le format attendu, sans explication.
-
-MlayBe@2025

@@ -40,6 +40,6 @@ def treat_lines(infile, outfile):
     except Exception as e:
         print(f"[!] Erreur lors du traitement de {infile} : {e}")
 
-# 🔁 Traitement des deux fichiers
+# Traitement des deux fichiers
 treat_lines('Opened_file.txt', 'Opened_file_true.txt')
 treat_lines('Closed_file.txt', 'Closed_file_true.txt')

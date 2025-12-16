@@ -1,43 +1,62 @@
-Critères pour les listes de tâches
+# Critères de rédaction des listes de tâches
 
-Niveau méso/global, pas micro
+## Niveau méso / global (pas micro)
 
-Chaque ligne doit décrire une activité complète ou un cluster d’actions observables, pas une seule action ponctuelle.
+Chaque ligne doit décrire une activité complète ou un ensemble cohérent d’actions observables, et non une action ponctuelle isolée.
 
-Exemple : “Use the web and online tools to search for information, watch instructional videos, and plan activities” ✅
+Exemple acceptable :  
+- *Use the web and online tools to search for information, watch instructional videos, and plan activities*
 
-À éviter : “Browsed the web to search for cooking recipes” ❌
+Exemple à éviter :  
+- *Browsed the web to search for cooking recipes*
 
-Précis mais pas trop détaillé sur la structure interne
+---
 
-Ne pas décrire ce qu’il a exactement fait dans le détail technique (pas de header, footer, boutons exacts, couleurs…)
+## Précis sans entrer dans les détails techniques internes
 
-L’idée : on peut déduire l’activité à partir des fichiers ouverts, commandes exécutées, ou logiciels utilisés, mais pas deviner ses choix précis.
+La description ne doit pas détailler précisément les éléments techniques utilisés (structure interne, boutons exacts, couleurs, en-têtes, etc.).
 
-Observable à partir d’actions réelles
+L’objectif est de pouvoir déduire l’activité à partir des traces observables sur l’ordinateur (fichiers ouverts, commandes exécutées, logiciels utilisés), sans supposer les choix précis effectués par l’utilisateur.
 
-La tâche doit être visible via les traces sur l’ordinateur : fichiers ouverts, dossiers modifiés, commandes lancées, applications utilisées.
+---
 
-Exemple : “Debug, test, and troubleshoot code across multiple environments”
+## Activité observable à partir d’actions réelles
 
-On doit pouvoir regrouper un cluster d’actions singulières sous cette description.
+Chaque tâche doit être identifiable à partir de traces concrètes laissées sur la machine : fichiers modifiés, dossiers parcourus, commandes lancées, applications utilisées.
 
-Verbes à l’infinitif
+Exemple :  
+- *Debug, test, and troubleshoot code across multiple environments*
 
-Pour uniformité et clarté dans le dataset.
+Il doit être possible de regrouper plusieurs actions unitaires sous une seule description d’activité.
 
-Exemple : “Manage installed software by adding, updating, or removing applications”
+---
 
-Pas d’“or” dans la formulation
+## Utilisation de verbes à l’infinitif
 
-Chaque activité doit être une description unique d’actions concrètes, pas une liste de possibilités ou alternatives.
+Toutes les descriptions doivent être formulées à l’infinitif afin d’assurer l’uniformité et la cohérence du dataset.
 
-Regrouper plusieurs micro-actions en une seule activité cohérente
+Exemple :  
+- *Manage installed software by adding, updating, or removing applications*
 
-Une activité doit englober plusieurs actions singulières reliées par un même objectif ou contexte.
+---
 
-Exemple : plusieurs fichiers modifiés, commandes lancées, serveur redémarré → “Debug, test, and troubleshoot code across multiple environments”
+## Absence de “or” dans les formulations
 
-Applicable pour ton modèle Flan-T5
+Chaque activité doit décrire une action concrète et unique, et non une alternative ou un choix possible entre plusieurs options.
 
-La tâche doit être synthétisable en une description que le modèle peut apprendre à générer à partir d’un cluster de fichiers, commandes et applications.
+---
+
+## Regrouper les micro-actions en une activité cohérente
+
+Une tâche doit englober plusieurs actions élémentaires liées par un même objectif ou un même contexte.
+
+Par exemple, la modification de plusieurs fichiers, l’exécution de commandes et le redémarrage d’un service peuvent être regroupés sous :  
+- *Debug, test, and troubleshoot code across multiple environments*
+
+---
+
+## Adapté à l’entraînement du modèle Flan-T5
+
+Chaque tâche doit pouvoir être synthétisée en une description que le modèle peut apprendre à générer à partir d’un ensemble de fichiers ouverts, de commandes exécutées et d’applications utilisées.
+
+L’objectif est de permettre au modèle de généraliser correctement à partir de clusters d’actions observables.

@@ -1,4 +1,0 @@
-oK, maintenant je vais dabord classifier mes donnes en sites(les sites visites), les commandes, les programmes(contenu du code), les fichiers (les noms du fichier), les applications. il n'y a pas encore de categorie d'activite. mais en traitant chaque colonne avec chaque modele qui correspondent a chacune(par exemple toi quand on te donne un lien de site tu reconnais immediatement c'est qu'il fait et son contenu, de meme avec un commande(tu sais ce qu'il fait, pourquoi la personne l'a lance, bref tout), programmes(tu comprends les codes), les fichiers(tu comprends les textes), les applications/logiciels(tu connais deja tous les applications et leur usage)alors je veux exactement les memes modeles que tu utilises pour ceux-la afin de trouver ou retourner en output tous les categories d'activites selon les donnes) on va former notre categorie d'activite selon le donne.
-
-
-mistralai/Mistral-7B-Instruct-v0.3

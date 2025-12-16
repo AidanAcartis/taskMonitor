@@ -9,7 +9,7 @@ output_path = "./data_train_file_with_filename_1.jsonl"
 # vérification des fichiers
 for path in [files_ext_path, data_path]:
     if not os.path.exists(path):
-        raise FileNotFoundError(f"❌ Fichier introuvable : {path}")
+        raise FileNotFoundError(f"Fichier introuvable : {path}")
 
 # lecture du fichier contenant les noms de fichiers
 file_map = {}
@@ -39,4 +39,4 @@ with open(data_path, "r", encoding="utf-8") as f_in, open(output_path, "w", enco
         json.dump(new_data, f_out, ensure_ascii=False)
         f_out.write("\n")
 
-print(f"✅ Fichier créé avec succès : {output_path}")
+print(f"Fichier créé avec succès : {output_path}")

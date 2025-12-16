@@ -39,7 +39,7 @@ for split in ["train", "validation", "test"]:
             })
 
 # --- Statistiques globales ---
-print("\n📊 Global statistics:")
+print("\nGlobal statistics:")
 print(f"Mean similarity: {np.mean(sims_lexical):.4f}")
 print(f"Min similarity: {np.min(sims_lexical):.4f}")
 print(f"Max similarity: {np.max(sims_lexical):.4f}")
@@ -55,7 +55,7 @@ plt.legend()
 plt.show()
 
 # --- Quelques exemples vérifiés ---
-print("\n🔍 Quelques exemples vérifiés manuellement :")
+print("\nQuelques exemples vérifiés manuellement :")
 for ex in examples_to_show:
     print(f"\nFilename: {ex['filename']}")
     print(f" → Similarity: {ex['similarity']:.4f}")

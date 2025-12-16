@@ -1,13 +1,20 @@
-Voici un script `extract_window_events.sh` qui :
+# Script d’extraction des événements de fenêtres
 
-- exécute les deux commandes que tu as données,
-- stocke le résultat de :
-  - la **commande 1 (ouvertures)** dans `Opened_file.txt`
-  - la **commande 2 (fermetures)** dans `Closed_file.txt`
+## Objectif du script
+
+J’ai mis en place un script Bash nommé `extract_window_events.sh` dont le rôle est de :
+
+- exécuter deux commandes d’extraction à partir d’un fichier de log,
+- séparer les événements d’ouverture et de fermeture de fenêtres,
+- stocker les résultats dans deux fichiers distincts :
+  - `Opened_file.txt` pour les fenêtres ouvertes,
+  - `Closed_file.txt` pour les fenêtres fermées.
+
+Ce script s’appuie sur l’analyse du fichier `window_changes.log`.
 
 ---
 
-### ✅ Fichier : `extract_window_events.sh`
+## Script : `extract_window_events.sh`
 
 ```bash
 #!/bin/bash
@@ -15,7 +22,7 @@ Voici un script `extract_window_events.sh` qui :
 # Fichier log à analyser
 LOG_FILE="$HOME/window_changes.log"
 
-# Fichier de sortie
+# Fichiers de sortie
 OPENED_FILE="$HOME/Opened_file.txt"
 CLOSED_FILE="$HOME/Closed_file.txt"
 
@@ -34,22 +41,59 @@ paste -d ' ' \
 echo "Fichiers générés :"
 echo "- $OPENED_FILE"
 echo "- $CLOSED_FILE"
-```
+````
 
 ---
 
-### 🔧 Instructions :
+## Fonctionnement général
 
-1. Sauvegarder le fichier sous le nom `extract_window_events.sh`
+Le script procède en deux étapes principales :
+
+1. **Fenêtres ouvertes**
+
+   * Il repère les lignes contenant `Nouvelles fenêtres ajoutées`.
+   * Il extrait l’horodatage ainsi que l’identifiant ou le nom de la fenêtre.
+   * Il combine ces informations sur une seule ligne grâce à `paste`.
+
+2. **Fenêtres fermées**
+
+   * Il applique la même logique aux lignes contenant `Fenêtres fermées`.
+   * Les résultats sont stockés dans un fichier séparé.
+
+Cette séparation permet de reconstruire plus facilement les durées d’ouverture des fenêtres ou d’analyser les usages par application.
+
+---
+
+## Instructions d’utilisation
+
+1. Sauvegarder le script sous le nom :
+
+   ```bash
+   extract_window_events.sh
+   ```
+
 2. Rendre le fichier exécutable :
+
    ```bash
    chmod +x extract_window_events.sh
    ```
-3. Exécuter :
+
+3. Lancer le script :
+
    ```bash
    ./extract_window_events.sh
    ```
 
+Après exécution, les deux fichiers de sortie sont générés dans le répertoire personnel.
+
 ---
 
-Souhaites-tu que ce script s’exécute automatiquement chaque jour ou après chaque modification du fichier `window_changes.log` ?
+## Évolutions possibles
+
+Ce script peut ensuite être intégré dans un pipeline plus large, par exemple pour :
+
+* une exécution automatique quotidienne (cron),
+* un déclenchement après modification de `window_changes.log`,
+* un préprocessing en vue d’un dataset temporel d’activités utilisateur.
+
+```

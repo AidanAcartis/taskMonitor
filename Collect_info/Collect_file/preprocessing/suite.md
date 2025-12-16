@@ -1,19 +1,32 @@
-Parfait ✅ ton **préprocessing est nickel** : tu as bien maintenant les 4 colonnes :
+# Intégration de `lexical_embeds` dans Hugging Face Trainer
 
-* `input_ids`
-* `attention_mask`
-* `labels`
-* `lexical_embeds`
+## État actuel du préprocessing
 
-👉 Mais attention : HuggingFace `Trainer` **n’accepte pas directement** `lexical_embeds`.
-Il faut :
+À ce stade, mon préprocessing est correct : chaque exemple du dataset contient bien les quatre champs suivants :
 
-1. **Un modèle custom** (`T5WithFusion`) qui sait lire `lexical_embeds` et les injecter.
-2. **Un collator** qui regroupe `lexical_embeds` en batch correctement.
+- `input_ids`
+- `attention_mask`
+- `labels`
+- `lexical_embeds`
+
+Cela signifie que toutes les informations nécessaires sont présentes au niveau des données.  
+Cependant, **Hugging Face `Trainer` ne sait pas exploiter automatiquement un champ supplémentaire comme `lexical_embeds`**.
+
+Pour que cela fonctionne correctement, deux éléments sont indispensables :
+
+1. Un **modèle custom** capable de recevoir `lexical_embeds` et de les injecter dans le calcul.
+2. Un **data collator personnalisé** pour regrouper correctement `lexical_embeds` au niveau du batch.
 
 ---
 
-### 1️⃣ Le modèle custom (fusion au premier token)
+## 1. Modèle custom : `T5WithFusion`
+
+J’utilise un wrapper autour de `T5ForConditionalGeneration` afin d’injecter les embeddings lexicaux directement dans les embeddings d’entrée.
+
+Le principe est simple :
+- Je récupère les embeddings des tokens via l’encodeur T5.
+- J’ajoute `lexical_embeds` au premier token (position 0).
+- Le reste du modèle fonctionne normalement.
 
 ```python
 import torch
@@ -30,31 +43,36 @@ class T5WithFusion(nn.Module):
         input_ids=None,
         attention_mask=None,
         labels=None,
-        lexical_embeds=None,  # <- ton vecteur externe
+        lexical_embeds=None,
     ):
-        # embeddings initiaux (batch, seq_len, hidden_dim)
+        # Récupération des embeddings des tokens
         inputs_embeds = self.t5.encoder.embed_tokens(input_ids)
 
-        # injecter lexical_embeds sur le 1er token
+        # Injection de lexical_embeds sur le premier token
         if lexical_embeds is not None:
             lexical_embeds = lexical_embeds.unsqueeze(1)  # (batch, 1, hidden_dim)
             inputs_embeds[:, 0:1, :] = inputs_embeds[:, 0:1, :] + lexical_embeds
 
-        # forward classique
+        # Forward classique de T5
         return self.t5(
             inputs_embeds=inputs_embeds,
             attention_mask=attention_mask,
             labels=labels,
         )
-```
+````
+
+Dans cette architecture, `lexical_embeds` agit comme un **biais sémantique global**, injecté dès l’entrée de l’encodeur.
 
 ---
 
-### 2️⃣ DataCollator pour gérer lexical\_embeds
+## 2. Data collator personnalisé
+
+Le rôle du data collator est de :
+
+* empiler correctement les tenseurs (`input_ids`, `attention_mask`, `labels`),
+* regrouper `lexical_embeds` sous forme d’un tenseur `(batch_size, hidden_dim)`.
 
 ```python
-from torch.utils.data import DataLoader
-
 class DataCollatorWithFusion:
     def __init__(self, tokenizer):
         self.tokenizer = tokenizer
@@ -69,13 +87,17 @@ class DataCollatorWithFusion:
             "input_ids": input_ids,
             "attention_mask": attention_mask,
             "labels": labels,
-            "lexical_embeds": lexical_embeds,  # envoyé au modèle
+            "lexical_embeds": lexical_embeds,
         }
 ```
 
+Sans ce collator, `lexical_embeds` serait ignoré ou mal formé lors de l’entraînement.
+
 ---
 
-### 3️⃣ Utilisation avec HuggingFace Trainer
+## 3. Entraînement avec Hugging Face Trainer
+
+Une fois le modèle et le collator définis, l’utilisation avec `Trainer` devient standard.
 
 ```python
 from transformers import TrainingArguments, Trainer
@@ -107,12 +129,16 @@ trainer.train()
 
 ---
 
-🚀 Avec ça :
+## Résultat attendu
 
-* Ton dataset **alimente lexical\_embeds au modèle**.
-* Le modèle `T5WithFusion` **injecte lexical\_embeds dans le premier token**.
-* HuggingFace `Trainer` entraîne normalement avec cette nouvelle architecture enrichie.
+Avec cette configuration :
+
+* `lexical_embeds` est bien transmis du dataset jusqu’au modèle.
+* Le modèle `T5WithFusion` exploite explicitement cette information au niveau des embeddings.
+* L’entraînement fonctionne normalement avec `Trainer`, sans hack ni modification interne.
+
+Cette approche me permet d’évaluer proprement l’impact d’un **vecteur sémantique global externe** sur la génération de descriptions.
 
 ---
 
-Veux-tu que je t’ajoute aussi **la version inference** (génération avec `generate()`) adaptée à ce `T5WithFusion` ?
+

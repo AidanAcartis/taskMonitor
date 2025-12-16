@@ -1,8 +1,0 @@
-Je veux collecter tous les commandes lancés, les programmes lancés, les applications et logiciels, 
-les fichiers ouverts, les liens des sites qu'on a visité. Et les stocker par ordre de l'heure à 
-laquelle on l'a ouvert, ou on l'a lancé. Je veux un script qui fasse cela.
-Le script va faire cette collection depuis le matin de 00:00 jusqu'à l'heure de l'exécution du script(si le machine n'est pas encore
-demarre donc aucun activite alors laisser tout seulement un vide par exemple de 00:00 a 05:00).
-Mais le plus grand probleme c'est comment collecter ces informations seront stockes.
-Ils devront se separes selon les types dabord (commandes, fichiers, programmes, logiciels/applications, sites(liens)).
-Mais je ne sais pas ou les stocker pour une tres bonne organisation.

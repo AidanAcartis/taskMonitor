@@ -10,4 +10,4 @@ with open(input_file, "r", encoding="utf-8") as f_in, open(output_file, "w", enc
         rest = parts[1]
         f_out.write(f"{new_idx} {rest}\n")
 
-print(f"✅ Fichier renuméroté créé dans {output_file}")
+print(f"Fichier renuméroté créé dans {output_file}")
