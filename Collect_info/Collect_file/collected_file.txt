@@ -1,0 +1,268 @@
+2025-07-22 10:18:16 10:18:18 collect_script.sh - Collect_file - Visual Studio Code
+2025-07-22 10:18:18 10:18:26 extract_window_events.sh - Collect_file - Visual Studio Code
+2025-07-22 10:18:26 10:18:34 collect_script.sh - Collect_file - Visual Studio Code
+2025-07-22 10:18:34 10:19:13 ● collect_script.sh - Collect_file - Visual Studio Code
+2025-07-22 10:19:13 10:19:15 READme.md - Collect_file - Visual Studio Code
+2025-07-22 10:19:15 10:19:35 Preview READme.md - Collect_file - Visual Studio Code
+2025-07-22 10:19:35 10:20:18 ● collect_script.sh - Collect_file - Visual Studio Code
+2025-07-22 10:20:18 10:20:39 collect_script.sh - Collect_file - Visual Studio Code
+2025-07-22 10:20:28 11:01:20 Home
+2025-07-22 10:20:39 10:20:43 ● collect_script.sh - Collect_file - Visual Studio Code
+2025-07-22 10:20:43 10:20:47 collect_script.sh - Collect_file - Visual Studio Code
+2025-07-22 10:20:47 10:20:57 extract_window_events.sh - Collect_file - Visual Studio Code
+2025-07-22 10:20:57 10:20:59 collect_script.sh - Collect_file - Visual Studio Code
+2025-07-22 10:20:59 10:21:05 ● collect_script.sh - Collect_file - Visual Studio Code
+2025-07-22 10:21:05 10:21:09 collect_script.sh - Collect_file - Visual Studio Code
+2025-07-22 10:21:09 10:21:28 extract_window_events.sh - Collect_file - Visual Studio Code
+2025-07-22 10:21:28 10:21:32 window_changes.log - Collect_file - Visual Studio Code
+2025-07-22 10:21:32 10:21:42 collect_script.sh - Collect_file - Visual Studio Code
+2025-07-22 10:21:42 10:21:52 extract_window_events.sh - Collect_file - Visual Studio Code
+2025-07-22 10:21:52 10:21:58 collect_script.sh - Collect_file - Visual Studio Code
+2025-07-22 10:21:58 10:22:25 ● collect_script.sh - Collect_file - Visual Studio Code
+2025-07-22 10:22:25 10:22:31 collect_script.sh - Collect_file - Visual Studio Code
+2025-07-22 10:22:31 10:22:39 ● collect_script.sh - Collect_file - Visual Studio Code
+2025-07-22 10:22:39 10:22:41 READme.md - Collect_file - Visual Studio Code
+2025-07-22 10:22:41 10:23:32 Preview READme.md - Collect_file - Visual Studio Code
+2025-07-22 10:23:32 10:24:12 ● collect_script.sh - Collect_file - Visual Studio Code
+2025-07-22 10:24:12 10:24:14 READme.md - Collect_file - Visual Studio Code
+2025-07-22 10:24:14 10:24:23 Preview READme.md - Collect_file - Visual Studio Code
+2025-07-22 10:24:23 10:25:05 ● collect_script.sh - Collect_file - Visual Studio Code
+2025-07-22 10:25:05 10:25:17 Preview READme.md - Collect_file - Visual Studio Code
+2025-07-22 10:25:17 10:25:36 ● collect_script.sh - Collect_file - Visual Studio Code
+2025-07-22 10:25:36 10:25:44 Preview READme.md - Collect_file - Visual Studio Code
+2025-07-22 10:25:44 10:26:35 ● collect_script.sh - Collect_file - Visual Studio Code
+2025-07-22 10:26:35 10:26:37 collect_script.sh - Collect_file - Visual Studio Code
+2025-07-22 10:26:37 10:27:50 Preview READme.md - Collect_file - Visual Studio Code
+2025-07-22 10:27:50 10:29:32 collect_script.sh - Collect_file - Visual Studio Code
+2025-07-22 10:29:32 10:29:34 ● collect_script.sh - Collect_file - Visual Studio Code
+2025-07-22 10:29:34 10:30:57 collect_script.sh - Collect_file - Visual Studio Code
+2025-07-22 10:30:57 10:31:03 Preview READme.md - Collect_file - Visual Studio Code
+2025-07-22 10:31:03 10:31:05 collect_script.sh - Collect_file - Visual Studio Code
+2025-07-22 10:31:05 10:31:09 ● collect_script.sh - Collect_file - Visual Studio Code
+2025-07-22 10:31:09 10:31:40 collect_script.sh - Collect_file - Visual Studio Code
+2025-07-22 10:31:36 10:31:38 Visual Studio Code
+2025-07-22 10:31:40 10:31:44 Opened_file_true.txt - Collect_file - Visual Studio Code
+2025-07-22 10:31:44 10:31:46 collect_script.sh - Collect_file - Visual Studio Code
+2025-07-22 10:31:46 10:31:48 Closed_file.txt - Collect_file - Visual Studio Code
+2025-07-22 10:31:48 10:31:52 collect_script.sh - Collect_file - Visual Studio Code
+2025-07-22 10:31:52 10:32:00 Closed_file_true.txt - Collect_file - Visual Studio Code
+2025-07-22 10:32:00 10:32:25 collect_script.sh - Collect_file - Visual Studio Code
+2025-07-22 10:32:25 10:32:27 Closed_file.txt - Collect_file - Visual Studio Code
+2025-07-22 10:32:27 10:32:33 Opened_file.txt - Collect_file - Visual Studio Code
+2025-07-22 10:32:33 10:32:53 extract_window_events.sh - Collect_file - Visual Studio Code
+2025-07-22 10:32:53 10:33:16 window_changes.log - Collect_file - Visual Studio Code
+2025-07-22 10:33:16 10:35:44 extract_window_events.sh - Collect_file - Visual Studio Code
+2025-07-22 10:35:36 10:35:40 Visual Studio Code
+2025-07-22 10:35:44 10:35:46 test.txt - Collect_file - Visual Studio Code
+2025-07-22 10:35:46 10:35:48 ● test.txt - Collect_file - Visual Studio Code
+2025-07-22 10:35:48 10:35:58 test.txt - Collect_file - Visual Studio Code
+2025-07-22 10:35:58 10:36:11 ● test.txt - Collect_file - Visual Studio Code
+2025-07-22 10:36:11 10:36:27 test.txt - Collect_file - Visual Studio Code
+2025-07-22 10:36:27 10:36:35 extract_window_events.sh - Collect_file - Visual Studio Code
+2025-07-22 10:36:35 10:36:41 test.txt - Collect_file - Visual Studio Code
+2025-07-22 10:36:41 10:36:49 ● test.txt - Collect_file - Visual Studio Code
+2025-07-22 10:36:49 10:37:04 test.txt - Collect_file - Visual Studio Code
+2025-07-22 10:37:04 10:37:08 opened_test.txt - Collect_file - Visual Studio Code
+2025-07-22 10:37:08 10:37:48 get_collect_file.py - Collect_file - Visual Studio Code
+2025-07-22 10:37:48 10:37:51 Opened_file.txt - Collect_file - Visual Studio Code
+2025-07-22 10:37:51 10:37:53 opened_test.txt - Collect_file - Visual Studio Code
+2025-07-22 10:37:53 10:38:27 extract_window_events.sh - Collect_file - Visual Studio Code
+2025-07-22 10:38:27 10:38:41 window_changes.log - Collect_file - Visual Studio Code
+2025-07-22 10:38:41 10:38:43 Closed_file.txt - Collect_file - Visual Studio Code
+2025-07-22 10:38:43 10:38:46 window_changes.log - Collect_file - Visual Studio Code
+2025-07-22 10:38:46 10:38:50 Opened_file.txt - Collect_file - Visual Studio Code
+2025-07-22 10:38:50 10:39:22 window_changes.log - Collect_file - Visual Studio Code
+2025-07-22 10:39:22 10:39:42 corrected_monitor_windows.sh - Collect_file - Visual Studio Code
+2025-07-22 10:39:42 10:40:11 prev_windows.txt - Collect_file - Visual Studio Code
+2025-07-22 10:40:11 10:40:13 THE_COMMAND.txt - Collect_file - Visual Studio Code
+2025-07-22 10:40:13 10:40:15 corrected_monitor_windows.sh - Collect_file - Visual Studio Code
+2025-07-22 10:40:15 10:40:29 prev_windows.txt - Collect_file - Visual Studio Code
+2025-07-22 10:40:29 10:46:51 window_changes.log - Collect_file - Visual Studio Code
+2025-07-22 10:40:48 10:40:52 Collect_info
+2025-07-22 10:40:52 10:40:56 all_script
+2025-07-22 10:40:56 10:41:08 monitor_windows_lab
+2025-07-22 10:41:08 10:41:10 all_script
+2025-07-22 10:41:10 10:41:18 With_audit
+2025-07-22 10:41:18 10:41:20 vs_code_monitor
+2025-07-22 10:41:20 10:41:34 monitor_windows_lab
+2025-07-22 10:41:34 10:41:39 all_script
+2025-07-22 10:41:37 10:46:12 aidan@aidan-Lenovo-N50-70: ~/Documents/Projects/Visualisation/Collect_info/all_script
+2025-07-22 10:41:39 10:41:45 Search for “code”
+2025-07-22 10:41:45 10:41:49 all_script
+2025-07-22 10:41:49 10:41:51 Collect_info
+2025-07-22 10:41:51 10:41:53 all_script
+2025-07-22 10:41:53 10:41:59 all_mardown
+2025-07-22 10:41:59 10:42:01 Collect_info
+2025-07-22 10:42:01 10:42:07 all_code
+2025-07-22 10:42:07 10:42:09 Mikitika_BDD
+2025-07-22 10:42:09 10:42:11 Collect_info
+2025-07-22 10:42:11 10:42:13 all_script
+2025-07-22 10:42:13 10:42:19 monitor_windows_lab
+2025-07-22 10:42:19 10:45:54 all_script
+2025-07-22 10:42:21 11:21:45 aidan@aidan-Lenovo-N50-70: ~/Documents/Projects/Visualisation/Collect_info/all_script
+2025-07-22 10:42:30 12:19:02 corrected_monitor_windows.sh - all_script - Visual Studio Code
+2025-07-22 10:42:44 12:21:14 corrected_try_script.sh - all_script - Visual Studio Code
+2025-07-22 10:43:02 12:19:18 new_script_open.sh - all_script - Visual Studio Code
+2025-07-22 10:43:09 12:19:08 try_script.sh - all_script - Visual Studio Code
+2025-07-22 10:43:17 12:19:04 with_audit.sh - all_script - Visual Studio Code
+2025-07-22 10:43:29 12:17:32 _window.sh - all_script - Visual Studio Code
+2025-07-22 10:43:33 12:17:40 monitor_vscode.sh - all_script - Visual Studio Code
+2025-07-22 10:43:39 10:56:01 fermeture.sh - all_script - Visual Studio Code
+2025-07-22 10:43:49 12:23:26 monitor_windos.sh - all_script - Visual Studio Code
+2025-07-22 10:44:57 10:55:20 script_to_get_title.sh - all_script - Visual Studio Code
+2025-07-22 10:45:47 11:01:44 script_to_get_title.sh - all_script - Visual Studio Code
+2025-07-22 10:45:54 10:57:36 monitor_windows_lab
+2025-07-22 10:45:56 11:22:03 aidan@aidan-Lenovo-N50-70: ~/Documents/Projects/Visualisation/Collect_info/all_script/monitor_windows_lab
+2025-07-22 10:46:51 10:47:40 test.txt - Collect_file - Visual Studio Code
+2025-07-22 10:47:09 11:03:20 extract_window_events.sh - Collect_file - Visual Studio Code
+2025-07-22 10:47:19 10:48:04 ● test.txt - Collect_file - Visual Studio Code
+2025-07-22 10:47:38 10:48:33 test.txt - Collect_file - Visual Studio Code
+2025-07-22 10:47:40 10:48:14 ● test.txt - Collect_file - Visual Studio Code
+2025-07-22 10:47:50 10:52:39 test.txt - Collect_file - Visual Studio Code
+2025-07-22 10:47:52 10:48:39 ● test.txt - Collect_file - Visual Studio Code
+2025-07-22 10:48:04 11:25:53 window_changes.log - Collect_file - Visual Studio Code
+2025-07-22 10:48:12 10:49:40 ● test.txt - Collect_file - Visual Studio Code
+2025-07-22 10:48:14 11:20:48 test.txt - Collect_file - Visual Studio Code
+2025-07-22 10:48:39 11:24:21 opened_test.txt - Collect_file - Visual Studio Code
+2025-07-22 10:49:40 11:27:53 test.txt - Collect_file - Visual Studio Code
+2025-07-22 10:52:39 11:20:21 test1 - Collect_file - Visual Studio Code
+2025-07-22 10:53:38 11:21:51 aidan@aidan-Lenovo-N50-70: ~
+2025-07-22 10:54:47 11:00:45 corrected_monitor_windows.sh - Collect_file - Visual Studio Code
+2025-07-22 10:55:20 12:17:18 fermeture.sh - all_script - Visual Studio Code
+2025-07-22 10:56:01 12:29:42 script_to_get_title.sh - all_script - Visual Studio Code
+2025-07-22 10:57:43 11:42:40 /
+2025-07-22 11:00:45 11:20:58 extract_window_events.sh - Collect_file - Visual Studio Code
+2025-07-22 11:01:20 12:16:07 Documents
+2025-07-22 11:01:32 12:16:11 Projects
+2025-07-22 11:01:34 12:16:21 Collect_info
+2025-07-22 11:01:36 11:11:04 all_txt_file
+2025-07-22 11:01:44 12:08:30 THE_COMMAND.txt - all_script - Visual Studio Code
+2025-07-22 11:02:13 11:19:12 Titles.txt - all_script - Visual Studio Code
+2025-07-22 11:02:27 11:11:16 test_file_opened.txt - all_script - Visual Studio Code
+2025-07-22 11:03:20 11:26:03 corrected_monitor_windows.sh - Collect_file - Visual Studio Code
+2025-07-22 11:06:42 11:20:19 prev_windows.txt - Collect_file - Visual Studio Code
+2025-07-22 11:11:04 12:16:03 Home
+2025-07-22 11:11:16 12:17:04 window_changes.log - all_script - Visual Studio Code
+2025-07-22 11:15:22 11:21:04 Google Calendar - Week of July 20, 2025 - Google Chrome
+2025-07-22 11:20:19 11:27:57 test1 - Collect_file - Visual Studio Code
+2025-07-22 11:20:48 11:22:19 extract_window_events.sh - Collect_file - Visual Studio Code
+2025-07-22 11:20:58 11:24:13 ● extract_window_events.sh - Collect_file - Visual Studio Code
+2025-07-22 11:21:31 11:23:49 extract_window_events.sh - Collect_file - Visual Studio Code
+2025-07-22 11:22:19 11:22:24 Opened_file.txt - Collect_file - Visual Studio Code
+2025-07-22 11:22:24 11:22:26 Closed_file.txt - Collect_file - Visual Studio Code
+2025-07-22 11:22:26 11:22:56 Opened_file.txt - Collect_file - Visual Studio Code
+2025-07-22 11:22:56 11:24:15 extract_window_events.sh - Collect_file - Visual Studio Code
+2025-07-22 11:23:49 11:45:22 ● extract_window_events.sh - Collect_file - Visual Studio Code
+2025-07-22 11:24:13 11:24:19 extract_window_events.sh - Collect_file - Visual Studio Code
+2025-07-22 11:24:15 11:24:17 Opened_file.txt - Collect_file - Visual Studio Code
+2025-07-22 11:24:17 11:24:24 extract_window_events.sh - Collect_file - Visual Studio Code
+2025-07-22 11:24:21 11:24:36 extract_window_events.sh - Collect_file - Visual Studio Code
+2025-07-22 11:24:24 11:24:28 Closed_file.txt - Collect_file - Visual Studio Code
+2025-07-22 11:24:28 11:25:29 extract_window_events.sh - Collect_file - Visual Studio Code
+2025-07-22 11:24:36 11:24:46 Closed_file.txt - Collect_file - Visual Studio Code
+2025-07-22 11:24:46 11:24:48 get_collect_file.py - Collect_file - Visual Studio Code
+2025-07-22 11:24:48 11:25:04 Opened_file.txt - Collect_file - Visual Studio Code
+2025-07-22 11:25:04 11:26:32 extract_window_events.sh - Collect_file - Visual Studio Code
+2025-07-22 11:25:29 11:42:20 window_changes.log - Collect_file - Visual Studio Code
+2025-07-22 11:25:53 12:01:59 corrected_monitor_windows.sh - Collect_file - Visual Studio Code
+2025-07-22 11:26:03 11:28:14 extract_window_events.sh - Collect_file - Visual Studio Code
+2025-07-22 11:26:32 11:27:23 Opened_file.txt - Collect_file - Visual Studio Code
+2025-07-22 11:27:23 11:27:49 Opened_file_true.txt - Collect_file - Visual Studio Code
+2025-07-22 11:27:57 11:28:18 Opened_file_true.txt - Collect_file - Visual Studio Code
+2025-07-22 11:27:59 11:38:34 Closed_file_true.txt - Collect_file - Visual Studio Code
+2025-07-22 11:28:07 11:45:43 Closed_file.txt - Collect_file - Visual Studio Code
+2025-07-22 11:28:12 11:29:05 extract_window_events.sh - Collect_file - Visual Studio Code
+2025-07-22 11:28:14 11:37:56 Opened_file_true.txt - Collect_file - Visual Studio Code
+2025-07-22 11:28:18 11:29:11 Opened_file.txt - Collect_file - Visual Studio Code
+2025-07-22 11:28:20 11:41:23 extract_window_events.sh - Collect_file - Visual Studio Code
+2025-07-22 11:29:07 11:43:46 extract_window_events.sh - Collect_file - Visual Studio Code
+2025-07-22 11:29:09 11:44:37 Opened_file.txt - Collect_file - Visual Studio Code
+2025-07-22 11:29:11 11:36:56 get_collect_file.py - Collect_file - Visual Studio Code
+2025-07-22 11:36:03 11:37:13 test1.txt - Collect_file - Visual Studio Code
+2025-07-22 11:36:10 11:37:17 ● test1.txt - Collect_file - Visual Studio Code
+2025-07-22 11:36:44 11:54:56 get_collect_file.py - Collect_file - Visual Studio Code
+2025-07-22 11:36:56 11:37:33 ● test1.txt - Collect_file - Visual Studio Code
+2025-07-22 11:37:01 11:38:04 test1.txt - Collect_file - Visual Studio Code
+2025-07-22 11:37:13 11:38:02 ● test1.txt - Collect_file - Visual Studio Code
+2025-07-22 11:37:17 11:38:42 test1.txt - Collect_file - Visual Studio Code
+2025-07-22 11:37:19 11:38:24 ● test1.txt - Collect_file - Visual Studio Code
+2025-07-22 11:37:33 11:45:30 Opened_file_true.txt - Collect_file - Visual Studio Code
+2025-07-22 11:37:56 11:38:38 ● test1.txt - Collect_file - Visual Studio Code
+2025-07-22 11:38:02 11:40:30 test1.txt - Collect_file - Visual Studio Code
+2025-07-22 11:38:04 11:38:57 ● test1.txt - Collect_file - Visual Studio Code
+2025-07-22 11:38:24 11:45:39 Closed_file_true.txt - Collect_file - Visual Studio Code
+2025-07-22 11:40:30 11:45:16 extract_window_events.sh - Collect_file - Visual Studio Code
+2025-07-22 11:41:23 11:45:08 window_changes.log - Collect_file - Visual Studio Code
+2025-07-22 11:42:20 11:45:28 extract_window_events.sh - Collect_file - Visual Studio Code
+2025-07-22 11:43:46 11:45:35 Opened_file.txt - Collect_file - Visual Studio Code
+2025-07-22 11:44:37 12:28:18 window_changes.log - Collect_file - Visual Studio Code
+2025-07-22 11:45:08 11:45:37 extract_window_events.sh - Collect_file - Visual Studio Code
+2025-07-22 11:45:16 11:48:34 ● extract_window_events.sh - Collect_file - Visual Studio Code
+2025-07-22 11:45:22 11:45:41 extract_window_events.sh - Collect_file - Visual Studio Code
+2025-07-22 11:45:28 11:58:25 Opened_file_true.txt - Collect_file - Visual Studio Code
+2025-07-22 11:45:30 11:46:13 Opened_file.txt - Collect_file - Visual Studio Code
+2025-07-22 11:45:35 11:46:11 extract_window_events.sh - Collect_file - Visual Studio Code
+2025-07-22 11:45:37 12:00:34 Closed_file_true.txt - Collect_file - Visual Studio Code
+2025-07-22 11:45:39 11:48:32 extract_window_events.sh - Collect_file - Visual Studio Code
+2025-07-22 11:45:41 11:46:15 Closed_file.txt - Collect_file - Visual Studio Code
+2025-07-22 11:45:43 11:48:42 extract_window_events.sh - Collect_file - Visual Studio Code
+2025-07-22 11:46:11 11:46:32 Opened_file.txt - Collect_file - Visual Studio Code
+2025-07-22 11:46:13 11:46:34 Closed_file.txt - Collect_file - Visual Studio Code
+2025-07-22 11:46:15 11:54:11 Opened_file.txt - Collect_file - Visual Studio Code
+2025-07-22 11:46:17 11:54:31 Closed_file.txt - Collect_file - Visual Studio Code
+2025-07-22 11:46:20 11:55:12 Opened_file.txt - Collect_file - Visual Studio Code
+2025-07-22 11:46:32 12:01:35 Closed_file.txt - Collect_file - Visual Studio Code
+2025-07-22 11:46:34 12:01:37 extract_window_events.sh - Collect_file - Visual Studio Code
+2025-07-22 11:48:34 12:25:23 extract_window_events.sh - Collect_file - Visual Studio Code
+2025-07-22 11:48:42 11:56:56 Opened_file.txt - Collect_file - Visual Studio Code
+2025-07-22 11:54:11 12:06:06 Closed_file.txt - Collect_file - Visual Studio Code
+2025-07-22 11:54:31 11:57:00 get_collect_file.py - Collect_file - Visual Studio Code
+2025-07-22 11:54:56 11:58:30 Opened_file.txt - Collect_file - Visual Studio Code
+2025-07-22 11:55:12 11:57:45 get_collect_file.py - Collect_file - Visual Studio Code
+2025-07-22 11:56:05 11:58:34 Opened_file.txt - Collect_file - Visual Studio Code
+2025-07-22 11:56:56 11:58:15 get_collect_file.py - Collect_file - Visual Studio Code
+2025-07-22 11:57:00 12:02:15 ● get_collect_file.py - Collect_file - Visual Studio Code
+2025-07-22 11:57:04 12:02:11 get_collect_file.py - Collect_file - Visual Studio Code
+2025-07-22 11:57:49 12:02:21 get_collect_file.py - Collect_file - Visual Studio Code
+2025-07-22 11:58:15 11:58:36 Opened_file_true.txt - Collect_file - Visual Studio Code
+2025-07-22 11:58:25 11:58:38 Opened_file.txt - Collect_file - Visual Studio Code
+2025-07-22 11:58:30 11:58:42 Opened_file_true.txt - Collect_file - Visual Studio Code
+2025-07-22 11:58:32 12:00:32 Opened_file.txt - Collect_file - Visual Studio Code
+2025-07-22 11:58:34 12:03:43 Opened_file_true.txt - Collect_file - Visual Studio Code
+2025-07-22 11:58:36 12:09:18 Opened_file.txt - Collect_file - Visual Studio Code
+2025-07-22 11:58:38 12:04:22 Opened_file_true.txt - Collect_file - Visual Studio Code
+2025-07-22 11:58:42 12:15:32 Opened_file.txt - Collect_file - Visual Studio Code
+2025-07-22 12:00:32 12:04:32 Closed_file_true.txt - Collect_file - Visual Studio Code
+2025-07-22 12:00:34 12:08:57 Closed_file.txt - Collect_file - Visual Studio Code
+2025-07-22 12:01:37 12:02:07 correct_opened-closed_file.py - Collect_file - Visual Studio Code
+2025-07-22 12:01:51 12:02:24 correct_Opened_file.py - Collect_file - Visual Studio Code
+2025-07-22 12:01:59 12:03:39 correct_opened-closed_file.py - Collect_file - Visual Studio Code
+2025-07-22 12:03:39 12:06:02 Opened_file_true.txt - Collect_file - Visual Studio Code
+2025-07-22 12:04:16 12:05:21 corrected_opened_closed_file2.py - Collect_file - Visual Studio Code
+2025-07-22 12:04:20 12:07:15 Opened_file_true.txt - Collect_file - Visual Studio Code
+2025-07-22 12:04:22 12:08:06 corrected_opened_closed_file2.py - Collect_file - Visual Studio Code
+2025-07-22 12:04:28 12:07:13 Closed_file_true.txt - Collect_file - Visual Studio Code
+2025-07-22 12:04:32 12:08:55 corrected_opened_closed_file2.py - Collect_file - Visual Studio Code
+2025-07-22 12:05:21 12:08:51 Opened_file_true.txt - Collect_file - Visual Studio Code
+2025-07-22 12:06:02 12:15:02 Closed_file.txt - Collect_file - Visual Studio Code
+2025-07-22 12:06:06 12:08:53 Closed_file_true.txt - Collect_file - Visual Studio Code
+2025-07-22 12:07:13 12:09:01 Opened_file_true.txt - Collect_file - Visual Studio Code
+2025-07-22 12:07:15 12:08:59 corrected_opened_closed_file2.py - Collect_file - Visual Studio Code
+2025-07-22 12:08:53 12:09:13 corrected_opened_closed_file2.py - Collect_file - Visual Studio Code
+2025-07-22 12:08:57 12:10:19 corrected_opened_closed_file2.py - Collect_file - Visual Studio Code
+2025-07-22 12:16:15 12:26:34 Collect_info
+2025-07-22 12:16:21 12:25:00 all_script
+2025-07-22 12:17:04 12:23:22 fermeture.sh - all_script - Visual Studio Code
+2025-07-22 12:17:18 12:23:41 _window.sh - all_script - Visual Studio Code
+2025-07-22 12:17:32 12:24:26 monitor_vscode.sh - all_script - Visual Studio Code
+2025-07-22 12:17:40 12:22:38 corrected_monitor_windows.sh - all_script - Visual Studio Code
+2025-07-22 12:21:14 12:29:15 corrected_monitor_windows.sh - all_script - Visual Studio Code
+2025-07-22 12:22:38 12:29:33 fermeture.sh - all_script - Visual Studio Code
+2025-07-22 12:23:22 12:29:38 monitor_windos.sh - all_script - Visual Studio Code
+2025-07-22 12:23:41 12:30:04 code - all_script - Visual Studio Code
+2025-07-22 12:23:47 12:30:39 monitor_vscode.sh - all_script - Visual Studio Code
+2025-07-22 12:24:26 12:29:46 _window.sh - all_script - Visual Studio Code
+2025-07-22 12:24:56 12:31:42 corrected_monitor_windows.sh - all_script - Visual Studio Code
+2025-07-22 12:25:00 12:27:51 Collect_info
+2025-07-22 12:26:58 12:28:55 all_script
+2025-07-22 12:27:47 12:28:51 Collect_command

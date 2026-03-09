@@ -1,0 +1,3 @@
+Le programme ne comprend pas qu'apres une un pipe il est possible de trouver un nouveau commande.
+Il ne sait que le commande principale ne se trouve qu'au debut d'un commande complet
+

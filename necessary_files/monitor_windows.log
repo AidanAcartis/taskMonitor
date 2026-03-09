@@ -1,0 +1,7 @@
+nohup: ignoring input
+Surveillance des fenêtres en cours...
+X Error of failed request:  BadWindow (invalid Window parameter)
+  Major opcode of failed request:  20 (X_GetProperty)
+  Resource id in failed request:  0x4400004
+  Serial number of failed request:  12
+  Current serial number in output stream:  12

@@ -1,0 +1,28 @@
+{"command": "pgrep -a xwinwrap", "descriptions": ["list PID and full command line", "Argument 'xwinwrap'"]}
+{"command": "kill 3323", "descriptions": ["Terminate a program using the default SIGTERM (terminate) signal", "Number '3323'"]}
+{"command": "exit", "descriptions": ["Exit with the exit status of the most recently executed command"]}
+{"command": "code .", "descriptions": ["Start Visual Studio Code", "Argument '.'"]}
+{"command": "code .", "descriptions": ["Start Visual Studio Code", "Argument '.'"]}
+{"command": "code .", "descriptions": ["Start Visual Studio Code", "Argument '.'"]}
+{"command": "exit", "descriptions": ["Exit with the exit status of the most recently executed command"]}
+{"command": "exit", "descriptions": ["Exit with the exit status of the most recently executed command"]}
+{"command": "./extract_window_events.sh", "descriptions": ["Run the script './extract_window_events.sh'"]}
+{"command": "clear", "descriptions": ["Clear the screen"]}
+{"command": "ls", "descriptions": ["list directory contents"]}
+{"command": "python3 correct_opened-closed_file.py", "descriptions": ["runs a Python script using the Python 3 interpreter.", "File 'correct_opened-closed_file.py'"]}
+{"command": "cler", "descriptions": ["Command 'cler'"]}
+{"command": "clear", "descriptions": ["Clear the screen"]}
+{"command": "s", "descriptions": ["Command 's'"]}
+{"command": "clear", "descriptions": ["Clear the screen"]}
+{"command": "ls", "descriptions": ["list directory contents"]}
+{"command": "python3 get_collect_file.py", "descriptions": ["runs a Python script using the Python 3 interpreter.", "File 'get_collect_file.py'"]}
+{"command": "./collect_script.sh", "descriptions": ["Run the script './collect_script.sh'"]}
+{"command": "clear", "descriptions": ["Clear the screen"]}
+{"command": "ls", "descriptions": ["list directory contents"]}
+{"command": "touch Read_line.sh", "descriptions": ["Create specific files", "File 'Read_line.sh'"]}
+{"command": "chmod +x Read_line.sh", "descriptions": ["Give the [u]ser who owns a file the right to e[x]ecute it", "Argument '+x'", "File 'Read_line.sh'"]}
+{"command": "clear", "descriptions": ["Clear the screen"]}
+{"command": "ls", "descriptions": ["list directory contents"]}
+{"command": "./Read_line.sh", "descriptions": ["Run the script './Read_line.sh'"]}
+{"command": "clear", "descriptions": ["Clear the screen"]}
+{"command": "./Read_line.sh", "descriptions": ["Run the script './Read_line.sh'"]}
