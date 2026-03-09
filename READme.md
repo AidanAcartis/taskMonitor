@@ -8,7 +8,7 @@ The goal of this project is to monitor all user activities on a machine (opened 
 This project demonstrates strong skills in **system design, data collection, feature extraction, and ML modeling** using transformers and attention mechanisms for multimodal sequential understanding.  
 It is intended as a research-oriented and practical tool for activity analysis, and showcases abstraction, algorithmic thinking, and software engineering capabilities.  
 
-> ⚠️ **Note:** The project is still in progress. The final classification component and the integration into a complete software system are under development.
+> ⚠️ **Note:** The project is still in progress. The integration into a complete software system are under development.
 
 ---
 
@@ -17,12 +17,32 @@ It is intended as a research-oriented and practical tool for activity analysis, 
 The project is organized into the following main directories:
 
 ### 1. `Clustering/`
-Contains scripts and notebooks for clustering activities and generating descriptive clusters.  
-- `Clustering.ipynb` — Jupyter notebook for clustering workflow.  
-- `Activity/` — Example activities and raw data.  
-- JSON files (`clusters_descriptions.jsonl`, `commands_descriptions_1.jsonl`, etc.) — contain structured data for clustering and feature extraction.  
-- Markdown files (`activity.md`, `clustering.md`, etc.) — documentation and exploratory analysis.
 
+This folder contains scripts, notebooks, and data for clustering tasks and generating descriptive clusters.
+
+#### `Clustering/Clustering_Project/`
+Notebooks and data for clustering small tasks:
+- **`Clustering_small_tasks.ipynb`** — Jupyter notebook implementing the clustering workflow on example activities.
+- `activity_data.jsonl` — raw input data for clustering.
+- `train_examples.pkl` — preprocessed training examples.
+- `READme.md` — documentation for this subproject.
+
+#### `Clustering/Global-Task-Description/`
+Notebooks and data for training models to generate global task descriptions:
+- **`Tuning_T5_Data_augmented.ipynb`** — notebook for fine-tuning Flan-T5 on augmented datasets.
+- `DATA/` — folder containing datasets used for training.
+- `READme.md` — documentation and notes for this subproject.
+
+#### `Collect_info/Collect_file/File_Desc_Training_Model/Notebook_Training/`
+Additional notebooks for model training and evaluation:
+- **`File_desc_full_fine_tune.ipynb`** — notebook for full fine-tuning of the task description model.
+- `ROUGE_histogramme.png`, `t-SNE_clusters_similar.png` — visualizations generated during training.
+- `READme.md` — explanations and instructions for this training workflow.
+
+#### Other files in `Clustering/`
+- JSON files (`clusters_descriptions.jsonl`, `commands_descriptions_1.jsonl`, etc.) — structured data for clustering and feature extraction.
+- Markdown files (`activity.md`, `clustering.md`, etc.) — documentation and exploratory analysis.
+  
 ### 2. `Collect_info/`
 Handles data collection from the system.  
 - **`Collect_command/`** — Scripts to collect and describe executed commands.  
