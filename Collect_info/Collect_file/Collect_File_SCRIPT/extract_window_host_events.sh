@@ -14,23 +14,21 @@ CLOSED_FILE="$SCRIPT_DIR/Closed_file.txt"
 > "$OPENED_FILE"
 > "$CLOSED_FILE"
 
-# Extraction des fenêtres ouvertes avec horodatage
-# paste -d ' ' \
-#   <(grep -A 0 "Nouvelles fenêtres ajoutées" "$LOG_FILE" | grep -v "^--$" | awk '{print $2}' | grep .) \
-#   <(grep -A 1 "Nouvelles fenêtres ajoutées" "$LOG_FILE" | grep -v "^--$" | awk -F ' aidan ' '{print $2}' | grep .) \
-#   > "$OPENED_FILE"
+# Détecter automatiquement le hostname actuel
+HOSTNAME_CURRENT=$(hostname)
 
+# Extraction des fenêtres ouvertes avec horodatage
 paste -d ' ' \
   <(grep -A 0 "Nouvelles fenêtres ajoutées" "$LOG_FILE" | grep -v "^--$" | awk '{print $1}' | grep .) \
   <(grep -A 0 "Nouvelles fenêtres ajoutées" "$LOG_FILE" | grep -v "^--$" | awk '{print $2}' | grep .) \
-  <(grep -A 1 "Nouvelles fenêtres ajoutées" "$LOG_FILE" | grep -v "^--$" | awk '{for (i=1;i<=NF;i++) if ($i ~ /^aidan-/) {for (j=i+1;j<=NF;j++) printf $j" "; print "";}}' | grep .) \
+  <(grep -A 1 "Nouvelles fenêtres ajoutées" "$LOG_FILE" | grep -v "^--$" | awk -v host="$HOSTNAME_CURRENT" '{for (i=1;i<=NF;i++) if ($i ~ "^"host) {for (j=i+1;j<=NF;j++) printf $j" "; print ""}}' | grep .) \
   > "$OPENED_FILE"
 
 # Extraction des fenêtres fermées avec horodatage
 paste -d ' ' \
   <(grep -A 0 "Fenêtres fermées" "$LOG_FILE" | grep -v "^--$" | awk '{print $1}' | grep .) \
   <(grep -A 0 "Fenêtres fermées" "$LOG_FILE" | grep -v "^--$" | awk '{print $2}' | grep .) \
-  <(grep -A 1 "Fenêtres fermées" "$LOG_FILE" | grep -v "^--$" | awk '{for (i=1;i<=NF;i++) if ($i ~ /^aidan-/) {for (j=i+1;j<=NF;j++) printf $j" "; print "";}}' | grep .) \
+  <(grep -A 1 "Fenêtres fermées" "$LOG_FILE" | grep -v "^--$" | awk -v host="$HOSTNAME_CURRENT" '{for (i=1;i<=NF;i++) if ($i ~ "^"host) {for (j=i+1;j<=NF;j++) printf $j" "; print ""}}' | grep .) \
   > "$CLOSED_FILE"
 
 echo "Fichiers générés :"
