@@ -1,0 +1,22 @@
+python==3.10.*
+
+# Core ML
+torch==2.8.0
+torchdata==0.11.0
+transformers==4.44.2
+peft==0.3.0
+loralib==0.1.1
+
+# Data
+datasets==4.1.0
+pyarrow>=14.0.0,<20.0.0
+evaluate
+rouge_score==0.1.2
+
+# Embeddings
+sentence-transformers
+
+# Utils
+numpy<2.0.0
+pandas>=2.0.0
+awscli

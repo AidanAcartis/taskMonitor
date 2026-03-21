@@ -1,83 +1,202 @@
-2025-07-22	12:27:47	12:28:51	174.67	file-directory-App	extract_window_events.sh - Collect_file - Visual Studio Code
-2025-07-22	12:27:47	12:28:51	120.02	file-directory-App	script_to_get_title.sh - all_script - Visual Studio Code
-2025-07-22	12:27:47	12:28:51	116.28	file-directory-App	corrected_monitor_windows.sh - all_script - Visual Studio Code
-2025-07-22	12:27:47	12:28:51	109.73	file-directory-App	window_changes.log - Collect_file - Visual Studio Code
-2025-07-22	12:27:47	12:28:51	107.88	file-directory-App	monitor_vscode.sh - all_script - Visual Studio Code
-2025-07-22	12:27:47	12:28:51	107.55	file-directory-App	fermeture.sh - all_script - Visual Studio Code
-2025-07-22	12:27:47	12:28:51	105.88	file-directory-App	monitor_windos.sh - all_script - Visual Studio Code
-2025-07-22	12:27:47	12:28:51	105.85	file-directory-App	Home
-2025-07-22	12:27:47	12:28:51	105.77	file-directory-App	_window.sh - all_script - Visual Studio Code
-2025-07-22	12:27:47	12:28:51	98.50	file-directory-App	corrected_try_script.sh - all_script - Visual Studio Code
-2025-07-22	12:27:47	12:28:51	96.27	file-directory-App	new_script_open.sh - all_script - Visual Studio Code
-2025-07-22	12:27:47	12:28:51	95.98	file-directory-App	try_script.sh - all_script - Visual Studio Code
-2025-07-22	12:27:47	12:28:51	95.78	file-directory-App	with_audit.sh - all_script - Visual Studio Code
-2025-07-22	12:27:47	12:28:51	88.12	file-directory-App	Collect_info
-2025-07-22	12:27:47	12:28:51	82.10	file-directory-App	test.txt - Collect_file - Visual Studio Code
-2025-07-22	12:27:47	12:28:51	82.02	file-directory-App	Opened_file.txt - Collect_file - Visual Studio Code
-2025-07-22	12:27:47	12:28:51	74.78	file-directory-App	Documents
-2025-07-22	12:27:47	12:28:51	74.65	file-directory-App	Projects
-2025-07-22	12:27:47	12:28:51	71.47	file-directory-App	Closed_file.txt - Collect_file - Visual Studio Code
-2025-07-22	12:27:47	12:28:51	66.77	file-directory-App	THE_COMMAND.txt - all_script - Visual Studio Code
-2025-07-22	12:27:47	12:28:51	65.80	file-directory-App	window_changes.log - all_script - Visual Studio Code
-2025-07-22	12:27:47	12:28:51	65.15	file-directory-App	corrected_monitor_windows.sh - Collect_file - Visual Studio Code
-2025-07-22	12:27:47	12:28:51	53.48	file-directory-App	Opened_file_true.txt - Collect_file - Visual Studio Code
-2025-07-22	12:27:47	12:28:51	47.90	file-directory-App	get_collect_file.py - Collect_file - Visual Studio Code
-2025-07-22	12:27:47	12:28:51	44.95	file-directory-App	/
-2025-07-22	12:27:47	12:28:51	43.98	file-directory-App	aidan@aidan-Lenovo-N50-70: ~/Documents/Projects/Visualisation/Collect_info/all_script
-2025-07-22	12:27:47	12:28:51	42.45	file-directory-App	Closed_file_true.txt - Collect_file - Visual Studio Code
-2025-07-22	12:27:47	12:28:51	36.12	file-directory-App	aidan@aidan-Lenovo-N50-70: ~/Documents/Projects/Visualisation/Collect_info/all_script/monitor_windows_lab
-2025-07-22	12:27:47	12:28:51	35.80	file-directory-App	opened_test.txt - Collect_file - Visual Studio Code
-2025-07-22	12:27:47	12:28:51	35.33	file-directory-App	test1 - Collect_file - Visual Studio Code
-2025-07-22	12:27:47	12:28:51	28.22	file-directory-App	aidan@aidan-Lenovo-N50-70: ~
-2025-07-22	12:27:47	12:28:51	16.98	file-directory-App	Titles.txt - all_script - Visual Studio Code
-2025-07-22	12:27:47	12:28:51	14.50	file-directory-App	all_script
-2025-07-22	12:27:47	12:28:51	14.33	file-directory-App	prev_windows.txt - Collect_file - Visual Studio Code
-2025-07-22	12:27:47	12:28:51	12.63	file-directory-App	corrected_opened_closed_file2.py - Collect_file - Visual Studio Code
-2025-07-22	12:27:47	12:28:51	12.23	file-directory-App	monitor_windows_lab
-2025-07-22	12:27:47	12:28:51	11.32	file-directory-App	test1.txt - Collect_file - Visual Studio Code
-2025-07-22	12:27:47	12:28:51	9.98	file-directory-App	collect_script.sh - Collect_file - Visual Studio Code
-2025-07-22	12:27:47	12:28:51	9.47	file-directory-App	all_txt_file
-2025-07-22	12:27:47	12:28:51	8.82	file-directory-App	test_file_opened.txt - all_script - Visual Studio Code
-2025-07-22	12:27:47	12:28:51	6.38	file-directory-App	code - all_script - Visual Studio Code
-2025-07-22	12:27:47	12:28:51	5.70	file-directory-App	Google Calendar - Week of July 20, 2025 - Google Chrome
-2025-07-22	12:27:47	12:28:51	2.98	file-directory-App	Preview READme.md - Collect_file - Visual Studio Code
-2025-07-22	12:27:47	12:28:51	2.17	file-directory-App	correct_opened-closed_file.py - Collect_file - Visual Studio Code
-2025-07-22	12:27:47	12:28:51	1.07	file-directory-App	Collect_command
-2025-07-22	12:27:47	12:28:51	0.55	file-directory-App	correct_Opened_file.py - Collect_file - Visual Studio Code
-2025-07-22	12:27:47	12:28:51	0.13	file-directory-App	With_audit
-2025-07-22	12:27:47	12:28:51	0.10	file-directory-App	READme.md - Collect_file - Visual Studio Code
-2025-07-22	12:27:47	12:28:51	0.10	file-directory-App	Visual Studio Code
-2025-07-22	12:27:47	12:28:51	0.10	file-directory-App	Search for “code”
-2025-07-22	12:27:47	12:28:51	0.10	file-directory-App	all_mardown
-2025-07-22	12:27:47	12:28:51	0.10	file-directory-App	all_code
-2025-07-22	12:27:47	12:28:51	0.03	file-directory-App	THE_COMMAND.txt - Collect_file - Visual Studio Code
-2025-07-22	12:27:47	12:28:51	0.03	file-directory-App	vs_code_monitor
-2025-07-22	12:27:47	12:28:51	0.03	file-directory-App	Mikitika_BDD
-2025-07-23	12:04:36	12:04:38	0.033	Commande	pgrep -a xwinwrap
-2025-07-23	12:04:42	12:04:44	0.033	Commande	kill 3323
-2025-07-23	12:04:43	12:04:45	0.033	Commande	exit
-2025-07-23	12:05:33	12:05:35	0.033	Commande	code .
-2025-07-23	12:07:14	12:07:16	0.033	Commande	code .
-2025-07-23	12:08:12	12:08:14	0.033	Commande	code .
-2025-07-23	13:16:49	13:16:51	0.033	Commande	exit
-2025-07-23	13:16:53	13:16:55	0.033	Commande	exit
-2025-07-23	13:17:00	13:17:02	0.033	Commande	./extract_window_events.sh
-2025-07-23	13:19:13	13:19:15	0.033	Commande	clear
-2025-07-23	13:19:15	13:19:17	0.033	Commande	ls
-2025-07-23	13:19:43	13:19:45	0.033	Commande	python3 correct_opened-closed_file.py
-2025-07-23	13:20:37	13:20:39	0.033	Commande	cler
-2025-07-23	13:20:38	13:20:40	0.033	Commande	clear
-2025-07-23	13:20:39	13:20:41	0.033	Commande	s
-2025-07-23	13:20:41	13:20:43	0.033	Commande	clear
-2025-07-23	13:20:42	13:20:44	0.033	Commande	ls
-2025-07-23	13:20:50	13:20:52	0.033	Commande	python3 get_collect_file.py
-2025-07-23	13:29:07	13:29:09	0.033	Commande	./collect_script.sh
-2025-07-23	13:29:21	13:29:23	0.033	Commande	clear
-2025-07-23	14:02:27	14:02:29	0.033	Commande	ls
-2025-07-23	14:02:40	14:02:42	0.033	Commande	touch Read_line.sh
-2025-07-23	14:04:53	14:04:55	0.033	Commande	chmod +x Read_line.sh
-2025-07-23	14:04:55	14:04:57	0.033	Commande	clear
-2025-07-23	14:04:55	14:04:57	0.033	Commande	ls
-2025-07-23	14:05:01	14:05:03	0.033	Commande	./Read_line.sh
-2025-07-23	14:05:45	14:05:47	0.033	Commande	clear
-2025-07-23	14:05:46	14:05:48	0.033	Commande	./Read_line.sh
+2026-03-10	17:15:08	17:15:53	8.33	file-directory-App	data_file.txt - Visual Studio Code
+2026-03-10	17:01:43	17:05:28	3.75	file-directory-App	SEKAI NO OWARI "The Peak" ONE PIECE Lyrics MV - YouTube - Brave
+2026-03-10	17:12:42	17:12:46	1.77	file-directory-App	Closed_file.txt - Visual Studio Code
+2026-03-10	17:13:16	17:14:23	1.12	file-directory-App	collect_file_script.sh - Visual Studio Code
+2026-03-10	17:12:46	17:12:48	0.92	file-directory-App	collected_file.txt - Visual Studio Code
+2026-03-10	17:02:15	17:02:44	0.55	file-directory-App	prev_windows.txt - Visual Studio Code
+2026-03-10	17:14:52	17:15:02	0.48	file-directory-App	get_collect_file.py - Visual Studio Code
+2026-03-10	17:15:53	17:16:11	0.30	file-directory-App	correct_Closed_file.py - Visual Studio Code
+2026-03-10	17:15:02	17:15:08	0.27	file-directory-App	duration_file.py - Visual Studio Code
+2026-03-10	17:12:36	17:12:42	0.27	file-directory-App	Opened_file.txt - Visual Studio Code
+2026-03-10	17:02:13	17:02:15	0.17	file-directory-App	window_changes.log - Visual Studio Code
+2026-03-10	17:02:23	17:02:27	0.07	directory/App	Terminal
+2026-03-10	17:12:16	17:11:15	-1.02	directory/App	Desktop Icons 1
+2026-03-10	10:31:37	10:31:39	0.033	Commande	code .
+2026-03-10	10:46:49	10:46:51	0.033	Commande	clear
+2026-03-10	10:47:46	10:47:48	0.033	Commande	bash extract_window_events.sh
+2026-03-10	10:47:59	10:48:01	0.033	Commande	clear
+2026-03-10	10:48:14	10:48:16	0.033	Commande	bash corrected_monitor_windows.sh
+2026-03-10	10:48:52	10:48:54	0.033	Commande	clear
+2026-03-10	10:48:58	10:49:00	0.033	Commande	sudo bash corrected_monitor_windows.sh
+2026-03-10	10:53:07	10:53:09	0.033	Commande	clear
+2026-03-10	10:53:07	10:53:09	0.033	Commande	ls
+2026-03-10	11:21:00	11:21:02	0.033	Commande	pgrep -a xwinwrap
+2026-03-10	11:21:05	11:21:07	0.033	Commande	exit
+2026-03-10	13:06:37	13:06:39	0.033	Commande	cat ~/.local/share/xorg/Xorg.0.log | grep EE
+2026-03-10	13:08:01	13:08:03	0.033	Commande	code .
+2026-03-10	13:31:08	13:31:10	0.033	Commande	mpv
+2026-03-10	13:31:51	13:31:53	0.033	Commande	clear
+2026-03-10	13:31:52	13:31:54	0.033	Commande	top
+2026-03-10	13:51:59	13:52:01	0.033	Commande	clear
+2026-03-10	13:52:27	13:52:29	0.033	Commande	sudo apt remove xserver-xorg-video-intel
+2026-03-10	13:52:40	13:52:42	0.033	Commande	clear
+2026-03-10	13:58:27	13:58:29	0.033	Commande	bash corrected_monitor_windows.sh
+2026-03-10	13:59:22	13:59:24	0.033	Commande	grep -i modeset /var/log/Xorg.0.log
+2026-03-10	14:02:54	14:02:56	0.033	Commande	journalctl -b | grep Xorg
+2026-03-10	14:03:41	14:03:43	0.033	Commande	clear
+2026-03-10	14:03:45	14:03:47	0.033	Commande	grep -iE "EE|WW|modeset|intel|i915" ~/.local/share/xorg/Xorg.0.log
+2026-03-10	14:05:00	14:05:02	0.033	Commande	clear
+2026-03-10	14:06:16	14:06:18	0.033	Commande	sudo nano /etc/environment
+2026-03-10	14:06:35	14:06:37	0.033	Commande	ls /etc/
+2026-03-10	14:08:20	14:08:22	0.033	Commande	clear
+2026-03-10	14:08:28	14:08:30	0.033	Commande	sudo cat /etc/environment
+2026-03-10	14:33:00	14:33:02	0.033	Commande	sudo nano /etc/hosts
+2026-03-10	14:33:17	14:33:19	0.033	Commande	sudo nano /etc/host
+2026-03-10	14:33:25	14:33:27	0.033	Commande	clear
+2026-03-10	14:33:28	14:33:30	0.033	Commande	ls /etc/
+2026-03-10	14:33:49	14:33:51	0.033	Commande	sudo cat /etc/hosts
+2026-03-10	14:34:14	14:34:16	0.033	Commande	code /etc/hosts
+2026-03-10	14:35:11	14:35:13	0.033	Commande	touch etc-hosts.txt
+2026-03-10	14:35:14	14:35:16	0.033	Commande	code etc-hosts.txt
+2026-03-10	14:38:16	14:38:18	0.033	Commande	sudo cat /etc/hosts
+2026-03-10	14:38:43	14:38:45	0.033	Commande	clear
+2026-03-10	14:38:46	14:38:48	0.033	Commande	hostname
+2026-03-10	14:40:16	14:40:18	0.033	Commande	sudo hostnamectl set-hostname aidan-Lenovo-N50-70
+2026-03-10	14:40:18	14:40:20	0.033	Commande	hostname
+2026-03-10	14:43:34	14:43:36	0.033	Commande	clear
+2026-03-10	14:43:35	14:43:37	0.033	Commande	ls
+2026-03-10	14:43:41	14:43:43	0.033	Commande	bash extract_window_events.sh
+2026-03-10	14:51:54	14:51:56	0.033	Commande	cd ~
+2026-03-10	14:51:56	14:51:58	0.033	Commande	clear
+2026-03-10	14:51:57	14:51:59	0.033	Commande	ls
+2026-03-10	14:58:34	14:58:36	0.033	Commande	clear
+2026-03-10	14:58:54	14:58:56	0.033	Commande	touch extract_window_host_events.sh
+2026-03-10	14:59:02	14:59:04	0.033	Commande	code .
+2026-03-10	14:59:49	14:59:51	0.033	Commande	chmod +x extract_window_host_events.sh
+2026-03-10	14:59:50	14:59:52	0.033	Commande	clear
+2026-03-10	14:59:51	14:59:53	0.033	Commande	ls
+2026-03-10	14:59:53	14:59:55	0.033	Commande	clear
+2026-03-10	15:01:21	15:01:23	0.033	Commande	exit
+2026-03-10	15:01:22	15:01:24	0.033	Commande	exit
+2026-03-10	15:01:25	15:01:27	0.033	Commande	exit
+2026-03-10	15:01:50	15:01:52	0.033	Commande	exit
+2026-03-10	15:02:16	15:02:18	0.033	Commande	code .
+2026-03-10	15:02:27	15:02:29	0.033	Commande	clear
+2026-03-10	15:02:35	15:02:37	0.033	Commande	bash corrected_monitor_windows.sh
+2026-03-10	15:22:18	15:22:20	0.033	Commande	bash extract_window_host_events.sh
+2026-03-10	16:04:53	16:04:55	0.033	Commande	sudo nano /etc/hosts
+2026-03-10	16:05:19	16:05:21	0.033	Commande	sudo cat /etc/hosts
+2026-03-10	16:05:37	16:05:39	0.033	Commande	exit
+2026-03-10	16:09:54	16:09:56	0.033	Commande	google-chrome
+2026-03-10	16:10:22	16:10:24	0.033	Commande	cat /etc/hosts
+2026-03-10	16:10:27	16:10:29	0.033	Commande	hostname
+2026-03-10	16:10:32	16:10:34	0.033	Commande	hostnamectl
+2026-03-10	16:13:47	16:13:49	0.033	Commande	clear
+2026-03-10	16:13:51	16:13:53	0.033	Commande	pkill chrome
+2026-03-10	16:14:02	16:14:04	0.033	Commande	pkill chromium
+2026-03-10	16:14:34	16:14:36	0.033	Commande	rm ~/.config/google-chrome/Singleton*
+2026-03-10	16:14:40	16:14:42	0.033	Commande	google-chrome
+2026-03-10	16:19:15	16:19:17	0.033	Commande	pkill brave
+2026-03-10	16:19:57	16:19:59	0.033	Commande	rm ~/.config/BraveSoftware/Brave-Browser/Singleton*
+2026-03-10	16:20:27	16:20:29	0.033	Commande	rm ~/.config/BraveSoftware/Brave-Browser/Default/LOCK
+2026-03-10	16:20:38	16:20:40	0.033	Commande	brave-browser
+2026-03-10	16:22:46	16:22:48	0.033	Commande	pkill firefox
+2026-03-10	16:23:10	16:23:12	0.033	Commande	rm ~/.mozilla/firefox/*.default*/lock
+2026-03-10	16:23:46	16:23:48	0.033	Commande	rm ~/.mozilla/firefox/*.default*/.parentlock
+2026-03-10	16:23:52	16:23:54	0.033	Commande	firefox
+2026-03-10	16:24:28	16:24:30	0.033	Commande	clear
+2026-03-10	16:28:02	16:28:04	0.033	Commande	sudo apt install --reinstall fontconfig
+2026-03-10	16:28:27	16:28:29	0.033	Commande	fc-cache -fv
+2026-03-10	16:28:37	16:28:39	0.033	Commande	clear
+2026-03-10	16:28:57	16:28:59	0.033	Commande	sudo apt update
+2026-03-10	16:29:14	16:29:16	0.033	Commande	clear
+2026-03-10	16:31:17	16:31:19	0.033	Commande	clear
+2026-03-10	16:31:19	16:31:21	0.033	Commande	brave-browser
+2026-03-10	16:31:56	16:31:58	0.033	Commande	ls -la ~/.config | grep Brave
+2026-03-10	16:32:03	16:32:05	0.033	Commande	sudo chown -R $USER:$USER ~/.config/BraveSoftware
+2026-03-10	16:32:12	16:32:14	0.033	Commande	cat /etc/hosts
+2026-03-10	16:32:17	16:32:19	0.033	Commande	hostname
+2026-03-10	16:32:20	16:32:22	0.033	Commande	hostnamectl
+2026-03-10	16:33:53	16:33:55	0.033	Commande	clear
+2026-03-10	16:34:01	16:34:03	0.033	Commande	clear
+2026-03-10	16:34:03	16:34:05	0.033	Commande	sudo apt install --reinstall fontconfig fontconfig-config
+2026-03-10	16:34:20	16:34:22	0.033	Commande	fc-cache -fv
+2026-03-10	16:34:43	16:34:45	0.033	Commande	brave-browser
+2026-03-10	16:36:04	16:36:06	0.033	Commande	clear
+2026-03-10	16:36:06	16:36:08	0.033	Commande	mv ~/.config/BraveSoftware ~/.config/BraveSoftware_backup
+2026-03-10	16:36:15	16:36:17	0.033	Commande	brave-browser
+2026-03-10	16:36:56	16:36:58	0.033	Commande	rm ~/.config/BraveSoftware/Brave-Browser/Singleton*
+2026-03-10	16:38:04	16:38:06	0.033	Commande	gtk-launch brave-browser
+2026-03-10	16:38:45	16:38:47	0.033	Commande	journalctl --user -n 50
+2026-03-10	16:40:02	16:40:04	0.033	Commande	clear
+2026-03-10	16:40:04	16:40:06	0.033	Commande	sudo apt remove --purge brave-browser
+2026-03-10	16:40:14	16:40:16	0.033	Commande	clear
+2026-03-10	16:40:27	16:40:29	0.033	Commande	sudo apt remove --purge brave-browser
+2026-03-10	16:40:30	16:40:32	0.033	Commande	clear
+2026-03-10	16:40:39	16:40:41	0.033	Commande	rm -rf ~/.config/BraveSoftware
+2026-03-10	16:40:47	16:40:49	0.033	Commande	rm -rf ~/.cache/BraveSoftware
+2026-03-10	16:40:53	16:40:55	0.033	Commande	sudo apt autoremove
+2026-03-10	16:43:27	16:43:29	0.033	Commande	clear
+2026-03-10	16:43:30	16:43:32	0.033	Commande	sudo apt autoremove
+2026-03-10	16:43:33	16:43:35	0.033	Commande	clear
+2026-03-10	16:43:36	16:43:38	0.033	Commande	sudo apt update
+2026-03-10	16:47:41	16:47:43	0.033	Commande	clear
+2026-03-10	16:47:45	16:47:47	0.033	Commande	sudo apt update
+2026-03-10	16:48:56	16:48:58	0.033	Commande	sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-core.asc
+2026-03-10	16:49:10	16:49:12	0.033	Commande	clear
+2026-03-10	16:49:11	16:49:13	0.033	Commande	sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-core.asc
+2026-03-10	16:49:22	16:49:24	0.033	Commande	sudo nano /etc/apt/sources.list.d/brave-browser-release.list
+2026-03-10	16:50:45	16:50:47	0.033	Commande	curl -fsSLo brave-core.asc https://brave-browser-apt-release.s3.brave.com/brave-core.asc
+2026-03-10	16:50:53	16:50:55	0.033	Commande	sudo gpg --dearmor brave-core.asc
+2026-03-10	16:51:05	16:51:07	0.033	Commande	sudo mv brave-core.asc.gpg /usr/share/keyrings/brave-browser-archive-keyring.gpg
+2026-03-10	16:51:13	16:51:15	0.033	Commande	sudo apt update
+2026-03-10	16:51:31	16:51:33	0.033	Commande	exit
+2026-03-10	16:51:33	16:51:35	0.033	Commande	exit
+2026-03-10	17:28:42	17:28:44	0.033	Commande	git status
+2026-03-10	17:28:45	17:28:47	0.033	Commande	git add .
+2026-03-10	17:28:50	17:28:52	0.033	Commande	git status
+2026-03-10	17:29:16	17:29:18	0.033	Commande	git commit -m "restructure Collect File Scripts"
+2026-03-10	17:29:18	17:29:20	0.033	Commande	clear
+2026-03-10	17:29:21	17:29:23	0.033	Commande	git status
+2026-03-10	17:29:25	17:29:27	0.033	Commande	clear
+2026-03-10	17:29:35	17:29:37	0.033	Commande	git branch
+2026-03-10	17:29:45	17:29:47	0.033	Commande	git push -u origin master
+2026-03-10	17:31:14	17:31:16	0.033	Commande	git pull origin master
+2026-03-10	17:31:44	17:31:46	0.033	Commande	clea
+2026-03-10	17:31:46	17:31:48	0.033	Commande	clear
+2026-03-10	17:31:48	17:31:50	0.033	Commande	git pull --no-rebase origin master
+2026-03-10	17:32:05	17:32:07	0.033	Commande	git push -u origin master
+2026-03-10	17:32:24	17:32:26	0.033	Commande	clear
+2026-03-10	18:36:26	18:36:28	0.033	Commande	git status
+2026-03-10	18:36:29	18:36:31	0.033	Commande	git add .
+2026-03-10	18:36:32	18:36:34	0.033	Commande	git status
+2026-03-10	18:36:45	18:36:47	0.033	Commande	git commit -m "Fix command describer"
+2026-03-10	18:36:48	18:36:50	0.033	Commande	clear
+2026-03-10	18:36:56	18:36:58	0.033	Commande	git pull origin master
+2026-03-10	18:37:02	18:37:04	0.033	Commande	git push -u origin master
+2026-03-10	18:43:27	18:43:29	0.033	Commande	git pull origin master
+2026-03-10	18:43:32	18:43:34	0.033	Commande	git status
+2026-03-10	18:43:34	18:43:36	0.033	Commande	git add .
+2026-03-10	18:43:37	18:43:39	0.033	Commande	git status
+2026-03-10	18:43:48	18:43:50	0.033	Commande	git commit -m "restructure collect file"
+2026-03-10	18:43:50	18:43:52	0.033	Commande	clear
+2026-03-10	18:43:52	18:43:54	0.033	Commande	git status
+2026-03-10	18:44:00	18:44:02	0.033	Commande	git pull origin master
+2026-03-10	18:44:10	18:44:12	0.033	Commande	git push -u origin master
+2026-03-10	18:52:09	18:52:11	0.033	Commande	git clone https://github.com/AidanAcartis/FileDescGen
+2026-03-10	18:52:15	18:52:17	0.033	Commande	clear
+2026-03-10	18:52:19	18:52:21	0.033	Commande	cd FileDescGen/
+2026-03-10	18:52:20	18:52:22	0.033	Commande	clear
+2026-03-10	18:52:21	18:52:23	0.033	Commande	ls
+2026-03-10	18:52:55	18:52:57	0.033	Commande	code READme.md
+2026-03-10	18:56:24	18:56:26	0.033	Commande	git starus
+2026-03-10	18:56:28	18:56:30	0.033	Commande	git status
+2026-03-10	18:56:30	18:56:32	0.033	Commande	clear
+2026-03-10	18:56:33	18:56:35	0.033	Commande	git add .
+2026-03-10	18:56:35	18:56:37	0.033	Commande	git status
+2026-03-10	18:56:41	18:56:43	0.033	Commande	git commit -m "Fix"
+2026-03-10	18:56:42	18:56:44	0.033	Commande	clear
+2026-03-10	18:56:44	18:56:46	0.033	Commande	git status
+2026-03-10	18:57:02	18:57:04	0.033	Commande	git branch
+2026-03-10	18:57:07	18:57:09	0.033	Commande	git pull origin main
+2026-03-10	18:57:16	18:57:18	0.033	Commande	git push -u origin master
+2026-03-10	18:57:23	18:57:25	0.033	Commande	git push -u origin main
+2026-03-10	19:17:31	19:17:33	0.033	Commande	clear
+2026-03-10	19:17:33	19:17:35	0.033	Commande	git add .
+2026-03-10	19:17:48	19:17:50	0.033	Commande	git commit -m "restructure Global Task Description"
+2026-03-10	19:17:49	19:17:51	0.033	Commande	clear
+2026-03-10	19:17:51	19:17:53	0.033	Commande	git status
+2026-03-10	19:17:54	19:17:56	0.033	Commande	git pull origin master
+2026-03-10	19:17:59	19:18:01	0.033	Commande	git push -u origin master
+2026-03-10	22:23:02	22:23:04	0.033	Commande	exit
+2026-03-10	22:23:06	22:23:08	0.033	Commande	exit

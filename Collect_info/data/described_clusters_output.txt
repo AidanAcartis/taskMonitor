@@ -1,0 +1,209 @@
+============================================================
+RAPPORT DE CLUSTERING DES TÂCHES
+============================================================
+Tâches totales          : 93
+Nombre de clusters      : 18
+Silhouette finale       : 0.277
+Cohésion moyenne finale : 0.258
+
+
+────────────────────────────────────────────────────────────
+Cluster 0  |  3 tâche(s)  |  cohésion = 0.215
+────────────────────────────────────────────────────────────
+  ➤ Start a interactive shell session
+
+  • 'window_changes.log', opened with 'visual studio code', it likely contains changes or changes to a window.
+  • 'bash corrected_monitor_windows.sh', start an interactive shell session, with the 'corrected_monitor_windows.sh' file
+  • 'sudo bash corrected_monitor_windows.sh', desc_cmd: start an interactive shell session, with the 'corrected_monitor_windows.sh' file
+
+────────────────────────────────────────────────────────────
+Cluster 1  |  9 tâche(s)  |  cohésion = 0.270
+────────────────────────────────────────────────────────────
+  ➤ Create a file to stdout
+
+  • 'cat /etc/hosts', print the contents of a file to `stdout`, in '/etc/hosts' directory
+  • 'sudo nano /etc/host', desc_cmd: open specific files, moving to the next file after closing the previous one, in '/etc/host' directory
+  • 'sudo cat /etc/hosts', desc_cmd: print the contents of a file to `stdout`, in '/etc/hosts' directory
+  • 'sudo cat /etc/environment', desc_cmd: print the contents of a file to `stdout`, in '/etc/environment' directory
+  • 'code etc-hosts.txt', start visual studio code, with the 'etc-hosts.txt' file
+  • 'code /etc/hosts', start visual studio code, in '/etc/hosts' directory
+  • 'sudo nano /etc/environment', desc_cmd: open specific files, moving to the next file after closing the previous one, in '/etc/environment' directory
+  • 'sudo nano /etc/hosts', desc_cmd: open specific files, moving to the next file after closing the previous one, in '/etc/hosts' directory
+  • 'touch etc-hosts.txt', create specific files, with the 'etc-hosts.txt' file
+
+────────────────────────────────────────────────────────────
+Cluster 2  |  9 tâche(s)  |  cohésion = 0.256
+────────────────────────────────────────────────────────────
+  ➤ Start a web browser slams chromium and ssl syss s.
+
+  • 'sudo apt remove --purge brave-browser', desc_0: command 'apt' + - remove packages
+  • 'pkill chromium', kill all running chromium browser processes
+  • 'brave-browser', launch the brave web browser
+  • 'pkill brave', kill all running brave browser processes
+  • 'firefox', launch firefox and open a web page
+  • 'pkill chrome', kill all running google chrome processes
+  • 'google-chrome', launch the google chrome web browser
+  • 'pkill firefox', kill all running firefox browser processes
+  • 'gtk-launch brave-browser', launch an application
+
+────────────────────────────────────────────────────────────
+Cluster 3  |  5 tâche(s)  |  cohésion = 0.274
+────────────────────────────────────────────────────────────
+  ➤ collect data for a file
+
+  • 'get_collect_file.py', opened with 'visual studio code', it likely collects data related to a file.
+  • 'data_file.txt', opened with 'visual studio code', it likely contains data related to a database.
+  • 'collected_file.txt', opened with 'visual studio code', it likely contains data related to a collected file.
+  • 'collect_file_script.sh', opened with 'visual studio code', it likely collects data related to files.
+  • 'duration_file.py', opened with 'visual studio code', it likely contains data related to a duration of file.
+
+────────────────────────────────────────────────────────────
+Cluster 4  |  4 tâche(s)  |  cohésion = 0.174
+────────────────────────────────────────────────────────────
+  ➤ Start a interactive shell session
+
+  • 'bash extract_window_events.sh', start an interactive shell session, with the 'extract_window_events.sh' file
+  • 'bash extract_window_host_events.sh', start an interactive shell session, with the 'extract_window_host_events.sh' file
+  • 'chmod +x extract_window_host_events.sh', give the [u]ser who owns a file the right to e[x]ecute it, with the 'extract_window_host_events.sh' file
+  • 'touch extract_window_host_events.sh', create specific files, with the 'extract_window_host_events.sh' file
+
+────────────────────────────────────────────────────────────
+Cluster 5  |  7 tâche(s)  |  cohésion = 0.274
+────────────────────────────────────────────────────────────
+  ➤ Remove specific files and directories recursively
+
+  • 'rm ~/.config/bravesoftware/brave-browser/singleton*', remove specific files, in '~/.config/bravesoftware/brave-browser/singleton*' directory
+  • 'rm ~/.config/bravesoftware/brave-browser/default/lock', remove specific files, in '~/.config/bravesoftware/brave-browser/default/lock' directory
+  • 'rm -rf ~/.config/bravesoftware', remove specific files and directories recursively + remove specific files ignoring nonexistent ones, in '~/.config/bravesoftware' directory
+  • 'rm ~/.mozilla/firefox/*.default*/.parentlock', remove specific files, with the '~/.mozilla/firefox/*.default*/.parentlock' file
+  • 'rm -rf ~/.cache/bravesoftware', remove specific files and directories recursively + remove specific files ignoring nonexistent ones, in '~/.cache/bravesoftware' directory
+  • 'rm ~/.config/google-chrome/singleton*', remove specific files, in '~/.config/google-chrome/singleton*' directory
+  • 'rm ~/.mozilla/firefox/*.default*/lock', remove specific files, in '~/.mozilla/firefox/*.default*/lock' directory
+
+────────────────────────────────────────────────────────────
+Cluster 6  |  4 tâche(s)  |  cohésion = 0.321
+────────────────────────────────────────────────────────────
+  ➤ Start a gpg and exit sasc
+
+  • 'sudo gpg --dearmor brave-core.asc', desc_0: command 'gpg', with the 'brave-core.asc' file
+  • 'pgrep -a xwinwrap', list pid and full command line
+  • 'top', start `top`
+  • 'exit', exit with the exit status of the most recently executed command
+
+────────────────────────────────────────────────────────────
+Cluster 7  |  3 tâche(s)  |  cohésion = 0.109
+────────────────────────────────────────────────────────────
+  ➤ Install font configuration a apt-config
+
+  • 'sudo apt install --reinstall fontconfig fontconfig-config', desc_0: command 'apt' + - install packages
+  • 'fc-cache -fv', force a rebuild of all font cache files, without checking if cache is up-to-date + generate font cache files verbosely
+  • 'sudo apt install --reinstall fontconfig', desc_0: command 'apt' + - install packages
+
+────────────────────────────────────────────────────────────
+Cluster 8  |  3 tâche(s)  |  cohésion = 0.235
+────────────────────────────────────────────────────────────
+  ➤ Update a apt apt and remove packages
+
+  • 'sudo apt update', desc_cmd: - update list of available packages
+  • 'sudo apt remove xserver-xorg-video-intel', desc_cmd: - remove packages
+  • 'sudo apt autoremove', desc_cmd: - automatically remove all unused packages
+
+────────────────────────────────────────────────────────────
+Cluster 9  |  3 tâche(s)  |  cohésion = 0.260
+────────────────────────────────────────────────────────────
+  ➤ Download a file in a url and save it to a specified output
+
+  • 'curl -fsslo brave-core.asc https://brave-browser-apt-release.s3.brave.com/brave-core.asc', download a file silently from a url and save it to a specified output file, with the 'brave-core.asc' file, with the 'https://brave-browser-apt-release.s3.brave.com/brave-core.asc' file
+  • 'sudo curl -fsslo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-core.asc', desc_cmd: download a file silently from a url and save it to a specified output file, with the '/usr/share/keyrings/brave-browser-archive-keyring.gpg' file, with the 'https://brave-browser-apt-release.s3.brave.com/brave-core.asc' file
+  • 'sudo nano /etc/apt/sources.list.d/brave-browser-release.list', desc_cmd: open specific files, moving to the next file after closing the previous one, with the '/etc/apt/sources.list.d/brave-browser-release.list' file
+
+────────────────────────────────────────────────────────────
+Cluster 10  |  3 tâche(s)  |  cohésion = 0.045
+────────────────────────────────────────────────────────────
+  ➤ Pull a remote i-rebase origin master
+
+  • 'git pull --no-rebase origin master', pull any changes made to a remote
+  • 'git pull origin master', pull any changes made to a remote
+  • 'git pull origin main', pull any changes made to a remote
+
+────────────────────────────────────────────────────────────
+Cluster 11  |  4 tâche(s)  |  cohésion = 0.251
+────────────────────────────────────────────────────────────
+  ➤ Get host name sudo
+
+  • 'hostname', show current host name
+  • 'hostnamectl', get the hostname of the computer
+  • 'sudo hostnamectl set-hostname aidan-lenovo-n50-70', desc_cmd: get the hostname of the computer
+  • 'clea', no description found
+
+────────────────────────────────────────────────────────────
+Cluster 12  |  2 tâche(s)  |  cohésion = 0.327
+────────────────────────────────────────────────────────────
+  ➤ Rename a file or directory for a target
+
+  • 'sudo mv brave-core.asc.gpg /usr/share/keyrings/brave-browser-archive-keyring.gpg', desc_cmd: rename a file or directory when the target is not an existing directory, with the 'brave-core.asc.gpg' file, with the '/usr/share/keyrings/brave-browser-archive-keyring.gpg' file
+  • 'mv ~/.config/bravesoftware ~/.config/bravesoftware_backup', rename a file or directory when the target is not an existing directory, in '~/.config/bravesoftware' directory, in '~/.config/bravesoftware_backup' directory
+
+────────────────────────────────────────────────────────────
+Cluster 13  |  12 tâche(s)  |  cohésion = 0.190
+────────────────────────────────────────────────────────────
+  ➤ Test local commits to a remote repository
+
+  • 'git commit -m restructure collect file scripts', commits staged changes to the local repository with a message.
+  • 'git push -u origin main', push local commits to a remote repository
+  • 'git add .', stage all changes in the current directory for the next commit
+  • 'git commit -m fix', commits staged changes to the local repository with a message.
+  • 'git commit -m restructure collect file', commits staged changes to the local repository with a message.
+  • 'git push -u origin master', push local commits to a remote repository
+  • 'git commit -m fix command describer', commits staged changes to the local repository with a message.
+  • 'git status', view the status of the local repository
+  • 'git starus', no description found
+  • 'git branch', list, create, or delete branches
+  • 'git clone https://github.com/aidanacartis/filedescgen', clone a remote git repository from the internet, in 'https://github.com/aidanacartis/filedescgen' directory
+  • 'git commit -m restructure global task description', commits staged changes to the local repository with a message.
+
+────────────────────────────────────────────────────────────
+Cluster 14  |  5 tâche(s)  |  cohésion = 0.199
+────────────────────────────────────────────────────────────
+  ➤ List directory contents
+
+  • 'cd ~', go to the specified directory
+  • 'ls', list directory contents
+  • 'cd filedescgen/', go to the specified directory, in 'filedescgen/' directory
+  • 'ls /etc/', list directory contents, in '/etc/' directory
+  • 'ls -la ~/.config | grep brave', use a long listing format + list all files, including hidden files, with the '~/.config' file
+
+────────────────────────────────────────────────────────────
+Cluster 15  |  6 tâche(s)  |  cohésion = 0.241
+────────────────────────────────────────────────────────────
+  ➤ Start visual studio code for a system
+
+  • 'correct_closed_file.py', opened with 'visual studio code', it likely contains a deleted file.
+  • 'closed_file.txt', opened with 'visual studio code', it likely contains a closed file.
+  • 'opened_file.txt', opened with 'visual studio code', it likely contains a file.
+  • 'code readme.md', start visual studio code, with the 'readme.md' file
+  • 'code .', start visual studio code
+  • 'prev_windows.txt', opened with 'visual studio code', it likely contains a prev window for a system.
+
+────────────────────────────────────────────────────────────
+Cluster 16  |  3 tâche(s)  |  cohésion = 0.221
+────────────────────────────────────────────────────────────
+  ➤ Check a pattern case a case
+
+  • 'cat ~/.local/share/xorg/xorg.0.log | grep ee', print the contents of a file to `stdout`, with the '~/.local/share/xorg/xorg.0.log' file
+  • 'grep -i modeset /var/log/xorg.0.log', ignore case distinctions in patterns and data --no-ignore-case      do not ignore case distinctions (default), with the '/var/log/xorg.0.log' file
+  • 'grep -ie ee|ww|modeset|intel|i915 ~/.local/share/xorg/xorg.0.log', search for a pattern case-insensitively using extended regex in a file, with the '~/.local/share/xorg/xorg.0.log' file
+
+────────────────────────────────────────────────────────────
+Autres petites tâches  |  8 tâche(s)  |  cohésion = 0.774
+────────────────────────────────────────────────────────────
+  • 'journalctl -b | grep xorg', show current boot or the specified boot
+  • 'clear', clear the screen
+  • the user watched 'sekai no owari the peak one piece lyrics mv - youtube' on brave
+  • 'mpv', play a video or audio from a url or file
+  • 'sudo chown -r $user:$user ~/.config/bravesoftware', desc_cmd: recursively change the owner of a directory and its contents, in '~/.config/bravesoftware' directory
+  • the user used 'desktop icons 1'
+  • the user used 'terminal'
+  • 'journalctl --user -n 50', show the user journal for the current user + number of journal entries to show
+
+FIN DU RAPPORT

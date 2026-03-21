@@ -1,0 +1,180 @@
+============================================================
+RAPPORT DE CLUSTERING DES TÂCHES
+============================================================
+Tâches totales          : 93
+Nombre de clusters      : 19
+Silhouette finale       : 0.328
+Cohésion moyenne finale : 0.317
+
+────────────────────────────────────────────────────────────
+Cluster 0  |  2 tâche(s)  |  cohésion = 0.387
+────────────────────────────────────────────────────────────
+  • window_changes.log log file opened with visual studio code to work on changes or changes to a window.
+  • prev_windows.txt text file opened with visual studio code to work on a prev window for a system.
+
+────────────────────────────────────────────────────────────
+Cluster 1  |  6 tâche(s)  |  cohésion = 0.290
+────────────────────────────────────────────────────────────
+  • cat /etc/hosts command used to print the contents of a file to `stdout`, in /etc/hosts
+  • sudo cat /etc/hosts command used to print the contents of a file to `stdout`, in /etc/hosts
+  • sudo cat /etc/environment command used to print the contents of a file to `stdout`, in /etc/environment
+  • code etc-hosts.txt command used to start visual studio code, with the etc-hosts.txt file
+  • code /etc/hosts command used to start visual studio code, in /etc/hosts
+  • touch etc-hosts.txt command used to create specific files, with the etc-hosts.txt file
+
+────────────────────────────────────────────────────────────
+Cluster 2  |  10 tâche(s)  |  cohésion = 0.375
+────────────────────────────────────────────────────────────
+  • sudo apt remove --purge brave-browser command used to remove packages
+  • pkill chromium command used to kill all running chromium browser processes
+  • pgrep -a xwinwrap command used to list pid and full command line
+  • sudo apt update command used to update list of available packages
+  • pkill brave command used to kill all running brave browser processes
+  • pkill chrome command used to kill all running google chrome processes
+  • sudo apt remove xserver-xorg-video-intel command used to remove packages
+  • pkill firefox command used to kill all running firefox browser processes
+  • sudo apt autoremove command used to automatically remove all unused packages
+  • top command used to start `top`
+
+────────────────────────────────────────────────────────────
+Cluster 3  |  4 tâche(s)  |  cohésion = 0.171
+────────────────────────────────────────────────────────────
+  • bash extract_window_events.sh command used to start an interactive shell session, with the extract_window_events.sh file
+  • bash extract_window_host_events.sh command used to start an interactive shell session, with the extract_window_host_events.sh file
+  • chmod +x extract_window_host_events.sh command used to give the [u]ser who owns a file the right to e[x]ecute it, with the extract_window_host_events.sh file
+  • touch extract_window_host_events.sh command used to create specific files, with the extract_window_host_events.sh file
+
+────────────────────────────────────────────────────────────
+Cluster 4  |  4 tâche(s)  |  cohésion = 0.319
+────────────────────────────────────────────────────────────
+  • sudo nano /etc/host command used to open specific files, moving to the next file after closing the previous one, in /etc/host
+  • sudo nano /etc/environment command used to open specific files, moving to the next file after closing the previous one, in /etc/environment
+  • sudo nano /etc/hosts command used to open specific files, moving to the next file after closing the previous one, in /etc/hosts
+  • exit command used to exit with the exit status of the most recently executed command
+
+────────────────────────────────────────────────────────────
+Cluster 5  |  7 tâche(s)  |  cohésion = 0.234
+────────────────────────────────────────────────────────────
+  • rm ~/.config/bravesoftware/brave-browser/singleton* command used to remove specific files, in ~/.config/bravesoftware/brave-browser/singleton*
+  • rm ~/.config/bravesoftware/brave-browser/default/lock command used to remove specific files, in ~/.config/bravesoftware/brave-browser/default/lock
+  • rm -rf ~/.config/bravesoftware command used to remove specific files and directories recursively + remove specific files ignoring nonexistent ones, in ~/.config/bravesoftware
+  • rm ~/.mozilla/firefox/*.default*/.parentlock command used to remove specific files, with the ~/.mozilla/firefox/*.default*/.parentlock file
+  • rm -rf ~/.cache/bravesoftware command used to remove specific files and directories recursively + remove specific files ignoring nonexistent ones, in ~/.cache/bravesoftware
+  • rm ~/.config/google-chrome/singleton* command used to remove specific files, in ~/.config/google-chrome/singleton*
+  • rm ~/.mozilla/firefox/*.default*/lock command used to remove specific files, in ~/.mozilla/firefox/*.default*/lock
+
+────────────────────────────────────────────────────────────
+Cluster 6  |  3 tâche(s)  |  cohésion = 0.229
+────────────────────────────────────────────────────────────
+  • sudo apt install --reinstall fontconfig fontconfig-config command used to install packages
+  • fc-cache -fv command used to force a rebuild of all font cache files, without checking if cache is up-to-date + generate font cache files verbosely
+  • sudo apt install --reinstall fontconfig command used to install packages
+
+────────────────────────────────────────────────────────────
+Cluster 7  |  5 tâche(s)  |  cohésion = 0.442
+────────────────────────────────────────────────────────────
+  • curl -fsslo brave-core.asc https://brave-browser-apt-release.s3.brave.com/brave-core.asc command used to download a file silently from a url and save it to a specified output file, with the brave-core.asc file, with the https://brave-browser-apt-release.s3.brave.com/brave-core.asc file
+  • sudo mv brave-core.asc.gpg /usr/share/keyrings/brave-browser-archive-keyring.gpg command used to rename a file or directory when the target is not an existing directory, with the brave-core.asc.gpg file, with the /usr/share/keyrings/brave-browser-archive-keyring.gpg file
+  • sudo curl -fsslo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-core.asc command used to download a file silently from a url and save it to a specified output file, with the /usr/share/keyrings/brave-browser-archive-keyring.gpg file, with the https://brave-browser-apt-release.s3.brave.com/brave-core.asc file
+  • sudo nano /etc/apt/sources.list.d/brave-browser-release.list command used to open specific files, moving to the next file after closing the previous one, with the /etc/apt/sources.list.d/brave-browser-release.list file
+  • mv ~/.config/bravesoftware ~/.config/bravesoftware_backup command used to rename a file or directory when the target is not an existing directory, in ~/.config/bravesoftware, in ~/.config/bravesoftware_backup
+
+────────────────────────────────────────────────────────────
+Cluster 8  |  13 tâche(s)  |  cohésion = 0.287
+────────────────────────────────────────────────────────────
+  • git pull --no-rebase origin master command used to pull any changes made to a remote
+  • git commit -m restructure collect file scripts command used to commits staged changes to the local repository with a message
+  • git push -u origin main command used to push local commits to a remote repository
+  • git pull origin master command used to pull any changes made to a remote
+  • git commit -m fix command used to commits staged changes to the local repository with a message
+  • git commit -m restructure collect file command used to commits staged changes to the local repository with a message
+  • git push -u origin master command used to push local commits to a remote repository
+  • git commit -m fix command describer command used to commits staged changes to the local repository with a message
+  • git pull origin main command used to pull any changes made to a remote
+  • git status command used to view the status of the local repository
+  • git add . command used to stage all changes in the current directory for the next commit
+  • git clone https://github.com/aidanacartis/filedescgen command used to clone a remote git repository from the internet, in https://github.com/aidanacartis/filedescgen
+  • git commit -m restructure global task description command used to commits staged changes to the local repository with a message
+
+────────────────────────────────────────────────────────────
+Cluster 9  |  5 tâche(s)  |  cohésion = 0.304
+────────────────────────────────────────────────────────────
+  • brave-browser command used to launch the brave web browser
+  • firefox command used to launch firefox and open a web page
+  • google-chrome command used to launch the google chrome web browser
+  • gtk-launch brave-browser command used to launch an application
+  • clear command used to clear the screen
+
+────────────────────────────────────────────────────────────
+Cluster 10  |  3 tâche(s)  |  cohésion = 0.429
+────────────────────────────────────────────────────────────
+  • git starus command executed in terminal
+  • git branch command used to list, create, or delete branches
+  • terminal application used by the user
+
+────────────────────────────────────────────────────────────
+Cluster 11  |  5 tâche(s)  |  cohésion = 0.300
+────────────────────────────────────────────────────────────
+  • duration_file.py python script opened with visual studio code to work on data related to a duration of file.
+  • get_collect_file.py python script opened with visual studio code to work on data related to a file.
+  • data_file.txt text file opened with visual studio code to work on data related to a database.
+  • collected_file.txt text file opened with visual studio code to work on data related to a collected file.
+  • collect_file_script.sh shell script opened with visual studio code to work on data related to files.
+
+────────────────────────────────────────────────────────────
+Cluster 12  |  3 tâche(s)  |  cohésion = 0.127
+────────────────────────────────────────────────────────────
+  • hostname command used to show current host name
+  • hostnamectl command used to get the hostname of the computer
+  • sudo hostnamectl set-hostname aidan-lenovo-n50-70 command used to get the hostname of the computer
+
+────────────────────────────────────────────────────────────
+Cluster 13  |  4 tâche(s)  |  cohésion = 0.246
+────────────────────────────────────────────────────────────
+  • cd ~ command used to go to the specified directory
+  • ls command used to list directory contents
+  • cd filedescgen/ command used to go to the specified directory, in filedescgen/
+  • ls /etc/ command used to list directory contents, in /etc/
+
+────────────────────────────────────────────────────────────
+Cluster 14  |  3 tâche(s)  |  cohésion = 0.271
+────────────────────────────────────────────────────────────
+  • correct_closed_file.py python script opened with visual studio code to work on a deleted file.
+  • closed_file.txt text file opened with visual studio code to work on a closed file.
+  • opened_file.txt text file opened with visual studio code to work on a file.
+
+────────────────────────────────────────────────────────────
+Cluster 15  |  2 tâche(s)  |  cohésion = 0.014
+────────────────────────────────────────────────────────────
+  • bash corrected_monitor_windows.sh command used to start an interactive shell session, with the corrected_monitor_windows.sh file
+  • sudo bash corrected_monitor_windows.sh command used to start an interactive shell session, with the corrected_monitor_windows.sh file
+
+────────────────────────────────────────────────────────────
+Cluster 16  |  3 tâche(s)  |  cohésion = 0.328
+────────────────────────────────────────────────────────────
+  • cat ~/.local/share/xorg/xorg.0.log | grep ee command used to print the contents of a file to `stdout`, with the ~/.local/share/xorg/xorg.0.log file
+  • grep -i modeset /var/log/xorg.0.log command used to ignore case distinctions in patterns and data --no-ignore-case do not ignore case distinctions (default), with the /var/log/xorg.0.log file
+  • grep -ie ee|ww|modeset|intel|i915 ~/.local/share/xorg/xorg.0.log command used to search for a pattern case-insensitively using extended regex in a file, with the ~/.local/share/xorg/xorg.0.log file
+
+────────────────────────────────────────────────────────────
+Cluster 17  |  3 tâche(s)  |  cohésion = 0.379
+────────────────────────────────────────────────────────────
+  • code readme.md command used to start visual studio code, with the readme.md file
+  • code . command used to start visual studio code
+  • clea command executed in terminal
+
+────────────────────────────────────────────────────────────
+Autres petites tâches  |  8 tâche(s)  |  cohésion = 0.886
+────────────────────────────────────────────────────────────
+  • ls -la ~/.config | grep brave command used to use a long listing format + list all files, including hidden files, with the ~/.config file
+  • sudo chown -r $user:$user ~/.config/bravesoftware command used to recursively change the owner of a directory and its contents, in ~/.config/bravesoftware
+  • brave used to watch sekai no owari the peak one piece lyrics mv - youtube
+  • mpv command used to play a video or audio from a url or file
+  • journalctl -b | grep xorg command used to show current boot or the specified boot
+  • sudo gpg --dearmor brave-core.asc command executed in terminal, with the brave-core.asc file
+  • journalctl --user -n 50 command used to show the user journal for the current user + number of journal entries to show
+  • desktop icons 1 application used by the user
+
+============================================================
+FIN DU RAPPORT
+============================================================

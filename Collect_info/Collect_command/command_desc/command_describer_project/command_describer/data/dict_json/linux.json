@@ -9,6 +9,111 @@
       "cmd": "qm {{[g|guest]}} {{[p|passwd]}} {{vm_id}} {{username}} --crypted 1"
     }
   ],
+  "pkill": [
+    {
+      "cmd": "pkill {{process_name}}",
+      "description": "Kill a process by its name"
+    },
+    {
+      "cmd": "pkill chrome",
+      "description": "Kill all running Google Chrome processes"
+    },
+    {
+      "cmd": "pkill chromium",
+      "description": "Kill all running Chromium browser processes"
+    },
+    {
+      "cmd": "pkill brave",
+      "description": "Kill all running Brave browser processes"
+    },
+    {
+      "cmd": "pkill firefox",
+      "description": "Kill all running Firefox browser processes"
+    }
+  ],
+  "google-chrome": [
+    {
+      "cmd": "google-chrome",
+      "description": "Launch the Google Chrome web browser"
+    },
+    {
+      "cmd": "google-chrome {{url}}",
+      "description": "Open a URL directly in Google Chrome"
+    }
+  ],
+  "brave-browser": [
+    {
+      "cmd": "brave-browser",
+      "description": "Launch the Brave web browser"
+    },
+    {
+      "cmd": "brave-browser {{url}}",
+      "description": "Open a URL directly in Brave browser"
+    }
+  ],
+  "git": [
+    {
+      "cmd": "git add .",
+      "description": "Stage all changes in the current directory for the next commit"
+    },
+    {
+      "cmd": "git add {{file}}",
+      "description": "Stage a specific file for the next commit"
+    },
+    {
+      "cmd": "git add -p",
+      "description": "Interactively stage chunks of changes"
+    }
+  ],
+  "curl": [
+    {
+      "cmd": "curl -fsSLo {{output_file}} {{url}}",
+      "description": "Download a file silently from a URL and save it to a specified output file"
+    },
+    {
+      "cmd": "curl {{url}}",
+      "description": "Fetch the content of a URL and print it to stdout"
+    }
+  ],
+  "find": [
+    { "cmd": "find . -name", "description": "Search for files by name in the current directory recursively" },
+    { "cmd": "find . -name '*.py'", "description": "Find all Python files recursively in the current directory" },
+    { "cmd": "find . -type f", "description": "Find all regular files recursively in the current directory" },
+    { "cmd": "find . -type d", "description": "Find all directories recursively in the current directory" },
+    { "cmd": "find . -mtime -1", "description": "Find files modified in the last 24 hours" }
+  ],
+  "xargs": [
+    { "cmd": "xargs grep -l", "description": "Find files containing a specific pattern using grep on each input" },
+    { "cmd": "xargs grep", "description": "Run grep on each file passed from stdin" },
+    { "cmd": "xargs rm", "description": "Delete each file passed from stdin" },
+    { "cmd": "xargs -I {}", "description": "Execute a command for each line from stdin, replacing {} with the input" }
+  ],
+  "grep": [
+    { "cmd": "grep LISTEN", "description": "Filter lines containing the word LISTEN, typically to show listening ports" },
+    { "cmd": "grep -r", "description": "Search recursively for a pattern in all files under a directory" },
+    { "cmd": "grep -r > file 2>&1", "description": "Search recursively and redirect both output and errors to a file" },
+    { "cmd": "grep -E '80|443'", "description": "Filter lines matching port 80 or 443 using extended regular expressions" },
+    {
+      "cmd": "grep -iE \"{{pattern}}\" {{file}}",
+      "description": "Search for a pattern case-insensitively using extended regex in a file"
+    },
+    {
+      "cmd": "grep -iE \"EE|WW\" {{file}}",
+      "description": "Search for error or warning markers in a log file, case-insensitively"
+    }
+  ],
+  "lsof": [
+    { "cmd": "lsof -i -P -n", "description": "List all open network connections showing port numbers and IP addresses without resolving names" },
+    { "cmd": "lsof -P", "description": "List open files showing port numbers numerically instead of service names" },
+    { "cmd": "lsof -n", "description": "List open files without resolving IP addresses to hostnames" }
+  ],
+  "tee": [
+    { "cmd": "tee", "description": "Read from stdin and write to both stdout and a file simultaneously" },
+    { "cmd": "tee -a", "description": "Append stdin to a file while also printing to stdout" }
+  ],
+  "apt-get upgrade": [
+    { "cmd": "sudo apt-get upgrade -y", "description": "Upgrade all installed packages to their latest versions without confirmation" }
+  ],
   "tic": [
     {
       "description": "Compile and install terminfo for a terminal",

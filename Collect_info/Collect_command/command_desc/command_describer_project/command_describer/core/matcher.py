@@ -23,7 +23,176 @@ def repair_combined_flags_in_command(cmd: str) -> str:
     repaired_tokens = []
 
     # Commands for which flags are not split (case-insensitive)
-    SKIP_SPLIT_CMDS = {"nmap", "openssl", "ntlmrelayx"}
+    SKIP_SPLIT_CMDS = {
+    # ── Originaux ────────────────────────────────────────────────
+    "nmap", "openssl", "ntlmrelayx",
+
+    # ── Recherche de fichiers ─────────────────────────────────────
+    "find",         # -name -type -mtime -exec -perm -user -group -size
+    "locate",       # -basename -existing -follow
+    "updatedb",     # -database-root -output
+
+    # ── Gestion de paquets ────────────────────────────────────────
+    "apt", "apt-get", "apt-cache",   # -target -release
+    "dpkg",         # -install -remove -purge -listfiles
+    "yum",          # -enablerepo -disablerepo
+    "dnf",          # -enablerepo -best
+    "pacman",       # -noconfirm -needed (mais flags courts aussi)
+    "zypper",       # -non-interactive
+    "snap",         # sous-commandes mots
+    "brew",         # sous-commandes mots
+    "pip", "pip3",  # -index-url -extra-index-url -requirement
+
+    # ── Contrôle système / services ──────────────────────────────
+    "systemctl",    # -no-pager -now -force
+    "service",      # sous-commande mot
+    "journalctl",   # -no-pager -since -until -unit
+    "loginctl",
+    "timedatectl",
+    "hostnamectl",
+    "localectl",
+
+    # ── Conteneurs / orchestration ────────────────────────────────
+    "docker",       # -no-cache -platform -build-arg
+    "docker-compose",
+    "kubectl",      # -namespace -selector -output -kubeconfig
+    "helm",         # -namespace -values -set
+    "podman",
+
+    # ── Contrôle de version ───────────────────────────────────────
+    "git",          # sous-commandes : init, clone, commit, etc.
+    "svn",          # sous-commandes : checkout, update, etc.
+    "hg",           # mercurial
+
+    # ── Réseau ────────────────────────────────────────────────────
+    "ip",           # -brief -color -human -json : sous-cmds addr/route/link
+    "nmcli",        # sous-commandes mots
+    "iwconfig",
+    "iw",           # sous-commandes mots
+    "tc",           # sous-commandes mots (qdisc, filter, class)
+    "firewall-cmd", # -permanent -zone -add-port
+    "ufw",          # sous-commandes mots
+    "iptables",     # -append -delete -insert -policy -numeric
+    "ip6tables",
+    "nftables", "nft",
+    "ss",           # -no-header (mais -tuln sont courts → géré en amont)
+    "netstat",
+    "traceroute",   # -dont-fragment
+    "mtr",          # -no-dns -report-wide
+    "dig",          # -short -trace -type
+    "nslookup",
+    "host",
+    "curl",         # -location -silent -output -user-agent
+    "wget",         # -no-check-certificate -output-document -quiet
+    "rsync",        # -exclude -include -filter -rsh
+    "scp",
+    "sftp",
+    "ssh",          # -identity-file -option -jumphost
+    "ssh-keygen",   # -type -bits -comment -file
+    "ssh-copy-id",
+    "vpn", "openvpn",   # -config -auth-user-pass
+    "wg", "wireguard",
+
+    # ── Utilisateurs / permissions ────────────────────────────────
+    "useradd",      # -home-dir -shell -groups -comment
+    "usermod",      # -append -groups -shell -home
+    "userdel",
+    "groupadd", "groupmod", "groupdel",
+    "passwd",       # -stdin -expire
+    "chage",        # -lastday -expiredate -inactive
+    "sudo",         # -user -group -preserve-env
+    "su",
+    "visudo",
+    "chown",        # -reference -recursive (mais -R est court)
+    "chmod",
+    "setfacl",      # -modify -remove -recursive
+    "getfacl",
+
+    # ── Stockage / disques ────────────────────────────────────────
+    "fdisk",        # -list -sector-size
+    "parted",       # sous-commandes mots
+    "mkfs",         # -type -label
+    "mount",        # -options -types -bind
+    "umount",
+    "lvm", "pvcreate", "vgcreate", "lvcreate",  # -name -size -extents
+    "mdadm",        # -create -assemble -detail
+    "cryptsetup",   # -cipher -key-size -hash
+    "zfs", "zpool", # sous-commandes mots
+
+    # ── Processus / monitoring ────────────────────────────────────
+    "ps",           # -sort -no-header (mais aux sont courts)
+    "top", "htop",
+    "kill", "killall", "pkill",
+    "nice", "renice",   # -priority
+    "strace",       # -trace -output -follow-forks
+    "ltrace",
+    "perf",         # sous-commandes mots
+    "valgrind",     # -tool -leak-check -show-origins
+    "gdb",          # -batch -ex -command
+    "lsof",         # -repeat -nlist
+
+    # ── Archivage / compression ───────────────────────────────────
+    "tar",          # -exclude -exclude-vcs -one-file-system
+                    # NOTE: -xvz doit rester splittable → à gérer finement
+    "zip", "unzip", # -exclude -password
+    "7z", "7za",    # sous-commandes mots (a, e, x, l)
+
+    # ── Transfert / cloud ─────────────────────────────────────────
+    "aws",          # sous-commandes mots (s3, ec2, iam...)
+    "gcloud",       # sous-commandes mots
+    "az",           # sous-commandes mots (azure cli)
+    "gsutil",
+    "rclone",       # sous-commandes mots + -config -transfers
+
+    # ── Base de données ───────────────────────────────────────────
+    "mysql", "mysqldump",   # -host -user -password -database
+    "psql", "pg_dump",      # -host -port -username -dbname
+    "mongodump", "mongorestore", "mongo",
+    "redis-cli",    # -host -port -auth
+    "sqlite3",
+
+    # ── Langages / outils dev ─────────────────────────────────────
+    "python", "python3",    # -module -command -version
+    "node", "npm", "npx",   # sous-commandes mots
+    "yarn",                 # sous-commandes mots
+    "cargo",                # sous-commandes mots (build, run, test)
+    "go",                   # sous-commandes mots (build, run, test)
+    "java", "javac",        # -classpath -sourcepath
+    "mvn",                  # -DskipTests -Dmaven.test.skip
+    "gradle",               # sous-commandes mots
+    "make",                 # -directory -jobs -file
+    "cmake",                # -DCMAKE_BUILD_TYPE -DCMAKE_INSTALL_PREFIX
+
+    # ── Éditeurs / affichage ──────────────────────────────────────
+    "vim", "nvim",  # -noplugin -u NONE
+    "grep", "egrep", "fgrep",   # -include -exclude -exclude-dir
+    "sed",          # -in-place -expression
+    "awk",          # -field-separator -assign
+    "jq",           # -raw-output -compact-output -join-output
+    "xmllint",      # -xpath -schema -format
+    "pandoc",       # -from -to -output -standalone
+    "ffmpeg",       # -vcodec -acodec -vf -af
+    "convert",      # imagemagick : -resize -quality -format
+
+    # ── Sécurité / pentest ────────────────────────────────────────
+    "metasploit", "msfconsole", "msfvenom",
+    "hashcat",      # -hash-type -attack-mode -outfile
+    "john",         # -wordlist -format -rules
+    "hydra",        # -login -password -target-file
+    "sqlmap",       # -dbms -level -risk -technique
+    "nikto",        # -host -port -output
+    "wpscan",       # -url -enumerate -passwords
+    "aircrack-ng",  # -essid -bssid -wordlist
+
+    # ── Virtualisation ────────────────────────────────────────────
+    "qemu", "qemu-system-x86_64",   # -machine -cpu -drive -netdev
+    "virsh",        # sous-commandes mots
+    "vboxmanage",   # sous-commandes mots
+    "vagrant",      # sous-commandes mots
+    "ansible", "ansible-playbook",  # -inventory -limit -tags -extra-vars
+    "terraform",    # sous-commandes mots (init, plan, apply)
+    "packer",       # sous-commandes mots
+}
 
     # Locate the main control (if present)
     main_cmd = tokens[0] if tokens else ""
