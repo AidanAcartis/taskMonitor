@@ -17,6 +17,7 @@ import json
 import sys
 import argparse
 from pathlib import Path
+import os
 
 import torch
 from transformers import T5ForConditionalGeneration, T5TokenizerFast
@@ -25,16 +26,19 @@ from transformers import T5ForConditionalGeneration, T5TokenizerFast
 # ─────────────────────────────────────────────────────────────
 # CONFIG  — modifie ces valeurs selon ton environnement
 # ─────────────────────────────────────────────────────────────
-DEFAULT_INPUT     = "clusters_output.txt"
-DEFAULT_MODEL     = "./final_Model_V3/final_model"
-DEFAULT_OUT_TXT   = "clusters_with_intentions.txt"
-DEFAULT_OUT_JSONL = "clusters_with_intentions.jsonl"
+
+BASE_DIR = os.path.dirname(__file__)
+
+DEFAULT_INPUT     = os.path.join(BASE_DIR, "../CLUSTERING/clusters_output.txt")
+DEFAULT_MODEL     = os.path.join(BASE_DIR, "../../../Vis_Models/final_Model_V3/final_model")
+DEFAULT_OUT_TXT   = os.path.join(BASE_DIR, "clusters_with_intentions.txt")
+DEFAULT_OUT_JSONL = os.path.join(BASE_DIR, "clusters_with_intentions.jsonl")
 
 def load_json(path):
     with open(path, encoding="utf-8") as f:
         return json.load(f)
 
-VERB_MAP = load_json("./DICT/VERB_MAP_EXTENDED.json")
+VERB_MAP = load_json(os.path.join(BASE_DIR, "../DICT/VERB_MAP_EXTENDED.json"))
 VERB_MAP = {k.lower(): v.lower() for k, v in VERB_MAP.items()}
 
 # Identique aux hyperparamètres d'inférence utilisés à l'entraînement
