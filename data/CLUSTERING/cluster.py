@@ -23,6 +23,7 @@ Suit exactement les étapes d'inférence du notebook :
 import random
 import numpy as np
 import pandas as pd
+import os
 
 from collections import defaultdict
 from sklearn.cluster import AgglomerativeClustering
@@ -32,9 +33,10 @@ from sentence_transformers import SentenceTransformer, util
 # ─────────────────────────────────────────────
 # CONFIGURATION
 # ─────────────────────────────────────────────
-CSV_INPUT          = "events_described.csv"
-OUTPUT_FILE        = "clusters_output.txt"
-MODEL_DIR          = "./final_model"
+BASE_DIR = os.path.dirname(__file__)
+CSV_INPUT          = os.path.join(BASE_DIR, "../DESCRIBE_EVENTS/events_described.csv")
+OUTPUT_FILE        = os.path.join(BASE_DIR, "clusters_output.txt")
+MODEL_DIR          = os.path.join(BASE_DIR, "../../../Vis_Models/final_model")
 COHESION_THRESHOLD = 0.34    # seuil cohésion reclustering itératif (étape 7)
 SIZE_THRESHOLD     = 10      # taille max avant reclustering forcé   (étape 7)
 COHESION_FINAL     = 0.55    # seuil reclustering final              (étape 11)
