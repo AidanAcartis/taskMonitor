@@ -3,10 +3,18 @@ import torch, torch.nn as nn, pandas as pd
 from transformers import AutoTokenizer, T5ForConditionalGeneration
 from sentence_transformers import SentenceTransformer
 
+
+BASE_DIR = os.path.dirname(__file__)
 # ───────────────── CONFIG ─────────────────
-CSV_INPUT   = "events_normalized.csv"
-CSV_OUTPUT  = "events_described.csv"
-MODEL_DIR   = "./Gen_Desc_Model/full_finetuned"
+CSV_INPUT   = os.path.join(BASE_DIR, "../PARSE_DATA/events_normalized.csv")
+CSV_OUTPUT  = os.path.join(BASE_DIR, "events_described.csv")
+MODEL_DIR   = os.path.join(BASE_DIR, "../../../Vis_Models/Gen_Desc_Model/full_finetuned")
+
+# Charger les fichiers JSON
+FILE_EXTENSION = json.load(open(os.path.join(BASE_DIR, "../DICT/FILE_EXTENSION.json")))
+MIME_MAP        = json.load(open(os.path.join(BASE_DIR, "../DICT/mime_map.json")))
+TOOLS           = json.load(open(os.path.join(BASE_DIR, "../DICT/TOOLS.json")))
+
 LEXICAL_DIM = 512
 BATCH_SIZE  = 8
 DEVICE      = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -118,10 +126,6 @@ linux_special_files = {
     "~/.bash_history": "user shell command history",
 }
 
-# Charger les fichiers JSON
-FILE_EXTENSION = json.load(open("./DICT/FILE_EXTENSION.json"))
-MIME_MAP        = json.load(open("./DICT/mime_map.json"))
-TOOLS           = json.load(open("./DICT/TOOLS.json"))
 
 # ─────────────────── CLASSES & MODELS ───────────────────
 # ─────────────────────────────────────────────

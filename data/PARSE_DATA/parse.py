@@ -1,8 +1,10 @@
 import pandas as pd
 import re
+import os
 
-INPUT = "data_collect.txt"
-OUTPUT = "events_normalized.csv"
+BASE_DIR = os.path.dirname(__file__)
+INPUT = os.path.join(BASE_DIR, "../DATA_COLLECT/data_collect.txt")
+OUTPUT = os.path.join(BASE_DIR, "events_normalized.csv")
 
 file_regex = re.compile(r"\.[a-zA-Z0-9]+$")
 
