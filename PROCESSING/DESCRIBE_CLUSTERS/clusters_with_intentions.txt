@@ -3,314 +3,112 @@
 =================================================================
 
 ─────────────────────────────────────────────────────────────────
-Cluster 0  |  6 tache(s)  |  cohesion = 0.288
+Cluster 0  |  10 tache(s)  |  cohesion = 0.335
 ─────────────────────────────────────────────────────────────────
-  Global Task Intention : Create and manage files
+  Global Task Intention : Create and process staged changes to the local repository
 
   Items :
-    - sudo chown -r $user:$user ~/.config/bravesoftware, command, executed in terminal, used to recursively change the owner of a directory and its contents in ~/.config/bravesoftware
-    - cd ~, command, executed in terminal, used to go to the specified directory
-    - ls, command, executed in terminal, used to list directory contents
-    - git add ., command, executed in terminal, used to stage all changes in the current directory for the next commit
-    - cd filedescgen/, command, executed in terminal, used to go to the specified directory in filedescgen/
-    - ls /etc/, command, executed in terminal, used to list directory contents in /etc/
-
-─────────────────────────────────────────────────────────────────
-Cluster 1  |  3 tache(s)  |  cohesion = 0.326
-─────────────────────────────────────────────────────────────────
-  Global Task Intention : Configure and monitor system windows
-
-  Items :
-    - window_changes.log, file, opened with visual studio code, contains data related to application log, text files, it contains changes in window settings.
-    - bash corrected_monitor_windows.sh, command, executed in terminal, used to start an interactive shell session with the corrected_monitor_windows.sh file which is a shell script, it serves as a corrected monitoring system window., sh
-    - sudo bash corrected_monitor_windows.sh, command, executed in terminal, used to start an interactive shell session with the corrected_monitor_windows.sh file which is a shell script, it serves as a corrected monitoring system window., sh
-
-─────────────────────────────────────────────────────────────────
-Cluster 2  |  7 tache(s)  |  cohesion = 0.225
-─────────────────────────────────────────────────────────────────
-  Global Task Intention : Manage static host name to ip mapping
-
-  Items :
-    - cat /etc/hosts, command, executed in terminal, used to print the contents of a file to `stdout` targeting the special file /etc/hosts which is static hostname to ip mapping
-    - sudo cat /etc/hosts, command, executed in terminal, used to print the contents of a file to `stdout` targeting the special file /etc/hosts which is static hostname to ip mapping
-    - hostname, command, executed in terminal, used to show current host name
-    - hostnamectl, command, executed in terminal, used to get the hostname of the computer
-    - code /etc/hosts, command, executed in terminal, used to start visual studio code targeting the special file /etc/hosts which is static hostname to ip mapping
-    - sudo hostnamectl set-hostname aidan-lenovo-n50-70, command, executed in terminal, used to get the hostname of the computer
-    - sudo nano /etc/hosts, command, executed in terminal, used to open specific files, moving to the next file after closing the previous one targeting the special file /etc/hosts which is static hostname to ip mapping
-
-─────────────────────────────────────────────────────────────────
-Cluster 3  |  5 tache(s)  |  cohesion = 0.214
-─────────────────────────────────────────────────────────────────
-  Global Task Intention : Kill browser processes and applications
-
-  Items :
-    - sudo apt remove --purge brave-browser, command, executed in terminal, used to , remove packages
-    - pkill chromium, command, executed in terminal, used to kill all running chromium browser processes
-    - pkill brave, command, executed in terminal, used to kill all running brave browser processes
-    - pkill chrome, command, executed in terminal, used to kill all running google chrome processes
-    - pkill firefox, command, executed in terminal, used to kill all running firefox browser processes
-
-─────────────────────────────────────────────────────────────────
-Cluster 4  |  4 tache(s)  |  cohesion = 0.173
-─────────────────────────────────────────────────────────────────
-  Global Task Intention : Create a backup window for events
-
-  Items :
-    - bash extract_window_events.sh, command, executed in terminal, used to start an interactive shell session with the extract_window_events.sh file which is a shell script, it contains archived events for extracting window events., sh
-    - bash extract_window_host_events.sh, command, executed in terminal, used to start an interactive shell session with the extract_window_host_events.sh file which is a shell script, it serves as a backup window for events., sh
-    - chmod +x extract_window_host_events.sh, command, executed in terminal, used to give the [u]ser who owns a file the right to e[x]ecute it with the extract_window_host_events.sh file which is a shell script, it serves as a backup window for events., sh
-    - touch extract_window_host_events.sh, command, executed in terminal, used to create specific files with the extract_window_host_events.sh file which is a shell script, it serves as a backup window for events., sh
-
-─────────────────────────────────────────────────────────────────
-Cluster 5  |  3 tache(s)  |  cohesion = 0.293
-─────────────────────────────────────────────────────────────────
-  Global Task Intention : Create and manage e-host files
-
-  Items :
-    - sudo nano /etc/host, command, executed in terminal, used to open specific files, moving to the next file after closing the previous one in /etc/host
-    - code etc-hosts.txt, command, executed in terminal, used to start visual studio code with the etc-hosts.txt file which is a plain text document, text files, it serves as a server for etc-hosts.
-    - touch etc-hosts.txt, command, executed in terminal, used to create specific files with the etc-hosts.txt file which is a plain text document, text files, it serves as a server for etc-hosts.
-
-─────────────────────────────────────────────────────────────────
-Cluster 6  |  8 tache(s)  |  cohesion = 0.355
-─────────────────────────────────────────────────────────────────
-  Global Task Intention : Remove specific files and directories
-
-  Items :
-    - rm ~/.config/bravesoftware/brave-browser/singleton*, command, executed in terminal, used to remove specific files in ~/.config/bravesoftware/brave-browser/singleton*
-    - rm ~/.config/bravesoftware/brave-browser/default/lock, command, executed in terminal, used to remove specific files in ~/.config/bravesoftware/brave-browser/default/lock
-    - rm -rf ~/.config/bravesoftware, command, executed in terminal, used to remove specific files and directories recursively + remove specific files ignoring nonexistent ones in ~/.config/bravesoftware
-    - rm ~/.mozilla/firefox/*.default*/.parentlock, command, executed in terminal, used to remove specific files with the ~/.mozilla/firefox/*.default*/.parentlock file which is a it is used for storing and managing parentlock data., web browser, mozilla firefox
-    - rm -rf ~/.cache/bravesoftware, command, executed in terminal, used to remove specific files and directories recursively + remove specific files ignoring nonexistent ones in ~/.cache/bravesoftware
-    - rm ~/.config/google-chrome/singleton*, command, executed in terminal, used to remove specific files in ~/.config/google-chrome/singleton*
-    - rm ~/.mozilla/firefox/*.default*/lock, command, executed in terminal, used to remove specific files in ~/.mozilla/firefox/*.default*/lock
-    - ls -la ~/.config | grep brave, command, executed in terminal, used to use a long listing format + list all files, including hidden files with the ~/.config file which is a it provides a default configuration for a system.
-
-─────────────────────────────────────────────────────────────────
-Cluster 7  |  3 tache(s)  |  cohesion = 0.218
-─────────────────────────────────────────────────────────────────
-  Global Task Intention : Update font cache
-
-  Items :
-    - sudo apt install --reinstall fontconfig fontconfig-config, command, executed in terminal, used to , install packages
-    - fc-cache -fv, command, executed in terminal, used to force a rebuild of all font cache files, without checking if cache is up-to-date + generate font cache files verbosely
-    - sudo apt install --reinstall fontconfig, command, executed in terminal, used to , install packages
-
-─────────────────────────────────────────────────────────────────
-Cluster 8  |  3 tache(s)  |  cohesion = 0.261
-─────────────────────────────────────────────────────────────────
-  Global Task Intention : Create and run a web browser
-
-  Items :
-    - curl -fsslo brave-core.asc https://brave-browser-apt-release.s3.brave.com/brave-core.asc, command, executed in terminal, used to download a file silently from a url and save it to a specified output file with the brave-core.asc file which is a plain text document, pgp signature, it serves as a warrior-core file. and with the https://brave-browser-apt-release.s3.brave.com/brave-core.asc file which is a plain text document, pgp signature, it serves as a warrior-core file., web browser, software package manager
-    - sudo mv brave-core.asc.gpg /usr/share/keyrings/brave-browser-archive-keyring.gpg, command, executed in terminal, used to rename a file or directory when the target is not an existing directory with the brave-core.asc.gpg file which is a detached openpgp signature, gpg security, it serves as a guide for bravecore.asc., encryption tool and with the /usr/share/keyrings/brave-browser-archive-keyring.gpg file which is a detached openpgp signature, gpg security, it contains a backup of the brave-browser archive., web browser, encryption tool
-    - sudo curl -fsslo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-core.asc, command, executed in terminal, used to download a file silently from a url and save it to a specified output file with the /usr/share/keyrings/brave-browser-archive-keyring.gpg file which is a detached openpgp signature, gpg security, it contains a backup of the brave-browser archive., web browser, encryption tool and with the https://brave-browser-apt-release.s3.brave.com/brave-core.asc file which is a plain text document, pgp signature, it serves as a warrior-core file., web browser, software package manager
-
-─────────────────────────────────────────────────────────────────
-Cluster 9  |  3 tache(s)  |  cohesion = 0.130
-─────────────────────────────────────────────────────────────────
-  Global Task Intention : Create a remote for code
-
-  Items :
-    - git pull --no-rebase origin master, command, executed in terminal, used to pull any changes made to a remote
-    - git pull origin master, command, executed in terminal, used to pull any changes made to a remote
-    - git pull origin main, command, executed in terminal, used to pull any changes made to a remote
-
-─────────────────────────────────────────────────────────────────
-Cluster 10  |  4 tache(s)  |  cohesion = 0.208
-─────────────────────────────────────────────────────────────────
-  Global Task Intention : Launch a web browser
-
-  Items :
-    - brave-browser, command, executed in terminal, used to launch the brave web browser
-    - firefox, command, executed in terminal, used to launch firefox and open a web page
-    - google-chrome, command, executed in terminal, used to launch the google chrome web browser
-    - gtk-launch brave-browser, command, executed in terminal, used to launch an application
-
-─────────────────────────────────────────────────────────────────
-Cluster 11  |  11 tache(s)  |  cohesion = 0.325
-─────────────────────────────────────────────────────────────────
-  Global Task Intention : Create and manage a repository for local changes
-
-  Items :
-    - git starus, command, executed in terminal
-    - git branch, command, executed in terminal, used to list, create, or delete branches
-    - git commit -m restructure collect file scripts, command, executed in terminal, used to commits staged changes to the local repository with a message
-    - git push -u origin main, command, executed in terminal, used to push local commits to a remote repository
-    - git clone https://github.com/aidanacartis/filedescgen, command, executed in terminal, used to clone a remote git repository from the internet in https://github.com/aidanacartis/filedescgen
-    - git commit -m fix, command, executed in terminal, used to commits staged changes to the local repository with a message
-    - git commit -m restructure collect file, command, executed in terminal, used to commits staged changes to the local repository with a message
-    - git push -u origin master, command, executed in terminal, used to push local commits to a remote repository
-    - git commit -m fix command describer, command, executed in terminal, used to commits staged changes to the local repository with a message
-    - git status, command, executed in terminal, used to view the status of the local repository
-    - git commit -m restructure global task description, command, executed in terminal, used to commits staged changes to the local repository with a message
-
-─────────────────────────────────────────────────────────────────
-Cluster 12  |  2 tache(s)  |  cohesion = 0.085
-─────────────────────────────────────────────────────────────────
-  Global Task Intention : Monitor and manage environment variables
-
-  Items :
-    - sudo cat /etc/environment, command, executed in terminal, used to print the contents of a file to `stdout` targeting the special file /etc/environment which is global environment variables
-    - sudo nano /etc/environment, command, executed in terminal, used to open specific files, moving to the next file after closing the previous one targeting the special file /etc/environment which is global environment variables
-
-─────────────────────────────────────────────────────────────────
-Cluster 13  |  3 tache(s)  |  cohesion = 0.276
-─────────────────────────────────────────────────────────────────
-  Global Task Intention : Edit closed file data
-
-  Items :
-    - correct_closed_file.py, file, opened with visual studio code, contains data related to python 3 script, text files, a deleted file.
-    - closed_file.txt, file, opened with visual studio code, contains data related to plain text document, text files, it serves as a closed file.
-    - opened_file.txt, file, opened with visual studio code, contains data related to plain text document, text files, a file for open purposes.
-
-─────────────────────────────────────────────────────────────────
-Cluster 14  |  3 tache(s)  |  cohesion = 0.376
-─────────────────────────────────────────────────────────────────
-  Global Task Intention : Manage and remove packages
-
-  Items :
-    - sudo apt remove xserver-xorg-video-intel, command, executed in terminal, used to remove packages
-    - sudo apt autoremove, command, executed in terminal, used to automatically remove all unused packages
-    - sudo apt update, command, executed in terminal, used to update list of available packages
-
-─────────────────────────────────────────────────────────────────
-Cluster 15  |  4 tache(s)  |  cohesion = 0.326
-─────────────────────────────────────────────────────────────────
-  Global Task Intention : Create python 3 files and related data
-
-  Items :
-    - get_collect_file.py, file, opened with visual studio code, contains data related to python 3 script, text files, data related to get collecting files.
-    - data_file.txt, file, opened with visual studio code, contains data related to plain text document, text files, it contains data related to a database.
-    - collected_file.txt, file, opened with visual studio code, contains data related to plain text document, text files, data related to collected files.
-    - collect_file_script.sh, file, opened with visual studio code, contains data related to shell script, data related to a file., sh
-
-─────────────────────────────────────────────────────────────────
-Cluster 16  |  3 tache(s)  |  cohesion = 0.228
-─────────────────────────────────────────────────────────────────
-  Global Task Intention : Configure and enumerate applications
-
-  Items :
-    - cat ~/.local/share/xorg/xorg.0.log | grep ee, command, executed in terminal, used to print the contents of a file to `stdout` with the ~/.local/share/xorg/xorg.0.log file which is a application log, text files, it provides a default configuration for xorg.
-    - grep -i modeset /var/log/xorg.0.log, command, executed in terminal, used to ignore case distinctions in patterns and data --no-ignore-case do not ignore case distinctions (default) with the /var/log/xorg.0.log file which is a application log, text files, it provides a default configuration for xorg.
-    - grep -ie ee|ww|modeset|intel|i915 ~/.local/share/xorg/xorg.0.log, command, executed in terminal, used to search for a pattern case-insensitively using extended regex in a file with the ~/.local/share/xorg/xorg.0.log file which is a application log, text files, it provides a default configuration for xorg.
-
-─────────────────────────────────────────────────────────────────
-Cluster 17  |  5 tache(s)  |  cohesion = 0.464
-─────────────────────────────────────────────────────────────────
-  Global Task Intention : Build and test a code project
-
-  Items :
-    - code readme.md, command, executed in terminal, used to start visual studio code with the readme.md file which is a markdown document, text files, it serves as a readme template.
+    - git commit -m, command, executed in terminal, used to commits staged changes to the local repository with a message
+    - git commit -m reorganize file and directories, command, executed in terminal, used to commits staged changes to the local repository with a message
+    - git commit -m moved collect_file_script, command, executed in terminal, used to commits staged changes to the local repository with a message
+    - git commit -m parse_data, command, executed in terminal, used to commits staged changes to the local repository with a message
+    - git commit -m arrange collect file script, command, executed in terminal, used to commits staged changes to the local repository with a message
     - code ., command, executed in terminal, used to start visual studio code
-    - prev_windows.txt, file, opened with visual studio code, contains data related to plain text document, text files, it serves as a template for prev windows.
-    - terminal, application, used by the user
-    - clea, command, executed in terminal
+    - git commit -m correct directory to parse and describe-events, command, executed in terminal, used to commits staged changes to the local repository with a message
+    - git status, command, executed in terminal, used to view the status of the local repository
+    - git commit -m move brouillon to labs, command, executed in terminal, used to commits staged changes to the local repository with a message
+    - git commit -m removed predict_ch et predict_ge, command, executed in terminal, used to commits staged changes to the local repository with a message
+
+─────────────────────────────────────────────────────────────────
+Cluster 1  |  2 tache(s)  |  cohesion = 0.316
+─────────────────────────────────────────────────────────────────
+  Global Task Intention : Clear screen on computer
+
+  Items :
+    - clear, command, executed in terminal
+    - clear, command, executed in terminal, used to clear the screen
+
+─────────────────────────────────────────────────────────────────
+Cluster 2  |  5 tache(s)  |  cohesion = 0.236
+─────────────────────────────────────────────────────────────────
+  Global Task Intention : Use collect data
+
+  Items :
+    - ls collect_info/collect_file/, command, executed in terminal, used to list directory contents in collect_info/collect_file/
+    - ls collect_info/collect_file/collect_file_script/, command, executed in terminal, used to list directory contents in collect_info/collect_file/collect_file_script/
+    - get_collect_file.py, file, opened with visual studio code, contains data related to python 3 script, text files, data related to get collecting files.
+    - python3 collect_data_command_script.py, command, executed in terminal, used to runs a python script using the python 3 interpreter with the collect_data_command_script.py file which is a python 3 script, text files, it serves as a collect data command script.
+    - ls collect_info/, command, executed in terminal, used to list directory contents in collect_info/
+
+─────────────────────────────────────────────────────────────────
+Cluster 3  |  6 tache(s)  |  cohesion = 0.321
+─────────────────────────────────────────────────────────────────
+  Global Task Intention : Create and process clusters
+
+  Items :
+    - git commit -m correct path in cluster.py, command, executed in terminal, used to commits staged changes to the local repository with a message with the cluster.py file which is a python 3 script, text files, it contains data related to a cluster.
+    - git commit -m correct path in predict_clusters_intention.py, command, executed in terminal, used to commits staged changes to the local repository with a message with the predict_clusters_intention.py file which is a python 3 script, text files, it serves as a predict clustersintention.
+    - python3 taskmonitor/data/clustering/cluster.py, command, executed in terminal, used to runs a python script using the python 3 interpreter with the taskmonitor/data/clustering/cluster.py file which is a python 3 script, text files, it contains data related to a cluster.
+    - python3 taskmonitor/data/describe_clusters/predict_clusters_intention.py, command, executed in terminal, used to runs a python script using the python 3 interpreter with the taskmonitor/data/describe_clusters/predict_clusters_intention.py file which is a python 3 script, text files, it serves as a predict clustersintention.
+    - git commit -m describe_clusters, command, executed in terminal, used to commits staged changes to the local repository with a message
+    - python3 predict_clusters_intention.py, command, executed in terminal, used to runs a python script using the python 3 interpreter with the predict_clusters_intention.py file which is a python 3 script, text files, it serves as a predict clustersintention.
+
+─────────────────────────────────────────────────────────────────
+Cluster 4  |  2 tache(s)  |  cohesion = 0.236
+─────────────────────────────────────────────────────────────────
+  Global Task Intention : Create files and directories
+
+  Items :
+    - git add ., command, executed in terminal, used to stage all changes in the current directory for the next commit
+    - ls, command, executed in terminal, used to list directory contents
+
+─────────────────────────────────────────────────────────────────
+Cluster 5  |  8 tache(s)  |  cohesion = 0.356
+─────────────────────────────────────────────────────────────────
+  Global Task Intention : Manage data in taskmonitor
+
+  Items :
+    - ls taskmonitor/data/data_collect/, command, executed in terminal, used to list directory contents in taskmonitor/data/data_collect/
+    - cd taskmonitor/, command, executed in terminal, used to go to the specified directory in taskmonitor/
+    - ls taskmonitor/data/parse_data/, command, executed in terminal, used to list directory contents in taskmonitor/data/parse_data/
+    - python3 taskmonitor/data/data_collect/, command, executed in terminal, used to runs a python script using the python 3 interpreter in taskmonitor/data/data_collect/
+    - ls taskmonitor/data/dict/, command, executed in terminal, used to list directory contents in taskmonitor/data/dict/
+    - ls taskmonitor/data/, command, executed in terminal, used to list directory contents in taskmonitor/data/
+    - python3 taskmonitor/data/parse_data/parse.py, command, executed in terminal, used to runs a python script using the python 3 interpreter with the taskmonitor/data/parse_data/parse.py file which is a python 3 script, text files, it serves as a parse.
+    - git commit -m reorganized taskmonitor, command, executed in terminal, used to commits staged changes to the local repository with a message
+
+─────────────────────────────────────────────────────────────────
+Cluster 6  |  2 tache(s)  |  cohesion = 0.438
+─────────────────────────────────────────────────────────────────
+  Global Task Intention : Active an environment
+
+  Items :
+    - conda activate mlproject_py311, command, executed in terminal, used to activate an environment
+    - conda env list, command, executed in terminal
 
 ─────────────────────────────────────────────────────────────────
 Autres petites tâches — singleton 1  |  singleton
 ─────────────────────────────────────────────────────────────────
-  Global Task Intention : watch sekai no owari the peak one piece lyrics mv - youtube
+  Global Task Intention : print the contents
 
   Items :
-    - brave, application, used to watch sekai no owari the peak one piece lyrics mv - youtube
+    - cat ~/.bash_history, command, executed in terminal, used to print the contents of a file to `stdout` targeting the special file ~/.bash_history which is user shell command history
 
 ─────────────────────────────────────────────────────────────────
 Autres petites tâches — singleton 2  |  singleton
 ─────────────────────────────────────────────────────────────────
-  Global Task Intention : play a video or audio
+  Global Task Intention : run a python script using the python 3 interpreter
 
   Items :
-    - mpv, command, executed in terminal, used to play a video or audio from a url or file
+    - python3 taskmonitor/data/describe_events/describe-event2.py, command, executed in terminal, used to runs a python script using the python 3 interpreter with the taskmonitor/data/describe_events/describe-event2.py file which is a python 3 script, text files, a description of events or events.
 
 ─────────────────────────────────────────────────────────────────
 Autres petites tâches — singleton 3  |  singleton
 ─────────────────────────────────────────────────────────────────
-  Global Task Intention : open sudo gpg --dearmor brave-core.asc
+  Global Task Intention : use chatgpt
 
   Items :
-    - sudo gpg --dearmor brave-core.asc, command, executed in terminal with the brave-core.asc file which is a plain text document, pgp signature, it serves as a warrior-core file.
-
-─────────────────────────────────────────────────────────────────
-Autres petites tâches — singleton 4  |  singleton
-─────────────────────────────────────────────────────────────────
-  Global Task Intention : start `top`
-
-  Items :
-    - top, command, executed in terminal, used to start `top`
-
-─────────────────────────────────────────────────────────────────
-Autres petites tâches — singleton 5  |  singleton
-─────────────────────────────────────────────────────────────────
-  Global Task Intention : list pid and full command line
-
-  Items :
-    - pgrep -a xwinwrap, command, executed in terminal, used to list pid and full command line
-
-─────────────────────────────────────────────────────────────────
-Autres petites tâches — singleton 6  |  singleton
-─────────────────────────────────────────────────────────────────
-  Global Task Intention : open specific files
-
-  Items :
-    - sudo nano /etc/apt/sources.list.d/brave-browser-release.list, command, executed in terminal, used to open specific files, moving to the next file after closing the previous one with the /etc/apt/sources.list.d/brave-browser-release.list file which is a apt software repository list, web browser, software package manager
-
-─────────────────────────────────────────────────────────────────
-Autres petites tâches — singleton 7  |  singleton
-─────────────────────────────────────────────────────────────────
-  Global Task Intention : show the user journal
-
-  Items :
-    - journalctl --user -n 50, command, executed in terminal, used to show the user journal for the current user + number of journal entries to show
-
-─────────────────────────────────────────────────────────────────
-Autres petites tâches — singleton 8  |  singleton
-─────────────────────────────────────────────────────────────────
-  Global Task Intention : open duration_file.py with Visual Studio Code
-
-  Items :
-    - duration_file.py, file, opened with visual studio code, contains data related to python 3 script, text files, it contains data related to the duration of a file.
-
-─────────────────────────────────────────────────────────────────
-Autres petites tâches — singleton 9  |  singleton
-─────────────────────────────────────────────────────────────────
-  Global Task Intention : exit
-
-  Items :
-    - exit, command, executed in terminal, used to exit with the exit status of the most recently executed command
-
-─────────────────────────────────────────────────────────────────
-Autres petites tâches — singleton 10  |  singleton
-─────────────────────────────────────────────────────────────────
-  Global Task Intention : clear the screen
-
-  Items :
-    - clear, command, executed in terminal, used to clear the screen
-
-─────────────────────────────────────────────────────────────────
-Autres petites tâches — singleton 11  |  singleton
-─────────────────────────────────────────────────────────────────
-  Global Task Intention : show current boot or the specified boot
-
-  Items :
-    - journalctl -b | grep xorg, command, executed in terminal, used to show current boot or the specified boot
-
-─────────────────────────────────────────────────────────────────
-Autres petites tâches — singleton 12  |  singleton
-─────────────────────────────────────────────────────────────────
-  Global Task Intention : rename a file or directory when the target is not an existing directory
-
-  Items :
-    - mv ~/.config/bravesoftware ~/.config/bravesoftware_backup, command, executed in terminal, used to rename a file or directory when the target is not an existing directory in ~/.config/bravesoftware and in ~/.config/bravesoftware_backup
-
-─────────────────────────────────────────────────────────────────
-Autres petites tâches — singleton 13  |  singleton
-─────────────────────────────────────────────────────────────────
-  Global Task Intention : use desktop icons 1
-
-  Items :
-    - desktop icons 1, application, used by the user
+    - google chrome, application, used to use chatgpt
 
 =================================================================
   FIN DU RAPPORT

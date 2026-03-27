@@ -7,10 +7,10 @@ def parse_line(line):
     return date, time, filename
 
 # Lire les deux fichiers
-with open("Opened_file.txt", "r", encoding="utf-8") as f_open:
+with open("../EXTRACT_WINDOWS_LOGS/Opened_file.txt", "r", encoding="utf-8") as f_open:
     opened_lines = f_open.readlines()
 
-with open("Closed_file.txt", "r", encoding="utf-8") as f_close:
+with open("../EXTRACT_WINDOWS_LOGS/Closed_file.txt", "r", encoding="utf-8") as f_close:
     closed_lines = f_close.readlines()
 
 # Initialiser la liste pour les résultats

@@ -1,9 +1,12 @@
 from pathlib import Path
+import os
 
 #File source
-file1 = Path("../Collect_file/Collect_File_SCRIPT/data_file.txt")
-file2 = Path("../Collect_command/data_command.txt")
-output_file = Path("../data/data_collect.txt")
+BASE_DIR = Path(__file__).parent
+
+file1 = BASE_DIR / "../COLLECT_FILE_DATA/COLLECT_FILE_LOGS/data_file.txt"
+file2 = BASE_DIR / "../COLLECT_COMMAND_LOGS/data_command.txt"
+output_file = BASE_DIR / "../PROCESSING/DATA_COLLECT/data_collect.txt"
 
 # Store formatted line
 lines=[]
