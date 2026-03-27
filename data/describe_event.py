@@ -23,10 +23,10 @@ from transformers import AutoTokenizer, T5ForConditionalGeneration
 from sentence_transformers import SentenceTransformer
 
 # ─────────────────────────────────────────────
-# CONFIGURATION
+# CONFIGURATION 
 # ─────────────────────────────────────────────
 CSV_INPUT   = "events_normalized.csv"
-CSV_OUTPUT  = "events_described.csv"
+CSV_OUTPUT  = "TRUE_events_described.csv"
 MODEL_DIR   = "./Gen_Desc_Model/full_finetuned"
 LEXICAL_DIM = 512
 BATCH_SIZE  = 8

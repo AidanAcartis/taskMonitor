@@ -1,0 +1,4806 @@
+{
+    ".cfg": {
+        "type": "text/plain",
+        "comment": "Configuration file"
+    },
+    ".axv": {
+        "type": "video/annodex",
+        "comment": "Annodex video"
+    },
+    ".m1u": {
+        "type": "video/vnd.mpegurl",
+        "comment": "Video playlist"
+    },
+    ".m4u": {
+        "type": "video/vnd.mpegurl",
+        "comment": "Video playlist"
+    },
+    ".mxu": {
+        "type": "video/vnd.mpegurl",
+        "comment": "Video playlist"
+    },
+    ".fli": {
+        "type": "video/x-flic",
+        "comment": "FLIC animation"
+    },
+    ".flc": {
+        "type": "video/x-flic",
+        "comment": "FLIC animation"
+    },
+    ".qt": {
+        "type": "video/quicktime",
+        "comment": "QuickTime video"
+    },
+    ".mov": {
+        "type": "video/quicktime",
+        "comment": "QuickTime video"
+    },
+    ".moov": {
+        "type": "video/quicktime",
+        "comment": "QuickTime video"
+    },
+    ".qtvr": {
+        "type": "video/quicktime",
+        "comment": "QuickTime video"
+    },
+    ".viv": {
+        "type": "video/vnd.vivo",
+        "comment": "Vivo video"
+    },
+    ".vivo": {
+        "type": "video/vnd.vivo",
+        "comment": "Vivo video"
+    },
+    ".webm": {
+        "type": "video/webm",
+        "comment": "WebM video"
+    },
+    ".bik": {
+        "type": "video/vnd.radgamettools.bink",
+        "comment": "Bink Video"
+    },
+    ".bk2": {
+        "type": "video/vnd.radgamettools.bink",
+        "comment": "Bink Video"
+    },
+    ".smk": {
+        "type": "video/vnd.radgamettools.smacker",
+        "comment": "Smacker Video"
+    },
+    ".mng": {
+        "type": "video/x-mng",
+        "comment": "MNG animation"
+    },
+    ".avi": {
+        "type": "video/vnd.avi",
+        "comment": "AVI video"
+    },
+    ".avf": {
+        "type": "video/vnd.avi",
+        "comment": "AVI video"
+    },
+    ".divx": {
+        "type": "video/vnd.avi",
+        "comment": "AVI video"
+    },
+    ".nsv": {
+        "type": "video/x-nsv",
+        "comment": "NullSoft video"
+    },
+    ".yt": {
+        "type": "video/vnd.youtube.yt",
+        "comment": "YouTube media archive"
+    },
+    ".ogv": {
+        "type": "video/ogg",
+        "comment": "Ogg video"
+    },
+    ".ogg": {
+        "type": "audio/x-speex+ogg",
+        "comment": "Ogg Speex audio"
+    },
+    ".rv": {
+        "type": "video/vnd.rn-realvideo",
+        "comment": "RealVideo document"
+    },
+    ".rvx": {
+        "type": "video/vnd.rn-realvideo",
+        "comment": "RealVideo document"
+    },
+    ".3gp": {
+        "type": "video/3gpp",
+        "comment": "3GPP multimedia file"
+    },
+    ".3gpp": {
+        "type": "video/3gpp",
+        "comment": "3GPP multimedia file"
+    },
+    ".3ga": {
+        "type": "video/3gpp",
+        "comment": "3GPP multimedia file"
+    },
+    ".wmv": {
+        "type": "video/x-ms-wmv",
+        "comment": "Windows Media video"
+    },
+    ".3g2": {
+        "type": "video/3gpp2",
+        "comment": "3GPP2 multimedia file"
+    },
+    ".3gp2": {
+        "type": "video/3gpp2",
+        "comment": "3GPP2 multimedia file"
+    },
+    ".3gpp2": {
+        "type": "video/3gpp2",
+        "comment": "3GPP2 multimedia file"
+    },
+    ".mjpeg": {
+        "type": "video/x-mjpeg",
+        "comment": "MJPEG video stream"
+    },
+    ".mjpg": {
+        "type": "video/x-mjpeg",
+        "comment": "MJPEG video stream"
+    },
+    ".anim[1-9j]": {
+        "type": "video/x-anim",
+        "comment": "ANIM animation"
+    },
+    ".dv": {
+        "type": "video/dv",
+        "comment": "DV video"
+    },
+    ".mk3d": {
+        "type": "video/x-matroska-3d",
+        "comment": "Matroska 3D video"
+    },
+    ".m2t": {
+        "type": "video/mp2t",
+        "comment": "MPEG-2 transport stream"
+    },
+    ".m2ts": {
+        "type": "video/mp2t",
+        "comment": "MPEG-2 transport stream"
+    },
+    ".ts": {
+        "type": "text/vnd.trolltech.linguist",
+        "comment": "Message catalog"
+    },
+    ".mts": {
+        "type": "video/mp2t",
+        "comment": "MPEG-2 transport stream"
+    },
+    ".cpi": {
+        "type": "video/mp2t",
+        "comment": "MPEG-2 transport stream"
+    },
+    ".clpi": {
+        "type": "video/mp2t",
+        "comment": "MPEG-2 transport stream"
+    },
+    ".mpl": {
+        "type": "text/x-mpl2",
+        "comment": "MPL2 subtitles"
+    },
+    ".mpls": {
+        "type": "video/mp2t",
+        "comment": "MPEG-2 transport stream"
+    },
+    ".bdm": {
+        "type": "video/mp2t",
+        "comment": "MPEG-2 transport stream"
+    },
+    ".bdmv": {
+        "type": "video/mp2t",
+        "comment": "MPEG-2 transport stream"
+    },
+    ".mpeg": {
+        "type": "video/mpeg",
+        "comment": "MPEG video"
+    },
+    ".mpg": {
+        "type": "video/mpeg",
+        "comment": "MPEG video"
+    },
+    ".mp2": {
+        "type": "audio/mp2",
+        "comment": "MP2 audio"
+    },
+    ".mpe": {
+        "type": "video/mpeg",
+        "comment": "MPEG video"
+    },
+    ".vob": {
+        "type": "video/mpeg",
+        "comment": "MPEG video"
+    },
+    ".mp4": {
+        "type": "video/mp4",
+        "comment": "MPEG-4 video"
+    },
+    ".m4v": {
+        "type": "video/mp4",
+        "comment": "MPEG-4 video"
+    },
+    ".f4v": {
+        "type": "video/mp4",
+        "comment": "MPEG-4 video"
+    },
+    ".lrv": {
+        "type": "video/mp4",
+        "comment": "MPEG-4 video"
+    },
+    ".mj2": {
+        "type": "video/mj2",
+        "comment": "JPEG-2000 MJ2 video"
+    },
+    ".mjp2": {
+        "type": "video/mj2",
+        "comment": "JPEG-2000 MJ2 video"
+    },
+    ".movie": {
+        "type": "video/x-sgi-movie",
+        "comment": "SGI video"
+    },
+    ".ogm": {
+        "type": "video/x-ogm+ogg",
+        "comment": "OGM video"
+    },
+    ".flv": {
+        "type": "video/x-flv",
+        "comment": "Flash video"
+    },
+    ".mkv": {
+        "type": "video/x-matroska",
+        "comment": "Matroska video"
+    },
+    ".fxm": {
+        "type": "video/x-javafx",
+        "comment": "JavaFX video"
+    },
+    ".sisx": {
+        "type": "x-epoc/x-sisx-app",
+        "comment": "SISX package"
+    },
+    ".pdb": {
+        "type": "application/vnd.palm",
+        "comment": "Palm OS database"
+    },
+    ".brk": {
+        "type": "chemical/x-pdb",
+        "comment": "Protein Data Bank file"
+    },
+    ".igs": {
+        "type": "model/iges",
+        "comment": "IGES document"
+    },
+    ".iges": {
+        "type": "model/iges",
+        "comment": "IGES document"
+    },
+    ".vrm": {
+        "type": "model/vrml",
+        "comment": "VRML document"
+    },
+    ".vrml": {
+        "type": "model/vrml",
+        "comment": "VRML document"
+    },
+    ".wrl": {
+        "type": "model/vrml",
+        "comment": "VRML document"
+    },
+    ".glb": {
+        "type": "model/gltf-binary",
+        "comment": "glTF model"
+    },
+    ".mtl": {
+        "type": "model/mtl",
+        "comment": "OBJ 3D model material library"
+    },
+    ".stl": {
+        "type": "model/stl",
+        "comment": "STL 3D model"
+    },
+    ".gltf": {
+        "type": "model/gltf+json",
+        "comment": "glTF model"
+    },
+    ".obj": {
+        "type": "application/x-tgif",
+        "comment": "TGIF document"
+    },
+    ".3mf": {
+        "type": "model/3mf",
+        "comment": "3MF document"
+    },
+    ".pcd": {
+        "type": "image/x-photo-cd",
+        "comment": "PCD image"
+    },
+    ".srf": {
+        "type": "image/x-sony-srf",
+        "comment": "Sony SRF raw image"
+    },
+    ".pgm": {
+        "type": "image/x-portable-graymap",
+        "comment": "PGM image"
+    },
+    ".crw": {
+        "type": "image/x-canon-crw",
+        "comment": "Canon CRW raw image"
+    },
+    ".qoi": {
+        "type": "image/qoi",
+        "comment": "Quite OK Image Format"
+    },
+    ".rgb": {
+        "type": "image/x-rgb",
+        "comment": "RGB image"
+    },
+    ".jpm": {
+        "type": "image/jpm",
+        "comment": "JPEG-2000 JPM image"
+    },
+    ".jpgm": {
+        "type": "image/jpm",
+        "comment": "JPEG-2000 JPM image"
+    },
+    ".pnm": {
+        "type": "image/x-portable-anymap",
+        "comment": "PNM image"
+    },
+    ".apng": {
+        "type": "image/apng",
+        "comment": "Animated PNG image"
+    },
+    ".png": {
+        "type": "image/png",
+        "comment": "PNG image"
+    },
+    ".icns": {
+        "type": "image/x-icns",
+        "comment": "MacOS X icon"
+    },
+    ".msod": {
+        "type": "image/x-msod",
+        "comment": "Office drawing"
+    },
+    ".ktx2": {
+        "type": "image/ktx2",
+        "comment": "Khronos texture image"
+    },
+    ".3ds": {
+        "type": "application/x-nintendo-3ds-rom",
+        "comment": "Nintendo 3DS ROM"
+    },
+    ".xpm": {
+        "type": "image/x-xpixmap",
+        "comment": "XPM image"
+    },
+    ".ag": {
+        "type": "image/x-applix-graphics",
+        "comment": "Applix Graphics image"
+    },
+    ".xcf": {
+        "type": "image/x-xcf",
+        "comment": "GIMP image"
+    },
+    ".djvu": {
+        "type": "image/vnd.djvu",
+        "comment": "DjVu image"
+    },
+    ".djv": {
+        "type": "image/vnd.djvu",
+        "comment": "DjVu image"
+    },
+    ".jng": {
+        "type": "image/x-jng",
+        "comment": "JNG image"
+    },
+    ".jp2": {
+        "type": "image/jp2",
+        "comment": "JPEG-2000 JP2 image"
+    },
+    ".jpg2": {
+        "type": "image/jp2",
+        "comment": "JPEG-2000 JP2 image"
+    },
+    ".rp": {
+        "type": "image/vnd.rn-realpix",
+        "comment": "RealPix document"
+    },
+    ".qtif": {
+        "type": "image/x-quicktime",
+        "comment": "QuickTime image"
+    },
+    ".qif": {
+        "type": "application/x-qw",
+        "comment": "Quicken document"
+    },
+    ".svg": {
+        "type": "image/svg+xml",
+        "comment": "SVG image"
+    },
+    ".rle": {
+        "type": "image/rle",
+        "comment": "RLE bitmap image"
+    },
+    ".mrw": {
+        "type": "image/x-minolta-mrw",
+        "comment": "Minolta MRW raw image"
+    },
+    ".ras": {
+        "type": "image/x-cmu-raster",
+        "comment": "CMU raster image"
+    },
+    ".mdi": {
+        "type": "image/vnd.ms-modi",
+        "comment": "MDI image"
+    },
+    ".ppm": {
+        "type": "image/x-portable-pixmap",
+        "comment": "PPM image"
+    },
+    ".raf": {
+        "type": "image/x-fuji-raf",
+        "comment": "Fuji RAF raw image"
+    },
+    ".raw": {
+        "type": "image/x-panasonic-rw",
+        "comment": "Panasonic raw image"
+    },
+    ".xcf.gz": {
+        "type": "image/x-compressed-xcf",
+        "comment": "Compressed GIMP image"
+    },
+    ".xcf.bz2": {
+        "type": "image/x-compressed-xcf",
+        "comment": "Compressed GIMP image"
+    },
+    ".ora": {
+        "type": "image/openraster",
+        "comment": "OpenRaster image"
+    },
+    ".svgz": {
+        "type": "image/svg+xml-compressed",
+        "comment": "Compressed SVG image"
+    },
+    ".svg.gz": {
+        "type": "image/svg+xml-compressed",
+        "comment": "Compressed SVG image"
+    },
+    ".dng": {
+        "type": "image/x-adobe-dng",
+        "comment": "Adobe DNG negative"
+    },
+    ".fig": {
+        "type": "image/x-xfig",
+        "comment": "XFig image"
+    },
+    ".gih": {
+        "type": "image/x-gimp-gih",
+        "comment": "GIMP brush pipe"
+    },
+    ".gbr": {
+        "type": "application/vnd.gerber",
+        "comment": "Gerber file"
+    },
+    ".ktx": {
+        "type": "image/ktx",
+        "comment": "Khronos texture image"
+    },
+    ".ico": {
+        "type": "image/vnd.microsoft.icon",
+        "comment": "Windows icon"
+    },
+    ".tif": {
+        "type": "image/tiff",
+        "comment": "TIFF image"
+    },
+    ".tiff": {
+        "type": "image/tiff",
+        "comment": "TIFF image"
+    },
+    ".cr3": {
+        "type": "image/x-canon-cr3",
+        "comment": "Canon CR3 raw image"
+    },
+    ".tga": {
+        "type": "image/x-tga",
+        "comment": "TGA image"
+    },
+    ".icb": {
+        "type": "image/x-tga",
+        "comment": "TGA image"
+    },
+    ".tpic": {
+        "type": "image/x-tga",
+        "comment": "TGA image"
+    },
+    ".vda": {
+        "type": "image/x-tga",
+        "comment": "TGA image"
+    },
+    ".vst": {
+        "type": "application/vnd.visio",
+        "comment": "Microsoft Visio document"
+    },
+    ".sun": {
+        "type": "image/x-sun-raster",
+        "comment": "Sun raster image"
+    },
+    ".xbm": {
+        "type": "image/x-xbitmap",
+        "comment": "XBM image"
+    },
+    ".jxr": {
+        "type": "image/jxr",
+        "comment": "JPEG XR image"
+    },
+    ".hdp": {
+        "type": "image/jxr",
+        "comment": "JPEG XR image"
+    },
+    ".wdp": {
+        "type": "image/jxr",
+        "comment": "JPEG XR image"
+    },
+    ".avif": {
+        "type": "image/avif",
+        "comment": "AVIF image"
+    },
+    ".avifs": {
+        "type": "image/avif",
+        "comment": "AVIF image"
+    },
+    ".eps.gz": {
+        "type": "image/x-gzeps",
+        "comment": "EPS image (gzip-compressed)"
+    },
+    ".epsi.gz": {
+        "type": "image/x-gzeps",
+        "comment": "EPS image (gzip-compressed)"
+    },
+    ".epsf.gz": {
+        "type": "image/x-gzeps",
+        "comment": "EPS image (gzip-compressed)"
+    },
+    ".nrw": {
+        "type": "image/x-nikon-nrw",
+        "comment": "Nikon NRW raw image"
+    },
+    ".sr2": {
+        "type": "image/x-sony-sr2",
+        "comment": "Sony SR2 raw image"
+    },
+    ".heic": {
+        "type": "image/heif",
+        "comment": "HEIF image"
+    },
+    ".heif": {
+        "type": "image/heif",
+        "comment": "HEIF image"
+    },
+    ".hif": {
+        "type": "image/heif",
+        "comment": "HEIF image"
+    },
+    ".k25": {
+        "type": "image/x-kodak-k25",
+        "comment": "Kodak K25 raw image"
+    },
+    ".exr": {
+        "type": "image/x-exr",
+        "comment": "EXR image"
+    },
+    ".kdc": {
+        "type": "image/x-kodak-kdc",
+        "comment": "Kodak KDC raw image"
+    },
+    ".xwd": {
+        "type": "image/x-xwindowdump",
+        "comment": "X window image"
+    },
+    ".x3f": {
+        "type": "image/x-sigma-x3f",
+        "comment": "Sigma X3F raw image"
+    },
+    ".webp": {
+        "type": "image/webp",
+        "comment": "WebP image"
+    },
+    ".lws": {
+        "type": "image/x-lws",
+        "comment": "LightWave scene"
+    },
+    ".eps": {
+        "type": "image/x-eps",
+        "comment": "EPS image"
+    },
+    ".epsi": {
+        "type": "image/x-eps",
+        "comment": "EPS image"
+    },
+    ".epsf": {
+        "type": "image/x-eps",
+        "comment": "EPS image"
+    },
+    ".jpg": {
+        "type": "image/jpeg",
+        "comment": "JPEG image"
+    },
+    ".jpeg": {
+        "type": "image/jpeg",
+        "comment": "JPEG image"
+    },
+    ".jpe": {
+        "type": "image/jpeg",
+        "comment": "JPEG image"
+    },
+    ".jfif": {
+        "type": "image/jpeg",
+        "comment": "JPEG image"
+    },
+    ".arw": {
+        "type": "image/x-sony-arw",
+        "comment": "Sony ARW raw image"
+    },
+    ".pat": {
+        "type": "image/x-gimp-pat",
+        "comment": "GIMP pattern"
+    },
+    ".wmf": {
+        "type": "image/wmf",
+        "comment": "WMF image"
+    },
+    ".jxl": {
+        "type": "image/jxl",
+        "comment": "JPEG XL image"
+    },
+    ".nef": {
+        "type": "image/x-nikon-nef",
+        "comment": "Nikon NEF raw image"
+    },
+    ".jpf": {
+        "type": "image/jpx",
+        "comment": "JPEG-2000 JPX image"
+    },
+    ".jpx": {
+        "type": "application/x-jbuilder-project",
+        "comment": "JBuilder project"
+    },
+    ".j2c": {
+        "type": "image/x-jp2-codestream",
+        "comment": "JPEG-2000 codestream"
+    },
+    ".j2k": {
+        "type": "image/x-jp2-codestream",
+        "comment": "JPEG-2000 codestream"
+    },
+    ".jpc": {
+        "type": "image/x-jp2-codestream",
+        "comment": "JPEG-2000 codestream"
+    },
+    ".bmp": {
+        "type": "image/bmp",
+        "comment": "Windows BMP image"
+    },
+    ".dib": {
+        "type": "image/bmp",
+        "comment": "Windows BMP image"
+    },
+    ".rw2": {
+        "type": "image/x-panasonic-rw2",
+        "comment": "Panasonic raw image"
+    },
+    ".cur": {
+        "type": "image/x-win-bitmap",
+        "comment": "Windows cursor"
+    },
+    ".gif": {
+        "type": "image/gif",
+        "comment": "GIF image"
+    },
+    ".cr2": {
+        "type": "image/x-canon-cr2",
+        "comment": "Canon CR2 raw image"
+    },
+    ".lwo": {
+        "type": "image/x-lwo",
+        "comment": "LightWave object"
+    },
+    ".lwob": {
+        "type": "image/x-lwo",
+        "comment": "LightWave object"
+    },
+    ".sgi": {
+        "type": "image/x-sgi",
+        "comment": "SGI image"
+    },
+    ".iff": {
+        "type": "image/x-ilbm",
+        "comment": "ILBM image"
+    },
+    ".ilbm": {
+        "type": "image/x-ilbm",
+        "comment": "ILBM image"
+    },
+    ".lbm": {
+        "type": "image/x-ilbm",
+        "comment": "ILBM image"
+    },
+    ".dds": {
+        "type": "image/x-dds",
+        "comment": "DirectDraw surface"
+    },
+    ".pbm": {
+        "type": "image/x-portable-bitmap",
+        "comment": "PBM image"
+    },
+    ".astc": {
+        "type": "image/astc",
+        "comment": "ASTC texture"
+    },
+    ".psd": {
+        "type": "image/vnd.adobe.photoshop",
+        "comment": "Photoshop image"
+    },
+    ".orf": {
+        "type": "image/x-olympus-orf",
+        "comment": "Olympus ORF raw image"
+    },
+    ".g3": {
+        "type": "image/g3fax",
+        "comment": "CCITT G3 fax image"
+    },
+    ".cgm": {
+        "type": "image/cgm",
+        "comment": "CGM image"
+    },
+    ".dcr": {
+        "type": "image/x-kodak-dcr",
+        "comment": "Kodak DCR raw image"
+    },
+    ".ief": {
+        "type": "image/ief",
+        "comment": "IEF image"
+    },
+    ".wbmp": {
+        "type": "image/vnd.wap.wbmp",
+        "comment": "WBMP image"
+    },
+    ".eps.bz2": {
+        "type": "image/x-bzeps",
+        "comment": "EPS image (bzip2-compressed)"
+    },
+    ".epsi.bz2": {
+        "type": "image/x-bzeps",
+        "comment": "EPS image (bzip2-compressed)"
+    },
+    ".epsf.bz2": {
+        "type": "image/x-bzeps",
+        "comment": "EPS image (bzip2-compressed)"
+    },
+    ".dxf": {
+        "type": "image/vnd.dxf",
+        "comment": "DXF vector image"
+    },
+    ".sk": {
+        "type": "image/x-skencil",
+        "comment": "Skencil document"
+    },
+    ".sk1": {
+        "type": "image/x-skencil",
+        "comment": "Skencil document"
+    },
+    ".pct": {
+        "type": "image/x-pict",
+        "comment": "Macintosh Quickdraw/PICT drawing"
+    },
+    ".pict": {
+        "type": "image/x-pict",
+        "comment": "Macintosh Quickdraw/PICT drawing"
+    },
+    ".pict1": {
+        "type": "image/x-pict",
+        "comment": "Macintosh Quickdraw/PICT drawing"
+    },
+    ".pict2": {
+        "type": "image/x-pict",
+        "comment": "Macintosh Quickdraw/PICT drawing"
+    },
+    ".pcx": {
+        "type": "image/vnd.zbrush.pcx",
+        "comment": "PCX image"
+    },
+    ".pef": {
+        "type": "image/x-pentax-pef",
+        "comment": "Pentax PEF raw image"
+    },
+    ".emf": {
+        "type": "image/emf",
+        "comment": "EMF image"
+    },
+    ".pntg": {
+        "type": "image/x-macpaint",
+        "comment": "MacPaint Bitmap image"
+    },
+    ".dwg": {
+        "type": "image/vnd.dwg",
+        "comment": "AutoCAD image"
+    },
+    ".eml": {
+        "type": "message/rfc822",
+        "comment": "Email message"
+    },
+    ".dcm": {
+        "type": "application/dicom",
+        "comment": "DICOM image"
+    },
+    ".7z": {
+        "type": "application/x-7z-compressed",
+        "comment": "7-zip archive"
+    },
+    ".7z.001": {
+        "type": "application/x-7z-compressed",
+        "comment": "7-zip archive"
+    },
+    ".odf": {
+        "type": "application/vnd.oasis.opendocument.formula",
+        "comment": "OpenDocument Formula"
+    },
+    ".mml": {
+        "type": "application/mathml+xml",
+        "comment": "MathML document"
+    },
+    ".bat": {
+        "type": "application/x-bat",
+        "comment": "DOS/Windows batch file"
+    },
+    ".awk": {
+        "type": "application/x-awk",
+        "comment": "AWK script"
+    },
+    ".pem": {
+        "type": "application/x-x509-ca-cert",
+        "comment": "DER/PEM/Netscape-encoded X.509 certificate"
+    },
+    ".pcl": {
+        "type": "application/vnd.hp-pcl",
+        "comment": "PCL file"
+    },
+    ".otp": {
+        "type": "application/vnd.oasis.opendocument.presentation-template",
+        "comment": "OpenDocument Presentation Template"
+    },
+    ".msi": {
+        "type": "application/x-msi",
+        "comment": "Windows Installer package"
+    },
+    ".zpaq": {
+        "type": "application/x-zpaq",
+        "comment": "Zpaq Archive"
+    },
+    ".jsonld": {
+        "type": "application/ld+json",
+        "comment": "JSON-LD document"
+    },
+    ".otc": {
+        "type": "application/vnd.oasis.opendocument.chart-template",
+        "comment": "ODC template"
+    },
+    ".xltm": {
+        "type": "application/vnd.ms-excel.template.macroEnabled.12",
+        "comment": "Microsoft Excel Worksheet Template"
+    },
+    ".exe": {
+        "type": "application/x-dosexec",
+        "comment": "DOS executable"
+    },
+    ".dll": {
+        "type": "application/x-ms-ne-executable",
+        "comment": "16-bit Windows program"
+    },
+    ".cpl": {
+        "type": "application/x-ms-ne-executable",
+        "comment": "16-bit Windows program"
+    },
+    ".drv": {
+        "type": "application/x-ms-ne-executable",
+        "comment": "16-bit Windows program"
+    },
+    ".scr": {
+        "type": "application/x-ms-ne-executable",
+        "comment": "16-bit Windows program"
+    },
+    ".efi": {
+        "type": "application/vnd.microsoft.portable-executable",
+        "comment": "Windows or EFI program"
+    },
+    ".ocx": {
+        "type": "application/vnd.microsoft.portable-executable",
+        "comment": "Windows or EFI program"
+    },
+    ".sys": {
+        "type": "application/vnd.microsoft.portable-executable",
+        "comment": "Windows or EFI program"
+    },
+    ".lib": {
+        "type": "application/vnd.microsoft.portable-executable",
+        "comment": "Windows or EFI program"
+    },
+    ".fodt": {
+        "type": "application/vnd.oasis.opendocument.text-flat-xml",
+        "comment": "OpenDocument Text (Flat XML)"
+    },
+    ".tar.lzma": {
+        "type": "application/x-lzma-compressed-tar",
+        "comment": "Tar archive (LZMA-compressed)"
+    },
+    ".tlz": {
+        "type": "application/x-lzma-compressed-tar",
+        "comment": "Tar archive (LZMA-compressed)"
+    },
+    ".wasm": {
+        "type": "application/wasm",
+        "comment": "WASM binary module"
+    },
+    ".std": {
+        "type": "application/vnd.sun.xml.draw.template",
+        "comment": "OpenOffice.org 1.0 Drawing Template"
+    },
+    ".url": {
+        "type": "application/x-mswinurl",
+        "comment": "Internet shortcut"
+    },
+    ".cbz": {
+        "type": "application/vnd.comicbook+zip",
+        "comment": "Comic book archive (zip container)"
+    },
+    ".xar": {
+        "type": "application/x-xar",
+        "comment": "XAR archive"
+    },
+    ".pkg": {
+        "type": "application/x-xar",
+        "comment": "XAR archive"
+    },
+    ".anx": {
+        "type": "application/annodex",
+        "comment": "Annodex exchange format"
+    },
+    ".lzma": {
+        "type": "application/x-lzma",
+        "comment": "LZMA archive"
+    },
+    ".kexi": {
+        "type": "application/x-kexiproject-sqlite2",
+        "comment": "Kexi database file"
+    },
+    ".hlp": {
+        "type": "application/winhlp",
+        "comment": "WinHelp help file"
+    },
+    ".tar.Z": {
+        "type": "application/x-tarz",
+        "comment": "Tar archive (compressed)"
+    },
+    ".taz": {
+        "type": "application/x-tarz",
+        "comment": "Tar archive (compressed)"
+    },
+    ".ram": {
+        "type": "application/ram",
+        "comment": "RealMedia playlist"
+    },
+    ".pcap": {
+        "type": "application/vnd.tcpdump.pcap",
+        "comment": "Packet Capture (PCAP)"
+    },
+    ".cap": {
+        "type": "application/vnd.tcpdump.pcap",
+        "comment": "Packet Capture (PCAP)"
+    },
+    ".dmp": {
+        "type": "application/vnd.tcpdump.pcap",
+        "comment": "Packet Capture (PCAP)"
+    },
+    ".pcap.gz": {
+        "type": "application/vnd.tcpdump.pcap",
+        "comment": "Packet Capture (PCAP)"
+    },
+    ".pcap.zst": {
+        "type": "application/vnd.tcpdump.pcap",
+        "comment": "Packet Capture (PCAP)"
+    },
+    ".pcap.lz4": {
+        "type": "application/vnd.tcpdump.pcap",
+        "comment": "Packet Capture (PCAP)"
+    },
+    ".gdshader": {
+        "type": "application/x-godot-shader",
+        "comment": "Godot Engine shader"
+    },
+    ".xsl": {
+        "type": "application/xslt+xml",
+        "comment": "XSLT stylesheet"
+    },
+    ".xslt": {
+        "type": "application/xslt+xml",
+        "comment": "XSLT stylesheet"
+    },
+    ".chm": {
+        "type": "application/vnd.ms-htmlhelp",
+        "comment": "CHM document"
+    },
+    ".themepack": {
+        "type": "application/x-windows-themepack",
+        "comment": "Microsoft Windows theme pack"
+    },
+    ".flw": {
+        "type": "application/x-kivio",
+        "comment": "Kivio flowchart"
+    },
+    ".spx": {
+        "type": "audio/x-speex+ogg",
+        "comment": "Ogg Speex audio"
+    },
+    ".vhd": {
+        "type": "text/x-vhdl",
+        "comment": "VHDL source code"
+    },
+    ".ui": {
+        "type": "application/x-designer",
+        "comment": "Qt Designer interface document"
+    },
+    ".apc": {
+        "type": "application/x-etherpeek",
+        "comment": "Packet Capture (WildPackets/Savvius/LiveAction *Peek)"
+    },
+    ".pkt": {
+        "type": "application/x-etherpeek",
+        "comment": "Packet Capture (WildPackets/Savvius/LiveAction *Peek)"
+    },
+    ".tpc": {
+        "type": "application/x-etherpeek",
+        "comment": "Packet Capture (WildPackets/Savvius/LiveAction *Peek)"
+    },
+    ".wpz": {
+        "type": "application/x-etherpeek",
+        "comment": "Packet Capture (WildPackets/Savvius/LiveAction *Peek)"
+    },
+    ".apc.gz": {
+        "type": "application/x-etherpeek",
+        "comment": "Packet Capture (WildPackets/Savvius/LiveAction *Peek)"
+    },
+    ".pkt.gz": {
+        "type": "application/x-etherpeek",
+        "comment": "Packet Capture (WildPackets/Savvius/LiveAction *Peek)"
+    },
+    ".tpc.gz": {
+        "type": "application/x-etherpeek",
+        "comment": "Packet Capture (WildPackets/Savvius/LiveAction *Peek)"
+    },
+    ".wpz.gz": {
+        "type": "application/x-etherpeek",
+        "comment": "Packet Capture (WildPackets/Savvius/LiveAction *Peek)"
+    },
+    ".apc.zst": {
+        "type": "application/x-etherpeek",
+        "comment": "Packet Capture (WildPackets/Savvius/LiveAction *Peek)"
+    },
+    ".pkt.zst": {
+        "type": "application/x-etherpeek",
+        "comment": "Packet Capture (WildPackets/Savvius/LiveAction *Peek)"
+    },
+    ".tpc.zst": {
+        "type": "application/x-etherpeek",
+        "comment": "Packet Capture (WildPackets/Savvius/LiveAction *Peek)"
+    },
+    ".wpz.zst": {
+        "type": "application/x-etherpeek",
+        "comment": "Packet Capture (WildPackets/Savvius/LiveAction *Peek)"
+    },
+    ".apc.lz4": {
+        "type": "application/x-etherpeek",
+        "comment": "Packet Capture (WildPackets/Savvius/LiveAction *Peek)"
+    },
+    ".pkt.lz4": {
+        "type": "application/x-etherpeek",
+        "comment": "Packet Capture (WildPackets/Savvius/LiveAction *Peek)"
+    },
+    ".tpc.lz4": {
+        "type": "application/x-etherpeek",
+        "comment": "Packet Capture (WildPackets/Savvius/LiveAction *Peek)"
+    },
+    ".wpz.lz4": {
+        "type": "application/x-etherpeek",
+        "comment": "Packet Capture (WildPackets/Savvius/LiveAction *Peek)"
+    },
+    ".vsd": {
+        "type": "application/vnd.visio",
+        "comment": "Microsoft Visio document"
+    },
+    ".vsw": {
+        "type": "application/vnd.visio",
+        "comment": "Microsoft Visio document"
+    },
+    ".vss": {
+        "type": "application/vnd.visio",
+        "comment": "Microsoft Visio document"
+    },
+    ".qed": {
+        "type": "application/x-qed-disk",
+        "comment": "QEMU QED disk image"
+    },
+    ".lha": {
+        "type": "application/x-lha",
+        "comment": "LHA archive"
+    },
+    ".lzh": {
+        "type": "application/x-lha",
+        "comment": "LHA archive"
+    },
+    ".hqx": {
+        "type": "application/mac-binhex40",
+        "comment": "Macintosh BinHex-encoded file"
+    },
+    ".pdc": {
+        "type": "application/x-aportisdoc",
+        "comment": "AportisDoc document"
+    },
+    ".pyc": {
+        "type": "application/x-python-bytecode",
+        "comment": "Python bytecode"
+    },
+    ".pyo": {
+        "type": "application/x-python-bytecode",
+        "comment": "Python bytecode"
+    },
+    ".sxc": {
+        "type": "application/vnd.sun.xml.calc",
+        "comment": "OpenOffice.org 1.0 Spreadsheet"
+    },
+    ".rtp": {
+        "type": "application/x-rtpdump",
+        "comment": "RTP packet stream (RTPDump)"
+    },
+    ".rtp.gz": {
+        "type": "application/x-rtpdump",
+        "comment": "RTP packet stream (RTPDump)"
+    },
+    ".rtp.zst": {
+        "type": "application/x-rtpdump",
+        "comment": "RTP packet stream (RTPDump)"
+    },
+    ".rtp.lz4": {
+        "type": "application/x-rtpdump",
+        "comment": "RTP packet stream (RTPDump)"
+    },
+    ".pkpass": {
+        "type": "application/vnd.apple.pkpass",
+        "comment": "Apple Wallet pass"
+    },
+    ".sms": {
+        "type": "application/x-sms-rom",
+        "comment": "Master System ROM"
+    },
+    ".res": {
+        "type": "application/x-godot-resource",
+        "comment": "Godot Engine resource"
+    },
+    ".tres": {
+        "type": "application/x-godot-resource",
+        "comment": "Godot Engine resource"
+    },
+    ".rdf": {
+        "type": "application/rdf+xml",
+        "comment": "RDF file"
+    },
+    ".rdfs": {
+        "type": "application/rdf+xml",
+        "comment": "RDF file"
+    },
+    ".owl": {
+        "type": "application/rdf+xml",
+        "comment": "RDF file"
+    },
+    ".sfc": {
+        "type": "application/vnd.nintendo.snes.rom",
+        "comment": "Super NES ROM"
+    },
+    ".smc": {
+        "type": "application/vnd.nintendo.snes.rom",
+        "comment": "Super NES ROM"
+    },
+    ".nsc": {
+        "type": "application/x-netshow-channel",
+        "comment": "Windows Media Station file"
+    },
+    ".p8": {
+        "type": "application/pkcs8",
+        "comment": "PKCS#8 Personal Key"
+    },
+    ".pkcs8": {
+        "type": "application/pkcs8",
+        "comment": "PKCS#8 Personal Key"
+    },
+    ".json-patch": {
+        "type": "application/json-patch+json",
+        "comment": "JSON patch"
+    },
+    ".a": {
+        "type": "application/x-archive",
+        "comment": "AR archive"
+    },
+    ".ar": {
+        "type": "application/x-archive",
+        "comment": "AR archive"
+    },
+    ".vmdk": {
+        "type": "application/x-virtualbox-vmdk",
+        "comment": "Virtual Machine Disk Format"
+    },
+    ".snap": {
+        "type": "application/vnd.snap",
+        "comment": "Snap package"
+    },
+    ".p65": {
+        "type": "application/x-pagemaker",
+        "comment": "Adobe PageMaker document"
+    },
+    ".pm": {
+        "type": "application/x-perl",
+        "comment": "Perl script"
+    },
+    ".pm6": {
+        "type": "application/x-pagemaker",
+        "comment": "Adobe PageMaker document"
+    },
+    ".pmd": {
+        "type": "application/x-pagemaker",
+        "comment": "Adobe PageMaker document"
+    },
+    ".ppsx": {
+        "type": "application/vnd.openxmlformats-officedocument.presentationml.slideshow",
+        "comment": "PowerPoint 2007 show"
+    },
+    ".trig": {
+        "type": "application/trig",
+        "comment": "TriG RDF document"
+    },
+    ".numbers": {
+        "type": "application/vnd.apple.numbers",
+        "comment": "Apple Numbers spreadsheet"
+    },
+    ".ova": {
+        "type": "application/ovf",
+        "comment": "OVF disk image"
+    },
+    ".bsdiff": {
+        "type": "application/x-bsdiff",
+        "comment": "Binary differences between files"
+    },
+    ".fits": {
+        "type": "application/fits",
+        "comment": "FITS document"
+    },
+    ".fit": {
+        "type": "application/fits",
+        "comment": "FITS document"
+    },
+    ".fts": {
+        "type": "application/fits",
+        "comment": "FITS document"
+    },
+    ".skr": {
+        "type": "application/pgp-keys",
+        "comment": "PGP keys"
+    },
+    ".pkr": {
+        "type": "application/pgp-keys",
+        "comment": "PGP keys"
+    },
+    ".asc": {
+        "type": "text/plain",
+        "comment": "Plain text document"
+    },
+    ".pgp": {
+        "type": "application/pgp-signature",
+        "comment": "Detached OpenPGP signature"
+    },
+    ".gpg": {
+        "type": "application/pgp-signature",
+        "comment": "Detached OpenPGP signature"
+    },
+    ".key": {
+        "type": "application/vnd.apple.keynote",
+        "comment": "Apple Keynote 5 presentation"
+    },
+    ".desktop": {
+        "type": "application/x-desktop",
+        "comment": "Desktop entry"
+    },
+    ".kdelnk": {
+        "type": "application/x-desktop",
+        "comment": "Desktop entry"
+    },
+    ".geojson": {
+        "type": "application/geo+json",
+        "comment": "GeoJSON geospatial data"
+    },
+    ".geo.json": {
+        "type": "application/geo+json",
+        "comment": "GeoJSON geospatial data"
+    },
+    ".dbk": {
+        "type": "application/x-docbook+xml",
+        "comment": "DocBook document"
+    },
+    ".docbook": {
+        "type": "application/x-docbook+xml",
+        "comment": "DocBook document"
+    },
+    ".qs": {
+        "type": "application/sparql-query",
+        "comment": "SPARQL query"
+    },
+    ".Z": {
+        "type": "application/x-compress",
+        "comment": "UNIX-compressed file"
+    },
+    ".la": {
+        "type": "application/x-shared-library-la",
+        "comment": "Libtool shared library"
+    },
+    ".sv4cpio": {
+        "type": "application/x-sv4cpio",
+        "comment": "SV4 CPIO archive"
+    },
+    ".kexis": {
+        "type": "application/x-kexiproject-shortcut",
+        "comment": "Kexi shortcut"
+    },
+    ".wad": {
+        "type": "application/x-wii-wad",
+        "comment": "WiiWare bundle"
+    },
+    ".por": {
+        "type": "application/x-spss-por",
+        "comment": "SPSS portable data file"
+    },
+    ".flatpakref": {
+        "type": "application/vnd.flatpak.ref",
+        "comment": "Flatpak repository reference"
+    },
+    ".xpi": {
+        "type": "application/x-xpinstall",
+        "comment": "XPInstall installer module"
+    },
+    ".doc": {
+        "type": "application/msword",
+        "comment": "Microsoft Word Document"
+    },
+    ".src": {
+        "type": "application/x-wais-source",
+        "comment": "WAIS source code"
+    },
+    ".tr1": {
+        "type": "application/x-lanalyzer",
+        "comment": "Packet Capture (Novell LANalyzer)"
+    },
+    ".tr1.gz": {
+        "type": "application/x-lanalyzer",
+        "comment": "Packet Capture (Novell LANalyzer)"
+    },
+    ".tr1.zst": {
+        "type": "application/x-lanalyzer",
+        "comment": "Packet Capture (Novell LANalyzer)"
+    },
+    ".tr1.lz4": {
+        "type": "application/x-lanalyzer",
+        "comment": "Packet Capture (Novell LANalyzer)"
+    },
+    ".raml": {
+        "type": "application/raml+yaml",
+        "comment": "RAML document"
+    },
+    ".gnucash": {
+        "type": "application/x-gnucash",
+        "comment": "GnuCash financial data"
+    },
+    ".gnc": {
+        "type": "application/x-gnucash",
+        "comment": "GnuCash financial data"
+    },
+    ".xac": {
+        "type": "application/x-gnucash",
+        "comment": "GnuCash financial data"
+    },
+    ".trc0": {
+        "type": "application/x-nettl",
+        "comment": "Packet Capture (HP-UX nettl)"
+    },
+    ".trc1": {
+        "type": "application/x-nettl",
+        "comment": "Packet Capture (HP-UX nettl)"
+    },
+    ".trc0.gz": {
+        "type": "application/x-nettl",
+        "comment": "Packet Capture (HP-UX nettl)"
+    },
+    ".trc1.gz": {
+        "type": "application/x-nettl",
+        "comment": "Packet Capture (HP-UX nettl)"
+    },
+    ".trc0.zst": {
+        "type": "application/x-nettl",
+        "comment": "Packet Capture (HP-UX nettl)"
+    },
+    ".trc1.zst": {
+        "type": "application/x-nettl",
+        "comment": "Packet Capture (HP-UX nettl)"
+    },
+    ".trc0.lz4": {
+        "type": "application/x-nettl",
+        "comment": "Packet Capture (HP-UX nettl)"
+    },
+    ".trc1.lz4": {
+        "type": "application/x-nettl",
+        "comment": "Packet Capture (HP-UX nettl)"
+    },
+    ".123": {
+        "type": "application/vnd.lotus-1-2-3",
+        "comment": "Lotus 1-2-3 spreadsheet"
+    },
+    ".wk1": {
+        "type": "application/vnd.lotus-1-2-3",
+        "comment": "Lotus 1-2-3 spreadsheet"
+    },
+    ".wk3": {
+        "type": "application/vnd.lotus-1-2-3",
+        "comment": "Lotus 1-2-3 spreadsheet"
+    },
+    ".wk4": {
+        "type": "application/vnd.lotus-1-2-3",
+        "comment": "Lotus 1-2-3 spreadsheet"
+    },
+    ".wks": {
+        "type": "application/vnd.ms-works",
+        "comment": "Microsoft Works document"
+    },
+    ".kpm": {
+        "type": "application/x-kpovmodeler",
+        "comment": "KPovModeler scene"
+    },
+    ".flatpak": {
+        "type": "application/vnd.flatpak",
+        "comment": "Flatpak application bundle"
+    },
+    ".xdgapp": {
+        "type": "application/vnd.flatpak",
+        "comment": "Flatpak application bundle"
+    },
+    ".gz": {
+        "type": "application/gzip",
+        "comment": "Gzip archive"
+    },
+    ".sxd": {
+        "type": "application/vnd.sun.xml.draw",
+        "comment": "OpenOffice.org 1.0 Drawing"
+    },
+    ".pw": {
+        "type": "application/x-pw",
+        "comment": "Pathetic Writer document"
+    },
+    ".sig": {
+        "type": "application/pgp-signature",
+        "comment": "Detached OpenPGP signature"
+    },
+    ".json5": {
+        "type": "application/json5",
+        "comment": "JSON5 document"
+    },
+    ".pdf": {
+        "type": "application/pdf",
+        "comment": "PDF document"
+    },
+    ".cbr": {
+        "type": "application/vnd.comicbook-rar",
+        "comment": "Comic book archive (rar container)"
+    },
+    ".pys": {
+        "type": "application/x-pyspread-bz-spreadsheet",
+        "comment": "Pyspread spreadsheet (bzip2-compressed)"
+    },
+    ".qcow2": {
+        "type": "application/x-qemu-disk",
+        "comment": "QEMU QCOW disk image"
+    },
+    ".qcow": {
+        "type": "application/x-qemu-disk",
+        "comment": "QEMU QCOW disk image"
+    },
+    ".fl": {
+        "type": "application/x-fluid",
+        "comment": "FLTK Fluid file"
+    },
+    ".kmz": {
+        "type": "application/vnd.google-earth.kmz",
+        "comment": "KML geographic compressed data"
+    },
+    ".owx": {
+        "type": "application/owl+xml",
+        "comment": "OWL XML file"
+    },
+    ".sh": {
+        "type": "application/x-shellscript",
+        "comment": "Shell script"
+    },
+    ".jpr": {
+        "type": "application/x-jbuilder-project",
+        "comment": "JBuilder project"
+    },
+    ".gg": {
+        "type": "application/x-gamegear-rom",
+        "comment": "Game Gear ROM"
+    },
+    ".k7": {
+        "type": "application/x-thomson-cassette",
+        "comment": "Thomson cassette"
+    },
+    ".kil": {
+        "type": "application/x-killustrator",
+        "comment": "KIllustrator drawing"
+    },
+    ".siag": {
+        "type": "application/x-siag",
+        "comment": "Siag spreadsheet"
+    },
+    ".wpl": {
+        "type": "application/vnd.ms-wpl",
+        "comment": "WPL playlist"
+    },
+    ".32x": {
+        "type": "application/x-genesis-32x-rom",
+        "comment": "Genesis 32X ROM"
+    },
+    ".mdx": {
+        "type": "application/x-genesis-32x-rom",
+        "comment": "Genesis 32X ROM"
+    },
+    ".gbc": {
+        "type": "application/x-gameboy-color-rom",
+        "comment": "Game Boy Color ROM"
+    },
+    ".cgb": {
+        "type": "application/x-gameboy-color-rom",
+        "comment": "Game Boy Color ROM"
+    },
+    ".vb": {
+        "type": "text/x-vb",
+        "comment": "Visual Basic .NET source code"
+    },
+    ".gnumeric": {
+        "type": "application/x-gnumeric",
+        "comment": "Gnumeric spreadsheet"
+    },
+    ".cer": {
+        "type": "application/pkix-cert",
+        "comment": "X.509 Certificate"
+    },
+    ".crt": {
+        "type": "application/x-x509-ca-cert",
+        "comment": "DER/PEM/Netscape-encoded X.509 certificate"
+    },
+    ".cert": {
+        "type": "application/x-x509-ca-cert",
+        "comment": "DER/PEM/Netscape-encoded X.509 certificate"
+    },
+    ".ufraw": {
+        "type": "application/x-ufraw",
+        "comment": "UFRaw ID image"
+    },
+    ".pptx": {
+        "type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+        "comment": "Microsoft PowerPoint Presentation"
+    },
+    ".sxi": {
+        "type": "application/vnd.sun.xml.impress",
+        "comment": "OpenOffice.org 1.0 Presentation"
+    },
+    ".sdc": {
+        "type": "application/vnd.stardivision.calc",
+        "comment": "StarCalc spreadsheet"
+    },
+    ".ustar": {
+        "type": "application/x-ustar",
+        "comment": "Ustar archive"
+    },
+    ".appinstaller": {
+        "type": "application/appinstaller",
+        "comment": "Windows app store installer"
+    },
+    ".gnd": {
+        "type": "application/gnunet-directory",
+        "comment": "GNUnet search file"
+    },
+    ".php": {
+        "type": "application/x-php",
+        "comment": "PHP script"
+    },
+    ".php3": {
+        "type": "application/x-php",
+        "comment": "PHP script"
+    },
+    ".php4": {
+        "type": "application/x-php",
+        "comment": "PHP script"
+    },
+    ".php5": {
+        "type": "application/x-php",
+        "comment": "PHP script"
+    },
+    ".phps": {
+        "type": "application/x-php",
+        "comment": "PHP script"
+    },
+    ".pptm": {
+        "type": "application/vnd.ms-powerpoint.presentation.macroEnabled.12",
+        "comment": "Microsoft PowerPoint Presentation"
+    },
+    ".chd": {
+        "type": "application/x-mame-chd",
+        "comment": "MAME compressed hard disk image"
+    },
+    ".stw": {
+        "type": "application/vnd.sun.xml.writer.template",
+        "comment": "OpenOffice.org 1.0 Text Document Template"
+    },
+    ".appimage": {
+        "type": "application/x-iso9660-appimage",
+        "comment": "AppImage application bundle"
+    },
+    ".tsx": {
+        "type": "application/x-tiled-tsx",
+        "comment": "Tiled tileset files"
+    },
+    ".m3u": {
+        "type": "audio/x-mpegurl",
+        "comment": "Media playlist"
+    },
+    ".m3u8": {
+        "type": "audio/x-mpegurl",
+        "comment": "Media playlist"
+    },
+    ".ppz": {
+        "type": "application/vnd.ms-powerpoint",
+        "comment": "Microsoft PowerPoint Presentation"
+    },
+    ".ppt": {
+        "type": "application/vnd.ms-powerpoint",
+        "comment": "Microsoft PowerPoint Presentation"
+    },
+    ".pps": {
+        "type": "application/vnd.ms-powerpoint",
+        "comment": "Microsoft PowerPoint Presentation"
+    },
+    ".pot": {
+        "type": "text/x-gettext-translation-template",
+        "comment": "Translation template"
+    },
+    ".cdr": {
+        "type": "application/vnd.corel-draw",
+        "comment": "Corel Draw drawing"
+    },
+    ".ovf": {
+        "type": "application/x-virtualbox-ovf",
+        "comment": "Open Virtualization Format"
+    },
+    ".chrt": {
+        "type": "application/x-kchart",
+        "comment": "KChart chart"
+    },
+    ".xlsx": {
+        "type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        "comment": "Microsoft Excel Worksheet"
+    },
+    ".karbon": {
+        "type": "application/x-karbon",
+        "comment": "Karbon14 drawing"
+    },
+    ".cbor": {
+        "type": "application/cbor",
+        "comment": "CBOR Data"
+    },
+    ".odb": {
+        "type": "application/vnd.sun.xml.base",
+        "comment": "OpenDocument Database"
+    },
+    ".pdf.gz": {
+        "type": "application/x-gzpdf",
+        "comment": "PDF document (gzip-compressed)"
+    },
+    ".vdi": {
+        "type": "application/x-vdi-disk",
+        "comment": "VDI disk image"
+    },
+    ".coffee": {
+        "type": "application/vnd.coffeescript",
+        "comment": "CoffeeScript document"
+    },
+    ".wkdownload": {
+        "type": "application/x-partial-download",
+        "comment": "Partially downloaded file"
+    },
+    ".crdownload": {
+        "type": "application/x-partial-download",
+        "comment": "Partially downloaded file"
+    },
+    ".part": {
+        "type": "application/x-partial-download",
+        "comment": "Partially downloaded file"
+    },
+    ".kra": {
+        "type": "application/x-krita",
+        "comment": "Krita document"
+    },
+    ".krz": {
+        "type": "application/x-krita",
+        "comment": "Krita document"
+    },
+    ".gb": {
+        "type": "application/x-gameboy-rom",
+        "comment": "Game Boy ROM"
+    },
+    ".sgb": {
+        "type": "application/x-gameboy-rom",
+        "comment": "Game Boy ROM"
+    },
+    ".nzb": {
+        "type": "application/x-nzb",
+        "comment": "NewzBin usenet index"
+    },
+    ".ipfix": {
+        "type": "application/ipfix",
+        "comment": "Packet Capture (IPFIX)"
+    },
+    ".ipfix.gz": {
+        "type": "application/ipfix",
+        "comment": "Packet Capture (IPFIX)"
+    },
+    ".ipfix.zst": {
+        "type": "application/ipfix",
+        "comment": "Packet Capture (IPFIX)"
+    },
+    ".ipfix.lz4": {
+        "type": "application/ipfix",
+        "comment": "Packet Capture (IPFIX)"
+    },
+    ".hfe": {
+        "type": "application/x-hfe-floppy-image",
+        "comment": "HFE floppy disk image"
+    },
+    ".gp": {
+        "type": "application/x-gnuplot",
+        "comment": "Gnuplot document"
+    },
+    ".gplt": {
+        "type": "application/x-gnuplot",
+        "comment": "Gnuplot document"
+    },
+    ".gnuplot": {
+        "type": "application/x-gnuplot",
+        "comment": "Gnuplot document"
+    },
+    ".apk": {
+        "type": "application/vnd.android.package-archive",
+        "comment": "Android package"
+    },
+    ".deb": {
+        "type": "application/vnd.debian.binary-package",
+        "comment": "Debian package"
+    },
+    ".udeb": {
+        "type": "application/vnd.debian.binary-package",
+        "comment": "Debian package"
+    },
+    ".hpgl": {
+        "type": "application/vnd.hp-hpgl",
+        "comment": "HPGL file"
+    },
+    ".vstm": {
+        "type": "application/vnd.ms-visio.template.macroEnabled.main+xml",
+        "comment": "Office Open XML Visio template"
+    },
+    ".602": {
+        "type": "application/x-t602",
+        "comment": "T602 document"
+    },
+    ".rtf": {
+        "type": "application/rtf",
+        "comment": "RTF document"
+    },
+    ".wri": {
+        "type": "application/x-mswrite",
+        "comment": "WRI document"
+    },
+    ".oxps": {
+        "type": "application/oxps",
+        "comment": "OpenXPS document"
+    },
+    ".rar": {
+        "type": "application/vnd.rar",
+        "comment": "RAR archive"
+    },
+    ".asf": {
+        "type": "application/vnd.ms-asf",
+        "comment": "ASF video"
+    },
+    ".ots": {
+        "type": "application/vnd.oasis.opendocument.spreadsheet-template",
+        "comment": "OpenDocument Spreadsheet Template"
+    },
+    ".xls": {
+        "type": "application/vnd.ms-excel",
+        "comment": "Microsoft Excel Worksheet"
+    },
+    ".xlc": {
+        "type": "application/vnd.ms-excel",
+        "comment": "Microsoft Excel Worksheet"
+    },
+    ".xll": {
+        "type": "application/vnd.ms-excel",
+        "comment": "Microsoft Excel Worksheet"
+    },
+    ".xlm": {
+        "type": "application/vnd.ms-excel",
+        "comment": "Microsoft Excel Worksheet"
+    },
+    ".xlw": {
+        "type": "application/vnd.ms-excel",
+        "comment": "Microsoft Excel Worksheet"
+    },
+    ".xla": {
+        "type": "application/vnd.ms-excel",
+        "comment": "Microsoft Excel Worksheet"
+    },
+    ".xlt": {
+        "type": "application/vnd.ms-excel",
+        "comment": "Microsoft Excel Worksheet"
+    },
+    ".xld": {
+        "type": "application/vnd.ms-excel",
+        "comment": "Microsoft Excel Worksheet"
+    },
+    ".emp": {
+        "type": "application/vnd.emusic-emusic_package",
+        "comment": "eMusic download package"
+    },
+    ".sav": {
+        "type": "application/x-spss-sav",
+        "comment": "SPSS data file"
+    },
+    ".zsav": {
+        "type": "application/x-spss-sav",
+        "comment": "SPSS data file"
+    },
+    ".prc": {
+        "type": "application/x-mobipocket-ebook",
+        "comment": "Mobipocket e-book"
+    },
+    ".pqa": {
+        "type": "application/vnd.palm",
+        "comment": "Palm OS database"
+    },
+    ".oprc": {
+        "type": "application/vnd.palm",
+        "comment": "Palm OS database"
+    },
+    ".sitx": {
+        "type": "application/x-stuffitx",
+        "comment": "StuffIt X archive"
+    },
+    ".arj": {
+        "type": "application/x-arj",
+        "comment": "ARJ archive"
+    },
+    ".kwd": {
+        "type": "application/x-kword",
+        "comment": "KWord document"
+    },
+    ".kwt": {
+        "type": "application/x-kword",
+        "comment": "KWord document"
+    },
+    ".p7b": {
+        "type": "application/pkcs7-mime",
+        "comment": "PKCS#7 Message and Certificates"
+    },
+    ".spc": {
+        "type": "application/pkcs7-mime",
+        "comment": "PKCS#7 Message and Certificates"
+    },
+    ".pages": {
+        "type": "application/vnd.apple.pages",
+        "comment": "Apple Pages document"
+    },
+    ".dotm": {
+        "type": "application/vnd.ms-word.template.macroEnabled.12",
+        "comment": "Microsoft Word Document Template"
+    },
+    ".cdi": {
+        "type": "application/x-discjuggler-cd-image",
+        "comment": "Padus DiscJuggler CD image"
+    },
+    ".docx": {
+        "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "comment": "Microsoft Word Document"
+    },
+    ".mif": {
+        "type": "application/x-mif",
+        "comment": "Adobe FrameMaker MIF document"
+    },
+    ".xltx": {
+        "type": "application/vnd.openxmlformats-officedocument.spreadsheetml.template",
+        "comment": "Microsoft Excel Worksheet Template"
+    },
+    ".sldx": {
+        "type": "application/vnd.openxmlformats-officedocument.presentationml.slide",
+        "comment": "PowerPoint 2007 slide"
+    },
+    ".abw": {
+        "type": "application/x-abiword",
+        "comment": "AbiWord document"
+    },
+    ".abw.CRASHED": {
+        "type": "application/x-abiword",
+        "comment": "AbiWord document"
+    },
+    ".abw.gz": {
+        "type": "application/x-abiword",
+        "comment": "AbiWord document"
+    },
+    ".zabw": {
+        "type": "application/x-abiword",
+        "comment": "AbiWord document"
+    },
+    ".smil": {
+        "type": "application/smil+xml",
+        "comment": "SMIL document"
+    },
+    ".smi": {
+        "type": "application/x-sami",
+        "comment": "SAMI subtitles"
+    },
+    ".sml": {
+        "type": "application/smil+xml",
+        "comment": "SMIL document"
+    },
+    ".kino": {
+        "type": "application/smil+xml",
+        "comment": "SMIL document"
+    },
+    ".psw": {
+        "type": "application/x-pocket-word",
+        "comment": "Pocket Word document"
+    },
+    ".bz": {
+        "type": "application/x-bzip1",
+        "comment": "Bzip1 archive"
+    },
+    ".zim": {
+        "type": "application/x-openzim",
+        "comment": "OpenZIM file"
+    },
+    ".sxw": {
+        "type": "application/vnd.sun.xml.writer",
+        "comment": "OpenOffice.org 1.0 Text Document"
+    },
+    ".pkipath": {
+        "type": "application/pkix-pkipath",
+        "comment": "PkiPath certification path"
+    },
+    ".p8e": {
+        "type": "application/pkcs8-encrypted",
+        "comment": "PKCS#8 private key (encrypted)"
+    },
+    ".yaml": {
+        "type": "application/yaml",
+        "comment": "YAML document"
+    },
+    ".yml": {
+        "type": "application/yaml",
+        "comment": "YAML document"
+    },
+    ".xml": {
+        "type": "application/xml",
+        "comment": "XML document"
+    },
+    ".xbl": {
+        "type": "application/xml",
+        "comment": "XML document"
+    },
+    ".xsd": {
+        "type": "application/xml",
+        "comment": "XML document"
+    },
+    ".rng": {
+        "type": "application/xml",
+        "comment": "XML document"
+    },
+    ".wpg": {
+        "type": "application/x-wpg",
+        "comment": "WordPerfect/Drawperfect image"
+    },
+    ".ace": {
+        "type": "application/x-ace",
+        "comment": "ACE archive"
+    },
+    ".bdf": {
+        "type": "application/x-font-bdf",
+        "comment": "BDF font"
+    },
+    ".spkac": {
+        "type": "application/x-spkac",
+        "comment": "SPKAC Certificate Request"
+    },
+    ".bcpio": {
+        "type": "application/x-bcpio",
+        "comment": "BCPIO archive"
+    },
+    ".vssx": {
+        "type": "application/vnd.ms-visio.stencil.main+xml",
+        "comment": "Office Open XML Visio stencil"
+    },
+    ".dia": {
+        "type": "application/x-dia-diagram",
+        "comment": "Dia diagram"
+    },
+    ".ttx": {
+        "type": "application/x-font-ttx",
+        "comment": "TrueType XML font"
+    },
+    ".its": {
+        "type": "application/its+xml",
+        "comment": "ITS translation file"
+    },
+    ".sv4crc": {
+        "type": "application/x-sv4crc",
+        "comment": "SV4 CPIO archive (with CRC)"
+    },
+    ".ppam": {
+        "type": "application/vnd.ms-powerpoint.addin.macroEnabled.12",
+        "comment": "PowerPoint add-in"
+    },
+    ".shape": {
+        "type": "application/x-dia-shape",
+        "comment": "Dia shape"
+    },
+    ".sgf": {
+        "type": "application/x-go-sgf",
+        "comment": "SGF record"
+    },
+    ".sldm": {
+        "type": "application/vnd.ms-powerpoint.slide.macroEnabled.12",
+        "comment": "PowerPoint slide"
+    },
+    ".xz": {
+        "type": "application/x-xz",
+        "comment": "XZ archive"
+    },
+    ".ps.bz2": {
+        "type": "application/x-bzpostscript",
+        "comment": "PostScript document (bzip2-compressed)"
+    },
+    ".xlam": {
+        "type": "application/vnd.ms-excel.addin.macroEnabled.12",
+        "comment": "Excel add-in"
+    },
+    ".gd": {
+        "type": "application/x-gdscript",
+        "comment": "GDScript script"
+    },
+    ".wsc": {
+        "type": "application/x-wonderswan-color-rom",
+        "comment": "Bandai WonderSwan Color ROM"
+    },
+    ".pl": {
+        "type": "application/x-perl",
+        "comment": "Perl script"
+    },
+    ".PL": {
+        "type": "application/x-perl",
+        "comment": "Perl script"
+    },
+    ".al": {
+        "type": "application/x-perl",
+        "comment": "Perl script"
+    },
+    ".perl": {
+        "type": "application/x-perl",
+        "comment": "Perl script"
+    },
+    ".pod": {
+        "type": "application/x-perl",
+        "comment": "Perl script"
+    },
+    ".t": {
+        "type": "text/troff",
+        "comment": "Troff document"
+    },
+    ".pdf.xz": {
+        "type": "application/x-xzpdf",
+        "comment": "PDF document (XZ-compressed)"
+    },
+    ".tar.lz4": {
+        "type": "application/x-lz4-compressed-tar",
+        "comment": "Tar archive (LZ4-compressed)"
+    },
+    ".lnk": {
+        "type": "application/x-ms-shortcut",
+        "comment": "Windows shortcut"
+    },
+    ".fish": {
+        "type": "application/x-fishscript",
+        "comment": "Fish shell script"
+    },
+    ".vssm": {
+        "type": "application/vnd.ms-visio.stencil.macroEnabled.main+xml",
+        "comment": "Office Open XML Visio stencil"
+    },
+    ".pcf": {
+        "type": "application/x-cisco-vpn-settings",
+        "comment": "Cisco VPN settings"
+    },
+    ".pcf.Z": {
+        "type": "application/x-font-pcf",
+        "comment": "PCF font"
+    },
+    ".pcf.gz": {
+        "type": "application/x-font-pcf",
+        "comment": "PCF font"
+    },
+    ".tar.gz": {
+        "type": "application/x-compressed-tar",
+        "comment": "Tar archive (gzip-compressed)"
+    },
+    ".tgz": {
+        "type": "application/x-compressed-tar",
+        "comment": "Tar archive (gzip-compressed)"
+    },
+    ".sqsh": {
+        "type": "application/vnd.squashfs",
+        "comment": "Squashfs filesystem image"
+    },
+    ".ws": {
+        "type": "application/x-wonderswan-rom",
+        "comment": "Bandai WonderSwan ROM"
+    },
+    ".jar": {
+        "type": "application/java-archive",
+        "comment": "Java archive"
+    },
+    ".wcm": {
+        "type": "application/vnd.ms-works",
+        "comment": "Microsoft Works document"
+    },
+    ".wdb": {
+        "type": "application/vnd.ms-works",
+        "comment": "Microsoft Works document"
+    },
+    ".wps": {
+        "type": "application/vnd.ms-works",
+        "comment": "Microsoft Works document"
+    },
+    ".xlr": {
+        "type": "application/vnd.ms-works",
+        "comment": "Microsoft Works document"
+    },
+    ".nu": {
+        "type": "application/x-nuscript",
+        "comment": "Nu shell script"
+    },
+    ".dot": {
+        "type": "text/vnd.graphviz",
+        "comment": "Graphviz DOT graph"
+    },
+    ".mxf": {
+        "type": "application/mxf",
+        "comment": "MXF video"
+    },
+    ".sqlite3": {
+        "type": "application/vnd.sqlite3",
+        "comment": "SQLite3 database"
+    },
+    ".gra": {
+        "type": "application/x-graphite",
+        "comment": "Graphite scientific graph"
+    },
+    ".fds": {
+        "type": "application/x-fds-disk",
+        "comment": "Nintendo FDS disk image"
+    },
+    ".raw-disk-image.xz": {
+        "type": "application/x-raw-disk-image-xz-compressed",
+        "comment": "Raw disk image (XZ-compressed)"
+    },
+    ".img.xz": {
+        "type": "application/x-raw-disk-image-xz-compressed",
+        "comment": "Raw disk image (XZ-compressed)"
+    },
+    ".shn": {
+        "type": "application/x-shorten",
+        "comment": "Shorten audio"
+    },
+    ".qti": {
+        "type": "application/x-qtiplot",
+        "comment": "QtiPlot document"
+    },
+    ".qti.gz": {
+        "type": "application/x-qtiplot",
+        "comment": "QtiPlot document"
+    },
+    ".dtd": {
+        "type": "application/xml-dtd",
+        "comment": "DTD file"
+    },
+    ".fods": {
+        "type": "application/vnd.oasis.opendocument.spreadsheet-flat-xml",
+        "comment": "OpenDocument Spreadsheet (Flat XML)"
+    },
+    ".p12": {
+        "type": "application/x-pkcs12",
+        "comment": "PKCS#12 Personal Key and Certificates"
+    },
+    ".pfx": {
+        "type": "application/x-pkcs12",
+        "comment": "PKCS#12 Personal Key and Certificates"
+    },
+    ".atom": {
+        "type": "application/atom+xml",
+        "comment": "Atom syndication feed"
+    },
+    ".ksp": {
+        "type": "application/x-kspread",
+        "comment": "KSpread spreadsheet"
+    },
+    ".otm": {
+        "type": "application/vnd.oasis.opendocument.text-master-template",
+        "comment": "OpenDocument Master Document Template"
+    },
+    ".kud": {
+        "type": "application/x-kugar",
+        "comment": "Kugar document"
+    },
+    ".vbox": {
+        "type": "application/x-virtualbox-vbox",
+        "comment": "VirtualBox Machine Definition"
+    },
+    ".gdi": {
+        "type": "application/x-gd-rom-cue",
+        "comment": "GD-ROM image cuesheet"
+    },
+    ".psf.gz": {
+        "type": "application/x-gz-font-linux-psf",
+        "comment": "Linux PSF console font (gzip-compressed)"
+    },
+    ".kfo": {
+        "type": "application/x-kformula",
+        "comment": "KFormula formula"
+    },
+    ".p7c": {
+        "type": "application/pkcs7-mime",
+        "comment": "PKCS#7 Message and Certificates"
+    },
+    ".p7m": {
+        "type": "application/pkcs7-mime",
+        "comment": "PKCS#7 Message and Certificates"
+    },
+    ".otg": {
+        "type": "application/vnd.oasis.opendocument.graphics-template",
+        "comment": "OpenDocument Drawing Template"
+    },
+    ".wp": {
+        "type": "application/vnd.wordperfect",
+        "comment": "WordPerfect document"
+    },
+    ".wp4": {
+        "type": "application/vnd.wordperfect",
+        "comment": "WordPerfect document"
+    },
+    ".wp5": {
+        "type": "application/vnd.wordperfect",
+        "comment": "WordPerfect document"
+    },
+    ".wp6": {
+        "type": "application/vnd.wordperfect",
+        "comment": "WordPerfect document"
+    },
+    ".wpd": {
+        "type": "application/vnd.wordperfect",
+        "comment": "WordPerfect document"
+    },
+    ".wpp": {
+        "type": "application/vnd.wordperfect",
+        "comment": "WordPerfect document"
+    },
+    ".dmg": {
+        "type": "application/x-apple-diskimage",
+        "comment": "Apple disk image"
+    },
+    ".sdd": {
+        "type": "application/vnd.stardivision.impress",
+        "comment": "StarImpress presentation"
+    },
+    ".sdp": {
+        "type": "application/sdp",
+        "comment": "SDP multicast stream file"
+    },
+    ".sxg": {
+        "type": "application/vnd.sun.xml.writer.global",
+        "comment": "OpenOffice.org 1.0 Master Document"
+    },
+    ".gba": {
+        "type": "application/x-gba-rom",
+        "comment": "Game Boy Advance ROM"
+    },
+    ".agb": {
+        "type": "application/x-gba-rom",
+        "comment": "Game Boy Advance ROM"
+    },
+    ".appx": {
+        "type": "application/appx",
+        "comment": "Windows app store package"
+    },
+    ".qp": {
+        "type": "application/x-qpress",
+        "comment": "Qpress archive"
+    },
+    ".ogx": {
+        "type": "application/ogg",
+        "comment": "Ogg multimedia file"
+    },
+    ".gen": {
+        "type": "application/x-genesis-rom",
+        "comment": "Genesis ROM"
+    },
+    ".smd": {
+        "type": "application/vnd.stardivision.mail",
+        "comment": "StarMail email"
+    },
+    ".sgd": {
+        "type": "application/x-genesis-rom",
+        "comment": "Genesis ROM"
+    },
+    ".ppd": {
+        "type": "application/vnd.cups-ppd",
+        "comment": "PostScript printer description"
+    },
+    ".pk": {
+        "type": "application/x-tex-pk",
+        "comment": "Packed font file"
+    },
+    ".glade": {
+        "type": "application/x-glade",
+        "comment": "Glade project"
+    },
+    ".pak": {
+        "type": "application/x-pak",
+        "comment": "PAK archive"
+    },
+    ".dart": {
+        "type": "application/vnd.dart",
+        "comment": "Dart source code"
+    },
+    ".egon": {
+        "type": "application/x-egon",
+        "comment": "Egon Animator animation"
+    },
+    ".torrent": {
+        "type": "application/x-bittorrent",
+        "comment": "BitTorrent seed file"
+    },
+    ".cab": {
+        "type": "application/vnd.ms-cab-compressed",
+        "comment": "Microsoft Cabinet archive"
+    },
+    ".vsdm": {
+        "type": "application/vnd.ms-visio.drawing.macroEnabled.main+xml",
+        "comment": "Office Open XML Visio drawing"
+    },
+    ".ppsm": {
+        "type": "application/vnd.ms-powerpoint.slideshow.macroEnabled.12",
+        "comment": "PowerPoint presentation"
+    },
+    ".stc": {
+        "type": "application/vnd.sun.xml.calc.template",
+        "comment": "OpenOffice.org 1.0 Spreadsheet Template"
+    },
+    ".vwr": {
+        "type": "application/x-ixia-vwr",
+        "comment": "Packet Capture (Ixia IxVeriWave)"
+    },
+    ".vwr.gz": {
+        "type": "application/x-ixia-vwr",
+        "comment": "Packet Capture (Ixia IxVeriWave)"
+    },
+    ".vwr.zst": {
+        "type": "application/x-ixia-vwr",
+        "comment": "Packet Capture (Ixia IxVeriWave)"
+    },
+    ".vwr.lz4": {
+        "type": "application/x-ixia-vwr",
+        "comment": "Packet Capture (Ixia IxVeriWave)"
+    },
+    ".snoop": {
+        "type": "application/x-snoop",
+        "comment": "Packet Capture (Snoop)"
+    },
+    ".snoop.gz": {
+        "type": "application/x-snoop",
+        "comment": "Packet Capture (Snoop)"
+    },
+    ".snoop.zst": {
+        "type": "application/x-snoop",
+        "comment": "Packet Capture (Snoop)"
+    },
+    ".snoop.lz4": {
+        "type": "application/x-snoop",
+        "comment": "Packet Capture (Snoop)"
+    },
+    ".ai": {
+        "type": "application/illustrator",
+        "comment": "Adobe Illustrator document"
+    },
+    ".fb2": {
+        "type": "application/x-fictionbook+xml",
+        "comment": "FictionBook document"
+    },
+    ".wwf": {
+        "type": "application/x-wwf",
+        "comment": "WWF document"
+    },
+    ".vhdx": {
+        "type": "application/x-vhdx-disk",
+        "comment": "VHDX disk image"
+    },
+    ".tar.lz": {
+        "type": "application/x-lzip-compressed-tar",
+        "comment": "Tar archive (lzip-compressed)"
+    },
+    ".mbox": {
+        "type": "application/mbox",
+        "comment": "Mailbox file"
+    },
+    ".fd": {
+        "type": "application/x-raw-floppy-disk-image",
+        "comment": "Floppy disk image"
+    },
+    ".qd": {
+        "type": "application/x-raw-floppy-disk-image",
+        "comment": "Floppy disk image"
+    },
+    ".bz2": {
+        "type": "application/x-bzip2",
+        "comment": "Bzip2 archive"
+    },
+    ".lyx": {
+        "type": "application/x-lyx",
+        "comment": "LyX document"
+    },
+    ".nds": {
+        "type": "application/x-nintendo-ds-rom",
+        "comment": "Nintendo DS ROM"
+    },
+    ".sxm": {
+        "type": "application/vnd.sun.xml.math",
+        "comment": "OpenOffice.org 1.0 Formula"
+    },
+    ".xlsb": {
+        "type": "application/vnd.ms-excel.sheet.binary.macroEnabled.12",
+        "comment": "Microsoft Excel Worksheet"
+    },
+    ".hdf": {
+        "type": "application/x-hdf",
+        "comment": "HDF document"
+    },
+    ".hdf4": {
+        "type": "application/x-hdf",
+        "comment": "HDF document"
+    },
+    ".h4": {
+        "type": "application/x-hdf",
+        "comment": "HDF document"
+    },
+    ".hdf5": {
+        "type": "application/x-hdf",
+        "comment": "HDF document"
+    },
+    ".h5": {
+        "type": "application/x-hdf",
+        "comment": "HDF document"
+    },
+    ".sql": {
+        "type": "application/sql",
+        "comment": "SQL code"
+    },
+    ".cpio.gz": {
+        "type": "application/x-cpio-compressed",
+        "comment": "CPIO archive (gzip-compressed)"
+    },
+    ".thmx": {
+        "type": "application/vnd.ms-officetheme",
+        "comment": "Microsoft Office 2007 theme"
+    },
+    ".iso": {
+        "type": "application/vnd.efi.iso",
+        "comment": "Raw CD image"
+    },
+    ".xspf": {
+        "type": "application/xspf+xml",
+        "comment": "XSPF playlist"
+    },
+    ".lhz": {
+        "type": "application/x-lhz",
+        "comment": "LHZ archive"
+    },
+    ".eris": {
+        "type": "application/x-eris-link+cbor",
+        "comment": "ERIS Link"
+    },
+    ".ccmx": {
+        "type": "application/x-ccmx",
+        "comment": "CCMX color correction file"
+    },
+    ".odt": {
+        "type": "application/vnd.oasis.opendocument.text",
+        "comment": "OpenDocument Text"
+    },
+    ".kon": {
+        "type": "application/x-kontour",
+        "comment": "Kontour drawing"
+    },
+    ".PAR2": {
+        "type": "application/x-par2",
+        "comment": "Parchive archive"
+    },
+    ".par2": {
+        "type": "application/x-par2",
+        "comment": "Parchive archive"
+    },
+    ".zoo": {
+        "type": "application/x-zoo",
+        "comment": "Zoo archive"
+    },
+    ".a26": {
+        "type": "application/x-atari-2600-rom",
+        "comment": "Atari 2600 ROM"
+    },
+    ".tar.zst": {
+        "type": "application/x-zstd-compressed-tar",
+        "comment": "Tar archive (Zstandard-compressed)"
+    },
+    ".tzst": {
+        "type": "application/x-zstd-compressed-tar",
+        "comment": "Tar archive (Zstandard-compressed)"
+    },
+    ".swf": {
+        "type": "application/vnd.adobe.flash.movie",
+        "comment": "Shockwave Flash file"
+    },
+    ".spl": {
+        "type": "application/vnd.adobe.flash.movie",
+        "comment": "Shockwave Flash file"
+    },
+    ".pfr": {
+        "type": "application/font-tdpfr",
+        "comment": "TDPFR font"
+    },
+    ".jks": {
+        "type": "application/x-java-keystore",
+        "comment": "Java keystore"
+    },
+    ".ks": {
+        "type": "application/x-java-keystore",
+        "comment": "Java keystore"
+    },
+    ".rm": {
+        "type": "application/vnd.rn-realmedia",
+        "comment": "RealMedia document"
+    },
+    ".rmj": {
+        "type": "application/vnd.rn-realmedia",
+        "comment": "RealMedia document"
+    },
+    ".rmm": {
+        "type": "application/vnd.rn-realmedia",
+        "comment": "RealMedia document"
+    },
+    ".rms": {
+        "type": "application/vnd.rn-realmedia",
+        "comment": "RealMedia document"
+    },
+    ".rmx": {
+        "type": "application/vnd.rn-realmedia",
+        "comment": "RealMedia document"
+    },
+    ".rmvb": {
+        "type": "application/vnd.rn-realmedia",
+        "comment": "RealMedia document"
+    },
+    ".zst": {
+        "type": "application/zstd",
+        "comment": "Zstandard archive"
+    },
+    ".srx": {
+        "type": "application/sparql-results+xml",
+        "comment": "SPARQL query results"
+    },
+    ".blend": {
+        "type": "application/x-blender",
+        "comment": "Blender scene"
+    },
+    ".BLEND": {
+        "type": "application/x-blender",
+        "comment": "Blender scene"
+    },
+    ".blender": {
+        "type": "application/x-blender",
+        "comment": "Blender scene"
+    },
+    ".asar": {
+        "type": "application/x-asar",
+        "comment": "Electron Archive (ASAR)"
+    },
+    ".odp": {
+        "type": "application/vnd.oasis.opendocument.presentation",
+        "comment": "OpenDocument Presentation"
+    },
+    ".scn": {
+        "type": "application/x-godot-scene",
+        "comment": "Godot Engine scene"
+    },
+    ".tscn": {
+        "type": "application/x-godot-scene",
+        "comment": "Godot Engine scene"
+    },
+    ".escn": {
+        "type": "application/x-godot-scene",
+        "comment": "Godot Engine scene"
+    },
+    ".fodp": {
+        "type": "application/vnd.oasis.opendocument.presentation-flat-xml",
+        "comment": "OpenDocument Presentation (Flat XML)"
+    },
+    ".tar.bz3": {
+        "type": "application/x-bzip3-compressed-tar",
+        "comment": "Tar archive (bzip3-compressed)"
+    },
+    ".tbz3": {
+        "type": "application/x-bzip3-compressed-tar",
+        "comment": "Tar archive (bzip3-compressed)"
+    },
+    ".dotx": {
+        "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.template",
+        "comment": "Microsoft Word Document Template"
+    },
+    ".meta4": {
+        "type": "application/metalink4+xml",
+        "comment": "Metalink file"
+    },
+    ".mab": {
+        "type": "application/x-markaby",
+        "comment": "Markaby script"
+    },
+    ".raw-disk-image": {
+        "type": "application/vnd.efi.img",
+        "comment": "Raw disk image"
+    },
+    ".img": {
+        "type": "application/vnd.efi.img",
+        "comment": "Raw disk image"
+    },
+    ".dbf": {
+        "type": "application/vnd.dbf",
+        "comment": "Xbase document"
+    },
+    ".oxt": {
+        "type": "application/vnd.openofficeorg.extension",
+        "comment": "LibreOffice Extension"
+    },
+    ".wb1": {
+        "type": "application/x-quattropro",
+        "comment": "Quattro Pro spreadsheet"
+    },
+    ".wb2": {
+        "type": "application/x-quattropro",
+        "comment": "Quattro Pro spreadsheet"
+    },
+    ".wb3": {
+        "type": "application/x-quattropro",
+        "comment": "Quattro Pro spreadsheet"
+    },
+    ".theme": {
+        "type": "application/x-theme",
+        "comment": "Theme"
+    },
+    ".jrd": {
+        "type": "application/jrd+json",
+        "comment": "JRD document"
+    },
+    ".xul": {
+        "type": "application/vnd.mozilla.xul+xml",
+        "comment": "XUL interface document"
+    },
+    ".pcapng": {
+        "type": "application/x-pcapng",
+        "comment": "Packet Capture (PCAPNG)"
+    },
+    ".scap": {
+        "type": "application/x-pcapng",
+        "comment": "Packet Capture (PCAPNG)"
+    },
+    ".ntar": {
+        "type": "application/x-pcapng",
+        "comment": "Packet Capture (PCAPNG)"
+    },
+    ".pcapng.gz": {
+        "type": "application/x-pcapng",
+        "comment": "Packet Capture (PCAPNG)"
+    },
+    ".scap.gz": {
+        "type": "application/x-pcapng",
+        "comment": "Packet Capture (PCAPNG)"
+    },
+    ".ntar.gz": {
+        "type": "application/x-pcapng",
+        "comment": "Packet Capture (PCAPNG)"
+    },
+    ".pcapng.zst": {
+        "type": "application/x-pcapng",
+        "comment": "Packet Capture (PCAPNG)"
+    },
+    ".scap.zst": {
+        "type": "application/x-pcapng",
+        "comment": "Packet Capture (PCAPNG)"
+    },
+    ".ntar.zst": {
+        "type": "application/x-pcapng",
+        "comment": "Packet Capture (PCAPNG)"
+    },
+    ".pcapng.lz4": {
+        "type": "application/x-pcapng",
+        "comment": "Packet Capture (PCAPNG)"
+    },
+    ".scap.lz4": {
+        "type": "application/x-pcapng",
+        "comment": "Packet Capture (PCAPNG)"
+    },
+    ".ntar.lz4": {
+        "type": "application/x-pcapng",
+        "comment": "Packet Capture (PCAPNG)"
+    },
+    ".toml": {
+        "type": "application/toml",
+        "comment": "TOML document"
+    },
+    ".ps": {
+        "type": "application/postscript",
+        "comment": "PostScript document"
+    },
+    ".pysu": {
+        "type": "application/x-pyspread-spreadsheet",
+        "comment": "Pyspread spreadsheet"
+    },
+    ".sam": {
+        "type": "application/x-amipro",
+        "comment": "Lotus AmiPro document"
+    },
+    ".msx": {
+        "type": "application/x-msx-rom",
+        "comment": "MSX ROM"
+    },
+    ".jnlp": {
+        "type": "application/x-java-jnlp-file",
+        "comment": "JNLP file"
+    },
+    ".potm": {
+        "type": "application/vnd.ms-powerpoint.template.macroEnabled.12",
+        "comment": "Microsoft PowerPoint Presentation Template"
+    },
+    ".oda": {
+        "type": "application/oda",
+        "comment": "ODA document"
+    },
+    ".rpm": {
+        "type": "application/x-rpm",
+        "comment": "RPM package"
+    },
+    ".cci": {
+        "type": "application/x-nintendo-3ds-rom",
+        "comment": "Nintendo 3DS ROM"
+    },
+    ".pgn": {
+        "type": "application/vnd.chess-pgn",
+        "comment": "PGN chess game notation"
+    },
+    ".json": {
+        "type": "application/schema+json",
+        "comment": "JSON schema"
+    },
+    ".sqlite2": {
+        "type": "application/x-sqlite2",
+        "comment": "SQLite2 database"
+    },
+    ".pklg": {
+        "type": "application/x-apple-packetlogger",
+        "comment": "Packet Capture (macOS PacketLogger)"
+    },
+    ".pklg.gz": {
+        "type": "application/x-apple-packetlogger",
+        "comment": "Packet Capture (macOS PacketLogger)"
+    },
+    ".pklg.zst": {
+        "type": "application/x-apple-packetlogger",
+        "comment": "Packet Capture (macOS PacketLogger)"
+    },
+    ".pklg.lz4": {
+        "type": "application/x-apple-packetlogger",
+        "comment": "Packet Capture (macOS PacketLogger)"
+    },
+    ".azw3": {
+        "type": "application/vnd.amazon.mobi8-ebook",
+        "comment": "Kindle book document"
+    },
+    ".kfx": {
+        "type": "application/vnd.amazon.mobi8-ebook",
+        "comment": "Kindle book document"
+    },
+    ".fm": {
+        "type": "application/vnd.framemaker",
+        "comment": "Adobe FrameMaker document"
+    },
+    ".odg": {
+        "type": "application/vnd.oasis.opendocument.graphics",
+        "comment": "OpenDocument Drawing"
+    },
+    ".vstx": {
+        "type": "application/vnd.ms-visio.template.main+xml",
+        "comment": "Office Open XML Visio template"
+    },
+    ".kml": {
+        "type": "application/vnd.google-earth.kml+xml",
+        "comment": "KML geographic data"
+    },
+    ".erf": {
+        "type": "application/x-endace-erf",
+        "comment": "Packet Capture (Endace ERF)"
+    },
+    ".erf.gz": {
+        "type": "application/x-endace-erf",
+        "comment": "Packet Capture (Endace ERF)"
+    },
+    ".erf.zst": {
+        "type": "application/x-endace-erf",
+        "comment": "Packet Capture (Endace ERF)"
+    },
+    ".erf.lz4": {
+        "type": "application/x-endace-erf",
+        "comment": "Packet Capture (Endace ERF)"
+    },
+    ".gpx": {
+        "type": "application/gpx+xml",
+        "comment": "GPX geographic data"
+    },
+    ".5vw": {
+        "type": "application/x-5view",
+        "comment": "Packet Capture (Accellent/InfoVista 5view)"
+    },
+    ".5vw.gz": {
+        "type": "application/x-5view",
+        "comment": "Packet Capture (Accellent/InfoVista 5view)"
+    },
+    ".5vw.zst": {
+        "type": "application/x-5view",
+        "comment": "Packet Capture (Accellent/InfoVista 5view)"
+    },
+    ".5vw.lz4": {
+        "type": "application/x-5view",
+        "comment": "Packet Capture (Accellent/InfoVista 5view)"
+    },
+    ".nes": {
+        "type": "application/x-nes-rom",
+        "comment": "NES ROM"
+    },
+    ".nez": {
+        "type": "application/x-nes-rom",
+        "comment": "NES ROM"
+    },
+    ".unf": {
+        "type": "application/x-nes-rom",
+        "comment": "NES ROM"
+    },
+    ".unif": {
+        "type": "application/x-nes-rom",
+        "comment": "NES ROM"
+    },
+    ".xlsm": {
+        "type": "application/vnd.ms-excel.sheet.macroEnabled.12",
+        "comment": "Microsoft Excel Worksheet"
+    },
+    ".rss": {
+        "type": "application/rss+xml",
+        "comment": "RSS summary"
+    },
+    ".aw": {
+        "type": "application/x-applix-word",
+        "comment": "Applix Words document"
+    },
+    ".shar": {
+        "type": "application/x-shar",
+        "comment": "Shell archive"
+    },
+    ".sdw": {
+        "type": "application/vnd.stardivision.writer",
+        "comment": "StarWriter document"
+    },
+    ".vor": {
+        "type": "application/vnd.stardivision.writer",
+        "comment": "StarWriter document"
+    },
+    ".sgl": {
+        "type": "application/vnd.stardivision.writer",
+        "comment": "StarWriter document"
+    },
+    ".hwp": {
+        "type": "application/x-hwp",
+        "comment": "Haansoft Hangul document"
+    },
+    ".sami": {
+        "type": "application/x-sami",
+        "comment": "SAMI subtitles"
+    },
+    ".cbt": {
+        "type": "application/x-cbt",
+        "comment": "Comic book archive (tar container)"
+    },
+    ".man": {
+        "type": "application/x-troff-man",
+        "comment": "Manual page"
+    },
+    ".[1-9]": {
+        "type": "application/x-troff-man",
+        "comment": "Manual page"
+    },
+    ".xps": {
+        "type": "application/vnd.ms-xpsdocument",
+        "comment": "XPS document"
+    },
+    ".oleo": {
+        "type": "application/x-oleo",
+        "comment": "GNU Oleo spreadsheet"
+    },
+    ".dvi.bz2": {
+        "type": "application/x-bzdvi",
+        "comment": "TeX DVI document (bzip2-compressed)"
+    },
+    ".wim": {
+        "type": "application/x-ms-wim",
+        "comment": "WIM disk image"
+    },
+    ".swm": {
+        "type": "application/x-ms-wim",
+        "comment": "WIM disk image"
+    },
+    ".sis": {
+        "type": "application/vnd.symbian.install",
+        "comment": "SIS package"
+    },
+    ".toc": {
+        "type": "application/x-cdrdao-toc",
+        "comment": "CD Table Of Contents"
+    },
+    ".tar.lzo": {
+        "type": "application/x-tzo",
+        "comment": "Tar archive (LZO-compressed)"
+    },
+    ".tzo": {
+        "type": "application/x-tzo",
+        "comment": "Tar archive (LZO-compressed)"
+    },
+    ".sg": {
+        "type": "application/x-sg1000-rom",
+        "comment": "SG-1000 ROM"
+    },
+    ".lrz": {
+        "type": "application/x-lrzip",
+        "comment": "Lrzip archive"
+    },
+    ".openvpn": {
+        "type": "application/x-openvpn-profile",
+        "comment": "OpenVPN profile"
+    },
+    ".ovpn": {
+        "type": "application/x-openvpn-profile",
+        "comment": "OpenVPN profile"
+    },
+    ".rb": {
+        "type": "application/x-ruby",
+        "comment": "Ruby script"
+    },
+    ".msix": {
+        "type": "application/msix",
+        "comment": "Windows app store package"
+    },
+    ".cue": {
+        "type": "application/x-cue",
+        "comment": "CD image cuesheet"
+    },
+    ".fodg": {
+        "type": "application/vnd.oasis.opendocument.graphics-flat-xml",
+        "comment": "OpenDocument Drawing (Flat XML)"
+    },
+    ".o": {
+        "type": "application/x-object",
+        "comment": "Object code"
+    },
+    ".mod": {
+        "type": "audio/x-mod",
+        "comment": "Amiga SoundTracker audio"
+    },
+    ".ott": {
+        "type": "application/vnd.oasis.opendocument.text-template",
+        "comment": "OpenDocument Text Template"
+    },
+    ".fb2.zip": {
+        "type": "application/x-zip-compressed-fb2",
+        "comment": "Compressed FictionBook document"
+    },
+    ".ps.gz": {
+        "type": "application/x-gzpostscript",
+        "comment": "PostScript document (gzip-compressed)"
+    },
+    ".tmx": {
+        "type": "application/x-tiled-tmx",
+        "comment": "Tiled map files"
+    },
+    ".siv": {
+        "type": "application/sieve",
+        "comment": "Sieve mail filter script"
+    },
+    ".sieve": {
+        "type": "application/sieve",
+        "comment": "Sieve mail filter script"
+    },
+    ".icc": {
+        "type": "application/vnd.iccprofile",
+        "comment": "ICC profile"
+    },
+    ".icm": {
+        "type": "application/vnd.iccprofile",
+        "comment": "ICC profile"
+    },
+    ".m7": {
+        "type": "application/x-thomson-cartridge-memo7",
+        "comment": "Thomson Mémo7 cartridge"
+    },
+    ".appxbundle": {
+        "type": "application/appxbundle",
+        "comment": "Windows app store bundle"
+    },
+    ".potx": {
+        "type": "application/vnd.openxmlformats-officedocument.presentationml.template",
+        "comment": "Microsoft PowerPoint Presentation Template"
+    },
+    ".3dsx": {
+        "type": "application/x-nintendo-3ds-executable",
+        "comment": "Nintendo 3DS Executable"
+    },
+    ".otf": {
+        "type": "font/otf",
+        "comment": "OpenType font"
+    },
+    ".kexic": {
+        "type": "application/x-kexi-connectiondata",
+        "comment": "Kexi settings"
+    },
+    ".tar.xz": {
+        "type": "application/x-xz-compressed-tar",
+        "comment": "Tar archive (XZ-compressed)"
+    },
+    ".txz": {
+        "type": "application/x-xz-compressed-tar",
+        "comment": "Tar archive (XZ-compressed)"
+    },
+    ".pack": {
+        "type": "application/x-java-pack200",
+        "comment": "Pack200 Java archive"
+    },
+    ".afm": {
+        "type": "application/x-font-afm",
+        "comment": "Adobe font metrics"
+    },
+    ".gbrjob": {
+        "type": "application/x-gerber-job",
+        "comment": "Gerber job file"
+    },
+    ".bfr": {
+        "type": "application/x-netinstobserver",
+        "comment": "Packet Capture (Network Instruments/Viavi Observer)"
+    },
+    ".bfr.gz": {
+        "type": "application/x-netinstobserver",
+        "comment": "Packet Capture (Network Instruments/Viavi Observer)"
+    },
+    ".bfr.zst": {
+        "type": "application/x-netinstobserver",
+        "comment": "Packet Capture (Network Instruments/Viavi Observer)"
+    },
+    ".bfr.lz4": {
+        "type": "application/x-netinstobserver",
+        "comment": "Packet Capture (Network Instruments/Viavi Observer)"
+    },
+    ".hdd": {
+        "type": "application/x-virtualbox-hdd",
+        "comment": "Virtual Hard Disk"
+    },
+    ".cwk": {
+        "type": "application/x-appleworks-document",
+        "comment": "AppleWorks document"
+    },
+    ".sds": {
+        "type": "application/vnd.stardivision.chart",
+        "comment": "StarChart chart"
+    },
+    ".mobi": {
+        "type": "application/x-mobipocket-ebook",
+        "comment": "Mobipocket e-book"
+    },
+    ".lzo": {
+        "type": "application/x-lzop",
+        "comment": "LZO archive"
+    },
+    ".it87": {
+        "type": "application/x-it87",
+        "comment": "IT 8.7 color calibration file"
+    },
+    ".vsdx": {
+        "type": "application/vnd.ms-visio.drawing.main+xml",
+        "comment": "Office Open XML Visio drawing"
+    },
+    ".flatpakrepo": {
+        "type": "application/vnd.flatpak.repo",
+        "comment": "Flatpak repository description"
+    },
+    ".ngp": {
+        "type": "application/x-neo-geo-pocket-rom",
+        "comment": "Neo-Geo Pocket ROM"
+    },
+    ".xbel": {
+        "type": "application/x-xbel",
+        "comment": "XBEL bookmarks"
+    },
+    ".bz3": {
+        "type": "application/x-bzip3",
+        "comment": "Bzip3 archive"
+    },
+    ".msixbundle": {
+        "type": "application/msixbundle",
+        "comment": "Windows app store bundle"
+    },
+    ".alz": {
+        "type": "application/x-alz",
+        "comment": "Alzip archive"
+    },
+    ".odm": {
+        "type": "application/vnd.oasis.opendocument.text-master",
+        "comment": "OpenDocument Master Document"
+    },
+    ".etheme": {
+        "type": "application/x-e-theme",
+        "comment": "Enlightenment theme"
+    },
+    ".tar": {
+        "type": "application/x-tar",
+        "comment": "Tar archive"
+    },
+    ".gtar": {
+        "type": "application/x-tar",
+        "comment": "Tar archive"
+    },
+    ".gem": {
+        "type": "application/x-tar",
+        "comment": "Tar archive"
+    },
+    ".mrpack": {
+        "type": "application/x-modrinth-modpack+zip",
+        "comment": "Modrinth Modpack"
+    },
+    ".kpr": {
+        "type": "application/x-kpresenter",
+        "comment": "KPresenter presentation"
+    },
+    ".kpt": {
+        "type": "application/x-kpresenter",
+        "comment": "KPresenter presentation"
+    },
+    ".tar.lrz": {
+        "type": "application/x-lrzip-compressed-tar",
+        "comment": "Tar archive (lrzip-compressed)"
+    },
+    ".tlrz": {
+        "type": "application/x-lrzip-compressed-tar",
+        "comment": "Tar archive (lrzip-compressed)"
+    },
+    ".remmina": {
+        "type": "application/x-remmina",
+        "comment": "Remote Desktop (Remmina) file"
+    },
+    ".rdp": {
+        "type": "application/x-remmina",
+        "comment": "Remote Desktop (Remmina) file"
+    },
+    ".rdpx": {
+        "type": "application/x-remmina",
+        "comment": "Remote Desktop (Remmina) file"
+    },
+    ".RDP": {
+        "type": "application/x-remmina",
+        "comment": "Remote Desktop (Remmina) file"
+    },
+    ".gmo": {
+        "type": "application/x-gettext-translation",
+        "comment": "Translated messages (machine-readable)"
+    },
+    ".mo": {
+        "type": "text/x-modelica",
+        "comment": "Modelica model"
+    },
+    ".odi": {
+        "type": "application/vnd.oasis.opendocument.image",
+        "comment": "ODI image"
+    },
+    ".ica": {
+        "type": "application/x-ica",
+        "comment": "Citrix ICA settings file"
+    },
+    ".dvi": {
+        "type": "application/x-dvi",
+        "comment": "TeX DVI document"
+    },
+    ".nb": {
+        "type": "application/mathematica",
+        "comment": "Mathematica Notebook file"
+    },
+    ".spd": {
+        "type": "application/x-font-speedo",
+        "comment": "Speedo font"
+    },
+    ".mplog": {
+        "type": "application/x-micropross-mplog",
+        "comment": "Packet Capture (Micropross mplog)"
+    },
+    ".mplog.gz": {
+        "type": "application/x-micropross-mplog",
+        "comment": "Packet Capture (Micropross mplog)"
+    },
+    ".mplog.zst": {
+        "type": "application/x-micropross-mplog",
+        "comment": "Packet Capture (Micropross mplog)"
+    },
+    ".mplog.lz4": {
+        "type": "application/x-micropross-mplog",
+        "comment": "Packet Capture (Micropross mplog)"
+    },
+    ".pdf.bz2": {
+        "type": "application/x-bzpdf",
+        "comment": "PDF document (bzip2-compressed)"
+    },
+    ".ipynb": {
+        "type": "application/x-ipynb+json",
+        "comment": "Jupyter notebook document"
+    },
+    ".asp": {
+        "type": "application/x-asp",
+        "comment": "ASP page"
+    },
+    ".sda": {
+        "type": "application/vnd.stardivision.draw",
+        "comment": "StarDraw drawing"
+    },
+    ".mdb": {
+        "type": "application/x-lmdb",
+        "comment": "LMDB database"
+    },
+    ".lz": {
+        "type": "application/x-lzip",
+        "comment": "Lzip archive"
+    },
+    ".rnc": {
+        "type": "application/relax-ng-compact-syntax",
+        "comment": "RELAX NG XML schema"
+    },
+    ".ps1": {
+        "type": "application/x-powershell",
+        "comment": "PowerShell script"
+    },
+    ".src.rpm": {
+        "type": "application/x-source-rpm",
+        "comment": "Source RPM package"
+    },
+    ".spm": {
+        "type": "application/x-source-rpm",
+        "comment": "Source RPM package"
+    },
+    ".adf": {
+        "type": "application/x-amiga-disk-format",
+        "comment": "Amiga disk image"
+    },
+    ".ips": {
+        "type": "application/x-ips-patch",
+        "comment": "IPS patch"
+    },
+    ".psf": {
+        "type": "audio/x-psf",
+        "comment": "PSF audio"
+    },
+    ".sit": {
+        "type": "application/x-stuffit",
+        "comment": "StuffIt archive"
+    },
+    ".a78": {
+        "type": "application/x-atari-7800-rom",
+        "comment": "Atari 7800 ROM"
+    },
+    ".ez": {
+        "type": "application/andrew-inset",
+        "comment": "ATK inset"
+    },
+    ".as": {
+        "type": "application/x-applix-spreadsheet",
+        "comment": "Applix Spreadsheets spreadsheet"
+    },
+    ".es": {
+        "type": "application/ecmascript",
+        "comment": "ECMAScript program"
+    },
+    ".pdf.lz": {
+        "type": "application/x-lzpdf",
+        "comment": "PDF document (lzip-compressed)"
+    },
+    ".tar.bz2": {
+        "type": "application/x-bzip2-compressed-tar",
+        "comment": "Tar archive (bzip2-compressed)"
+    },
+    ".tbz2": {
+        "type": "application/x-bzip2-compressed-tar",
+        "comment": "Tar archive (bzip2-compressed)"
+    },
+    ".tb2": {
+        "type": "application/x-bzip2-compressed-tar",
+        "comment": "Tar archive (bzip2-compressed)"
+    },
+    ".lwp": {
+        "type": "application/vnd.lotus-wordpro",
+        "comment": "Lotus Word Pro document"
+    },
+    ".bps": {
+        "type": "application/x-bps-patch",
+        "comment": "BPS patch"
+    },
+    ".zz": {
+        "type": "application/zlib",
+        "comment": "Zlib archive"
+    },
+    ".class": {
+        "type": "application/x-java",
+        "comment": "Java class"
+    },
+    ".crl": {
+        "type": "application/pkix-crl",
+        "comment": "Certificate Revocation List"
+    },
+    ".m4": {
+        "type": "application/x-m4",
+        "comment": "M4 macro"
+    },
+    ".gml": {
+        "type": "application/gml+xml",
+        "comment": "GML document"
+    },
+    ".pub": {
+        "type": "application/vnd.ms-publisher",
+        "comment": "Microsoft Publisher document"
+    },
+    ".cso": {
+        "type": "application/x-compressed-iso",
+        "comment": "Compressed CD image"
+    },
+    ".epub": {
+        "type": "application/epub+zip",
+        "comment": "Electronic book document"
+    },
+    ".ods": {
+        "type": "application/vnd.oasis.opendocument.spreadsheet",
+        "comment": "OpenDocument Spreadsheet"
+    },
+    ".cpio": {
+        "type": "application/x-cpio",
+        "comment": "CPIO archive"
+    },
+    ".vpc": {
+        "type": "application/x-vhd-disk",
+        "comment": "VHD disk image"
+    },
+    ".pce": {
+        "type": "application/x-pc-engine-rom",
+        "comment": "PC Engine ROM"
+    },
+    ".der": {
+        "type": "application/x-x509-ca-cert",
+        "comment": "DER/PEM/Netscape-encoded X.509 certificate"
+    },
+    ".rf5": {
+        "type": "application/x-tektronix-rf5",
+        "comment": "Packet Capture (Tektronix rf5)"
+    },
+    ".rf5.gz": {
+        "type": "application/x-tektronix-rf5",
+        "comment": "Packet Capture (Tektronix rf5)"
+    },
+    ".rf5.zst": {
+        "type": "application/x-tektronix-rf5",
+        "comment": "Packet Capture (Tektronix rf5)"
+    },
+    ".rf5.lz4": {
+        "type": "application/x-tektronix-rf5",
+        "comment": "Packet Capture (Tektronix rf5)"
+    },
+    ".dvi.gz": {
+        "type": "application/x-gzdvi",
+        "comment": "TeX DVI document (gzip-compressed)"
+    },
+    ".srt": {
+        "type": "application/x-subrip",
+        "comment": "SubRip subtitles"
+    },
+    ".bak": {
+        "type": "application/x-trash",
+        "comment": "Backup file"
+    },
+    ".old": {
+        "type": "application/x-trash",
+        "comment": "Backup file"
+    },
+    ".sik": {
+        "type": "application/x-trash",
+        "comment": "Backup file"
+    },
+    ".zip": {
+        "type": "application/zip",
+        "comment": "Zip archive"
+    },
+    ".zipx": {
+        "type": "application/zip",
+        "comment": "Zip archive"
+    },
+    ".pfa": {
+        "type": "application/x-font-type1",
+        "comment": "PostScript type-1 font"
+    },
+    ".pfb": {
+        "type": "application/x-font-type1",
+        "comment": "PostScript type-1 font"
+    },
+    ".gsf": {
+        "type": "application/x-font-type1",
+        "comment": "PostScript type-1 font"
+    },
+    ".lmdb": {
+        "type": "application/x-lmdb",
+        "comment": "LMDB database"
+    },
+    ".docm": {
+        "type": "application/vnd.ms-word.document.macroEnabled.12",
+        "comment": "Microsoft Word Document"
+    },
+    ".drl": {
+        "type": "application/x-excellon",
+        "comment": "Excellon drill file"
+    },
+    ".cdf": {
+        "type": "application/x-netcdf",
+        "comment": "Unidata NetCDF document"
+    },
+    ".nc": {
+        "type": "application/x-netcdf",
+        "comment": "Unidata NetCDF document"
+    },
+    ".dar": {
+        "type": "application/x-dar",
+        "comment": "DAR archive"
+    },
+    ".metalink": {
+        "type": "application/metalink+xml",
+        "comment": "Metalink file"
+    },
+    ".csh": {
+        "type": "application/x-csh",
+        "comment": "C shell script"
+    },
+    ".smf": {
+        "type": "application/vnd.stardivision.math",
+        "comment": "StarMath formula"
+    },
+    ".sap": {
+        "type": "application/x-thomson-sap-image",
+        "comment": "SAP Thomson floppy disk image"
+    },
+    ".jceks": {
+        "type": "application/x-java-jce-keystore",
+        "comment": "Java JCE keystore"
+    },
+    ".xlf": {
+        "type": "application/xliff+xml",
+        "comment": "XLIFF translation file"
+    },
+    ".xliff": {
+        "type": "application/xliff+xml",
+        "comment": "XLIFF translation file"
+    },
+    ".pln": {
+        "type": "application/x-planperfect",
+        "comment": "PlanPerfect spreadsheet"
+    },
+    ".hwt": {
+        "type": "application/x-hwt",
+        "comment": "Haansoft Hangul document template"
+    },
+    ".gf": {
+        "type": "application/x-tex-gf",
+        "comment": "Generic font file"
+    },
+    ".lnx": {
+        "type": "application/x-atari-lynx-rom",
+        "comment": "Atari Lynx ROM"
+    },
+    ".mhtml": {
+        "type": "application/x-mimearchive",
+        "comment": "MHTML web archive"
+    },
+    ".mht": {
+        "type": "application/x-mimearchive",
+        "comment": "MHTML web archive"
+    },
+    ".ngc": {
+        "type": "application/x-neo-geo-pocket-color-rom",
+        "comment": "Neo-Geo Pocket Color ROM"
+    },
+    ".iso9660": {
+        "type": "application/vnd.efi.iso",
+        "comment": "Raw CD image"
+    },
+    ".vbox-extpack": {
+        "type": "application/x-virtualbox-vbox-extpack",
+        "comment": "VirtualBox Extension Pack"
+    },
+    ".mgp": {
+        "type": "application/x-magicpoint",
+        "comment": "MagicPoint presentation"
+    },
+    ".so": {
+        "type": "application/x-sharedlib",
+        "comment": "Shared library"
+    },
+    ".so.[0-9]*": {
+        "type": "application/x-sharedlib",
+        "comment": "Shared library"
+    },
+    ".ent": {
+        "type": "application/xml-external-parsed-entity",
+        "comment": "XML entities document"
+    },
+    ".burp": {
+        "type": "application/x-extension-burp",
+        "comment": "Burp Suite Project File"
+    },
+    ".lz4": {
+        "type": "application/x-lz4",
+        "comment": "LZ4 archive"
+    },
+    ".mmf": {
+        "type": "application/vnd.smaf",
+        "comment": "SMAF audio"
+    },
+    ".smaf": {
+        "type": "application/vnd.smaf",
+        "comment": "SMAF audio"
+    },
+    ".p10": {
+        "type": "application/pkcs10",
+        "comment": "PKCS#10 Certificate Request"
+    },
+    ".csr": {
+        "type": "application/pkcs10",
+        "comment": "PKCS#10 Certificate Request"
+    },
+    ".cb7": {
+        "type": "application/x-cb7",
+        "comment": "Comic book archive (7z container)"
+    },
+    ".odc": {
+        "type": "application/vnd.oasis.opendocument.chart",
+        "comment": "ODC chart"
+    },
+    ".p7s": {
+        "type": "application/pkcs7-signature",
+        "comment": "PKCS#7 Signature"
+    },
+    ".sti": {
+        "type": "application/vnd.sun.xml.impress.template",
+        "comment": "OpenOffice.org 1.0 Presentation Template"
+    },
+    ".ems": {
+        "type": "application/x-ems",
+        "comment": "EGNOS Message Server (EMS) file"
+    },
+    ".tnef": {
+        "type": "application/vnd.ms-tnef",
+        "comment": "TNEF message"
+    },
+    ".tnf": {
+        "type": "application/vnd.ms-tnef",
+        "comment": "TNEF message"
+    },
+    ".ani": {
+        "type": "application/x-navi-animation",
+        "comment": "Windows animated cursor"
+    },
+    ".qtl": {
+        "type": "application/x-quicktime-media-link",
+        "comment": "QuickTime playlist"
+    },
+    ".oth": {
+        "type": "application/vnd.oasis.opendocument.text-web",
+        "comment": "HTML Document Template"
+    },
+    ".xhtml": {
+        "type": "application/xhtml+xml",
+        "comment": "XHTML page"
+    },
+    ".xht": {
+        "type": "application/xhtml+xml",
+        "comment": "XHTML page"
+    },
+    ".html": {
+        "type": "text/html",
+        "comment": "HTML document"
+    },
+    ".htm": {
+        "type": "text/html",
+        "comment": "HTML document"
+    },
+    ".tar.bz": {
+        "type": "application/x-bzip1-compressed-tar",
+        "comment": "Tar archive (bzip1-compressed)"
+    },
+    ".tbz": {
+        "type": "application/x-bzip1-compressed-tar",
+        "comment": "Tar archive (bzip1-compressed)"
+    },
+    ".n64": {
+        "type": "application/x-n64-rom",
+        "comment": "Nintendo64 ROM"
+    },
+    ".z64": {
+        "type": "application/x-n64-rom",
+        "comment": "Nintendo64 ROM"
+    },
+    ".v64": {
+        "type": "application/x-n64-rom",
+        "comment": "Nintendo64 ROM"
+    },
+    ".woff": {
+        "type": "font/woff",
+        "comment": "WOFF font"
+    },
+    ".woff2": {
+        "type": "font/woff2",
+        "comment": "WOFF2 font"
+    },
+    ".ttc": {
+        "type": "font/collection",
+        "comment": "Font collection"
+    },
+    ".ttf": {
+        "type": "font/ttf",
+        "comment": "TrueType font"
+    },
+    ".mxmf": {
+        "type": "audio/mobile-xmf",
+        "comment": "Mobile XMF audio"
+    },
+    ".axa": {
+        "type": "audio/annodex",
+        "comment": "Annodex audio"
+    },
+    ".dsf": {
+        "type": "audio/x-dsf",
+        "comment": "DSF audio"
+    },
+    ".amz": {
+        "type": "audio/x-amzxml",
+        "comment": "AmazonMP3 download file"
+    },
+    ".m4r": {
+        "type": "audio/x-m4r",
+        "comment": "MPEG-4 ringtone"
+    },
+    ".aac": {
+        "type": "audio/aac",
+        "comment": "AAC audio"
+    },
+    ".adts": {
+        "type": "audio/aac",
+        "comment": "AAC audio"
+    },
+    ".ass": {
+        "type": "text/x-ssa",
+        "comment": "SSA subtitles"
+    },
+    ".aiff": {
+        "type": "audio/x-aiff",
+        "comment": "AIFF/Amiga/Mac audio"
+    },
+    ".aif": {
+        "type": "audio/x-aiff",
+        "comment": "AIFF/Amiga/Mac audio"
+    },
+    ".flac": {
+        "type": "audio/flac",
+        "comment": "FLAC audio"
+    },
+    ".tak": {
+        "type": "audio/x-tak",
+        "comment": "TAK audio"
+    },
+    ".wv": {
+        "type": "audio/x-wavpack",
+        "comment": "WavPack audio"
+    },
+    ".wvp": {
+        "type": "audio/x-wavpack",
+        "comment": "WavPack audio"
+    },
+    ".xi": {
+        "type": "audio/x-xi",
+        "comment": "FastTracker II instrument"
+    },
+    ".amr": {
+        "type": "audio/AMR",
+        "comment": "AMR audio"
+    },
+    ".mpc": {
+        "type": "audio/x-musepack",
+        "comment": "Musepack audio"
+    },
+    ".mpp": {
+        "type": "audio/x-musepack",
+        "comment": "Musepack audio"
+    },
+    ".mp+": {
+        "type": "audio/x-musepack",
+        "comment": "Musepack audio"
+    },
+    ".pla": {
+        "type": "audio/x-iriver-pla",
+        "comment": "iRiver playlist"
+    },
+    ".opus": {
+        "type": "audio/ogg",
+        "comment": "Ogg audio"
+    },
+    ".oga": {
+        "type": "audio/x-speex+ogg",
+        "comment": "Ogg Speex audio"
+    },
+    ".ac3": {
+        "type": "audio/ac3",
+        "comment": "Dolby Digital audio"
+    },
+    ".aifc": {
+        "type": "audio/x-aifc",
+        "comment": "AIFC audio"
+    },
+    ".aiffc": {
+        "type": "audio/x-aifc",
+        "comment": "AIFC audio"
+    },
+    ".s3m": {
+        "type": "audio/x-s3m",
+        "comment": "Scream Tracker 3 audio"
+    },
+    ".xm": {
+        "type": "audio/x-xm",
+        "comment": "FastTracker II audio"
+    },
+    ".it": {
+        "type": "audio/x-it",
+        "comment": "Impulse Tracker audio"
+    },
+    ".ape": {
+        "type": "audio/x-ape",
+        "comment": "Monkey's audio"
+    },
+    ".asx": {
+        "type": "audio/x-ms-asx",
+        "comment": "Microsoft ASX playlist"
+    },
+    ".wax": {
+        "type": "audio/x-ms-asx",
+        "comment": "Microsoft ASX playlist"
+    },
+    ".wvx": {
+        "type": "audio/x-ms-asx",
+        "comment": "Microsoft ASX playlist"
+    },
+    ".wmx": {
+        "type": "audio/x-ms-asx",
+        "comment": "Microsoft ASX playlist"
+    },
+    ".aa": {
+        "type": "audio/x-pn-audibleaudio",
+        "comment": "Audible.Com audio"
+    },
+    ".voc": {
+        "type": "audio/x-voc",
+        "comment": "VOC audio"
+    },
+    ".aaxc": {
+        "type": "audio/vnd.audible.aaxc",
+        "comment": "Audible Enhanced audio"
+    },
+    ".sid": {
+        "type": "audio/prs.sid",
+        "comment": "Commodore 64 audio"
+    },
+    ".psid": {
+        "type": "audio/prs.sid",
+        "comment": "Commodore 64 audio"
+    },
+    ".tta": {
+        "type": "audio/x-tta",
+        "comment": "TrueAudio audio"
+    },
+    ".pls": {
+        "type": "audio/x-scpls",
+        "comment": "MP3 ShoutCast playlist"
+    },
+    ".gsm": {
+        "type": "audio/x-gsm",
+        "comment": "GSM 06.10 audio"
+    },
+    ".ult": {
+        "type": "audio/x-mod",
+        "comment": "Amiga SoundTracker audio"
+    },
+    ".uni": {
+        "type": "audio/x-mod",
+        "comment": "Amiga SoundTracker audio"
+    },
+    ".m15": {
+        "type": "audio/x-mod",
+        "comment": "Amiga SoundTracker audio"
+    },
+    ".mtm": {
+        "type": "audio/x-mod",
+        "comment": "Amiga SoundTracker audio"
+    },
+    ".669": {
+        "type": "audio/x-mod",
+        "comment": "Amiga SoundTracker audio"
+    },
+    ".med": {
+        "type": "audio/x-mod",
+        "comment": "Amiga SoundTracker audio"
+    },
+    ".xmf": {
+        "type": "audio/x-xmf",
+        "comment": "XMF audio"
+    },
+    ".vlc": {
+        "type": "audio/x-mpegurl",
+        "comment": "Media playlist"
+    },
+    ".ra": {
+        "type": "audio/vnd.rn-realaudio",
+        "comment": "RealAudio document"
+    },
+    ".rax": {
+        "type": "audio/vnd.rn-realaudio",
+        "comment": "RealAudio document"
+    },
+    ".mid": {
+        "type": "audio/midi",
+        "comment": "MIDI audio"
+    },
+    ".midi": {
+        "type": "audio/midi",
+        "comment": "MIDI audio"
+    },
+    ".kar": {
+        "type": "audio/midi",
+        "comment": "MIDI audio"
+    },
+    ".wma": {
+        "type": "audio/x-ms-wma",
+        "comment": "Windows Media audio"
+    },
+    ".dff": {
+        "type": "audio/x-dff",
+        "comment": "DSDIFF audio"
+    },
+    ".mp3": {
+        "type": "audio/mpeg",
+        "comment": "MP3 audio"
+    },
+    ".mpga": {
+        "type": "audio/mpeg",
+        "comment": "MP3 audio"
+    },
+    ".m4b": {
+        "type": "audio/x-m4b",
+        "comment": "MPEG-4 audio book"
+    },
+    ".f4b": {
+        "type": "audio/x-m4b",
+        "comment": "MPEG-4 audio book"
+    },
+    ".wav": {
+        "type": "audio/vnd.wave",
+        "comment": "WAV audio"
+    },
+    ".loas": {
+        "type": "audio/usac",
+        "comment": "USAC audio"
+    },
+    ".xhe": {
+        "type": "audio/usac",
+        "comment": "USAC audio"
+    },
+    ".m4a": {
+        "type": "audio/mp4",
+        "comment": "MPEG-4 audio"
+    },
+    ".f4a": {
+        "type": "audio/mp4",
+        "comment": "MPEG-4 audio"
+    },
+    ".minipsf": {
+        "type": "audio/x-minipsf",
+        "comment": "MiniPSF audio"
+    },
+    ".stm": {
+        "type": "audio/x-stm",
+        "comment": "Scream Tracker audio"
+    },
+    ".au": {
+        "type": "audio/basic",
+        "comment": "ULAW (Sun) audio"
+    },
+    ".snd": {
+        "type": "audio/basic",
+        "comment": "ULAW (Sun) audio"
+    },
+    ".dtshd": {
+        "type": "audio/vnd.dts.hd",
+        "comment": "DTS-HD audio"
+    },
+    ".aax": {
+        "type": "audio/vnd.audible.aax",
+        "comment": "Audible Enhanced audio"
+    },
+    ".mo3": {
+        "type": "audio/x-mo3",
+        "comment": "Compressed Tracker audio"
+    },
+    ".psflib": {
+        "type": "audio/x-psflib",
+        "comment": "PSFlib audio library"
+    },
+    ".mka": {
+        "type": "audio/x-matroska",
+        "comment": "Matroska audio"
+    },
+    ".awb": {
+        "type": "audio/AMR-WB",
+        "comment": "AMR-WB audio"
+    },
+    ".wvc": {
+        "type": "audio/x-wavpack-correction",
+        "comment": "WavPack audio correction file"
+    },
+    ".dts": {
+        "type": "text/x-devicetree-source",
+        "comment": "Devicetree source code"
+    },
+    ".tex": {
+        "type": "text/x-tex",
+        "comment": "TeX document"
+    },
+    ".ltx": {
+        "type": "text/x-tex",
+        "comment": "TeX document"
+    },
+    ".sty": {
+        "type": "text/x-tex",
+        "comment": "TeX document"
+    },
+    ".cls": {
+        "type": "text/x-tex",
+        "comment": "TeX document"
+    },
+    ".dtx": {
+        "type": "text/x-tex",
+        "comment": "TeX document"
+    },
+    ".ins": {
+        "type": "text/x-tex",
+        "comment": "TeX document"
+    },
+    ".latex": {
+        "type": "text/x-tex",
+        "comment": "TeX document"
+    },
+    ".rt": {
+        "type": "text/vnd.rn-realtext",
+        "comment": "RealText document"
+    },
+    ".asd": {
+        "type": "text/x-common-lisp",
+        "comment": "Common Lisp source code"
+    },
+    ".fasl": {
+        "type": "text/x-common-lisp",
+        "comment": "Common Lisp source code"
+    },
+    ".lisp": {
+        "type": "text/x-common-lisp",
+        "comment": "Common Lisp source code"
+    },
+    ".ros": {
+        "type": "text/x-common-lisp",
+        "comment": "Common Lisp source code"
+    },
+    ".bib": {
+        "type": "text/x-bibtex",
+        "comment": "BibTeX document"
+    },
+    ".bas": {
+        "type": "text/x-basic",
+        "comment": "BASIC program"
+    },
+    ".ms": {
+        "type": "text/x-troff-ms",
+        "comment": "Troff MS input document"
+    },
+    ".mk": {
+        "type": "text/x-makefile",
+        "comment": "Makefile build file"
+    },
+    ".mak": {
+        "type": "text/x-makefile",
+        "comment": "Makefile build file"
+    },
+    ".js": {
+        "type": "text/javascript",
+        "comment": "JavaScript program"
+    },
+    ".jsm": {
+        "type": "text/javascript",
+        "comment": "JavaScript program"
+    },
+    ".mjs": {
+        "type": "text/javascript",
+        "comment": "JavaScript program"
+    },
+    ".automount": {
+        "type": "text/x-systemd-unit",
+        "comment": "Systemd unit file"
+    },
+    ".device": {
+        "type": "text/x-systemd-unit",
+        "comment": "Systemd unit file"
+    },
+    ".mount": {
+        "type": "text/x-systemd-unit",
+        "comment": "Systemd unit file"
+    },
+    ".path": {
+        "type": "text/x-systemd-unit",
+        "comment": "Systemd unit file"
+    },
+    ".scope": {
+        "type": "text/x-systemd-unit",
+        "comment": "Systemd unit file"
+    },
+    ".service": {
+        "type": "text/x-dbus-service",
+        "comment": "D-Bus service file"
+    },
+    ".slice": {
+        "type": "text/x-systemd-unit",
+        "comment": "Systemd unit file"
+    },
+    ".socket": {
+        "type": "text/x-systemd-unit",
+        "comment": "Systemd unit file"
+    },
+    ".swap": {
+        "type": "text/x-systemd-unit",
+        "comment": "Systemd unit file"
+    },
+    ".target": {
+        "type": "text/x-systemd-unit",
+        "comment": "Systemd unit file"
+    },
+    ".timer": {
+        "type": "text/x-systemd-unit",
+        "comment": "Systemd unit file"
+    },
+    ".tr": {
+        "type": "text/troff",
+        "comment": "Troff document"
+    },
+    ".roff": {
+        "type": "text/troff",
+        "comment": "Troff document"
+    },
+    ".imy": {
+        "type": "text/x-iMelody",
+        "comment": "iMelody ringtone"
+    },
+    ".ime": {
+        "type": "text/x-iMelody",
+        "comment": "iMelody ringtone"
+    },
+    ".feature": {
+        "type": "text/x-gherkin",
+        "comment": "Gherkin document"
+    },
+    ".tsv": {
+        "type": "text/tab-separated-values",
+        "comment": "TSV document"
+    },
+    ".ex": {
+        "type": "text/x-elixir",
+        "comment": "Elixir source code"
+    },
+    ".exs": {
+        "type": "text/x-elixir",
+        "comment": "Elixir source code"
+    },
+    ".cr": {
+        "type": "text/x-crystal",
+        "comment": "Crystal source code"
+    },
+    ".txt": {
+        "type": "text/plain",
+        "comment": "Plain text document"
+    },
+    ".etx": {
+        "type": "text/x-setext",
+        "comment": "Setext document"
+    },
+    ".sub": {
+        "type": "text/x-subviewer",
+        "comment": "SubViewer subtitles"
+    },
+    ".mof": {
+        "type": "text/x-mof",
+        "comment": "MOF file"
+    },
+    ".htc": {
+        "type": "text/x-component",
+        "comment": "HTML component"
+    },
+    ".cmake": {
+        "type": "text/x-cmake",
+        "comment": "CMake source code"
+    },
+    ".gv": {
+        "type": "text/vnd.graphviz",
+        "comment": "Graphviz DOT graph"
+    },
+    ".jse": {
+        "type": "text/jscript.encode",
+        "comment": "Encoded JScript program"
+    },
+    ".uil": {
+        "type": "text/x-uil",
+        "comment": "X-Motif UIL table"
+    },
+    ".m": {
+        "type": "text/x-matlab",
+        "comment": "MATLAB file"
+    },
+    ".vbe": {
+        "type": "text/vbscript.encode",
+        "comment": "Encoded VBScript program"
+    },
+    ".scm": {
+        "type": "text/x-scheme",
+        "comment": "Scheme source code"
+    },
+    ".ss": {
+        "type": "text/x-scheme",
+        "comment": "Scheme source code"
+    },
+    ".dcl": {
+        "type": "text/x-dcl",
+        "comment": "DCL script"
+    },
+    ".c": {
+        "type": "text/x-csrc",
+        "comment": "C source code"
+    },
+    ".svh": {
+        "type": "text/x-svhdr",
+        "comment": "SystemVerilog header"
+    },
+    ".vala": {
+        "type": "text/x-vala",
+        "comment": "Vala source code"
+    },
+    ".vapi": {
+        "type": "text/x-vala",
+        "comment": "Vala source code"
+    },
+    ".dtsi": {
+        "type": "text/x-devicetree-source",
+        "comment": "Devicetree source code"
+    },
+    ".nfo": {
+        "type": "text/x-nfo",
+        "comment": "NFO document"
+    },
+    ".css": {
+        "type": "text/css",
+        "comment": "CSS stylesheet"
+    },
+    ".cl": {
+        "type": "text/x-opencl-src",
+        "comment": "OpenCL source code"
+    },
+    ".twig": {
+        "type": "text/x-twig",
+        "comment": "Twig template"
+    },
+    ".spec": {
+        "type": "text/x-rpm-spec",
+        "comment": "RPM spec file"
+    },
+    ".hs": {
+        "type": "text/x-haskell",
+        "comment": "Haskell source code"
+    },
+    ".rtx": {
+        "type": "text/richtext",
+        "comment": "Rich text document"
+    },
+    ".sage": {
+        "type": "text/x-sagemath",
+        "comment": "SageMath script"
+    },
+    ".csv": {
+        "type": "text/csv",
+        "comment": "CSV document"
+    },
+    ".tcl": {
+        "type": "text/tcl",
+        "comment": "Tcl script"
+    },
+    ".tk": {
+        "type": "text/tcl",
+        "comment": "Tcl script"
+    },
+    ".typ": {
+        "type": "text/x-typst",
+        "comment": "Typst document"
+    },
+    ".mm": {
+        "type": "text/x-troff-mm",
+        "comment": "Troff MM input document"
+    },
+    ".org": {
+        "type": "text/org",
+        "comment": "Org-mode file"
+    },
+    ".nims": {
+        "type": "text/x-nimscript",
+        "comment": "Nimscript source code"
+    },
+    ".nimble": {
+        "type": "text/x-nimscript",
+        "comment": "Nimscript source code"
+    },
+    ".ldif": {
+        "type": "text/x-ldif",
+        "comment": "LDIF address book"
+    },
+    ".f": {
+        "type": "text/x-fortran",
+        "comment": "Fortran source code"
+    },
+    ".f90": {
+        "type": "text/x-fortran",
+        "comment": "Fortran source code"
+    },
+    ".f95": {
+        "type": "text/x-fortran",
+        "comment": "Fortran source code"
+    },
+    ".for": {
+        "type": "text/x-fortran",
+        "comment": "Fortran source code"
+    },
+    ".iptables": {
+        "type": "text/x-iptables",
+        "comment": "iptables configuration file"
+    },
+    ".wml": {
+        "type": "text/vnd.wap.wml",
+        "comment": "WML document"
+    },
+    ".mup": {
+        "type": "text/x-mup",
+        "comment": "Mup musical composition document"
+    },
+    ".not": {
+        "type": "text/x-mup",
+        "comment": "Mup musical composition document"
+    },
+    ".p": {
+        "type": "text/x-pascal",
+        "comment": "Pascal source code"
+    },
+    ".pas": {
+        "type": "text/x-pascal",
+        "comment": "Pascal source code"
+    },
+    ".cs": {
+        "type": "text/x-csharp",
+        "comment": "C# source code"
+    },
+    ".nim": {
+        "type": "text/x-nim",
+        "comment": "Nim source code"
+    },
+    ".texi": {
+        "type": "text/x-texinfo",
+        "comment": "TeXInfo document"
+    },
+    ".texinfo": {
+        "type": "text/x-texinfo",
+        "comment": "TeXInfo document"
+    },
+    ".el": {
+        "type": "text/x-emacs-lisp",
+        "comment": "Emacs Lisp source code"
+    },
+    ".lua": {
+        "type": "text/x-lua",
+        "comment": "Lua script"
+    },
+    ".lhs": {
+        "type": "text/x-literate-haskell",
+        "comment": "LHS source code"
+    },
+    ".dsl": {
+        "type": "text/x-dsl",
+        "comment": "DSSSL document"
+    },
+    ".t2t": {
+        "type": "text/x-txt2tags",
+        "comment": "txt2tags document"
+    },
+    ".sass": {
+        "type": "text/x-sass",
+        "comment": "Sass CSS pre-processor file"
+    },
+    ".ksy": {
+        "type": "text/x-kaitai-struct",
+        "comment": "Kaitai Struct definition file"
+    },
+    ".py": {
+        "type": "text/x-python3",
+        "comment": "Python 3 script"
+    },
+    ".pyx": {
+        "type": "text/x-python",
+        "comment": "Python script"
+    },
+    ".wsgi": {
+        "type": "text/x-python",
+        "comment": "Python script"
+    },
+    ".erl": {
+        "type": "text/x-erlang",
+        "comment": "Erlang source code"
+    },
+    ".e": {
+        "type": "text/x-eiffel",
+        "comment": "Eiffel source code"
+    },
+    ".eif": {
+        "type": "text/x-eiffel",
+        "comment": "Eiffel source code"
+    },
+    ".kt": {
+        "type": "text/x-kotlin",
+        "comment": "Kotlin source code"
+    },
+    ".cbl": {
+        "type": "text/x-cobol",
+        "comment": "COBOL source code"
+    },
+    ".cob": {
+        "type": "text/x-cobol",
+        "comment": "COBOL source code"
+    },
+    ".csvs": {
+        "type": "text/csv-schema",
+        "comment": "CSV Schema document"
+    },
+    ".md": {
+        "type": "text/markdown",
+        "comment": "Markdown document"
+    },
+    ".mkd": {
+        "type": "text/markdown",
+        "comment": "Markdown document"
+    },
+    ".markdown": {
+        "type": "text/markdown",
+        "comment": "Markdown document"
+    },
+    ".py3": {
+        "type": "text/x-python3",
+        "comment": "Python 3 script"
+    },
+    ".py3x": {
+        "type": "text/x-python3",
+        "comment": "Python 3 script"
+    },
+    ".pyi": {
+        "type": "text/x-python3",
+        "comment": "Python 3 script"
+    },
+    ".ly": {
+        "type": "text/x-lilypond",
+        "comment": "Lilypond music sheet"
+    },
+    ".gs": {
+        "type": "text/x-genie",
+        "comment": "Genie source code"
+    },
+    ".moc": {
+        "type": "text/x-moc",
+        "comment": "Qt MOC file"
+    },
+    ".jad": {
+        "type": "text/vnd.sun.j2me.app-descriptor",
+        "comment": "JAD document"
+    },
+    ".d": {
+        "type": "text/x-dsrc",
+        "comment": "D source code"
+    },
+    ".di": {
+        "type": "text/x-dsrc",
+        "comment": "D source code"
+    },
+    ".diff": {
+        "type": "text/x-patch",
+        "comment": "Differences between files"
+    },
+    ".patch": {
+        "type": "text/x-patch",
+        "comment": "Differences between files"
+    },
+    ".jl": {
+        "type": "text/julia",
+        "comment": "Julia source code"
+    },
+    ".sgml": {
+        "type": "text/sgml",
+        "comment": "SGML document"
+    },
+    ".sgm": {
+        "type": "text/sgml",
+        "comment": "SGML document"
+    },
+    ".ged": {
+        "type": "text/vnd.familysearch.gedcom",
+        "comment": "GEDCOM family history"
+    },
+    ".gedcom": {
+        "type": "text/vnd.familysearch.gedcom",
+        "comment": "GEDCOM family history"
+    },
+    ".gvp": {
+        "type": "text/x-google-video-pointer",
+        "comment": "Google Video Pointer shortcut"
+    },
+    ".xmi": {
+        "type": "text/x-xmi",
+        "comment": "XMI file"
+    },
+    ".blp": {
+        "type": "text/x-blueprint",
+        "comment": "Blueprint source code"
+    },
+    ".log": {
+        "type": "text/x-log",
+        "comment": "Application log"
+    },
+    ".reg": {
+        "type": "text/x-ms-regedit",
+        "comment": "Windows Registry extract"
+    },
+    ".rst": {
+        "type": "text/x-rst",
+        "comment": "ReStructuredText document"
+    },
+    ".ssa": {
+        "type": "text/x-ssa",
+        "comment": "SSA subtitles"
+    },
+    ".vcs": {
+        "type": "text/calendar",
+        "comment": "VCS/ICS calendar"
+    },
+    ".ics": {
+        "type": "text/calendar",
+        "comment": "VCS/ICS calendar"
+    },
+    ".idl": {
+        "type": "text/x-idl",
+        "comment": "IDL document"
+    },
+    ".h": {
+        "type": "text/x-chdr",
+        "comment": "C header"
+    },
+    ".dtb": {
+        "type": "text/x-devicetree-binary",
+        "comment": "Flattened Devicetree"
+    },
+    ".hh": {
+        "type": "text/x-c++hdr",
+        "comment": "C++ header"
+    },
+    ".hp": {
+        "type": "text/x-c++hdr",
+        "comment": "C++ header"
+    },
+    ".hpp": {
+        "type": "text/x-c++hdr",
+        "comment": "C++ header"
+    },
+    ".h++": {
+        "type": "text/x-c++hdr",
+        "comment": "C++ header"
+    },
+    ".hxx": {
+        "type": "text/x-c++hdr",
+        "comment": "C++ header"
+    },
+    ".ml": {
+        "type": "text/x-ocaml",
+        "comment": "OCaml source code"
+    },
+    ".mli": {
+        "type": "text/x-ocaml",
+        "comment": "OCaml source code"
+    },
+    ".adb": {
+        "type": "text/x-adasrc",
+        "comment": "Ada source code"
+    },
+    ".ads": {
+        "type": "text/x-adasrc",
+        "comment": "Ada source code"
+    },
+    ".sylk": {
+        "type": "text/spreadsheet",
+        "comment": "Spreadsheet interchange document"
+    },
+    ".slk": {
+        "type": "text/spreadsheet",
+        "comment": "Spreadsheet interchange document"
+    },
+    ".fo": {
+        "type": "text/x-xslfo",
+        "comment": "XSL FO file"
+    },
+    ".xslfo": {
+        "type": "text/x-xslfo",
+        "comment": "XSL FO file"
+    },
+    ".vhdl": {
+        "type": "text/x-vhdl",
+        "comment": "VHDL source code"
+    },
+    ".ooc": {
+        "type": "text/x-ooc",
+        "comment": "OOC source code"
+    },
+    ".sv": {
+        "type": "text/x-svsrc",
+        "comment": "SystemVerilog source code"
+    },
+    ".qml": {
+        "type": "text/x-qml",
+        "comment": "Qt Markup Language file"
+    },
+    ".qmltypes": {
+        "type": "text/x-qml",
+        "comment": "Qt Markup Language file"
+    },
+    ".qmlproject": {
+        "type": "text/x-qml",
+        "comment": "Qt Markup Language file"
+    },
+    ".vcard": {
+        "type": "text/vcard",
+        "comment": "Electronic business card"
+    },
+    ".vcf": {
+        "type": "text/vcard",
+        "comment": "Electronic business card"
+    },
+    ".vct": {
+        "type": "text/vcard",
+        "comment": "Electronic business card"
+    },
+    ".gcrd": {
+        "type": "text/vcard",
+        "comment": "Electronic business card"
+    },
+    ".scss": {
+        "type": "text/x-scss",
+        "comment": "SCSS pre-processor file"
+    },
+    ".gx": {
+        "type": "text/x-gcode-gx",
+        "comment": "G-code Extended file"
+    },
+    ".wmls": {
+        "type": "text/vnd.wap.wmlscript",
+        "comment": "WMLScript program"
+    },
+    ".opml": {
+        "type": "text/x-opml+xml",
+        "comment": "OPML syndication feed"
+    },
+    ".v": {
+        "type": "text/x-verilog",
+        "comment": "Verilog source code"
+    },
+    ".po": {
+        "type": "text/x-gettext-translation",
+        "comment": "Translation file"
+    },
+    ".me": {
+        "type": "text/x-troff-me",
+        "comment": "Troff ME input document"
+    },
+    ".mrml": {
+        "type": "text/x-mrml",
+        "comment": "MRML playlist"
+    },
+    ".mrl": {
+        "type": "text/x-mrml",
+        "comment": "MRML playlist"
+    },
+    ".mc2": {
+        "type": "text/vnd.senx.warpscript",
+        "comment": "WarpScript source code"
+    },
+    ".ocl": {
+        "type": "text/x-ocl",
+        "comment": "OCL file"
+    },
+    ".go": {
+        "type": "text/x-go",
+        "comment": "Go source code"
+    },
+    ".gradle": {
+        "type": "text/x-gradle",
+        "comment": "Gradle script"
+    },
+    ".java": {
+        "type": "text/x-java",
+        "comment": "Java source code"
+    },
+    ".vtt": {
+        "type": "text/vtt",
+        "comment": "WebVTT subtitles"
+    },
+    ".ttl": {
+        "type": "text/turtle",
+        "comment": "Turtle document"
+    },
+    ".uue": {
+        "type": "text/x-uuencode",
+        "comment": "uuencoded file"
+    },
+    ".rs": {
+        "type": "text/rust",
+        "comment": "Rust source code"
+    },
+    ".vbs": {
+        "type": "text/vbscript",
+        "comment": "VBScript program"
+    },
+    ".rej": {
+        "type": "text/x-reject",
+        "comment": "Rejected patch"
+    },
+    ".groovy": {
+        "type": "text/x-groovy",
+        "comment": "Groovy source code"
+    },
+    ".gvy": {
+        "type": "text/x-groovy",
+        "comment": "Groovy source code"
+    },
+    ".gy": {
+        "type": "text/x-groovy",
+        "comment": "Groovy source code"
+    },
+    ".gsh": {
+        "type": "text/x-groovy",
+        "comment": "Groovy source code"
+    },
+    ".gcode": {
+        "type": "text/x.gcode",
+        "comment": "G-code file"
+    },
+    ".manifest": {
+        "type": "text/cache-manifest",
+        "comment": "Web application cache file"
+    },
+    ".cpp": {
+        "type": "text/x-c++src",
+        "comment": "C++ source code"
+    },
+    ".cxx": {
+        "type": "text/x-c++src",
+        "comment": "C++ source code"
+    },
+    ".cc": {
+        "type": "text/x-c++src",
+        "comment": "C++ source code"
+    },
+    ".C": {
+        "type": "text/x-c++src",
+        "comment": "C++ source code"
+    },
+    ".c++": {
+        "type": "text/x-c++src",
+        "comment": "C++ source code"
+    },
+    ".scala": {
+        "type": "text/x-scala",
+        "comment": "Scala source code"
+    },
+    ".sc": {
+        "type": "text/x-scala",
+        "comment": "Scala source code"
+    }
+}
