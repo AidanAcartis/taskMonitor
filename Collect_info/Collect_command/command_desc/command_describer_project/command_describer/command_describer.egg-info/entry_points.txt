@@ -1,2 +1,0 @@
-[console_scripts]
-cmddesc = command_describer.main:main
