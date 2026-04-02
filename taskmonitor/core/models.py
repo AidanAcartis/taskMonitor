@@ -12,9 +12,12 @@ class WindowEvent:
 
 @dataclass
 class FileEvent:
-    timestamp: datetime
-    file_path: str
-    event_type: str
+    date: str
+    start_time: str
+    end_time: str
+    duration_min: float
+    entry_type: str
+    title: str
 
 
 @dataclass
