@@ -1,0 +1,1 @@
+"""taskmonitor.gui — interface graphique PyQt6"""

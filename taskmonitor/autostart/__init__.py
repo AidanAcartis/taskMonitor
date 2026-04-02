@@ -1,0 +1,1 @@
+"""taskmonitor.autostart — Installation of shortcuts and autostart"""
