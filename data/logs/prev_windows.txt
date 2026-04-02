@@ -1,6 +1,6 @@
 0x0260000a -1 aidan-Lenovo-N50-70 Desktop Icons 1
 0x0280001c  0 aidan-Lenovo-N50-70 Envoi READme séparé - Google Chrome
-0x00a00004  0 aidan-Lenovo-N50-70 Home
+0x00a00004  0 aidan-Lenovo-N50-70 taskMonitor
 0x0340000a  0 aidan-Lenovo-N50-70 aidan@aidan-Lenovo-N50-70: ~/Documents/Projects/Visualization/taskMonitor
 0x0360000b  0 aidan-Lenovo-N50-70 Preview CONSIDERATION_DE_CAS.md - Visual Studio Code
-0x03600030  0 aidan-Lenovo-N50-70 window_changes.log - taskMonitor - Visual Studio Code
+0x03600030  0 aidan-Lenovo-N50-70 Opened_file.txt - taskMonitor - Visual Studio Code
