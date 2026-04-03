@@ -33,3 +33,5 @@ DATA_COMMAND_FILE = COMMAND_LOG_DIR / "data_command.txt"
 # ─────────────────────────────────────────────
 PROCESSED_DIR = DATA_DIR / "processed"
 EXPORTS_DIR = DATA_DIR / "exports"
+
+DATA_COLLECT_FILE = PROCESSED_DIR / "data_collect.txt"

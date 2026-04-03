@@ -1,0 +1,63 @@
+2026-04-02	22:33:44	22:59:37	126.92	file-directory-App	Envoi READme séparé - Google Chrome
+2026-04-02	22:59:01	22:59:25	28.52	file-directory-App	duration_file.py - taskMonitor - Visual Studio Code
+2026-04-02	22:57:58	22:58:28	24.45	file-directory-App	file_collector.sh - taskMonitor - Visual Studio Code
+2026-04-02	22:59:55	23:00:10	21.43	file-directory-App	file_collector.py - taskMonitor - Visual Studio Code
+2026-04-02	22:25:12	22:28:24	21.13	file-directory-App	TEST.py - taskMonitor - Visual Studio Code
+2026-04-02	22:16:42	22:17:02	7.38	file-directory-App	collect_file_script.sh - taskMonitor - Visual Studio Code
+2026-04-02	21:02:17	21:02:41	6.03	file-directory-App	logger.py - taskMonitor - Visual Studio Code
+2026-04-02	20:59:15	20:59:21	5.52	file-directory-App	extract_window_host_events.sh - taskMonitor - Visual Studio Code
+2026-04-02	22:58:32	22:58:57	4.83	file-directory-App	get_collect_file.py - taskMonitor - Visual Studio Code
+2026-04-02	21:32:10	21:32:23	4.65	file-directory-App	log_extractor.sh - taskMonitor - Visual Studio Code
+2026-04-02	21:14:56	21:15:16	2.40	file-directory-App	config.py - taskMonitor - Visual Studio Code
+2026-04-02	21:12:55	21:13:35	2.38	file-directory-App	log_extractor.py - taskMonitor - Visual Studio Code
+2026-04-02	22:03:45	22:03:47	2.37	file-directory-App	google translate - Recherche Google - Google Chrome
+2026-04-02	20:44:11	20:46:10	1.98	file-directory-App	window_changes.log - taskMonitor - Visual Studio Code
+2026-04-02	21:15:16	21:16:33	1.97	file-directory-App	models.py - taskMonitor - Visual Studio Code
+2026-04-02	20:43:36	20:43:54	1.97	file-directory-App	__init__.py - taskMonitor - Visual Studio Code
+2026-04-02	20:42:53	20:44:43	1.83	file-directory-App	GitHub Authentication - Sign In - Google Chrome
+2026-04-02	21:49:36	21:49:47	1.77	file-directory-App	Opened_file.txt - taskMonitor - Visual Studio Code
+2026-04-02	22:31:59	22:33:32	1.55	file-directory-App	(8) Black Bird Season 1 Episode 6 Best Acting in a TV show - YouTube - Google Chrome
+2026-04-02	20:57:50	20:59:00	1.17	file-directory-App	window_monitor.sh - taskMonitor - Visual Studio Code
+2026-04-02	22:02:47	22:03:45	0.97	file-directory-App	Hifika Mija avoko production - Recherche Google - Google Chrome
+2026-04-02	22:30:15	22:31:10	0.92	file-directory-App	tueur en serie organise - Recherche Google - Google Chrome
+2026-04-02	20:41:30	20:42:11	0.68	file-directory-App	Boîte de réception (37) - ralaikotonadia@gmail.com - Gmail - Google Chrome
+2026-04-02	22:02:02	22:02:32	0.50	file-directory-App	Hifika Mija - Recherche Google - Google Chrome
+2026-04-02	22:29:49	22:30:15	0.43	file-directory-App	Hannibla lecter - Recherche Google - Google Chrome
+2026-04-02	20:43:54	20:44:11	0.28	file-directory-App	pyproject.toml - taskMonitor - Visual Studio Code
+2026-04-02	22:29:41	22:29:49	0.28	file-directory-App	New Tab - Google Chrome
+2026-04-02	20:42:15	20:42:31	0.27	file-directory-App	Connexion : comptes Google - Google Chrome
+2026-04-02	22:02:32	22:02:47	0.25	file-directory-App	Hifika Mija film gasy - Recherche Google - Google Chrome
+2026-04-02	20:51:11	20:51:17	0.23	directory/App	taskMonitor
+2026-04-02	21:49:30	21:49:36	0.23	file-directory-App	Closed_file.txt - taskMonitor - Visual Studio Code
+2026-04-02	22:33:32	22:33:44	0.20	file-directory-App	(8) Taylor Swift - Elizabeth Taylor (Clip officiel) - YouTube - Google Chrome
+2026-04-02	22:31:46	22:31:56	0.17	file-directory-App	(8) Bird TVshow - YouTube - Google Chrome
+2026-04-02	22:31:56	22:31:59	0.15	file-directory-App	(8) Saweetie & GALXARA - Sway With Me (from Birds of Prey: The Album) [Official Audio] - YouTube - Google Chrome
+2026-04-02	20:42:45	20:42:47	0.10	file-directory-App	GitHub · Where software is built - Google Chrome
+2026-04-02	20:42:39	20:42:45	0.10	file-directory-App	[GitHub] Please verify your device - ralaikotonadia@gmail.com - Gmail - Google Chrome
+2026-04-02	22:31:34	22:31:40	0.10	file-directory-App	Saweetie & GALXARA - Sway With Me (from Birds of Prey: The Album) [Official Audio] - YouTube - Google Chrome
+2026-04-02	20:41:26	20:41:30	0.07	file-directory-App	The Strange Math That Predicts (Almost) Anything - YouTube - Google Chrome
+2026-04-02	20:42:35	20:42:39	0.07	file-directory-App	Boîte de réception (38) - ralaikotonadia@gmail.com - Gmail - Google Chrome
+2026-04-02	20:42:47	20:42:51	0.07	file-directory-App	Verify Session - Google Chrome
+2026-04-02	22:03:49	22:03:51	0.07	file-directory-App	taskmonitor_arborescence.html - Google Chrome
+2026-04-02	20:51:17	20:51:19	0.07	directory/App	taskmonitor
+2026-04-02	21:02:15	21:02:17	0.07	file-directory-App	storage.py - taskMonitor - Visual Studio Code
+2026-04-02	21:20:16	21:20:20	0.07	file-directory-App	parser.py - taskMonitor - Visual Studio Code
+2026-04-02	21:39:50	21:39:54	0.07	directory/App	The Wireshark Network Analyzer
+2026-04-02	20:41:54	20:41:56	0.03	directory/App	Visual Studio Code
+2026-04-02	20:42:11	20:42:13	0.03	file-directory-App	Untitled - Google Chrome
+2026-04-02	20:42:13	20:42:15	0.03	file-directory-App	Redirecting to Google - Google Chrome
+2026-04-02	20:42:51	20:42:53	0.03	file-directory-App	OAuth application authorized - Google Chrome
+2026-04-02	20:51:03	20:51:05	0.03	directory/App	core
+2026-04-02	21:20:04	21:20:06	0.03	file-directory-App	requirements.txt - taskMonitor - Visual Studio Code
+2026-04-02	21:20:22	21:20:24	0.03	file-directory-App	intention_predictor.py - taskMonitor - Visual Studio Code
+2026-04-02	21:20:28	21:20:30	0.03	file-directory-App	taskmonitor.desktop - taskMonitor - Visual Studio Code
+2026-04-02	22:03:47	22:03:49	0.03	file-directory-App	software development in python course - Recherche Google - Google Chrome
+2026-04-02	22:15:51	22:15:41	-0.30	directory/App	Desktop Icons 1
+2026-04-03	13:04:16	13:04:18	0.033	Commande	clear
+2026-04-03	13:04:18	13:04:20	0.033	Commande	python3
+2026-04-03	13:19:48	13:19:50	0.033	Commande	clear
+2026-04-03	13:19:51	13:19:53	0.033	Commande	python3
+2026-04-03	13:21:03	13:21:05	0.033	Commande	clear
+2026-04-03	13:21:16	13:21:18	0.033	Commande	cat ~/.bash_history
+2026-04-03	13:21:19	13:21:21	0.033	Commande	clear
+2026-04-03	13:21:49	13:21:51	0.033	Commande	python3 Collect_Data_command_Script.py
