@@ -23,6 +23,12 @@ COLLECTED_FILE = DATA_FILE_DIR / "collected_file.txt"
 DATA_FILE_TXT = DATA_FILE_DIR / "data_file.txt"
 
 # ─────────────────────────────────────────────
+# COMMAND LOG
+# ─────────────────────────────────────────────
+COMMAND_LOG_DIR = DATA_DIR / "command_log"
+DATA_COMMAND_FILE = COMMAND_LOG_DIR / "data_command.txt"
+
+# ─────────────────────────────────────────────
 # FUTURE PIPELINE
 # ─────────────────────────────────────────────
 PROCESSED_DIR = DATA_DIR / "processed"
