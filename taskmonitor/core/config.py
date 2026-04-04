@@ -1,6 +1,7 @@
 from pathlib import Path
 import torch
 import torch.nn as nn
+import numpy as np
 
 # ─────────────────────────────────────────────
 # BASE
@@ -63,4 +64,33 @@ INFERENCE_CONFIG = {
     "length_penalty": 1.0,
     "max_new_tokens": 50,
     "early_stopping": True
+}
+
+# ─────────────────────────────────────────────
+# CLUSTERING
+# ─────────────────────────────────────────────
+CLUSTER_MODEL_DIR = MODELS_DIR / "final_model"
+
+CLUSTER_OUTPUT_FILE = EXPORTS_DIR / "clusters_output.txt"
+
+CLUSTER_CONFIG = {
+    "random_seed": 42,
+    "thresholds": np.arange(0.45, 0.85, 0.01),
+
+    # Reclustering
+    "cohesion_threshold": 0.34,
+    "size_threshold": 10,
+
+    # Final reclustering
+    "cohesion_final": 0.55,
+    "cohesion_split_max": 0.45,
+
+    # Singleton
+    "singleton_ratio": 0.10,
+
+    # Post-processing
+    "postproc_split_min": 0.40,
+    "postproc_merge_sim": 0.55,
+    "postproc_reassign_margin": 0.05,
+    "singleton_merge_sim": 0.45
 }

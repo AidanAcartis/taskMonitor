@@ -1,0 +1,136 @@
+"""
+utils.py
+--------
+Fonctions utilitaires pour :
+- Chargement des données
+- Normalisation des tâches
+- Déduplication
+- Shuffle contrôlé
+- Sauvegarde du rapport final
+"""
+
+import pandas as pd
+import random
+from pathlib import Path
+
+
+# ─────────────────────────────────────────────
+# NORMALISATION
+# ─────────────────────────────────────────────
+def normalize_task(text: str) -> str:
+    """
+    Nettoyage minimal d'une description de tâche.
+    """
+    return text.replace('\\"', '').replace('"', '').lower().strip()
+
+
+# ─────────────────────────────────────────────
+# LOAD + PREPARE (ÉTAPES 1 & 2)
+# ─────────────────────────────────────────────
+def load_and_prepare_tasks(csv_path: Path, config: dict) -> list[str]:
+    """
+    Pipeline complet :
+    1. Chargement CSV
+    2. Normalisation
+    3. Filtrage (vides)
+    4. Déduplication
+    5. Shuffle reproductible
+    """
+
+    print("=" * 60)
+    print("CLUSTERING - DATA PREPARATION")
+    print("=" * 60)
+
+    # ───────────────
+    # Chargement
+    # ───────────────
+    print(f"\n[1] Chargement de {csv_path} ...")
+
+    df = pd.read_csv(csv_path)
+    df.columns = df.columns.str.strip().str.lower()
+
+    if "description" not in df.columns:
+        raise ValueError("Colonne 'description' introuvable dans le CSV.")
+
+    # ───────────────
+    # Normalisation
+    # ───────────────
+    tasks_raw = df["description"].fillna("").astype(str).tolist()
+    tasks_raw = [normalize_task(t) for t in tasks_raw if t]
+
+    print(f"    {len(tasks_raw)} descriptions chargées.")
+
+    # ───────────────
+    # Déduplication
+    # ───────────────
+    seen = set()
+    tasks_unique = [t for t in tasks_raw if not (t in seen or seen.add(t))]
+
+    print(f"    {len(tasks_unique)} descriptions après déduplication.")
+
+    # ───────────────
+    # Shuffle
+    # ───────────────
+    print("\n[2] Shuffle (seed={}) ...".format(config["random_seed"]))
+
+    random.seed(config["random_seed"])
+    random.shuffle(tasks_unique)
+
+    return tasks_unique
+
+
+# ─────────────────────────────────────────────
+# RAPPORT FINAL
+# ─────────────────────────────────────────────
+def save_report(groups: dict, tasks: list, dist, metrics: dict, output_path: Path):
+    """
+    Génère le rapport texte final des clusters.
+    """
+
+    print(f"\n[10] Écriture du rapport dans {output_path} ...")
+
+    def compute_cohesion(idxs):
+        if len(idxs) < 2:
+            return 0.0
+        sub = dist[np.ix_(idxs, idxs)]
+        return sub[np.triu_indices_from(sub, 1)].mean()
+
+    import numpy as np
+
+    lines = []
+    lines.append("=" * 60)
+    lines.append("RAPPORT DE CLUSTERING DES TÂCHES")
+    lines.append("=" * 60)
+
+    lines.append(f"Tâches totales          : {len(tasks)}")
+    lines.append(f"Nombre de clusters      : {metrics['n_clusters']}")
+    lines.append(f"Silhouette finale       : {metrics['silhouette']:.3f}")
+    lines.append(f"Cohésion moyenne finale : {metrics['cohesion']:.3f}")
+    lines.append("")
+
+    # mapping rapide
+    task_to_index = {t: i for i, t in enumerate(tasks)}
+
+    for cid, items in groups.items():
+        idxs = [task_to_index[t] for t in items]
+        coh = compute_cohesion(idxs)
+
+        lines.append("─" * 60)
+        lines.append(f"Cluster {cid} | {len(items)} tâche(s) | cohésion = {coh:.3f}")
+        lines.append("─" * 60)
+
+        for t in items:
+            lines.append(f"  • {t}")
+
+        lines.append("")
+
+    lines.append("=" * 60)
+    lines.append("FIN DU RAPPORT")
+    lines.append("=" * 60)
+
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+
+    with open(output_path, "w", encoding="utf-8") as f:
+        f.write("\n".join(lines))
+
+    print(f"\n✅ Rapport sauvegardé : {output_path}")
