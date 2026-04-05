@@ -115,7 +115,7 @@ class ClusterPipeline:
         # ── Étape 14 : Post-processing avancé
         final_groups = post.postprocess(final_groups)
 
-        final_groups = post.merge_final_singletons(final_groups)
+        final_groups, autres_cid = post.merge_final_singletons(final_groups)
 
         # ── Metrics APRÈS post-processing
         metrics_after = post.compute_metrics(
@@ -126,12 +126,11 @@ class ClusterPipeline:
         # ─────────────────────────────────────────
         # EXPORT FINAL
         # ─────────────────────────────────────────
-        save_report(
+        post.export(
             groups=final_groups,
-            tasks=tasks,
-            dist=dist_matrix,
             metrics=metrics_after,
-            output_path=CLUSTER_OUTPUT_FILE
+            output_file=CLUSTER_OUTPUT_FILE,
+            autres_cid=autres_cid
         )
 
         print("\n" + "=" * 60)

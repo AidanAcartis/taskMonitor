@@ -1,218 +1,165 @@
+#!/usr/bin/env python3
 """
-processing/intention_predictor.py
-==================================
-Génère une "global task intention" pour chaque cluster.
-Refactorisation de PREDICT_CLUSTERS_INTENTION.py.
+Prédicteur d'intentions globales pour chaque cluster
 """
 
-import json
 import re
-from pathlib import Path
-
 import torch
 from transformers import T5ForConditionalGeneration, T5TokenizerFast
+from pathlib import Path
+import json
 
-from taskmonitor.core import config, storage
-from taskmonitor.core.models import Cluster
-from taskmonitor.core.logger import get_logger
+from core.config import INTENTION_CONFIG, INTENTION_MAX_INPUT_LENGTH, INTENTION_VERB_MAP_FILE
 
-log = get_logger(__name__)
+# ── LOAD VERB MAP ─────────────────────────────────────────
+with open(INTENTION_VERB_MAP_FILE, encoding="utf-8") as f:
+    VERB_MAP = json.load(f)
+VERB_MAP = {k.lower(): v.lower() for k, v in VERB_MAP.items()}
 
+# ── STOP WORDS et verbes communs
+STOP_WORDS = {
+    "of", "to", "for", "with", "in", "on", "at", "from",
+    "by", "about", "as", "into", "after", "before"
+}
 
-class IntentionPredictor:
-    """Génère une intention globale de tâche pour chaque cluster."""
+COMMON_VERBS = {
+    "create", "run", "execute", "install", "remove", "update",
+    "send", "open", "read", "write", "build", "compile",
+    "check", "verify", "record", "display", "launch",
+    "render", "provide", "handle", "manage", "analyze",
+    "list", "clear", "exit", "play", "search"
+}
 
-    def __init__(self):
-        self._model     = None
-        self._tokenizer = None
-        self._device    = None
-        self._verb_map: dict[str, str] = {}
+# ── FORMAT PROMPT ─────────────────────────────────────────
+def format_prompt(items):
+    items_text = "\n".join(f"  {i+1}. {item}" for i, item in enumerate(items))
+    return (
+        "Based on the following list of task items, "
+        "generate a concise global task intention in one sentence:\n"
+        f"{items_text}"
+    )
 
-    def _ensure_model(self) -> bool:
-        if self._model is not None:
-            return True
+# ── LOAD MODEL ────────────────────────────────────────────
+def load_model(model_path: str):
+    device = "cuda" if torch.cuda.is_available() else "cpu"
+    tokenizer = T5TokenizerFast.from_pretrained(model_path)
+    model = T5ForConditionalGeneration.from_pretrained(
+        model_path,
+        torch_dtype=torch.bfloat16 if device == "cuda" else torch.float32,
+        device_map="auto" if device == "cuda" else None,
+    )
+    if device == "cpu":
+        model.to(device)
+    model.eval()
+    return model, tokenizer, device
 
-        model_dir = config.MODEL_INTENTION
-        if not model_dir.exists():
-            log.error(f"Modèle intention introuvable : {model_dir}")
-            return False
+# ── PREDICTION ───────────────────────────────────────────
+def predict(model, tokenizer, device, items):
+    if not items:
+        return "(cluster vide — pas de prediction)"
+    prompt = format_prompt(items)
+    inputs = tokenizer(
+        prompt,
+        return_tensors="pt",
+        max_length=INTENTION_MAX_INPUT_LENGTH,
+        truncation=True,
+    ).to(device)
+    with torch.no_grad():
+        outputs = model.generate(**inputs, **INTENTION_CONFIG)
+    return tokenizer.decode(outputs[0], skip_special_tokens=True)
 
-        verb_map_path = config.DICT_VERB_MAP
-        if verb_map_path.exists():
-            with verb_map_path.open(encoding="utf-8") as f:
-                self._verb_map = {k.lower(): v.lower() for k, v in json.load(f).items()}
+# ── CLEAN & DETECT VERB ───────────────────────────────────
+def clean_segment(seg):
+    seg = seg.lower().strip()
+    seg = re.sub(
+        r"(command used to|used to|used for|used in|opened with|written in|executed in)",
+        "",
+        seg
+    )
+    return seg.strip()
 
-        self._device = "cuda" if torch.cuda.is_available() else "cpu"
-        log.info(f"Chargement modèle intention : {model_dir}")
-        self._tokenizer = T5TokenizerFast.from_pretrained(str(model_dir))
-        self._model = T5ForConditionalGeneration.from_pretrained(
-            str(model_dir),
-            torch_dtype=torch.bfloat16 if self._device == "cuda" else torch.float32,
-            device_map="auto" if self._device == "cuda" else None,
-        )
-        if self._device == "cpu":
-            self._model.to(self._device)
-        self._model.eval()
-        log.info(f"Modèle intention chargé (device: {self._device})")
-        return True
+def detect_verb(word):
+    if word in VERB_MAP:
+        return VERB_MAP[word]
+    if word in COMMON_VERBS:
+        return word
+    return None
 
-    def _predict(self, items: list[str]) -> str:
-        if not items:
-            return "(cluster vide)"
-        items_text = "\n".join(f"  {i+1}. {item}" for i, item in enumerate(items))
-        prompt = (
-            "Based on the following list of task items, "
-            "generate a concise global task intention in one sentence:\n"
-            f"{items_text}"
-        )
-        inputs = self._tokenizer(
-            prompt, return_tensors="pt",
-            max_length=448, truncation=True
-        ).to(self._device)
+# ── EXTRACTION ACTION ─────────────────────────────────────
+def extract_action(item):
+    parts = [p.strip() for p in item.split(",") if p.strip()]
 
-        with torch.no_grad():
-            outputs = self._model.generate(**inputs, **config.INFERENCE_INTENTION_CONFIG)
-        return self._tokenizer.decode(outputs[0], skip_special_tokens=True)
+    INVALID_STARTS = {"text", "data", "file", "application", "plain", "script", "document"}
 
-    def _simple_intention(self, item: str) -> str:
-        """Pour les singletons : génère une intention simple sans modèle."""
-        COMMON_VERBS = {
-            "create", "run", "execute", "install", "remove", "update",
-            "send", "open", "read", "write", "build", "compile",
-            "check", "verify", "record", "display", "launch",
-            "render", "provide", "handle", "manage", "analyze",
-            "list", "clear", "exit", "play", "search", "activate",
-        }
-        STOP_WORDS = {"of", "to", "for", "with", "in", "on", "at", "from",
-                      "by", "about", "as", "into", "after", "before"}
+    # Priorité : segments contenant "used to"
+    for part in parts:
+        if "used to" in part:
+            segment = clean_segment(part)
+            words = segment.split()
+            if not words: continue
+            if words[0] in INVALID_STARTS: continue
+            verb = detect_verb(words[0])
+            if not verb: continue
+            obj_words = []
+            for w in words[1:]:
+                if w in STOP_WORDS: break
+                obj_words.append(w)
+            return verb + (" " + " ".join(obj_words) if obj_words else "")
 
-        obj = item.split(",")[0].strip()
-        item_lower = item.lower()
+    # Fallback
+    for part in reversed(parts):
+        segment = clean_segment(part)
+        words = segment.split()
+        if not words: continue
+        if words[0] in INVALID_STARTS: continue
+        verb = detect_verb(words[0])
+        if not verb: continue
+        obj_words = []
+        for w in words[1:]:
+            if w in STOP_WORDS: break
+            obj_words.append(w)
+        return verb + (" " + " ".join(obj_words) if obj_words else "")
 
-        if "file" in item_lower and "opened with" in item_lower:
-            m = re.search(r"opened with ([^,]+)", item_lower)
-            if m:
-                return f"open {obj} with {m.group(1).strip().title()}"
+    return None
 
-        # Chercher un verbe dans "used to <verb> ..."
-        for part in item.split(","):
-            if "used to" in part.lower():
-                segment = re.sub(
-                    r"(command used to|used to|used for|opened with|executed in)", "",
-                    part.lower()
-                ).strip()
-                words = segment.split()
-                if words:
-                    verb = words[0]
-                    if verb in self._verb_map:
-                        verb = self._verb_map[verb]
-                    if verb in COMMON_VERBS:
-                        obj_words = []
-                        for w in words[1:]:
-                            if w in STOP_WORDS:
-                                break
-                            obj_words.append(w)
-                        return verb + (" " + " ".join(obj_words) if obj_words else "")
+# ── GENERATE SIMPLE INTENTION ────────────────────────────
+def generate_simple_intention(item: str) -> str:
+    item_lower = item.lower()
+    obj = item.split(",")[0].strip()
+    obj_lower = obj.lower()
 
-        if "application" in item_lower:
-            return f"use {obj.lower()}"
-        if "file" in item_lower:
-            return f"open {obj.lower()}"
-        if "command" in item_lower:
-            return f"run {obj.lower()}"
-        return obj.lower()
+    if "file" in item_lower and "opened with" in item_lower:
+        match = re.search(r"opened with ([^,]+)", item_lower)
+        if match:
+            app = match.group(1).strip().title()
+            return f"open {obj} with {app}"
 
-    def predict(self, date_str: str) -> list[Cluster]:
-        """
-        Lit clusters_output.txt, génère les intentions, sauvegarde et retourne les clusters.
+    action = extract_action(item)
 
-        Args:
-            date_str: date au format "YYYY-MM-DD"
+    INVALID_ACTIONS = {
+        "text files", "plain text", "data related", "file",
+        "application log", "script", "document"
+    }
 
-        Returns:
-            Liste de Cluster avec intentions remplies
-        """
-        clusters_txt = storage.read_clusters_output(date_str)
-        if not clusters_txt:
-            log.error(f"clusters_output.txt absent pour {date_str}")
-            return []
+    if action and action.lower() in INVALID_ACTIONS:
+        action = None
 
-        clusters = self._parse_clusters(clusters_txt)
-        if not clusters:
-            log.warning("Aucun cluster trouvé dans le rapport")
-            return []
+    if action:
+        words = action.split()
+        if len(words) == 1:
+            verb = words[0]
+            if verb == obj_lower:
+                return verb
+            return f"{verb} {obj_lower}"
+        return action
 
-        # Charger le modèle seulement si nécessaire (clusters non-singleton)
-        has_multi = any(not c.is_singleton for c in clusters)
-        if has_multi and not self._ensure_model():
-            log.error("Modèle intention non disponible")
-            for c in clusters:
-                c.intention = self._simple_intention(c.items[0]) if c.items else ""
-            storage.write_intentions(date_str, clusters)
-            return clusters
+    if "application" in item_lower:
+        if "desktop" in item_lower:
+            return f"manage {obj_lower}"
+        return f"use {obj_lower}"
+    if "file" in item_lower:
+        return f"open {obj_lower}"
+    if "command" in item_lower:
+        return f"run {obj_lower}"
 
-        for i, c in enumerate(clusters):
-            if c.is_singleton:
-                c.intention = self._simple_intention(c.items[0]) if c.items else ""
-            else:
-                c.intention = self._predict(c.items)
-            log.info(f"[{i+1}/{len(clusters)}] {c.label} → {c.intention}")
-
-        storage.write_intentions(date_str, clusters)
-        log.info(f"Intentions sauvegardées pour {date_str}")
-        return clusters
-
-    @staticmethod
-    def _parse_clusters(text: str) -> list[Cluster]:
-        """Parse clusters_output.txt → liste de Cluster."""
-        clusters: list[Cluster] = []
-        current: Cluster | None = None
-        cid = 0
-
-        header_re = re.compile(
-            r"^(Cluster\s+\d+|Autres\s+petites\s+t[aâ]ches)"
-            r"\s*\|\s*(\d+)\s+t[aâ]che\(s\)"
-            r"\s*\|\s*coh[eé]sion\s*=\s*([\d.]+)",
-            re.IGNORECASE,
-        )
-        item_re = re.compile(r"^\s*[•\-\*]\s+(.+)$")
-
-        for line in text.splitlines():
-            m = header_re.search(line)
-            if m:
-                if current:
-                    clusters.append(current)
-                current = Cluster(
-                    cluster_id=cid,
-                    label=m.group(1).strip(),
-                    num_tasks=int(m.group(2)),
-                    cohesion=float(m.group(3)),
-                )
-                cid += 1
-                continue
-            if current:
-                m2 = item_re.match(line)
-                if m2:
-                    current.items.append(m2.group(1).strip())
-
-        if current:
-            clusters.append(current)
-
-        # Éclater les "Autres petites tâches" en singletons
-        expanded: list[Cluster] = []
-        for c in clusters:
-            if re.search(r"autres\s+petites\s+t[aâ]ches", c.label, re.IGNORECASE):
-                for idx, item in enumerate(c.items):
-                    expanded.append(Cluster(
-                        cluster_id=cid,
-                        label=f"Autres petites tâches — singleton {idx + 1}",
-                        num_tasks=1,
-                        cohesion=c.cohesion,
-                        items=[item],
-                        is_singleton=True,
-                    ))
-                    cid += 1
-            else:
-                expanded.append(c)
-
-        return expanded
+    return obj_lower

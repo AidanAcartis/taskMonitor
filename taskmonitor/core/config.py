@@ -94,3 +94,25 @@ CLUSTER_CONFIG = {
     "postproc_reassign_margin": 0.05,
     "singleton_merge_sim": 0.45
 }
+
+# ─────────────────────────────────────────────
+# PREDICT_INTENTION
+# ─────────────────────────────────────────────
+# Hyperparamètres d'inférence pour le modèle Flan-T5 utilisé pour prédire les intentions
+INTENTION_CONFIG = {
+    "num_beams":            4,
+    "no_repeat_ngram_size": 4,
+    "repetition_penalty":   1.3,
+    "max_new_tokens":       48,
+    "early_stopping":       True,
+}
+
+# Longueur max des tokens d'entrée (identique à l'entraînement)
+INTENTION_MAX_INPUT_LENGTH = 448
+
+# Fichiers
+INTENTION_VERB_MAP_FILE = BASE_DIR / "taskmonitor" / "dicts" / "VERB_MAP_EXTENDED.json"
+INTENTION_OUTPUT_TXT     = EXPORTS_DIR / "clusters_with_intentions.txt"
+INTENTION_OUTPUT_JSONL   = EXPORTS_DIR / "clusters_with_intentions.jsonl"
+
+INTENTION_MODEL_DIR = MODELS_DIR / "final_Model_V3" / "final_model"
