@@ -9,7 +9,7 @@ from transformers import T5ForConditionalGeneration, T5TokenizerFast
 from pathlib import Path
 import json
 
-from core.config import INTENTION_CONFIG, INTENTION_MAX_INPUT_LENGTH, INTENTION_VERB_MAP_FILE
+from taskmonitor.core.config import INTENTION_CONFIG, INTENTION_MAX_INPUT_LENGTH, INTENTION_VERB_MAP_FILE
 
 # ── LOAD VERB MAP ─────────────────────────────────────────
 with open(INTENTION_VERB_MAP_FILE, encoding="utf-8") as f:
