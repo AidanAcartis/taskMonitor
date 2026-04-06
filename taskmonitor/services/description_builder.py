@@ -23,7 +23,8 @@ def load_json(name):
             _CACHE[name] = json.load(f)
     return _CACHE[name]
 
-TOOLS = load_json("TOOLS.json")
+TOOLS_RAW = load_json("TOOLS.json")
+TOOLS = {k.lower(): v for k, v in TOOLS_RAW.items()}
 FILE_EXTENSION = load_json("FILE_EXTENSION.json")
 MIME_MAP = load_json("mime_map.json")
 
@@ -183,7 +184,8 @@ def build_description(row: dict, file_desc_map: dict) -> str:
             return f"{app}, application, used to {verb} {title}"
         
         # Description bonus via TOOLS si pas de titre
-        app_desc = TOOLS.get(app, "application")
+        app_clean = str(row.get("app", "")).strip().lower()
+        app_desc = TOOLS.get(app_clean, "application")
         return f"{app}, {app_desc}, used by the user"
 
     # ── 4. TYPE: DIRECTORY ───────────────────────────

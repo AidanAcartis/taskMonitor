@@ -28,32 +28,32 @@ Cluster 1  |  3 tache(s)  |  cohesion = 0.308
     - google chrome, application, used to watch (10) chinchilla - little girl gone (lyrics) - youtube
 
 ─────────────────────────────────────────────────────────────────
-Cluster 2  |  5 tache(s)  |  cohesion = 0.416
+Cluster 2  |  5 tache(s)  |  cohesion = 0.488
 ─────────────────────────────────────────────────────────────────
-  Global Task Intention : Build and test a data command
+  Global Task Intention : Create a data command
 
   Items :
     - documents, application, used by the user
-    - visual studio code, application, used by the user
-    - terminal, application, used by the user
+    - terminal, command line, used by the user
+    - visual studio code, code editor, used by the user
     - code ., command, executed in terminal, used to start visual studio code
     - data_command.txt, file, opened with visual studio code, contains data related to plain text document, text files, it serves as a data command.
 
 ─────────────────────────────────────────────────────────────────
 Autres petites tâches — singleton 1  |  singleton
 ─────────────────────────────────────────────────────────────────
-  Global Task Intention : use new tab
-
-  Items :
-    - google chrome, application, used to use new tab
-
-─────────────────────────────────────────────────────────────────
-Autres petites tâches — singleton 2  |  singleton
-─────────────────────────────────────────────────────────────────
   Global Task Intention : clear the screen
 
   Items :
     - clear, command, executed in terminal, used to clear the screen
+
+─────────────────────────────────────────────────────────────────
+Autres petites tâches — singleton 2  |  singleton
+─────────────────────────────────────────────────────────────────
+  Global Task Intention : use new tab
+
+  Items :
+    - google chrome, application, used to use new tab
 
 ─────────────────────────────────────────────────────────────────
 Autres petites tâches — singleton 3  |  singleton
