@@ -7,10 +7,10 @@ import sys
 from pathlib import Path
 import argparse
 
-from core.config import INTENTION_OUTPUT_TXT, INTENTION_OUTPUT_JSONL, INTENTION_MODEL_DIR
-from processing.io_utils import write_txt, write_jsonl
-from processing.intention_predictor import load_model, predict, generate_simple_intention
-from processing.cluster_output_parser import parse_clusters
+from taskmonitor.core.config import INTENTION_OUTPUT_TXT, INTENTION_OUTPUT_JSONL, INTENTION_MODEL_DIR
+from taskmonitor.processing.io_utils import write_txt, write_jsonl
+from taskmonitor.processing.intention_predictor import load_model, predict, generate_simple_intention
+from taskmonitor.processing.cluster_output_parser import parse_clusters
 
 def parse_args():
     parser = argparse.ArgumentParser(description="Genere une global task intention pour chaque cluster.")
