@@ -176,7 +176,7 @@ def build_description(row: dict, file_desc_map: dict) -> str:
                 return "navigate files using"
             if a in ("brave", "firefox", "google-chrome", "chromium", "brave-browser", "opera", "vivaldi"):
                 return "browse the web using"
-            return "use"
+            return "checked out"
 
         verb = infer_verb(title, app)
         
@@ -190,9 +190,16 @@ def build_description(row: dict, file_desc_map: dict) -> str:
 
     # ── 4. TYPE: DIRECTORY ───────────────────────────
     elif etype == "directory":
+        # Récupérer la valeur du répertoire depuis row
         directory = str(row.get("directory", "")).strip()
+        if not directory:
+            directory = str(row.get("app", "")).strip()  # fallback sur app
+        if not directory:
+            directory = str(row.get("raw", "")).strip()  # fallback sur raw
+
         if directory in LINUX_SPECIAL_FILES:
             return f"{directory}, directory, {LINUX_SPECIAL_FILES[directory]}, navigated by the user"
+        
         return f"{directory}, directory, navigated by the user"
 
     return ""

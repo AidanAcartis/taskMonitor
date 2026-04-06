@@ -4,8 +4,8 @@ date,start,end,duration,event_type,file,app,command,raw
 2026-04-06,10:45:02,10:45:31,0.48,file,data_command.txt,Visual Studio Code,,data_command.txt - taskMonitor - Visual Studio Code
 2026-04-06,10:45:37,10:46:03,0.43,app,,Terminal,,Terminal
 2026-04-06,10:43:21,10:43:27,0.2,app,,Google Chrome,,New Tab - Google Chrome
-2026-04-06,10:45:17,10:45:29,0.2,file,Burp Suite Community Edition v2025.7.4,,,Burp Suite Community Edition v2025.7.4
-2026-04-06,10:46:46,10:46:56,0.17,app,,Documents,,Documents
+2026-04-06,10:45:17,10:45:29,0.2,app,,Burp Suite Community Edition v2025.7.4,,Burp Suite Community Edition v2025.7.4
+2026-04-06,10:46:46,10:46:56,0.17,directory,,Documents,,Documents
 2026-04-06,10:44:54,10:45:02,0.13,file,config.py,Visual Studio Code,,config.py - taskMonitor - Visual Studio Code
 2026-04-06,10:40:05,10:40:09,0.07,app,,Google Chrome,,YouTube - Google Chrome
 2026-04-06,10:40:09,10:40:13,0.07,app,,Google Chrome,,(10) YouTube - Google Chrome

@@ -10,6 +10,15 @@ BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
 DATA_DIR = BASE_DIR / "data"
 
+KNOWN_DIRS = {
+    "Desktop", "Music", "Public", "Documents", "Videos",
+    "Downloads", "Pictures", "Templates",
+    "bin", "etc", "lib", "lib32", "lib64", "libx32", "opt", "sbin",
+    "tmp", "usr", "var", "home", "root", "boot", "dev", "proc",
+    "run", "srv", "sys", "mnt", "media", "snap", "cdrom",
+    "lost+found",
+}
+
 # ─────────────────────────────────────────────
 # LOGS
 # ─────────────────────────────────────────────

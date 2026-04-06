@@ -2,9 +2,9 @@
 RAPPORT DE CLUSTERING DES TÂCHES
 ============================================================
 Tâches totales          : 21
-Nombre de clusters      : 4
-Silhouette finale       : 0.446
-Cohésion moyenne finale : 0.466
+Nombre de clusters      : 5
+Silhouette finale       : 0.412
+Cohésion moyenne finale : 0.436
 
 ────────────────────────────────────────────────────────────
 Cluster 0  |  8 tâche(s)  |  cohésion = 0.183
@@ -26,22 +26,26 @@ Cluster 1  |  3 tâche(s)  |  cohésion = 0.308
   • google chrome, application, used to watch (10) chinchilla - little girl gone (lyrics) - youtube
 
 ────────────────────────────────────────────────────────────
-Cluster 2  |  5 tâche(s)  |  cohésion = 0.488
+Cluster 2  |  2 tâche(s)  |  cohésion = 0.436
 ────────────────────────────────────────────────────────────
-  • documents, application, used by the user
-  • terminal, command line, used by the user
   • visual studio code, code editor, used by the user
-  • code ., command, executed in terminal, used to start visual studio code
-  • data_command.txt, file, opened with visual studio code, contains data related to plain text document, text files, it serves as a data command.
+  • documents, directory, navigated by the user
 
 ────────────────────────────────────────────────────────────
-Autres petites tâches  |  5 tâche(s)  |  cohésion = 0.887
+Cluster 3  |  3 tâche(s)  |  cohésion = 0.401
 ────────────────────────────────────────────────────────────
+  • terminal, command line, used by the user
+  • data_command.txt, file, opened with visual studio code, contains data related to plain text document, text files, it serves as a data command.
+  • code ., command, executed in terminal, used to start visual studio code
+
+────────────────────────────────────────────────────────────
+Autres petites tâches  |  5 tâche(s)  |  cohésion = 0.851
+────────────────────────────────────────────────────────────
+  • google chrome, application, used to checked out new tab
   • clear, command, executed in terminal, used to clear the screen
-  • google chrome, application, used to use new tab
-  • google chrome, application, used to use 2002 teen fashion
+  • google chrome, application, used to checked out 2002 teen fashion
   • config.py, file, opened with visual studio code, contains data related to python 3 script, text files, it provides a default configuration for a system.
-  • burp suite community edition v2025.7.4, file, contains data related to it serves as a burp suite community edition v2025.7, web security tool
+  • burp suite community edition v2025.7.4, application, used by the user
 
 ============================================================
 FIN DU RAPPORT

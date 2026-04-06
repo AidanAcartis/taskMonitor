@@ -3,7 +3,6 @@ import pandas as pd
 from pathlib import Path
 from taskmonitor.core import config, logger
 
-
 class EventParser:
     """
     Transform raw data_collect.txt into structured events (CSV).
@@ -21,7 +20,22 @@ class EventParser:
     def detect_file(self, name: str) -> bool:
         return bool(self.file_regex.search(name))
 
-    def parse_event(self, raw: str):
+    def parse_event(self, raw: str, type_raw: str = None):
+        """
+        Retourne : event_type, file, app, command
+        """
+
+        # Nettoyer raw
+        raw = raw.strip()
+
+        # Cas type directory/App avec répertoire connu
+        if type_raw and "directory/App" in type_raw:
+            if raw in config.KNOWN_DIRS:
+                return "directory", "", raw, ""
+            else:
+                return "app", "", raw, ""
+
+        # Cas général : split " - " pour détecter fichier et app
         parts = raw.split(" - ")
 
         if len(parts) >= 2:
@@ -32,11 +46,9 @@ class EventParser:
                 return "file", filename, app, ""
             else:
                 return "app", "", app, ""
-
         else:
             if self.detect_file(raw):
                 return "file", raw, "", ""
-
             return "app", "", raw, ""
 
     def run(self):
@@ -77,10 +89,10 @@ class EventParser:
                     })
 
                 # ───────────────────────────────
-                # FILE / APP
+                # FILE / APP / DIRECTORY
                 # ───────────────────────────────
                 else:
-                    event_type, file, app, command = self.parse_event(raw_event)
+                    event_type, file, app, command = self.parse_event(raw_event, type_raw)
 
                     rows.append({
                         "date": date,
@@ -95,7 +107,6 @@ class EventParser:
                     })
 
         df = pd.DataFrame(rows)
-
         df.to_csv(self.output_path, index=False)
 
         logger.logger.info(f"Standardized saved events: {self.output_path}")
