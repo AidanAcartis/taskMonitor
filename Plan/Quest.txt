@@ -1,0 +1,23 @@
+Je travaille sur un projet taskMonitor ou j'analyse les activites de l'user (fichier utilise, app, site web visite, commande lance,...) puis representer statistiquement et graphiquement sur un interface ces activites pendant un duree donne. Voici la structure de mon projet : "(MLproject_py311) aidan@aidan-Lenovo-N50-70:~/Documents/Projects/Visualization/taskMonitor$ ls
+assets                COLLECT_FILE_DATA  PROCESSING      ReadDme.md  requirements.txt
+COLLECT_COMMAND_LOGS  data               pyproject.toml  READme.md   setup_env.sh
+COLLECT_DATA          Plan               QUEST.md        README.md   taskmonitor
+(MLproject_py311) aidan@aidan-Lenovo-N50-70:~/Documents/Projects/Visualization/taskMonitor$ ls taskmonitor/
+autostart   dicts     __init__.py  orchestrator.py  resources         run_predict_intention.py
+collectors  external  main.py      processing       run_clusterer.py  services
+core        gui       models       __pycache__      run_describer.py
+(MLproject_py311) aidan@aidan-Lenovo-N50-70:~/Documents/Projects/Visualization/taskMonitor$ ls taskmonitor/collectors/
+collect_data.py       file_collector.sh  log_extractor.sh  TEST.py
+command_collector.py  __init__.py        __pycache__       window_monitor.py
+file_collector.py     log_extractor.py   requierements     window_monitor.sh
+(MLproject_py311) aidan@aidan-Lenovo-N50-70:~/Documents/Projects/Visualization/taskMonitor$ ls taskmonitor/processing/
+assembler.py  clusterer.py              describer.py  intention_predictor.py  parser.py
+clusterer     cluster_output_parser.py  __init__.py   io_utils.py             __pycache__
+(MLproject_py311) aidan@aidan-Lenovo-N50-70:~/Documents/Projects/Visualization/taskMonitor$ ls data/
+command_log  exports  file_log  logs  processed
+(MLproject_py311) aidan@aidan-Lenovo-N50-70:~/Documents/Projects/Visualization/taskMonitor$ 
+". tout dabord je dois lancer 'taskmonitor/collectors/window_monitor.py
+' pour la surveillance des activites et sur la fenetre de bureau de l'user, j'obtiens des logs sur les fichiers , app et sites web, et 'command_collector.py' pour lancer les logs des commandes. puis je lance 'log_extractor.py', 'file_collector.py' pour extraire du logs brute les donnees sur les fichiers /app/site web(dans cet ordre). puis 'collect_data.py' pour collecter les ensemble des logs fichier/app/site web et commandes combines pour obtenir data_collect.txt :"2026-04-02	22:03:47	22:03:49	0.03	file-directory-App	software development in python course - Recherche Google - Google Chrome
+2026-04-02	22:15:51	22:15:41	-0.30	directory/App	Desktop Icons 1
+2026-04-03	13:04:16	13:04:18	0.033	Commande	clear
+2026-04-03	13:04:18	13:04:20	0.033	Commande	python3". A partir de la, on entre dans le taskmonitor/processing , on traite maintenan les logs pour decrire les fichiers/app/site web et commandes lances (fonction, contenu,...) on lancant en ordre 'parser.py'(transformer data_collect.py en format csv avec des colonnes), 'run_describer.py'(relies a plusieurs autre fichiers) pour decrire chaque events obtenu de parser.py, puis on lance 'run_clusterer.py'(relie a plusieurs autres fichiers) pour assembler les activites soumis a un meme tache. Puis a la fin , on lance 'run_predict_intention.py' pour predire chaque intention de l'user pour chaque cluster, comme cela c'est plus facile de representer statistiquement ces activites et graphiquement. Voila, donc, elle se divise en deux grandes parties 'MONITORING' et 'PROCESSING'. Au demarrage de l'ordinateur, le logiciel(integre dans le systeme) va demander a l'utilisateur dabord, si il veut surveiller tout ces activites, il faut qu'il accepte pour la suite: donc oui et le window_monitoring et collecte de commande se lance. Puis, si l'utilisateur decide maintenant de voir le stat et representation graphique de ces activites, il demarre le logiciel(ouvrir), et le logiciel lancer automatiquement et en ordre le traitement de log et le preprocessing jusqu'a avoir le donne final a representer. Tu comprends ?, maintenant , comment va-t-on orcherstrer cela ? sans interface graphique dabord 

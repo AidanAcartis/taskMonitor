@@ -4,9 +4,19 @@ from pathlib import Path
 
 def parse_line(line):
     parts = line.strip().split(" ", 2)
+
+    # ❌ Ligne invalide (vide ou incomplète)
+    if len(parts) < 3:
+        return None
+
     date = parts[0]
     time = parts[1]
-    filename = parts[2]
+    filename = parts[2].strip()
+
+    # ❌ Nom vide (cas réel dans tes logs)
+    if filename == "":
+        return None
+
     return date, time, filename
 
 # Récupérer les fichiers depuis les arguments
@@ -29,14 +39,31 @@ true_file_lines = []
 used_close_indices = set()
 
 for i, open_line in enumerate(opened_lines):
-    open_date, open_time, filename = parse_line(open_line)
+    parsed_open = parse_line(open_line)
+
+    # ❌ ignorer lignes invalides
+    if parsed_open is None:
+        continue
+
+    open_date, open_time, filename = parsed_open
+
     for j in range(i, len(closed_lines)):
         if j in used_close_indices:
             continue
-        close_date, close_time, close_filename = parse_line(closed_lines[j])
+
+        parsed_close = parse_line(closed_lines[j])
+
+        # ❌ ignorer lignes invalides
+        if parsed_close is None:
+            continue
+
+        close_date, close_time, close_filename = parsed_close
+
         if close_filename == filename:
             used_close_indices.add(j)
-            true_file_lines.append(f"{open_date} {open_time} {close_time} {filename}\n")
+            true_file_lines.append(
+                f"{open_date} {open_time} {close_time} {filename}\n"
+            )
             break
 
 # Créer dossier si absent

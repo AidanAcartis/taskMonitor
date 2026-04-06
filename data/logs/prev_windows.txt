@@ -1,1 +1,6 @@
-
+0x02600009 -1 aidan-Lenovo-N50-70 Desktop Icons 1
+0x02800004  0 aidan-Lenovo-N50-70 taskMonitor
+0x02a0000a  0 aidan-Lenovo-N50-70 aidan@aidan-Lenovo-N50-70: ~/Documents/Projects/Visualization/taskMonitor
+0x02c00004  0 aidan-Lenovo-N50-70 window_changes.log - taskMonitor - Visual Studio Code
+0x02c0000b  0 aidan-Lenovo-N50-70 data_command.txt - Visual Studio Code
+0x03a00017  0 aidan-Lenovo-N50-70 Perte logiques essentielles - Google Chrome
