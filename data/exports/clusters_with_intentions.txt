@@ -1,0 +1,84 @@
+=================================================================
+  CLUSTERS — GLOBAL TASK INTENTIONS
+=================================================================
+
+─────────────────────────────────────────────────────────────────
+Cluster 0  |  8 tache(s)  |  cohesion = 0.183
+─────────────────────────────────────────────────────────────────
+  Global Task Intention : Review directory contents
+
+  Items :
+    - ls taskmonitor/models/, command, executed in terminal, used to list directory contents in taskmonitor/models/
+    - ls taskmonitor/processing/, command, executed in terminal, used to list directory contents in taskmonitor/processing/
+    - ls taskmonitor/external/, command, executed in terminal, used to list directory contents in taskmonitor/external/
+    - ls taskmonitor/services/, command, executed in terminal, used to list directory contents in taskmonitor/services/
+    - ls taskmonitor/, command, executed in terminal, used to list directory contents in taskmonitor/
+    - ls taskmonitor/resources/, command, executed in terminal, used to list directory contents in taskmonitor/resources/
+    - ls taskmonitor/dicts/, command, executed in terminal, used to list directory contents in taskmonitor/dicts/
+    - ls taskmonitor/processing/clusterer/, command, executed in terminal, used to list directory contents in taskmonitor/processing/clusterer/
+
+─────────────────────────────────────────────────────────────────
+Cluster 1  |  3 tache(s)  |  cohesion = 0.308
+─────────────────────────────────────────────────────────────────
+  Global Task Intention : Browse the internet
+
+  Items :
+    - google chrome, application, used to watch (10) youtube
+    - google chrome, application, used to watch youtube
+    - google chrome, application, used to watch (10) chinchilla - little girl gone (lyrics) - youtube
+
+─────────────────────────────────────────────────────────────────
+Cluster 2  |  5 tache(s)  |  cohesion = 0.416
+─────────────────────────────────────────────────────────────────
+  Global Task Intention : Build and test a data command
+
+  Items :
+    - documents, application, used by the user
+    - visual studio code, application, used by the user
+    - terminal, application, used by the user
+    - code ., command, executed in terminal, used to start visual studio code
+    - data_command.txt, file, opened with visual studio code, contains data related to plain text document, text files, it serves as a data command.
+
+─────────────────────────────────────────────────────────────────
+Autres petites tâches — singleton 1  |  singleton
+─────────────────────────────────────────────────────────────────
+  Global Task Intention : use new tab
+
+  Items :
+    - google chrome, application, used to use new tab
+
+─────────────────────────────────────────────────────────────────
+Autres petites tâches — singleton 2  |  singleton
+─────────────────────────────────────────────────────────────────
+  Global Task Intention : clear the screen
+
+  Items :
+    - clear, command, executed in terminal, used to clear the screen
+
+─────────────────────────────────────────────────────────────────
+Autres petites tâches — singleton 3  |  singleton
+─────────────────────────────────────────────────────────────────
+  Global Task Intention : use 2002 teen fashion
+
+  Items :
+    - google chrome, application, used to use 2002 teen fashion
+
+─────────────────────────────────────────────────────────────────
+Autres petites tâches — singleton 4  |  singleton
+─────────────────────────────────────────────────────────────────
+  Global Task Intention : open config.py with Visual Studio Code
+
+  Items :
+    - config.py, file, opened with visual studio code, contains data related to python 3 script, text files, it provides a default configuration for a system.
+
+─────────────────────────────────────────────────────────────────
+Autres petites tâches — singleton 5  |  singleton
+─────────────────────────────────────────────────────────────────
+  Global Task Intention : contain data related
+
+  Items :
+    - burp suite community edition v2025.7.4, file, contains data related to it serves as a burp suite community edition v2025.7, web security tool
+
+=================================================================
+  FIN DU RAPPORT
+=================================================================

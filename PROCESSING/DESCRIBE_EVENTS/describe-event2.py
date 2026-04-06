@@ -13,7 +13,8 @@ MODEL_DIR   = os.path.join(BASE_DIR, "../../../Vis_Models/Gen_Desc_Model/full_fi
 # Charger les fichiers JSON
 FILE_EXTENSION = json.load(open(os.path.join(BASE_DIR, "../DICT/FILE_EXTENSION.json")))
 MIME_MAP        = json.load(open(os.path.join(BASE_DIR, "../DICT/mime_map.json")))
-TOOLS           = json.load(open(os.path.join(BASE_DIR, "../DICT/TOOLS.json")))
+TOOLS_RAW       = json.load(open(os.path.join(BASE_DIR, "../DICT/TOOLS.json")))
+TOOLS = {k.lower(): v for k, v in TOOLS_RAW.items()}
 
 LEXICAL_DIM = 512
 BATCH_SIZE  = 8
@@ -519,7 +520,8 @@ def build_description(row: dict, file_desc_map: dict) -> str:
             return f"{app}, application, used to {verb} {title}"
         
         # Description bonus via TOOLS si pas de titre
-        app_desc = TOOLS.get(app, "application")
+        app_clean = str(row.get("app", "")).strip().lower()
+        app_desc = TOOLS.get(app_clean, "application")
         return f"{app}, {app_desc}, used by the user"
 
     # ── 4. TYPE: DIRECTORY ───────────────────────────
