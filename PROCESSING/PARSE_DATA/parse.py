@@ -6,6 +6,16 @@ BASE_DIR = os.path.dirname(__file__)
 INPUT = os.path.join(BASE_DIR, "../DATA_COLLECT/data_collect.txt")
 OUTPUT = os.path.join(BASE_DIR, "events_normalized.csv")
 
+# Répertoires connus
+KNOWN_DIRS = {
+    "Desktop", "Music", "Public", "Documents", "Videos",
+    "Downloads", "Pictures", "Templates",
+    "bin", "etc", "lib", "lib32", "lib64", "libx32", "opt", "sbin",
+    "tmp", "usr", "var", "home", "root", "boot", "dev", "proc",
+    "run", "srv", "sys", "mnt", "media", "snap", "cdrom",
+    "lost+found",
+}
+
 file_regex = re.compile(r"\.[a-zA-Z0-9]+$")
 
 
@@ -14,6 +24,16 @@ def detect_file(name):
 
 
 def parse_event(raw):
+
+    # Nettoyer raw
+    raw = raw.strip()
+
+    # Cas type directory/App avec répertoire connu
+    if type_raw and "directory/App" in type_raw:
+        if raw in KNOWN_DIRS:
+            return "directory", "", "", ""
+        else:
+            return "app", "", raw, ""
 
     parts = raw.split(" - ")
 
