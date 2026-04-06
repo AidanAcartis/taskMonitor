@@ -30,21 +30,21 @@ Cluster 1  |  3 tache(s)  |  cohesion = 0.308
 ─────────────────────────────────────────────────────────────────
 Cluster 2  |  2 tache(s)  |  cohesion = 0.436
 ─────────────────────────────────────────────────────────────────
-  Global Task Intention : Create a code file
+  Global Task Intention : Open coding file
 
   Items :
-    - visual studio code, code editor, used by the user
     - documents, directory, navigated by the user
+    - visual studio code, code editor, used by the user
 
 ─────────────────────────────────────────────────────────────────
 Cluster 3  |  3 tache(s)  |  cohesion = 0.401
 ─────────────────────────────────────────────────────────────────
-  Global Task Intention : Build and test a data command
+  Global Task Intention : Build and test code in a data command
 
   Items :
+    - code ., command, executed in terminal, used to start visual studio code
     - terminal, command line, used by the user
     - data_command.txt, file, opened with visual studio code, contains data related to plain text document, text files, it serves as a data command.
-    - code ., command, executed in terminal, used to start visual studio code
 
 ─────────────────────────────────────────────────────────────────
 Autres petites tâches — singleton 1  |  singleton

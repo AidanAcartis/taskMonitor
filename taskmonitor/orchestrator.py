@@ -8,6 +8,7 @@ from taskmonitor.collectors.log_extractor import LogExtractor
 from taskmonitor.collectors.file_collector import FileCollector
 from taskmonitor.collectors.collect_data import DataCollector
 from taskmonitor.processing.parser import EventParser
+from taskmonitor.processing.assembler import OutputAssembler
 
 
 # ─────────────────────────────────────────────
@@ -58,6 +59,9 @@ def run_processing():
 
     # 7. Intention
     run_step("taskmonitor.run_predict_intention")
+
+    # 8. Assemble final output
+    OutputAssembler().run()
 
     print("\n✅ PROCESSING TERMINÉ")
 

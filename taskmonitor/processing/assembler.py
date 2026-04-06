@@ -1,57 +1,160 @@
-"""
-processing/assembler.py
-=======================
-Assemble data_file.txt et data_command.txt en un seul fichier TSV data_collect.txt.
-Refactorisation de collect_data.py.
-"""
+import json
+import pandas as pd
+from pathlib import Path
+from collections import defaultdict
 
-from taskmonitor.core import config, storage
-from taskmonitor.core.logger import get_logger
-
-log = get_logger(__name__)
+from taskmonitor.core import config, logger
 
 
-def assemble(date_str: str) -> list[str]:
+class OutputAssembler:
     """
-    Fusionne les données fichiers et commandes en un TSV unifié.
-
-    Format de sortie (TSV):
-        date  start  end  duration  type  name
-
-    Args:
-        date_str: date au format "YYYY-MM-DD"
-
-    Returns:
-        Lignes TSV de data_collect.txt
+    Assemble final structured JSON from:
+    - events_described.csv
+    - clusters_with_intentions.jsonl
     """
-    lines: list[str] = []
 
-    # ── Fichiers (data_file.txt) ──────────────────────
-    file_lines = storage.read_data_file(date_str)
-    for line in file_lines:
-        parts = line.strip().split()
-        if len(parts) >= 6:
-            date      = parts[0]
-            time_open = parts[1]
-            time_close= parts[2]
-            duration  = parts[3]
-            type_     = parts[4]
-            name      = " ".join(parts[5:])
-            lines.append(f"{date}\t{time_open}\t{time_close}\t{duration}\t{type_}\t{name}")
+    def __init__(self):
+        self.events_path = config.DESCRIBED_EVENTS_FILE
+        self.clusters_path = config.INTENTION_OUTPUT_JSONL
+        self.output_path = config.EXPORTS_DIR / "final_output.json"
 
-    # ── Commandes (data_command.txt) ─────────────────
-    cmd_lines = storage.read_data_command(date_str)
-    for line in cmd_lines:
-        parts = [x.strip() for x in line.strip().split(",")]
-        if len(parts) >= 6:
-            date      = parts[0]
-            time_open = parts[1]
-            time_close= parts[2]
-            duration  = parts[3]
-            type_     = parts[4]
-            name      = ", ".join(parts[5:])
-            lines.append(f"{date}\t{time_open}\t{time_close}\t{duration}\t{type_}\t{name}")
+    # ─────────────────────────────────────────────
+    # LOADERS
+    # ─────────────────────────────────────────────
+    def load_events(self):
+        df = pd.read_csv(self.events_path).fillna("")
+        return df.to_dict("records")
 
-    storage.write_data_collect(date_str, lines)
-    log.info(f"data_collect.txt : {len(lines)} lignes pour {date_str}")
-    return lines
+    def load_clusters(self):
+        clusters = []
+        with open(self.clusters_path, "r") as f:
+            for line in f:
+                clusters.append(json.loads(line))
+        return clusters
+
+    # ─────────────────────────────────────────────
+    # HELPERS
+    # ─────────────────────────────────────────────
+    def build_datetime(self, date, time):
+        return f"{date} {time}"
+
+    # ─────────────────────────────────────────────
+    # MAIN LOGIC
+    # ─────────────────────────────────────────────
+    def run(self):
+        logger.logger.info("[Assembler] Loading data...")
+
+        events = self.load_events()
+        clusters = self.load_clusters()
+
+        # Ajouter event_id
+        for i, e in enumerate(events):
+            e["event_id"] = i
+
+        final_clusters = []
+
+        for cluster in clusters:
+            task_items = cluster["task_items"]
+
+            # ─────────────────────────────
+            # MATCH EVENTS
+            # ─────────────────────────────
+            cluster_events = [
+                e for e in events
+                if e["description"].strip().lower() in
+                [t.strip().lower() for t in task_items]
+            ]
+
+            if not cluster_events:
+                continue
+
+            # ─────────────────────────────
+            # SORT EVENTS
+            # ─────────────────────────────
+            cluster_events = sorted(
+                cluster_events,
+                key=lambda x: (x["date"], x["start"])
+            )
+
+            # ─────────────────────────────
+            # STATS
+            # ─────────────────────────────
+            total_duration = sum(e["duration"] for e in cluster_events)
+            num_events = len(cluster_events)
+
+            start_global = min(
+                self.build_datetime(e["date"], e["start"])
+                for e in cluster_events
+            )
+
+            end_global = max(
+                self.build_datetime(e["date"], e["end"])
+                for e in cluster_events
+            )
+
+            # ─────────────────────────────
+            # TASK ITEMS AGGREGATION
+            # ─────────────────────────────
+            agg = defaultdict(lambda: {"total_duration": 0, "occurrences": 0})
+
+            for e in cluster_events:
+                desc = e["description"]
+                agg[desc]["total_duration"] += e["duration"]
+                agg[desc]["occurrences"] += 1
+
+            task_items_struct = [
+                {
+                    "description": desc,
+                    "total_duration": round(v["total_duration"], 3),
+                    "occurrences": v["occurrences"]
+                }
+                for desc, v in agg.items()
+            ]
+
+            # ─────────────────────────────
+            # CLEAN EVENTS
+            # ─────────────────────────────
+            cleaned_events = []
+            for e in cluster_events:
+                cleaned_events.append({
+                    "event_id": e["event_id"],
+                    "date": e["date"],
+                    "start": e["start"],
+                    "end": e["end"],
+                    "duration": e["duration"],
+                    "event_type": e["event_type"],
+                    "file": e["file"],
+                    "app": e["app"],
+                    "command": e["command"],
+                    "raw": e["raw"],
+                    "description": e["description"]
+                })
+
+            # ─────────────────────────────
+            # FINAL CLUSTER
+            # ─────────────────────────────
+            final_clusters.append({
+                "cluster_id": cluster["cluster_id"],
+                "global_task_intention": cluster["global_task_intention"],
+                "cohesion": cluster["cohesion"],
+
+                "stats": {
+                    "total_duration": round(total_duration, 3),
+                    "num_events": num_events,
+                    "start": start_global,
+                    "end": end_global
+                },
+
+                "task_items": task_items_struct,
+                "events": cleaned_events
+            })
+
+        # ─────────────────────────────
+        # SAVE
+        # ─────────────────────────────
+        output = {"clusters": final_clusters}
+
+        with open(self.output_path, "w") as f:
+            json.dump(output, f, indent=2)
+
+        logger.logger.info(f"[Assembler] Output saved → {self.output_path}")
