@@ -3,8 +3,8 @@ from typing import List
 from transformers import AutoTokenizer
 from sentence_transformers import SentenceTransformer
 
-from models.t5_fusion import T5WithFusion  # modèle pur
-from core.config import GEN_DESC_MODEL_DIR, DEVICE, BATCH_SIZE, LEXICAL_DIM, INFERENCE_CONFIG
+from taskmonitor.models.t5_fusion import T5WithFusion # modèle pur
+from taskmonitor.core.config import GEN_DESC_MODEL_DIR, DEVICE, BATCH_SIZE, LEXICAL_DIM, INFERENCE_CONFIG
 
 # ─────────────────── SERVICE DE DESCRIPTION DES FICHIERS ───────────────────
 

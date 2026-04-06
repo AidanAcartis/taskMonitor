@@ -4,7 +4,7 @@ from transformers import AutoTokenizer, T5ForConditionalGeneration
 from sentence_transformers import SentenceTransformer
 from typing import List
 
-from core.config import GEN_DESC_MODEL_DIR, DEVICE, BATCH_SIZE, LEXICAL_DIM, INFERENCE_CONFIG
+from taskmonitor.core.config import GEN_DESC_MODEL_DIR, DEVICE, BATCH_SIZE, LEXICAL_DIM, INFERENCE_CONFIG
 
 # ───────────────── MODEL ─────────────────
 

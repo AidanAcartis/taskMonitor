@@ -34,7 +34,7 @@ def check_cmddesc():
 def run_pipeline():
     print("🚀 Lancement du pipeline describer...\n")
 
-    from processing.describer import main  # on va créer main()
+    from taskmonitor.processing.describer import main  # on va créer main()
 
     main()
 

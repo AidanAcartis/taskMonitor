@@ -4,12 +4,12 @@ import os
 import pandas as pd
 
 # ───────────────── IMPORTS SERVICES ─────────────────
-from services.description_builder import build_description
-from services.context_extractor import extract_context_from_command
-from services.file_description_service import FileDescriptionService
+from taskmonitor.services.description_builder import build_description
+from taskmonitor.services.context_extractor import extract_context_from_command
+from taskmonitor.services.file_description_service import FileDescriptionService
 
 # ───────────────── CONFIG CENTRALISÉ ─────────────────
-from core.config import NORMALIZED_EVENTS_FILE, DESCRIBED_EVENTS_FILE
+from taskmonitor.core.config import NORMALIZED_EVENTS_FILE, DESCRIBED_EVENTS_FILE
 
 # ───────────────── SCRIPT PRINCIPAL ─────────────────
 def main():

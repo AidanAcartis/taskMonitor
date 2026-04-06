@@ -4,11 +4,11 @@ import json
 
 from .context_extractor import extract_context_from_command
 from .command_description_service import describe_command
-from resources.linux_special_files import LINUX_SPECIAL_FILES  # existant
+from taskmonitor.resources.linux_special_files import LINUX_SPECIAL_FILES  # existant
 
 
 from pathlib import Path
-from core.config import BASE_DIR
+from taskmonitor.core.config import BASE_DIR
 
 
 # ─────────────────── LOAD JSON DICTS ───────────────────
