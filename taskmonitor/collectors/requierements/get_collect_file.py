@@ -5,7 +5,7 @@ from pathlib import Path
 def parse_line(line):
     parts = line.strip().split(" ", 2)
 
-    # ❌ Ligne invalide (vide ou incomplète)
+    # Ligne invalide (vide ou incomplète)
     if len(parts) < 3:
         return None
 
@@ -13,7 +13,7 @@ def parse_line(line):
     time = parts[1]
     filename = parts[2].strip()
 
-    # ❌ Nom vide (cas réel dans tes logs)
+    # Nom vide (cas réel dans tes logs)
     if filename == "":
         return None
 
@@ -41,7 +41,7 @@ used_close_indices = set()
 for i, open_line in enumerate(opened_lines):
     parsed_open = parse_line(open_line)
 
-    # ❌ ignorer lignes invalides
+    # ignorer lignes invalides
     if parsed_open is None:
         continue
 
@@ -53,7 +53,7 @@ for i, open_line in enumerate(opened_lines):
 
         parsed_close = parse_line(closed_lines[j])
 
-        # ❌ ignorer lignes invalides
+        # ignorer lignes invalides
         if parsed_close is None:
             continue
 
@@ -72,4 +72,4 @@ collected_file_path.parent.mkdir(parents=True, exist_ok=True)
 with collected_file_path.open("w", encoding="utf-8") as f_true:
     f_true.writelines(true_file_lines)
 
-print(f"Fichier '{collected_file_path}' généré avec succès.")
+print(f"File '{collected_file_path}' generated successfully.")

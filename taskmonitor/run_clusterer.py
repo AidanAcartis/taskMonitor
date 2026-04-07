@@ -24,7 +24,7 @@ def main():
     # ─────────────────────────────────────────────
     # DEBUG RAPIDE
     # ─────────────────────────────────────────────
-    print("\n📊 Résumé final :")
+    print("\nFinal summary :")
     print(f"    Clusters   : {result['metrics_after']['n_clusters']}")
     print(f"    Silhouette : {result['metrics_after']['silhouette']:.3f}")
     print(f"    Cohésion   : {result['metrics_after']['cohesion']:.3f}")

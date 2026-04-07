@@ -20,7 +20,7 @@ class FileDescriptionService:
 
     def load(self):
         """Charge le tokenizer, le modèle et le modèle lexical."""
-        print(f"[FileDesc] Chargement depuis {GEN_DESC_MODEL_DIR} ...")
+        print(f"[FileDesc] Loading from {GEN_DESC_MODEL_DIR} ...")
         self.tokenizer = AutoTokenizer.from_pretrained(GEN_DESC_MODEL_DIR)
 
         self.model = T5WithFusion(
@@ -71,6 +71,6 @@ class FileDescriptionService:
             decoded = [self.tokenizer.decode(o, skip_special_tokens=True) for o in outputs]
             descriptions.extend(decoded)
 
-            print(f"[FileDesc] {i + len(batch)}/{len(filenames)} fichiers traités")
+            print(f"[FileDesc] {i + len(batch)}/{len(filenames)} processed files")
 
         return descriptions

@@ -9,6 +9,7 @@ from taskmonitor.collectors.file_collector import FileCollector
 from taskmonitor.collectors.collect_data import DataCollector
 from taskmonitor.processing.parser import EventParser
 from taskmonitor.processing.assembler import OutputAssembler
+from taskmonitor.core.storage import store_clusters_json
 
 
 # ─────────────────────────────────────────────
@@ -22,14 +23,14 @@ def run_monitoring():
 
     try:
         while True:
-            print("📥 Collecte commandes...")
+            print("📥 Collecting command's logs...")
             CommandCollector().run()
 
             # fréquence (ex: toutes les 30 sec)
             time.sleep(30)
 
     except KeyboardInterrupt:
-        print("\n🛑 Arrêt demandé")
+        print("\n🛑 Stopping requested")
         wm.stop()
 
 
@@ -63,7 +64,11 @@ def run_processing():
     # 8. Assemble final output
     OutputAssembler().run()
 
-    print("\n✅ PROCESSING TERMINÉ")
+    final_output = OutputAssembler().get_final_output()  # méthode à ajouter pour récupérer le JSON
+    store_clusters_json(final_output)
+    print("💾 Data stored in SQLite successfully")
+
+    print("\nPROCESSING COMPLETED")
 
 
 # ─────────────────────────────────────────────
@@ -77,7 +82,7 @@ def run_step(module):
     )
 
     if result.returncode != 0:
-        print(f"❌ Erreur dans {module}")
+        print(f"❌ Error in {module}")
         sys.exit(1)
 
 

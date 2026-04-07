@@ -110,5 +110,5 @@ class SingletonHandler:
                 tmp[lbl].append(task)
             singleton_clusters = dict(tmp)
 
-        print(f"    {len(singleton_clusters)} clusters de singletons après reclustering.")
+        print(f"    {len(singleton_clusters)} clusters of singletons after reclustering.")
         return singleton_clusters

@@ -288,7 +288,7 @@
       ]
     },
     {
-      "cluster_id": "Autres petites t\u00e2ches \u2014 singleton 2",
+      "cluster_id": "Other small tasks \u2014 singleton 2",
       "global_task_intention": "clear the screen",
       "cohesion": 0.851,
       "stats": {
@@ -431,7 +431,7 @@
       ]
     },
     {
-      "cluster_id": "Autres petites t\u00e2ches \u2014 singleton 1",
+      "cluster_id": "Other small tasks \u2014 singleton 1",
       "global_task_intention": "check out new tab",
       "cohesion": 0.851,
       "stats": {
@@ -473,7 +473,7 @@
       ]
     },
     {
-      "cluster_id": "Autres petites t\u00e2ches \u2014 singleton 3",
+      "cluster_id": "Other small tasks \u2014 singleton 3",
       "global_task_intention": "check out 2002 teen fashion",
       "cohesion": 0.851,
       "stats": {
@@ -515,7 +515,7 @@
       ]
     },
     {
-      "cluster_id": "Autres petites t\u00e2ches \u2014 singleton 4",
+      "cluster_id": "Other small tasks \u2014 singleton 4",
       "global_task_intention": "open config.py with Visual Studio Code",
       "cohesion": 0.851,
       "stats": {
@@ -557,7 +557,7 @@
       ]
     },
     {
-      "cluster_id": "Autres petites t\u00e2ches \u2014 singleton 5",
+      "cluster_id": "Other small tasks \u2014 singleton 5",
       "global_task_intention": "use burp suite community edition v2025.7.4",
       "cohesion": 0.851,
       "stats": {

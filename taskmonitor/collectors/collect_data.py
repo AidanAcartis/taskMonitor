@@ -69,4 +69,4 @@ class DataCollector:
             for line in lines:
                 f.write(line + "\n")
 
-        logger.logger.info(f"TSV généré: {self.output_path.resolve()}")
+        logger.logger.info(f"TSV generated: {self.output_path.resolve()}")

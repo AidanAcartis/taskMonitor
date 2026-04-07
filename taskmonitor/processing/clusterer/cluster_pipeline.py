@@ -41,7 +41,7 @@ class ClusterPipeline:
     # ─────────────────────────────────────────────
     def run(self):
         print("\n" + "=" * 60)
-        print("🚀 LANCEMENT DU PIPELINE DE CLUSTERING")
+        print("CLUSTERING PIPELINE LAUNCH")
         print("=" * 60)
 
         # ─────────────────────────────────────────
@@ -134,7 +134,7 @@ class ClusterPipeline:
         )
 
         print("\n" + "=" * 60)
-        print("✅ PIPELINE TERMINÉ")
+        print("PIPELINE FINISHED")
         print("=" * 60)
 
         return {

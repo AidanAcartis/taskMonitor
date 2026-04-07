@@ -34,9 +34,9 @@ class Clusterer:
             return True
         model_dir = config.MODEL_CLUSTERING
         if not model_dir.exists():
-            log.error(f"Modèle clustering introuvable : {model_dir}")
+            log.error(f"Clustering model not found : {model_dir}")
             return False
-        log.info(f"Chargement du modèle clustering : {model_dir}")
+        log.info(f"Loading the clustering model : {model_dir}")
         self._model = SentenceTransformer(str(model_dir))
         self._model.eval()
         return True
@@ -86,7 +86,7 @@ class Clusterer:
 
         df = storage.read_events_described(date_str)
         if df.empty:
-            log.error(f"events_described.csv vide pour {date_str}")
+            log.error(f"empty events_described.csv for {date_str}")
             return {}
 
         # ── Étape 1 : normalisation ──────────
@@ -96,10 +96,10 @@ class Clusterer:
         tasks_raw = [_norm(t) for t in df["description"].fillna("").tolist() if t]
         seen: set[str] = set()
         tasks_raw = [t for t in tasks_raw if not (t in seen or seen.add(t))]
-        log.info(f"[1] {len(tasks_raw)} descriptions uniques")
+        log.info(f"[1] {len(tasks_raw)} unique descriptions")
 
         if len(tasks_raw) < 2:
-            log.warning("Pas assez de descriptions pour clustériser")
+            log.warning("Not enough descriptions to cluster")
             return {0: tasks_raw}
 
         # ── Étape 2 : shuffle ────────────────
@@ -139,10 +139,10 @@ class Clusterer:
                 best.update({"th": th, "silhouette": sil, "labels": labels})
 
         if best["labels"] is None:
-            log.warning("Aucun clustering valide trouvé")
+            log.warning("No valid clustering found")
             return {0: tasks}
 
-        log.info(f"[5] Meilleur threshold: {best['th']:.2f} | silhouette: {best['silhouette']:.3f}")
+        log.info(f"[5] Best threshold: {best['th']:.2f} | silhouette: {best['silhouette']:.3f}")
 
         groups: dict[int, list[str]] = defaultdict(list)
         for task, lbl in zip(tasks, best["labels"]):
@@ -155,7 +155,7 @@ class Clusterer:
         # ── Étape 13 : sauvegarde ────────────
         self._write_report(date_str, final_groups, tasks, dist)
 
-        log.info(f"Clustering terminé : {len(final_groups)} clusters")
+        log.info(f"Clustering completed : {len(final_groups)} clusters")
         return final_groups
 
     def _recluster_iterative(
@@ -324,12 +324,12 @@ class Clusterer:
 
         lines = [
             "=" * 60,
-            "RAPPORT DE CLUSTERING DES TÂCHES",
+            "TASK CLUSTERING REPORT",
             "=" * 60,
-            f"Tâches totales          : {len(tasks)}",
-            f"Nombre de clusters      : {n_cl}",
-            f"Silhouette finale       : {sil:.3f}",
-            f"Cohésion moyenne finale : {mean_coh:.3f}",
+            f"Total tasks          : {len(tasks)}",
+            f"Number of clusters      : {n_cl}",
+            f"Final silhouette       : {sil:.3f}",
+            f"Average cohesion : {mean_coh:.3f}",
             "",
         ]
 
@@ -346,5 +346,5 @@ class Clusterer:
                 lines.append(f"  • {t}")
             lines.append("")
 
-        lines += ["=" * 60, "FIN DU RAPPORT", "=" * 60]
+        lines += ["=" * 60, "END OF REPORT", "=" * 60]
         storage.write_clusters_output(date_str, "\n".join(lines))

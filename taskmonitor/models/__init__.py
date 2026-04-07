@@ -1,1 +1,1 @@
-"""taskmonitor.core — Gen_Desc_Model, configuration, utils partages entre les services de description (commandes, fichiers)"""
+"""taskmonitor.core — Gen_Desc_Model, configuration, shared utilities between description services (commands, files)"""

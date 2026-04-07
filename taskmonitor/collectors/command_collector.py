@@ -25,7 +25,7 @@ class CommandCollector:
             with open(self.history_file, "r", encoding="utf-8") as f:
                 lines = f.readlines()
         except FileNotFoundError:
-            logger.logger.error(f"Fichier historique introuvable: {self.history_file}")
+            logger.logger.error(f"Historical file not found: {self.history_file}")
             return
 
         for line in lines:

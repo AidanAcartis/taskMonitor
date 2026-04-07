@@ -47,7 +47,7 @@ Cluster 3  |  3 tache(s)  |  cohesion = 0.401
     - data_command.txt, file, opened with visual studio code, contains data related to plain text document, text files, it serves as a data command.
 
 ─────────────────────────────────────────────────────────────────
-Autres petites tâches — singleton 1  |  singleton
+Other small tasks — singleton 1  |  singleton
 ─────────────────────────────────────────────────────────────────
   Global Task Intention : check out new tab
 
@@ -55,7 +55,7 @@ Autres petites tâches — singleton 1  |  singleton
     - google chrome, application, used to checked out new tab
 
 ─────────────────────────────────────────────────────────────────
-Autres petites tâches — singleton 2  |  singleton
+Other small tasks — singleton 2  |  singleton
 ─────────────────────────────────────────────────────────────────
   Global Task Intention : clear the screen
 
@@ -63,7 +63,7 @@ Autres petites tâches — singleton 2  |  singleton
     - clear, command, executed in terminal, used to clear the screen
 
 ─────────────────────────────────────────────────────────────────
-Autres petites tâches — singleton 3  |  singleton
+Other small tasks — singleton 3  |  singleton
 ─────────────────────────────────────────────────────────────────
   Global Task Intention : check out 2002 teen fashion
 
@@ -71,7 +71,7 @@ Autres petites tâches — singleton 3  |  singleton
     - google chrome, application, used to checked out 2002 teen fashion
 
 ─────────────────────────────────────────────────────────────────
-Autres petites tâches — singleton 4  |  singleton
+Other small tasks — singleton 4  |  singleton
 ─────────────────────────────────────────────────────────────────
   Global Task Intention : open config.py with Visual Studio Code
 
@@ -79,7 +79,7 @@ Autres petites tâches — singleton 4  |  singleton
     - config.py, file, opened with visual studio code, contains data related to python 3 script, text files, it provides a default configuration for a system.
 
 ─────────────────────────────────────────────────────────────────
-Autres petites tâches — singleton 5  |  singleton
+Other small tasks — singleton 5  |  singleton
 ─────────────────────────────────────────────────────────────────
   Global Task Intention : use burp suite community edition v2025.7.4
 

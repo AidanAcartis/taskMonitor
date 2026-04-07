@@ -12,6 +12,7 @@ class OutputAssembler:
         self.events_path = config.DESCRIBED_EVENTS_FILE
         self.clusters_path = config.INTENTION_OUTPUT_JSONL
         self.output_path = config.EXPORTS_DIR / "final_output.json"
+        self.final_output = None
 
     # ─────────────────────────────
     # LOADERS
@@ -26,6 +27,14 @@ class OutputAssembler:
             for line in f:
                 clusters.append(json.loads(line))
         return clusters
+    
+    # ← nouvelle méthode
+    def get_final_output(self):
+        if self.final_output is None:
+            # si run() n'a pas été exécuté, charge depuis fichier
+            with open(self.output_path, "r") as f:
+                self.final_output = json.load(f)
+        return self.final_output
 
     # ─────────────────────────────
     # HELPERS
@@ -117,7 +126,7 @@ class OutputAssembler:
                 if self.match_event(e["description_norm"], task_items_norm)
             ]
 
-            # 🔥 fallback (important pour stabilité pipeline)
+            # fallback (important pour stabilité pipeline)
             if not cluster_events:
                 logger.logger.warning(f"[Assembler] No match for {cluster['cluster_id']}, fallback activated")
                 continue
@@ -142,7 +151,7 @@ class OutputAssembler:
             # segments
             segments = self.build_segments(cluster_events)
 
-            # 🔥 time_span corrigé (basé sur segments)
+            # time_span corrigé (basé sur segments)
             time_span = (end_dt - start_dt).total_seconds() / 3600
 
             # ─────────────────────────────

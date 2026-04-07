@@ -44,13 +44,13 @@ def load_and_prepare_tasks(csv_path: Path, config: dict) -> list[str]:
     # ───────────────
     # Chargement
     # ───────────────
-    print(f"\n[1] Chargement de {csv_path} ...")
+    print(f"\n[1] Loading {csv_path} ...")
 
     df = pd.read_csv(csv_path)
     df.columns = df.columns.str.strip().str.lower()
 
     if "description" not in df.columns:
-        raise ValueError("Colonne 'description' introuvable dans le CSV.")
+        raise ValueError("Column 'description' not found in the CSV.")
 
     # ───────────────
     # Normalisation
@@ -58,7 +58,7 @@ def load_and_prepare_tasks(csv_path: Path, config: dict) -> list[str]:
     tasks_raw = df["description"].fillna("").astype(str).tolist()
     tasks_raw = [normalize_task(t) for t in tasks_raw if t]
 
-    print(f"    {len(tasks_raw)} descriptions chargées.")
+    print(f"    {len(tasks_raw)} descriptions loaded.")
 
     # ───────────────
     # Déduplication
@@ -66,7 +66,7 @@ def load_and_prepare_tasks(csv_path: Path, config: dict) -> list[str]:
     seen = set()
     tasks_unique = [t for t in tasks_raw if not (t in seen or seen.add(t))]
 
-    print(f"    {len(tasks_unique)} descriptions après déduplication.")
+    print(f"    {len(tasks_unique)} descriptions after deduplication.")
 
     # ───────────────
     # Shuffle
@@ -99,13 +99,13 @@ def save_report(groups: dict, tasks: list, dist, metrics: dict, output_path: Pat
 
     lines = []
     lines.append("=" * 60)
-    lines.append("RAPPORT DE CLUSTERING DES TÂCHES")
+    lines.append("TASK CLUSTERING REPORT")
     lines.append("=" * 60)
 
-    lines.append(f"Tâches totales          : {len(tasks)}")
-    lines.append(f"Nombre de clusters      : {metrics['n_clusters']}")
-    lines.append(f"Silhouette finale       : {metrics['silhouette']:.3f}")
-    lines.append(f"Cohésion moyenne finale : {metrics['cohesion']:.3f}")
+    lines.append(f"Total tasks          : {len(tasks)}")
+    lines.append(f"Number of clusters      : {metrics['n_clusters']}")
+    lines.append(f"Final silhouette       : {metrics['silhouette']:.3f}")
+    lines.append(f"Final average cohesion         : {metrics['cohesion']:.3f}")
     lines.append("")
 
     # mapping rapide
@@ -116,7 +116,7 @@ def save_report(groups: dict, tasks: list, dist, metrics: dict, output_path: Pat
         coh = compute_cohesion(idxs)
 
         lines.append("─" * 60)
-        lines.append(f"Cluster {cid} | {len(items)} tâche(s) | cohésion = {coh:.3f}")
+        lines.append(f"Cluster {cid} | {len(items)} task(s) | cohesion = {coh:.3f}")
         lines.append("─" * 60)
 
         for t in items:
@@ -125,7 +125,7 @@ def save_report(groups: dict, tasks: list, dist, metrics: dict, output_path: Pat
         lines.append("")
 
     lines.append("=" * 60)
-    lines.append("FIN DU RAPPORT")
+    lines.append("END OF REPORT")
     lines.append("=" * 60)
 
     output_path.parent.mkdir(parents=True, exist_ok=True)
@@ -133,4 +133,4 @@ def save_report(groups: dict, tasks: list, dist, metrics: dict, output_path: Pat
     with open(output_path, "w", encoding="utf-8") as f:
         f.write("\n".join(lines))
 
-    print(f"\n✅ Rapport sauvegardé : {output_path}")
+    print(f"\n Report saved : {output_path}")

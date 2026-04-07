@@ -13,12 +13,12 @@ from taskmonitor.core.config import NORMALIZED_EVENTS_FILE, DESCRIBED_EVENTS_FIL
 
 # ───────────────── SCRIPT PRINCIPAL ─────────────────
 def main():
-    print("[1/4] Lecture CSV...")
+    print("[1/4] Reading CSV...")
     df = pd.read_csv(NORMALIZED_EVENTS_FILE).fillna("")
     df.columns = df.columns.str.strip().str.lower()
 
     # ── Collecte des fichiers pour IA
-    print("[2/4] Collecte des noms de fichiers pour l'IA...")
+    print("[2/4] Collecting file names for AI...")
     stems_to_process = set()
 
     # 1. Fichiers événements "file"
@@ -38,17 +38,17 @@ def main():
     if stems_to_process:
         stems_list = list(stems_to_process)
 
-        print("[2.5/4] Chargement du service IA...")
+        print("[2.5/4] Loading AI service...")
         service = FileDescriptionService()
         service.load()
 
-        print("[2.6/4] Génération des descriptions IA...")
+        print("[2.6/4] Generating AI descriptions...")
         descriptions = service.generate_descriptions(stems_list)
 
         file_desc_map = dict(zip(stems_list, descriptions))
 
     # ── Construction descriptions finales
-    print("[3/4] Construction de la colonne description...")
+    print("[3/4] Construction of the description column...")
     df["description"] = df.apply(
         lambda r: build_description(r.to_dict(), file_desc_map),
         axis=1
@@ -57,7 +57,7 @@ def main():
     # ── Sauvegarde
     df.to_csv(DESCRIBED_EVENTS_FILE, index=False)
 
-    print(f"✅ Terminé ! {len(stems_to_process)} fichiers enrichis.")
+    print(f"Completed ! {len(stems_to_process)} files enriched.")
 
 # ── Permet d'exécuter directement ce script si besoin
 if __name__ == "__main__":

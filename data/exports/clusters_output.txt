@@ -1,13 +1,13 @@
 ============================================================
-RAPPORT DE CLUSTERING DES TÂCHES
+TASK CLUSTERING REPORT
 ============================================================
-Tâches totales          : 21
-Nombre de clusters      : 5
-Silhouette finale       : 0.412
-Cohésion moyenne finale : 0.436
+Total tasks          : 21
+Number of clusters      : 5
+Final silhouette       : 0.412
+Final average cohesion : 0.436
 
 ────────────────────────────────────────────────────────────
-Cluster 0  |  8 tâche(s)  |  cohésion = 0.183
+Cluster 0  |  8 task(s)  |  cohesion = 0.183
 ────────────────────────────────────────────────────────────
   • ls taskmonitor/models/, command, executed in terminal, used to list directory contents in taskmonitor/models/
   • ls taskmonitor/processing/, command, executed in terminal, used to list directory contents in taskmonitor/processing/
@@ -19,27 +19,27 @@ Cluster 0  |  8 tâche(s)  |  cohésion = 0.183
   • ls taskmonitor/processing/clusterer/, command, executed in terminal, used to list directory contents in taskmonitor/processing/clusterer/
 
 ────────────────────────────────────────────────────────────
-Cluster 1  |  3 tâche(s)  |  cohésion = 0.308
+Cluster 1  |  3 task(s)  |  cohesion = 0.308
 ────────────────────────────────────────────────────────────
   • google chrome, application, used to watch (10) youtube
   • google chrome, application, used to watch youtube
   • google chrome, application, used to watch (10) chinchilla - little girl gone (lyrics) - youtube
 
 ────────────────────────────────────────────────────────────
-Cluster 2  |  2 tâche(s)  |  cohésion = 0.436
+Cluster 2  |  2 task(s)  |  cohesion = 0.436
 ────────────────────────────────────────────────────────────
   • visual studio code, code editor, used by the user
   • documents, directory, navigated by the user
 
 ────────────────────────────────────────────────────────────
-Cluster 3  |  3 tâche(s)  |  cohésion = 0.401
+Cluster 3  |  3 task(s)  |  cohesion = 0.401
 ────────────────────────────────────────────────────────────
   • code ., command, executed in terminal, used to start visual studio code
   • terminal, command line, used by the user
   • data_command.txt, file, opened with visual studio code, contains data related to plain text document, text files, it serves as a data command.
 
 ────────────────────────────────────────────────────────────
-Autres petites tâches  |  5 tâche(s)  |  cohésion = 0.851
+Other small tasks  |  5 task(s)  |  cohesion = 0.851
 ────────────────────────────────────────────────────────────
   • google chrome, application, used to checked out new tab
   • clear, command, executed in terminal, used to clear the screen
@@ -48,5 +48,5 @@ Autres petites tâches  |  5 tâche(s)  |  cohésion = 0.851
   • burp suite community edition v2025.7.4, application, used by the user
 
 ============================================================
-FIN DU RAPPORT
+END OF REPORT
 ============================================================

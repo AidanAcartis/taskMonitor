@@ -275,13 +275,13 @@ class PostProcessor:
 
         lines = []
         lines.append("=" * 60)
-        lines.append("RAPPORT DE CLUSTERING DES TÂCHES")
+        lines.append("TASK CLUSTERING REPORT")
         lines.append("=" * 60)
 
-        lines.append(f"Tâches totales          : {len(self.tasks)}")
-        lines.append(f"Nombre de clusters      : {metrics['n_clusters']}")
-        lines.append(f"Silhouette finale       : {metrics['silhouette']:.3f}")
-        lines.append(f"Cohésion moyenne finale : {metrics['cohesion']:.3f}")
+        lines.append(f"Total tasks          : {len(self.tasks)}")
+        lines.append(f"Number of clusters      : {metrics['n_clusters']}")
+        lines.append(f"Final silhouette       : {metrics['silhouette']:.3f}")
+        lines.append(f"Final average cohesion : {metrics['cohesion']:.3f}")
         lines.append("")
 
         for c, items in groups.items():
@@ -290,10 +290,10 @@ class PostProcessor:
                 self.dist[np.ix_(idxs, idxs)]
             )
 
-            label = "Autres petites tâches" if autres_cid is not None and c == autres_cid else f"Cluster {c}"
+            label = "Other small tasks" if autres_cid is not None and c == autres_cid else f"Cluster {c}"
 
             lines.append("─" * 60)
-            lines.append(f"{label}  |  {len(items)} tâche(s)  |  cohésion = {coh:.3f}")
+            lines.append(f"{label}  |  {len(items)} task(s)  |  cohesion = {coh:.3f}")
             lines.append("─" * 60)
 
             for t in items:
@@ -301,16 +301,16 @@ class PostProcessor:
             lines.append("")
 
         lines.append("=" * 60)
-        lines.append("FIN DU RAPPORT")
+        lines.append("END OF REPORT")
         lines.append("=" * 60)
 
         with open(output_file, "w", encoding="utf-8") as f:
             f.write("\n".join(lines))
 
-        print("✅ Export terminé")
+        print("Export completed")
 
     def merge_final_singletons(self, groups):
-        print("\n[14bis] Fusion intelligente des singletons ...")
+        print("\n[14bis] Fusion of singletons...")
 
         SINGLETON_MERGE_SIM = 0.45
         sim_matrix_post = 1 - self.dist
@@ -354,8 +354,8 @@ class PostProcessor:
             else:
                 singletons_orphans.append(t)
 
-        print(f"    {singletons_merged} singleton(s) fusionné(s) dans un cluster existant.")
-        print(f"    {len(singletons_orphans)} singleton(s) orphelins → 'Autres petites tâches'.")
+        print(f"    {singletons_merged} singleton(s) merged into an existing cluster.")
+        print(f"    {len(singletons_orphans)} orphaned singleton(s) → 'Other small tasks'.")
 
         AUTRES_CID = None
 
