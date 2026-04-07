@@ -45,7 +45,7 @@ class OutputAssembler:
     def to_datetime(self, date, time):
         return datetime.strptime(f"{date} {time}", "%Y-%m-%d %H:%M:%S")
 
-    # 🔥 Matching robuste (clé de la correction)
+    # Matching robuste (clé de la correction)
     def match_event(self, event_desc, task_items_norm):
         for t in task_items_norm:
             if event_desc in t or t in event_desc:

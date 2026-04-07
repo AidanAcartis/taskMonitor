@@ -141,7 +141,7 @@ echo "  ✓ Launcher créé : $LAUNCHER"
 # Vérifier que ~/.local/bin est dans le PATH
 if ! echo "$PATH" | grep -q "$HOME/.local/bin"; then
     echo ""
-    echo "  ⚠ Ajouter à votre ~/.bashrc :"
+    echo "  Ajouter à votre ~/.bashrc :"
     echo "    export PATH=\"\$HOME/.local/bin:\$PATH\""
 fi
 

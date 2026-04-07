@@ -36,11 +36,11 @@ class FileCollector:
                     result.returncode, result.args, output=result.stdout, stderr=result.stderr
                 )
 
-            logger.logger.info("File collection terminée avec succès.")
+            logger.logger.info("File collection successfully completed.")
 
         except subprocess.CalledProcessError as e:
             logger.logger.error(
-                f"Erreur lors de l'exécution du script : {e}\n"
+                f"Error occurred while executing the script : {e}\n"
                 f"stdout:\n{e.output}\nstderr:\n{e.stderr}"
             )
             raise

@@ -67,4 +67,4 @@ class CommandCollector:
                 ligne = f"{cmd[5]}, {cmd[3]}, {cmd[4]}, {cmd[6]:.3f}, {cmd[1]}, {cmd[2]}\n"
                 f.write(ligne)
 
-        logger.logger.info(f"{len(commandes)} commandes enregistrées dans {self.output_file}")
+        logger.logger.info(f"{len(commandes)} orders saved in {self.output_file}")

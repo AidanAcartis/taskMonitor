@@ -105,5 +105,5 @@ class ReclusteringEngine:
                 final_groups[new_label_counter] = current
                 new_label_counter += 1
 
-        print(f"    {len(final_groups)} clusters après reclustering itératif.")
+        print(f"    {len(final_groups)} clusters after iterative reclustering.")
         return final_groups

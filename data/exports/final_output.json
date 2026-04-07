@@ -600,7 +600,7 @@
     },
     {
       "cluster_id": "Cluster 2",
-      "global_task_intention": "Create a code file",
+      "global_task_intention": "Open coding file",
       "cohesion": 0.436,
       "stats": {
         "total_duration": 0.24,

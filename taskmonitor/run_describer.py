@@ -7,9 +7,9 @@ import sys
 def check_cmddesc():
     """Vérifie que cmddesc est installé et accessible."""
     if shutil.which("cmddesc") is None:
-        print("❌ cmddesc n'est pas installé ou pas dans le PATH.")
-        print("👉 Va dans : taskmonitor/external/command_desc/")
-        print("👉 Puis installe avec : pip install .")
+        print("❌ cmddesc is not installed or is not in the PATH.")
+        print("👉 Go to : taskmonitor/external/command_desc/")
+        print("👉 Then install with : pip install .")
         sys.exit(1)
 
     try:
@@ -21,9 +21,9 @@ def check_cmddesc():
             timeout=5
         )
         if result.returncode != 0:
-            raise Exception("cmddesc ne répond pas correctement")
+            raise Exception("cmddesc is not responding correctly")
     except Exception as e:
-        print(f"❌ Erreur cmddesc : {e}")
+        print(f"❌ Error cmddesc : {e}")
         sys.exit(1)
 
     print("✅ cmddesc OK")
@@ -32,7 +32,7 @@ def check_cmddesc():
 # ───────────────── RUN PIPELINE ─────────────────
 
 def run_pipeline():
-    print("🚀 Lancement du pipeline describer...\n")
+    print(" Launch of the pipeline describer...\n")
 
     from taskmonitor.processing.describer import main  # on va créer main()
 

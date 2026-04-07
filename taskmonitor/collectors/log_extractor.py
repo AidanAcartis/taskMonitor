@@ -19,8 +19,8 @@ class LogExtractor:
     def run(self):
         """Exécute le script bash et affiche les fichiers générés."""
         try:
-            logger.logger.info(f"Lancement de {self.script_path}...")
+            logger.logger.info(f"Launch of {self.script_path}...")
             subprocess.run(["bash", str(self.script_path)], check=True)
-            logger.logger.info(f"Fichiers générés :\n- {self.opened_file}\n- {self.closed_file}")
+            logger.logger.info(f"Files generated :\n- {self.opened_file}\n- {self.closed_file}")
         except subprocess.CalledProcessError as e:
-            logger.logger.error(f"Erreur lors de l'exécution du script : {e}")
+            logger.logger.error(f"Error occurred while executing the script : {e}")

@@ -336,10 +336,10 @@ class Clusterer:
         for c, items in groups.items():
             idxs  = [tasks.index(t) for t in items]
             coh   = self._compute_cohesion(dist[np.ix_(idxs, idxs)])
-            label = "Autres petites tâches" if c == AUTRES_CID and len(items) == 1 else f"Cluster {c}"
+            label = "Other small tasks" if c == AUTRES_CID and len(items) == 1 else f"Cluster {c}"
             lines += [
                 "─" * 60,
-                f"{label}  |  {len(items)} tâche(s)  |  cohésion = {coh:.3f}",
+                f"{label}  |  {len(items)} task(s)  |  cohesion = {coh:.3f}",
                 "─" * 60,
             ]
             for t in items:

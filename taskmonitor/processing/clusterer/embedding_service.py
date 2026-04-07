@@ -13,7 +13,7 @@ class EmbeddingService:
         """
         Initialise le modèle d'embeddings.
         """
-        print(f"\n[3] Chargement du modèle : {CLUSTER_MODEL_DIR} ...")
+        print(f"\n[3] Loading the model : {CLUSTER_MODEL_DIR} ...")
 
         self.model = SentenceTransformer(str(CLUSTER_MODEL_DIR), device=str(DEVICE))
         self.model.eval()
@@ -29,9 +29,9 @@ class EmbeddingService:
             embeddings (tensor)
         """
         if not tasks:
-            raise ValueError("La liste des tâches est vide.")
+            raise ValueError("The list of tasks is empty.")
 
-        print("    Calcul des embeddings ...")
+        print("    Calculating embeddings ...")
 
         embeddings = self.model.encode(
             tasks,

@@ -28,8 +28,8 @@ Cluster 1  |  3 task(s)  |  cohesion = 0.308
 ────────────────────────────────────────────────────────────
 Cluster 2  |  2 task(s)  |  cohesion = 0.436
 ────────────────────────────────────────────────────────────
-  • visual studio code, code editor, used by the user
   • documents, directory, navigated by the user
+  • visual studio code, code editor, used by the user
 
 ────────────────────────────────────────────────────────────
 Cluster 3  |  3 task(s)  |  cohesion = 0.401

@@ -48,14 +48,14 @@ class PostProcessor:
 
         assert np.all(labels != -1)
 
-        print(f"    {len(final_merged)} clusters fusionnés.")
+        print(f"    {len(final_merged)} merged clusters.")
         return final_merged, labels
 
     # ─────────────────────────────────────────────
     # ÉTAPE 11 — Reclustering final
     # ─────────────────────────────────────────────
     def final_reclustering(self, labels):
-        print("\n[11] Reclustering final ...")
+        print("\n[11] Final reclustering ...")
 
         cfg = CLUSTER_CONFIG
         clusters = defaultdict(list)
@@ -123,7 +123,7 @@ class PostProcessor:
                 final_groups[new_cid] = items
                 new_cid += 1
 
-        print(f"    {len(final_groups)} clusters après reclustering final.")
+        print(f"    {len(final_groups)} clusters after final reclustering.")
         return final_groups
 
     # ─────────────────────────────────────────────
@@ -169,7 +169,7 @@ class PostProcessor:
     # ÉTAPE 14 — Post-processing
     # ─────────────────────────────────────────────
     def postprocess(self, groups):
-        print("\n[14] Post-processing ciblé ...")
+        print("\n[14] Targeted post-processing...")
 
         cfg = CLUSTER_CONFIG
 
@@ -262,8 +262,8 @@ class PostProcessor:
 
         final = {i: v for i, v in enumerate(working.values())}
 
-        print(f"    {reassigned} éléments réassignés.")
-        print(f"    {len(final)} clusters après post-processing.")
+        print(f"    {reassigned} elements reassigned.")
+        print(f"    {len(final)} clusters after post-processing.")
 
         return final
 
@@ -366,9 +366,9 @@ class PostProcessor:
             groups = {i: v for i, v in enumerate(groups.values())}
             AUTRES_CID = len(groups) - 1
 
-            print(f"    Cluster 'Autres petites tâches' : {len(singletons_orphans)} tâche(s).")
+            print(f"    Cluster 'Other small tasks': {len(singletons_orphans)} task(s).")
         else:
             groups = {i: v for i, v in enumerate(groups.values())}
-            print("    Aucun singleton orphelin.")
+            print("    No orphaned singletons.")
 
         return groups, AUTRES_CID
