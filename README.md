@@ -1,105 +1,299 @@
+
 # TaskMonitor
 
-Moniteur d'activité bureau avec analyse IA et visualisation.
+Desktop activity monitoring system with AI-based analysis and visualization.
 
-Surveille automatiquement les fenêtres ouvertes, les fichiers édités et les commandes bash, puis génère une analyse complète avec clustering et intentions globales de tâches.
+The system automatically tracks open windows, edited files, and executed shell commands, then processes this data through a machine learning pipeline to produce task clusters and high-level user intentions.
 
 ---
 
 ## Architecture
 
 ```
+
 taskmonitor/
 ├── taskmonitor/
-│   ├── core/               ← modules partagés (config, models, storage, logger)
-│   ├── collectors/         ← collecte des données brutes
-│   ├── processing/         ← pipeline de traitement IA
-│   ├── gui/                ← interface PyQt6
-│   ├── autostart/          ← installation raccourcis
-│   ├── orchestrator.py     ← chef d'orchestre du pipeline
-│   └── main.py             ← point d'entrée
-├── data/                   ← données locales (générées, non versionnées)
-├── models/                 ← modèles IA (non versionnés, copier manuellement)
-├── assets/                 ← icône et ressources
+│   ├── core/               ← shared modules (config, models, storage, logger)
+│   ├── collectors/         ← raw data collection
+│   ├── processing/         ← AI processing pipeline
+│   ├── gui/                ← PyQt6 interface
+│   ├── autostart/          ← startup integration
+│   ├── orchestrator.py     ← pipeline orchestrator
+│   └── main.py             ← entry point
+├── data/                   ← local data (generated, not versioned)
+├── models/                 ← AI models (not versioned, manual copy)
+├── assets/                 ← icons and resources
 ├── requirements.txt
 ├── pyproject.toml
 └── setup_env.sh
-```
+
+````
 
 ---
 
-## Installation rapide
+## Installation
 
-### Sur votre machine (Ubuntu 22.04 / 24.04)
+### On Ubuntu (22.04 / 24.04)
 
 ```bash
-git clone <url-du-repo> taskmonitor
+git clone <repository-url> taskmonitor
 cd taskmonitor
 chmod +x setup_env.sh
 ./setup_env.sh
-```
+````
 
-Le script installe automatiquement :
-- `wmctrl` (surveillance des fenêtres)
-- L'environnement conda `MLproject_py311`
-- Toutes les dépendances Python
-- `cmddesc` (description des commandes)
-- L'autostart au démarrage de session
-- Un raccourci bureau
+The setup script installs:
 
-### Sur une nouvelle machine
-
-1. Copier le dossier du projet
-2. Copier les modèles IA dans `~/Documents/Projects/Visualization/Vis_Models/`
-   (ou définir `TASKMONITOR_MODELS_DIR=/chemin/vers/models`)
-3. Lancer `./setup_env.sh`
+* `wmctrl` (window tracking)
+* Conda environment `MLproject_py311`
+* Python dependencies
+* `cmddesc` (command description engine)
+* Autostart configuration
+* Desktop shortcut
 
 ---
 
-## Lancement
+## Models
+
+The system relies on several machine learning models, each responsible for a specific stage of the pipeline.
+
+### Description Model (T5-based)
+
+* Path: `Vis_Models/Gen_Desc_Model/full_finetuned/`
+* Used in: `processing/describer.py`
+* Purpose:
+
+  * Generate semantic descriptions of raw events
+  * Normalize heterogeneous system data into structured text
+
+---
+
+### Clustering Model (Sentence Transformer)
+
+* Path: `Vis_Models/final_model/`
+* Used in: `processing/clusterer.py`
+* Purpose:
+
+  * Encode task descriptions into embeddings
+  * Group semantically similar tasks into clusters
+
+---
+
+### Intention Prediction Model (Flan-T5 fine-tuned)
+
+* Path: `Vis_Models/final_Model_V3/final_model/`
+* Used in: `processing/intention_predictor.py`
+* Purpose:
+
+  * Generate a global task intention per cluster
+  * Summarize multiple actions into a single high-level objective
+
+---
+
+## Pipeline Overview
+
+| Step        | Module                   | Model Used          | Output             |
+| ----------- | ------------------------ | ------------------- | ------------------ |
+| Description | `describer.py`           | T5 (fine-tuned)     | Event descriptions |
+| Clustering  | `clusterer.py`           | SentenceTransformer | Task clusters      |
+| Intention   | `intention_predictor.py` | Flan-T5             | Global intentions  |
+
+---
+
+## Execution Model and Orchestration
+
+### Fundamental Rule
+
+All commands must be executed from the project root:
+
+```
+~/Documents/Projects/Visualization/taskMonitor
+```
+
+Always use module execution:
 
 ```bash
-taskmonitor
+python -m taskmonitor.<module>
 ```
 
-L'application se lance en arrière-plan avec une icône dans le system tray.
+This ensures:
+
+* Proper absolute imports
+* Consistent path resolution
+* Compatibility with packaging
 
 ---
 
-## Pipeline de traitement
+## Environment Requirements
 
-| Étape | Module | Description |
-|-------|--------|-------------|
-| 1 | `collectors/window_monitor.py` | Surveillance wmctrl → log |
-| 2 | `collectors/file_collector.py` | Extraction ouvertures/fermetures |
-| 3 | `collectors/file_collector.py` | Calcul des durées |
-| 4 | `collectors/command_collector.py` | Collecte bash_history |
-| 5 | `processing/assembler.py` | Assemblage TSV unifié |
-| 6 | `processing/parser.py` | Normalisation CSV |
-| 7 | `processing/describer.py` | Description IA (T5 + cmddesc) |
-| 8 | `processing/clusterer.py` | Clustering sémantique |
-| 9 | `processing/intention_predictor.py` | Intentions globales |
+### Python Environment
 
----
+```
+MLproject_py311
+```
 
-## Modèles requis
+### Required Packages
 
-| Modèle | Chemin par défaut | Usage |
-|--------|-------------------|-------|
-| Gen_Desc_Model | `Vis_Models/Gen_Desc_Model/full_finetuned/` | Description des fichiers |
-| final_model | `Vis_Models/final_model/` | Clustering (SentenceTransformer) |
-| final_Model_V3 | `Vis_Models/final_Model_V3/final_model/` | Génération d'intentions |
-
-Chemin personnalisable :
 ```bash
-export TASKMONITOR_MODELS_DIR=/chemin/vers/models
+pip install pandas numpy scikit-learn transformers torch
+```
+
+### System Dependencies
+
+* Access to `~/.bash_history`
+* X11-compatible window manager
+* `wmctrl` installed
+
+### External Dependency
+
+```bash
+cd taskmonitor/external/command_desc
+pip install .
 ```
 
 ---
 
-## Données
+## Module Execution
 
-Les données sont stockées dans `~/.taskmonitor/data/` :
+### Monitoring (Long-running)
+
+Window monitor:
+
+```python
+from taskmonitor.collectors.window_monitor import WindowMonitor
+
+wm = WindowMonitor()
+wm.start()
+```
+
+Command collector:
+
+```python
+from taskmonitor.collectors.command_collector import CommandCollector
+
+CommandCollector().run()
+```
+
+---
+
+### Processing (Batch Pipeline)
+
+1. Log extraction
+
+```python
+from taskmonitor.collectors.log_extractor import LogExtractor
+LogExtractor().run()
+```
+
+2. File collection
+
+```python
+from taskmonitor.collectors.file_collector import FileCollector
+FileCollector().run()
+```
+
+3. Data aggregation
+
+```python
+from taskmonitor.collectors.collect_data import DataCollector
+DataCollector().run()
+```
+
+4. Parsing
+
+```python
+from taskmonitor.processing.parser import EventParser
+EventParser().run()
+```
+
+5. Description
+
+```bash
+python -m taskmonitor.run_describer
+```
+
+6. Clustering
+
+```bash
+python -m taskmonitor.run_clusterer
+```
+
+7. Intention prediction
+
+```bash
+python -m taskmonitor.run_predict_intention
+```
+
+---
+
+## Execution Modes
+
+| Type         | Components               |
+| ------------ | ------------------------ |
+| Long-running | window_monitor           |
+| Batch        | full processing pipeline |
+
+---
+
+## Orchestrator
+
+The orchestrator (`taskmonitor/orchestrator.py`) provides three execution modes.
+
+### Monitoring Mode
+
+```bash
+python -m taskmonitor.orchestrator monitor
+```
+
+Runs continuous monitoring and periodic command collection.
+
+---
+
+### Processing Mode
+
+```bash
+python -m taskmonitor.orchestrator process
+```
+
+Executes the full pipeline from raw logs to intentions.
+
+---
+
+### All-in-One Mode
+
+```bash
+python -m taskmonitor.orchestrator all
+```
+
+Runs monitoring in the background, executes processing, then stops monitoring.
+
+---
+
+## Critical Points
+
+### Script Permissions
+
+```bash
+chmod +x taskmonitor/collectors/window_monitor.sh
+```
+
+### Configuration
+
+All paths must be defined in `taskmonitor/core/config.py`.
+
+Avoid hardcoded paths.
+
+### Environment Activation
+
+```bash
+conda activate MLproject_py311
+```
+
+---
+
+## Data Storage
+
+Data is stored in:
 
 ```
 ~/.taskmonitor/data/
@@ -116,13 +310,36 @@ Les données sont stockées dans `~/.taskmonitor/data/` :
     └── clusters_with_intentions.txt
 ```
 
-Chaque journée est conservée indéfiniment et consultable depuis l'interface.
+Each day is stored independently and can be accessed through the interface.
 
 ---
 
-## Variables d'environnement
+## Environment Variables
 
-| Variable | Défaut | Description |
-|----------|--------|-------------|
-| `TASKMONITOR_DATA_DIR` | `~/.taskmonitor/data` | Dossier de données |
-| `TASKMONITOR_MODELS_DIR` | `~/Documents/Projects/Visualization/Vis_Models` | Dossier modèles IA |
+| Variable               | Default                                         | Description      |
+| ---------------------- | ----------------------------------------------- | ---------------- |
+| TASKMONITOR_DATA_DIR   | `~/.taskmonitor/data`                           | Data directory   |
+| TASKMONITOR_MODELS_DIR | `~/Documents/Projects/Visualization/Vis_Models` | Models directory |
+
+---
+
+## System Outcome
+
+The system evolves from independent scripts into a structured and reproducible pipeline:
+
+* Centralized orchestration
+* Consistent execution model
+* AI-driven analysis pipeline
+* Ready for GUI integration
+* Suitable for deployment as a background service
+
+---
+
+## Future Improvements
+
+* Systemd service integration for monitoring
+* Centralized logging
+* Incremental processing for performance
+* State management (checkpoints, caching, embedding reuse)
+* Full pipeline optimization for production use
+
