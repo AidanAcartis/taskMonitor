@@ -33,7 +33,7 @@ class MainWindow(QMainWindow):
         main_layout.addWidget(self.toolbar_layout)
 
         # Zone centrale
-        self.central_label = QLabel("TaskMonitor UI is running")
+        self.central_label = QLabel("T")
         main_layout.addWidget(self.central_label)
 
         self.setCentralWidget(container)

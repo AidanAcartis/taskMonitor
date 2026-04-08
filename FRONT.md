@@ -39,12 +39,12 @@ taskmonitor/gui/
 
 Tu as décrit 👇
 
-### HEADER
+### HEADER(TOOLBAR)
 
 * gauche → menu (monitor / process)
 * droite → aide / paramètres / quitter
 
-### TOOLBAR
+### TOOLBARLAYOUT
 
 * titre page
 * loader
