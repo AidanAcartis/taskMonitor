@@ -20,7 +20,6 @@ class Header(QToolBar):
             QToolBar {
                 margin: 0px;
                 padding: 0px;
-                # spacing: 5px;
             }
             """)
 
