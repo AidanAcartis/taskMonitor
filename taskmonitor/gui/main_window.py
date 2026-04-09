@@ -3,6 +3,14 @@ from taskmonitor.gui.header import Header
 from taskmonitor.gui.toolbar_layout import ToolbarLayout
 from taskmonitor.gui.navbar import NavBar
 from PyQt6.QtCore import Qt, pyqtSignal
+from taskmonitor.gui.pages.dashboard import Dashboard
+import json
+from taskmonitor.core.config import EXPORTS_DIR
+
+data_path = EXPORTS_DIR / "final_output.json"
+
+with open(data_path, "r") as f:
+    data = json.load(f)
 
 
 class MainWindow(QMainWindow):
@@ -58,6 +66,9 @@ class MainWindow(QMainWindow):
         self.central_label = QLabel("Dashboard")
         self.central_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
         central_layout.addWidget(self.central_label)
+
+        self.dashboard = Dashboard(data)
+        central_layout.addWidget(self.dashboard)
 
         bottom_layout.addWidget(self.central_area)
 

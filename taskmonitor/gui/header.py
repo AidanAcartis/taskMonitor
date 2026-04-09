@@ -19,7 +19,7 @@ class Header(QToolBar):
         self.setStyleSheet("""
             QToolBar {
                 margin: 0px;
-                padding: 0px;
+                padding: 5px;
             }
             """)
 
