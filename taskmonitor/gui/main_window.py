@@ -70,7 +70,7 @@ class MainWindow(QMainWindow):
 
         self.page_dashboard   = Dashboard(data)
         self.page_graphstats  = GraphStats(data)
-        self.page_chart       = Chart()
+        self.page_chart = Chart(data)
 
         self.stack.addWidget(self.page_dashboard)   # index 0
         self.stack.addWidget(self.page_graphstats)  # index 1
