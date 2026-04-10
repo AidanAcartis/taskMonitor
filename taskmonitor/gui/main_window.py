@@ -1,9 +1,11 @@
-from PyQt6.QtWidgets import QMainWindow, QWidget, QVBoxLayout, QLabel, QHBoxLayout
+from PyQt6.QtWidgets import QMainWindow, QWidget, QVBoxLayout, QLabel, QHBoxLayout, QStackedWidget
 from taskmonitor.gui.header import Header
 from taskmonitor.gui.toolbar_layout import ToolbarLayout
 from taskmonitor.gui.navbar import NavBar
 from PyQt6.QtCore import Qt, pyqtSignal
 from taskmonitor.gui.pages.dashboard import Dashboard
+from taskmonitor.gui.pages.graph_stats import GraphStats
+from taskmonitor.gui.pages.chart import Chart
 import json
 from taskmonitor.core.config import EXPORTS_DIR
 
@@ -55,30 +57,29 @@ class MainWindow(QMainWindow):
         bottom_layout.addWidget(self.navbar)
 
         # ===== CENTRAL AREA (droite) =====
-        self.central_area = QWidget()
-        self.central_area.setAttribute(Qt.WidgetAttribute.WA_StyledBackground, True)
-        self.central_area.setStyleSheet("background-color: 2b2b2b;")
+        # ===== STACK =====
+        self.stack = QStackedWidget()
 
-        central_layout = QVBoxLayout()
-        central_layout.setContentsMargins(0, 0, 0, 0)
-        self.central_area.setLayout(central_layout)
+        self.page_dashboard  = Dashboard(data)
+        self.page_graphstats = GraphStats()
+        self.page_chart      = Chart()
 
-        self.central_label = QLabel("Dashboard")
-        self.central_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
-        central_layout.addWidget(self.central_label)
+        self.stack.addWidget(self.page_dashboard)   # index 0
+        self.stack.addWidget(self.page_graphstats)  # index 1
+        self.stack.addWidget(self.page_chart)        # index 2
 
-        self.dashboard = Dashboard(data)
-        central_layout.addWidget(self.dashboard)
+        # table de routing : label NavBar → index dans le stack
+        self.page_index = {
+            "Dashboard":      0,
+            "Graphes & Stats": 1,
+            "Chart":           2,
+        }
 
-        bottom_layout.addWidget(self.central_area)
+        bottom_layout.addWidget(self.stack)
+        bottom_layout.setStretch(0, 0)
+        bottom_layout.setStretch(1, 1)
 
-        # 🔥 IMPORTANT : permet au central de prendre tout l'espace restant
-        bottom_layout.setStretch(0, 0)  # navbar fixe
-        bottom_layout.setStretch(1, 1)  # central expand
-
-        # ===== AJOUT FINAL =====
         main_layout.addWidget(bottom_container)
-
         self.setCentralWidget(container)
 
         # ===== CONNEXIONS =====
@@ -95,7 +96,7 @@ class MainWindow(QMainWindow):
 
     # ===== Actions NavBar =====
     def switch_page(self, page_name):
-        print(f"🌟 Page sélectionnée : {page_name}")
-        self.central_label.setText(page_name)
+        index = self.page_index.get(page_name, 0)
+        self.stack.setCurrentIndex(index)
         self.toolbar_layout.set_title(page_name)
         self.navbar.highlight_page(page_name)
