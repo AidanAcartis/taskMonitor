@@ -5,7 +5,7 @@ from taskmonitor.gui.navbar import NavBar
 from PyQt6.QtCore import Qt, pyqtSignal
 from taskmonitor.gui.pages.dashboard import Dashboard
 from taskmonitor.gui.pages.graph_stats import GraphStats
-from taskmonitor.gui.pages.chart import Chart
+from taskmonitor.gui.pages.chart      import Chart
 import json
 from taskmonitor.core.config import EXPORTS_DIR
 
@@ -53,20 +53,6 @@ class MainWindow(QMainWindow):
 
         # ===== NAVBAR (gauche) =====
         self.navbar = NavBar()
-        self.navbar.page_selected.connect(self.switch_page)
-        bottom_layout.addWidget(self.navbar)
-
-        # ===== CENTRAL AREA (droite) =====
-        # ===== STACK =====
-        self.stack = QStackedWidget()
-
-        self.page_dashboard  = Dashboard(data)
-        self.page_graphstats = GraphStats()
-        self.page_chart      = Chart()
-
-        self.stack.addWidget(self.page_dashboard)   # index 0
-        self.stack.addWidget(self.page_graphstats)  # index 1
-        self.stack.addWidget(self.page_chart)        # index 2
 
         # table de routing : label NavBar → index dans le stack
         self.page_index = {
@@ -74,6 +60,21 @@ class MainWindow(QMainWindow):
             "Graphes & Stats": 1,
             "Chart":           2,
         }
+
+        self.navbar.page_selected.connect(self.switch_page)
+        bottom_layout.addWidget(self.navbar)
+
+        # ===== CENTRAL AREA (droite) =====
+        # ===== STACK =====
+        self.stack = QStackedWidget()
+
+        self.page_dashboard   = Dashboard(data)
+        self.page_graphstats  = GraphStats(data)
+        self.page_chart       = Chart()
+
+        self.stack.addWidget(self.page_dashboard)   # index 0
+        self.stack.addWidget(self.page_graphstats)  # index 1
+        self.stack.addWidget(self.page_chart)        # index 2
 
         bottom_layout.addWidget(self.stack)
         bottom_layout.setStretch(0, 0)
@@ -95,8 +96,15 @@ class MainWindow(QMainWindow):
         print("🔹 Processing lancé...")
 
     # ===== Actions NavBar =====
-    def switch_page(self, page_name):
-        index = self.page_index.get(page_name, 0)
-        self.stack.setCurrentIndex(index)
-        self.toolbar_layout.set_title(page_name)
-        self.navbar.highlight_page(page_name)
+    def switch_page(self, page_name: str):
+        if page_name.startswith("graph:"):
+            # sub-graph selected from NavBar
+            graph_name = page_name[len("graph:"):]
+            self.stack.setCurrentIndex(1)                      # show GraphStats
+            self.page_graphstats.show_graph(graph_name)        # switch inner stack
+            self.toolbar_layout.set_title(graph_name)
+        else:
+            idx = self.page_index.get(page_name, 0)
+            self.stack.setCurrentIndex(idx)
+            self.toolbar_layout.set_title(page_name)
+            self.navbar.highlight_page(page_name)
