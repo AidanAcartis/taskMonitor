@@ -41,3 +41,42 @@ def load_activity_counts() -> dict[str, int]:
                 counts[start_str[:10]] += 1
 
     return dict(counts)
+
+def load_clusters_by_date(date_str: str) -> dict:
+    """
+    Retourne un dict {'clusters': [...]} avec tous les clusters
+    de toutes les sessions dont la date d'activité correspond à date_str (YYYY-MM-DD).
+    """
+    conn = get_connection()
+    rows = conn.execute("SELECT data FROM sessions").fetchall()
+    conn.close()
+
+    clusters = []
+    for (raw,) in rows:
+        data = json.loads(raw)
+        for cluster in data.get("clusters", []):
+            start_str = cluster.get("stats", {}).get("start", "")
+            if start_str[:10] == date_str:
+                clusters.append(cluster)
+
+    return {"clusters": clusters}
+
+
+def load_available_dates() -> list[str]:
+    """
+    Retourne la liste triée (décroissante) de toutes les dates d'activité
+    présentes dans toutes les sessions.
+    """
+    conn = get_connection()
+    rows = conn.execute("SELECT data FROM sessions").fetchall()
+    conn.close()
+
+    dates = set()
+    for (raw,) in rows:
+        data = json.loads(raw)
+        for cluster in data.get("clusters", []):
+            start_str = cluster.get("stats", {}).get("start", "")
+            if start_str:
+                dates.add(start_str[:10])
+
+    return sorted(dates, reverse=True)

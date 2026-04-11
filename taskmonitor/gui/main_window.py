@@ -11,6 +11,10 @@ from taskmonitor.gui.pages.processing import ProcessingPage
 import json
 from taskmonitor.core.config import EXPORTS_DIR
 from taskmonitor.core.db_reader import load_latest_session
+from taskmonitor.core.db_reader import (
+    load_all_sessions, load_activity_counts,
+    load_clusters_by_date, load_available_dates
+)
 
 # data_path = EXPORTS_DIR / "final_output.json"
 
