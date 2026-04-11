@@ -21,6 +21,7 @@ SUBGRAPHS = [
     "App Proportion",
     "Domain Proportion",
     "Activity Heatmap",
+    "Line Charts",
 ]
 
 

@@ -13,6 +13,7 @@ from taskmonitor.gui.pages.graphs.donut_charts      import (
     TaskDonutChart, AppDonutChart, DomainDonutChart
 )
 from taskmonitor.gui.pages.graphs.heatmap_embed     import ActivityHeatmap
+from taskmonitor.gui.pages.graphs.line_chart        import LineChart
 
 
 # Mapping exact : label NavBar  →  index dans le stack interne
@@ -23,6 +24,7 @@ GRAPH_NAMES = [
     "App Proportion",      # 3
     "Domain Proportion",   # 4
     "Activity Heatmap",    # 5
+    "Line Charts",         # 6
 ]
 
 
@@ -40,6 +42,7 @@ class GraphStats(QWidget):
             AppDonutChart(data),
             DomainDonutChart(data),
             ActivityHeatmap(data),
+            LineChart(data),
         ]
         for i, (name, widget) in enumerate(zip(GRAPH_NAMES, graphs)):
             self._stack.addWidget(widget)
