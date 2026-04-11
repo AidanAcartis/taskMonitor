@@ -9,7 +9,7 @@ import argparse
 
 from taskmonitor.core.config import INTENTION_OUTPUT_TXT, INTENTION_OUTPUT_JSONL, INTENTION_MODEL_DIR
 from taskmonitor.processing.io_utils import write_txt, write_jsonl
-from taskmonitor.processing.intention_predictor import load_model, predict, generate_simple_intention
+from taskmonitor.processing.intention_predictor import load_model, predict, generate_simple_intention, clean_intention
 from taskmonitor.processing.cluster_output_parser import parse_clusters
 
 def parse_args():
@@ -38,6 +38,7 @@ def main():
             intention = generate_simple_intention(cluster["items"][0])
         else:
             intention = predict(model, tokenizer, device, cluster["items"])
+        intention = clean_intention(intention)
         cluster["intention"] = intention
         results.append(cluster)
         print(f"{cluster['cluster_id']} -> {intention}")

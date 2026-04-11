@@ -22,12 +22,20 @@ from taskmonitor.core.db_reader import (
 )
 
 DOMAIN_PALETTE = {
-    "work":          "#378ADD",
-    "leisure":       "#26a641",
-    "security":      "#D4537E",
-    "configuration": "#EF9F27",
-    "study":         "#7F77DD",
-    "other":         "#888780",
+    "development":   "#378ADD",   # blue
+    "security":      "#D4537E",   # pink/red
+    "sysadmin":      "#D85A30",   # coral
+    "data_science":  "#7F77DD",   # purple
+    "configuration": "#EF9F27",   # amber
+    "study":         "#1D9E75",   # teal
+    "communication": "#5DCAA5",   # light teal
+    "social":        "#F09595",   # light red
+    "entertainment": "#26a641",   # green
+    "gaming":        "#FAC775",   # light amber
+    "creative":      "#ED93B1",   # light pink
+    "productivity":  "#85B7EB",   # light blue
+    "browsing":      "#B4B2A9",   # gray
+    "other":         "#888780",   # muted gray
 }
 
 BG       = QColor("#1a1a1a")

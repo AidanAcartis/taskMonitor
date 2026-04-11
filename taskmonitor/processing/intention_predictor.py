@@ -163,3 +163,33 @@ def generate_simple_intention(item: str) -> str:
         return f"run {obj_lower}"
 
     return obj_lower
+
+# ── POST-PROCESS INTENTION ────────────────────────────────
+def clean_intention(intention: str) -> str:
+    """
+    Removes redundant 'and X' patterns where X repeats or mirrors
+    the first part of the intention.
+    e.g. 'Monitor and monitor task monitoring' -> 'Monitor task monitoring'
+    e.g. 'Monitor and manage task monitoring' -> kept as-is (different verbs)
+    """
+    import re
+
+    # Normalize
+    text = intention.strip()
+
+    # Pattern: "VERB and SAME_VERB ..." => remove "and SAME_VERB"
+    m = re.match(r'^(\w+)\s+and\s+(\w+)\s+(.*)', text, re.IGNORECASE)
+    if m:
+        verb1 = m.group(1).lower()
+        verb2 = m.group(2).lower()
+        rest  = m.group(3)
+
+        # Same verb repeated
+        if verb1 == verb2:
+            return f"{m.group(1)} {rest}".strip()
+
+        # verb2 is contained in rest (e.g. "monitor and monitor task monitoring")
+        if verb2 in rest.lower():
+            return f"{m.group(1)} {rest}".strip()
+
+    return text

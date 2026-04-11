@@ -1,5 +1,6 @@
 2026-04-11 14:36:58 14:36:58 taskMonitor
 2026-04-11 14:37:35 14:37:45 data_command.txt - taskMonitor - Visual Studio Code
+2026-04-11 14:37:45 16:32:02 window_changes.log - taskMonitor - Visual Studio Code
 2026-04-11 14:37:53 14:37:55 Google Chrome
 2026-04-11 14:37:55 14:38:07 New Tab - Google Chrome
 2026-04-11 14:38:07 14:38:15 History - Google Chrome
@@ -11,3 +12,33 @@
 2026-04-11 16:27:50 16:30:30 New Tab - Google Chrome
 2026-04-11 16:27:52 16:28:07 tryhackme.com/room/introductiontodevsecops - Google Chrome
 2026-04-11 16:28:42 16:29:56 Oracle VirtualBox Manager
+2026-04-11 16:29:41 17:08:29 New Tab - Google Chrome
+2026-04-11 16:30:49 17:07:24 Archiver les fichiers JSON par date dans la base de données - Claude - Google Chrome
+2026-04-11 16:31:27 17:09:44 window_changes.log - taskMonitor - Visual Studio Code
+2026-04-11 17:07:22 17:49:12 window_changes.log - taskMonitor - Visual Studio Code
+2026-04-11 17:07:24 17:22:00 Recherche Google - Google Chrome
+2026-04-11 17:08:55 17:09:42 Cisco Packet Tracer
+2026-04-11 17:09:42 17:24:33 main_window.py - taskMonitor - Visual Studio Code
+2026-04-11 17:23:18 17:29:35 (11) HEARTSTEEL – PARANOIA ft. AEKHYUN, tobi lou, ØZI et Cal Scruby (clip officiel) - YouTube - Google Chrome
+2026-04-11 17:24:00 17:28:51 Archiver les fichiers JSON par date dans la base de données - Claude - Google Chrome
+2026-04-11 17:24:33 17:27:07 monitoring.py - taskMonitor - Visual Studio Code
+2026-04-11 17:25:32 17:28:32 monitoring.py - taskMonitor - Visual Studio Code
+2026-04-11 17:27:07 17:28:34 ● monitoring.py - taskMonitor - Visual Studio Code
+2026-04-11 17:28:26 17:33:49 monitoring.py - taskMonitor - Visual Studio Code
+2026-04-11 17:28:32 17:33:53 ● monitoring.py - taskMonitor - Visual Studio Code
+2026-04-11 17:28:34 17:34:56 monitoring.py - taskMonitor - Visual Studio Code
+2026-04-11 17:28:36 17:36:26 TaskMonitor
+2026-04-11 17:30:12 17:36:54 (11) ITZY "WANNABE" M/V ‪@ITZY‬ - YouTube - Google Chrome
+2026-04-11 17:31:09 17:36:28 Archiver les fichiers JSON par date dans la base de données - Claude - Google Chrome
+2026-04-11 17:33:49 17:35:55 ● monitoring.py - taskMonitor - Visual Studio Code
+2026-04-11 17:33:51 17:39:29 monitoring.py - taskMonitor - Visual Studio Code
+2026-04-11 17:36:26 17:39:19 TaskMonitor
+2026-04-11 17:37:55 17:45:32 (11) How would BLACKPINK sing 'OMONA' (MIXNINE) [Color Coded Lyrics] Han|Rom|Eng - YouTube - Google Chrome
+2026-04-11 17:38:42 17:45:10 Archiver les fichiers JSON par date dans la base de données - Claude - Google Chrome
+2026-04-11 17:39:19 17:44:27 window_monitor.py - taskMonitor - Visual Studio Code
+2026-04-11 17:44:21 17:50:51 window_monitor.py - taskMonitor - Visual Studio Code
+2026-04-11 17:44:27 17:46:13 orchestrator.py - taskMonitor - Visual Studio Code
+2026-04-11 17:45:03 17:49:50 orchestrator.py - taskMonitor - Visual Studio Code
+2026-04-11 17:46:13 17:57:09 window_changes.log - taskMonitor - Visual Studio Code
+2026-04-11 17:47:14 17:57:00 Recent Documents
+2026-04-11 17:47:38 17:56:52 Archiver les fichiers JSON par date dans la base de données - Claude - Google Chrome

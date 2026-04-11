@@ -1,7 +1,19 @@
 date,start,end,duration,event_type,file,app,command,raw
-2026-04-11,16:27:50,16:30:30,4.45,app,,Google Chrome,,New Tab - Google Chrome
-2026-04-11,16:26:43,16:30:00,3.28,app,,Google Chrome,,Archiver les fichiers JSON par date dans la base de données - Claude - Google Chrome
+2026-04-11,17:46:13,17:57:09,205.33,file,window_changes.log,Visual Studio Code,,window_changes.log - taskMonitor - Visual Studio Code
+2026-04-11,17:47:38,17:56:52,65.73,app,,Google Chrome,,Archiver les fichiers JSON par date dans la base de données - Claude - Google Chrome
+2026-04-11,16:29:41,17:08:29,43.25,app,,Google Chrome,,New Tab - Google Chrome
+2026-04-11,17:33:51,17:39:29,31.85,file,monitoring.py,Visual Studio Code,,monitoring.py - taskMonitor - Visual Studio Code
+2026-04-11,17:09:42,17:24:33,14.85,file,main_window.py,Visual Studio Code,,main_window.py - taskMonitor - Visual Studio Code
+2026-04-11,17:07:24,17:22:00,14.6,app,,Google Chrome,,Recherche Google - Google Chrome
+2026-04-11,17:44:21,17:50:51,11.63,file,window_monitor.py,Visual Studio Code,,window_monitor.py - taskMonitor - Visual Studio Code
+2026-04-11,17:36:26,17:39:19,10.72,app,,TaskMonitor,,TaskMonitor
+2026-04-11,17:47:14,17:57:00,9.77,app,,Recent Documents,,Recent Documents
+2026-04-11,17:37:55,17:45:32,7.62,app,,Google Chrome,,(11) How would BLACKPINK sing 'OMONA' (MIXNINE) [Color Coded Lyrics] Han|Rom|Eng - YouTube - Google Chrome
+2026-04-11,17:30:12,17:36:54,6.7,app,,Google Chrome,,"(11) ITZY ""WANNABE"" M/V ‪@ITZY‬ - YouTube - Google Chrome"
+2026-04-11,17:45:03,17:49:50,6.55,file,orchestrator.py,Visual Studio Code,,orchestrator.py - taskMonitor - Visual Studio Code
+2026-04-11,17:23:18,17:29:35,6.28,app,,Google Chrome,,"(11) HEARTSTEEL – PARANOIA ft. AEKHYUN, tobi lou, ØZI et Cal Scruby (clip officiel) - YouTube - Google Chrome"
 2026-04-11,16:28:42,16:29:56,1.23,app,,Oracle VirtualBox Manager,,Oracle VirtualBox Manager
+2026-04-11,17:08:55,17:09:42,0.78,app,,Cisco Packet Tracer,,Cisco Packet Tracer
 2026-04-11,16:27:02,16:27:24,0.37,app,,Google Chrome,,Ethical Hacker - Google Chrome
 2026-04-11,16:27:52,16:28:07,0.25,app,,Google Chrome,,tryhackme.com/room/introductiontodevsecops - Google Chrome
 2026-04-11,14:37:35,14:37:45,0.17,file,data_command.txt,Visual Studio Code,,data_command.txt - taskMonitor - Visual Studio Code

@@ -35,4 +35,72 @@
 2026-04-11 16:30:59 aidan@aidan-Lenovo-N50-70: ~/Documents/Projects/Visualization/taskMonitor 
 2026-04-11 16:31:25 Terminal 
 2026-04-11 16:31:27 Preview README.md - taskMonitor - Visual Studio Code 
-2026-04-11 16:32:02 
+2026-04-11 16:32:02 window_changes.log - taskMonitor - Visual Studio Code 
+2026-04-11 17:07:22 Preview README.md - taskMonitor - Visual Studio Code 
+2026-04-11 17:07:24 Archiver les fichiers JSON par date dans la base de données - Claude - Google Chrome 
+2026-04-11 17:07:44 Recherche Google - Google Chrome 
+2026-04-11 17:08:29 New Tab - Google Chrome 
+2026-04-11 17:08:33 Gmail - Google Chrome 
+2026-04-11 17:08:37 Boîte de réception (8) - ralaikotonadia@gmail.com - Gmail - Google Chrome 
+2026-04-11 17:08:55 Cisco Packet Tracer 
+2026-04-11 17:09:34 Cisco Packet Tracer Login 
+2026-04-11 17:09:42 Cisco Packet Tracer 
+2026-04-11 17:09:44 window_changes.log - taskMonitor - Visual Studio Code 
+2026-04-11 17:21:40 Archiver les fichiers JSON par date dans la base de données - Claude - Google Chrome 
+2026-04-11 17:22:00 Recherche Google - Google Chrome 
+2026-04-11 17:22:06 (11) YouTube - Google Chrome 
+2026-04-11 17:22:14 (11) Fifth Harmony - That's My Girl (Lyrics) - YouTube - Google Chrome 
+2026-04-11 17:23:18 (11) XG - WOKE UP (Official Music Video) - YouTube - Google Chrome 
+2026-04-11 17:24:00 (11) HEARTSTEEL – PARANOIA ft. AEKHYUN, tobi lou, ØZI et Cal Scruby (clip officiel) - YouTube - Google Chrome 
+2026-04-11 17:24:33 main_window.py - taskMonitor - Visual Studio Code 
+2026-04-11 17:25:16 monitoring.py - taskMonitor - Visual Studio Code 
+2026-04-11 17:25:32 main_window.py - taskMonitor - Visual Studio Code 
+2026-04-11 17:27:07 monitoring.py - taskMonitor - Visual Studio Code 
+2026-04-11 17:28:26 ● monitoring.py - taskMonitor - Visual Studio Code 
+2026-04-11 17:28:32 monitoring.py - taskMonitor - Visual Studio Code 
+2026-04-11 17:28:34 ● monitoring.py - taskMonitor - Visual Studio Code 
+2026-04-11 17:28:36 TaskMonitor 
+2026-04-11 17:28:51 Archiver les fichiers JSON par date dans la base de données - Claude - Google Chrome 
+2026-04-11 17:29:35 (11) HEARTSTEEL – PARANOIA ft. AEKHYUN, tobi lou, ØZI et Cal Scruby (clip officiel) - YouTube - Google Chrome 
+2026-04-11 17:29:46 (11) BLACKPINK - Champion ( Color Coded Lyrics ) - YouTube - Google Chrome 
+2026-04-11 17:30:12 (11) Taylor Swift - How You Get The Girl (Taylor's Version) (Lyric Video) - YouTube - Google Chrome 
+2026-04-11 17:30:37 Help 
+2026-04-11 17:31:13 (11) ITZY "WANNABE" M/V ‪@ITZY‬ - YouTube - Google Chrome 
+2026-04-11 17:31:38 Untitled 1 — LibreOffice Impress 
+2026-04-11 17:33:49 monitoring.py - taskMonitor - Visual Studio Code 
+2026-04-11 17:33:53 ● monitoring.py - taskMonitor - Visual Studio Code 
+2026-04-11 17:34:56 monitoring.py - taskMonitor - Visual Studio Code 
+2026-04-11 17:34:58 ● monitoring.py - taskMonitor - Visual Studio Code 
+2026-04-11 17:35:51 monitoring.py - taskMonitor - Visual Studio Code 
+2026-04-11 17:35:55 ● monitoring.py - taskMonitor - Visual Studio Code 
+2026-04-11 17:36:26 TaskMonitor 
+2026-04-11 17:36:28 Archiver les fichiers JSON par date dans la base de données - Claude - Google Chrome 
+2026-04-11 17:36:54 (11) ITZY "WANNABE" M/V ‪@ITZY‬ - YouTube - Google Chrome 
+2026-04-11 17:37:34 (11) Too Busy For Boys — WhiteRoses (Lyrics Video) - YouTube - Google Chrome 
+2026-04-11 17:37:40 (11) [MV] MOMOLAND(모모랜드) _ I'm So Hot - YouTube - Google Chrome 
+2026-04-11 17:37:55 (11) Nightcore | Sweet Little Bumblebee (lyric video) - YouTube - Google Chrome 
+2026-04-11 17:38:42 (11) How would BLACKPINK sing 'OMONA' (MIXNINE) [Color Coded Lyrics] Han|Rom|Eng - YouTube - Google Chrome 
+2026-04-11 17:39:19 TaskMonitor 
+2026-04-11 17:39:29 monitoring.py - taskMonitor - Visual Studio Code 
+2026-04-11 17:40:58 window_monitor.py - taskMonitor - Visual Studio Code 
+2026-04-11 17:44:21 ● window_monitor.py - taskMonitor - Visual Studio Code 
+2026-04-11 17:44:27 window_monitor.py - taskMonitor - Visual Studio Code 
+2026-04-11 17:44:29 orchestrator.py - taskMonitor - Visual Studio Code 
+2026-04-11 17:45:03 ● orchestrator.py - taskMonitor - Visual Studio Code 
+2026-04-11 17:45:10 Archiver les fichiers JSON par date dans la base de données - Claude - Google Chrome 
+2026-04-11 17:45:32 (11) How would BLACKPINK sing 'OMONA' (MIXNINE) [Color Coded Lyrics] Han|Rom|Eng - YouTube - Google Chrome 
+2026-04-11 17:46:13 orchestrator.py - taskMonitor - Visual Studio Code 
+2026-04-11 17:46:21 (11) KATSEYE (캣츠아이) "PINKY UP" Official MV - YouTube - Google Chrome 
+2026-04-11 17:46:44 (11) Beginners Guide to Team Tutberidze (drama) - YouTube - Google Chrome 
+2026-04-11 17:47:14 Recent Documents 
+2026-04-11 17:47:38 (11) trusova being annoyed for 3 minutes straight (improved version) - YouTube - Google Chrome 
+2026-04-11 17:49:12 window_changes.log - taskMonitor - Visual Studio Code 
+2026-04-11 17:49:50 orchestrator.py - taskMonitor - Visual Studio Code 
+2026-04-11 17:50:51 window_monitor.py - taskMonitor - Visual Studio Code 
+2026-04-11 17:56:52 Archiver les fichiers JSON par date dans la base de données - Claude - Google Chrome 
+2026-04-11 17:57:00 Recent Documents 
+2026-04-11 17:57:09 window_changes.log - taskMonitor - Visual Studio Code 
+2026-04-11 17:57:51 Archiver les fichiers JSON par date dans la base de données - Claude - Google Chrome 
+2026-04-11 18:01:30 (11) CHINCHILLA - Little Girl Gone (Official Music Video) - YouTube - Google Chrome 
+2026-04-11 18:01:42 
+2026-04-11 18:01:57 
