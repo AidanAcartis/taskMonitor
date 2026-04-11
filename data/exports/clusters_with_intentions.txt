@@ -3,59 +3,109 @@
 =================================================================
 
 ─────────────────────────────────────────────────────────────────
-Cluster 0  |  8 tache(s)  |  cohesion = 0.183
+Cluster 0  |  5 tache(s)  |  cohesion = 0.165
 ─────────────────────────────────────────────────────────────────
-  Global Task Intention : Review directory contents
+  Global Task Intention : Monitor and monitor tasks with a task monitoring tool
 
   Items :
-    - ls taskmonitor/models/, command, executed in terminal, used to list directory contents in taskmonitor/models/
-    - ls taskmonitor/processing/, command, executed in terminal, used to list directory contents in taskmonitor/processing/
-    - ls taskmonitor/external/, command, executed in terminal, used to list directory contents in taskmonitor/external/
-    - ls taskmonitor/services/, command, executed in terminal, used to list directory contents in taskmonitor/services/
-    - ls taskmonitor/, command, executed in terminal, used to list directory contents in taskmonitor/
-    - ls taskmonitor/resources/, command, executed in terminal, used to list directory contents in taskmonitor/resources/
-    - ls taskmonitor/dicts/, command, executed in terminal, used to list directory contents in taskmonitor/dicts/
-    - ls taskmonitor/processing/clusterer/, command, executed in terminal, used to list directory contents in taskmonitor/processing/clusterer/
+    - python -m taskmonitor.gui.app, command, executed in terminal, used to run the script of the specified library module + website / domain 'taskmonitor.gui.app' with the taskmonitor.gui.app file which is a it provides a task monitoring tool., graphical user interface
+    - sqlite3 /home/aidan/.taskmonitor/db/taskmonitor_2026_04.db, command, executed in terminal, used to start an interactive shell with a new database with the /home/aidan/.taskmonitor/db/taskmonitor_2026_04.db file which is a database file, it serves as a task monitor for 202604.
+    - taskmonitor, application, used by the user
+    - sqlite3 taskmonitor_2026_04.db, command, executed in terminal, used to start an interactive shell with a new database with the taskmonitor_2026_04.db file which is a database file, it serves as a task monitor for 202604.
+    - sqlite3 ~/.taskmonitor/db/taskmonitor_2026_04.db, command, executed in terminal, used to start an interactive shell with a new database with the ~/.taskmonitor/db/taskmonitor_2026_04.db file which is a database file, it serves as a task monitor for 202604.
 
 ─────────────────────────────────────────────────────────────────
-Cluster 1  |  3 tache(s)  |  cohesion = 0.308
+Cluster 1  |  3 tache(s)  |  cohesion = 0.354
 ─────────────────────────────────────────────────────────────────
-  Global Task Intention : Browse the internet
+  Global Task Intention : Manage data and exports
 
   Items :
-    - google chrome, application, used to watch (10) youtube
-    - google chrome, application, used to watch youtube
-    - google chrome, application, used to watch (10) chinchilla - little girl gone (lyrics) - youtube
-
-─────────────────────────────────────────────────────────────────
-Cluster 2  |  2 tache(s)  |  cohesion = 0.436
-─────────────────────────────────────────────────────────────────
-  Global Task Intention : Open coding file
-
-  Items :
-    - documents, directory, navigated by the user
-    - visual studio code, code editor, used by the user
-
-─────────────────────────────────────────────────────────────────
-Cluster 3  |  3 tache(s)  |  cohesion = 0.401
-─────────────────────────────────────────────────────────────────
-  Global Task Intention : Build and test code in a data command
-
-  Items :
-    - code ., command, executed in terminal, used to start visual studio code
-    - terminal, command line, used by the user
+    - ls data/exports/final_output.json, command, executed in terminal, used to list directory contents with the data/exports/final_output.json file which is a json schema, json data, it serves as a final output for a project., data exchange format
+    - ls data/exports/, command, executed in terminal, used to list directory contents in data/exports/
     - data_command.txt, file, opened with visual studio code, contains data related to plain text document, text files, it serves as a data command.
 
 ─────────────────────────────────────────────────────────────────
-Other small tasks — singleton 1  |  singleton
+Cluster 2  |  10 tache(s)  |  cohesion = 0.244
 ─────────────────────────────────────────────────────────────────
-  Global Task Intention : check out new tab
+  Global Task Intention : Monitor and monitor task monitoring for a database
 
   Items :
-    - google chrome, application, used to checked out new tab
+    - ls /home/aidan/.taskmonitor/db/, command, executed in terminal, used to list directory contents in /home/aidan/.taskmonitor/db/
+    - ls taskmonitor/core/, command, executed in terminal, used to list directory contents in taskmonitor/core/
+    - ls taskmonitor/collectors/, command, executed in terminal, used to list directory contents in taskmonitor/collectors/
+    - ls ~/.taskmonitor/db/, command, executed in terminal, used to list directory contents in ~/.taskmonitor/db/
+    - ls taskmonitor/processing/, command, executed in terminal, used to list directory contents in taskmonitor/processing/
+    - ls /home/aidan/.taskmonitor/db/taskmonitor_2026_04.db, command, executed in terminal, used to list directory contents with the /home/aidan/.taskmonitor/db/taskmonitor_2026_04.db file which is a database file, it serves as a task monitor for 202604.
+    - cd projects/visualization/taskmonitor, command, executed in terminal, used to go to the specified directory in projects/visualization/taskmonitor
+    - cd ~/.taskmonitor/db, command, executed in terminal, used to go to the specified directory in ~/.taskmonitor/db
+    - ls taskmonitor/, command, executed in terminal, used to list directory contents in taskmonitor/
+    - cat taskmonitor/core/storage.py, command, executed in terminal, used to print the contents of a file to `stdout` with the taskmonitor/core/storage.py file which is a python 3 script, text files, it stores data for storage purposes.
 
 ─────────────────────────────────────────────────────────────────
-Other small tasks — singleton 2  |  singleton
+Cluster 3  |  4 tache(s)  |  cohesion = 0.238
+─────────────────────────────────────────────────────────────────
+  Global Task Intention : Manage py project
+
+  Items :
+    - cd ~/, command, executed in terminal, used to go to the specified directory in ~/
+    - ls pyproject.toml, command, executed in terminal, used to list directory contents with the pyproject.toml file which is a toml document, toml configuration, it serves as a py project.
+    - cd documents/, command, executed in terminal, used to go to the specified directory in documents/
+    - ls, command, executed in terminal, used to list directory contents
+
+─────────────────────────────────────────────────────────────────
+Cluster 4  |  3 tache(s)  |  cohesion = 0.334
+─────────────────────────────────────────────────────────────────
+  Global Task Intention : Set environment variables
+
+  Items :
+    - export qt_plugin_path=$virtual_env/lib/python3.11/site-packages/pyqt6/qt6/plugins, command, executed in terminal, used to set an environment variable in qt_plugin_path=$virtual_env/lib/python3.11/site-packages/pyqt6/qt6/plugins
+    - export qml2_import_path=$virtual_env/lib/python3.11/site-packages/pyqt6/qt6/qml, command, executed in terminal, used to set an environment variable in qml2_import_path=$virtual_env/lib/python3.11/site-packages/pyqt6/qt6/qml
+    - export ld_library_path=$virtual_env/lib/python3.11/site-packages/pyqt6/qt6/lib, command, executed in terminal, used to set an environment variable in ld_library_path=$virtual_env/lib/python3.11/site-packages/pyqt6/qt6/lib
+
+─────────────────────────────────────────────────────────────────
+Cluster 5  |  7 tache(s)  |  cohesion = 0.242
+─────────────────────────────────────────────────────────────────
+  Global Task Intention : Monitor and manage task monitoring with a database
+
+  Items :
+    - rm ~/.taskmonitor/db/taskmonitor_2026_04.db, command, executed in terminal, used to remove specific files with the ~/.taskmonitor/db/taskmonitor_2026_04.db file which is a database file, it serves as a task monitor for 202604.
+    - ls -a ~/.taskmonitor/db, command, executed in terminal, used to list all files, including hidden files in ~/.taskmonitor/db
+    - ls -a ~/.taskmonitor/db/taskmonitor_2026_04.db, command, executed in terminal, used to list all files, including hidden files with the ~/.taskmonitor/db/taskmonitor_2026_04.db file which is a database file, it serves as a task monitor for 202604.
+    - rm /home/aidan/.taskmonitor/db/taskmonitor_2026_04.db, command, executed in terminal, used to remove specific files with the /home/aidan/.taskmonitor/db/taskmonitor_2026_04.db file which is a database file, it serves as a task monitor for 202604.
+    - ls -a ~/.taskmonitor/, command, executed in terminal, used to list all files, including hidden files with the ~/.taskmonitor/ file
+    - ls -a ~/.taskmonitor/db/, command, executed in terminal, used to list all files, including hidden files in ~/.taskmonitor/db/
+    - ls -a ~/, command, executed in terminal, used to list all files, including hidden files in ~/
+
+─────────────────────────────────────────────────────────────────
+Cluster 6  |  2 tache(s)  |  cohesion = 0.229
+─────────────────────────────────────────────────────────────────
+  Global Task Intention : Monitor and orchestrate tasks
+
+  Items :
+    - python -m taskmonitor.orchestrator process, command, executed in terminal, used to run the script of the specified library module + python module 'taskmonitor.orchestrator' with the taskmonitor.orchestrator file which is a it monitors the status of tasks.
+    - cat taskmonitor/orchestrator.py, command, executed in terminal, used to print the contents of a file to `stdout` with the taskmonitor/orchestrator.py file which is a python 3 script, text files, it is designed to assist with orchestrating tasks.
+
+─────────────────────────────────────────────────────────────────
+Cluster 7  |  3 tache(s)  |  cohesion = 0.334
+─────────────────────────────────────────────────────────────────
+  Global Task Intention : Active an environment
+
+  Items :
+    - conda env list, command, executed in terminal
+    - conda activate mlproject_py311, command, executed in terminal, used to activate an environment
+    - conda activate, command, executed in terminal, used to activate an environment
+
+─────────────────────────────────────────────────────────────────
+Cluster 8  |  2 tache(s)  |  cohesion = 0.411
+─────────────────────────────────────────────────────────────────
+  Global Task Intention : Create coding code
+
+  Items :
+    - code ., command, executed in terminal, used to start visual studio code
+    - clar, command, executed in terminal
+
+─────────────────────────────────────────────────────────────────
+Other small tasks — singleton 1  |  singleton
 ─────────────────────────────────────────────────────────────────
   Global Task Intention : clear the screen
 
@@ -63,28 +113,28 @@ Other small tasks — singleton 2  |  singleton
     - clear, command, executed in terminal, used to clear the screen
 
 ─────────────────────────────────────────────────────────────────
-Other small tasks — singleton 3  |  singleton
+Other small tasks — singleton 2  |  singleton
 ─────────────────────────────────────────────────────────────────
-  Global Task Intention : check out 2002 teen fashion
+  Global Task Intention : use google chrome
 
   Items :
-    - google chrome, application, used to checked out 2002 teen fashion
+    - google chrome, application, used by the user
+
+─────────────────────────────────────────────────────────────────
+Other small tasks — singleton 3  |  singleton
+─────────────────────────────────────────────────────────────────
+  Global Task Intention : check out new tab
+
+  Items :
+    - google chrome, application, used to checked out new tab
 
 ─────────────────────────────────────────────────────────────────
 Other small tasks — singleton 4  |  singleton
 ─────────────────────────────────────────────────────────────────
-  Global Task Intention : open config.py with Visual Studio Code
+  Global Task Intention : check out history
 
   Items :
-    - config.py, file, opened with visual studio code, contains data related to python 3 script, text files, it provides a default configuration for a system.
-
-─────────────────────────────────────────────────────────────────
-Other small tasks — singleton 5  |  singleton
-─────────────────────────────────────────────────────────────────
-  Global Task Intention : use burp suite community edition v2025.7.4
-
-  Items :
-    - burp suite community edition v2025.7.4, application, used by the user
+    - google chrome, application, used to checked out history
 
 =================================================================
   FIN DU RAPPORT

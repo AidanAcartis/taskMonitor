@@ -1,39 +1,39 @@
 {
   "clusters": [
     {
-      "cluster_id": "Cluster 3",
-      "global_task_intention": "Build and test code in a data command",
-      "cohesion": 0.401,
+      "cluster_id": "Cluster 8",
+      "global_task_intention": "Create coding code",
+      "cohesion": 0.411,
       "stats": {
-        "total_duration": 0.943,
-        "active_duration": 0.943,
-        "time_span": 0.852,
+        "total_duration": 0.099,
+        "active_duration": 0.099,
+        "time_span": 0.606,
         "num_events": 3,
-        "start": "2026-04-06 09:54:56",
-        "end": "2026-04-06 10:46:03"
+        "start": "2026-04-11 12:21:34",
+        "end": "2026-04-11 12:57:56"
       },
       "segments": [
         {
-          "start": "2026-04-06 09:54:56",
-          "end": "2026-04-06 09:54:58",
+          "start": "2026-04-11 12:21:34",
+          "end": "2026-04-11 12:21:36",
           "duration": 0.033
         },
         {
-          "start": "2026-04-06 10:45:02",
-          "end": "2026-04-06 10:46:03",
-          "duration": 0.91
+          "start": "2026-04-11 12:48:22",
+          "end": "2026-04-11 12:48:24",
+          "duration": 0.033
+        },
+        {
+          "start": "2026-04-11 12:57:54",
+          "end": "2026-04-11 12:57:56",
+          "duration": 0.033
         }
       ],
       "task_items": [
         {
-          "description": "data_command.txt, file, opened with Visual Studio Code, contains data related to Plain text document, text files, It serves as a data command.",
-          "total_duration": 0.48,
-          "occurrences": 1
-        },
-        {
-          "description": "Terminal, command line, used by the user",
-          "total_duration": 0.43,
-          "occurrences": 1
+          "description": "clar, command, executed in terminal",
+          "total_duration": 0.066,
+          "occurrences": 2
         },
         {
           "description": "code ., command, executed in terminal, used to start visual studio code",
@@ -43,10 +43,10 @@
       ],
       "events": [
         {
-          "event_id": 11,
-          "date": "2026-04-06",
-          "start": "09:54:56",
-          "end": "09:54:58",
+          "event_id": 5,
+          "date": "2026-04-11",
+          "start": "12:21:34",
+          "end": "12:21:36",
           "duration": 0.033,
           "event_type": "command",
           "file": "",
@@ -56,100 +56,974 @@
           "description": "code ., command, executed in terminal, used to start visual studio code"
         },
         {
-          "event_id": 2,
-          "date": "2026-04-06",
-          "start": "10:45:02",
-          "end": "10:45:31",
-          "duration": 0.48,
-          "event_type": "file",
-          "file": "data_command.txt",
-          "app": "Visual Studio Code",
-          "command": "",
-          "raw": "data_command.txt - taskMonitor - Visual Studio Code",
-          "description": "data_command.txt, file, opened with Visual Studio Code, contains data related to Plain text document, text files, It serves as a data command."
-        },
-        {
-          "event_id": 3,
-          "date": "2026-04-06",
-          "start": "10:45:37",
-          "end": "10:46:03",
-          "duration": 0.43,
-          "event_type": "app",
+          "event_id": 36,
+          "date": "2026-04-11",
+          "start": "12:48:22",
+          "end": "12:48:24",
+          "duration": 0.033,
+          "event_type": "command",
           "file": "",
           "app": "Terminal",
-          "command": "",
-          "raw": "Terminal",
-          "description": "Terminal, command line, used by the user"
+          "command": "clar",
+          "raw": "clar",
+          "description": "clar, command, executed in terminal"
+        },
+        {
+          "event_id": 49,
+          "date": "2026-04-11",
+          "start": "12:57:54",
+          "end": "12:57:56",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "clar",
+          "raw": "clar",
+          "description": "clar, command, executed in terminal"
         }
       ]
     },
     {
-      "cluster_id": "Cluster 0",
-      "global_task_intention": "Review directory contents",
-      "cohesion": 0.183,
+      "cluster_id": "Cluster 7",
+      "global_task_intention": "Active an environment",
+      "cohesion": 0.334,
       "stats": {
-        "total_duration": 0.33,
-        "active_duration": 0.33,
-        "time_span": 0.1,
-        "num_events": 10,
-        "start": "2026-04-06 10:12:55",
-        "end": "2026-04-06 10:18:54"
+        "total_duration": 0.099,
+        "active_duration": 0.099,
+        "time_span": 0.005,
+        "num_events": 3,
+        "start": "2026-04-11 12:21:51",
+        "end": "2026-04-11 12:22:08"
       },
       "segments": [
         {
-          "start": "2026-04-06 10:12:55",
-          "end": "2026-04-06 10:13:56",
-          "duration": 0.231
+          "start": "2026-04-11 12:21:51",
+          "end": "2026-04-11 12:22:08",
+          "duration": 0.099
+        }
+      ],
+      "task_items": [
+        {
+          "description": "conda env list, command, executed in terminal",
+          "total_duration": 0.033,
+          "occurrences": 1
         },
         {
-          "start": "2026-04-06 10:16:44",
-          "end": "2026-04-06 10:16:50",
+          "description": "conda activate, command, executed in terminal, used to activate an environment",
+          "total_duration": 0.033,
+          "occurrences": 1
+        },
+        {
+          "description": "conda activate MLproject_py311, command, executed in terminal, used to activate an environment",
+          "total_duration": 0.033,
+          "occurrences": 1
+        }
+      ],
+      "events": [
+        {
+          "event_id": 6,
+          "date": "2026-04-11",
+          "start": "12:21:51",
+          "end": "12:21:53",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "conda env list",
+          "raw": "conda env list",
+          "description": "conda env list, command, executed in terminal"
+        },
+        {
+          "event_id": 7,
+          "date": "2026-04-11",
+          "start": "12:21:57",
+          "end": "12:21:59",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "conda activate",
+          "raw": "conda activate",
+          "description": "conda activate, command, executed in terminal, used to activate an environment"
+        },
+        {
+          "event_id": 8,
+          "date": "2026-04-11",
+          "start": "12:22:06",
+          "end": "12:22:08",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "conda activate MLproject_py311",
+          "raw": "conda activate MLproject_py311",
+          "description": "conda activate MLproject_py311, command, executed in terminal, used to activate an environment"
+        }
+      ]
+    },
+    {
+      "cluster_id": "Other small tasks \u2014 singleton 1",
+      "global_task_intention": "clear the screen",
+      "cohesion": 0.64,
+      "stats": {
+        "total_duration": 1.023,
+        "active_duration": 1.023,
+        "time_span": 2.131,
+        "num_events": 31,
+        "start": "2026-04-11 12:22:10",
+        "end": "2026-04-11 14:30:02"
+      },
+      "segments": [
+        {
+          "start": "2026-04-11 12:22:10",
+          "end": "2026-04-11 12:23:15",
+          "duration": 0.099
+        },
+        {
+          "start": "2026-04-11 12:27:34",
+          "end": "2026-04-11 12:27:36",
+          "duration": 0.033
+        },
+        {
+          "start": "2026-04-11 12:30:10",
+          "end": "2026-04-11 12:30:12",
+          "duration": 0.033
+        },
+        {
+          "start": "2026-04-11 12:33:09",
+          "end": "2026-04-11 12:33:11",
+          "duration": 0.033
+        },
+        {
+          "start": "2026-04-11 12:47:55",
+          "end": "2026-04-11 12:48:26",
           "duration": 0.066
         },
         {
-          "start": "2026-04-06 10:18:52",
-          "end": "2026-04-06 10:18:54",
+          "start": "2026-04-11 12:49:49",
+          "end": "2026-04-11 12:50:05",
+          "duration": 0.066
+        },
+        {
+          "start": "2026-04-11 12:53:57",
+          "end": "2026-04-11 12:53:59",
+          "duration": 0.033
+        },
+        {
+          "start": "2026-04-11 12:57:56",
+          "end": "2026-04-11 12:57:58",
+          "duration": 0.033
+        },
+        {
+          "start": "2026-04-11 13:01:18",
+          "end": "2026-04-11 13:01:20",
+          "duration": 0.033
+        },
+        {
+          "start": "2026-04-11 13:04:20",
+          "end": "2026-04-11 13:04:22",
+          "duration": 0.033
+        },
+        {
+          "start": "2026-04-11 13:09:18",
+          "end": "2026-04-11 13:10:36",
+          "duration": 0.099
+        },
+        {
+          "start": "2026-04-11 13:17:19",
+          "end": "2026-04-11 13:17:25",
+          "duration": 0.066
+        },
+        {
+          "start": "2026-04-11 13:23:29",
+          "end": "2026-04-11 13:23:31",
+          "duration": 0.033
+        },
+        {
+          "start": "2026-04-11 13:29:44",
+          "end": "2026-04-11 13:29:46",
+          "duration": 0.033
+        },
+        {
+          "start": "2026-04-11 13:51:08",
+          "end": "2026-04-11 13:51:10",
+          "duration": 0.033
+        },
+        {
+          "start": "2026-04-11 13:52:40",
+          "end": "2026-04-11 13:52:42",
+          "duration": 0.033
+        },
+        {
+          "start": "2026-04-11 14:08:39",
+          "end": "2026-04-11 14:09:06",
+          "duration": 0.099
+        },
+        {
+          "start": "2026-04-11 14:13:05",
+          "end": "2026-04-11 14:13:07",
+          "duration": 0.033
+        },
+        {
+          "start": "2026-04-11 14:20:45",
+          "end": "2026-04-11 14:20:47",
+          "duration": 0.033
+        },
+        {
+          "start": "2026-04-11 14:27:05",
+          "end": "2026-04-11 14:27:13",
+          "duration": 0.066
+        },
+        {
+          "start": "2026-04-11 14:30:00",
+          "end": "2026-04-11 14:30:02",
           "duration": 0.033
         }
       ],
       "task_items": [
         {
-          "description": "ls taskmonitor/processing/, command, executed in terminal, used to list directory contents in taskmonitor/processing/",
-          "total_duration": 0.099,
-          "occurrences": 3
+          "description": "clear, command, executed in terminal, used to clear the screen",
+          "total_duration": 1.023,
+          "occurrences": 31
+        }
+      ],
+      "events": [
+        {
+          "event_id": 9,
+          "date": "2026-04-11",
+          "start": "12:22:10",
+          "end": "12:22:12",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "clear",
+          "raw": "clear",
+          "description": "clear, command, executed in terminal, used to clear the screen"
         },
         {
-          "description": "ls taskmonitor/, command, executed in terminal, used to list directory contents in taskmonitor/",
+          "event_id": 11,
+          "date": "2026-04-11",
+          "start": "12:22:21",
+          "end": "12:22:23",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "clear",
+          "raw": "clear",
+          "description": "clear, command, executed in terminal, used to clear the screen"
+        },
+        {
+          "event_id": 15,
+          "date": "2026-04-11",
+          "start": "12:23:13",
+          "end": "12:23:15",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "clear",
+          "raw": "clear",
+          "description": "clear, command, executed in terminal, used to clear the screen"
+        },
+        {
+          "event_id": 20,
+          "date": "2026-04-11",
+          "start": "12:27:34",
+          "end": "12:27:36",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "clear",
+          "raw": "clear",
+          "description": "clear, command, executed in terminal, used to clear the screen"
+        },
+        {
+          "event_id": 23,
+          "date": "2026-04-11",
+          "start": "12:30:10",
+          "end": "12:30:12",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "clear",
+          "raw": "clear",
+          "description": "clear, command, executed in terminal, used to clear the screen"
+        },
+        {
+          "event_id": 29,
+          "date": "2026-04-11",
+          "start": "12:33:09",
+          "end": "12:33:11",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "clear",
+          "raw": "clear",
+          "description": "clear, command, executed in terminal, used to clear the screen"
+        },
+        {
+          "event_id": 33,
+          "date": "2026-04-11",
+          "start": "12:47:55",
+          "end": "12:47:57",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "clear",
+          "raw": "clear",
+          "description": "clear, command, executed in terminal, used to clear the screen"
+        },
+        {
+          "event_id": 37,
+          "date": "2026-04-11",
+          "start": "12:48:24",
+          "end": "12:48:26",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "clear",
+          "raw": "clear",
+          "description": "clear, command, executed in terminal, used to clear the screen"
+        },
+        {
+          "event_id": 40,
+          "date": "2026-04-11",
+          "start": "12:49:49",
+          "end": "12:49:51",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "clear",
+          "raw": "clear",
+          "description": "clear, command, executed in terminal, used to clear the screen"
+        },
+        {
+          "event_id": 41,
+          "date": "2026-04-11",
+          "start": "12:50:03",
+          "end": "12:50:05",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "clear",
+          "raw": "clear",
+          "description": "clear, command, executed in terminal, used to clear the screen"
+        },
+        {
+          "event_id": 45,
+          "date": "2026-04-11",
+          "start": "12:53:57",
+          "end": "12:53:59",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "clear",
+          "raw": "clear",
+          "description": "clear, command, executed in terminal, used to clear the screen"
+        },
+        {
+          "event_id": 50,
+          "date": "2026-04-11",
+          "start": "12:57:56",
+          "end": "12:57:58",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "clear",
+          "raw": "clear",
+          "description": "clear, command, executed in terminal, used to clear the screen"
+        },
+        {
+          "event_id": 54,
+          "date": "2026-04-11",
+          "start": "13:01:18",
+          "end": "13:01:20",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "clear",
+          "raw": "clear",
+          "description": "clear, command, executed in terminal, used to clear the screen"
+        },
+        {
+          "event_id": 57,
+          "date": "2026-04-11",
+          "start": "13:04:20",
+          "end": "13:04:22",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "clear",
+          "raw": "clear",
+          "description": "clear, command, executed in terminal, used to clear the screen"
+        },
+        {
+          "event_id": 63,
+          "date": "2026-04-11",
+          "start": "13:09:18",
+          "end": "13:09:20",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "clear",
+          "raw": "clear",
+          "description": "clear, command, executed in terminal, used to clear the screen"
+        },
+        {
+          "event_id": 65,
+          "date": "2026-04-11",
+          "start": "13:09:33",
+          "end": "13:09:35",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "clear",
+          "raw": "clear",
+          "description": "clear, command, executed in terminal, used to clear the screen"
+        },
+        {
+          "event_id": 67,
+          "date": "2026-04-11",
+          "start": "13:10:34",
+          "end": "13:10:36",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "clear",
+          "raw": "clear",
+          "description": "clear, command, executed in terminal, used to clear the screen"
+        },
+        {
+          "event_id": 71,
+          "date": "2026-04-11",
+          "start": "13:17:19",
+          "end": "13:17:21",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "clear",
+          "raw": "clear",
+          "description": "clear, command, executed in terminal, used to clear the screen"
+        },
+        {
+          "event_id": 73,
+          "date": "2026-04-11",
+          "start": "13:17:23",
+          "end": "13:17:25",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "clear",
+          "raw": "clear",
+          "description": "clear, command, executed in terminal, used to clear the screen"
+        },
+        {
+          "event_id": 79,
+          "date": "2026-04-11",
+          "start": "13:23:29",
+          "end": "13:23:31",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "clear",
+          "raw": "clear",
+          "description": "clear, command, executed in terminal, used to clear the screen"
+        },
+        {
+          "event_id": 82,
+          "date": "2026-04-11",
+          "start": "13:29:44",
+          "end": "13:29:46",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "clear",
+          "raw": "clear",
+          "description": "clear, command, executed in terminal, used to clear the screen"
+        },
+        {
+          "event_id": 90,
+          "date": "2026-04-11",
+          "start": "13:51:08",
+          "end": "13:51:10",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "clear",
+          "raw": "clear",
+          "description": "clear, command, executed in terminal, used to clear the screen"
+        },
+        {
+          "event_id": 92,
+          "date": "2026-04-11",
+          "start": "13:52:40",
+          "end": "13:52:42",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "clear",
+          "raw": "clear",
+          "description": "clear, command, executed in terminal, used to clear the screen"
+        },
+        {
+          "event_id": 94,
+          "date": "2026-04-11",
+          "start": "14:08:39",
+          "end": "14:08:41",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "clear",
+          "raw": "clear",
+          "description": "clear, command, executed in terminal, used to clear the screen"
+        },
+        {
+          "event_id": 97,
+          "date": "2026-04-11",
+          "start": "14:08:56",
+          "end": "14:08:58",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "clear",
+          "raw": "clear",
+          "description": "clear, command, executed in terminal, used to clear the screen"
+        },
+        {
+          "event_id": 99,
+          "date": "2026-04-11",
+          "start": "14:09:04",
+          "end": "14:09:06",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "clear",
+          "raw": "clear",
+          "description": "clear, command, executed in terminal, used to clear the screen"
+        },
+        {
+          "event_id": 102,
+          "date": "2026-04-11",
+          "start": "14:13:05",
+          "end": "14:13:07",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "clear",
+          "raw": "clear",
+          "description": "clear, command, executed in terminal, used to clear the screen"
+        },
+        {
+          "event_id": 107,
+          "date": "2026-04-11",
+          "start": "14:20:45",
+          "end": "14:20:47",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "clear",
+          "raw": "clear",
+          "description": "clear, command, executed in terminal, used to clear the screen"
+        },
+        {
+          "event_id": 111,
+          "date": "2026-04-11",
+          "start": "14:27:05",
+          "end": "14:27:07",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "clear",
+          "raw": "clear",
+          "description": "clear, command, executed in terminal, used to clear the screen"
+        },
+        {
+          "event_id": 113,
+          "date": "2026-04-11",
+          "start": "14:27:11",
+          "end": "14:27:13",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "clear",
+          "raw": "clear",
+          "description": "clear, command, executed in terminal, used to clear the screen"
+        },
+        {
+          "event_id": 115,
+          "date": "2026-04-11",
+          "start": "14:30:00",
+          "end": "14:30:02",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "clear",
+          "raw": "clear",
+          "description": "clear, command, executed in terminal, used to clear the screen"
+        }
+      ]
+    },
+    {
+      "cluster_id": "Cluster 0",
+      "global_task_intention": "Monitor and monitor tasks with a task monitoring tool",
+      "cohesion": 0.165,
+      "stats": {
+        "total_duration": 0.462,
+        "active_duration": 0.462,
+        "time_span": 2.244,
+        "num_events": 15,
+        "start": "2026-04-11 12:22:18",
+        "end": "2026-04-11 14:36:58"
+      },
+      "segments": [
+        {
+          "start": "2026-04-11 12:22:18",
+          "end": "2026-04-11 12:23:17",
+          "duration": 0.066
+        },
+        {
+          "start": "2026-04-11 12:48:48",
+          "end": "2026-04-11 12:48:50",
+          "duration": 0.033
+        },
+        {
+          "start": "2026-04-11 13:01:26",
+          "end": "2026-04-11 13:01:28",
+          "duration": 0.033
+        },
+        {
+          "start": "2026-04-11 13:19:35",
+          "end": "2026-04-11 13:19:37",
+          "duration": 0.033
+        },
+        {
+          "start": "2026-04-11 13:28:14",
+          "end": "2026-04-11 13:28:16",
+          "duration": 0.033
+        },
+        {
+          "start": "2026-04-11 13:31:03",
+          "end": "2026-04-11 13:31:24",
+          "duration": 0.066
+        },
+        {
+          "start": "2026-04-11 13:50:42",
+          "end": "2026-04-11 13:50:44",
+          "duration": 0.033
+        },
+        {
+          "start": "2026-04-11 13:52:42",
+          "end": "2026-04-11 13:52:44",
+          "duration": 0.033
+        },
+        {
+          "start": "2026-04-11 14:12:38",
+          "end": "2026-04-11 14:12:40",
+          "duration": 0.033
+        },
+        {
+          "start": "2026-04-11 14:18:31",
+          "end": "2026-04-11 14:18:33",
+          "duration": 0.033
+        },
+        {
+          "start": "2026-04-11 14:26:46",
+          "end": "2026-04-11 14:27:09",
+          "duration": 0.066
+        },
+        {
+          "start": "2026-04-11 14:36:58",
+          "end": "2026-04-11 14:36:58",
+          "duration": 0.0
+        }
+      ],
+      "task_items": [
+        {
+          "description": "sqlite3 /home/aidan/.taskmonitor/db/taskmonitor_2026_04.db, command, executed in terminal, used to start an interactive shell with a new database with the /home/aidan/.taskmonitor/db/taskmonitor_2026_04.db file which is a database file, It serves as a task monitor for 202604.",
+          "total_duration": 0.33,
+          "occurrences": 10
+        },
+        {
+          "description": "python -m taskmonitor.gui.app, command, executed in terminal, used to run the script of the specified library module + website / domain 'taskmonitor.gui.app' with the taskmonitor.gui.app file which is a It provides a task monitoring tool., Graphical user interface",
+          "total_duration": 0.066,
+          "occurrences": 2
+        },
+        {
+          "description": "sqlite3 ~/.taskmonitor/db/taskmonitor_2026_04.db, command, executed in terminal, used to start an interactive shell with a new database with the ~/.taskmonitor/db/taskmonitor_2026_04.db file which is a database file, It serves as a task monitor for 202604.",
           "total_duration": 0.033,
           "occurrences": 1
         },
         {
-          "description": "ls taskmonitor/models/, command, executed in terminal, used to list directory contents in taskmonitor/models/",
+          "description": "sqlite3 taskmonitor_2026_04.db, command, executed in terminal, used to start an interactive shell with a new database with the taskmonitor_2026_04.db file which is a database file, It serves as a task monitor for 202604.",
           "total_duration": 0.033,
           "occurrences": 1
         },
         {
-          "description": "ls taskmonitor/external/, command, executed in terminal, used to list directory contents in taskmonitor/external/",
+          "description": "taskMonitor, application, used by the user",
+          "total_duration": 0.0,
+          "occurrences": 1
+        }
+      ],
+      "events": [
+        {
+          "event_id": 10,
+          "date": "2026-04-11",
+          "start": "12:22:18",
+          "end": "12:22:20",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "python -m taskmonitor.gui.app",
+          "raw": "python -m taskmonitor.gui.app",
+          "description": "python -m taskmonitor.gui.app, command, executed in terminal, used to run the script of the specified library module + website / domain 'taskmonitor.gui.app' with the taskmonitor.gui.app file which is a It provides a task monitoring tool., Graphical user interface"
+        },
+        {
+          "event_id": 16,
+          "date": "2026-04-11",
+          "start": "12:23:15",
+          "end": "12:23:17",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "python -m taskmonitor.gui.app",
+          "raw": "python -m taskmonitor.gui.app",
+          "description": "python -m taskmonitor.gui.app, command, executed in terminal, used to run the script of the specified library module + website / domain 'taskmonitor.gui.app' with the taskmonitor.gui.app file which is a It provides a task monitoring tool., Graphical user interface"
+        },
+        {
+          "event_id": 39,
+          "date": "2026-04-11",
+          "start": "12:48:48",
+          "end": "12:48:50",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "sqlite3 ~/.taskmonitor/db/taskmonitor_2026_04.db",
+          "raw": "sqlite3 ~/.taskmonitor/db/taskmonitor_2026_04.db",
+          "description": "sqlite3 ~/.taskmonitor/db/taskmonitor_2026_04.db, command, executed in terminal, used to start an interactive shell with a new database with the ~/.taskmonitor/db/taskmonitor_2026_04.db file which is a database file, It serves as a task monitor for 202604."
+        },
+        {
+          "event_id": 56,
+          "date": "2026-04-11",
+          "start": "13:01:26",
+          "end": "13:01:28",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "sqlite3 taskmonitor_2026_04.db",
+          "raw": "sqlite3 taskmonitor_2026_04.db",
+          "description": "sqlite3 taskmonitor_2026_04.db, command, executed in terminal, used to start an interactive shell with a new database with the taskmonitor_2026_04.db file which is a database file, It serves as a task monitor for 202604."
+        },
+        {
+          "event_id": 77,
+          "date": "2026-04-11",
+          "start": "13:19:35",
+          "end": "13:19:37",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "sqlite3 /home/aidan/.taskmonitor/db/taskmonitor_2026_04.db",
+          "raw": "sqlite3 /home/aidan/.taskmonitor/db/taskmonitor_2026_04.db",
+          "description": "sqlite3 /home/aidan/.taskmonitor/db/taskmonitor_2026_04.db, command, executed in terminal, used to start an interactive shell with a new database with the /home/aidan/.taskmonitor/db/taskmonitor_2026_04.db file which is a database file, It serves as a task monitor for 202604."
+        },
+        {
+          "event_id": 81,
+          "date": "2026-04-11",
+          "start": "13:28:14",
+          "end": "13:28:16",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "sqlite3 /home/aidan/.taskmonitor/db/taskmonitor_2026_04.db",
+          "raw": "sqlite3 /home/aidan/.taskmonitor/db/taskmonitor_2026_04.db",
+          "description": "sqlite3 /home/aidan/.taskmonitor/db/taskmonitor_2026_04.db, command, executed in terminal, used to start an interactive shell with a new database with the /home/aidan/.taskmonitor/db/taskmonitor_2026_04.db file which is a database file, It serves as a task monitor for 202604."
+        },
+        {
+          "event_id": 84,
+          "date": "2026-04-11",
+          "start": "13:31:03",
+          "end": "13:31:05",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "sqlite3 /home/aidan/.taskmonitor/db/taskmonitor_2026_04.db",
+          "raw": "sqlite3 /home/aidan/.taskmonitor/db/taskmonitor_2026_04.db",
+          "description": "sqlite3 /home/aidan/.taskmonitor/db/taskmonitor_2026_04.db, command, executed in terminal, used to start an interactive shell with a new database with the /home/aidan/.taskmonitor/db/taskmonitor_2026_04.db file which is a database file, It serves as a task monitor for 202604."
+        },
+        {
+          "event_id": 86,
+          "date": "2026-04-11",
+          "start": "13:31:22",
+          "end": "13:31:24",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "sqlite3 /home/aidan/.taskmonitor/db/taskmonitor_2026_04.db",
+          "raw": "sqlite3 /home/aidan/.taskmonitor/db/taskmonitor_2026_04.db",
+          "description": "sqlite3 /home/aidan/.taskmonitor/db/taskmonitor_2026_04.db, command, executed in terminal, used to start an interactive shell with a new database with the /home/aidan/.taskmonitor/db/taskmonitor_2026_04.db file which is a database file, It serves as a task monitor for 202604."
+        },
+        {
+          "event_id": 89,
+          "date": "2026-04-11",
+          "start": "13:50:42",
+          "end": "13:50:44",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "sqlite3 /home/aidan/.taskmonitor/db/taskmonitor_2026_04.db",
+          "raw": "sqlite3 /home/aidan/.taskmonitor/db/taskmonitor_2026_04.db",
+          "description": "sqlite3 /home/aidan/.taskmonitor/db/taskmonitor_2026_04.db, command, executed in terminal, used to start an interactive shell with a new database with the /home/aidan/.taskmonitor/db/taskmonitor_2026_04.db file which is a database file, It serves as a task monitor for 202604."
+        },
+        {
+          "event_id": 93,
+          "date": "2026-04-11",
+          "start": "13:52:42",
+          "end": "13:52:44",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "sqlite3 /home/aidan/.taskmonitor/db/taskmonitor_2026_04.db",
+          "raw": "sqlite3 /home/aidan/.taskmonitor/db/taskmonitor_2026_04.db",
+          "description": "sqlite3 /home/aidan/.taskmonitor/db/taskmonitor_2026_04.db, command, executed in terminal, used to start an interactive shell with a new database with the /home/aidan/.taskmonitor/db/taskmonitor_2026_04.db file which is a database file, It serves as a task monitor for 202604."
+        },
+        {
+          "event_id": 101,
+          "date": "2026-04-11",
+          "start": "14:12:38",
+          "end": "14:12:40",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "sqlite3 /home/aidan/.taskmonitor/db/taskmonitor_2026_04.db",
+          "raw": "sqlite3 /home/aidan/.taskmonitor/db/taskmonitor_2026_04.db",
+          "description": "sqlite3 /home/aidan/.taskmonitor/db/taskmonitor_2026_04.db, command, executed in terminal, used to start an interactive shell with a new database with the /home/aidan/.taskmonitor/db/taskmonitor_2026_04.db file which is a database file, It serves as a task monitor for 202604."
+        },
+        {
+          "event_id": 104,
+          "date": "2026-04-11",
+          "start": "14:18:31",
+          "end": "14:18:33",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "sqlite3 /home/aidan/.taskmonitor/db/taskmonitor_2026_04.db",
+          "raw": "sqlite3 /home/aidan/.taskmonitor/db/taskmonitor_2026_04.db",
+          "description": "sqlite3 /home/aidan/.taskmonitor/db/taskmonitor_2026_04.db, command, executed in terminal, used to start an interactive shell with a new database with the /home/aidan/.taskmonitor/db/taskmonitor_2026_04.db file which is a database file, It serves as a task monitor for 202604."
+        },
+        {
+          "event_id": 110,
+          "date": "2026-04-11",
+          "start": "14:26:46",
+          "end": "14:26:48",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "sqlite3 /home/aidan/.taskmonitor/db/taskmonitor_2026_04.db",
+          "raw": "sqlite3 /home/aidan/.taskmonitor/db/taskmonitor_2026_04.db",
+          "description": "sqlite3 /home/aidan/.taskmonitor/db/taskmonitor_2026_04.db, command, executed in terminal, used to start an interactive shell with a new database with the /home/aidan/.taskmonitor/db/taskmonitor_2026_04.db file which is a database file, It serves as a task monitor for 202604."
+        },
+        {
+          "event_id": 112,
+          "date": "2026-04-11",
+          "start": "14:27:07",
+          "end": "14:27:09",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "sqlite3 /home/aidan/.taskmonitor/db/taskmonitor_2026_04.db",
+          "raw": "sqlite3 /home/aidan/.taskmonitor/db/taskmonitor_2026_04.db",
+          "description": "sqlite3 /home/aidan/.taskmonitor/db/taskmonitor_2026_04.db, command, executed in terminal, used to start an interactive shell with a new database with the /home/aidan/.taskmonitor/db/taskmonitor_2026_04.db file which is a database file, It serves as a task monitor for 202604."
+        },
+        {
+          "event_id": 4,
+          "date": "2026-04-11",
+          "start": "14:36:58",
+          "end": "14:36:58",
+          "duration": 0.0,
+          "event_type": "app",
+          "file": "",
+          "app": "taskMonitor",
+          "command": "",
+          "raw": "taskMonitor",
+          "description": "taskMonitor, application, used by the user"
+        }
+      ]
+    },
+    {
+      "cluster_id": "Cluster 4",
+      "global_task_intention": "Set environment variables",
+      "cohesion": 0.334,
+      "stats": {
+        "total_duration": 0.099,
+        "active_duration": 0.099,
+        "time_span": 0.007,
+        "num_events": 3,
+        "start": "2026-04-11 12:22:48",
+        "end": "2026-04-11 12:23:14"
+      },
+      "segments": [
+        {
+          "start": "2026-04-11 12:22:48",
+          "end": "2026-04-11 12:23:14",
+          "duration": 0.099
+        }
+      ],
+      "task_items": [
+        {
+          "description": "export QT_PLUGIN_PATH=$VIRTUAL_ENV/lib/python3.11/site-packages/PyQt6/Qt6/plugins, command, executed in terminal, used to set an environment variable in QT_PLUGIN_PATH=$VIRTUAL_ENV/lib/python3.11/site-packages/PyQt6/Qt6/plugins",
           "total_duration": 0.033,
           "occurrences": 1
         },
         {
-          "description": "ls taskmonitor/dicts/, command, executed in terminal, used to list directory contents in taskmonitor/dicts/",
+          "description": "export QML2_IMPORT_PATH=$VIRTUAL_ENV/lib/python3.11/site-packages/PyQt6/Qt6/qml, command, executed in terminal, used to set an environment variable in QML2_IMPORT_PATH=$VIRTUAL_ENV/lib/python3.11/site-packages/PyQt6/Qt6/qml",
           "total_duration": 0.033,
           "occurrences": 1
         },
         {
-          "description": "ls taskmonitor/resources/, command, executed in terminal, used to list directory contents in taskmonitor/resources/",
-          "total_duration": 0.033,
-          "occurrences": 1
-        },
-        {
-          "description": "ls taskmonitor/services/, command, executed in terminal, used to list directory contents in taskmonitor/services/",
-          "total_duration": 0.033,
-          "occurrences": 1
-        },
-        {
-          "description": "ls taskmonitor/processing/clusterer/, command, executed in terminal, used to list directory contents in taskmonitor/processing/clusterer/",
+          "description": "export LD_LIBRARY_PATH=$VIRTUAL_ENV/lib/python3.11/site-packages/PyQt6/Qt6/lib, command, executed in terminal, used to set an environment variable in LD_LIBRARY_PATH=$VIRTUAL_ENV/lib/python3.11/site-packages/PyQt6/Qt6/lib",
           "total_duration": 0.033,
           "occurrences": 1
         }
@@ -157,9 +1031,322 @@
       "events": [
         {
           "event_id": 12,
-          "date": "2026-04-06",
-          "start": "10:12:55",
-          "end": "10:12:57",
+          "date": "2026-04-11",
+          "start": "12:22:48",
+          "end": "12:22:50",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "export QT_PLUGIN_PATH=$VIRTUAL_ENV/lib/python3.11/site-packages/PyQt6/Qt6/plugins",
+          "raw": "export QT_PLUGIN_PATH=$VIRTUAL_ENV/lib/python3.11/site-packages/PyQt6/Qt6/plugins",
+          "description": "export QT_PLUGIN_PATH=$VIRTUAL_ENV/lib/python3.11/site-packages/PyQt6/Qt6/plugins, command, executed in terminal, used to set an environment variable in QT_PLUGIN_PATH=$VIRTUAL_ENV/lib/python3.11/site-packages/PyQt6/Qt6/plugins"
+        },
+        {
+          "event_id": 13,
+          "date": "2026-04-11",
+          "start": "12:22:57",
+          "end": "12:22:59",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "export QML2_IMPORT_PATH=$VIRTUAL_ENV/lib/python3.11/site-packages/PyQt6/Qt6/qml",
+          "raw": "export QML2_IMPORT_PATH=$VIRTUAL_ENV/lib/python3.11/site-packages/PyQt6/Qt6/qml",
+          "description": "export QML2_IMPORT_PATH=$VIRTUAL_ENV/lib/python3.11/site-packages/PyQt6/Qt6/qml, command, executed in terminal, used to set an environment variable in QML2_IMPORT_PATH=$VIRTUAL_ENV/lib/python3.11/site-packages/PyQt6/Qt6/qml"
+        },
+        {
+          "event_id": 14,
+          "date": "2026-04-11",
+          "start": "12:23:12",
+          "end": "12:23:14",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "export LD_LIBRARY_PATH=$VIRTUAL_ENV/lib/python3.11/site-packages/PyQt6/Qt6/lib",
+          "raw": "export LD_LIBRARY_PATH=$VIRTUAL_ENV/lib/python3.11/site-packages/PyQt6/Qt6/lib",
+          "description": "export LD_LIBRARY_PATH=$VIRTUAL_ENV/lib/python3.11/site-packages/PyQt6/Qt6/lib, command, executed in terminal, used to set an environment variable in LD_LIBRARY_PATH=$VIRTUAL_ENV/lib/python3.11/site-packages/PyQt6/Qt6/lib"
+        }
+      ]
+    },
+    {
+      "cluster_id": "Cluster 3",
+      "global_task_intention": "Manage py project",
+      "cohesion": 0.238,
+      "stats": {
+        "total_duration": 0.231,
+        "active_duration": 0.231,
+        "time_span": 0.735,
+        "num_events": 7,
+        "start": "2026-04-11 12:25:14",
+        "end": "2026-04-11 13:09:19"
+      },
+      "segments": [
+        {
+          "start": "2026-04-11 12:25:14",
+          "end": "2026-04-11 12:25:16",
+          "duration": 0.033
+        },
+        {
+          "start": "2026-04-11 12:30:11",
+          "end": "2026-04-11 12:30:32",
+          "duration": 0.066
+        },
+        {
+          "start": "2026-04-11 13:01:19",
+          "end": "2026-04-11 13:01:21",
+          "duration": 0.033
+        },
+        {
+          "start": "2026-04-11 13:09:11",
+          "end": "2026-04-11 13:09:19",
+          "duration": 0.099
+        }
+      ],
+      "task_items": [
+        {
+          "description": "ls, command, executed in terminal, used to list directory contents",
+          "total_duration": 0.132,
+          "occurrences": 4
+        },
+        {
+          "description": "ls pyproject.toml, command, executed in terminal, used to list directory contents with the pyproject.toml file which is a TOML document, TOML configuration, It serves as a py project.",
+          "total_duration": 0.033,
+          "occurrences": 1
+        },
+        {
+          "description": "cd ~/, command, executed in terminal, used to go to the specified directory in ~/",
+          "total_duration": 0.033,
+          "occurrences": 1
+        },
+        {
+          "description": "cd Documents/, command, executed in terminal, used to go to the specified directory in Documents/",
+          "total_duration": 0.033,
+          "occurrences": 1
+        }
+      ],
+      "events": [
+        {
+          "event_id": 17,
+          "date": "2026-04-11",
+          "start": "12:25:14",
+          "end": "12:25:16",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "ls",
+          "raw": "ls",
+          "description": "ls, command, executed in terminal, used to list directory contents"
+        },
+        {
+          "event_id": 24,
+          "date": "2026-04-11",
+          "start": "12:30:11",
+          "end": "12:30:13",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "ls",
+          "raw": "ls",
+          "description": "ls, command, executed in terminal, used to list directory contents"
+        },
+        {
+          "event_id": 26,
+          "date": "2026-04-11",
+          "start": "12:30:30",
+          "end": "12:30:32",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "ls pyproject.toml",
+          "raw": "ls pyproject.toml",
+          "description": "ls pyproject.toml, command, executed in terminal, used to list directory contents with the pyproject.toml file which is a TOML document, TOML configuration, It serves as a py project."
+        },
+        {
+          "event_id": 55,
+          "date": "2026-04-11",
+          "start": "13:01:19",
+          "end": "13:01:21",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "ls",
+          "raw": "ls",
+          "description": "ls, command, executed in terminal, used to list directory contents"
+        },
+        {
+          "event_id": 60,
+          "date": "2026-04-11",
+          "start": "13:09:11",
+          "end": "13:09:13",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "cd ~/",
+          "raw": "cd ~/",
+          "description": "cd ~/, command, executed in terminal, used to go to the specified directory in ~/"
+        },
+        {
+          "event_id": 61,
+          "date": "2026-04-11",
+          "start": "13:09:12",
+          "end": "13:09:14",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "ls",
+          "raw": "ls",
+          "description": "ls, command, executed in terminal, used to list directory contents"
+        },
+        {
+          "event_id": 62,
+          "date": "2026-04-11",
+          "start": "13:09:17",
+          "end": "13:09:19",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "cd Documents/",
+          "raw": "cd Documents/",
+          "description": "cd Documents/, command, executed in terminal, used to go to the specified directory in Documents/"
+        }
+      ]
+    },
+    {
+      "cluster_id": "Cluster 2",
+      "global_task_intention": "Monitor and monitor task monitoring for a database",
+      "cohesion": 0.244,
+      "stats": {
+        "total_duration": 0.561,
+        "active_duration": 0.561,
+        "time_span": 1.925,
+        "num_events": 17,
+        "start": "2026-04-11 12:25:19",
+        "end": "2026-04-11 14:20:48"
+      },
+      "segments": [
+        {
+          "start": "2026-04-11 12:25:19",
+          "end": "2026-04-11 12:25:21",
+          "duration": 0.033
+        },
+        {
+          "start": "2026-04-11 12:30:13",
+          "end": "2026-04-11 12:30:43",
+          "duration": 0.066
+        },
+        {
+          "start": "2026-04-11 12:32:35",
+          "end": "2026-04-11 12:33:25",
+          "duration": 0.099
+        },
+        {
+          "start": "2026-04-11 12:47:58",
+          "end": "2026-04-11 12:48:38",
+          "duration": 0.066
+        },
+        {
+          "start": "2026-04-11 12:53:00",
+          "end": "2026-04-11 12:53:02",
+          "duration": 0.033
+        },
+        {
+          "start": "2026-04-11 13:01:16",
+          "end": "2026-04-11 13:01:18",
+          "duration": 0.033
+        },
+        {
+          "start": "2026-04-11 13:09:32",
+          "end": "2026-04-11 13:09:34",
+          "duration": 0.033
+        },
+        {
+          "start": "2026-04-11 13:15:51",
+          "end": "2026-04-11 13:15:53",
+          "duration": 0.033
+        },
+        {
+          "start": "2026-04-11 13:17:20",
+          "end": "2026-04-11 13:17:22",
+          "duration": 0.033
+        },
+        {
+          "start": "2026-04-11 14:08:51",
+          "end": "2026-04-11 14:09:04",
+          "duration": 0.066
+        },
+        {
+          "start": "2026-04-11 14:20:43",
+          "end": "2026-04-11 14:20:48",
+          "duration": 0.066
+        }
+      ],
+      "task_items": [
+        {
+          "description": "cat taskmonitor/core/storage.py, command, executed in terminal, used to print the contents of a file to `stdout` with the taskmonitor/core/storage.py file which is a Python 3 script, text files, It stores data for storage purposes.",
+          "total_duration": 0.132,
+          "occurrences": 4
+        },
+        {
+          "description": "ls ~/.taskmonitor/db/, command, executed in terminal, used to list directory contents in ~/.taskmonitor/db/",
+          "total_duration": 0.132,
+          "occurrences": 4
+        },
+        {
+          "description": "ls taskmonitor/, command, executed in terminal, used to list directory contents in taskmonitor/",
+          "total_duration": 0.066,
+          "occurrences": 2
+        },
+        {
+          "description": "ls taskmonitor/processing/, command, executed in terminal, used to list directory contents in taskmonitor/processing/",
+          "total_duration": 0.033,
+          "occurrences": 1
+        },
+        {
+          "description": "ls taskmonitor/collectors/, command, executed in terminal, used to list directory contents in taskmonitor/collectors/",
+          "total_duration": 0.033,
+          "occurrences": 1
+        },
+        {
+          "description": "ls taskmonitor/core/, command, executed in terminal, used to list directory contents in taskmonitor/core/",
+          "total_duration": 0.033,
+          "occurrences": 1
+        },
+        {
+          "description": "cd ~/.taskmonitor/db, command, executed in terminal, used to go to the specified directory in ~/.taskmonitor/db",
+          "total_duration": 0.033,
+          "occurrences": 1
+        },
+        {
+          "description": "cd Projects/Visualization/taskMonitor, command, executed in terminal, used to go to the specified directory in Projects/Visualization/taskMonitor",
+          "total_duration": 0.033,
+          "occurrences": 1
+        },
+        {
+          "description": "ls /home/aidan/.taskmonitor/db/taskmonitor_2026_04.db, command, executed in terminal, used to list directory contents with the /home/aidan/.taskmonitor/db/taskmonitor_2026_04.db file which is a database file, It serves as a task monitor for 202604.",
+          "total_duration": 0.033,
+          "occurrences": 1
+        },
+        {
+          "description": "ls /home/aidan/.taskmonitor/db/, command, executed in terminal, used to list directory contents in /home/aidan/.taskmonitor/db/",
+          "total_duration": 0.033,
+          "occurrences": 1
+        }
+      ],
+      "events": [
+        {
+          "event_id": 18,
+          "date": "2026-04-11",
+          "start": "12:25:19",
+          "end": "12:25:21",
           "duration": 0.033,
           "event_type": "command",
           "file": "",
@@ -169,10 +1356,23 @@
           "description": "ls taskmonitor/, command, executed in terminal, used to list directory contents in taskmonitor/"
         },
         {
-          "event_id": 13,
-          "date": "2026-04-06",
-          "start": "10:13:04",
-          "end": "10:13:06",
+          "event_id": 25,
+          "date": "2026-04-11",
+          "start": "12:30:13",
+          "end": "12:30:15",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "ls taskmonitor/",
+          "raw": "ls taskmonitor/",
+          "description": "ls taskmonitor/, command, executed in terminal, used to list directory contents in taskmonitor/"
+        },
+        {
+          "event_id": 27,
+          "date": "2026-04-11",
+          "start": "12:30:41",
+          "end": "12:30:43",
           "duration": 0.033,
           "event_type": "command",
           "file": "",
@@ -182,270 +1382,956 @@
           "description": "ls taskmonitor/processing/, command, executed in terminal, used to list directory contents in taskmonitor/processing/"
         },
         {
-          "event_id": 14,
-          "date": "2026-04-06",
-          "start": "10:13:25",
-          "end": "10:13:27",
+          "event_id": 28,
+          "date": "2026-04-11",
+          "start": "12:32:35",
+          "end": "12:32:37",
           "duration": 0.033,
           "event_type": "command",
           "file": "",
           "app": "Terminal",
-          "command": "ls taskmonitor/models/",
-          "raw": "ls taskmonitor/models/",
-          "description": "ls taskmonitor/models/, command, executed in terminal, used to list directory contents in taskmonitor/models/"
+          "command": "ls taskmonitor/collectors/",
+          "raw": "ls taskmonitor/collectors/",
+          "description": "ls taskmonitor/collectors/, command, executed in terminal, used to list directory contents in taskmonitor/collectors/"
         },
         {
-          "event_id": 15,
-          "date": "2026-04-06",
-          "start": "10:13:35",
-          "end": "10:13:37",
+          "event_id": 30,
+          "date": "2026-04-11",
+          "start": "12:33:13",
+          "end": "12:33:15",
           "duration": 0.033,
           "event_type": "command",
           "file": "",
           "app": "Terminal",
-          "command": "ls taskmonitor/external/",
-          "raw": "ls taskmonitor/external/",
-          "description": "ls taskmonitor/external/, command, executed in terminal, used to list directory contents in taskmonitor/external/"
+          "command": "ls taskmonitor/core/",
+          "raw": "ls taskmonitor/core/",
+          "description": "ls taskmonitor/core/, command, executed in terminal, used to list directory contents in taskmonitor/core/"
         },
         {
-          "event_id": 16,
-          "date": "2026-04-06",
-          "start": "10:13:45",
-          "end": "10:13:47",
+          "event_id": 31,
+          "date": "2026-04-11",
+          "start": "12:33:23",
+          "end": "12:33:25",
           "duration": 0.033,
           "event_type": "command",
           "file": "",
           "app": "Terminal",
-          "command": "ls taskmonitor/dicts/",
-          "raw": "ls taskmonitor/dicts/",
-          "description": "ls taskmonitor/dicts/, command, executed in terminal, used to list directory contents in taskmonitor/dicts/"
+          "command": "cat taskmonitor/core/storage.py",
+          "raw": "cat taskmonitor/core/storage.py",
+          "description": "cat taskmonitor/core/storage.py, command, executed in terminal, used to print the contents of a file to `stdout` with the taskmonitor/core/storage.py file which is a Python 3 script, text files, It stores data for storage purposes."
         },
         {
-          "event_id": 17,
-          "date": "2026-04-06",
-          "start": "10:13:50",
-          "end": "10:13:52",
+          "event_id": 34,
+          "date": "2026-04-11",
+          "start": "12:47:58",
+          "end": "12:48:00",
           "duration": 0.033,
           "event_type": "command",
           "file": "",
           "app": "Terminal",
-          "command": "ls taskmonitor/resources/",
-          "raw": "ls taskmonitor/resources/",
-          "description": "ls taskmonitor/resources/, command, executed in terminal, used to list directory contents in taskmonitor/resources/"
+          "command": "ls ~/.taskmonitor/db/",
+          "raw": "ls ~/.taskmonitor/db/",
+          "description": "ls ~/.taskmonitor/db/, command, executed in terminal, used to list directory contents in ~/.taskmonitor/db/"
         },
         {
-          "event_id": 18,
-          "date": "2026-04-06",
-          "start": "10:13:54",
-          "end": "10:13:56",
+          "event_id": 38,
+          "date": "2026-04-11",
+          "start": "12:48:36",
+          "end": "12:48:38",
           "duration": 0.033,
           "event_type": "command",
           "file": "",
           "app": "Terminal",
-          "command": "ls taskmonitor/services/",
-          "raw": "ls taskmonitor/services/",
-          "description": "ls taskmonitor/services/, command, executed in terminal, used to list directory contents in taskmonitor/services/"
+          "command": "ls ~/.taskmonitor/db/",
+          "raw": "ls ~/.taskmonitor/db/",
+          "description": "ls ~/.taskmonitor/db/, command, executed in terminal, used to list directory contents in ~/.taskmonitor/db/"
         },
         {
-          "event_id": 20,
-          "date": "2026-04-06",
-          "start": "10:16:44",
-          "end": "10:16:46",
+          "event_id": 44,
+          "date": "2026-04-11",
+          "start": "12:53:00",
+          "end": "12:53:02",
           "duration": 0.033,
           "event_type": "command",
           "file": "",
           "app": "Terminal",
-          "command": "ls taskmonitor/processing/clusterer/",
-          "raw": "ls taskmonitor/processing/clusterer/",
-          "description": "ls taskmonitor/processing/clusterer/, command, executed in terminal, used to list directory contents in taskmonitor/processing/clusterer/"
+          "command": "cat taskmonitor/core/storage.py",
+          "raw": "cat taskmonitor/core/storage.py",
+          "description": "cat taskmonitor/core/storage.py, command, executed in terminal, used to print the contents of a file to `stdout` with the taskmonitor/core/storage.py file which is a Python 3 script, text files, It stores data for storage purposes."
         },
         {
-          "event_id": 21,
-          "date": "2026-04-06",
-          "start": "10:16:48",
-          "end": "10:16:50",
+          "event_id": 53,
+          "date": "2026-04-11",
+          "start": "13:01:16",
+          "end": "13:01:18",
           "duration": 0.033,
           "event_type": "command",
           "file": "",
           "app": "Terminal",
-          "command": "ls taskmonitor/processing/",
-          "raw": "ls taskmonitor/processing/",
-          "description": "ls taskmonitor/processing/, command, executed in terminal, used to list directory contents in taskmonitor/processing/"
+          "command": "cd ~/.taskmonitor/db",
+          "raw": "cd ~/.taskmonitor/db",
+          "description": "cd ~/.taskmonitor/db, command, executed in terminal, used to go to the specified directory in ~/.taskmonitor/db"
         },
         {
-          "event_id": 23,
-          "date": "2026-04-06",
-          "start": "10:18:52",
-          "end": "10:18:54",
+          "event_id": 64,
+          "date": "2026-04-11",
+          "start": "13:09:32",
+          "end": "13:09:34",
           "duration": 0.033,
           "event_type": "command",
           "file": "",
           "app": "Terminal",
-          "command": "ls taskmonitor/processing/",
-          "raw": "ls taskmonitor/processing/",
-          "description": "ls taskmonitor/processing/, command, executed in terminal, used to list directory contents in taskmonitor/processing/"
+          "command": "cd Projects/Visualization/taskMonitor",
+          "raw": "cd Projects/Visualization/taskMonitor",
+          "description": "cd Projects/Visualization/taskMonitor, command, executed in terminal, used to go to the specified directory in Projects/Visualization/taskMonitor"
+        },
+        {
+          "event_id": 70,
+          "date": "2026-04-11",
+          "start": "13:15:51",
+          "end": "13:15:53",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "cat taskmonitor/core/storage.py",
+          "raw": "cat taskmonitor/core/storage.py",
+          "description": "cat taskmonitor/core/storage.py, command, executed in terminal, used to print the contents of a file to `stdout` with the taskmonitor/core/storage.py file which is a Python 3 script, text files, It stores data for storage purposes."
+        },
+        {
+          "event_id": 72,
+          "date": "2026-04-11",
+          "start": "13:17:20",
+          "end": "13:17:22",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "cat taskmonitor/core/storage.py",
+          "raw": "cat taskmonitor/core/storage.py",
+          "description": "cat taskmonitor/core/storage.py, command, executed in terminal, used to print the contents of a file to `stdout` with the taskmonitor/core/storage.py file which is a Python 3 script, text files, It stores data for storage purposes."
+        },
+        {
+          "event_id": 96,
+          "date": "2026-04-11",
+          "start": "14:08:51",
+          "end": "14:08:53",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "ls /home/aidan/.taskmonitor/db/taskmonitor_2026_04.db",
+          "raw": "ls /home/aidan/.taskmonitor/db/taskmonitor_2026_04.db",
+          "description": "ls /home/aidan/.taskmonitor/db/taskmonitor_2026_04.db, command, executed in terminal, used to list directory contents with the /home/aidan/.taskmonitor/db/taskmonitor_2026_04.db file which is a database file, It serves as a task monitor for 202604."
+        },
+        {
+          "event_id": 98,
+          "date": "2026-04-11",
+          "start": "14:09:02",
+          "end": "14:09:04",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "ls /home/aidan/.taskmonitor/db/",
+          "raw": "ls /home/aidan/.taskmonitor/db/",
+          "description": "ls /home/aidan/.taskmonitor/db/, command, executed in terminal, used to list directory contents in /home/aidan/.taskmonitor/db/"
+        },
+        {
+          "event_id": 106,
+          "date": "2026-04-11",
+          "start": "14:20:43",
+          "end": "14:20:45",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "ls ~/.taskmonitor/db/",
+          "raw": "ls ~/.taskmonitor/db/",
+          "description": "ls ~/.taskmonitor/db/, command, executed in terminal, used to list directory contents in ~/.taskmonitor/db/"
+        },
+        {
+          "event_id": 108,
+          "date": "2026-04-11",
+          "start": "14:20:46",
+          "end": "14:20:48",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "ls ~/.taskmonitor/db/",
+          "raw": "ls ~/.taskmonitor/db/",
+          "description": "ls ~/.taskmonitor/db/, command, executed in terminal, used to list directory contents in ~/.taskmonitor/db/"
         }
       ]
     },
     {
-      "cluster_id": "Other small tasks \u2014 singleton 2",
-      "global_task_intention": "clear the screen",
-      "cohesion": 0.851,
+      "cluster_id": "Cluster 6",
+      "global_task_intention": "Monitor and orchestrate tasks",
+      "cohesion": 0.229,
       "stats": {
-        "total_duration": 0.066,
-        "active_duration": 0.066,
-        "time_span": 0.038,
-        "num_events": 2,
-        "start": "2026-04-06 10:16:37",
-        "end": "2026-04-06 10:18:53"
+        "total_duration": 0.627,
+        "active_duration": 0.627,
+        "time_span": 2.028,
+        "num_events": 19,
+        "start": "2026-04-11 12:25:34",
+        "end": "2026-04-11 14:27:16"
       },
       "segments": [
         {
-          "start": "2026-04-06 10:16:37",
-          "end": "2026-04-06 10:16:39",
+          "start": "2026-04-11 12:25:34",
+          "end": "2026-04-11 12:25:36",
           "duration": 0.033
         },
         {
-          "start": "2026-04-06 10:18:51",
-          "end": "2026-04-06 10:18:53",
+          "start": "2026-04-11 12:34:05",
+          "end": "2026-04-11 12:34:07",
+          "duration": 0.033
+        },
+        {
+          "start": "2026-04-11 12:50:50",
+          "end": "2026-04-11 12:50:52",
+          "duration": 0.033
+        },
+        {
+          "start": "2026-04-11 12:52:43",
+          "end": "2026-04-11 12:52:45",
+          "duration": 0.033
+        },
+        {
+          "start": "2026-04-11 12:55:02",
+          "end": "2026-04-11 12:55:04",
+          "duration": 0.033
+        },
+        {
+          "start": "2026-04-11 12:57:59",
+          "end": "2026-04-11 12:58:01",
+          "duration": 0.033
+        },
+        {
+          "start": "2026-04-11 13:08:48",
+          "end": "2026-04-11 13:10:37",
+          "duration": 0.099
+        },
+        {
+          "start": "2026-04-11 13:15:01",
+          "end": "2026-04-11 13:15:03",
+          "duration": 0.033
+        },
+        {
+          "start": "2026-04-11 13:17:26",
+          "end": "2026-04-11 13:17:28",
+          "duration": 0.033
+        },
+        {
+          "start": "2026-04-11 13:23:37",
+          "end": "2026-04-11 13:23:39",
+          "duration": 0.033
+        },
+        {
+          "start": "2026-04-11 13:29:52",
+          "end": "2026-04-11 13:29:54",
+          "duration": 0.033
+        },
+        {
+          "start": "2026-04-11 13:48:22",
+          "end": "2026-04-11 13:48:24",
+          "duration": 0.033
+        },
+        {
+          "start": "2026-04-11 13:51:10",
+          "end": "2026-04-11 13:51:12",
+          "duration": 0.033
+        },
+        {
+          "start": "2026-04-11 14:09:08",
+          "end": "2026-04-11 14:09:10",
+          "duration": 0.033
+        },
+        {
+          "start": "2026-04-11 14:13:09",
+          "end": "2026-04-11 14:13:11",
+          "duration": 0.033
+        },
+        {
+          "start": "2026-04-11 14:20:53",
+          "end": "2026-04-11 14:20:55",
+          "duration": 0.033
+        },
+        {
+          "start": "2026-04-11 14:27:14",
+          "end": "2026-04-11 14:27:16",
           "duration": 0.033
         }
       ],
       "task_items": [
         {
-          "description": "clear, command, executed in terminal, used to clear the screen",
-          "total_duration": 0.066,
-          "occurrences": 2
+          "description": "python -m taskmonitor.orchestrator process, command, executed in terminal, used to run the script of the specified library module + python module 'taskmonitor.orchestrator' with the taskmonitor.orchestrator file which is a It monitors the status of tasks.",
+          "total_duration": 0.495,
+          "occurrences": 15
+        },
+        {
+          "description": "cat taskmonitor/orchestrator.py, command, executed in terminal, used to print the contents of a file to `stdout` with the taskmonitor/orchestrator.py file which is a Python 3 script, text files, It is designed to assist with orchestrating tasks.",
+          "total_duration": 0.132,
+          "occurrences": 4
         }
       ],
       "events": [
         {
           "event_id": 19,
-          "date": "2026-04-06",
-          "start": "10:16:37",
-          "end": "10:16:39",
+          "date": "2026-04-11",
+          "start": "12:25:34",
+          "end": "12:25:36",
           "duration": 0.033,
           "event_type": "command",
           "file": "",
           "app": "Terminal",
-          "command": "clear",
-          "raw": "clear",
-          "description": "clear, command, executed in terminal, used to clear the screen"
+          "command": "cat taskmonitor/orchestrator.py",
+          "raw": "cat taskmonitor/orchestrator.py",
+          "description": "cat taskmonitor/orchestrator.py, command, executed in terminal, used to print the contents of a file to `stdout` with the taskmonitor/orchestrator.py file which is a Python 3 script, text files, It is designed to assist with orchestrating tasks."
         },
         {
-          "event_id": 22,
-          "date": "2026-04-06",
-          "start": "10:18:51",
-          "end": "10:18:53",
+          "event_id": 32,
+          "date": "2026-04-11",
+          "start": "12:34:05",
+          "end": "12:34:07",
           "duration": 0.033,
           "event_type": "command",
           "file": "",
           "app": "Terminal",
-          "command": "clear",
-          "raw": "clear",
-          "description": "clear, command, executed in terminal, used to clear the screen"
+          "command": "cat taskmonitor/orchestrator.py",
+          "raw": "cat taskmonitor/orchestrator.py",
+          "description": "cat taskmonitor/orchestrator.py, command, executed in terminal, used to print the contents of a file to `stdout` with the taskmonitor/orchestrator.py file which is a Python 3 script, text files, It is designed to assist with orchestrating tasks."
+        },
+        {
+          "event_id": 42,
+          "date": "2026-04-11",
+          "start": "12:50:50",
+          "end": "12:50:52",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "python -m taskmonitor.orchestrator process",
+          "raw": "python -m taskmonitor.orchestrator process",
+          "description": "python -m taskmonitor.orchestrator process, command, executed in terminal, used to run the script of the specified library module + python module 'taskmonitor.orchestrator' with the taskmonitor.orchestrator file which is a It monitors the status of tasks."
+        },
+        {
+          "event_id": 43,
+          "date": "2026-04-11",
+          "start": "12:52:43",
+          "end": "12:52:45",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "cat taskmonitor/orchestrator.py",
+          "raw": "cat taskmonitor/orchestrator.py",
+          "description": "cat taskmonitor/orchestrator.py, command, executed in terminal, used to print the contents of a file to `stdout` with the taskmonitor/orchestrator.py file which is a Python 3 script, text files, It is designed to assist with orchestrating tasks."
+        },
+        {
+          "event_id": 47,
+          "date": "2026-04-11",
+          "start": "12:55:02",
+          "end": "12:55:04",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "python -m taskmonitor.orchestrator process",
+          "raw": "python -m taskmonitor.orchestrator process",
+          "description": "python -m taskmonitor.orchestrator process, command, executed in terminal, used to run the script of the specified library module + python module 'taskmonitor.orchestrator' with the taskmonitor.orchestrator file which is a It monitors the status of tasks."
+        },
+        {
+          "event_id": 51,
+          "date": "2026-04-11",
+          "start": "12:57:59",
+          "end": "12:58:01",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "python -m taskmonitor.orchestrator process",
+          "raw": "python -m taskmonitor.orchestrator process",
+          "description": "python -m taskmonitor.orchestrator process, command, executed in terminal, used to run the script of the specified library module + python module 'taskmonitor.orchestrator' with the taskmonitor.orchestrator file which is a It monitors the status of tasks."
+        },
+        {
+          "event_id": 59,
+          "date": "2026-04-11",
+          "start": "13:08:48",
+          "end": "13:08:50",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "python -m taskmonitor.orchestrator process",
+          "raw": "python -m taskmonitor.orchestrator process",
+          "description": "python -m taskmonitor.orchestrator process, command, executed in terminal, used to run the script of the specified library module + python module 'taskmonitor.orchestrator' with the taskmonitor.orchestrator file which is a It monitors the status of tasks."
+        },
+        {
+          "event_id": 66,
+          "date": "2026-04-11",
+          "start": "13:09:36",
+          "end": "13:09:38",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "python -m taskmonitor.orchestrator process",
+          "raw": "python -m taskmonitor.orchestrator process",
+          "description": "python -m taskmonitor.orchestrator process, command, executed in terminal, used to run the script of the specified library module + python module 'taskmonitor.orchestrator' with the taskmonitor.orchestrator file which is a It monitors the status of tasks."
+        },
+        {
+          "event_id": 68,
+          "date": "2026-04-11",
+          "start": "13:10:35",
+          "end": "13:10:37",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "python -m taskmonitor.orchestrator process",
+          "raw": "python -m taskmonitor.orchestrator process",
+          "description": "python -m taskmonitor.orchestrator process, command, executed in terminal, used to run the script of the specified library module + python module 'taskmonitor.orchestrator' with the taskmonitor.orchestrator file which is a It monitors the status of tasks."
+        },
+        {
+          "event_id": 69,
+          "date": "2026-04-11",
+          "start": "13:15:01",
+          "end": "13:15:03",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "cat taskmonitor/orchestrator.py",
+          "raw": "cat taskmonitor/orchestrator.py",
+          "description": "cat taskmonitor/orchestrator.py, command, executed in terminal, used to print the contents of a file to `stdout` with the taskmonitor/orchestrator.py file which is a Python 3 script, text files, It is designed to assist with orchestrating tasks."
+        },
+        {
+          "event_id": 74,
+          "date": "2026-04-11",
+          "start": "13:17:26",
+          "end": "13:17:28",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "python -m taskmonitor.orchestrator process",
+          "raw": "python -m taskmonitor.orchestrator process",
+          "description": "python -m taskmonitor.orchestrator process, command, executed in terminal, used to run the script of the specified library module + python module 'taskmonitor.orchestrator' with the taskmonitor.orchestrator file which is a It monitors the status of tasks."
+        },
+        {
+          "event_id": 80,
+          "date": "2026-04-11",
+          "start": "13:23:37",
+          "end": "13:23:39",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "python -m taskmonitor.orchestrator process",
+          "raw": "python -m taskmonitor.orchestrator process",
+          "description": "python -m taskmonitor.orchestrator process, command, executed in terminal, used to run the script of the specified library module + python module 'taskmonitor.orchestrator' with the taskmonitor.orchestrator file which is a It monitors the status of tasks."
+        },
+        {
+          "event_id": 83,
+          "date": "2026-04-11",
+          "start": "13:29:52",
+          "end": "13:29:54",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "python -m taskmonitor.orchestrator process",
+          "raw": "python -m taskmonitor.orchestrator process",
+          "description": "python -m taskmonitor.orchestrator process, command, executed in terminal, used to run the script of the specified library module + python module 'taskmonitor.orchestrator' with the taskmonitor.orchestrator file which is a It monitors the status of tasks."
+        },
+        {
+          "event_id": 88,
+          "date": "2026-04-11",
+          "start": "13:48:22",
+          "end": "13:48:24",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "python -m taskmonitor.orchestrator process",
+          "raw": "python -m taskmonitor.orchestrator process",
+          "description": "python -m taskmonitor.orchestrator process, command, executed in terminal, used to run the script of the specified library module + python module 'taskmonitor.orchestrator' with the taskmonitor.orchestrator file which is a It monitors the status of tasks."
+        },
+        {
+          "event_id": 91,
+          "date": "2026-04-11",
+          "start": "13:51:10",
+          "end": "13:51:12",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "python -m taskmonitor.orchestrator process",
+          "raw": "python -m taskmonitor.orchestrator process",
+          "description": "python -m taskmonitor.orchestrator process, command, executed in terminal, used to run the script of the specified library module + python module 'taskmonitor.orchestrator' with the taskmonitor.orchestrator file which is a It monitors the status of tasks."
+        },
+        {
+          "event_id": 100,
+          "date": "2026-04-11",
+          "start": "14:09:08",
+          "end": "14:09:10",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "python -m taskmonitor.orchestrator process",
+          "raw": "python -m taskmonitor.orchestrator process",
+          "description": "python -m taskmonitor.orchestrator process, command, executed in terminal, used to run the script of the specified library module + python module 'taskmonitor.orchestrator' with the taskmonitor.orchestrator file which is a It monitors the status of tasks."
+        },
+        {
+          "event_id": 103,
+          "date": "2026-04-11",
+          "start": "14:13:09",
+          "end": "14:13:11",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "python -m taskmonitor.orchestrator process",
+          "raw": "python -m taskmonitor.orchestrator process",
+          "description": "python -m taskmonitor.orchestrator process, command, executed in terminal, used to run the script of the specified library module + python module 'taskmonitor.orchestrator' with the taskmonitor.orchestrator file which is a It monitors the status of tasks."
+        },
+        {
+          "event_id": 109,
+          "date": "2026-04-11",
+          "start": "14:20:53",
+          "end": "14:20:55",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "python -m taskmonitor.orchestrator process",
+          "raw": "python -m taskmonitor.orchestrator process",
+          "description": "python -m taskmonitor.orchestrator process, command, executed in terminal, used to run the script of the specified library module + python module 'taskmonitor.orchestrator' with the taskmonitor.orchestrator file which is a It monitors the status of tasks."
+        },
+        {
+          "event_id": 114,
+          "date": "2026-04-11",
+          "start": "14:27:14",
+          "end": "14:27:16",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "python -m taskmonitor.orchestrator process",
+          "raw": "python -m taskmonitor.orchestrator process",
+          "description": "python -m taskmonitor.orchestrator process, command, executed in terminal, used to run the script of the specified library module + python module 'taskmonitor.orchestrator' with the taskmonitor.orchestrator file which is a It monitors the status of tasks."
         }
       ]
     },
     {
       "cluster_id": "Cluster 1",
-      "global_task_intention": "Browse the internet",
-      "cohesion": 0.308,
+      "global_task_intention": "Manage data and exports",
+      "cohesion": 0.354,
       "stats": {
-        "total_duration": 4.72,
-        "active_duration": 4.72,
-        "time_span": 0.1,
+        "total_duration": 0.236,
+        "active_duration": 0.236,
+        "time_span": 2.168,
         "num_events": 3,
-        "start": "2026-04-06 10:40:05",
-        "end": "2026-04-06 10:46:05"
+        "start": "2026-04-11 12:27:40",
+        "end": "2026-04-11 14:37:45"
       },
       "segments": [
         {
-          "start": "2026-04-06 10:40:05",
-          "end": "2026-04-06 10:40:13",
-          "duration": 0.14
+          "start": "2026-04-11 12:27:40",
+          "end": "2026-04-11 12:27:48",
+          "duration": 0.066
         },
         {
-          "start": "2026-04-06 10:44:38",
-          "end": "2026-04-06 10:46:05",
-          "duration": 4.58
+          "start": "2026-04-11 14:37:35",
+          "end": "2026-04-11 14:37:45",
+          "duration": 0.17
         }
       ],
       "task_items": [
         {
-          "description": "Google Chrome, application, used to watch (10) Chinchilla - Little Girl Gone (Lyrics) - YouTube",
-          "total_duration": 4.58,
+          "description": "data_command.txt, file, opened with Visual Studio Code, contains data related to Plain text document, text files, It serves as a data command.",
+          "total_duration": 0.17,
           "occurrences": 1
         },
         {
-          "description": "Google Chrome, application, used to watch YouTube",
-          "total_duration": 0.07,
+          "description": "ls data/exports/, command, executed in terminal, used to list directory contents in data/exports/",
+          "total_duration": 0.033,
           "occurrences": 1
         },
         {
-          "description": "Google Chrome, application, used to watch (10) YouTube",
-          "total_duration": 0.07,
+          "description": "ls data/exports/final_output.json, command, executed in terminal, used to list directory contents with the data/exports/final_output.json file which is a JSON schema, JSON data, It serves as a final output for a project., Data exchange format",
+          "total_duration": 0.033,
           "occurrences": 1
         }
       ],
       "events": [
         {
-          "event_id": 8,
-          "date": "2026-04-06",
-          "start": "10:40:05",
-          "end": "10:40:09",
-          "duration": 0.07,
-          "event_type": "app",
+          "event_id": 21,
+          "date": "2026-04-11",
+          "start": "12:27:40",
+          "end": "12:27:42",
+          "duration": 0.033,
+          "event_type": "command",
           "file": "",
-          "app": "Google Chrome",
-          "command": "",
-          "raw": "YouTube - Google Chrome",
-          "description": "Google Chrome, application, used to watch YouTube"
+          "app": "Terminal",
+          "command": "ls data/exports/",
+          "raw": "ls data/exports/",
+          "description": "ls data/exports/, command, executed in terminal, used to list directory contents in data/exports/"
         },
         {
-          "event_id": 9,
-          "date": "2026-04-06",
-          "start": "10:40:09",
-          "end": "10:40:13",
-          "duration": 0.07,
-          "event_type": "app",
+          "event_id": 22,
+          "date": "2026-04-11",
+          "start": "12:27:46",
+          "end": "12:27:48",
+          "duration": 0.033,
+          "event_type": "command",
           "file": "",
-          "app": "Google Chrome",
-          "command": "",
-          "raw": "(10) YouTube - Google Chrome",
-          "description": "Google Chrome, application, used to watch (10) YouTube"
+          "app": "Terminal",
+          "command": "ls data/exports/final_output.json",
+          "raw": "ls data/exports/final_output.json",
+          "description": "ls data/exports/final_output.json, command, executed in terminal, used to list directory contents with the data/exports/final_output.json file which is a JSON schema, JSON data, It serves as a final output for a project., Data exchange format"
         },
         {
-          "event_id": 0,
-          "date": "2026-04-06",
-          "start": "10:44:38",
-          "end": "10:46:05",
-          "duration": 4.58,
-          "event_type": "app",
-          "file": "",
-          "app": "Google Chrome",
+          "event_id": 1,
+          "date": "2026-04-11",
+          "start": "14:37:35",
+          "end": "14:37:45",
+          "duration": 0.17,
+          "event_type": "file",
+          "file": "data_command.txt",
+          "app": "Visual Studio Code",
           "command": "",
-          "raw": "(10) Chinchilla - Little Girl Gone (Lyrics) - YouTube - Google Chrome",
-          "description": "Google Chrome, application, used to watch (10) Chinchilla - Little Girl Gone (Lyrics) - YouTube"
+          "raw": "data_command.txt - taskMonitor - Visual Studio Code",
+          "description": "data_command.txt, file, opened with Visual Studio Code, contains data related to Plain text document, text files, It serves as a data command."
         }
       ]
     },
     {
-      "cluster_id": "Other small tasks \u2014 singleton 1",
-      "global_task_intention": "check out new tab",
-      "cohesion": 0.851,
+      "cluster_id": "Cluster 5",
+      "global_task_intention": "Monitor and manage task monitoring with a database",
+      "cohesion": 0.242,
       "stats": {
-        "total_duration": 0.2,
-        "active_duration": 0.2,
-        "time_span": 0.002,
-        "num_events": 1,
-        "start": "2026-04-06 10:43:21",
-        "end": "2026-04-06 10:43:27"
+        "total_duration": 0.396,
+        "active_duration": 0.396,
+        "time_span": 1.538,
+        "num_events": 12,
+        "start": "2026-04-11 12:48:13",
+        "end": "2026-04-11 14:20:29"
       },
       "segments": [
         {
-          "start": "2026-04-06 10:43:21",
-          "end": "2026-04-06 10:43:27",
+          "start": "2026-04-11 12:48:13",
+          "end": "2026-04-11 12:48:15",
+          "duration": 0.033
+        },
+        {
+          "start": "2026-04-11 12:53:59",
+          "end": "2026-04-11 12:54:01",
+          "duration": 0.033
+        },
+        {
+          "start": "2026-04-11 12:57:52",
+          "end": "2026-04-11 12:57:54",
+          "duration": 0.033
+        },
+        {
+          "start": "2026-04-11 13:01:05",
+          "end": "2026-04-11 13:01:07",
+          "duration": 0.033
+        },
+        {
+          "start": "2026-04-11 13:07:42",
+          "end": "2026-04-11 13:07:44",
+          "duration": 0.033
+        },
+        {
+          "start": "2026-04-11 13:19:16",
+          "end": "2026-04-11 13:19:24",
+          "duration": 0.066
+        },
+        {
+          "start": "2026-04-11 13:23:28",
+          "end": "2026-04-11 13:23:30",
+          "duration": 0.033
+        },
+        {
+          "start": "2026-04-11 13:31:19",
+          "end": "2026-04-11 13:31:21",
+          "duration": 0.033
+        },
+        {
+          "start": "2026-04-11 13:48:15",
+          "end": "2026-04-11 13:48:17",
+          "duration": 0.033
+        },
+        {
+          "start": "2026-04-11 14:08:42",
+          "end": "2026-04-11 14:08:44",
+          "duration": 0.033
+        },
+        {
+          "start": "2026-04-11 14:20:27",
+          "end": "2026-04-11 14:20:29",
+          "duration": 0.033
+        }
+      ],
+      "task_items": [
+        {
+          "description": "rm ~/.taskmonitor/db/taskmonitor_2026_04.db, command, executed in terminal, used to remove specific files with the ~/.taskmonitor/db/taskmonitor_2026_04.db file which is a database file, It serves as a task monitor for 202604.",
+          "total_duration": 0.132,
+          "occurrences": 4
+        },
+        {
+          "description": "rm /home/aidan/.taskmonitor/db/taskmonitor_2026_04.db, command, executed in terminal, used to remove specific files with the /home/aidan/.taskmonitor/db/taskmonitor_2026_04.db file which is a database file, It serves as a task monitor for 202604.",
+          "total_duration": 0.099,
+          "occurrences": 3
+        },
+        {
+          "description": "ls -a ~/, command, executed in terminal, used to list all files, including hidden files in ~/",
+          "total_duration": 0.033,
+          "occurrences": 1
+        },
+        {
+          "description": "ls -a ~/.taskmonitor/, command, executed in terminal, used to list all files, including hidden files with the ~/.taskmonitor/ file",
+          "total_duration": 0.033,
+          "occurrences": 1
+        },
+        {
+          "description": "ls -a ~/.taskmonitor/db, command, executed in terminal, used to list all files, including hidden files in ~/.taskmonitor/db",
+          "total_duration": 0.033,
+          "occurrences": 1
+        },
+        {
+          "description": "ls -a ~/.taskmonitor/db/taskmonitor_2026_04.db, command, executed in terminal, used to list all files, including hidden files with the ~/.taskmonitor/db/taskmonitor_2026_04.db file which is a database file, It serves as a task monitor for 202604.",
+          "total_duration": 0.033,
+          "occurrences": 1
+        },
+        {
+          "description": "ls -a ~/.taskmonitor/db/, command, executed in terminal, used to list all files, including hidden files in ~/.taskmonitor/db/",
+          "total_duration": 0.033,
+          "occurrences": 1
+        }
+      ],
+      "events": [
+        {
+          "event_id": 35,
+          "date": "2026-04-11",
+          "start": "12:48:13",
+          "end": "12:48:15",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "ls -a ~/",
+          "raw": "ls -a ~/",
+          "description": "ls -a ~/, command, executed in terminal, used to list all files, including hidden files in ~/"
+        },
+        {
+          "event_id": 46,
+          "date": "2026-04-11",
+          "start": "12:53:59",
+          "end": "12:54:01",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "rm ~/.taskmonitor/db/taskmonitor_2026_04.db",
+          "raw": "rm ~/.taskmonitor/db/taskmonitor_2026_04.db",
+          "description": "rm ~/.taskmonitor/db/taskmonitor_2026_04.db, command, executed in terminal, used to remove specific files with the ~/.taskmonitor/db/taskmonitor_2026_04.db file which is a database file, It serves as a task monitor for 202604."
+        },
+        {
+          "event_id": 48,
+          "date": "2026-04-11",
+          "start": "12:57:52",
+          "end": "12:57:54",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "rm ~/.taskmonitor/db/taskmonitor_2026_04.db",
+          "raw": "rm ~/.taskmonitor/db/taskmonitor_2026_04.db",
+          "description": "rm ~/.taskmonitor/db/taskmonitor_2026_04.db, command, executed in terminal, used to remove specific files with the ~/.taskmonitor/db/taskmonitor_2026_04.db file which is a database file, It serves as a task monitor for 202604."
+        },
+        {
+          "event_id": 52,
+          "date": "2026-04-11",
+          "start": "13:01:05",
+          "end": "13:01:07",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "ls -a ~/.taskmonitor/",
+          "raw": "ls -a ~/.taskmonitor/",
+          "description": "ls -a ~/.taskmonitor/, command, executed in terminal, used to list all files, including hidden files with the ~/.taskmonitor/ file"
+        },
+        {
+          "event_id": 58,
+          "date": "2026-04-11",
+          "start": "13:07:42",
+          "end": "13:07:44",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "rm ~/.taskmonitor/db/taskmonitor_2026_04.db",
+          "raw": "rm ~/.taskmonitor/db/taskmonitor_2026_04.db",
+          "description": "rm ~/.taskmonitor/db/taskmonitor_2026_04.db, command, executed in terminal, used to remove specific files with the ~/.taskmonitor/db/taskmonitor_2026_04.db file which is a database file, It serves as a task monitor for 202604."
+        },
+        {
+          "event_id": 75,
+          "date": "2026-04-11",
+          "start": "13:19:16",
+          "end": "13:19:18",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "ls -a ~/.taskmonitor/db",
+          "raw": "ls -a ~/.taskmonitor/db",
+          "description": "ls -a ~/.taskmonitor/db, command, executed in terminal, used to list all files, including hidden files in ~/.taskmonitor/db"
+        },
+        {
+          "event_id": 76,
+          "date": "2026-04-11",
+          "start": "13:19:22",
+          "end": "13:19:24",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "ls -a ~/.taskmonitor/db/taskmonitor_2026_04.db",
+          "raw": "ls -a ~/.taskmonitor/db/taskmonitor_2026_04.db",
+          "description": "ls -a ~/.taskmonitor/db/taskmonitor_2026_04.db, command, executed in terminal, used to list all files, including hidden files with the ~/.taskmonitor/db/taskmonitor_2026_04.db file which is a database file, It serves as a task monitor for 202604."
+        },
+        {
+          "event_id": 78,
+          "date": "2026-04-11",
+          "start": "13:23:28",
+          "end": "13:23:30",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "rm /home/aidan/.taskmonitor/db/taskmonitor_2026_04.db",
+          "raw": "rm /home/aidan/.taskmonitor/db/taskmonitor_2026_04.db",
+          "description": "rm /home/aidan/.taskmonitor/db/taskmonitor_2026_04.db, command, executed in terminal, used to remove specific files with the /home/aidan/.taskmonitor/db/taskmonitor_2026_04.db file which is a database file, It serves as a task monitor for 202604."
+        },
+        {
+          "event_id": 85,
+          "date": "2026-04-11",
+          "start": "13:31:19",
+          "end": "13:31:21",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "ls -a ~/.taskmonitor/db/",
+          "raw": "ls -a ~/.taskmonitor/db/",
+          "description": "ls -a ~/.taskmonitor/db/, command, executed in terminal, used to list all files, including hidden files in ~/.taskmonitor/db/"
+        },
+        {
+          "event_id": 87,
+          "date": "2026-04-11",
+          "start": "13:48:15",
+          "end": "13:48:17",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "rm /home/aidan/.taskmonitor/db/taskmonitor_2026_04.db",
+          "raw": "rm /home/aidan/.taskmonitor/db/taskmonitor_2026_04.db",
+          "description": "rm /home/aidan/.taskmonitor/db/taskmonitor_2026_04.db, command, executed in terminal, used to remove specific files with the /home/aidan/.taskmonitor/db/taskmonitor_2026_04.db file which is a database file, It serves as a task monitor for 202604."
+        },
+        {
+          "event_id": 95,
+          "date": "2026-04-11",
+          "start": "14:08:42",
+          "end": "14:08:44",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "rm /home/aidan/.taskmonitor/db/taskmonitor_2026_04.db",
+          "raw": "rm /home/aidan/.taskmonitor/db/taskmonitor_2026_04.db",
+          "description": "rm /home/aidan/.taskmonitor/db/taskmonitor_2026_04.db, command, executed in terminal, used to remove specific files with the /home/aidan/.taskmonitor/db/taskmonitor_2026_04.db file which is a database file, It serves as a task monitor for 202604."
+        },
+        {
+          "event_id": 105,
+          "date": "2026-04-11",
+          "start": "14:20:27",
+          "end": "14:20:29",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "rm ~/.taskmonitor/db/taskmonitor_2026_04.db",
+          "raw": "rm ~/.taskmonitor/db/taskmonitor_2026_04.db",
+          "description": "rm ~/.taskmonitor/db/taskmonitor_2026_04.db, command, executed in terminal, used to remove specific files with the ~/.taskmonitor/db/taskmonitor_2026_04.db file which is a database file, It serves as a task monitor for 202604."
+        }
+      ]
+    },
+    {
+      "cluster_id": "Other small tasks \u2014 singleton 2",
+      "global_task_intention": "use google chrome",
+      "cohesion": 0.64,
+      "stats": {
+        "total_duration": 0.03,
+        "active_duration": 0.03,
+        "time_span": 0.001,
+        "num_events": 1,
+        "start": "2026-04-11 14:37:53",
+        "end": "2026-04-11 14:37:55"
+      },
+      "segments": [
+        {
+          "start": "2026-04-11 14:37:53",
+          "end": "2026-04-11 14:37:55",
+          "duration": 0.03
+        }
+      ],
+      "task_items": [
+        {
+          "description": "Google Chrome, application, used by the user",
+          "total_duration": 0.03,
+          "occurrences": 1
+        }
+      ],
+      "events": [
+        {
+          "event_id": 3,
+          "date": "2026-04-11",
+          "start": "14:37:53",
+          "end": "14:37:55",
+          "duration": 0.03,
+          "event_type": "app",
+          "file": "",
+          "app": "Google Chrome",
+          "command": "",
+          "raw": "Google Chrome",
+          "description": "Google Chrome, application, used by the user"
+        }
+      ]
+    },
+    {
+      "cluster_id": "Other small tasks \u2014 singleton 3",
+      "global_task_intention": "check out new tab",
+      "cohesion": 0.64,
+      "stats": {
+        "total_duration": 0.2,
+        "active_duration": 0.2,
+        "time_span": 0.003,
+        "num_events": 1,
+        "start": "2026-04-11 14:37:55",
+        "end": "2026-04-11 14:38:07"
+      },
+      "segments": [
+        {
+          "start": "2026-04-11 14:37:55",
+          "end": "2026-04-11 14:38:07",
           "duration": 0.2
         }
       ],
@@ -458,10 +2344,10 @@
       ],
       "events": [
         {
-          "event_id": 4,
-          "date": "2026-04-06",
-          "start": "10:43:21",
-          "end": "10:43:27",
+          "event_id": 0,
+          "date": "2026-04-11",
+          "start": "14:37:55",
+          "end": "14:38:07",
           "duration": 0.2,
           "event_type": "app",
           "file": "",
@@ -473,188 +2359,44 @@
       ]
     },
     {
-      "cluster_id": "Other small tasks \u2014 singleton 3",
-      "global_task_intention": "check out 2002 teen fashion",
-      "cohesion": 0.851,
-      "stats": {
-        "total_duration": 1.18,
-        "active_duration": 1.18,
-        "time_span": 0.02,
-        "num_events": 1,
-        "start": "2026-04-06 10:43:27",
-        "end": "2026-04-06 10:44:38"
-      },
-      "segments": [
-        {
-          "start": "2026-04-06 10:43:27",
-          "end": "2026-04-06 10:44:38",
-          "duration": 1.18
-        }
-      ],
-      "task_items": [
-        {
-          "description": "Google Chrome, application, used to checked out 2002 Teen Fashion",
-          "total_duration": 1.18,
-          "occurrences": 1
-        }
-      ],
-      "events": [
-        {
-          "event_id": 1,
-          "date": "2026-04-06",
-          "start": "10:43:27",
-          "end": "10:44:38",
-          "duration": 1.18,
-          "event_type": "app",
-          "file": "",
-          "app": "Google Chrome",
-          "command": "",
-          "raw": "2002 Teen Fashion - Google Chrome",
-          "description": "Google Chrome, application, used to checked out 2002 Teen Fashion"
-        }
-      ]
-    },
-    {
       "cluster_id": "Other small tasks \u2014 singleton 4",
-      "global_task_intention": "open config.py with Visual Studio Code",
-      "cohesion": 0.851,
+      "global_task_intention": "check out history",
+      "cohesion": 0.64,
       "stats": {
         "total_duration": 0.13,
         "active_duration": 0.13,
         "time_span": 0.002,
         "num_events": 1,
-        "start": "2026-04-06 10:44:54",
-        "end": "2026-04-06 10:45:02"
+        "start": "2026-04-11 14:38:07",
+        "end": "2026-04-11 14:38:15"
       },
       "segments": [
         {
-          "start": "2026-04-06 10:44:54",
-          "end": "2026-04-06 10:45:02",
+          "start": "2026-04-11 14:38:07",
+          "end": "2026-04-11 14:38:15",
           "duration": 0.13
         }
       ],
       "task_items": [
         {
-          "description": "config.py, file, opened with Visual Studio Code, contains data related to Python 3 script, text files, It provides a default configuration for a system.",
+          "description": "Google Chrome, application, used to checked out History",
           "total_duration": 0.13,
           "occurrences": 1
         }
       ],
       "events": [
         {
-          "event_id": 7,
-          "date": "2026-04-06",
-          "start": "10:44:54",
-          "end": "10:45:02",
+          "event_id": 2,
+          "date": "2026-04-11",
+          "start": "14:38:07",
+          "end": "14:38:15",
           "duration": 0.13,
-          "event_type": "file",
-          "file": "config.py",
-          "app": "Visual Studio Code",
-          "command": "",
-          "raw": "config.py - taskMonitor - Visual Studio Code",
-          "description": "config.py, file, opened with Visual Studio Code, contains data related to Python 3 script, text files, It provides a default configuration for a system."
-        }
-      ]
-    },
-    {
-      "cluster_id": "Other small tasks \u2014 singleton 5",
-      "global_task_intention": "use burp suite community edition v2025.7.4",
-      "cohesion": 0.851,
-      "stats": {
-        "total_duration": 0.2,
-        "active_duration": 0.2,
-        "time_span": 0.003,
-        "num_events": 1,
-        "start": "2026-04-06 10:45:17",
-        "end": "2026-04-06 10:45:29"
-      },
-      "segments": [
-        {
-          "start": "2026-04-06 10:45:17",
-          "end": "2026-04-06 10:45:29",
-          "duration": 0.2
-        }
-      ],
-      "task_items": [
-        {
-          "description": "Burp Suite Community Edition v2025.7.4, application, used by the user",
-          "total_duration": 0.2,
-          "occurrences": 1
-        }
-      ],
-      "events": [
-        {
-          "event_id": 5,
-          "date": "2026-04-06",
-          "start": "10:45:17",
-          "end": "10:45:29",
-          "duration": 0.2,
           "event_type": "app",
           "file": "",
-          "app": "Burp Suite Community Edition v2025.7.4",
+          "app": "Google Chrome",
           "command": "",
-          "raw": "Burp Suite Community Edition v2025.7.4",
-          "description": "Burp Suite Community Edition v2025.7.4, application, used by the user"
-        }
-      ]
-    },
-    {
-      "cluster_id": "Cluster 2",
-      "global_task_intention": "Open coding file",
-      "cohesion": 0.436,
-      "stats": {
-        "total_duration": 0.24,
-        "active_duration": 0.24,
-        "time_span": 0.012,
-        "num_events": 2,
-        "start": "2026-04-06 10:46:46",
-        "end": "2026-04-06 10:47:30"
-      },
-      "segments": [
-        {
-          "start": "2026-04-06 10:46:46",
-          "end": "2026-04-06 10:47:30",
-          "duration": 0.24
-        }
-      ],
-      "task_items": [
-        {
-          "description": "Documents, directory, navigated by the user",
-          "total_duration": 0.17,
-          "occurrences": 1
-        },
-        {
-          "description": "Visual Studio Code, code editor, used by the user",
-          "total_duration": 0.07,
-          "occurrences": 1
-        }
-      ],
-      "events": [
-        {
-          "event_id": 6,
-          "date": "2026-04-06",
-          "start": "10:46:46",
-          "end": "10:46:56",
-          "duration": 0.17,
-          "event_type": "directory",
-          "file": "",
-          "app": "Documents",
-          "command": "",
-          "raw": "Documents",
-          "description": "Documents, directory, navigated by the user"
-        },
-        {
-          "event_id": 10,
-          "date": "2026-04-06",
-          "start": "10:47:28",
-          "end": "10:47:30",
-          "duration": 0.07,
-          "event_type": "app",
-          "file": "",
-          "app": "Visual Studio Code",
-          "command": "",
-          "raw": "Visual Studio Code",
-          "description": "Visual Studio Code, code editor, used by the user"
+          "raw": "History - Google Chrome",
+          "description": "Google Chrome, application, used to checked out History"
         }
       ]
     }

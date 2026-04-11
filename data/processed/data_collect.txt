@@ -1,24 +1,117 @@
-2026-04-06	10:44:38	10:46:05	4.58	file-directory-App	(10) Chinchilla - Little Girl Gone (Lyrics) - YouTube - Google Chrome
-2026-04-06	10:43:27	10:44:38	1.18	file-directory-App	2002 Teen Fashion - Google Chrome
-2026-04-06	10:45:02	10:45:31	0.48	file-directory-App	data_command.txt - taskMonitor - Visual Studio Code
-2026-04-06	10:45:37	10:46:03	0.43	directory/App	Terminal
-2026-04-06	10:43:21	10:43:27	0.20	file-directory-App	New Tab - Google Chrome
-2026-04-06	10:45:17	10:45:29	0.20	directory/App	Burp Suite Community Edition v2025.7.4
-2026-04-06	10:46:46	10:46:56	0.17	directory/App	Documents
-2026-04-06	10:44:54	10:45:02	0.13	file-directory-App	config.py - taskMonitor - Visual Studio Code
-2026-04-06	10:40:05	10:40:09	0.07	file-directory-App	YouTube - Google Chrome
-2026-04-06	10:40:09	10:40:13	0.07	file-directory-App	(10) YouTube - Google Chrome
-2026-04-06	10:47:28	10:47:30	0.07	directory/App	Visual Studio Code
-2026-04-06	09:54:56	09:54:58	0.033	Commande	code .
-2026-04-06	10:12:55	10:12:57	0.033	Commande	ls taskmonitor/
-2026-04-06	10:13:04	10:13:06	0.033	Commande	ls taskmonitor/processing/
-2026-04-06	10:13:25	10:13:27	0.033	Commande	ls taskmonitor/models/
-2026-04-06	10:13:35	10:13:37	0.033	Commande	ls taskmonitor/external/
-2026-04-06	10:13:45	10:13:47	0.033	Commande	ls taskmonitor/dicts/
-2026-04-06	10:13:50	10:13:52	0.033	Commande	ls taskmonitor/resources/
-2026-04-06	10:13:54	10:13:56	0.033	Commande	ls taskmonitor/services/
-2026-04-06	10:16:37	10:16:39	0.033	Commande	clear
-2026-04-06	10:16:44	10:16:46	0.033	Commande	ls taskmonitor/processing/clusterer/
-2026-04-06	10:16:48	10:16:50	0.033	Commande	ls taskmonitor/processing/
-2026-04-06	10:18:51	10:18:53	0.033	Commande	clear
-2026-04-06	10:18:52	10:18:54	0.033	Commande	ls taskmonitor/processing/
+2026-04-11	14:37:55	14:38:07	0.20	file-directory-App	New Tab - Google Chrome
+2026-04-11	14:37:35	14:37:45	0.17	file-directory-App	data_command.txt - taskMonitor - Visual Studio Code
+2026-04-11	14:38:07	14:38:15	0.13	file-directory-App	History - Google Chrome
+2026-04-11	14:37:53	14:37:55	0.03	directory/App	Google Chrome
+2026-04-11	14:36:58	14:36:58	0.00	directory/App	taskMonitor
+2026-04-11	12:21:34	12:21:36	0.033	Commande	code .
+2026-04-11	12:21:51	12:21:53	0.033	Commande	conda env list
+2026-04-11	12:21:57	12:21:59	0.033	Commande	conda activate
+2026-04-11	12:22:06	12:22:08	0.033	Commande	conda activate MLproject_py311
+2026-04-11	12:22:10	12:22:12	0.033	Commande	clear
+2026-04-11	12:22:18	12:22:20	0.033	Commande	python -m taskmonitor.gui.app
+2026-04-11	12:22:21	12:22:23	0.033	Commande	clear
+2026-04-11	12:22:48	12:22:50	0.033	Commande	export QT_PLUGIN_PATH=$VIRTUAL_ENV/lib/python3.11/site-packages/PyQt6/Qt6/plugins
+2026-04-11	12:22:57	12:22:59	0.033	Commande	export QML2_IMPORT_PATH=$VIRTUAL_ENV/lib/python3.11/site-packages/PyQt6/Qt6/qml
+2026-04-11	12:23:12	12:23:14	0.033	Commande	export LD_LIBRARY_PATH=$VIRTUAL_ENV/lib/python3.11/site-packages/PyQt6/Qt6/lib
+2026-04-11	12:23:13	12:23:15	0.033	Commande	clear
+2026-04-11	12:23:15	12:23:17	0.033	Commande	python -m taskmonitor.gui.app
+2026-04-11	12:25:14	12:25:16	0.033	Commande	ls
+2026-04-11	12:25:19	12:25:21	0.033	Commande	ls taskmonitor/
+2026-04-11	12:25:34	12:25:36	0.033	Commande	cat taskmonitor/orchestrator.py
+2026-04-11	12:27:34	12:27:36	0.033	Commande	clear
+2026-04-11	12:27:40	12:27:42	0.033	Commande	ls data/exports/
+2026-04-11	12:27:46	12:27:48	0.033	Commande	ls data/exports/final_output.json
+2026-04-11	12:30:10	12:30:12	0.033	Commande	clear
+2026-04-11	12:30:11	12:30:13	0.033	Commande	ls
+2026-04-11	12:30:13	12:30:15	0.033	Commande	ls taskmonitor/
+2026-04-11	12:30:30	12:30:32	0.033	Commande	ls pyproject.toml
+2026-04-11	12:30:41	12:30:43	0.033	Commande	ls taskmonitor/processing/
+2026-04-11	12:32:35	12:32:37	0.033	Commande	ls taskmonitor/collectors/
+2026-04-11	12:33:09	12:33:11	0.033	Commande	clear
+2026-04-11	12:33:13	12:33:15	0.033	Commande	ls taskmonitor/core/
+2026-04-11	12:33:23	12:33:25	0.033	Commande	cat taskmonitor/core/storage.py
+2026-04-11	12:34:05	12:34:07	0.033	Commande	cat taskmonitor/orchestrator.py
+2026-04-11	12:47:55	12:47:57	0.033	Commande	clear
+2026-04-11	12:47:58	12:48:00	0.033	Commande	ls ~/.taskmonitor/db/
+2026-04-11	12:48:13	12:48:15	0.033	Commande	ls -a ~/
+2026-04-11	12:48:22	12:48:24	0.033	Commande	clar
+2026-04-11	12:48:24	12:48:26	0.033	Commande	clear
+2026-04-11	12:48:36	12:48:38	0.033	Commande	ls ~/.taskmonitor/db/
+2026-04-11	12:48:48	12:48:50	0.033	Commande	sqlite3 ~/.taskmonitor/db/taskmonitor_2026_04.db
+2026-04-11	12:49:49	12:49:51	0.033	Commande	clear
+2026-04-11	12:50:03	12:50:05	0.033	Commande	clear
+2026-04-11	12:50:50	12:50:52	0.033	Commande	python -m taskmonitor.orchestrator process
+2026-04-11	12:52:43	12:52:45	0.033	Commande	cat taskmonitor/orchestrator.py
+2026-04-11	12:53:00	12:53:02	0.033	Commande	cat taskmonitor/core/storage.py
+2026-04-11	12:53:57	12:53:59	0.033	Commande	clear
+2026-04-11	12:53:59	12:54:01	0.033	Commande	rm ~/.taskmonitor/db/taskmonitor_2026_04.db
+2026-04-11	12:55:02	12:55:04	0.033	Commande	python -m taskmonitor.orchestrator process
+2026-04-11	12:57:52	12:57:54	0.033	Commande	rm ~/.taskmonitor/db/taskmonitor_2026_04.db
+2026-04-11	12:57:54	12:57:56	0.033	Commande	clar
+2026-04-11	12:57:56	12:57:58	0.033	Commande	clear
+2026-04-11	12:57:59	12:58:01	0.033	Commande	python -m taskmonitor.orchestrator process
+2026-04-11	13:01:05	13:01:07	0.033	Commande	ls -a ~/.taskmonitor/
+2026-04-11	13:01:16	13:01:18	0.033	Commande	cd ~/.taskmonitor/db
+2026-04-11	13:01:18	13:01:20	0.033	Commande	clear
+2026-04-11	13:01:19	13:01:21	0.033	Commande	ls
+2026-04-11	13:01:26	13:01:28	0.033	Commande	sqlite3 taskmonitor_2026_04.db
+2026-04-11	13:04:20	13:04:22	0.033	Commande	clear
+2026-04-11	13:07:42	13:07:44	0.033	Commande	rm ~/.taskmonitor/db/taskmonitor_2026_04.db
+2026-04-11	13:08:48	13:08:50	0.033	Commande	python -m taskmonitor.orchestrator process
+2026-04-11	13:09:11	13:09:13	0.033	Commande	cd ~/
+2026-04-11	13:09:12	13:09:14	0.033	Commande	ls
+2026-04-11	13:09:17	13:09:19	0.033	Commande	cd Documents/
+2026-04-11	13:09:18	13:09:20	0.033	Commande	clear
+2026-04-11	13:09:32	13:09:34	0.033	Commande	cd Projects/Visualization/taskMonitor
+2026-04-11	13:09:33	13:09:35	0.033	Commande	clear
+2026-04-11	13:09:36	13:09:38	0.033	Commande	python -m taskmonitor.orchestrator process
+2026-04-11	13:10:34	13:10:36	0.033	Commande	clear
+2026-04-11	13:10:35	13:10:37	0.033	Commande	python -m taskmonitor.orchestrator process
+2026-04-11	13:15:01	13:15:03	0.033	Commande	cat taskmonitor/orchestrator.py
+2026-04-11	13:15:51	13:15:53	0.033	Commande	cat taskmonitor/core/storage.py
+2026-04-11	13:17:19	13:17:21	0.033	Commande	clear
+2026-04-11	13:17:20	13:17:22	0.033	Commande	cat taskmonitor/core/storage.py
+2026-04-11	13:17:23	13:17:25	0.033	Commande	clear
+2026-04-11	13:17:26	13:17:28	0.033	Commande	python -m taskmonitor.orchestrator process
+2026-04-11	13:19:16	13:19:18	0.033	Commande	ls -a ~/.taskmonitor/db
+2026-04-11	13:19:22	13:19:24	0.033	Commande	ls -a ~/.taskmonitor/db/taskmonitor_2026_04.db
+2026-04-11	13:19:35	13:19:37	0.033	Commande	sqlite3 /home/aidan/.taskmonitor/db/taskmonitor_2026_04.db
+2026-04-11	13:23:28	13:23:30	0.033	Commande	rm /home/aidan/.taskmonitor/db/taskmonitor_2026_04.db
+2026-04-11	13:23:29	13:23:31	0.033	Commande	clear
+2026-04-11	13:23:37	13:23:39	0.033	Commande	python -m taskmonitor.orchestrator process
+2026-04-11	13:28:14	13:28:16	0.033	Commande	sqlite3 /home/aidan/.taskmonitor/db/taskmonitor_2026_04.db
+2026-04-11	13:29:44	13:29:46	0.033	Commande	clear
+2026-04-11	13:29:52	13:29:54	0.033	Commande	python -m taskmonitor.orchestrator process
+2026-04-11	13:31:03	13:31:05	0.033	Commande	sqlite3 /home/aidan/.taskmonitor/db/taskmonitor_2026_04.db
+2026-04-11	13:31:19	13:31:21	0.033	Commande	ls -a ~/.taskmonitor/db/
+2026-04-11	13:31:22	13:31:24	0.033	Commande	sqlite3 /home/aidan/.taskmonitor/db/taskmonitor_2026_04.db
+2026-04-11	13:48:11	13:48:13	0.033	Commande	
+2026-04-11	13:48:15	13:48:17	0.033	Commande	rm /home/aidan/.taskmonitor/db/taskmonitor_2026_04.db
+2026-04-11	13:48:22	13:48:24	0.033	Commande	python -m taskmonitor.orchestrator process
+2026-04-11	13:50:42	13:50:44	0.033	Commande	sqlite3 /home/aidan/.taskmonitor/db/taskmonitor_2026_04.db
+2026-04-11	13:51:08	13:51:10	0.033	Commande	clear
+2026-04-11	13:51:10	13:51:12	0.033	Commande	python -m taskmonitor.orchestrator process
+2026-04-11	13:52:40	13:52:42	0.033	Commande	clear
+2026-04-11	13:52:42	13:52:44	0.033	Commande	sqlite3 /home/aidan/.taskmonitor/db/taskmonitor_2026_04.db
+2026-04-11	14:08:39	14:08:41	0.033	Commande	clear
+2026-04-11	14:08:42	14:08:44	0.033	Commande	rm /home/aidan/.taskmonitor/db/taskmonitor_2026_04.db
+2026-04-11	14:08:51	14:08:53	0.033	Commande	ls /home/aidan/.taskmonitor/db/taskmonitor_2026_04.db
+2026-04-11	14:08:56	14:08:58	0.033	Commande	clear
+2026-04-11	14:09:02	14:09:04	0.033	Commande	ls /home/aidan/.taskmonitor/db/
+2026-04-11	14:09:04	14:09:06	0.033	Commande	clear
+2026-04-11	14:09:08	14:09:10	0.033	Commande	python -m taskmonitor.orchestrator process
+2026-04-11	14:12:38	14:12:40	0.033	Commande	sqlite3 /home/aidan/.taskmonitor/db/taskmonitor_2026_04.db
+2026-04-11	14:13:05	14:13:07	0.033	Commande	clear
+2026-04-11	14:13:09	14:13:11	0.033	Commande	python -m taskmonitor.orchestrator process
+2026-04-11	14:18:31	14:18:33	0.033	Commande	sqlite3 /home/aidan/.taskmonitor/db/taskmonitor_2026_04.db
+2026-04-11	14:20:27	14:20:29	0.033	Commande	rm ~/.taskmonitor/db/taskmonitor_2026_04.db
+2026-04-11	14:20:43	14:20:45	0.033	Commande	ls ~/.taskmonitor/db/
+2026-04-11	14:20:45	14:20:47	0.033	Commande	clear
+2026-04-11	14:20:46	14:20:48	0.033	Commande	ls ~/.taskmonitor/db/
+2026-04-11	14:20:53	14:20:55	0.033	Commande	python -m taskmonitor.orchestrator process
+2026-04-11	14:26:46	14:26:48	0.033	Commande	sqlite3 /home/aidan/.taskmonitor/db/taskmonitor_2026_04.db
+2026-04-11	14:27:05	14:27:07	0.033	Commande	clear
+2026-04-11	14:27:07	14:27:09	0.033	Commande	sqlite3 /home/aidan/.taskmonitor/db/taskmonitor_2026_04.db
+2026-04-11	14:27:11	14:27:13	0.033	Commande	clear
+2026-04-11	14:27:14	14:27:16	0.033	Commande	python -m taskmonitor.orchestrator process
+2026-04-11	14:30:00	14:30:02	0.033	Commande	clear

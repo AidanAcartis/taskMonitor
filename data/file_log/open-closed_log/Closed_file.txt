@@ -1,22 +1,6 @@
-2026-04-06 10:39:59 Perte logiques essentielles - Google Chrome 
-2026-04-06 10:40:05 New Tab - Google Chrome 
-2026-04-06 10:40:09 YouTube - Google Chrome 
-2026-04-06 10:40:13 (10) YouTube - Google Chrome 
-2026-04-06 10:43:21 (10) Chinchilla - Little Girl Gone (Lyrics) - YouTube - Google Chrome 
-2026-04-06 10:43:27 New Tab - Google Chrome 
-2026-04-06 10:44:38 2002 Teen Fashion - Google Chrome 
-2026-04-06 10:44:54 Preview orchestrator.md - taskMonitor - Visual Studio Code 
-2026-04-06 10:45:02 config.py - taskMonitor - Visual Studio Code 
-2026-04-06 10:45:23 Confirm 
-2026-04-06 10:45:29 Burp Suite Community Edition v2025.7.4 
-2026-04-06 10:45:31 data_command.txt - taskMonitor - Visual Studio Code 
-2026-04-06 10:45:37 aidan@aidan-Lenovo-N50-70: ~/Documents/Projects/Visualization/taskMonitor 
-2026-04-06 10:46:03 Terminal 
-2026-04-06 10:46:05 (10) Chinchilla - Little Girl Gone (Lyrics) - YouTube - Google Chrome 
-2026-04-06 10:46:20 Visual Studio Code 
-2026-04-06 10:46:48 taskMonitor 
-2026-04-06 10:46:56 Documents 
-2026-04-06 10:46:58 Visual Studio Code 
-2026-04-06 10:47:16 Visual Studio Code 
-2026-04-06 10:47:30 Visual Studio Code 
-2026-04-06 10:47:34 
+2026-04-11 14:36:58 taskMonitor 
+2026-04-11 14:37:35 Preview README.md - taskMonitor - Visual Studio Code 
+2026-04-11 14:37:45 data_command.txt - taskMonitor - Visual Studio Code 
+2026-04-11 14:37:55 Google Chrome 
+2026-04-11 14:38:07 New Tab - Google Chrome 
+2026-04-11 14:38:15 History - Google Chrome 

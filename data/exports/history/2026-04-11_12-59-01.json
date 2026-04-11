@@ -1,0 +1,662 @@
+{
+  "clusters": [
+    {
+      "cluster_id": "Cluster 3",
+      "global_task_intention": "Build and test code in a data command",
+      "cohesion": 0.401,
+      "stats": {
+        "total_duration": 0.943,
+        "active_duration": 0.943,
+        "time_span": 0.852,
+        "num_events": 3,
+        "start": "2026-04-06 09:54:56",
+        "end": "2026-04-06 10:46:03"
+      },
+      "segments": [
+        {
+          "start": "2026-04-06 09:54:56",
+          "end": "2026-04-06 09:54:58",
+          "duration": 0.033
+        },
+        {
+          "start": "2026-04-06 10:45:02",
+          "end": "2026-04-06 10:46:03",
+          "duration": 0.91
+        }
+      ],
+      "task_items": [
+        {
+          "description": "data_command.txt, file, opened with Visual Studio Code, contains data related to Plain text document, text files, It serves as a data command.",
+          "total_duration": 0.48,
+          "occurrences": 1
+        },
+        {
+          "description": "Terminal, command line, used by the user",
+          "total_duration": 0.43,
+          "occurrences": 1
+        },
+        {
+          "description": "code ., command, executed in terminal, used to start visual studio code",
+          "total_duration": 0.033,
+          "occurrences": 1
+        }
+      ],
+      "events": [
+        {
+          "event_id": 11,
+          "date": "2026-04-06",
+          "start": "09:54:56",
+          "end": "09:54:58",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "code .",
+          "raw": "code .",
+          "description": "code ., command, executed in terminal, used to start visual studio code"
+        },
+        {
+          "event_id": 2,
+          "date": "2026-04-06",
+          "start": "10:45:02",
+          "end": "10:45:31",
+          "duration": 0.48,
+          "event_type": "file",
+          "file": "data_command.txt",
+          "app": "Visual Studio Code",
+          "command": "",
+          "raw": "data_command.txt - taskMonitor - Visual Studio Code",
+          "description": "data_command.txt, file, opened with Visual Studio Code, contains data related to Plain text document, text files, It serves as a data command."
+        },
+        {
+          "event_id": 3,
+          "date": "2026-04-06",
+          "start": "10:45:37",
+          "end": "10:46:03",
+          "duration": 0.43,
+          "event_type": "app",
+          "file": "",
+          "app": "Terminal",
+          "command": "",
+          "raw": "Terminal",
+          "description": "Terminal, command line, used by the user"
+        }
+      ]
+    },
+    {
+      "cluster_id": "Cluster 0",
+      "global_task_intention": "Review directory contents",
+      "cohesion": 0.183,
+      "stats": {
+        "total_duration": 0.33,
+        "active_duration": 0.33,
+        "time_span": 0.1,
+        "num_events": 10,
+        "start": "2026-04-06 10:12:55",
+        "end": "2026-04-06 10:18:54"
+      },
+      "segments": [
+        {
+          "start": "2026-04-06 10:12:55",
+          "end": "2026-04-06 10:13:56",
+          "duration": 0.231
+        },
+        {
+          "start": "2026-04-06 10:16:44",
+          "end": "2026-04-06 10:16:50",
+          "duration": 0.066
+        },
+        {
+          "start": "2026-04-06 10:18:52",
+          "end": "2026-04-06 10:18:54",
+          "duration": 0.033
+        }
+      ],
+      "task_items": [
+        {
+          "description": "ls taskmonitor/processing/, command, executed in terminal, used to list directory contents in taskmonitor/processing/",
+          "total_duration": 0.099,
+          "occurrences": 3
+        },
+        {
+          "description": "ls taskmonitor/, command, executed in terminal, used to list directory contents in taskmonitor/",
+          "total_duration": 0.033,
+          "occurrences": 1
+        },
+        {
+          "description": "ls taskmonitor/models/, command, executed in terminal, used to list directory contents in taskmonitor/models/",
+          "total_duration": 0.033,
+          "occurrences": 1
+        },
+        {
+          "description": "ls taskmonitor/external/, command, executed in terminal, used to list directory contents in taskmonitor/external/",
+          "total_duration": 0.033,
+          "occurrences": 1
+        },
+        {
+          "description": "ls taskmonitor/dicts/, command, executed in terminal, used to list directory contents in taskmonitor/dicts/",
+          "total_duration": 0.033,
+          "occurrences": 1
+        },
+        {
+          "description": "ls taskmonitor/resources/, command, executed in terminal, used to list directory contents in taskmonitor/resources/",
+          "total_duration": 0.033,
+          "occurrences": 1
+        },
+        {
+          "description": "ls taskmonitor/services/, command, executed in terminal, used to list directory contents in taskmonitor/services/",
+          "total_duration": 0.033,
+          "occurrences": 1
+        },
+        {
+          "description": "ls taskmonitor/processing/clusterer/, command, executed in terminal, used to list directory contents in taskmonitor/processing/clusterer/",
+          "total_duration": 0.033,
+          "occurrences": 1
+        }
+      ],
+      "events": [
+        {
+          "event_id": 12,
+          "date": "2026-04-06",
+          "start": "10:12:55",
+          "end": "10:12:57",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "ls taskmonitor/",
+          "raw": "ls taskmonitor/",
+          "description": "ls taskmonitor/, command, executed in terminal, used to list directory contents in taskmonitor/"
+        },
+        {
+          "event_id": 13,
+          "date": "2026-04-06",
+          "start": "10:13:04",
+          "end": "10:13:06",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "ls taskmonitor/processing/",
+          "raw": "ls taskmonitor/processing/",
+          "description": "ls taskmonitor/processing/, command, executed in terminal, used to list directory contents in taskmonitor/processing/"
+        },
+        {
+          "event_id": 14,
+          "date": "2026-04-06",
+          "start": "10:13:25",
+          "end": "10:13:27",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "ls taskmonitor/models/",
+          "raw": "ls taskmonitor/models/",
+          "description": "ls taskmonitor/models/, command, executed in terminal, used to list directory contents in taskmonitor/models/"
+        },
+        {
+          "event_id": 15,
+          "date": "2026-04-06",
+          "start": "10:13:35",
+          "end": "10:13:37",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "ls taskmonitor/external/",
+          "raw": "ls taskmonitor/external/",
+          "description": "ls taskmonitor/external/, command, executed in terminal, used to list directory contents in taskmonitor/external/"
+        },
+        {
+          "event_id": 16,
+          "date": "2026-04-06",
+          "start": "10:13:45",
+          "end": "10:13:47",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "ls taskmonitor/dicts/",
+          "raw": "ls taskmonitor/dicts/",
+          "description": "ls taskmonitor/dicts/, command, executed in terminal, used to list directory contents in taskmonitor/dicts/"
+        },
+        {
+          "event_id": 17,
+          "date": "2026-04-06",
+          "start": "10:13:50",
+          "end": "10:13:52",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "ls taskmonitor/resources/",
+          "raw": "ls taskmonitor/resources/",
+          "description": "ls taskmonitor/resources/, command, executed in terminal, used to list directory contents in taskmonitor/resources/"
+        },
+        {
+          "event_id": 18,
+          "date": "2026-04-06",
+          "start": "10:13:54",
+          "end": "10:13:56",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "ls taskmonitor/services/",
+          "raw": "ls taskmonitor/services/",
+          "description": "ls taskmonitor/services/, command, executed in terminal, used to list directory contents in taskmonitor/services/"
+        },
+        {
+          "event_id": 20,
+          "date": "2026-04-06",
+          "start": "10:16:44",
+          "end": "10:16:46",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "ls taskmonitor/processing/clusterer/",
+          "raw": "ls taskmonitor/processing/clusterer/",
+          "description": "ls taskmonitor/processing/clusterer/, command, executed in terminal, used to list directory contents in taskmonitor/processing/clusterer/"
+        },
+        {
+          "event_id": 21,
+          "date": "2026-04-06",
+          "start": "10:16:48",
+          "end": "10:16:50",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "ls taskmonitor/processing/",
+          "raw": "ls taskmonitor/processing/",
+          "description": "ls taskmonitor/processing/, command, executed in terminal, used to list directory contents in taskmonitor/processing/"
+        },
+        {
+          "event_id": 23,
+          "date": "2026-04-06",
+          "start": "10:18:52",
+          "end": "10:18:54",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "ls taskmonitor/processing/",
+          "raw": "ls taskmonitor/processing/",
+          "description": "ls taskmonitor/processing/, command, executed in terminal, used to list directory contents in taskmonitor/processing/"
+        }
+      ]
+    },
+    {
+      "cluster_id": "Other small tasks \u2014 singleton 2",
+      "global_task_intention": "clear the screen",
+      "cohesion": 0.851,
+      "stats": {
+        "total_duration": 0.066,
+        "active_duration": 0.066,
+        "time_span": 0.038,
+        "num_events": 2,
+        "start": "2026-04-06 10:16:37",
+        "end": "2026-04-06 10:18:53"
+      },
+      "segments": [
+        {
+          "start": "2026-04-06 10:16:37",
+          "end": "2026-04-06 10:16:39",
+          "duration": 0.033
+        },
+        {
+          "start": "2026-04-06 10:18:51",
+          "end": "2026-04-06 10:18:53",
+          "duration": 0.033
+        }
+      ],
+      "task_items": [
+        {
+          "description": "clear, command, executed in terminal, used to clear the screen",
+          "total_duration": 0.066,
+          "occurrences": 2
+        }
+      ],
+      "events": [
+        {
+          "event_id": 19,
+          "date": "2026-04-06",
+          "start": "10:16:37",
+          "end": "10:16:39",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "clear",
+          "raw": "clear",
+          "description": "clear, command, executed in terminal, used to clear the screen"
+        },
+        {
+          "event_id": 22,
+          "date": "2026-04-06",
+          "start": "10:18:51",
+          "end": "10:18:53",
+          "duration": 0.033,
+          "event_type": "command",
+          "file": "",
+          "app": "Terminal",
+          "command": "clear",
+          "raw": "clear",
+          "description": "clear, command, executed in terminal, used to clear the screen"
+        }
+      ]
+    },
+    {
+      "cluster_id": "Cluster 1",
+      "global_task_intention": "Browse the internet",
+      "cohesion": 0.308,
+      "stats": {
+        "total_duration": 4.72,
+        "active_duration": 4.72,
+        "time_span": 0.1,
+        "num_events": 3,
+        "start": "2026-04-06 10:40:05",
+        "end": "2026-04-06 10:46:05"
+      },
+      "segments": [
+        {
+          "start": "2026-04-06 10:40:05",
+          "end": "2026-04-06 10:40:13",
+          "duration": 0.14
+        },
+        {
+          "start": "2026-04-06 10:44:38",
+          "end": "2026-04-06 10:46:05",
+          "duration": 4.58
+        }
+      ],
+      "task_items": [
+        {
+          "description": "Google Chrome, application, used to watch (10) Chinchilla - Little Girl Gone (Lyrics) - YouTube",
+          "total_duration": 4.58,
+          "occurrences": 1
+        },
+        {
+          "description": "Google Chrome, application, used to watch YouTube",
+          "total_duration": 0.07,
+          "occurrences": 1
+        },
+        {
+          "description": "Google Chrome, application, used to watch (10) YouTube",
+          "total_duration": 0.07,
+          "occurrences": 1
+        }
+      ],
+      "events": [
+        {
+          "event_id": 8,
+          "date": "2026-04-06",
+          "start": "10:40:05",
+          "end": "10:40:09",
+          "duration": 0.07,
+          "event_type": "app",
+          "file": "",
+          "app": "Google Chrome",
+          "command": "",
+          "raw": "YouTube - Google Chrome",
+          "description": "Google Chrome, application, used to watch YouTube"
+        },
+        {
+          "event_id": 9,
+          "date": "2026-04-06",
+          "start": "10:40:09",
+          "end": "10:40:13",
+          "duration": 0.07,
+          "event_type": "app",
+          "file": "",
+          "app": "Google Chrome",
+          "command": "",
+          "raw": "(10) YouTube - Google Chrome",
+          "description": "Google Chrome, application, used to watch (10) YouTube"
+        },
+        {
+          "event_id": 0,
+          "date": "2026-04-06",
+          "start": "10:44:38",
+          "end": "10:46:05",
+          "duration": 4.58,
+          "event_type": "app",
+          "file": "",
+          "app": "Google Chrome",
+          "command": "",
+          "raw": "(10) Chinchilla - Little Girl Gone (Lyrics) - YouTube - Google Chrome",
+          "description": "Google Chrome, application, used to watch (10) Chinchilla - Little Girl Gone (Lyrics) - YouTube"
+        }
+      ]
+    },
+    {
+      "cluster_id": "Other small tasks \u2014 singleton 1",
+      "global_task_intention": "check out new tab",
+      "cohesion": 0.851,
+      "stats": {
+        "total_duration": 0.2,
+        "active_duration": 0.2,
+        "time_span": 0.002,
+        "num_events": 1,
+        "start": "2026-04-06 10:43:21",
+        "end": "2026-04-06 10:43:27"
+      },
+      "segments": [
+        {
+          "start": "2026-04-06 10:43:21",
+          "end": "2026-04-06 10:43:27",
+          "duration": 0.2
+        }
+      ],
+      "task_items": [
+        {
+          "description": "Google Chrome, application, used to checked out New Tab",
+          "total_duration": 0.2,
+          "occurrences": 1
+        }
+      ],
+      "events": [
+        {
+          "event_id": 4,
+          "date": "2026-04-06",
+          "start": "10:43:21",
+          "end": "10:43:27",
+          "duration": 0.2,
+          "event_type": "app",
+          "file": "",
+          "app": "Google Chrome",
+          "command": "",
+          "raw": "New Tab - Google Chrome",
+          "description": "Google Chrome, application, used to checked out New Tab"
+        }
+      ]
+    },
+    {
+      "cluster_id": "Other small tasks \u2014 singleton 3",
+      "global_task_intention": "check out 2002 teen fashion",
+      "cohesion": 0.851,
+      "stats": {
+        "total_duration": 1.18,
+        "active_duration": 1.18,
+        "time_span": 0.02,
+        "num_events": 1,
+        "start": "2026-04-06 10:43:27",
+        "end": "2026-04-06 10:44:38"
+      },
+      "segments": [
+        {
+          "start": "2026-04-06 10:43:27",
+          "end": "2026-04-06 10:44:38",
+          "duration": 1.18
+        }
+      ],
+      "task_items": [
+        {
+          "description": "Google Chrome, application, used to checked out 2002 Teen Fashion",
+          "total_duration": 1.18,
+          "occurrences": 1
+        }
+      ],
+      "events": [
+        {
+          "event_id": 1,
+          "date": "2026-04-06",
+          "start": "10:43:27",
+          "end": "10:44:38",
+          "duration": 1.18,
+          "event_type": "app",
+          "file": "",
+          "app": "Google Chrome",
+          "command": "",
+          "raw": "2002 Teen Fashion - Google Chrome",
+          "description": "Google Chrome, application, used to checked out 2002 Teen Fashion"
+        }
+      ]
+    },
+    {
+      "cluster_id": "Other small tasks \u2014 singleton 4",
+      "global_task_intention": "open config.py with Visual Studio Code",
+      "cohesion": 0.851,
+      "stats": {
+        "total_duration": 0.13,
+        "active_duration": 0.13,
+        "time_span": 0.002,
+        "num_events": 1,
+        "start": "2026-04-06 10:44:54",
+        "end": "2026-04-06 10:45:02"
+      },
+      "segments": [
+        {
+          "start": "2026-04-06 10:44:54",
+          "end": "2026-04-06 10:45:02",
+          "duration": 0.13
+        }
+      ],
+      "task_items": [
+        {
+          "description": "config.py, file, opened with Visual Studio Code, contains data related to Python 3 script, text files, It provides a default configuration for a system.",
+          "total_duration": 0.13,
+          "occurrences": 1
+        }
+      ],
+      "events": [
+        {
+          "event_id": 7,
+          "date": "2026-04-06",
+          "start": "10:44:54",
+          "end": "10:45:02",
+          "duration": 0.13,
+          "event_type": "file",
+          "file": "config.py",
+          "app": "Visual Studio Code",
+          "command": "",
+          "raw": "config.py - taskMonitor - Visual Studio Code",
+          "description": "config.py, file, opened with Visual Studio Code, contains data related to Python 3 script, text files, It provides a default configuration for a system."
+        }
+      ]
+    },
+    {
+      "cluster_id": "Other small tasks \u2014 singleton 5",
+      "global_task_intention": "use burp suite community edition v2025.7.4",
+      "cohesion": 0.851,
+      "stats": {
+        "total_duration": 0.2,
+        "active_duration": 0.2,
+        "time_span": 0.003,
+        "num_events": 1,
+        "start": "2026-04-06 10:45:17",
+        "end": "2026-04-06 10:45:29"
+      },
+      "segments": [
+        {
+          "start": "2026-04-06 10:45:17",
+          "end": "2026-04-06 10:45:29",
+          "duration": 0.2
+        }
+      ],
+      "task_items": [
+        {
+          "description": "Burp Suite Community Edition v2025.7.4, application, used by the user",
+          "total_duration": 0.2,
+          "occurrences": 1
+        }
+      ],
+      "events": [
+        {
+          "event_id": 5,
+          "date": "2026-04-06",
+          "start": "10:45:17",
+          "end": "10:45:29",
+          "duration": 0.2,
+          "event_type": "app",
+          "file": "",
+          "app": "Burp Suite Community Edition v2025.7.4",
+          "command": "",
+          "raw": "Burp Suite Community Edition v2025.7.4",
+          "description": "Burp Suite Community Edition v2025.7.4, application, used by the user"
+        }
+      ]
+    },
+    {
+      "cluster_id": "Cluster 2",
+      "global_task_intention": "Create a code file",
+      "cohesion": 0.436,
+      "stats": {
+        "total_duration": 0.24,
+        "active_duration": 0.24,
+        "time_span": 0.012,
+        "num_events": 2,
+        "start": "2026-04-06 10:46:46",
+        "end": "2026-04-06 10:47:30"
+      },
+      "segments": [
+        {
+          "start": "2026-04-06 10:46:46",
+          "end": "2026-04-06 10:47:30",
+          "duration": 0.24
+        }
+      ],
+      "task_items": [
+        {
+          "description": "Documents, directory, navigated by the user",
+          "total_duration": 0.17,
+          "occurrences": 1
+        },
+        {
+          "description": "Visual Studio Code, code editor, used by the user",
+          "total_duration": 0.07,
+          "occurrences": 1
+        }
+      ],
+      "events": [
+        {
+          "event_id": 6,
+          "date": "2026-04-06",
+          "start": "10:46:46",
+          "end": "10:46:56",
+          "duration": 0.17,
+          "event_type": "directory",
+          "file": "",
+          "app": "Documents",
+          "command": "",
+          "raw": "Documents",
+          "description": "Documents, directory, navigated by the user"
+        },
+        {
+          "event_id": 10,
+          "date": "2026-04-06",
+          "start": "10:47:28",
+          "end": "10:47:30",
+          "duration": 0.07,
+          "event_type": "app",
+          "file": "",
+          "app": "Visual Studio Code",
+          "command": "",
+          "raw": "Visual Studio Code",
+          "description": "Visual Studio Code, code editor, used by the user"
+        }
+      ]
+    }
+  ]
+}

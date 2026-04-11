@@ -1,134 +1,46 @@
 -----------------------------
-2026-04-06 10:39:40 - Nouveau jour de surveillance
-2026-04-06 10:39:59 - Nouvelles fenêtres ajoutées :
-0x03a00017  0 aidan-Lenovo-N50-70 New Tab - Google Chrome
+2026-04-11 14:36:58 - Nouveau jour de surveillance
+2026-04-11 14:36:58 - Nouvelles fenêtres ajoutées :
+0x02400004  0 aidan-Lenovo-N50-70 taskMonitor
+0x02c00004  0 aidan-Lenovo-N50-70 Preview README.md - taskMonitor - Visual Studio Code
+0x02c0000b  0 aidan-Lenovo-N50-70 password.txt - Visual Studio Code
 -----------------------------
-2026-04-06 10:39:59 - Fenêtres fermées :
+2026-04-11 14:36:58 - Fenêtres fermées :
+0x02800004  0 aidan-Lenovo-N50-70 taskMonitor
+0x02c00004  0 aidan-Lenovo-N50-70 window_changes.log - taskMonitor - Visual Studio Code
+0x02c0000b  0 aidan-Lenovo-N50-70 data_command.txt - Visual Studio Code
 0x03a00017  0 aidan-Lenovo-N50-70 Perte logiques essentielles - Google Chrome
 -----------------------------
-2026-04-06 10:40:05 - Nouvelles fenêtres ajoutées :
-0x03a00017  0 aidan-Lenovo-N50-70 YouTube - Google Chrome
------------------------------
-2026-04-06 10:40:05 - Fenêtres fermées :
-0x03a00017  0 aidan-Lenovo-N50-70 New Tab - Google Chrome
------------------------------
-2026-04-06 10:40:09 - Nouvelles fenêtres ajoutées :
-0x03a00017  0 aidan-Lenovo-N50-70 (10) YouTube - Google Chrome
------------------------------
-2026-04-06 10:40:09 - Fenêtres fermées :
-0x03a00017  0 aidan-Lenovo-N50-70 YouTube - Google Chrome
------------------------------
-2026-04-06 10:40:13 - Nouvelles fenêtres ajoutées :
-0x03a00017  0 aidan-Lenovo-N50-70 (10) Chinchilla - Little Girl Gone (Lyrics) - YouTube - Google Chrome
------------------------------
-2026-04-06 10:40:13 - Fenêtres fermées :
-0x03a00017  0 aidan-Lenovo-N50-70 (10) YouTube - Google Chrome
------------------------------
-2026-04-06 10:43:21 - Nouvelles fenêtres ajoutées :
-0x03a00017  0 aidan-Lenovo-N50-70 New Tab - Google Chrome
------------------------------
-2026-04-06 10:43:21 - Fenêtres fermées :
-0x03a00017  0 aidan-Lenovo-N50-70 (10) Chinchilla - Little Girl Gone (Lyrics) - YouTube - Google Chrome
------------------------------
-2026-04-06 10:43:27 - Nouvelles fenêtres ajoutées :
-0x03a00017  0 aidan-Lenovo-N50-70 2002 Teen Fashion - Google Chrome
------------------------------
-2026-04-06 10:43:27 - Fenêtres fermées :
-0x03a00017  0 aidan-Lenovo-N50-70 New Tab - Google Chrome
------------------------------
-2026-04-06 10:44:38 - Nouvelles fenêtres ajoutées :
-0x03a00017  0 aidan-Lenovo-N50-70 (10) Chinchilla - Little Girl Gone (Lyrics) - YouTube - Google Chrome
------------------------------
-2026-04-06 10:44:38 - Fenêtres fermées :
-0x03a00017  0 aidan-Lenovo-N50-70 2002 Teen Fashion - Google Chrome
------------------------------
-2026-04-06 10:44:54 - Nouvelles fenêtres ajoutées :
-0x02c00004  0 aidan-Lenovo-N50-70 config.py - taskMonitor - Visual Studio Code
------------------------------
-2026-04-06 10:44:54 - Fenêtres fermées :
-0x02c00004  0 aidan-Lenovo-N50-70 Preview orchestrator.md - taskMonitor - Visual Studio Code
------------------------------
-2026-04-06 10:45:02 - Nouvelles fenêtres ajoutées :
+2026-04-11 14:37:35 - Nouvelles fenêtres ajoutées :
 0x02c00004  0 aidan-Lenovo-N50-70 data_command.txt - taskMonitor - Visual Studio Code
 -----------------------------
-2026-04-06 10:45:02 - Fenêtres fermées :
-0x02c00004  0 aidan-Lenovo-N50-70 config.py - taskMonitor - Visual Studio Code
+2026-04-11 14:37:35 - Fenêtres fermées :
+0x02c00004  0 aidan-Lenovo-N50-70 Preview README.md - taskMonitor - Visual Studio Code
 -----------------------------
-2026-04-06 10:45:17 - Nouvelles fenêtres ajoutées :
-0x044000f3  0                 N/A Java
------------------------------
-2026-04-06 10:45:23 - Nouvelles fenêtres ajoutées :
-0x04600008  0 aidan-Lenovo-N50-70 Burp Suite Community Edition v2025.7.4
------------------------------
-2026-04-06 10:45:23 - Fenêtres fermées :
-0x044000f3  0                 N/A Java
------------------------------
-2026-04-06 10:45:27 - Nouvelles fenêtres ajoutées :
-0x04600037  0 aidan-Lenovo-N50-70 Confirm
------------------------------
-2026-04-06 10:45:29 - Fenêtres fermées :
-0x04600037  0 aidan-Lenovo-N50-70 Confirm
------------------------------
-2026-04-06 10:45:31 - Fenêtres fermées :
-0x04600008  0 aidan-Lenovo-N50-70 Burp Suite Community Edition v2025.7.4
------------------------------
-2026-04-06 10:45:37 - Nouvelles fenêtres ajoutées :
+2026-04-11 14:37:45 - Nouvelles fenêtres ajoutées :
 0x02c00004  0 aidan-Lenovo-N50-70 window_changes.log - taskMonitor - Visual Studio Code
 -----------------------------
-2026-04-06 10:45:37 - Fenêtres fermées :
+2026-04-11 14:37:45 - Fenêtres fermées :
 0x02c00004  0 aidan-Lenovo-N50-70 data_command.txt - taskMonitor - Visual Studio Code
 -----------------------------
-2026-04-06 10:46:03 - Nouvelles fenêtres ajoutées :
-0x02a0000a  0 aidan-Lenovo-N50-70 Terminal
+2026-04-11 14:37:53 - Nouvelles fenêtres ajoutées :
+0x03a00004  0 aidan-Lenovo-N50-70 Google Chrome
 -----------------------------
-2026-04-06 10:46:03 - Fenêtres fermées :
-0x02a0000a  0 aidan-Lenovo-N50-70 aidan@aidan-Lenovo-N50-70: ~/Documents/Projects/Visualization/taskMonitor
+2026-04-11 14:37:55 - Nouvelles fenêtres ajoutées :
+0x03a00017  0 aidan-Lenovo-N50-70 New Tab - Google Chrome
 -----------------------------
-2026-04-06 10:46:05 - Nouvelles fenêtres ajoutées :
-0x02a0000a  0 aidan-Lenovo-N50-70 aidan@aidan-Lenovo-N50-70: ~/Documents/Projects/Visualization/taskMonitor
+2026-04-11 14:37:55 - Fenêtres fermées :
+0x03a00004  0 aidan-Lenovo-N50-70 Google Chrome
 -----------------------------
-2026-04-06 10:46:05 - Fenêtres fermées :
-0x02a0000a  0 aidan-Lenovo-N50-70 Terminal
+2026-04-11 14:38:07 - Nouvelles fenêtres ajoutées :
+0x03a00017  0 aidan-Lenovo-N50-70 History - Google Chrome
 -----------------------------
-2026-04-06 10:46:20 - Nouvelles fenêtres ajoutées :
-0x03a00017  0 aidan-Lenovo-N50-70 Perte logiques essentielles - Google Chrome
+2026-04-11 14:38:07 - Fenêtres fermées :
+0x03a00017  0 aidan-Lenovo-N50-70 New Tab - Google Chrome
 -----------------------------
-2026-04-06 10:46:20 - Fenêtres fermées :
-0x03a00017  0 aidan-Lenovo-N50-70 (10) Chinchilla - Little Girl Gone (Lyrics) - YouTube - Google Chrome
+2026-04-11 14:38:15 - Nouvelles fenêtres ajoutées :
+0x03a00017  0 aidan-Lenovo-N50-70 Watch Classroom of the Elite III HD Streaming Free on HiAnime - Google Chrome
 -----------------------------
-2026-04-06 10:46:46 - Nouvelles fenêtres ajoutées :
-0x02e00008  0 aidan-Lenovo-N50-70 Visual Studio Code
------------------------------
-2026-04-06 10:46:48 - Fenêtres fermées :
-0x02e00008  0 aidan-Lenovo-N50-70 Visual Studio Code
------------------------------
-2026-04-06 10:46:56 - Nouvelles fenêtres ajoutées :
-0x02800004  0 aidan-Lenovo-N50-70 Documents
------------------------------
-2026-04-06 10:46:56 - Fenêtres fermées :
-0x02800004  0 aidan-Lenovo-N50-70 taskMonitor
------------------------------
-2026-04-06 10:46:58 - Nouvelles fenêtres ajoutées :
-0x02800004  0 aidan-Lenovo-N50-70 taskMonitor
------------------------------
-2026-04-06 10:46:58 - Fenêtres fermées :
-0x02800004  0 aidan-Lenovo-N50-70 Documents
------------------------------
-2026-04-06 10:47:14 - Nouvelles fenêtres ajoutées :
-0x02e00d07  0 aidan-Lenovo-N50-70 Visual Studio Code
------------------------------
-2026-04-06 10:47:16 - Fenêtres fermées :
-0x02e00d07  0 aidan-Lenovo-N50-70 Visual Studio Code
------------------------------
-2026-04-06 10:47:28 - Nouvelles fenêtres ajoutées :
-0x02e011e4  0 aidan-Lenovo-N50-70 Visual Studio Code
------------------------------
-2026-04-06 10:47:30 - Fenêtres fermées :
-0x02e011e4  0 aidan-Lenovo-N50-70 Visual Studio Code
------------------------------
-2026-04-06 10:47:32 - Nouvelles fenêtres ajoutées :
-0x02e014fa  0 aidan-Lenovo-N50-70 Visual Studio Code
------------------------------
-2026-04-06 10:47:34 - Fenêtres fermées :
-0x02e014fa  0 aidan-Lenovo-N50-70 Visual Studio Code
+2026-04-11 14:38:15 - Fenêtres fermées :
+0x03a00017  0 aidan-Lenovo-N50-70 History - Google Chrome
 -----------------------------

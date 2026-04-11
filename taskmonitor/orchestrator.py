@@ -1,6 +1,7 @@
 import subprocess
 import sys
 import time
+from pathlib import Path
 
 from taskmonitor.collectors.window_monitor import WindowMonitor
 from taskmonitor.collectors.command_collector import CommandCollector
@@ -10,6 +11,7 @@ from taskmonitor.collectors.collect_data import DataCollector
 from taskmonitor.processing.parser import EventParser
 from taskmonitor.processing.assembler import OutputAssembler
 from taskmonitor.core.storage import store_clusters_json
+from datetime import datetime
 
 
 # ─────────────────────────────────────────────
@@ -61,14 +63,16 @@ def run_processing():
     # 7. Intention
     run_step("taskmonitor.run_predict_intention")
 
-    # 8. Assemble final output
-    OutputAssembler().run()
+    # Une seule instance, un seul appel
+    assembler = OutputAssembler()
+    assembler.run()
+    final_output = assembler.get_final_output()
 
-    final_output = OutputAssembler().get_final_output()  # méthode à ajouter pour récupérer le JSON
+    # 2. Stocker en SQLite avec la session courante
+    session_date = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     store_clusters_json(final_output)
-    print("💾 Data stored in SQLite successfully")
 
-    print("\nPROCESSING COMPLETED")
+    print("\n✅ PROCESSING COMPLETED")
 
 
 # ─────────────────────────────────────────────

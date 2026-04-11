@@ -1,22 +1,7 @@
-2026-04-06 10:39:59 New Tab - Google Chrome 
-2026-04-06 10:40:05 YouTube - Google Chrome 
-2026-04-06 10:40:09 (10) YouTube - Google Chrome 
-2026-04-06 10:40:13 (10) Chinchilla - Little Girl Gone (Lyrics) - YouTube - Google Chrome 
-2026-04-06 10:43:21 New Tab - Google Chrome 
-2026-04-06 10:43:27 2002 Teen Fashion - Google Chrome 
-2026-04-06 10:44:38 (10) Chinchilla - Little Girl Gone (Lyrics) - YouTube - Google Chrome 
-2026-04-06 10:44:54 config.py - taskMonitor - Visual Studio Code 
-2026-04-06 10:45:02 data_command.txt - taskMonitor - Visual Studio Code 
-2026-04-06 10:45:17 Burp Suite Community Edition v2025.7.4 
-2026-04-06 10:45:23 Confirm 
-2026-04-06 10:45:27 window_changes.log - taskMonitor - Visual Studio Code 
-2026-04-06 10:45:37 Terminal 
-2026-04-06 10:46:03 aidan@aidan-Lenovo-N50-70: ~/Documents/Projects/Visualization/taskMonitor 
-2026-04-06 10:46:05 Perte logiques essentielles - Google Chrome 
-2026-04-06 10:46:20 Visual Studio Code 
-2026-04-06 10:46:46 Documents 
-2026-04-06 10:46:56 taskMonitor 
-2026-04-06 10:46:58 Visual Studio Code 
-2026-04-06 10:47:14 Visual Studio Code 
-2026-04-06 10:47:28 Visual Studio Code 
-2026-04-06 10:47:32 
+2026-04-11 14:36:58 taskMonitor 
+2026-04-11 14:37:35 data_command.txt - taskMonitor - Visual Studio Code 
+2026-04-11 14:37:45 window_changes.log - taskMonitor - Visual Studio Code 
+2026-04-11 14:37:53 Google Chrome 
+2026-04-11 14:37:55 New Tab - Google Chrome 
+2026-04-11 14:38:07 History - Google Chrome 
+2026-04-11 14:38:15 Watch Classroom of the Elite III HD Streaming Free on HiAnime - Google Chrome 
