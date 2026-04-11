@@ -1,4 +1,8 @@
-2026-04-11 14:37:55 14:38:07 0.20 file-directory-App   New Tab - Google Chrome
+2026-04-11 16:27:50 16:30:30 4.45 file-directory-App   New Tab - Google Chrome
+2026-04-11 16:26:43 16:30:00 3.28 file-directory-App   Archiver les fichiers JSON par date dans la base de données - Claude - Google Chrome
+2026-04-11 16:28:42 16:29:56 1.23 directory/App   Oracle VirtualBox Manager
+2026-04-11 16:27:02 16:27:24 0.37 file-directory-App   Ethical Hacker - Google Chrome
+2026-04-11 16:27:52 16:28:07 0.25 file-directory-App   tryhackme.com/room/introductiontodevsecops - Google Chrome
 2026-04-11 14:37:35 14:37:45 0.17 file-directory-App   data_command.txt - taskMonitor - Visual Studio Code
 2026-04-11 14:38:07 14:38:15 0.13 file-directory-App   History - Google Chrome
 2026-04-11 14:37:53 14:37:55 0.03 directory/App   Google Chrome

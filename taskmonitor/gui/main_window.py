@@ -6,6 +6,8 @@ from PyQt6.QtCore import Qt, pyqtSignal
 from taskmonitor.gui.pages.dashboard import Dashboard
 from taskmonitor.gui.pages.graph_stats import GraphStats
 from taskmonitor.gui.pages.chart      import Chart
+from taskmonitor.gui.pages.monitoring import MonitoringPage
+from taskmonitor.gui.pages.processing import ProcessingPage
 import json
 from taskmonitor.core.config import EXPORTS_DIR
 from taskmonitor.core.db_reader import load_latest_session
@@ -58,9 +60,11 @@ class MainWindow(QMainWindow):
 
         # table de routing : label NavBar → index dans le stack
         self.page_index = {
-            "Dashboard":      0,
+            "Dashboard":       0,
             "Graphes & Stats": 1,
             "Chart":           2,
+            "Monitoring":      3,
+            "Processing":      4,
         }
 
         self.navbar.page_selected.connect(self.switch_page)
@@ -73,10 +77,15 @@ class MainWindow(QMainWindow):
         self.page_dashboard   = Dashboard()
         self.page_graphstats  = GraphStats(data)
         self.page_chart = Chart(data)
+        self.page_monitoring  = MonitoringPage()
+        self.page_processing  = ProcessingPage()
 
         self.stack.addWidget(self.page_dashboard)   # index 0
         self.stack.addWidget(self.page_graphstats)  # index 1
         self.stack.addWidget(self.page_chart)        # index 2
+        self.stack.addWidget(self.page_monitoring)   # 3
+        self.stack.addWidget(self.page_processing)
+    
 
         bottom_layout.addWidget(self.stack)
         bottom_layout.setStretch(0, 0)
@@ -86,16 +95,28 @@ class MainWindow(QMainWindow):
         self.setCentralWidget(container)
 
         # ===== CONNEXIONS =====
-        self.header.start_monitoring.connect(self.on_monitoring)
-        self.header.start_processing.connect(self.on_processing)
+        self.header.start_monitoring.connect(self._on_start_monitoring)
+        self.header.stop_monitoring.connect(self._on_stop_monitoring)
+        self.header.show_monitoring.connect(
+            lambda: self.switch_page("Monitoring")
+        )
+        self.header.start_processing.connect(self._on_start_processing)
+        self.header.show_processing.connect(
+            lambda: self.switch_page("Processing")
+        )
         self.header.quit_app.connect(self.close)
 
-    # ===== Actions =====
-    def on_monitoring(self):
-        print("🔹 Monitoring lancé...")
 
-    def on_processing(self):
-        print("🔹 Processing lancé...")
+    # ===== Actions =====
+    def _on_start_monitoring(self):
+        self.switch_page("Monitoring")
+
+    def _on_stop_monitoring(self):
+        print("🛑 Stop monitoring")
+
+    def _on_start_processing(self):
+        self.switch_page("Processing")
+        self.page_processing.start_processing()
 
     # ===== Actions NavBar =====
     def switch_page(self, page_name: str):

@@ -1,6 +1,7 @@
 0x02600009 -1 aidan-Lenovo-N50-70 Desktop Icons 1
-0x02400004  0 aidan-Lenovo-N50-70 taskMonitor
-0x02a0000a  0 aidan-Lenovo-N50-70 aidan@aidan-Lenovo-N50-70: ~/Documents/Projects/Visualization/taskMonitor
-0x02c00004  0 aidan-Lenovo-N50-70 window_changes.log - taskMonitor - Visual Studio Code
-0x02c0000b  0 aidan-Lenovo-N50-70 password.txt - Visual Studio Code
-0x03a00017  0 aidan-Lenovo-N50-70 Watch Classroom of the Elite III HD Streaming Free on HiAnime - Google Chrome
+0x00a00004  0 aidan-Lenovo-N50-70 taskMonitor
+0x0280000a  0 aidan-Lenovo-N50-70 aidan@aidan-Lenovo-N50-70: ~/Documents/Projects/Visualization/taskMonitor
+0x02a00004  0 aidan-Lenovo-N50-70 window_changes.log - taskMonitor - Visual Studio Code
+0x02a0000b  0 aidan-Lenovo-N50-70 password.txt - Visual Studio Code
+0x03800029  0 aidan-Lenovo-N50-70 TryHackMe | Introduction to DevSecOps - Google Chrome
+0x03800036  0 aidan-Lenovo-N50-70 Archiver les fichiers JSON par date dans la base de données - Claude - Google Chrome

@@ -43,7 +43,7 @@ class NavBar(QWidget):
         self._submenu_visible = False
         self._sub_widgets = []      # list of sub QPushButtons to show/hide
 
-        top_pages = ["Dashboard", "Graphes & Stats", "Chart"]
+        top_pages = ["Dashboard", "Graphes & Stats", "Chart", "Monitoring", "Processing"]
         for page in top_pages:
             btn = self._make_top_btn(page)
             self._layout.addWidget(btn)

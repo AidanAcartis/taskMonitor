@@ -4,3 +4,35 @@
 2026-04-11 14:37:55 Google Chrome 
 2026-04-11 14:38:07 New Tab - Google Chrome 
 2026-04-11 14:38:15 History - Google Chrome 
+2026-04-11 16:26:15 taskMonitor 
+2026-04-11 16:26:35 New Tab - Google Chrome 
+2026-04-11 16:26:41 Archiver les fichiers JSON par date dans la base de données - Claude - Google Chrome 
+2026-04-11 16:26:43 New Tab - Google Chrome 
+2026-04-11 16:26:54 New Tab - Google Chrome 
+2026-04-11 16:27:02 cisco network academy - Recherche Google - Google Chrome 
+2026-04-11 16:27:12 Ethical Hacker - Google Chrome 
+2026-04-11 16:27:16 Login | Networking Academy with Cisco - Google Chrome 
+2026-04-11 16:27:24 Ethical Hacker - Google Chrome 
+2026-04-11 16:27:26 Cisco Networking Academy: Course Launch - Google Chrome 
+2026-04-11 16:27:50 Cisco Networking Academy: Ethical Hacker - Google Chrome 
+2026-04-11 16:27:52 New Tab - Google Chrome 
+2026-04-11 16:27:55 tryhackme.com/room/introductiontodevsecops - Google Chrome 
+2026-04-11 16:27:59 TryHackMe | Cyber Security Training - Google Chrome 
+2026-04-11 16:28:05 TryHackMe | Introduction to DevSecOps - Google Chrome 
+2026-04-11 16:28:07 tryhackme.com/room/introductiontodevsecops - Google Chrome 
+2026-04-11 16:28:27 Confirm 
+2026-04-11 16:28:35 Burp Suite Community Edition v2025.7.4 
+2026-04-11 16:28:37 VirtualBox 
+2026-04-11 16:28:44 Ethical-Hacker-Kali: Starting virtual machine 
+2026-04-11 16:28:52 Ethical-Hacker-Kali [Running] - Oracle VirtualBox 
+2026-04-11 16:29:39 Ethical-Hacker-Kali [Paused] - Oracle VirtualBox 
+2026-04-11 16:29:41 Ethical-Hacker-Kali [Saving] - Oracle VirtualBox 
+2026-04-11 16:29:56 Oracle VirtualBox Manager 
+2026-04-11 16:30:00 Archiver les fichiers JSON par date dans la base de données - Claude - Google Chrome 
+2026-04-11 16:30:30 New Tab - Google Chrome 
+2026-04-11 16:30:47 claude ai - Recherche Google - Google Chrome 
+2026-04-11 16:30:49 Claude - Google Chrome 
+2026-04-11 16:30:59 aidan@aidan-Lenovo-N50-70: ~/Documents/Projects/Visualization/taskMonitor 
+2026-04-11 16:31:25 Terminal 
+2026-04-11 16:31:27 Preview README.md - taskMonitor - Visual Studio Code 
+2026-04-11 16:32:02 
