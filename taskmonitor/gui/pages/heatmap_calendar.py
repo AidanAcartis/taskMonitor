@@ -33,28 +33,6 @@ TOP_MARGIN = 20     # space for month labels
 CORNER_RADIUS = 2
 
 
-def parse_activity_from_json(json_path: str | Path) -> dict[str, int]:
-
-    """
-    Parse final_output.json and return a dict mapping 'YYYY-MM-DD' -> session_count.
-    One cluster (or singleton) per day is counted as one session.
-    """
-    with open(json_path, "r") as f:
-        data = json.load(f)
-
-    clusters = data.get("clusters", [])
-    counts: dict[str, int] = defaultdict(int)
-
-    for cluster in clusters:
-        stats = cluster.get("stats", {})
-        start_str = stats.get("start", "")
-        if start_str:
-            day = start_str[:10]   # 'YYYY-MM-DD'
-            counts[day] += 1
-
-    return dict(counts)
-
-
 def compute_level(count: int) -> int:
     """Map a session count to a heatmap level (0-4)."""
     if count == 0:

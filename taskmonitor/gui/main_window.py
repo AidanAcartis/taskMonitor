@@ -8,12 +8,14 @@ from taskmonitor.gui.pages.graph_stats import GraphStats
 from taskmonitor.gui.pages.chart      import Chart
 import json
 from taskmonitor.core.config import EXPORTS_DIR
+from taskmonitor.core.db_reader import load_latest_session
 
-data_path = EXPORTS_DIR / "final_output.json"
+# data_path = EXPORTS_DIR / "final_output.json"
 
-with open(data_path, "r") as f:
-    data = json.load(f)
+# with open(data_path, "r") as f:
+#     data = json.load(f)
 
+data = load_latest_session() or {"clusters": []}
 
 class MainWindow(QMainWindow):
     def __init__(self):
@@ -68,7 +70,7 @@ class MainWindow(QMainWindow):
         # ===== STACK =====
         self.stack = QStackedWidget()
 
-        self.page_dashboard   = Dashboard(data)
+        self.page_dashboard   = Dashboard()
         self.page_graphstats  = GraphStats(data)
         self.page_chart = Chart(data)
 

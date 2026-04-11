@@ -6,10 +6,8 @@ from PyQt6.QtWidgets import (
     QWidget, QVBoxLayout, QHBoxLayout, QLabel, QPushButton, QFileDialog
 )
 from PyQt6.QtCore import Qt
-from taskmonitor.gui.pages.heatmap_calendar import (
-    HeatmapCalendarWidget, parse_activity_from_json
-)
-from taskmonitor.core.config import EXPORTS_DIR
+from taskmonitor.gui.pages.heatmap_calendar import HeatmapCalendarWidget
+from taskmonitor.core.db_reader import load_activity_counts, load_all_sessions
 
 
 class ActivityHeatmap(QWidget):
@@ -43,9 +41,8 @@ class ActivityHeatmap(QWidget):
         top_w.setStyleSheet("background-color:#1e1e1e;")
         root.addWidget(top_w)
 
-        # heatmap
-        json_path = EXPORTS_DIR / "final_output.json"
-        activity  = parse_activity_from_json(json_path)
+        # heatmap — lit toutes les sessions de la DB
+        activity = load_activity_counts()
         self._heatmap = HeatmapCalendarWidget(activity)
 
         content = QWidget()
@@ -56,14 +53,19 @@ class ActivityHeatmap(QWidget):
         c_layout.addStretch()
         root.addWidget(content, stretch=1)
 
-        # stats bar
-        clusters = data.get("clusters", [])
+        # stats bar — agrège toutes les sessions
+        sessions = load_all_sessions()
+        all_clusters = [
+            c
+            for _, _, d in sessions
+            for c in d.get("clusters", [])
+        ]
         active_days = len({
             c["stats"]["start"][:10]
-            for c in clusters
+            for c in all_clusters
             if c.get("stats", {}).get("start")
         })
-        total_sessions = len(clusters)
+        total_sessions = len(all_clusters)
 
         stats_bar = QWidget()
         stats_bar.setStyleSheet("background-color:#222;border-top:1px solid #333;")
