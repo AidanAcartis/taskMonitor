@@ -22,7 +22,7 @@ class EventParser:
 
     def parse_event(self, raw: str, type_raw: str = None):
         """
-        Retourne : event_type, file, app, command
+        Returns: event_type, file, app, command
         """
 
         # Nettoyer raw
@@ -53,7 +53,7 @@ class EventParser:
 
     def run(self):
         if not self.input_path.exists():
-            logger.logger.error(f"Fichier introuvable: {self.input_path}")
+            logger.logger.error(f"File not founded: {self.input_path}")
             return
 
         rows = []

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Fonctions utilitaires d'entrée/sortie pour le prédicteur d'intentions.
+Input/output utility functions for the intent predictor.
 """
 
 import json
@@ -9,7 +9,7 @@ from pathlib import Path
 def load_json(path):
     path = Path(path)
     if not path.exists():
-        raise FileNotFoundError(f"Fichier JSON introuvable : {path}")
+        raise FileNotFoundError(f"JSON file not found : {path}")
     with open(path, encoding="utf-8") as f:
         return json.load(f)
 

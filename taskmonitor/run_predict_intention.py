@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Point d'entrée pour générer les intentions globales des clusters.
+Entry point for generating overall cluster intentions.
 """
 
 import sys
@@ -28,7 +28,7 @@ def main():
     print(f"{'='*65}\n")
 
     clusters = parse_clusters(args.input)
-    print(f"{len(clusters)} clusters trouves")
+    print(f"{len(clusters)} clusters founded")
 
     model, tokenizer, device = load_model(args.model)
 
@@ -46,7 +46,7 @@ def main():
     write_txt(results, args.out_txt)
     write_jsonl(results, args.out_jsonl)
 
-    print(f"\nSorties generees : {args.out_txt}, {args.out_jsonl}")
+    print(f"\nOutputs generated : {args.out_txt}, {args.out_jsonl}")
 
 if __name__ == "__main__":
     main()

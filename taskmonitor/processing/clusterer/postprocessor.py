@@ -9,11 +9,11 @@ from .reclustering_engine import ReclusteringEngine
 
 class PostProcessor:
     """
-    Étapes 10 → 14 :
-    - Fusion finale
-    - Reclustering final
-    - Métriques
-    - Post-processing avancé
+    Steps 10 → 14:
+    - Final merging
+    - Final reclustering
+    - Metrics
+    - Advanced post-processing
     - Export
     """
 
@@ -28,7 +28,7 @@ class PostProcessor:
     # ÉTAPE 10 — Fusion finale
     # ─────────────────────────────────────────────
     def merge_groups(self, non_singleton_groups, singleton_clusters):
-        print("\n[10] Fusion finale ...")
+        print("\n[10] Final merger ...")
 
         final_merged = {}
         cid = 0

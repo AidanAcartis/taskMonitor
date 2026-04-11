@@ -35,7 +35,7 @@ def get_connection():
 
 
 def normalize_for_hash(clusters_json: dict) -> str:
-    """Hash basé uniquement sur l'ensemble des global_task_intention."""
+    """Hash based solely on the set of global_task_intentions."""
     intentions = sorted([
         c.get("global_task_intention", "")
         for c in clusters_json.get("clusters", [])
@@ -55,7 +55,7 @@ def store_clusters_json(clusters_json: dict):
     ).fetchone()
 
     if existing:
-        print(f"⏭ Contenu identique à la session du {existing[0]}, ignoré.")
+        print(f"⏭ Content identical to session on {existing[0]}, ignored.")
         conn.close()
         return
 
@@ -66,4 +66,4 @@ def store_clusters_json(clusters_json: dict):
     )
     conn.commit()
     conn.close()
-    print(f"💾 Session enregistrée : {session_date}")
+    print(f"💾 Session recorded : {session_date}")

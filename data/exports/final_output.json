@@ -3065,7 +3065,7 @@
     },
     {
       "cluster_id": "Cluster 12",
-      "global_task_intention": "Search for and use applications",
+      "global_task_intention": "Search for documents and files",
       "cohesion": 0.436,
       "stats": {
         "total_duration": 9.8,

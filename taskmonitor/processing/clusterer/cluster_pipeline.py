@@ -1,20 +1,20 @@
 """
 cluster_pipeline.py
 -------------------
-Pipeline principal orchestrant toutes les étapes du clustering.
+Main pipeline orchestrating all clustering steps.
 
-Ordre :
+Order:
 1. Load + prepare
 2. Embeddings
 3. Distance matrix
-4. Clustering initial
-5. Reclustering itératif
-6. Gestion des singletons
-7. Fusion finale
-8. Reclustering final
-9. Metrics (avant post-processing)
+4. Initial clustering
+5. Iterative reclustering
+6. Singleton handling
+7. Final merging
+8. Final reclustering
+9. Metrics (before post-processing)
 10. Post-processing
-11. Metrics (après post-processing)
+11. Metrics (after post-processing)
 12. Export
 """
 

@@ -40,8 +40,8 @@ def get_file_type(filename: str) -> str:
 # ─────────────────── DESCRIPTION FINALE ───────────────────
 def amplify_description(target: str, file_desc_map: dict = None) -> str:
     """
-    Moteur de détection : Scanne le texte pour enrichir via IA et Dictionnaires.
-    Priorité aux Linux Special Files.
+    Detection engine: Scans text to enrich it using AI and dictionaries.
+    Priority is given to Linux Special Files.
     """
     file_desc_map = file_desc_map or {}
     elements = []
@@ -84,8 +84,8 @@ def amplify_description(target: str, file_desc_map: dict = None) -> str:
 
 def build_description(row: dict, file_desc_map: dict) -> str:
     """
-    Formateur final optimisé pour le dataset d'entraînement.
-    Incorpore la logique infer_verb et élimine les parenthèses pour une lecture fluide.
+    Final trainer optimized for the training dataset.
+    Incorporates infer_verb logic and eliminates parentheses for smooth reading.
     """
     etype = str(row.get("event_type", "")).strip().lower()
 

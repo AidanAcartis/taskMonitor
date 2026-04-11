@@ -112,8 +112,8 @@ Cluster 11  |  2 task(s)  |  cohesion = 0.138
 ────────────────────────────────────────────────────────────
 Cluster 12  |  2 task(s)  |  cohesion = 0.436
 ────────────────────────────────────────────────────────────
-  • recent documents, application, used by the user
   • google chrome, application, used by the user
+  • recent documents, application, used by the user
 
 ────────────────────────────────────────────────────────────
 Other small tasks  |  15 task(s)  |  cohesion = 0.859

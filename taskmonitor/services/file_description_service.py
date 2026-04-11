@@ -10,7 +10,7 @@ from taskmonitor.core.config import GEN_DESC_MODEL_DIR, DEVICE, BATCH_SIZE, LEXI
 
 class FileDescriptionService:
     """
-    Service POO dédié à la génération de descriptions pour des fichiers via T5 + embeddings lexicaux.
+    OOP service dedicated to generating descriptions for files using T5 + lexical embeddings.
     """
 
     def __init__(self):
@@ -19,7 +19,7 @@ class FileDescriptionService:
         self.lex_model = None
 
     def load(self):
-        """Charge le tokenizer, le modèle et le modèle lexical."""
+        """Loads the tokenizer, the model, and the lexical model."""
         print(f"[FileDesc] Loading from {GEN_DESC_MODEL_DIR} ...")
         self.tokenizer = AutoTokenizer.from_pretrained(GEN_DESC_MODEL_DIR)
 
@@ -37,8 +37,8 @@ class FileDescriptionService:
 
     def generate_descriptions(self, filenames: List[str]) -> List[str]:
         """
-        Génère les descriptions IA pour une liste de fichiers.
-        Chaque fichier est traité par batch.
+        Generates AI descriptions for a list of files.
+        Each file is processed in batches.
         """
         if self.model is None:
             raise RuntimeError("Model not loaded. Call load() first.")

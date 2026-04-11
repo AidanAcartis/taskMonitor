@@ -10,14 +10,14 @@ from sklearn.metrics import silhouette_score
 
 class ClusteringEngine:
     """
-    Classe pour gérer le clustering initial avec recherche automatique
-    du meilleur threshold basé sur la silhouette et la cohésion interne.
+    Class for managing the initial clustering with automatic search
+    for the best threshold based on silhouette score and internal cohesion.
     """
 
     def __init__(self, thresholds: np.ndarray):
         """
         Args:
-            thresholds: array-like des thresholds à tester pour le clustering
+            thresholds: array-like of thresholds to test for clustering
         """
         self.thresholds = thresholds
 
@@ -27,7 +27,7 @@ class ClusteringEngine:
 
     def _compute_cohesion_map(self, dist_matrix: np.ndarray, labels: np.ndarray) -> dict:
         """
-        Calcule la cohésion moyenne de chaque cluster.
+        Compute the average cohesion of each cluster.
         """
         clusters = defaultdict(list)
         for i, c in enumerate(labels):
@@ -45,7 +45,7 @@ class ClusteringEngine:
 
     def _cluster(self, dist_matrix: np.ndarray, threshold: float) -> np.ndarray:
         """
-        Applique l'agglomerative clustering pour un threshold donné.
+        Applies agglomerative clustering for a given threshold.
         """
         clustering = AgglomerativeClustering(
             n_clusters=None,
@@ -57,7 +57,7 @@ class ClusteringEngine:
 
     def _find_best_threshold(self, tasks: list, dist_matrix: np.ndarray) -> dict:
         """
-        Recherche le meilleur threshold basé sur la silhouette score.
+        Find the best threshold based on the silhouette score.
         """
         best = {"threshold": None, "silhouette": -1, "labels": None, "cohesion": None}
 
@@ -81,13 +81,13 @@ class ClusteringEngine:
                 })
 
         if best["labels"] is None:
-            raise RuntimeError("Aucun clustering valide trouvé.")
+            raise RuntimeError("No valid clustering found.")
 
         return best
 
     def _labels_to_groups(self, tasks: list, labels: np.ndarray) -> dict:
         """
-        Transforme les labels en dictionnaire de clusters {cluster_id: [tasks]}.
+        Transform the labels into a dictionary of clusters {cluster_id: [tasks]}.
         """
         groups = defaultdict(list)
         for task, lbl in zip(tasks, labels):
@@ -100,17 +100,17 @@ class ClusteringEngine:
 
     def initial_clustering(self, tasks: list, dist_matrix: np.ndarray) -> dict:
         """
-        Réalise le clustering initial avec recherche du meilleur threshold.
+        Performs the initial clustering with automatic search for the best threshold.
         Args:
-            tasks: liste des descriptions
-            dist_matrix: matrice de distance (1 - cos_sim)
+            tasks: list of task descriptions
+            dist_matrix: distance matrix (1 - cos_sim)
         Returns:
             dict: {cluster_id: [tasks]}
         """
-        print("\n[5] Clustering initial (recherche meilleur threshold) ...")
+        print("\n[5] Initial clustering (searching for the best threshold) ...")
         best = self._find_best_threshold(tasks, dist_matrix)
         print(
-            f"    Meilleur threshold : {best['threshold']:.2f} "
+            f"    Best threshold : {best['threshold']:.2f} "
             f"| silhouette : {best['silhouette']:.3f}"
         )
         groups = self._labels_to_groups(tasks, best["labels"])

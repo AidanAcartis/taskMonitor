@@ -1,7 +1,7 @@
 """
 embedding_service.py
 --------------------
-Service dédié à la génération d'embeddings avec SentenceTransformer.
+Service dedicated to generating embeddings using SentenceTransformer.
 """
 
 from sentence_transformers import SentenceTransformer
@@ -11,7 +11,7 @@ from taskmonitor.core.config import CLUSTER_MODEL_DIR, DEVICE
 class EmbeddingService:
     def __init__(self):
         """
-        Initialise le modèle d'embeddings.
+        Initializes the embeddings template.
         """
         print(f"\n[3] Loading the model : {CLUSTER_MODEL_DIR} ...")
 
@@ -20,10 +20,10 @@ class EmbeddingService:
 
     def encode(self, tasks: list[str]):
         """
-        Génère les embeddings normalisés des tâches.
+        Generates the normalized embeddings for the tasks.
 
         Args:
-            tasks: liste de textes
+            tasks: list of texts
 
         Returns:
             embeddings (tensor)

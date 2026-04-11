@@ -58,8 +58,8 @@ class T5FusionService:
         self.lex_model = None
 
     def load(self):
-        """Charge tous les modèles nécessaires"""
-        print(f"[T5] Chargement depuis {GEN_DESC_MODEL_DIR}")
+        """Load all the necessary models"""
+        print(f"[T5] Loading from {GEN_DESC_MODEL_DIR}")
 
         self.tokenizer = AutoTokenizer.from_pretrained(GEN_DESC_MODEL_DIR)
 

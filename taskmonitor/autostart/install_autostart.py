@@ -1,12 +1,12 @@
 """
 autostart/install_autostart.py
 ================================
-Installe le fichier .desktop pour :
-  1. L'autostart au démarrage de la session (~/.config/autostart/)
-  2. L'icône dans le menu des applications (~/.local/share/applications/)
-  3. L'icône dans le dossier Desktop (~/Bureau/ ou ~/Desktop/)
+Installs the .desktop file for:
+  1. Autostart at session startup (~/.config/autostart/)
+  2. Application menu icon (~/.local/share/applications/)
+  3. Desktop icon (~/Bureau/ or ~/Desktop/)
 
-Appelé automatiquement après pip install ou manuellement.
+Called automatically after pip install or manually.
 """
 
 import shutil
@@ -34,7 +34,7 @@ X-GNOME-Autostart-enabled=true
 
 
 def install():
-    """Lance l'installation complète de l'autostart et des raccourcis."""
+    """Launches the complete installation of autostart and shortcuts."""
     results = {
         "autostart": _install_autostart(),
         "applications": _install_app_menu(),
@@ -45,36 +45,36 @@ def install():
 
 
 def _install_autostart() -> bool:
-    """Installe dans ~/.config/autostart/ pour démarrage automatique."""
+    """Installs in ~/.config/autostart/ for automatic startup."""
     target = config.AUTOSTART_DIR / "taskmonitor.desktop"
     try:
         config.AUTOSTART_DIR.mkdir(parents=True, exist_ok=True)
         target.write_text(DESKTOP_CONTENT, encoding="utf-8")
         target.chmod(0o755)
-        log.info(f"Autostart installé : {target}")
+        log.info(f"Autostart installed : {target}")
         return True
     except Exception as e:
-        log.error(f"Erreur autostart : {e}")
+        log.error(f"Error installing autostart : {e}")
         return False
 
 
 def _install_app_menu() -> bool:
-    """Installe dans ~/.local/share/applications/ pour le menu des apps."""
+    """Installs in ~/.local/share/applications/ for the applications menu."""
     target = config.DESKTOP_DIR / "taskmonitor.desktop"
     try:
         config.DESKTOP_DIR.mkdir(parents=True, exist_ok=True)
         target.write_text(DESKTOP_CONTENT, encoding="utf-8")
         target.chmod(0o755)
-        log.info(f"Menu applications installé : {target}")
+        log.info(f"Installed applications menu : {target}")
         return True
     except Exception as e:
-        log.error(f"Erreur menu applications : {e}")
+        log.error(f"Error installing applications menu : {e}")
         return False
 
 
 def _install_desktop_shortcut() -> bool:
-    """Crée un raccourci sur le bureau de l'utilisateur."""
-    # Essayer Bureau (français) puis Desktop (anglais)
+    """Creates a shortcut on the user's desktop."""
+    # Try Bureau (French) then Desktop (English)
     for name in ["Bureau", "Desktop"]:
         desktop_dir = Path.home() / name
         if desktop_dir.exists():
@@ -87,15 +87,15 @@ def _install_desktop_shortcut() -> bool:
                     ["gio", "set", str(target), "metadata::trusted", "true"],
                     capture_output=True, timeout=5
                 )
-                log.info(f"Raccourci bureau créé : {target}")
+                log.info(f"Desktop shortcut created : {target}")
                 return True
             except Exception as e:
-                log.warning(f"Raccourci bureau échoué : {e}")
+                log.warning(f"Failed to create desktop shortcut : {e}")
     return False
 
 
 def _update_desktop_db():
-    """Met à jour la base de données des applications desktop."""
+    """Updates the desktop application database."""
     try:
         subprocess.run(
             ["update-desktop-database",
@@ -107,7 +107,7 @@ def _update_desktop_db():
 
 
 def uninstall():
-    """Supprime tous les raccourcis et l'autostart."""
+    """Removes all shortcuts and autostart."""
     targets = [
         config.AUTOSTART_DIR / "taskmonitor.desktop",
         config.DESKTOP_DIR  / "taskmonitor.desktop",
@@ -118,7 +118,7 @@ def uninstall():
     for t in targets:
         if t.exists():
             t.unlink()
-            log.info(f"Supprimé : {t}")
+            log.info(f"Deleted : {t}")
 
 
 if __name__ == "__main__":

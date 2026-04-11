@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Prédicteur d'intentions globales pour chaque cluster
+Predictor of overall intentions for each cluster
 """
 
 import re

@@ -144,11 +144,11 @@ Cluster 11  |  2 tache(s)  |  cohesion = 0.138
 ─────────────────────────────────────────────────────────────────
 Cluster 12  |  2 tache(s)  |  cohesion = 0.436
 ─────────────────────────────────────────────────────────────────
-  Global Task Intention : Search for and use applications
+  Global Task Intention : Search for documents and files
 
   Items :
-    - recent documents, application, used by the user
     - google chrome, application, used by the user
+    - recent documents, application, used by the user
 
 ─────────────────────────────────────────────────────────────────
 Other small tasks — singleton 1  |  singleton

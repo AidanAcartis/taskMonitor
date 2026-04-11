@@ -10,14 +10,14 @@ THRESHOLDS = CLUSTER_CONFIG["thresholds"]
 
 class SingletonHandler:
     """
-    Gère l'extraction des singletons et le reclustering global des singletons.
+    Manages singleton extraction and global singleton reclustering.
     """
 
     def __init__(self, tasks, dist_matrix):
         """
         Args:
-            tasks (list[str]): liste complète des tâches
-            dist_matrix (np.ndarray): matrice de distance (n x n)
+            tasks (list[str]): list of all tasks
+            dist_matrix (np.ndarray): distance matrix (n x n)
         """
         self.tasks = tasks
         self.dist  = dist_matrix
@@ -27,10 +27,10 @@ class SingletonHandler:
     # ─────────────────────────────────────────────
     def extract_singletons(self, groups):
         """
-        Sépare les singletons des clusters normaux.
+        Separates singletons from normal clusters.
 
         Args:
-            groups (dict[int, list[str]]): clusters après reclustering itératif
+            groups (dict[int, list[str]]): clusters after iterative reclustering
 
         Returns:
             tuple:
@@ -46,7 +46,7 @@ class SingletonHandler:
             else:
                 non_singleton_groups[cid] = items
 
-        print(f"    {len(singletons)} singletons sur {len(self.tasks)} tâches.")
+        print(f"    {len(singletons)} singletons on {len(self.tasks)} tasks.")
         return non_singleton_groups, singletons
 
     # ─────────────────────────────────────────────
@@ -54,23 +54,23 @@ class SingletonHandler:
     # ─────────────────────────────────────────────
     def recluster_singletons(self, singletons):
         """
-        Reclustering global des singletons si le ratio est suffisant.
+        Global reclustering of singletons if the ratio is sufficient.
 
         Args:
-            singletons (list[str]): liste des singletons à traiter
+            singletons (list[str]): list of singletons to process
 
         Returns:
-            dict[int, list[str]]: clusters de singletons après reclustering
+            dict[int, list[str]]: clusters of singletons after reclustering
         """
         singleton_clusters = {}
 
         if len(singletons) / len(self.tasks) < SINGLETON_RATIO:
-            print("    Ratio insuffisant → singletons conservés tels quels.")
+            print("    Insufficient ratio → singletons retained as is.")
             for t in singletons:
                 singleton_clusters[len(singleton_clusters)] = [t]
             return singleton_clusters
 
-        print("    Reclustering global des singletons activé.")
+        print("    Global reclustering of singletons activated.")
         singleton_idxs = [self.tasks.index(t) for t in singletons]
         new_dist = self.dist[np.ix_(singleton_idxs, singleton_idxs)]
         new_dist = np.clip(new_dist, 0, None)

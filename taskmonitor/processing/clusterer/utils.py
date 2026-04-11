@@ -1,12 +1,12 @@
 """
 utils.py
 --------
-Fonctions utilitaires pour :
-- Chargement des données
-- Normalisation des tâches
-- Déduplication
-- Shuffle contrôlé
-- Sauvegarde du rapport final
+Utility functions for:
+- Loading data
+- Task normalization
+- Deduplication
+- Controlled shuffling
+- Saving the final report
 """
 
 import pandas as pd
@@ -19,7 +19,7 @@ from pathlib import Path
 # ─────────────────────────────────────────────
 def normalize_task(text: str) -> str:
     """
-    Nettoyage minimal d'une description de tâche.
+    Minimal task description cleaning.
     """
     return text.replace('\\"', '').replace('"', '').lower().strip()
 
@@ -29,12 +29,12 @@ def normalize_task(text: str) -> str:
 # ─────────────────────────────────────────────
 def load_and_prepare_tasks(csv_path: Path, config: dict) -> list[str]:
     """
-    Pipeline complet :
-    1. Chargement CSV
-    2. Normalisation
-    3. Filtrage (vides)
-    4. Déduplication
-    5. Shuffle reproductible
+    Complete pipeline:
+    1. CSV loading
+    2. Normalization
+    3. Filtering (empty entries)
+    4. Deduplication
+    5. Reproducible shuffle
     """
 
     print("=" * 60)
@@ -84,10 +84,10 @@ def load_and_prepare_tasks(csv_path: Path, config: dict) -> list[str]:
 # ─────────────────────────────────────────────
 def save_report(groups: dict, tasks: list, dist, metrics: dict, output_path: Path):
     """
-    Génère le rapport texte final des clusters.
+    Generates the final text report of the clusters.
     """
 
-    print(f"\n[10] Écriture du rapport dans {output_path} ...")
+    print(f"\n[10] Writing report to {output_path} ...")
 
     def compute_cohesion(idxs):
         if len(idxs) < 2:

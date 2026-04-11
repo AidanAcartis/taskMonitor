@@ -211,7 +211,7 @@ class OutputAssembler:
                 "stats": {
                     "total_duration": round(total_duration, 3),
                     "active_duration": round(total_duration, 3),
-                    "time_span": round(time_span, 3),  # 🔥 FIXED
+                    "time_span": round(time_span, 3),  # FIXED
                     "num_events": num_events,
                     "start": start_dt.strftime("%Y-%m-%d %H:%M:%S"),
                     "end": end_dt.strftime("%Y-%m-%d %H:%M:%S")

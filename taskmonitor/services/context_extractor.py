@@ -17,7 +17,7 @@ KNOWN_DIRS = {
 FILE_RE = re.compile(r"\.[a-zA-Z0-9]+$")
 
 def is_directory(token: str) -> bool:
-    """Retourne True si le token ressemble à un répertoire."""
+    """Returns True if the token resembles a directory."""
     if "/" in token:
         return True
     if token in KNOWN_DIRS:
@@ -26,15 +26,16 @@ def is_directory(token: str) -> bool:
     return False
 
 def is_file(token: str) -> bool:
-    """Retourne True si le token ressemble à un fichier (a une extension)."""
+    """Returns True if the token resembles a file (has an extension)."""
     return bool(FILE_RE.search(token)) and "/" not in token.rstrip("/")
 
 def extract_context_from_command(command: str) -> tuple[list[str], list[str]]:
     """
-    Parcourt les tokens d'une commande et retourne :
-      - la liste des fichiers détectés
-      - la liste des répertoires détectés
-    On ignore les flags (commençant par -) et le premier token (la commande).
+    Parses the tokens of a command and returns:
+
+      - the list of detected files
+      - the list of detected directories
+    Flags (starting with -) and the first token (the command) are ignored.
     """
     tokens = command.split()
     files, dirs = [], []

@@ -5,7 +5,7 @@ import sys
 # ───────────────── CHECK cmddesc ─────────────────
 
 def check_cmddesc():
-    """Vérifie que cmddesc est installé et accessible."""
+    """Check that cmddesc is installed and accessible."""
     if shutil.which("cmddesc") is None:
         print("❌ cmddesc is not installed or is not in the PATH.")
         print("👉 Go to : taskmonitor/external/command_desc/")

@@ -1,7 +1,7 @@
 """
 run_clusterer.py
 ----------------
-Point d'entrée pour exécuter le pipeline de clustering.
+Entry point for running the clustering pipeline.
 """
 
 from pathlib import Path
@@ -27,7 +27,7 @@ def main():
     print("\nFinal summary :")
     print(f"    Clusters   : {result['metrics_after']['n_clusters']}")
     print(f"    Silhouette : {result['metrics_after']['silhouette']:.3f}")
-    print(f"    Cohésion   : {result['metrics_after']['cohesion']:.3f}")
+    print(f"    Cohesion   : {result['metrics_after']['cohesion']:.3f}")
 
 
 if __name__ == "__main__":

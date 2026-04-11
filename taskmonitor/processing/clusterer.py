@@ -1,8 +1,8 @@
 """
 processing/clusterer.py
 =======================
-Cluster les descriptions d'événements en groupes thématiques.
-Refactorisation de cluster.py.
+Clusters event descriptions into thematic groups.
+Refactor of cluster.py.
 """
 
 import random
@@ -22,8 +22,8 @@ log = get_logger(__name__)
 
 class Clusterer:
     """
-    Effectue le clustering des descriptions d'événements.
-    Suit le même pipeline en 14 étapes que cluster.py original.
+    Performs clustering of event descriptions.
+    Follows the same 14-step pipeline as the original cluster.py.
     """
 
     def __init__(self):
@@ -72,11 +72,11 @@ class Clusterer:
 
     def cluster(self, date_str: str) -> dict[int, list[str]]:
         """
-        Lit events_described.csv, effectue le clustering complet,
-        écrit clusters_output.txt et retourne les groupes.
+        Reads events_described.csv, performs full clustering,
+        writes clusters_output.txt and returns the groups.
 
         Args:
-            date_str: date au format "YYYY-MM-DD"
+            date_str: date at format "YYYY-MM-DD"
 
         Returns:
             dict {cluster_id: [description, ...]}
@@ -108,7 +108,7 @@ class Clusterer:
         random.shuffle(tasks)
 
         # ── Étape 3 : embeddings ─────────────
-        log.info("[3] Calcul des embeddings...")
+        log.info("[3] Calculating embeddings...")
         embeddings = self._model.encode(
             tasks, convert_to_tensor=True, normalize_embeddings=True
         )
@@ -161,7 +161,7 @@ class Clusterer:
     def _recluster_iterative(
         self, groups: dict, tasks: list[str], dist: np.ndarray
     ) -> dict[int, list[str]]:
-        """Étapes 7–11 : reclustering itératif par cohésion."""
+        """Steps 7–11: iterative reclustering based on cohesion."""
         final: dict[int, list[str]] = {}
         counter = 0
         queue   = list(groups.values())
@@ -198,7 +198,7 @@ class Clusterer:
         self, groups: dict[int, list[str]], tasks: list[str],
         dist: np.ndarray, sim: np.ndarray
     ) -> dict[int, list[str]]:
-        """Étape 14 : post-processing, réassignation des singletons."""
+        """Step 14: Post-processing, reassignment of singletons."""
         POSTPROC_SPLIT_MIN       = 0.40
         POSTPROC_MERGE_SIM       = 0.55
         POSTPROC_REASSIGN_MARGIN = 0.05
@@ -302,7 +302,7 @@ class Clusterer:
         self, date_str: str, groups: dict[int, list[str]],
         tasks: list[str], dist: np.ndarray
     ) -> None:
-        """Écrit clusters_output.txt."""
+        """Writes clusters_output.txt."""
         AUTRES_CID = len(groups) - 1 if groups else None
         labels_arr = np.full(len(tasks), -1, dtype=int)
         for c, items in groups.items():

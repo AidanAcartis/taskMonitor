@@ -1,7 +1,7 @@
 """
 distance_builder.py
 -------------------
-Construit la matrice de distance à partir des embeddings.
+Builds the distance matrix from embeddings.
 """
 
 import numpy as np
@@ -14,7 +14,7 @@ class DistanceBuilder:
 
     def build(self, embeddings):
         """
-        Construit la matrice de distance cosinus.
+        Builds the cosine distance matrix.
 
         Args:
             embeddings: tensor (n_samples, dim)
@@ -24,9 +24,9 @@ class DistanceBuilder:
         """
 
         if embeddings is None:
-            raise ValueError("Embeddings non fournis.")
+            raise ValueError("Embeddings not provided.")
 
-        print("\n[4] Calcul de la matrice de distance ...")
+        print("\n[4] Distance matrix calculation ...")
 
         # Similarité cosinus
         sim_matrix = util.cos_sim(embeddings, embeddings).cpu().numpy()

@@ -38,7 +38,7 @@ class DataCollector:
                             f"{date}\t{time_open}\t{time_close}\t{duration}\t{type_}\t{name}"
                         )
         else:
-            logger.logger.warning(f"File data introuvable: {self.file_data_path}")
+            logger.logger.warning(f"File data not found: {self.file_data_path}")
 
         # ───────────────────────────────
         # COMMAND DATA
@@ -60,7 +60,7 @@ class DataCollector:
                             f"{date}\t{time_open}\t{time_close}\t{duration}\t{type_}\t{name}"
                         )
         else:
-            logger.logger.warning(f"Command data introuvable: {self.command_data_path}")
+            logger.logger.warning(f"Command data not found: {self.command_data_path}")
 
         # ───────────────────────────────
         # WRITE FINAL FILE

@@ -17,7 +17,7 @@ class LogExtractor:
         self.script_path: Path = Path(__file__).parent / "log_extractor.sh"
 
     def run(self):
-        """Exécute le script bash et affiche les fichiers générés."""
+        "Executes the bash script and displays the generated files."
         try:
             logger.logger.info(f"Launch of {self.script_path}...")
             subprocess.run(["bash", str(self.script_path)], check=True)

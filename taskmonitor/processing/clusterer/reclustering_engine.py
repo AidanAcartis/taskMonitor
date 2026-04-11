@@ -11,14 +11,14 @@ COHESION_SPLIT_MAX = CLUSTER_CONFIG["cohesion_split_max"]
 
 class ReclusteringEngine:
     """
-    Classe pour gérer le reclustering itératif des clusters existants.
+    Class to manage the iterative reclustering of existing clusters.
     """
 
     def __init__(self, tasks, dist_matrix):
         """
         Args:
-            tasks (list[str]): liste de toutes les tâches
-            dist_matrix (np.ndarray): matrice de distance (n x n)
+            tasks (list[str]): list of all tasks
+            dist_matrix (np.ndarray): distance matrix (n x n)
         """
         self.tasks = tasks
         self.dist  = dist_matrix
@@ -35,7 +35,7 @@ class ReclusteringEngine:
     # ─────────────────────────────────────────────
     def best_split_by_k(self, tasks_subset, dist_matrix_subset):
         """
-        Cherche le plus petit k (2..n) tel que cohésion moyenne <= COHESION_SPLIT_MAX.
+        Find the smallest k (2..n) such that average cohesion <= COHESION_SPLIT_MAX.
         """
         n = len(tasks_subset)
         for k in range(2, n + 1):
@@ -66,9 +66,9 @@ class ReclusteringEngine:
     def iterative_reclustering(self, groups):
         """
         Args:
-            groups (dict[int, list[str]]): clusters initiaux
+            groups (dict[int, list[str]]): initial clusters
         Returns:
-            dict[int, list[str]]: clusters après reclustering
+            dict[int, list[str]]: clusters after reclustering
         """
         final_groups      = {}
         new_label_counter = 0

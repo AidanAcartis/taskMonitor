@@ -5,7 +5,7 @@ from datetime import datetime, timedelta
 
 
 def load_all_sessions() -> list[tuple[int, str, dict]]:
-    """Retourne [(id, session_date, data), ...] triées par date décroissante."""
+    """Returns [(id, session_date, data), ...] sorted by descending date."""
     conn = get_connection()
     rows = conn.execute(
         "SELECT id, session_date, data FROM sessions ORDER BY session_date DESC"
@@ -15,7 +15,7 @@ def load_all_sessions() -> list[tuple[int, str, dict]]:
 
 
 def load_latest_session() -> dict | None:
-    """Retourne le data dict de la session la plus récente, ou None."""
+    """Returns the data dict of the most recent session, or None."""
     conn = get_connection()
     row = conn.execute(
         "SELECT data FROM sessions ORDER BY session_date DESC LIMIT 1"
@@ -26,8 +26,8 @@ def load_latest_session() -> dict | None:
 
 def load_activity_counts() -> dict[str, int]:
     """
-    Retourne un dict 'YYYY-MM-DD' -> count pour le heatmap.
-    Chaque cluster dans chaque session compte comme une activité.
+    Returns a dict 'YYYY-MM-DD' -> count for the heatmap.
+    Each cluster in each session counts as an activity.
     """
     conn = get_connection()
     rows = conn.execute("SELECT data FROM sessions").fetchall()
@@ -45,8 +45,8 @@ def load_activity_counts() -> dict[str, int]:
 
 def load_clusters_by_date(date_str: str) -> dict:
     """
-    Retourne un dict {'clusters': [...]} avec tous les clusters
-    de toutes les sessions dont la date d'activité correspond à date_str (YYYY-MM-DD).
+    Returns a dict {'clusters': [...]} with all clusters
+    from all sessions whose activity date matches date_str (YYYY-MM-DD).
     """
     conn = get_connection()
     rows = conn.execute("SELECT data FROM sessions").fetchall()
@@ -65,8 +65,8 @@ def load_clusters_by_date(date_str: str) -> dict:
 
 def load_available_dates() -> list[str]:
     """
-    Retourne la liste triée (décroissante) de toutes les dates d'activité
-    présentes dans toutes les sessions.
+    Returns the sorted (descending) list of all activity dates
+    present in all sessions.
     """
     conn = get_connection()
     rows = conn.execute("SELECT data FROM sessions").fetchall()
@@ -86,14 +86,169 @@ def load_available_dates() -> list[str]:
 # ── Fonctions pour line chart ─────────────────────────────────────────────────
 
 DOMAIN_MAP = {
-    "work":          ["visual studio code", "terminal", "code .", "ls ", "git ",
-                      "python", "data_command", "config.py", "documents"],
-    "leisure":       ["youtube", "google chrome", "new tab", "music", "video",
-                      "2002 teen fashion", "chinchilla"],
-    "security":      ["burp suite", "nmap", "metasploit", "wireshark",
-                      "tryhackme", "ethical hack", "devsecops"],
-    "configuration": ["config", "settings", "setup", "install", "apt", "pip "],
-    "study":         ["study", "learn", "course", "tutorial", "lecture", "book"],
+
+    # ── Software development ──────────────────────────────────────────────────
+    "development": [
+        "visual studio code", "vscode", "code .", "vim", "neovim", "emacs",
+        "sublime text", "jetbrains", "intellij", "pycharm", "webstorm",
+        "android studio", "xcode", "eclipse", "netbeans",
+        "terminal", "bash", "zsh", "fish", "sh ", "shell",
+        "git ", "github", "gitlab", "bitbucket", "git commit", "git push",
+        "git pull", "git merge", "git clone", "git status",
+        "python", "javascript", "typescript", "java", "kotlin", "swift",
+        "rust", "go ", "golang", "c++", "c#", "php", "ruby", "scala",
+        "docker", "kubernetes", "kubectl", "helm", "compose",
+        "npm ", "yarn ", "pip ", "cargo ", "gradle", "maven",
+        "makefile", "cmake", "webpack", "vite", "babel",
+        "postgresql", "mysql", "sqlite", "mongodb", "redis",
+        "api", "rest", "graphql", "swagger", "postman", "insomnia",
+        "localhost", "127.0.0.1", "flask", "django", "fastapi",
+        "react", "vue", "angular", "next.js", "nuxt",
+        "stack overflow", "stackoverflow", "github.com",
+    ],
+
+    # ── Cybersecurity / Hacking ───────────────────────────────────────────────
+    "security": [
+        "burp suite", "nmap", "metasploit", "wireshark", "aircrack",
+        "john the ripper", "hashcat", "hydra", "sqlmap", "nikto",
+        "gobuster", "dirb", "ffuf", "wfuzz", "dirsearch",
+        "kali", "parrot os", "blackarch",
+        "tryhackme", "hackthebox", "ctf", "capture the flag",
+        "reverse shell", "payload", "exploit", "privilege escalation",
+        "buffer overflow", "xss", "sql injection", "csrf",
+        "pen test", "penetration", "vulnerability", "cve",
+        "shodan", "censys", "recon-ng", "maltego",
+        "netcat", "nc ", "socat", "tcpdump", "ettercap",
+        "ghidra", "ida pro", "radare2", "binary ninja", "gdb",
+        "devsecops", "owasp", "ethical hack", "red team", "blue team",
+    ],
+
+    # ── System administration / DevOps ────────────────────────────────────────
+    "sysadmin": [
+        "nginx", "apache", "caddy", "haproxy",
+        "ansible", "terraform", "puppet", "chef", "vagrant",
+        "systemctl", "journalctl", "crontab", "daemon",
+        "ssh ", "sftp", "rsync", "scp ",
+        "iptables", "ufw", "firewall",
+        "cpu usage", "ram", "disk usage", "htop", "top ", "iotop",
+        "mount ", "fdisk", "lsblk", "df ", "du ",
+        "backup", "snapshot", "raid",
+        "aws", "azure", "gcp", "google cloud", "digitalocean", "linode",
+        "prometheus", "grafana", "elasticsearch", "kibana", "logstash",
+        "ci/cd", "jenkins", "github actions", "gitlab ci", "circleci",
+    ],
+
+    # ── Data science / AI / ML ────────────────────────────────────────────────
+    "data_science": [
+        "jupyter", "notebook", "pandas", "numpy", "scipy",
+        "matplotlib", "seaborn", "plotly", "bokeh",
+        "scikit", "sklearn", "tensorflow", "pytorch", "keras",
+        "huggingface", "transformers", "llm", "gpt", "bert", "t5",
+        "kaggle", "colab", "google colab",
+        "dataset", "training", "fine-tuning", "inference",
+        "clustering", "classification", "regression", "neural",
+        "embedding", "tokenizer", "model",
+        "r studio", "rstudio", "tableau", "power bi",
+        "sql ", "dbt ", "airflow", "spark", "hadoop",
+    ],
+
+    # ── Configuration / Setup ─────────────────────────────────────────────────
+    "configuration": [
+        "config", "settings", "setup", "install", "uninstall",
+        "apt ", "apt-get", "dpkg", "snap ", "flatpak",
+        "brew ", "pacman", "yum ", "dnf ",
+        "dotfiles", ".bashrc", ".zshrc", ".vimrc", ".gitconfig",
+        "environment variable", "export ", "path=",
+        "driver", "firmware", "bios", "grub",
+        "virtualbox", "vmware", "qemu", "libvirt",
+        "wine ", "lutris", "proton",
+    ],
+
+    # ── Study / Learning ──────────────────────────────────────────────────────
+    "study": [
+        "study", "learn", "learning", "course", "tutorial",
+        "lecture", "lesson", "class", "module", "chapter",
+        "book", "ebook", "pdf", "textbook",
+        "coursera", "udemy", "edx", "pluralsight", "linkedin learning",
+        "mit opencourseware", "khan academy", "freecodecamp",
+        "documentation", "docs.", "devdocs", "mdn",
+        "research", "paper", "arxiv", "scholar",
+        "anki", "flashcard", "quizlet",
+        "exam", "quiz", "certification", "cisco", "comptia",
+    ],
+
+    # ── Communication / Collaboration ─────────────────────────────────────────
+    "communication": [
+        "slack", "discord", "teams", "zoom", "meet",
+        "gmail", "outlook", "thunderbird", "mail",
+        "telegram", "whatsapp", "signal", "messenger",
+        "notion", "confluence", "jira", "trello", "asana",
+        "linear", "clickup", "monday",
+        "mattermost", "rocketchat",
+    ],
+
+    # ── Social networks ───────────────────────────────────────────────────────
+    "social": [
+        "twitter", "x.com", "facebook", "instagram", "linkedin",
+        "reddit", "tiktok", "snapchat", "pinterest", "tumblr",
+        "mastodon", "bluesky", "threads",
+        "twitch", "kick.com",
+        "hacker news", "news.ycombinator",
+    ],
+
+    # ── Multimedia / Entertainment ────────────────────────────────────────────
+    "entertainment": [
+        "youtube", "netflix", "spotify", "twitch", "prime video",
+        "disney+", "hulu", "crunchyroll", "hianime", "aniwatch",
+        "vlc", "mpv", "kodi",
+        "music", "playlist", "podcast", "soundcloud",
+        "lyrics", "song", "album", "artist",
+        "movie", "series", "episode", "anime", "manga",
+        "stream", "watch ",
+    ],
+
+    # ── Gaming ────────────────────────────────────────────────────────────────
+    "gaming": [
+        "steam", "epic games", "gog ", "itch.io",
+        "minecraft", "valorant", "league of legends", "dota",
+        "fortnite", "apex legends", "overwatch", "csgo", "cs2",
+        "game", "gaming", "gamepad", "controller",
+        "unity", "unreal engine", "godot",
+        "emulator", "retroarch", "pcsx2",
+        "lutris", "proton", "wine game",
+    ],
+
+    # ── Creative / Design ─────────────────────────────────────────────────────
+    "creative": [
+        "gimp", "inkscape", "krita", "blender", "kdenlive",
+        "photoshop", "illustrator", "premiere", "after effects",
+        "figma", "sketch", "canva", "adobe xd",
+        "audacity", "ardour", "lmms", "reaper",
+        "obs studio", "obs ", "recording", "streaming setup",
+        "3d model", "render", "animation",
+        "writing", "novel", "screenplay", "blog post",
+    ],
+
+    # ── Finance / Productivity ────────────────────────────────────────────────
+    "productivity": [
+        "libreoffice", "excel", "word", "powerpoint",
+        "google docs", "google sheets", "google slides",
+        "obsidian", "logseq", "roam", "onenote", "evernote",
+        "calendar", "agenda", "todo", "task",
+        "budget", "finance", "accounting", "invoice",
+        "crypto", "bitcoin", "ethereum", "binance", "coinbase",
+        "trading", "stock", "investment",
+    ],
+
+    # ── Web browsing (generic) ────────────────────────────────────────────────
+    "browsing": [
+        "google chrome", "firefox", "brave", "edge", "safari",
+        "new tab", "history", "bookmark",
+        "google.com", "bing.com", "duckduckgo",
+        "wikipedia", "wikimedia",
+    ],
+
+    "other": [],  # fallback
 }
 
 def _assign_domain(description: str) -> str:
@@ -105,7 +260,7 @@ def _assign_domain(description: str) -> str:
 
 
 def _all_clusters() -> list[dict]:
-    """Retourne tous les clusters de toutes les sessions."""
+    """Returns all clusters from all sessions."""
     conn = get_connection()
     rows = conn.execute("SELECT data FROM sessions").fetchall()
     conn.close()
@@ -118,8 +273,8 @@ def _all_clusters() -> list[dict]:
 
 def load_hourly_activity() -> dict[int, float]:
     """
-    Agrège toutes les sessions.
-    Retourne {heure (0-23): durée totale en heures}.
+    Aggregates all sessions.
+    Returns {hour (0-23): total duration in hours}.
     """
     totals: dict[int, float] = defaultdict(float)
     for cluster in _all_clusters():
@@ -136,8 +291,8 @@ def load_hourly_activity() -> dict[int, float]:
 
 def load_domain_by_date() -> dict[str, dict[str, float]]:
     """
-    Retourne {date: {domain: durée}} pour toutes les sessions.
-    Utilisé pour le line chart multi-courbes par domaine.
+    Returns {date: {domain: duration}} for all sessions.
+    Used for the line chart with multiple curves by domain.
     """
     result: dict[str, dict[str, float]] = defaultdict(lambda: defaultdict(float))
     for cluster in _all_clusters():
@@ -154,8 +309,8 @@ def load_domain_by_date() -> dict[str, dict[str, float]]:
 
 def load_domain_by_week() -> dict[str, dict[str, float]]:
     """
-    Agrège par semaine (lundi de la semaine comme clé 'YYYY-WW').
-    Retourne {semaine: {domain: durée}}.
+    Aggregates by week (Monday of the week as key 'YYYY-WW').
+    Returns {week: {domain: duration}}.
     """
     result: dict[str, dict[str, float]] = defaultdict(lambda: defaultdict(float))
     for cluster in _all_clusters():
@@ -175,7 +330,7 @@ def load_domain_by_week() -> dict[str, dict[str, float]]:
 
 
 def load_domain_by_month() -> dict[str, dict[str, float]]:
-    """Agrège par mois (YYYY-MM). Retourne {mois: {domain: durée}}."""
+    """Aggregates by month (YYYY-MM). Returns {month: {domain: duration}}."""
     result: dict[str, dict[str, float]] = defaultdict(lambda: defaultdict(float))
     for cluster in _all_clusters():
         start_str = cluster.get("stats", {}).get("start", "")
@@ -190,7 +345,7 @@ def load_domain_by_month() -> dict[str, dict[str, float]]:
 
 
 def load_domain_by_year() -> dict[str, dict[str, float]]:
-    """Agrège par année (YYYY). Retourne {année: {domain: durée}}."""
+    """Aggregates by year (YYYY). Returns {year: {domain: duration}}."""
     result: dict[str, dict[str, float]] = defaultdict(lambda: defaultdict(float))
     for cluster in _all_clusters():
         start_str = cluster.get("stats", {}).get("start", "")
@@ -206,7 +361,7 @@ def load_domain_by_year() -> dict[str, dict[str, float]]:
 
 def load_domain_by_session() -> list[tuple[str, dict[str, float]]]:
     """
-    Retourne [(session_date, {domain: durée}), ...] triées par date.
+    Returns [(session_date, {domain: duration}), ...] sorted by date.
     """
     conn = get_connection()
     rows = conn.execute(

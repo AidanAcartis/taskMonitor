@@ -13,7 +13,7 @@ class FileCollector:
 
     def run(self):
         try:
-            logger.logger.info(f"Lancement de {self.script_path}...")
+            logger.logger.info(f"Launch of {self.script_path}...")
             
             # On s'assure que le script bash est exécutable
             self.script_path.chmod(0o755)
