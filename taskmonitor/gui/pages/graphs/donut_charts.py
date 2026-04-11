@@ -14,6 +14,7 @@ from PyQt6.QtWidgets import (
 from PyQt6.QtGui import QPainter, QColor, QPen, QFont, QFontMetrics
 from PyQt6.QtCore import Qt, QRect, QRectF, QPoint
 
+from taskmonitor.gui.widgets.session_selector import SessionSelector
 
 PALETTE = [
     "#26a641","#378ADD","#7F77DD","#EF9F27","#D4537E",
@@ -233,6 +234,10 @@ class _DonutPage(QWidget):
         top.addWidget(title)
         top.addStretch()
 
+        self._selector = SessionSelector()
+        self._selector.session_changed.connect(self._on_session_changed)
+        top.addWidget(self._selector)
+
         btn_export = QPushButton("↓ Export")
         btn_export.setFixedHeight(24)
         btn_export.setStyleSheet("""
@@ -248,9 +253,20 @@ class _DonutPage(QWidget):
 
         self._canvas = _DonutCanvas(slices)
         root.addWidget(self._canvas, stretch=1)
-        root.addWidget(_StatsBar(slices))
+
+        # ← assigné à self._stats_bar
+        self._stats_bar = _StatsBar(slices)
+        root.addWidget(self._stats_bar)
 
         btn_export.clicked.connect(self._canvas.export_png)
+
+    def _on_session_changed(self, data: dict):
+        slices = self._build(data.get("clusters", []))
+        self._canvas.slices = slices
+        self._canvas.update()
+        self._stats_bar.setParent(None)
+        self._stats_bar = _StatsBar(slices)
+        self.layout().addWidget(self._stats_bar)
 
 
 # ── Task proportion ───────────────────────────────────────────────────────────

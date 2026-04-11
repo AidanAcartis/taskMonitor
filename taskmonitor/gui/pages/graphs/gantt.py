@@ -10,7 +10,7 @@ from PyQt6.QtWidgets import (
 )
 from PyQt6.QtGui import QPainter, QColor, QPen, QFont, QFontMetrics
 from PyQt6.QtCore import Qt, QRect
-
+from taskmonitor.gui.widgets.session_selector import SessionSelector
 
 PAD_L, PAD_R, PAD_T, PAD_B = 160, 20, 20, 30
 ROW_H  = 28
@@ -218,6 +218,10 @@ class GanttChart(QWidget):
         top.addWidget(title)
         top.addStretch()
 
+        self._selector = SessionSelector()
+        self._selector.session_changed.connect(self._on_session_changed)
+        top.addWidget(self._selector)
+
         btn_export = QPushButton("↓ Export")
         btn_export.setFixedHeight(24)
         btn_export.setStyleSheet("""
@@ -243,3 +247,10 @@ class GanttChart(QWidget):
         root.addWidget(_StatsBar(clusters))
 
         btn_export.clicked.connect(self._canvas.export_png)
+
+    def _on_session_changed(self, data: dict):
+        clusters = data.get("clusters", [])
+        self._canvas.clusters = clusters
+        self._canvas._compute_time_range()
+        self._canvas._update_height()
+        self._canvas.update()

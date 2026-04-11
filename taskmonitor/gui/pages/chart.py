@@ -4,6 +4,7 @@ from PyQt6.QtWidgets import (
 )
 from PyQt6.QtCore import Qt
 import pyqtgraph as pg
+from taskmonitor.gui.widgets.session_selector import SessionSelector
 
 
 CLUSTER  = "#378ADD"
@@ -57,6 +58,10 @@ class Chart(QWidget):
         ctrl = QHBoxLayout()
         lbl = QLabel("Visualisation :")
         lbl.setStyleSheet(f"color: {FG_MUTED}; font-size: 13px;")
+
+        self._selector = SessionSelector()
+        self._selector.session_changed.connect(self._on_session_changed)
+        ctrl.addWidget(self._selector)
 
         self.combo = QComboBox()
         self.combo.addItems([               # <-- un seul addItems
@@ -282,3 +287,21 @@ class Chart(QWidget):
         self.chart_cohesion.setVisible(idx == 1)
         self.chart_gantt.setVisible(idx == 2)
         self.chart_table.setVisible(idx == 3)
+
+    def _on_session_changed(self, data: dict):
+        self.data     = data
+        self.clusters = data.get("clusters", [])
+        # rebuild all sub-charts
+        layout = self.layout()
+        for w in (self.chart_duration, self.chart_cohesion,
+                self.chart_gantt, self.chart_table):
+            layout.removeWidget(w)
+            w.deleteLater()
+        self.chart_duration = _titled("Durée active par cluster (heures)", self._build_duration())
+        self.chart_cohesion = _titled("Score de cohésion par cluster",     self._build_cohesion())
+        self.chart_gantt    = _titled("Timeline Gantt — segments actifs",  self._build_gantt())
+        self.chart_table    = _titled("Tableau récapitulatif des clusters", self._build_table())
+        for w in (self.chart_duration, self.chart_cohesion,
+                self.chart_gantt, self.chart_table):
+            layout.addWidget(w)
+        self._switch(self.combo.currentIndex())
