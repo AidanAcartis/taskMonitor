@@ -95,11 +95,11 @@ class MainWindow(QMainWindow):
         self.setCentralWidget(container)
 
         # ===== CONNEXIONS =====
+
         self.header.start_monitoring.connect(self._on_start_monitoring)
         self.header.stop_monitoring.connect(self._on_stop_monitoring)
-        self.header.show_monitoring.connect(
-            lambda: self.switch_page("Monitoring")
-        )
+        self.header.show_monitoring.connect(lambda: self.switch_page("Monitoring"))
+
         self.header.start_processing.connect(self._on_start_processing)
         self.header.show_processing.connect(
             lambda: self.switch_page("Processing")
@@ -110,9 +110,10 @@ class MainWindow(QMainWindow):
     # ===== Actions =====
     def _on_start_monitoring(self):
         self.switch_page("Monitoring")
+        self.page_monitoring.start_monitoring()
 
     def _on_stop_monitoring(self):
-        print("🛑 Stop monitoring")
+        self.page_monitoring.stop_monitoring()
 
     def _on_start_processing(self):
         self.switch_page("Processing")

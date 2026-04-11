@@ -2,6 +2,7 @@ import subprocess
 import sys
 import time
 from pathlib import Path
+import signal
 
 from taskmonitor.collectors.window_monitor import WindowMonitor
 from taskmonitor.collectors.command_collector import CommandCollector
@@ -23,17 +24,23 @@ def run_monitoring():
     wm = WindowMonitor()
     wm.start()
 
+    def _handle_stop(signum, frame):
+        print("\n🛑 Stopping requested")
+        wm.stop()
+        sys.exit(0)
+
+    # intercepter SIGTERM (depuis monitoring.py) ET SIGINT (CTRL+C)
+    signal.signal(signal.SIGTERM, _handle_stop)
+    signal.signal(signal.SIGINT,  _handle_stop)
+
     try:
         while True:
             print("📥 Collecting command's logs...")
             CommandCollector().run()
-
-            # fréquence (ex: toutes les 30 sec)
             time.sleep(30)
 
-    except KeyboardInterrupt:
-        print("\n🛑 Stopping requested")
-        wm.stop()
+    except SystemExit:
+        pass
 
 
 # ─────────────────────────────────────────────
