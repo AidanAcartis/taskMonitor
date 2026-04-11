@@ -2,7 +2,7 @@ from PyQt6.QtWidgets import (
     QWidget, QHBoxLayout, QVBoxLayout,
     QLabel, QPushButton, QProgressBar
 )
-from PyQt6.QtCore import Qt, QSize
+from PyQt6.QtCore import Qt, QSize, pyqtSignal
 import qtawesome as qta
 
 
@@ -28,6 +28,9 @@ BTN_STYLE = f"""
 
 
 class ToolbarLayout(QWidget):
+    go_prev = pyqtSignal()  # ← ajouter
+    go_next = pyqtSignal()
+
     def __init__(self):
         super().__init__()
         self.setFixedHeight(44)
@@ -112,6 +115,10 @@ class ToolbarLayout(QWidget):
                 border-radius: 0px;
             }}
         """)
+
+        # connecter les boutons aux signaux
+        self.btn_prev.clicked.connect(self.go_prev)
+        self.btn_next.clicked.connect(self.go_next)
 
         main_layout.addWidget(top)
         main_layout.addWidget(self.progress)
