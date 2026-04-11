@@ -1,7 +1,7 @@
 """
-Line Chart — deux vues :
-  1. Activité par heure de la journée (toutes sessions agrégées)
-  2. Durée par domaine dans le temps (session / date / semaine / mois / année)
+Line Chart — two views:
+  1. Activity by hour of the day (all sessions aggregated)
+  2. Duration by domain over time (session / date / week / month / year)
 """
 
 from collections import defaultdict
@@ -335,12 +335,12 @@ class LineChart(QWidget):
         self._view_combo = QComboBox()
         self._view_combo.setStyleSheet(COMBO_STYLE)
         self._view_combo.addItems([
-            "Activité par heure",
-            "Domaines — par session",
-            "Domaines — par date",
-            "Domaines — par semaine",
-            "Domaines — par mois",
-            "Domaines — par année",
+            "Activity by hour",
+            "Domains — per session",
+            "Domains — per date",
+            "Domains — per week",
+            "Domains — per month",
+            "Domains — per year",
         ])
         self._view_combo.currentIndexChanged.connect(self._switch_view)
         top.addWidget(self._view_combo)

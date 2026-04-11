@@ -96,9 +96,9 @@ class Header(QToolBar):
         self.addWidget(spacer)
 
         # ── droite ────────────────────────────────────────────────────────────
-        self.help_btn     = _icon_btn("fa5s.question-circle", "Aide",       FG,          LEFT_STYLE)
-        self.settings_btn = _icon_btn("fa5s.sliders-h",       "Paramètres", FG,          LEFT_STYLE)
-        self.quit_btn     = _icon_btn("fa5s.sign-out-alt",    "Quitter",    "#c0504d",   QUIT_STYLE)
+        self.help_btn     = _icon_btn("fa5s.question-circle", "Help",       FG,          LEFT_STYLE)
+        self.settings_btn = _icon_btn("fa5s.sliders-h",       "Settings", FG,          LEFT_STYLE)
+        self.quit_btn     = _icon_btn("fa5s.sign-out-alt",    "Quit",    "#c0504d",   QUIT_STYLE)
         self.addWidget(self.help_btn)
         self.addWidget(self.settings_btn)
         self.addWidget(self.quit_btn)

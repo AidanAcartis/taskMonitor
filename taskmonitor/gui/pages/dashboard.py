@@ -59,7 +59,7 @@ class Dashboard(QWidget):
         # ── sélecteur de session (existant) ──
         self.session_selector = QComboBox()
         self.session_selector.setStyleSheet(COMBO_STYLE)
-        self.session_selector.addItem("— par session —", userData=None)
+        self.session_selector.addItem("— per session —", userData=None)
         for sid, session_date, _ in self.sessions:
             self.session_selector.addItem(session_date, userData=sid)
         self.session_selector.currentIndexChanged.connect(self._on_session_changed)
@@ -68,7 +68,7 @@ class Dashboard(QWidget):
         # ── sélecteur de date (nouveau) ──
         self.date_selector = QComboBox()
         self.date_selector.setStyleSheet(COMBO_STYLE)
-        self.date_selector.addItem("— par date —", userData=None)
+        self.date_selector.addItem("— per date —", userData=None)
         for date_str in load_available_dates():
             self.date_selector.addItem(date_str, userData=date_str)
         self.date_selector.currentIndexChanged.connect(self._on_date_changed)

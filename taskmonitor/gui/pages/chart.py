@@ -65,10 +65,10 @@ class Chart(QWidget):
 
         self.combo = QComboBox()
         self.combo.addItems([               # <-- un seul addItems
-            "Durée active par cluster",
-            "Cohésion par cluster",
-            "Timeline Gantt",
-            "Tableau récapitulatif",
+            "Active duration per cluster",
+            "Cohesion per cluster",
+            "Gantt Timeline",
+            "Summary table",
         ])
         self.combo.setFixedWidth(240)
         self.combo.setStyleSheet(f"""
@@ -89,16 +89,16 @@ class Chart(QWidget):
         layout.addLayout(ctrl)
 
         self.chart_duration = _titled(
-            "Durée active par cluster (heures)", self._build_duration()
+            "Active duration per cluster (hours)", self._build_duration()
         )
         self.chart_cohesion = _titled(
-            "Score de cohésion par cluster", self._build_cohesion()
+            "Cohesion score per cluster", self._build_cohesion()
         )
         self.chart_gantt = _titled(
-            "Timeline Gantt — segments actifs", self._build_gantt()
+            "Gantt Timeline — active segments", self._build_gantt()
         )
         self.chart_table = _titled(
-            "Tableau récapitulatif des clusters", self._build_table()
+            "Cluster summary table", self._build_table()
         )
 
         for w in (self.chart_duration, self.chart_cohesion,
@@ -114,7 +114,7 @@ class Chart(QWidget):
         colors   = [_bar_color(c["cluster_id"]) for c in clusters]
 
         pw = _make_plot()
-        pw.setLabel("left", "Heures", color=FG_MUTED)
+        pw.setLabel("left", "Hours", color=FG_MUTED)
         pw.getAxis("bottom").setTicks(
             [[(i, self._short_id(lbl)) for i, lbl in enumerate(labels)]]
         )
@@ -134,7 +134,7 @@ class Chart(QWidget):
         colors   = [_bar_color(c["cluster_id"]) for c in clusters]
 
         pw = _make_plot()
-        pw.setLabel("left", "Cohésion [0–1]", color=FG_MUTED)
+        pw.setLabel("left", "Cohesion [0–1]", color=FG_MUTED)
         pw.getAxis("bottom").setTicks(
             [[(i, self._short_id(lbl)) for i, lbl in enumerate(labels)]]
         )
@@ -164,7 +164,7 @@ class Chart(QWidget):
         span  = t_max - t_min
 
         pw = _make_plot()
-        pw.setLabel("bottom", "Heure (HH:MM)", color=FG_MUTED)
+        pw.setLabel("bottom", "Hour (HH:MM)", color=FG_MUTED)
         pw.setLabel("left",   "Cluster",        color=FG_MUTED)
 
         y_labels = []
@@ -199,8 +199,8 @@ class Chart(QWidget):
         return scroll
 
     def _build_table(self) -> QTableWidget:
-        columns = ["ID", "Intention", "Début", "Fin",
-                   "Durée active (h)", "Évènements", "Cohésion", "Apps"]
+        columns = ["ID", "Intention", "Start", "End",
+           "Active duration (h)", "Events", "Cohesion", "Apps"]
         clusters = self.clusters
         table = QTableWidget(len(clusters), len(columns))
         table.setHorizontalHeaderLabels(columns)
@@ -297,10 +297,10 @@ class Chart(QWidget):
                 self.chart_gantt, self.chart_table):
             layout.removeWidget(w)
             w.deleteLater()
-        self.chart_duration = _titled("Durée active par cluster (heures)", self._build_duration())
-        self.chart_cohesion = _titled("Score de cohésion par cluster",     self._build_cohesion())
-        self.chart_gantt    = _titled("Timeline Gantt — segments actifs",  self._build_gantt())
-        self.chart_table    = _titled("Tableau récapitulatif des clusters", self._build_table())
+        self.chart_duration = _titled("Active duration per cluster (hours)", self._build_duration())
+        self.chart_cohesion = _titled("Cohesion score per cluster",     self._build_cohesion())
+        self.chart_gantt    = _titled("Gantt Timeline — active segments",  self._build_gantt())
+        self.chart_table    = _titled("Cluster summary table", self._build_table())
         for w in (self.chart_duration, self.chart_cohesion,
                 self.chart_gantt, self.chart_table):
             layout.addWidget(w)

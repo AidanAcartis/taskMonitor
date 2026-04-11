@@ -85,7 +85,7 @@ class SessionSelector(QWidget):
             self.session_changed.emit(data)
 
     def current_data(self) -> dict:
-        """Retourne les données de la session/date actuellement sélectionnée."""
+        """Returns the data for the currently selected session/date."""
         s_idx = self._session_combo.currentIndex()
         if s_idx > 0:
             return self.sessions[s_idx - 1][2]

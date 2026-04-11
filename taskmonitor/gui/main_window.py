@@ -36,7 +36,7 @@ class MainWindow(QMainWindow):
 
         # ===== TOOLBAR =====
         self.header = Header()
-        self.addToolBar(self.header)   # ✅ IMPORTANT
+        self.addToolBar(self.header)   # IMPORTANT
 
         self.setStyleSheet("""
             QMainWindow::separator {
@@ -153,7 +153,7 @@ class MainWindow(QMainWindow):
             self._navigate_to(self._history[self._history_idx], record=False)
 
     def _navigate_to(self, page_name: str, record: bool = True):
-        """Navigation centrale — appelée par switch_page et les boutons."""
+        """Central navigation — called by switch_page and buttons."""
         if page_name.startswith("graph:"):
             graph_name = page_name[len("graph:"):]
             self.stack.setCurrentIndex(1)

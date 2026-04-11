@@ -1,7 +1,7 @@
 """
-GraphStats — page principale avec QStackedWidget interne.
-Chaque sous-graphe est instancié une seule fois et affiché à la demande.
-Le MainWindow route les signaux "graph:<Name>" émis par la NavBar.
+GraphStats — main page with an internal QStackedWidget.
+Each sub-graph is instantiated only once and displayed on demand.
+The MainWindow routes the "graph:<Name>" signals emitted by the NavBar.
 """
 
 from PyQt6.QtWidgets import QWidget, QVBoxLayout, QStackedWidget
