@@ -1,8 +1,8 @@
-0x02600009 -1 aidan-Lenovo-N50-70 Desktop Icons 1
-0x00a00004  0 aidan-Lenovo-N50-70 taskMonitor
+0x02400004  0 aidan-Lenovo-N50-70 Visualization
 0x0280000a  0 aidan-Lenovo-N50-70 aidan@aidan-Lenovo-N50-70: ~/Documents/Projects/Visualization/taskMonitor
-0x02a00004  0 aidan-Lenovo-N50-70 monitoring.py - taskMonitor - Visual Studio Code
-0x02a0000b  0 aidan-Lenovo-N50-70 password.txt - Visual Studio Code
-0x03800029  0 aidan-Lenovo-N50-70 TryHackMe | Introduction to DevSecOps - Google Chrome
-0x03800036  0 aidan-Lenovo-N50-70 (11) XG - GRL GVNG (Official Music Video) - YouTube - Google Chrome
-0x04400007  0 aidan-Lenovo-N50-70 TaskMonitor
+0x02a00004  0 aidan-Lenovo-N50-70 window_changes.log - taskMonitor - Visual Studio Code
+0x02a0000b  0 aidan-Lenovo-N50-70 New_token.txt - Visual Studio Code
+0x03400017  0 aidan-Lenovo-N50-70 (13) Enemy - Imagine Dragons // jinx // Arcane [AMV] - YouTube - Google Chrome
+0x03400027  0 aidan-Lenovo-N50-70 Configuration Docker et lancement de TaskMonitor - Claude - Google Chrome
+0x04400004  0 aidan-Lenovo-N50-70 /
+0x02600009 -1 aidan-Lenovo-N50-70 Desktop Icons 1

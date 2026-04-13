@@ -1,109 +1,119 @@
-2026-04-11 14:36:58 taskMonitor 
-2026-04-11 14:37:35 data_command.txt - taskMonitor - Visual Studio Code 
-2026-04-11 14:37:45 window_changes.log - taskMonitor - Visual Studio Code 
-2026-04-11 14:37:53 Google Chrome 
-2026-04-11 14:37:55 New Tab - Google Chrome 
-2026-04-11 14:38:07 History - Google Chrome 
-2026-04-11 14:38:15 Watch Classroom of the Elite III HD Streaming Free on HiAnime - Google Chrome 
-2026-04-11 16:26:15 taskMonitor 
-2026-04-11 16:26:27 New Tab - Google Chrome 
-2026-04-11 16:26:35 Cisco Certificate in Ethical Hacking - Cisco - Google Chrome 
-2026-04-11 16:26:41 New Tab - Google Chrome 
-2026-04-11 16:26:43 Archiver les fichiers JSON par date dans la base de données - Claude - Google Chrome 
-2026-04-11 16:26:46 New Tab - Google Chrome 
-2026-04-11 16:26:54 cisco network academy - Recherche Google - Google Chrome 
-2026-04-11 16:27:02 Ethical Hacker - Google Chrome 
-2026-04-11 16:27:12 Login | Networking Academy with Cisco - Google Chrome 
-2026-04-11 16:27:16 Ethical Hacker - Google Chrome 
-2026-04-11 16:27:24 Cisco Networking Academy: Course Launch - Google Chrome 
-2026-04-11 16:27:26 Cisco Networking Academy: Ethical Hacker - Google Chrome 
-2026-04-11 16:27:50 New Tab - Google Chrome 
-2026-04-11 16:27:52 tryhackme.com/room/introductiontodevsecops - Google Chrome 
-2026-04-11 16:27:55 TryHackMe | Cyber Security Training - Google Chrome 
-2026-04-11 16:27:59 TryHackMe | Introduction to DevSecOps - Google Chrome 
-2026-04-11 16:28:05 tryhackme.com/room/introductiontodevsecops - Google Chrome 
-2026-04-11 16:28:07 TryHackMe | Introduction to DevSecOps - Google Chrome 
-2026-04-11 16:28:19 Burp Suite Community Edition v2025.7.4 
-2026-04-11 16:28:27 Confirm 
-2026-04-11 16:28:33 VirtualBox 
-2026-04-11 16:28:42 Oracle VirtualBox Manager 
-2026-04-11 16:28:44 Ethical-Hacker-Kali [Running] - Oracle VirtualBox 
-2026-04-11 16:28:50 Ethical-Hacker-Kali [Paused] - Oracle VirtualBox 
-2026-04-11 16:29:39 Ethical-Hacker-Kali [Saving] - Oracle VirtualBox 
-2026-04-11 16:29:41 New Tab - Google Chrome 
-2026-04-11 16:30:38 claude ai - Recherche Google - Google Chrome 
-2026-04-11 16:30:47 Claude - Google Chrome 
-2026-04-11 16:30:49 Archiver les fichiers JSON par date dans la base de données - Claude - Google Chrome 
-2026-04-11 16:30:59 Terminal 
-2026-04-11 16:31:25 aidan@aidan-Lenovo-N50-70: ~/Documents/Projects/Visualization/taskMonitor 
-2026-04-11 16:31:27 window_changes.log - taskMonitor - Visual Studio Code 
-2026-04-11 16:32:02 Preview README.md - taskMonitor - Visual Studio Code 
-2026-04-11 17:07:22 window_changes.log - taskMonitor - Visual Studio Code 
-2026-04-11 17:07:24 Recherche Google - Google Chrome 
-2026-04-11 17:07:44 New Tab - Google Chrome 
-2026-04-11 17:08:29 Gmail - Google Chrome 
-2026-04-11 17:08:33 Boîte de réception (8) - ralaikotonadia@gmail.com - Gmail - Google Chrome 
-2026-04-11 17:08:37 Recherche Google - Google Chrome 
-2026-04-11 17:08:55 Cisco Packet Tracer 
-2026-04-11 17:09:32 Cisco Packet Tracer 
-2026-04-11 17:09:34 Cisco Packet Tracer Login 
-2026-04-11 17:09:36 Authentication Failed 
-2026-04-11 17:09:42 main_window.py - taskMonitor - Visual Studio Code 
-2026-04-11 17:21:40 Recherche Google - Google Chrome 
-2026-04-11 17:22:00 (11) YouTube - Google Chrome 
-2026-04-11 17:22:06 (11) Fifth Harmony - That's My Girl (Lyrics) - YouTube - Google Chrome 
-2026-04-11 17:22:14 (11) XG - WOKE UP (Official Music Video) - YouTube - Google Chrome 
-2026-04-11 17:23:18 (11) HEARTSTEEL – PARANOIA ft. AEKHYUN, tobi lou, ØZI et Cal Scruby (clip officiel) - YouTube - Google Chrome 
-2026-04-11 17:24:00 Archiver les fichiers JSON par date dans la base de données - Claude - Google Chrome 
-2026-04-11 17:24:33 monitoring.py - taskMonitor - Visual Studio Code 
-2026-04-11 17:25:16 main_window.py - taskMonitor - Visual Studio Code 
-2026-04-11 17:25:32 monitoring.py - taskMonitor - Visual Studio Code 
-2026-04-11 17:27:07 ● monitoring.py - taskMonitor - Visual Studio Code 
-2026-04-11 17:28:26 monitoring.py - taskMonitor - Visual Studio Code 
-2026-04-11 17:28:32 ● monitoring.py - taskMonitor - Visual Studio Code 
-2026-04-11 17:28:34 monitoring.py - taskMonitor - Visual Studio Code 
-2026-04-11 17:28:36 TaskMonitor 
-2026-04-11 17:29:03 (11) HEARTSTEEL – PARANOIA ft. AEKHYUN, tobi lou, ØZI et Cal Scruby (clip officiel) - YouTube - Google Chrome 
-2026-04-11 17:29:35 (11) BLACKPINK - Champion ( Color Coded Lyrics ) - YouTube - Google Chrome 
-2026-04-11 17:29:46 (11) Taylor Swift - How You Get The Girl (Taylor's Version) (Lyric Video) - YouTube - Google Chrome 
-2026-04-11 17:30:12 (11) ITZY "WANNABE" M/V ‪@ITZY‬ - YouTube - Google Chrome 
-2026-04-11 17:30:37 Help 
-2026-04-11 17:31:09 Archiver les fichiers JSON par date dans la base de données - Claude - Google Chrome 
-2026-04-11 17:31:38 Untitled 1 — LibreOffice Impress 
-2026-04-11 17:33:47 Select a Template 
-2026-04-11 17:33:49 ● monitoring.py - taskMonitor - Visual Studio Code 
-2026-04-11 17:33:51 monitoring.py - taskMonitor - Visual Studio Code 
-2026-04-11 17:34:56 ● monitoring.py - taskMonitor - Visual Studio Code 
-2026-04-11 17:34:58 monitoring.py - taskMonitor - Visual Studio Code 
-2026-04-11 17:35:51 ● monitoring.py - taskMonitor - Visual Studio Code 
-2026-04-11 17:35:55 monitoring.py - taskMonitor - Visual Studio Code 
-2026-04-11 17:36:26 TaskMonitor 
-2026-04-11 17:36:28 (11) ITZY "WANNABE" M/V ‪@ITZY‬ - YouTube - Google Chrome 
-2026-04-11 17:37:02 (11) Too Busy For Boys — WhiteRoses (Lyrics Video) - YouTube - Google Chrome 
-2026-04-11 17:37:34 (11) [MV] MOMOLAND(모모랜드) _ I'm So Hot - YouTube - Google Chrome 
-2026-04-11 17:37:40 (11) Nightcore | Sweet Little Bumblebee (lyric video) - YouTube - Google Chrome 
-2026-04-11 17:37:55 (11) How would BLACKPINK sing 'OMONA' (MIXNINE) [Color Coded Lyrics] Han|Rom|Eng - YouTube - Google Chrome 
-2026-04-11 17:38:42 Archiver les fichiers JSON par date dans la base de données - Claude - Google Chrome 
-2026-04-11 17:39:19 window_monitor.py - taskMonitor - Visual Studio Code 
-2026-04-11 17:39:29 ● window_monitor.py - taskMonitor - Visual Studio Code 
-2026-04-11 17:44:21 window_monitor.py - taskMonitor - Visual Studio Code 
-2026-04-11 17:44:27 orchestrator.py - taskMonitor - Visual Studio Code 
-2026-04-11 17:44:29 ● orchestrator.py - taskMonitor - Visual Studio Code 
-2026-04-11 17:45:03 orchestrator.py - taskMonitor - Visual Studio Code 
-2026-04-11 17:45:10 (11) How would BLACKPINK sing 'OMONA' (MIXNINE) [Color Coded Lyrics] Han|Rom|Eng - YouTube - Google Chrome 
-2026-04-11 17:45:32 (11) KATSEYE (캣츠아이) "PINKY UP" Official MV - YouTube - Google Chrome 
-2026-04-11 17:46:13 window_changes.log - taskMonitor - Visual Studio Code 
-2026-04-11 17:46:21 (11) Beginners Guide to Team Tutberidze (drama) - YouTube - Google Chrome 
-2026-04-11 17:46:44 (11) trusova being annoyed for 3 minutes straight (improved version) - YouTube - Google Chrome 
-2026-04-11 17:47:14 Recent Documents 
-2026-04-11 17:47:38 Archiver les fichiers JSON par date dans la base de données - Claude - Google Chrome 
-2026-04-11 17:49:07 orchestrator.py - taskMonitor - Visual Studio Code 
-2026-04-11 17:49:50 window_monitor.py - taskMonitor - Visual Studio Code 
-2026-04-11 17:50:51 window_changes.log - taskMonitor - Visual Studio Code 
-2026-04-11 17:56:52 (11) trusova being annoyed for 3 minutes straight (improved version) - YouTube - Google Chrome 
-2026-04-11 17:57:00 Recent Documents 
-2026-04-11 17:57:09 monitoring.py - taskMonitor - Visual Studio Code 
-2026-04-11 17:57:49 (11) CHINCHILLA - Little Girl Gone (Official Music Video) - YouTube - Google Chrome 
-2026-04-11 18:01:30 (11) XG - GRL GVNG (Official Music Video) - YouTube - Google Chrome 
-2026-04-11 18:01:42 
-2026-04-11 18:01:57 
+2026-04-13 13:20:59 PICS 
+2026-04-13 13:21:38 VLC media player 
+2026-04-13 13:21:40 UNDEFEATED · XG & VALORANT #Dance Cover.mp4 - VLC media player 
+2026-04-13 13:23:33 VLC media player 
+2026-04-13 13:23:35 UNDEFEATED · XG & VALORANT #Dance Cover.mp4 - VLC media player 
+2026-04-13 13:29:45 VLC media player 
+2026-04-13 13:29:47 UNDEFEATED · XG & VALORANT #Dance Cover.mp4 - VLC media player 
+2026-04-13 13:32:45 TaskMonitor 
+2026-04-13 13:35:41 main_window.py - taskMonitor - Visual Studio Code 
+2026-04-13 13:36:18 VLC media player 
+2026-04-13 13:36:20 UNDEFEATED · XG & VALORANT #Dance Cover.mp4 - VLC media player 
+2026-04-13 13:37:27 dashboard.py - taskMonitor - Visual Studio Code 
+2026-04-13 13:37:37 chart.py - taskMonitor - Visual Studio Code 
+2026-04-13 13:37:55 monitoring.py - taskMonitor - Visual Studio Code 
+2026-04-13 13:37:57 processing.py - taskMonitor - Visual Studio Code 
+2026-04-13 13:38:30 monitoring.py - taskMonitor - Visual Studio Code 
+2026-04-13 13:41:47 TryHackMe | Introduction to DevSecOps - Google Chrome 
+2026-04-13 13:41:49 Login | Networking Academy with Cisco - Google Chrome 
+2026-04-13 13:41:51 Configuration Docker et lancement de TaskMonitor - Claude - Google Chrome 
+2026-04-13 17:36:24 COLLECT_COMMAND_LOGS 
+2026-04-13 17:37:29 main_window.py - taskMonitor - Visual Studio Code 
+2026-04-13 17:38:22 ● main_window.py - taskMonitor - Visual Studio Code 
+2026-04-13 17:38:28 main_window.py - taskMonitor - Visual Studio Code 
+2026-04-13 17:38:50 TaskMonitor 
+2026-04-13 17:39:19 processing.py - taskMonitor - Visual Studio Code 
+2026-04-13 17:39:37 ● processing.py - taskMonitor - Visual Studio Code 
+2026-04-13 17:39:39 processing.py - taskMonitor - Visual Studio Code 
+2026-04-13 17:39:41 ● processing.py - taskMonitor - Visual Studio Code 
+2026-04-13 17:39:43 processing.py - taskMonitor - Visual Studio Code 
+2026-04-13 17:41:02 main_window.py - taskMonitor - Visual Studio Code 
+2026-04-13 17:42:37 Preview CORRECTION.md - taskMonitor - Visual Studio Code 
+2026-04-13 17:43:38 docker-compose.yml - taskMonitor - Visual Studio Code 
+2026-04-13 17:43:40 ● docker-compose.yml - taskMonitor - Visual Studio Code 
+2026-04-13 17:43:42 docker-compose.yml - taskMonitor - Visual Studio Code 
+2026-04-13 17:44:25 Preview CORRECTION.md - taskMonitor - Visual Studio Code 
+2026-04-13 17:47:14 (13) Billy Joel - Uptown Girl (Lyrics) - YouTube - Google Chrome 
+2026-04-13 17:47:18 (13) George Benson - Nothing's Gonna Change My Love For You • TopPop - YouTube - Google Chrome 
+2026-04-13 17:51:17 (13) Billy Joel - Uptown Girl (Lyrics) - YouTube - Google Chrome 
+2026-04-13 17:54:33 (13) The Police Every Breath You Take (Lyrics) - YouTube - Google Chrome 
+2026-04-13 17:58:21 (13) Foreigner - I Want to Know What Love Is (Lyrics) - YouTube - Google Chrome 
+2026-04-13 18:03:24 (13) George Michael - Careless Whisper (Official Video) - YouTube - Google Chrome 
+2026-04-13 18:06:23 (13) taylor swift how you get the girl - YouTube - Google Chrome 
+2026-04-13 18:06:27 (13) George Michael - Careless Whisper (Official Video) - YouTube - Google Chrome 
+2026-04-13 18:06:29 (13) Taylor Swift - How You Get The Girl (Taylor's Version) (Lyric Video) - YouTube - Google Chrome 
+2026-04-13 18:10:44 (13) Taylor Swift - Long Live (Taylor's Version) (Lyric Video) - YouTube - Google Chrome 
+2026-04-13 18:16:06 (13) Taylor Swift - Wi$h Li$t (Lyric Video) - YouTube - Google Chrome 
+2026-04-13 18:19:38 (13) Taylor Swift - Bejeweled (Lyric Video) - YouTube - Google Chrome 
+2026-04-13 18:22:57 (13) Taylor Swift - Miss Americana & The Heartbreak Prince (Official Audio) - YouTube - Google Chrome 
+2026-04-13 18:26:53 (13) Taylor Swift - Call It What You Want (Lyric Video) - YouTube - Google Chrome 
+2026-04-13 18:30:20 (13) Taylor Swift - Afterglow (Official Audio) - YouTube - Google Chrome 
+2026-04-13 18:31:56 Anna Shcherbakova 💓 #аннащербакова #annashcherbakova #figureskating #skating #shorts - YouTube - Google Chrome 
+2026-04-13 18:32:02 (13) Anna Shcherbakova 💓 #аннащербакова #annashcherbakova #figureskating #skating #shorts - YouTube - Google Chrome 
+2026-04-13 18:34:50 (13) Taylor Swift - Afterglow (Official Audio) - YouTube - Google Chrome 
+2026-04-13 18:35:22 (13) Anna Shcherbakova 💓 #аннащербакова #annashcherbakova #figureskating #skating #shorts - YouTube - Google Chrome 
+2026-04-13 18:35:24 (13) Whose program should be analyzed in the next video? #figureskating - YouTube - Google Chrome 
+2026-04-13 18:36:00 (13) Best graduation ranking #funny #haaha #funnyprank #ranking #graduation - YouTube - Google Chrome 
+2026-04-13 18:37:04 (13) Who deserved the Olympic gold medal in ladies singles skating at the 2022 Olympics? 🥇 - YouTube - Google Chrome 
+2026-04-13 18:38:56 (13) ✨Нереально мощный элемент на Олимпиаде 2012🔥👏🏻 #художественнаягимнастика #gimnasiaritmica - YouTube - Google Chrome 
+2026-04-13 18:39:15 (13) The “noooooooo” killed me 😂 #edm #electronicdancemusic #dj #rave #gryffin - YouTube - Google Chrome 
+2026-04-13 18:40:03 (13) Actor’s gentlemanly behavior #koreanactor #actor #ahnhyoseop #fyp #start - YouTube - Google Chrome 
+2026-04-13 18:41:02 (13) 😌💕👸 One Shoe. One Bare Foot. One Moment That Made Us Fall in LOVE With Princess Anne - YouTube - Google Chrome 
+2026-04-13 18:42:07 (13) He Feels Nothing… And That’s the Saddest Part 💔 - YouTube - Google Chrome 
+2026-04-13 18:42:24 (13) New gen energy vs OG vibes 💀 #supermodel #fashion #shorts #runway - YouTube - Google Chrome 
+2026-04-13 18:42:44 (13) She’s insane 😳🪽 @Flying_Daria #freedom #fear #performance #artist #split #circus #gymnasticsgirl - YouTube - Google Chrome 
+2026-04-13 18:43:09 (13) Jin Woo Edit ...🫠✨|| Solo Leveling || #sololeveling #jinwoo #edit #anime #fypシ゚viral - YouTube - Google Chrome 
+2026-04-13 18:43:28 (13) I prefer trusova #fypviralシ#iceskating #alexandratrusova #keşfetbeniöneçıkar #keşfet - YouTube - Google Chrome 
+2026-04-13 18:44:09 (13) Look alike cam #lookalike - YouTube - Google Chrome 
+2026-04-13 18:44:31 (13) She turned sadness into smile. A true winner. Her parents raised her well ❤️‍🩹 - YouTube - Google Chrome 
+2026-04-13 18:45:02 (13) Can hate me but fact is fact #btsarmy #bts #rm #jhope #suga - YouTube - Google Chrome 
+2026-04-13 18:45:31 (13) She Needs A Better Audience 🔥 - YouTube - Google Chrome 
+2026-04-13 18:45:33 (13) they did them dirty😭 #skating #figureskating #olympics #trending #shorts #viral #viralshorts #sports - YouTube - Google Chrome 
+2026-04-13 18:45:41 (13) bts new song - YouTube - Google Chrome 
+2026-04-13 18:45:49 (13) YouTube - Google Chrome 
+2026-04-13 18:45:51 (13) BTS (방탄소년단) '2.0' Official MV - YouTube - Google Chrome 
+2026-04-13 18:50:07 (13) They wanted her to quit 🥺 - YouTube - Google Chrome 
+2026-04-13 18:51:53 (13) anna shcherbakova - YouTube - Google Chrome 
+2026-04-13 18:52:30 deploy_docker.md - taskMonitor - Visual Studio Code 
+2026-04-13 18:52:34 Preview deploy_docker.md - taskMonitor - Visual Studio Code 
+2026-04-13 18:53:03 (13) YouTube - Google Chrome 
+2026-04-13 18:53:32 anna shcherbakova At this moment!!! Two Satanic Queens 💖 - YouTube - Google Chrome 
+2026-04-13 18:53:38 (13) anna shcherbakova At this moment!!! Two Satanic Queens 💖 - YouTube - Google Chrome 
+2026-04-13 18:53:44 TaskMonitor 
+2026-04-13 18:54:59 (13) Have you ever wondered why Eteri Tutberidze's skaters have short careers? - YouTube - Google Chrome 
+2026-04-13 18:55:42 (13) infanta Sofia 💔🥲#infantasofia #Leonor #Royalfamily #Royal #king #spain #spain #Royalfamily - YouTube - Google Chrome 
+2026-04-13 18:56:45 (13) My birthday edit (skatersxeditsx) - YouTube - Google Chrome 
+2026-04-13 18:57:05 (13) When an 8-Time Olympic Medalist Showed Up for the Parents' Race at School 🏃‍♀️🥇#shorts #viral #fyp - YouTube - Google Chrome 
+2026-04-13 18:57:25 (13) Ball Kids vs. Insects: The Last One is SAVAGE 💀🦗 - YouTube - Google Chrome 
+2026-04-13 18:57:54 (13) Proof we made the right people famous ❤️‍🩹 | #taylorswift #selenagomez #ladygaga #shorts - YouTube - Google Chrome 
+2026-04-13 18:58:30 (13) The moment real life turned into a kdrama 😭🥲 so cuteee😭 #kdrama #short #kimyoojung #varshow - YouTube - Google Chrome 
+2026-04-13 18:59:19 (13) Inside the training of China's elite Honor Guard #military #army #parade - YouTube - Google Chrome 
+2026-04-13 19:00:12 (13) Alexandra Trusova❤️ #keşfetol #figureskating #iceskating #kesfet #olympics #keşfet #keşfetol #fyp - YouTube - Google Chrome 
+2026-04-13 19:00:46 (13) First days on the job can be tough - YouTube - Google Chrome 
+2026-04-13 19:01:11 (13) That's how I met your mom 🤌🥲 #youtube #fyp #shorts #edit - YouTube - Google Chrome 
+2026-04-13 19:01:51 (13) The hardest jump in the history of figure skating #figureskating #quadaxel - YouTube - Google Chrome 
+2026-04-13 19:02:07 (13) infanta Sofia of Spain #short - YouTube - Google Chrome 
+2026-04-13 19:02:24 (13) Ranking Best I'm Just A Kid Trend#shortsviral - YouTube - Google Chrome 
+2026-04-13 19:02:48 (13) #figureskating #вращения #фигурноекатание #шоунальду #shorts #iceskating - YouTube - Google Chrome 
+2026-04-13 19:03:14 (13) She literally nailed it 😻🔥 || Cdrama 🎭 #fy #shortsfeed - YouTube - Google Chrome 
+2026-04-13 19:04:07 (13) Taylor Swift’s Secret Eras Tour Entrance 😳 - YouTube - Google Chrome 
+2026-04-13 19:04:54 New Tab - Google Chrome 
+2026-04-13 19:04:58 yarrlist - Google Search - Google Chrome 
+2026-04-13 19:05:00 yarrlist.net - Google Chrome 
+2026-04-13 19:05:02 YarrList - Ahoy, Mateys! - Google Chrome 
+2026-04-13 19:05:04 Working Free Movies and TV Shows Websites List - YarrList - Google Chrome 
+2026-04-13 19:05:12 Untitled - Google Chrome 
+2026-04-13 19:05:46 Working Free Movies and TV Shows Websites List - YarrList - Google Chrome 
+2026-04-13 19:05:48 Untitled - Google Chrome 
+2026-04-13 19:06:29 ww7.123moviesfree.net - Google Chrome 
+2026-04-13 19:08:53 ww8.123moviesfree.net/home/ - Google Chrome 
+2026-04-13 19:08:53 123Movies - Watch HD Movies Online Free | 123movie | 123 movies - Google Chrome 
+2026-04-13 19:08:57 flixhq.to - Google Chrome 
+2026-04-13 19:08:59 Watch Movies and Watch Series HD Online on FlixHQ - Google Chrome 
+2026-04-13 19:11:20 Working Free Movies and TV Shows Websites List - YarrList - Google Chrome 
+2026-04-13 19:11:21 Watch Movies and Watch Series HD Online on FlixHQ - Google Chrome 
+2026-04-13 19:11:41 Search results for 'pretty lethal' on FlixHQ - Google Chrome 
+2026-04-13 19:17:00 Desktop Icons 1 
+2026-04-13 19:17:07 (13) Taylor Swift’s Secret Eras Tour Entrance 😳 - YouTube - Google Chrome 
+2026-04-13 19:18:10 (13) Jinx - YouTube - Google Chrome 
+2026-04-13 19:18:23 (13) Jinx’s Ultimate Test 💔🔫 | Arcane Season 2 - YouTube - Google Chrome 

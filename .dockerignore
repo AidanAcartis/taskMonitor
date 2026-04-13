@@ -1,0 +1,15 @@
+MLproject_py311/
+__pycache__/
+*.pyc
+*.pyo
+.git/
+.gitignore
+*.egg-info/
+dist/
+build/
+*.log
+data/logs/
+data/exports/
+data/processed/
+data/command_log/
+data/file_log/

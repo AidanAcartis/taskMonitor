@@ -1,0 +1,44 @@
+# version: "3.9"
+
+services:
+  taskmonitor:
+    image: taskmonitor:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: taskmonitor_app
+
+    environment:
+      - DISPLAY=${DISPLAY}
+      - XAUTHORITY=/tmp/.docker.xauth
+      - VIS_MODELS_DIR=/Vis_Models
+      - MKL_THREADING_LAYER=GNU
+      - MKL_SERVICE_FORCE_INTEL=0
+      - TZ=Indian/Antananarivo
+
+    volumes:
+      # Accès X11 pour l'interface graphique
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
+      - /tmp/.docker.xauth:/tmp/.docker.xauth:rw
+      # Modèles AI (montés en lecture seule)
+      - ${VIS_MODELS_PATH}:/Vis_Models:ro
+      # Base de données SQLite (persistance entre sessions)
+      - ${HOME}/.taskmonitor:/root/.taskmonitor:rw
+      # Historique bash de l'utilisateur (monté en lecture seule pour éviter les modifications accidentelles)
+      - ${HOME}/.bash_history:/root/.bash_history:ro
+      # Logs de monitoring (wmctrl écrit ici)
+      - ./data/logs:/app/data/logs:rw
+      # Exports du processing
+      - ./data/exports:/app/data/exports:rw
+      - ./data/processed:/app/data/processed:rw
+      - ./data/command_log:/app/data/command_log:rw
+      - ./data/file_log:/app/data/file_log:rw
+
+    network_mode: host
+
+    privileged: false
+
+    stdin_open: true
+    tty: true
+
+    restart: "no"

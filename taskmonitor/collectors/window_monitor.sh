@@ -1,6 +1,6 @@
 #!/bin/bash
 export DISPLAY=:0
-export XAUTHORITY=/home/aidan/.Xauthority
+export XAUTHORITY="${XAUTHORITY:-/home/aidan/.Xauthority}"
 
 # ─────────────────────────────────────────────
 # BASE DIR (portable)

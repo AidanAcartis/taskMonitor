@@ -129,6 +129,9 @@ class MainWindow(QMainWindow):
         self.toolbar_layout.go_prev.connect(self._go_prev)
         self.toolbar_layout.go_next.connect(self._go_next)
 
+        self.page_processing.finished_processing.connect(self._reload_data)
+
+
 
     # ===== Actions =====
     def _on_start_monitoring(self):
@@ -180,3 +183,27 @@ class MainWindow(QMainWindow):
     # ===== Actions NavBar =====
     def switch_page(self, page_name: str):
         self._navigate_to(page_name, record=True)
+
+    def _reload_data(self):
+        data = load_latest_session() or {"clusters": []}
+        
+        # Reconstruire GraphStats
+        old_gs = self.stack.widget(1)
+        self.page_graphstats = GraphStats(data)
+        self.stack.removeWidget(old_gs)
+        old_gs.deleteLater()
+        self.stack.insertWidget(1, self.page_graphstats)
+
+        # Reconstruire Chart
+        old_chart = self.stack.widget(2)
+        self.page_chart = Chart(data)
+        self.stack.removeWidget(old_chart)
+        old_chart.deleteLater()
+        self.stack.insertWidget(2, self.page_chart)
+
+        # Reconstruire Dashboard
+        old_db = self.stack.widget(0)
+        self.page_dashboard = Dashboard()
+        self.stack.removeWidget(old_db)
+        old_db.deleteLater()
+        self.stack.insertWidget(0, self.page_dashboard)

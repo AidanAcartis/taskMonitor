@@ -1,169 +1,75 @@
-2026-04-11, 12:21:34, 12:21:36, 0.033, Commande, code .
-2026-04-11, 12:21:51, 12:21:53, 0.033, Commande, conda env list
-2026-04-11, 12:21:57, 12:21:59, 0.033, Commande, conda activate
-2026-04-11, 12:22:06, 12:22:08, 0.033, Commande, conda activate MLproject_py311
-2026-04-11, 12:22:10, 12:22:12, 0.033, Commande, clear
-2026-04-11, 12:22:18, 12:22:20, 0.033, Commande, python -m taskmonitor.gui.app
-2026-04-11, 12:22:21, 12:22:23, 0.033, Commande, clear
-2026-04-11, 12:22:48, 12:22:50, 0.033, Commande, export QT_PLUGIN_PATH=$VIRTUAL_ENV/lib/python3.11/site-packages/PyQt6/Qt6/plugins
-2026-04-11, 12:22:57, 12:22:59, 0.033, Commande, export QML2_IMPORT_PATH=$VIRTUAL_ENV/lib/python3.11/site-packages/PyQt6/Qt6/qml
-2026-04-11, 12:23:12, 12:23:14, 0.033, Commande, export LD_LIBRARY_PATH=$VIRTUAL_ENV/lib/python3.11/site-packages/PyQt6/Qt6/lib
-2026-04-11, 12:23:13, 12:23:15, 0.033, Commande, clear
-2026-04-11, 12:23:15, 12:23:17, 0.033, Commande, python -m taskmonitor.gui.app
-2026-04-11, 12:25:14, 12:25:16, 0.033, Commande, ls
-2026-04-11, 12:25:19, 12:25:21, 0.033, Commande, ls taskmonitor/
-2026-04-11, 12:25:34, 12:25:36, 0.033, Commande, cat taskmonitor/orchestrator.py
-2026-04-11, 12:27:34, 12:27:36, 0.033, Commande, clear
-2026-04-11, 12:27:40, 12:27:42, 0.033, Commande, ls data/exports/
-2026-04-11, 12:27:46, 12:27:48, 0.033, Commande, ls data/exports/final_output.json
-2026-04-11, 12:30:10, 12:30:12, 0.033, Commande, clear
-2026-04-11, 12:30:11, 12:30:13, 0.033, Commande, ls
-2026-04-11, 12:30:13, 12:30:15, 0.033, Commande, ls taskmonitor/
-2026-04-11, 12:30:30, 12:30:32, 0.033, Commande, ls pyproject.toml
-2026-04-11, 12:30:41, 12:30:43, 0.033, Commande, ls taskmonitor/processing/
-2026-04-11, 12:32:35, 12:32:37, 0.033, Commande, ls taskmonitor/collectors/
-2026-04-11, 12:33:09, 12:33:11, 0.033, Commande, clear
-2026-04-11, 12:33:13, 12:33:15, 0.033, Commande, ls taskmonitor/core/
-2026-04-11, 12:33:23, 12:33:25, 0.033, Commande, cat taskmonitor/core/storage.py
-2026-04-11, 12:34:05, 12:34:07, 0.033, Commande, cat taskmonitor/orchestrator.py
-2026-04-11, 12:47:55, 12:47:57, 0.033, Commande, clear
-2026-04-11, 12:47:58, 12:48:00, 0.033, Commande, ls ~/.taskmonitor/db/
-2026-04-11, 12:48:13, 12:48:15, 0.033, Commande, ls -a ~/
-2026-04-11, 12:48:22, 12:48:24, 0.033, Commande, clar
-2026-04-11, 12:48:24, 12:48:26, 0.033, Commande, clear
-2026-04-11, 12:48:36, 12:48:38, 0.033, Commande, ls ~/.taskmonitor/db/
-2026-04-11, 12:48:48, 12:48:50, 0.033, Commande, sqlite3 ~/.taskmonitor/db/taskmonitor_2026_04.db
-2026-04-11, 12:49:49, 12:49:51, 0.033, Commande, clear
-2026-04-11, 12:50:03, 12:50:05, 0.033, Commande, clear
-2026-04-11, 12:50:50, 12:50:52, 0.033, Commande, python -m taskmonitor.orchestrator process
-2026-04-11, 12:52:43, 12:52:45, 0.033, Commande, cat taskmonitor/orchestrator.py
-2026-04-11, 12:53:00, 12:53:02, 0.033, Commande, cat taskmonitor/core/storage.py
-2026-04-11, 12:53:57, 12:53:59, 0.033, Commande, clear
-2026-04-11, 12:53:59, 12:54:01, 0.033, Commande, rm ~/.taskmonitor/db/taskmonitor_2026_04.db
-2026-04-11, 12:55:02, 12:55:04, 0.033, Commande, python -m taskmonitor.orchestrator process
-2026-04-11, 12:57:52, 12:57:54, 0.033, Commande, rm ~/.taskmonitor/db/taskmonitor_2026_04.db
-2026-04-11, 12:57:54, 12:57:56, 0.033, Commande, clar
-2026-04-11, 12:57:56, 12:57:58, 0.033, Commande, clear
-2026-04-11, 12:57:59, 12:58:01, 0.033, Commande, python -m taskmonitor.orchestrator process
-2026-04-11, 13:01:05, 13:01:07, 0.033, Commande, ls -a ~/.taskmonitor/
-2026-04-11, 13:01:16, 13:01:18, 0.033, Commande, cd ~/.taskmonitor/db
-2026-04-11, 13:01:18, 13:01:20, 0.033, Commande, clear
-2026-04-11, 13:01:19, 13:01:21, 0.033, Commande, ls
-2026-04-11, 13:01:26, 13:01:28, 0.033, Commande, sqlite3 taskmonitor_2026_04.db
-2026-04-11, 13:04:20, 13:04:22, 0.033, Commande, clear
-2026-04-11, 13:07:42, 13:07:44, 0.033, Commande, rm ~/.taskmonitor/db/taskmonitor_2026_04.db
-2026-04-11, 13:08:48, 13:08:50, 0.033, Commande, python -m taskmonitor.orchestrator process
-2026-04-11, 13:09:11, 13:09:13, 0.033, Commande, cd ~/
-2026-04-11, 13:09:12, 13:09:14, 0.033, Commande, ls
-2026-04-11, 13:09:17, 13:09:19, 0.033, Commande, cd Documents/
-2026-04-11, 13:09:18, 13:09:20, 0.033, Commande, clear
-2026-04-11, 13:09:32, 13:09:34, 0.033, Commande, cd Projects/Visualization/taskMonitor
-2026-04-11, 13:09:33, 13:09:35, 0.033, Commande, clear
-2026-04-11, 13:09:36, 13:09:38, 0.033, Commande, python -m taskmonitor.orchestrator process
-2026-04-11, 13:10:34, 13:10:36, 0.033, Commande, clear
-2026-04-11, 13:10:35, 13:10:37, 0.033, Commande, python -m taskmonitor.orchestrator process
-2026-04-11, 13:15:01, 13:15:03, 0.033, Commande, cat taskmonitor/orchestrator.py
-2026-04-11, 13:15:51, 13:15:53, 0.033, Commande, cat taskmonitor/core/storage.py
-2026-04-11, 13:17:19, 13:17:21, 0.033, Commande, clear
-2026-04-11, 13:17:20, 13:17:22, 0.033, Commande, cat taskmonitor/core/storage.py
-2026-04-11, 13:17:23, 13:17:25, 0.033, Commande, clear
-2026-04-11, 13:17:26, 13:17:28, 0.033, Commande, python -m taskmonitor.orchestrator process
-2026-04-11, 13:19:16, 13:19:18, 0.033, Commande, ls -a ~/.taskmonitor/db
-2026-04-11, 13:19:22, 13:19:24, 0.033, Commande, ls -a ~/.taskmonitor/db/taskmonitor_2026_04.db
-2026-04-11, 13:19:35, 13:19:37, 0.033, Commande, sqlite3 /home/aidan/.taskmonitor/db/taskmonitor_2026_04.db
-2026-04-11, 13:23:28, 13:23:30, 0.033, Commande, rm /home/aidan/.taskmonitor/db/taskmonitor_2026_04.db
-2026-04-11, 13:23:29, 13:23:31, 0.033, Commande, clear
-2026-04-11, 13:23:37, 13:23:39, 0.033, Commande, python -m taskmonitor.orchestrator process
-2026-04-11, 13:28:14, 13:28:16, 0.033, Commande, sqlite3 /home/aidan/.taskmonitor/db/taskmonitor_2026_04.db
-2026-04-11, 13:29:44, 13:29:46, 0.033, Commande, clear
-2026-04-11, 13:29:52, 13:29:54, 0.033, Commande, python -m taskmonitor.orchestrator process
-2026-04-11, 13:31:03, 13:31:05, 0.033, Commande, sqlite3 /home/aidan/.taskmonitor/db/taskmonitor_2026_04.db
-2026-04-11, 13:31:19, 13:31:21, 0.033, Commande, ls -a ~/.taskmonitor/db/
-2026-04-11, 13:31:22, 13:31:24, 0.033, Commande, sqlite3 /home/aidan/.taskmonitor/db/taskmonitor_2026_04.db
-2026-04-11, 13:48:11, 13:48:13, 0.033, Commande, 
-2026-04-11, 13:48:15, 13:48:17, 0.033, Commande, rm /home/aidan/.taskmonitor/db/taskmonitor_2026_04.db
-2026-04-11, 13:48:22, 13:48:24, 0.033, Commande, python -m taskmonitor.orchestrator process
-2026-04-11, 13:50:42, 13:50:44, 0.033, Commande, sqlite3 /home/aidan/.taskmonitor/db/taskmonitor_2026_04.db
-2026-04-11, 13:51:08, 13:51:10, 0.033, Commande, clear
-2026-04-11, 13:51:10, 13:51:12, 0.033, Commande, python -m taskmonitor.orchestrator process
-2026-04-11, 13:52:40, 13:52:42, 0.033, Commande, clear
-2026-04-11, 13:52:42, 13:52:44, 0.033, Commande, sqlite3 /home/aidan/.taskmonitor/db/taskmonitor_2026_04.db
-2026-04-11, 14:08:39, 14:08:41, 0.033, Commande, clear
-2026-04-11, 14:08:42, 14:08:44, 0.033, Commande, rm /home/aidan/.taskmonitor/db/taskmonitor_2026_04.db
-2026-04-11, 14:08:51, 14:08:53, 0.033, Commande, ls /home/aidan/.taskmonitor/db/taskmonitor_2026_04.db
-2026-04-11, 14:08:56, 14:08:58, 0.033, Commande, clear
-2026-04-11, 14:09:02, 14:09:04, 0.033, Commande, ls /home/aidan/.taskmonitor/db/
-2026-04-11, 14:09:04, 14:09:06, 0.033, Commande, clear
-2026-04-11, 14:09:08, 14:09:10, 0.033, Commande, python -m taskmonitor.orchestrator process
-2026-04-11, 14:12:38, 14:12:40, 0.033, Commande, sqlite3 /home/aidan/.taskmonitor/db/taskmonitor_2026_04.db
-2026-04-11, 14:13:05, 14:13:07, 0.033, Commande, clear
-2026-04-11, 14:13:09, 14:13:11, 0.033, Commande, python -m taskmonitor.orchestrator process
-2026-04-11, 14:18:31, 14:18:33, 0.033, Commande, sqlite3 /home/aidan/.taskmonitor/db/taskmonitor_2026_04.db
-2026-04-11, 14:20:27, 14:20:29, 0.033, Commande, rm ~/.taskmonitor/db/taskmonitor_2026_04.db
-2026-04-11, 14:20:43, 14:20:45, 0.033, Commande, ls ~/.taskmonitor/db/
-2026-04-11, 14:20:45, 14:20:47, 0.033, Commande, clear
-2026-04-11, 14:20:46, 14:20:48, 0.033, Commande, ls ~/.taskmonitor/db/
-2026-04-11, 14:20:53, 14:20:55, 0.033, Commande, python -m taskmonitor.orchestrator process
-2026-04-11, 14:26:46, 14:26:48, 0.033, Commande, sqlite3 /home/aidan/.taskmonitor/db/taskmonitor_2026_04.db
-2026-04-11, 14:27:05, 14:27:07, 0.033, Commande, clear
-2026-04-11, 14:27:07, 14:27:09, 0.033, Commande, sqlite3 /home/aidan/.taskmonitor/db/taskmonitor_2026_04.db
-2026-04-11, 14:27:11, 14:27:13, 0.033, Commande, clear
-2026-04-11, 14:27:14, 14:27:16, 0.033, Commande, python -m taskmonitor.orchestrator process
-2026-04-11, 14:30:00, 14:30:02, 0.033, Commande, clear
-2026-04-11, 14:35:47, 14:35:49, 0.033, Commande, code .
-2026-04-11, 14:36:07, 14:36:09, 0.033, Commande, conda env list
-2026-04-11, 14:36:19, 14:36:21, 0.033, Commande, conda activate MLproject_py311
-2026-04-11, 14:36:25, 14:36:27, 0.033, Commande, clear
-2026-04-11, 14:36:52, 14:36:54, 0.033, Commande, python -m taskmonitor.orchestrator monitor
-2026-04-11, 14:39:07, 14:39:09, 0.033, Commande, clear
-2026-04-11, 14:39:12, 14:39:14, 0.033, Commande, python -m taskmonitor.orchestrator process
-2026-04-11, 14:41:56, 14:41:58, 0.033, Commande, sqlite3 /home/aidan/.taskmonitor/db/taskmonitor_2026_04.db
-2026-04-11, 14:42:15, 14:42:17, 0.033, Commande, exi
-2026-04-11, 14:42:18, 14:42:20, 0.033, Commande, exit
-2026-04-11, 14:47:59, 14:48:01, 0.033, Commande, code .
-2026-04-11, 14:48:09, 14:48:11, 0.033, Commande, conda env list
-2026-04-11, 14:48:20, 14:48:22, 0.033, Commande, conda activate MLproject_py311
-2026-04-11, 14:48:24, 14:48:26, 0.033, Commande, clear
-2026-04-11, 14:48:42, 14:48:44, 0.033, Commande, git status
-2026-04-11, 14:48:44, 14:48:46, 0.033, Commande, git add .
-2026-04-11, 14:48:46, 14:48:48, 0.033, Commande, git status
-2026-04-11, 14:48:58, 14:49:00, 0.033, Commande, git commit -m "Storage OK"
-2026-04-11, 14:48:59, 14:49:01, 0.033, Commande, clear
-2026-04-11, 14:49:01, 14:49:03, 0.033, Commande, git statsu
-2026-04-11, 14:49:04, 14:49:06, 0.033, Commande, git status
-2026-04-11, 14:49:05, 14:49:07, 0.033, Commande, clear
-2026-04-11, 14:49:38, 14:49:40, 0.033, Commande, export QT_PLUGIN_PATH=$VIRTUAL_ENV/lib/python3.11/site-packages/PyQt6/Qt6/plugins
-2026-04-11, 14:49:47, 14:49:49, 0.033, Commande, export QML2_IMPORT_PATH=$VIRTUAL_ENV/lib/python3.11/site-packages/PyQt6/Qt6/qml
-2026-04-11, 14:49:56, 14:49:58, 0.033, Commande, export LD_LIBRARY_PATH=$VIRTUAL_ENV/lib/python3.11/site-packages/PyQt6/Qt6/lib
-2026-04-11, 14:49:57, 14:49:59, 0.033, Commande, clear
-2026-04-11, 14:50:53, 14:50:55, 0.033, Commande, python -m taskmonitor.gui.app
-2026-04-11, 14:58:25, 14:58:27, 0.033, Commande, sqlite3 /home/aidan/.taskmonitor/db/taskmonitor_2026_04.db
-2026-04-11, 15:14:27, 15:14:29, 0.033, Commande, cat taskmonitor/gui/pages/graphs/heatmap_embed.py
-2026-04-11, 15:15:50, 15:15:52, 0.033, Commande, clear
-2026-04-11, 15:15:52, 15:15:54, 0.033, Commande, python -m taskmonitor.gui.app
-2026-04-11, 15:19:37, 15:19:39, 0.033, Commande, clear
-2026-04-11, 15:19:39, 15:19:41, 0.033, Commande, git status
-2026-04-11, 15:19:41, 15:19:43, 0.033, Commande, git add .
-2026-04-11, 15:19:53, 15:19:55, 0.033, Commande, git commit -m "get data from database"
-2026-04-11, 15:19:55, 15:19:57, 0.033, Commande, clear
-2026-04-11, 15:19:57, 15:19:59, 0.033, Commande, git status
-2026-04-11, 15:20:06, 15:20:08, 0.033, Commande, clear
-2026-04-11, 15:20:17, 15:20:19, 0.033, Commande, ls taskmonitor/gui/pages/
-2026-04-11, 15:20:23, 15:20:25, 0.033, Commande, ls taskmonitor/gui/pages/graph
-2026-04-11, 15:21:53, 15:21:55, 0.033, Commande, clear
-2026-04-11, 15:21:55, 15:21:57, 0.033, Commande, ls
-2026-04-11, 15:21:59, 15:22:01, 0.033, Commande, ls taskmonitor/
-2026-04-11, 15:22:32, 15:22:34, 0.033, Commande, clear
-2026-04-11, 15:22:37, 15:22:39, 0.033, Commande, ls taskmonitor/gui/
-2026-04-11, 15:22:41, 15:22:43, 0.033, Commande, ls taskmonitor/gui/pages/
-2026-04-11, 15:22:49, 15:22:51, 0.033, Commande, ls taskmonitor/gui/pages/graphs/
-2026-04-11, 15:48:41, 15:48:43, 0.033, Commande, clear
-2026-04-11, 15:48:43, 15:48:45, 0.033, Commande, python -m taskmonitor.gui.app
-2026-04-11, 15:50:18, 15:50:20, 0.033, Commande, git status
-2026-04-11, 15:50:20, 15:50:22, 0.033, Commande, git add .
-2026-04-11, 15:50:21, 15:50:23, 0.033, Commande, clear
-2026-04-11, 15:50:23, 15:50:25, 0.033, Commande, git status
-2026-04-11, 15:50:43, 15:50:45, 0.033, Commande, git commit -m "add sessionSelector"
-2026-04-11, 15:50:44, 15:50:46, 0.033, Commande, clear
-2026-04-11, 15:50:47, 15:50:49, 0.033, Commande, git status
-2026-04-11, 16:01:17, 16:01:19, 0.033, Commande, clear
+2026-04-13, 05:51:03, 05:51:05, 0.033, Commande, conda env list
+2026-04-13, 05:51:14, 05:51:16, 0.033, Commande, conda activate MLproject_py311
+2026-04-13, 05:51:17, 05:51:19, 0.033, Commande, clear
+2026-04-13, 05:51:20, 05:51:22, 0.033, Commande, code .
+2026-04-13, 06:03:19, 06:03:21, 0.033, Commande, clear
+2026-04-13, 06:03:22, 06:03:24, 0.033, Commande, pip install
+2026-04-13, 06:03:26, 06:03:28, 0.033, Commande, clear
+2026-04-13, 06:03:30, 06:03:32, 0.033, Commande, pip list
+2026-04-13, 06:30:06, 06:30:08, 0.033, Commande, clear
+2026-04-13, 06:30:07, 06:30:09, 0.033, Commande, ls
+2026-04-13, 06:30:16, 06:30:18, 0.033, Commande, ls ../Vis_Models/
+2026-04-13, 06:30:38, 06:30:40, 0.033, Commande, clear
+2026-04-13, 06:30:44, 06:30:46, 0.033, Commande, ls
+2026-04-13, 06:30:48, 06:30:50, 0.033, Commande, ls taskmonitor/
+2026-04-13, 06:30:51, 06:30:53, 0.033, Commande, ls taskmonitor/external/
+2026-04-13, 06:30:53, 06:30:55, 0.033, Commande, ls taskmonitor/external/command_desc/
+2026-04-13, 06:30:57, 06:30:59, 0.033, Commande, ls taskmonitor/external/command_desc/command_describer_project/
+2026-04-13, 06:32:17, 06:32:19, 0.033, Commande, ls taskmonitor/external/command_desc/command_describer_project/command_describer
+2026-04-13, 06:32:29, 06:32:31, 0.033, Commande, ls taskmonitor/external/command_desc/command_describer_project/cmddesc_executable/
+2026-04-13, 06:32:37, 06:32:39, 0.033, Commande, ls taskmonitor/external/command_desc/command_describer_project/dist/
+2026-04-13, 07:02:50, 07:02:52, 0.033, Commande, clear
+2026-04-13, 07:02:52, 07:02:54, 0.033, Commande, pip list
+2026-04-13, 07:41:16, 07:41:18, 0.033, Commande, clear
+2026-04-13, 07:41:23, 07:41:25, 0.033, Commande, cd ~/Documents/Projects/Visualization/taskMonitor
+2026-04-13, 07:41:39, 07:41:41, 0.033, Commande, docker build -t taskmonitor:latest .
+2026-04-13, 07:43:11, 07:43:13, 0.033, Commande, ls
+2026-04-13, 07:43:13, 07:43:15, 0.033, Commande, clear
+2026-04-13, 07:43:14, 07:43:16, 0.033, Commande, ls data/
+2026-04-13, 07:43:21, 07:43:23, 0.033, Commande, ls data/exports/
+2026-04-13, 07:43:26, 07:43:28, 0.033, Commande, ls data/processed/
+2026-04-13, 07:48:00, 07:48:02, 0.033, Commande, clear
+2026-04-13, 07:48:00, 07:48:02, 0.033, Commande, ls
+2026-04-13, 07:48:14, 07:48:16, 0.033, Commande, cat docker-compose.yml
+2026-04-13, 07:48:28, 07:48:30, 0.033, Commande, cat Dockerfile
+2026-04-13, 07:48:48, 07:48:50, 0.033, Commande, requirements_docker.txt
+2026-04-13, 07:48:54, 07:48:56, 0.033, Commande, cat requirements_docker.txt
+2026-04-13, 07:54:24, 07:54:26, 0.033, Commande, clear
+2026-04-13, 07:54:27, 07:54:29, 0.033, Commande, cat .dockerignore
+2026-04-13, 07:56:10, 07:56:12, 0.033, Commande, clear
+2026-04-13, 07:56:59, 07:57:01, 0.033, Commande, sudo apt update && sudo apt upgrade
+2026-04-13, 07:57:04, 07:57:06, 0.033, Commande, sudo apt update && sudo apt upgrade -y
+2026-04-13, 08:01:31, 08:01:33, 0.033, Commande, clear
+2026-04-13, 08:01:41, 08:01:43, 0.033, Commande, sudo apt install docker.io
+2026-04-13, 08:02:32, 08:02:34, 0.033, Commande, clear
+2026-04-13, 08:02:34, 08:02:36, 0.033, Commande, sudo systemctl start docker
+2026-04-13, 08:02:41, 08:02:43, 0.033, Commande, sudo systemctl enable docker
+2026-04-13, 08:02:50, 08:02:52, 0.033, Commande, sudo usermod -aG docker $USER
+2026-04-13, 08:03:08, 08:03:10, 0.033, Commande, newgrp docker
+2026-04-13, 08:03:16, 08:03:18, 0.033, Commande, docker --version
+2026-04-13, 08:03:24, 08:03:26, 0.033, Commande, docker ps
+2026-04-13, 08:03:46, 08:03:48, 0.033, Commande, clear
+2026-04-13, 08:04:59, 08:05:01, 0.033, Commande, conda env list
+2026-04-13, 08:05:17, 08:05:19, 0.033, Commande, conda activate MLproject_py311
+2026-04-13, 08:05:20, 08:05:22, 0.033, Commande, clear
+2026-04-13, 08:05:24, 08:05:26, 0.033, Commande, docker --version
+2026-04-13, 08:05:28, 08:05:30, 0.033, Commande, docker ps
+2026-04-13, 08:05:30, 08:05:32, 0.033, Commande, clear
+2026-04-13, 08:05:36, 08:05:38, 0.033, Commande, docker build -t taskmonitor:latest .
+2026-04-13, 08:08:01, 08:08:03, 0.033, Commande, clear
+2026-04-13, 08:08:03, 08:08:05, 0.033, Commande, docker build -t taskmonitor:latest .
+2026-04-13, 08:17:43, 08:17:45, 0.033, Commande, du -ah / 2>/dev/null | sort -rh | head -10
+2026-04-13, 08:18:33, 08:18:35, 0.033, Commande, du -ah / 2>/dev/null | sort -rh | head -10
+2026-04-13, 08:19:24, 08:19:26, 0.033, Commande, rm -rf "/home/aidan/VirtualBox VMs/Ethical-Hacker-Kali"
+2026-04-13, 08:19:35, 08:19:37, 0.033, Commande, ls "/home/aidan/VirtualBox VMs/"
+2026-04-13, 08:19:43, 08:19:45, 0.033, Commande, rm -rf "/home/aidan/VirtualBox VMs"
+2026-04-13, 08:19:45, 08:19:47, 0.033, Commande, clear
+2026-04-13, 08:19:46, 08:19:48, 0.033, Commande, rm -rf "/home/aidan/VirtualBox VMs"
+2026-04-13, 08:19:49, 08:19:51, 0.033, Commande, du -ah / 2>/dev/null | sort -rh | head -10
+2026-04-13, 08:20:46, 08:20:48, 0.033, Commande, du -ah / 2>/dev/null | sort -rh | head -20
+2026-04-13, 09:41:23, 09:41:25, 0.033, Commande, docker images | grep taskmonitor
+2026-04-13, 09:41:55, 09:41:57, 0.033, Commande, chmod +x run_taskmonitor.sh
+2026-04-13, 09:41:57, 09:41:59, 0.033, Commande, clear
+2026-04-13, 09:44:20, 09:44:22, 0.033, Commande, VIS_MODELS_PATH=~/Documents/Projects/Visualization/Vis_Models ./run_taskmonitor.sh
+2026-04-13, 09:44:52, 09:44:54, 0.033, Commande, cat run_taskmonitor.sh
+2026-04-13, 09:44:57, 09:44:59, 0.033, Commande, clear

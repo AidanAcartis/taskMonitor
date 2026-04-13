@@ -44,6 +44,8 @@ class _ProcessingThread(QThread):
 
 
 class ProcessingPage(QWidget):
+    finished_processing = pyqtSignal()
+
     def __init__(self, parent=None):
         super().__init__(parent)
         self._thread = None
@@ -124,6 +126,7 @@ class ProcessingPage(QWidget):
     def _on_ok(self):
         self._status.setText("✔ Completed")
         self._status.setStyleSheet("font-size: 12px; color: #26a641;")
+        self.finished_processing.emit()
         self._btn_run.setEnabled(True)
 
     def _on_err(self, code: int):

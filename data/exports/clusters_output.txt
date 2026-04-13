@@ -1,138 +1,225 @@
 ============================================================
 TASK CLUSTERING REPORT
 ============================================================
-Total tasks          : 72
-Number of clusters      : 14
-Final silhouette       : 0.242
-Final average cohesion : 0.343
+Total tasks          : 127
+Number of clusters      : 22
+Final silhouette       : 0.220
+Final average cohesion : 0.334
 
 ────────────────────────────────────────────────────────────
-Cluster 0  |  5 task(s)  |  cohesion = 0.258
+Cluster 0  |  11 task(s)  |  cohesion = 0.309
 ────────────────────────────────────────────────────────────
-  • cd documents/, command, executed in terminal, used to go to the specified directory in documents/
-  • cd ~/, command, executed in terminal, used to go to the specified directory in ~/
+  • google chrome, application, used to watch (13) taylor swift - miss americana & the heartbreak prince (official audio) - youtube
+  • google chrome, application, used to watch (13) bts new song - youtube
+  • google chrome, application, used to watch (13) taylor swift - how you get the girl (taylor's version) (lyric video) - youtube
+  • google chrome, application, used to watch (13) taylor swift how you get the girl - youtube
+  • google chrome, application, used to watch (13) taylor swift - call it what you want (lyric video) - youtube
+  • google chrome, application, used to watch (13) taylor swift - afterglow (official audio) - youtube
+  • google chrome, application, used to watch (13) taylor swift - long live (taylor's version) (lyric video) - youtube
+  • google chrome, application, used to watch (13) taylor swift - wi$h li$t (lyric video) - youtube
+  • google chrome, application, used to watch (13) taylor swift - bejeweled (lyric video) - youtube
+  • google chrome, application, used to watch (13) taylor swift’s secret eras tour entrance 😳 - youtube
+  • google chrome, application, used to watch (13) george michael - careless whisper (official video) - youtube
+
+────────────────────────────────────────────────────────────
+Cluster 1  |  6 task(s)  |  cohesion = 0.348
+────────────────────────────────────────────────────────────
   • ls, command, executed in terminal, used to list directory contents
-  • git add ., command, executed in terminal, used to stage all changes in the current directory for the next commit
-  • ls pyproject.toml, command, executed in terminal, used to list directory contents with the pyproject.toml file which is a toml document, toml configuration, it serves as a py project.
-
-────────────────────────────────────────────────────────────
-Cluster 1  |  11 task(s)  |  cohesion = 0.206
-────────────────────────────────────────────────────────────
-  • ls taskmonitor/, command, executed in terminal, used to list directory contents in taskmonitor/
-  • cd ~/.taskmonitor/db, command, executed in terminal, used to go to the specified directory in ~/.taskmonitor/db
-  • ls taskmonitor/collectors/, command, executed in terminal, used to list directory contents in taskmonitor/collectors/
-  • ls /home/aidan/.taskmonitor/db/, command, executed in terminal, used to list directory contents in /home/aidan/.taskmonitor/db/
-  • ls /home/aidan/.taskmonitor/db/taskmonitor_2026_04.db, command, executed in terminal, used to list directory contents with the /home/aidan/.taskmonitor/db/taskmonitor_2026_04.db file which is a database file, it serves as a task monitor for 202604.
-  • ls ~/.taskmonitor/db/, command, executed in terminal, used to list directory contents in ~/.taskmonitor/db/
-  • ls taskmonitor/core/, command, executed in terminal, used to list directory contents in taskmonitor/core/
-  • ls taskmonitor/gui/pages/, command, executed in terminal, used to list directory contents in taskmonitor/gui/pages/
-  • ls taskmonitor/gui/, command, executed in terminal, used to list directory contents in taskmonitor/gui/
-  • ls taskmonitor/processing/, command, executed in terminal, used to list directory contents in taskmonitor/processing/
-  • cat taskmonitor/core/storage.py, command, executed in terminal, used to print the contents of a file to `stdout` with the taskmonitor/core/storage.py file which is a python 3 script, text files, it stores data for storage purposes.
-
-────────────────────────────────────────────────────────────
-Cluster 2  |  7 task(s)  |  cohesion = 0.236
-────────────────────────────────────────────────────────────
-  • taskmonitor, application, used by the user
-  • sqlite3 ~/.taskmonitor/db/taskmonitor_2026_04.db, command, executed in terminal, used to start an interactive shell with a new database with the ~/.taskmonitor/db/taskmonitor_2026_04.db file which is a database file, it serves as a task monitor for 202604.
-  • python -m taskmonitor.orchestrator process, command, executed in terminal, used to run the script of the specified library module + python module 'taskmonitor.orchestrator' with the taskmonitor.orchestrator file which is a it monitors the status of tasks.
-  • sqlite3 /home/aidan/.taskmonitor/db/taskmonitor_2026_04.db, command, executed in terminal, used to start an interactive shell with a new database with the /home/aidan/.taskmonitor/db/taskmonitor_2026_04.db file which is a database file, it serves as a task monitor for 202604.
-  • sqlite3 taskmonitor_2026_04.db, command, executed in terminal, used to start an interactive shell with a new database with the taskmonitor_2026_04.db file which is a database file, it serves as a task monitor for 202604.
-  • python -m taskmonitor.gui.app, command, executed in terminal, used to run the script of the specified library module + website / domain 'taskmonitor.gui.app' with the taskmonitor.gui.app file which is a it provides a task monitoring tool., graphical user interface
-  • python -m taskmonitor.orchestrator monitor, command, executed in terminal, used to run the script of the specified library module + python module 'taskmonitor.orchestrator' with the taskmonitor.orchestrator file which is a it monitors the status of tasks.
-
-────────────────────────────────────────────────────────────
-Cluster 3  |  3 task(s)  |  cohesion = 0.354
-────────────────────────────────────────────────────────────
-  • ls data/exports/final_output.json, command, executed in terminal, used to list directory contents with the data/exports/final_output.json file which is a json schema, json data, it serves as a final output for a project., data exchange format
+  • ls data/, command, executed in terminal, used to list directory contents in data/
   • ls data/exports/, command, executed in terminal, used to list directory contents in data/exports/
-  • data_command.txt, file, opened with visual studio code, contains data related to plain text document, text files, it serves as a data command.
+  • ls data/processed/, command, executed in terminal, used to list directory contents in data/processed/
+  • cat .dockerignore, command, executed in terminal, used to print the contents of a file to `stdout` with the .dockerignore file which is a it is used for storing information related to a file.
+  • ls ../vis_models/, command, executed in terminal, used to list directory contents in ../vis_models/
 
 ────────────────────────────────────────────────────────────
-Cluster 4  |  7 task(s)  |  cohesion = 0.242
+Cluster 2  |  2 task(s)  |  cohesion = 0.057
 ────────────────────────────────────────────────────────────
-  • ls -a ~/.taskmonitor/db/taskmonitor_2026_04.db, command, executed in terminal, used to list all files, including hidden files with the ~/.taskmonitor/db/taskmonitor_2026_04.db file which is a database file, it serves as a task monitor for 202604.
-  • ls -a ~/.taskmonitor/db/, command, executed in terminal, used to list all files, including hidden files in ~/.taskmonitor/db/
-  • ls -a ~/.taskmonitor/db, command, executed in terminal, used to list all files, including hidden files in ~/.taskmonitor/db
-  • ls -a ~/, command, executed in terminal, used to list all files, including hidden files in ~/
-  • rm ~/.taskmonitor/db/taskmonitor_2026_04.db, command, executed in terminal, used to remove specific files with the ~/.taskmonitor/db/taskmonitor_2026_04.db file which is a database file, it serves as a task monitor for 202604.
-  • ls -a ~/.taskmonitor/, command, executed in terminal, used to list all files, including hidden files with the ~/.taskmonitor/ file
-  • rm /home/aidan/.taskmonitor/db/taskmonitor_2026_04.db, command, executed in terminal, used to remove specific files with the /home/aidan/.taskmonitor/db/taskmonitor_2026_04.db file which is a database file, it serves as a task monitor for 202604.
+  • google chrome, application, used to checked out yarrlist - google search
+  • google chrome, application, used to checked out yarrlist - ahoy, mateys!
 
 ────────────────────────────────────────────────────────────
-Cluster 5  |  3 task(s)  |  cohesion = 0.169
+Cluster 3  |  9 task(s)  |  cohesion = 0.412
 ────────────────────────────────────────────────────────────
-  • ls taskmonitor/gui/pages/graph, command, executed in terminal, used to list directory contents in taskmonitor/gui/pages/graph
-  • ls taskmonitor/gui/pages/graphs/, command, executed in terminal, used to list directory contents in taskmonitor/gui/pages/graphs/
-  • cd projects/visualization/taskmonitor, command, executed in terminal, used to go to the specified directory in projects/visualization/taskmonitor
+  • google chrome, application, used to watch (13) anna shcherbakova 💓 #аннащербакова #annashcherbakova #figureskating #skating #shorts - youtube
+  • google chrome, application, used to watch anna shcherbakova 💓 #аннащербакова #annashcherbakova #figureskating #skating #shorts - youtube
+  • google chrome, application, used to watch (13) the hardest jump in the history of figure skating #figureskating #quadaxel - youtube
+  • google chrome, application, used to watch (13) #figureskating #вращения #фигурноекатание #шоунальду #shorts #iceskating - youtube
+  • google chrome, application, used to watch (13) when an 8-time olympic medalist showed up for the parents' race at school 🏃‍♀️🥇#shorts #viral #fyp - youtube
+  • google chrome, application, used to watch (13) they did them dirty😭 #skating #figureskating #olympics #trending #shorts #viral #viralshorts #sports - youtube
+  • google chrome, application, used to watch (13) who deserved the olympic gold medal in ladies singles skating at the 2022 olympics? 🥇 - youtube
+  • google chrome, application, used to watch (13) have you ever wondered why eteri tutberidze's skaters have short careers? - youtube
+  • google chrome, application, used to watch (13) my birthday edit (skatersxeditsx) - youtube
 
 ────────────────────────────────────────────────────────────
-Cluster 6  |  3 task(s)  |  cohesion = 0.334
+Cluster 4  |  3 task(s)  |  cohesion = 0.413
 ────────────────────────────────────────────────────────────
-  • conda activate mlproject_py311, command, executed in terminal, used to activate an environment
-  • conda activate, command, executed in terminal, used to activate an environment
-  • conda env list, command, executed in terminal
-
-────────────────────────────────────────────────────────────
-Cluster 7  |  4 task(s)  |  cohesion = 0.372
-────────────────────────────────────────────────────────────
-  • git commit -m storage ok, command, executed in terminal, used to commits staged changes to the local repository with a message
-  • git commit -m get data from database, command, executed in terminal, used to commits staged changes to the local repository with a message
-  • git status, command, executed in terminal, used to view the status of the local repository
-  • git commit -m add sessionselector, command, executed in terminal, used to commits staged changes to the local repository with a message
-
-────────────────────────────────────────────────────────────
-Cluster 8  |  4 task(s)  |  cohesion = 0.487
-────────────────────────────────────────────────────────────
-  • window_monitor.py, file, opened with visual studio code, contains data related to python 3 script, text files, it monitors the performance of windows.
-  • monitoring.py, file, opened with visual studio code, contains data related to python 3 script, text files, it monitors the performance or performance of a system., monitoring application
-  • git statsu, command, executed in terminal
+  • dashboard.py, file, opened with visual studio code, contains data related to python 3 script, text files, it serves as a dashboard for users.
+  • chart.py, file, opened with visual studio code, contains data related to python 3 script, text files, it serves as a chart for a project.
   • main_window.py, file, opened with visual studio code, contains data related to python 3 script, text files, it serves as a main window.
 
 ────────────────────────────────────────────────────────────
-Cluster 9  |  3 task(s)  |  cohesion = 0.375
+Cluster 5  |  4 task(s)  |  cohesion = 0.303
 ────────────────────────────────────────────────────────────
-  • exi, command, executed in terminal
-  • clar, command, executed in terminal
+  • cat run_taskmonitor.sh, command, executed in terminal, used to print the contents of a file to `stdout` with the run_taskmonitor.sh file which is a shell script, it monitors run tasks., sh
+  • vis_models_path=~/documents/projects/visualization/vis_models ./run_taskmonitor.sh, command, executed in terminal, used to run the script './run_taskmonitor.sh' with the ./run_taskmonitor.sh file which is a shell script, it monitors run tasks., sh
+  • cd ~/documents/projects/visualization/taskmonitor, command, executed in terminal, used to go to the specified directory in ~/documents/projects/visualization/taskmonitor
+  • taskmonitor, application, used by the user
+
+────────────────────────────────────────────────────────────
+Cluster 6  |  3 task(s)  |  cohesion = 0.317
+────────────────────────────────────────────────────────────
+  • google chrome, application, used to watch (13) she’s insane 😳🪽 @flying_daria #freedom #fear #performance #artist #split #circus #gymnasticsgirl - youtube
+  • google chrome, application, used to watch anna shcherbakova at this moment!!! two satanic queens 💖 - youtube
+  • google chrome, application, used to watch (13) anna shcherbakova at this moment!!! two satanic queens 💖 - youtube
+
+────────────────────────────────────────────────────────────
+Cluster 7  |  3 task(s)  |  cohesion = 0.367
+────────────────────────────────────────────────────────────
+  • google chrome, application, used to watch (13) she literally nailed it 😻🔥 || cdrama 🎭 #fy #shortsfeed - youtube
+  • google chrome, application, used to watch (13) that's how i met your mom 🤌🥲 #youtube #fyp #shorts #edit - youtube
+  • google chrome, application, used to watch (13) ranking best i'm just a kid trend#shortsviral - youtube
+
+────────────────────────────────────────────────────────────
+Cluster 8  |  3 task(s)  |  cohesion = 0.313
+────────────────────────────────────────────────────────────
+  • rm -rf /home/aidan/virtualbox vms, command, executed in terminal, used to remove specific files and directories recursively + remove specific files ignoring nonexistent ones in /home/aidan/virtualbox
+  • rm -rf /home/aidan/virtualbox vms/ethical-hacker-kali, command, executed in terminal, used to remove specific files and directories recursively + remove specific files ignoring nonexistent ones in /home/aidan/virtualbox and in vms/ethical-hacker-kali
+  • ls /home/aidan/virtualbox vms/, command, executed in terminal, used to list directory contents in /home/aidan/virtualbox and in vms/
+
+────────────────────────────────────────────────────────────
+Cluster 9  |  10 task(s)  |  cohesion = 0.306
+────────────────────────────────────────────────────────────
+  • newgrp docker, command, executed in terminal
+  • docker --version, command, executed in terminal
+  • cat docker-compose.yml, command, executed in terminal, used to print the contents of a file to `stdout` with the docker-compose.yml file which is a yaml document, yaml configuration, it serves as a docker-compose., container tool, container management software
+  • cat dockerfile, command, executed in terminal
+  • docker ps, command, executed in terminal
+  • sudo apt install docker.io, command, executed in terminal, used to install packages + website / domain 'docker.io' with the docker.io file which is a it serves as a docker for a system., container management software
+  • deploy_docker.md, file, opened with visual studio code, contains data related to markdown document, text files, it serves as a deployment document.
+  • sudo usermod -ag docker $user, command, executed in terminal
+  • docker-compose.yml, file, opened with visual studio code, contains data related to yaml document, yaml configuration, it serves as a docker-compose., container tool, container management software
+  • docker build -t taskmonitor:latest ., command, executed in terminal, used to option to tag the resulting docker image with a name and optionally a version
+
+────────────────────────────────────────────────────────────
+Cluster 10  |  5 task(s)  |  cohesion = 0.357
+────────────────────────────────────────────────────────────
+  • ww7.123moviesfree.net, file, opened with google chrome, contains data related to it contains information about ww7.123 movies.
+  • google chrome, application, used to checked out working free movies and tv shows websites list - yarrlist
+  • google chrome, application, used to checked out 123movies - watch hd movies online free | 123movie | 123 movies
+  • google chrome, application, used to checked out watch movies and watch series hd online on flixhq
+  • google chrome, application, used to checked out ww8.123moviesfree.net/home/
+
+────────────────────────────────────────────────────────────
+Cluster 11  |  12 task(s)  |  cohesion = 0.459
+────────────────────────────────────────────────────────────
+  • google chrome, application, used to watch (13) bts (방탄소년단) '2.0' official mv - youtube
+  • google chrome, application, used to watch (13) anna shcherbakova - youtube
+  • google chrome, application, used to watch (13) jinx - youtube
+  • google chrome, application, used to watch (13) whose program should be analyzed in the next video? #figureskating - youtube
+  • google chrome, application, used to watch (13) youtube
+  • google chrome, application, used to watch (13) ✨нереально мощный элемент на олимпиаде 2012🔥👏🏻 #художественнаягимнастика #gimnasiaritmica - youtube
+  • google chrome, application, used to watch (13) she needs a better audience 🔥 - youtube
+  • google chrome, application, used to watch (13) best graduation ranking #funny #haaha #funnyprank #ranking #graduation - youtube
+  • google chrome, application, used to watch (13) look alike cam #lookalike - youtube
+  • google chrome, application, used to watch (13) first days on the job can be tough - youtube
+  • google chrome, application, used to watch (13) the moment real life turned into a kdrama 😭🥲 so cuteee😭 #kdrama #short #kimyoojung #varshow - youtube
+  • google chrome, application, used to watch (13) they wanted her to quit 🥺 - youtube
+
+────────────────────────────────────────────────────────────
+Cluster 12  |  8 task(s)  |  cohesion = 0.230
+────────────────────────────────────────────────────────────
+  • ls taskmonitor/external/command_desc/command_describer_project/cmddesc_executable/, command, executed in terminal, used to list directory contents in taskmonitor/external/command_desc/command_describer_project/cmddesc_executable/
+  • ls taskmonitor/external/, command, executed in terminal, used to list directory contents in taskmonitor/external/
+  • ls taskmonitor/external/command_desc/command_describer_project/dist/, command, executed in terminal, used to list directory contents in taskmonitor/external/command_desc/command_describer_project/dist/
+  • ls taskmonitor/external/command_desc/command_describer_project/, command, executed in terminal, used to list directory contents in taskmonitor/external/command_desc/command_describer_project/
+  • ls taskmonitor/external/command_desc/command_describer_project/command_describer, command, executed in terminal, used to list directory contents in taskmonitor/external/command_desc/command_describer_project/command_describer
+  • ls taskmonitor/, command, executed in terminal, used to list directory contents in taskmonitor/
+  • chmod +x run_taskmonitor.sh, command, executed in terminal, used to give the [u]ser who owns a file the right to e[x]ecute it with the run_taskmonitor.sh file which is a shell script, it monitors run tasks., sh
+  • ls taskmonitor/external/command_desc/, command, executed in terminal, used to list directory contents in taskmonitor/external/command_desc/
+
+────────────────────────────────────────────────────────────
+Cluster 13  |  4 task(s)  |  cohesion = 0.270
+────────────────────────────────────────────────────────────
+  • sudo apt update && sudo apt upgrade, command, executed in terminal, used to update list of available packages |
+  • pip install, command, executed in terminal, used to install a package (see `pip install` for more install examples)
+  • sudo apt update && sudo apt upgrade -y, command, executed in terminal, used to update list of available packages |
+  • pip list, command, executed in terminal, used to list installed packages
+
+────────────────────────────────────────────────────────────
+Cluster 14  |  2 task(s)  |  cohesion = 0.325
+────────────────────────────────────────────────────────────
+  • google chrome, application, used to watch (13) alexandra trusova❤️ #keşfetol #figureskating #iceskating #kesfet #olympics #keşfet #keşfetol #fyp - youtube
+  • google chrome, application, used to watch (13) i prefer trusova #fypviralシ#iceskating #alexandratrusova #keşfetbeniöneçıkar #keşfet - youtube
+
+────────────────────────────────────────────────────────────
+Cluster 15  |  3 task(s)  |  cohesion = 0.404
+────────────────────────────────────────────────────────────
+  • google chrome, application, used to watch (13) foreigner - i want to know what love is (lyrics) - youtube
+  • google chrome, application, used to watch (13) billy joel - uptown girl (lyrics) - youtube
+  • google chrome, application, used to watch (13) george benson - nothing's gonna change my love for you • toppop - youtube
+
+────────────────────────────────────────────────────────────
+Cluster 16  |  2 task(s)  |  cohesion = 0.276
+────────────────────────────────────────────────────────────
+  • google chrome, application, used to watch (13) infanta sofia of spain #short - youtube
+  • google chrome, application, used to watch (13) infanta sofia 💔🥲#infantasofia #leonor #royalfamily #royal #king #spain #spain #royalfamily - youtube
+
+────────────────────────────────────────────────────────────
+Cluster 17  |  2 task(s)  |  cohesion = 0.128
+────────────────────────────────────────────────────────────
+  • cat requirements_docker.txt, command, executed in terminal, used to print the contents of a file to `stdout` with the requirements_docker.txt file which is a plain text document, text files, it serves as a reference for the requirements document.
+  • requirements_docker.txt, command, executed in terminal
+
+────────────────────────────────────────────────────────────
+Cluster 18  |  2 task(s)  |  cohesion = 0.000
+────────────────────────────────────────────────────────────
+  • du -ah / 2>/dev/null | sort -rh | head -20, command, executed in terminal, used to write counts for all files, not just directories --apparent-size print apparent sizes rather than device usage; although the apparent size is usually smaller, it may be larger due to holes in ('sparse') files, internal fragmentation, indirect blocks, and the like + list the sizes of a directory and any subdirectories, in human-readable form (i.e. auto-selecting the appropriate unit for each size) | sort a file in descending order + compare human readable numbers (e.g., 2k 1g) in / and in 2>/dev/null
+  • du -ah / 2>/dev/null | sort -rh | head -10, command, executed in terminal, used to write counts for all files, not just directories --apparent-size print apparent sizes rather than device usage; although the apparent size is usually smaller, it may be larger due to holes in ('sparse') files, internal fragmentation, indirect blocks, and the like + list the sizes of a directory and any subdirectories, in human-readable form (i.e. auto-selecting the appropriate unit for each size) | sort a file in descending order + compare human readable numbers (e.g., 2k 1g) in / and in 2>/dev/null
+
+────────────────────────────────────────────────────────────
+Cluster 19  |  2 task(s)  |  cohesion = 0.442
+────────────────────────────────────────────────────────────
+  • google chrome, application, used to watch (13) she turned sadness into smile. a true winner. her parents raised her well ❤️‍🩹 - youtube
+  • google chrome, application, used to watch (13) he feels nothing… and that’s the saddest part 💔 - youtube
+
+────────────────────────────────────────────────────────────
+Cluster 20  |  2 task(s)  |  cohesion = 0.438
+────────────────────────────────────────────────────────────
+  • conda env list, command, executed in terminal
+  • conda activate mlproject_py311, command, executed in terminal, used to activate an environment
+
+────────────────────────────────────────────────────────────
+Other small tasks  |  29 task(s)  |  cohesion = 0.876
+────────────────────────────────────────────────────────────
+  • docker images | grep taskmonitor, command, executed in terminal, used to display the list of already downloaded images
+  • google chrome, application, used to watch (13) the police every breath you take (lyrics) - youtube
+  • google chrome, application, used to watch (13) jin woo edit ...🫠✨|| solo leveling || #sololeveling #jinwoo #edit #anime #fypシ゚viral - youtube
+  • google chrome, application, used to watch (13) actor’s gentlemanly behavior #koreanactor #actor #ahnhyoseop #fyp #start - youtube
+  • google chrome, application, used to watch (13) proof we made the right people famous ❤️‍🩹 | #taylorswift #selenagomez #ladygaga #shorts - youtube
+  • google chrome, application, used to watch (13) can hate me but fact is fact #btsarmy #bts #rm #jhope #suga - youtube
+  • google chrome, application, used to watch (13) the “noooooooo” killed me 😂 #edm #electronicdancemusic #dj #rave #gryffin - youtube
+  • google chrome, application, used to watch (13) 😌💕👸 one shoe. one bare foot. one moment that made us fall in love with princess anne - youtube
+  • google chrome, application, used to checked out login | networking academy with cisco
+  • google chrome, application, used to watch (13) inside the training of china's elite honor guard #military #army #parade - youtube
+  • flixhq.to, file, opened with google chrome, contains data related to it serves as a database for flixhq.
+  • yarrlist.net, file, opened with google chrome, contains data related to a list of items related to a project.
   • code ., command, executed in terminal, used to start visual studio code
-
-────────────────────────────────────────────────────────────
-Cluster 10  |  3 task(s)  |  cohesion = 0.334
-────────────────────────────────────────────────────────────
-  • export qml2_import_path=$virtual_env/lib/python3.11/site-packages/pyqt6/qt6/qml, command, executed in terminal, used to set an environment variable in qml2_import_path=$virtual_env/lib/python3.11/site-packages/pyqt6/qt6/qml
-  • export qt_plugin_path=$virtual_env/lib/python3.11/site-packages/pyqt6/qt6/plugins, command, executed in terminal, used to set an environment variable in qt_plugin_path=$virtual_env/lib/python3.11/site-packages/pyqt6/qt6/plugins
-  • export ld_library_path=$virtual_env/lib/python3.11/site-packages/pyqt6/qt6/lib, command, executed in terminal, used to set an environment variable in ld_library_path=$virtual_env/lib/python3.11/site-packages/pyqt6/qt6/lib
-
-────────────────────────────────────────────────────────────
-Cluster 11  |  2 task(s)  |  cohesion = 0.138
-────────────────────────────────────────────────────────────
-  • orchestrator.py, file, opened with visual studio code, contains data related to python 3 script, text files, it is designed to assist with orchestrating tasks.
-  • cat taskmonitor/orchestrator.py, command, executed in terminal, used to print the contents of a file to `stdout` with the taskmonitor/orchestrator.py file which is a python 3 script, text files, it is designed to assist with orchestrating tasks.
-
-────────────────────────────────────────────────────────────
-Cluster 12  |  2 task(s)  |  cohesion = 0.436
-────────────────────────────────────────────────────────────
-  • google chrome, application, used by the user
-  • recent documents, application, used by the user
-
-────────────────────────────────────────────────────────────
-Other small tasks  |  15 task(s)  |  cohesion = 0.859
-────────────────────────────────────────────────────────────
-  • google chrome, application, used to checked out new tab
-  • google chrome, application, used to checked out history
-  • google chrome, application, used to checked out recherche google
+  • vlc media player, application, used by the user
+  • undefeated · xg & valorant #dance cover.mp4, file, opened with vlc media player, contains data related to mpeg-4 video, video files, it contains a cover for xg & valorant #dance.
   • clear, command, executed in terminal, used to clear the screen
-  • window_changes.log, file, opened with visual studio code, contains data related to application log, text files, it contains changes in window settings.
-  • google chrome, application, used to watch (11) how would blackpink sing 'omona' (mixnine) [color coded lyrics] han|rom|eng - youtube
-  • google chrome, application, used to watch (11) itzy wannabe m/v ‪@itzy‬ - youtube
-  • google chrome, application, used to watch (11) heartsteel – paranoia ft. aekhyun, tobi lou, øzi et cal scruby (clip officiel) - youtube
-  • oracle virtualbox manager, application, used by the user
-  • google chrome, application, used to checked out ethical hacker
-  • google chrome, application, used to checked out tryhackme.com/room/introductiontodevsecops
-  • exit, command, executed in terminal, used to exit with the exit status of the most recently executed command
-  • cat taskmonitor/gui/pages/graphs/heatmap_embed.py, command, executed in terminal, used to print the contents of a file to `stdout` with the taskmonitor/gui/pages/graphs/heatmap_embed.py file which is a python 3 script, text files, it serves as a template for a heatmap diagram., graphical user interface
-  • google chrome, application, used to checked out archiver les fichiers json par date dans la base de données - claude
-  • cisco packet tracer, application, used by the user
+  • preview correction.md, file, opened with visual studio code, contains data related to markdown document, text files, it serves as a preview for a project., image and document viewing software
+  • google chrome, application, used to checked out new tab
+  • desktop icons 1, application, used by the user
+  • pics, application, used by the user
+  • google chrome, application, used to checked out untitled
+  • google chrome, application, used to checked out search results for 'pretty lethal' on flixhq
+  • google chrome, application, used to checked out tryhackme | introduction to devsecops
+  • google chrome, application, used to watch (13) ball kids vs. insects: the last one is savage 💀🦗 - youtube
+  • monitoring.py, file, opened with visual studio code, contains data related to python 3 script, text files, it monitors the performance or performance of a system., monitoring application
+  • processing.py, file, opened with visual studio code, contains data related to python 3 script, text files, it contains data related to processing processes.
+  • google chrome, application, used to watch (13) new gen energy vs og vibes 💀 #supermodel #fashion #shorts #runway - youtube
+  • sudo systemctl enable docker, command, executed in terminal, used to enable/disable a unit to be started on bootup
+  • sudo systemctl start docker, command, executed in terminal, used to start/stop/restart/reload/show the status a service
 
 ============================================================
 END OF REPORT

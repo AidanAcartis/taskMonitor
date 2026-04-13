@@ -1,3 +1,4 @@
+import os
 from pathlib import Path
 import torch
 import torch.nn as nn
@@ -52,7 +53,12 @@ NORMALIZED_EVENTS_FILE = PROCESSED_DIR / "events_normalized.csv"
 # ─────────────────────────────────────────────
 # MODELS / AI
 # ─────────────────────────────────────────────
-MODELS_DIR = BASE_DIR.parent / "Vis_Models"
+# MODELS_DIR = BASE_DIR.parent / "Vis_Models"
+MODELS_DIR = Path(os.environ.get(
+    "VIS_MODELS_DIR",
+    str(BASE_DIR.parent / "Vis_Models")
+))
+
 GEN_DESC_MODEL_DIR = MODELS_DIR / "Gen_Desc_Model" / "full_finetuned"
 
 # ─────────────────────────────────────────────
