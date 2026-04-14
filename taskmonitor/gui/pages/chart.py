@@ -1,7 +1,9 @@
 from PyQt6.QtWidgets import (
     QWidget, QVBoxLayout, QHBoxLayout, QLabel,
     QComboBox, QScrollArea, QTableWidget, QTableWidgetItem, QHeaderView,
+    QDialog, QTextEdit, QPushButton, QDialogButtonBox
 )
+
 from PyQt6.QtCore import Qt
 import pyqtgraph as pg
 from taskmonitor.gui.widgets.session_selector import SessionSelector
@@ -200,7 +202,7 @@ class Chart(QWidget):
 
     def _build_table(self) -> QTableWidget:
         columns = ["ID", "Intention", "Start", "End",
-           "Active duration (h)", "Events", "Cohesion", "Apps"]
+                "Active duration (h)", "Events", "Cohesion", "Apps", "Items"]
         clusters = self.clusters
         table = QTableWidget(len(clusters), len(columns))
         table.setHorizontalHeaderLabels(columns)
@@ -264,9 +266,81 @@ class Chart(QWidget):
                     ))
                 table.setItem(row, col, item)
 
+            # ── bouton Items ──────────────────────────────────────────────────────
+            task_items = c.get("task_items", [])
+            btn = QPushButton(f"View ({len(task_items)})")
+            btn.setFixedHeight(22)
+            btn.setStyleSheet("""
+                QPushButton {
+                    color: #aaa; background: #2a2a2a;
+                    border: 1px solid #444; border-radius: 3px;
+                    padding: 0 6px; font-size: 11px;
+                }
+                QPushButton:hover { background: #333; color: #fff; }
+            """)
+            btn.clicked.connect(lambda _, cl=c: self._show_items_popup(cl))
+            table.setCellWidget(row, 8, btn)
+
         table.resizeColumnsToContents()
         table.horizontalHeader().setSectionResizeMode(1, QHeaderView.ResizeMode.Stretch)
+        table.setColumnWidth(8, 90)
         return table
+
+    def _show_items_popup(self, cluster: dict):
+        dialog = QDialog(self)
+        dialog.setWindowTitle(f"{cluster['cluster_id']} — Items")
+        dialog.setMinimumSize(600, 400)
+        dialog.setStyleSheet("background-color: #1a1a1a; color: #ccc;")
+
+        layout = QVBoxLayout(dialog)
+        layout.setContentsMargins(12, 12, 12, 12)
+        layout.setSpacing(8)
+
+        # ── titre ──────────────────────────────────────────────────────────────
+        title = QLabel(cluster.get("global_task_intention", "—"))
+        title.setStyleSheet("font-size: 13px; font-weight: 500; color: #ddd;")
+        title.setWordWrap(True)
+        layout.addWidget(title)
+
+        # ── contenu ────────────────────────────────────────────────────────────
+        viewer = QTextEdit()
+        viewer.setReadOnly(True)
+        viewer.setStyleSheet("""
+            QTextEdit {
+                background: #0d1117;
+                color: #c9d1d9;
+                border: 1px solid #30363d;
+                border-radius: 6px;
+                padding: 8px;
+                font-family: Monospace;
+                font-size: 11px;
+            }
+        """)
+
+        task_items = cluster.get("task_items", [])
+        if task_items:
+            lines = []
+            for i, item in enumerate(task_items, 1):
+                desc = item.get("description", str(item))
+                dur  = item.get("total_duration", 0)
+                dur_str = f"{dur:.1f} min" if dur else ""
+                lines.append(f"{i:>2}. {desc}  {dur_str}")
+            viewer.setPlainText("\n".join(lines))
+        else:
+            # fallback sur events si task_items vide
+            events = cluster.get("events", [])
+            lines = [f"{i:>2}. {e.get('raw', str(e))}" for i, e in enumerate(events, 1)]
+            viewer.setPlainText("\n".join(lines) if lines else "No items.")
+
+        layout.addWidget(viewer)
+
+        # ── bouton fermer ───────────────────────────────────────────────────────
+        btn_close = QDialogButtonBox(QDialogButtonBox.StandardButton.Close)
+        btn_close.setStyleSheet("color: #aaa;")
+        btn_close.rejected.connect(dialog.reject)
+        layout.addWidget(btn_close)
+
+        dialog.exec()
 
     @staticmethod
     def _short_id(cid: str) -> str:

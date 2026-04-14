@@ -230,7 +230,8 @@ class _DonutCanvas(QWidget):
         w, h    = self.width(), self.height()
         size    = min(w - 180, h - 40)   # leave room for legend
         size    = max(size, 100)
-        cx, cy  = size // 2 + 20, h // 2
+        # cx, cy  = size // 2 + 20, h // 2
+        cx, cy  = w // 2 - 60, h // 2
         outer_r = size // 2
         inner_r = int(outer_r * 0.55)
 
@@ -296,7 +297,8 @@ class _DonutCanvas(QWidget):
         w, h    = self.width(), self.height()
         size    = min(w - 180, h - 40)
         size    = max(size, 100)
-        cx, cy  = size // 2 + 20, h // 2
+        # cx, cy  = size // 2 + 20, h // 2
+        cx, cy  = w // 2 - 60, h // 2
         outer_r = size // 2
         inner_r = int(outer_r * 0.55)
 
