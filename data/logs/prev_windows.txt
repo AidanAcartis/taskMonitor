@@ -1,1 +1,8 @@
-
+0x02200017  0 aidan-Lenovo-N50-70 AidanAcartis/taskMonitor: Report the activities practicing on the machine. - Google Chrome
+0x03000004  0 aidan-Lenovo-N50-70 taskMonitor
+0x0320000a  0 aidan-Lenovo-N50-70 aidan@aidan-Lenovo-N50-70: ~/Documents/Projects/Visualization/taskMonitor
+0x02200022  0 aidan-Lenovo-N50-70 Configuration Docker et lancement de TaskMonitor - Claude - Google Chrome
+0x03400004  0 aidan-Lenovo-N50-70 Preview deploy_docker.md - taskMonitor - Visual Studio Code
+0x0340000b  0 aidan-Lenovo-N50-70 New_token.txt - Visual Studio Code
+0x02400009 -1 aidan-Lenovo-N50-70 Desktop Icons 1
+0x04200007  0 aidan-Lenovo-N50-70 TaskMonitor
