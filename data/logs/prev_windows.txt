@@ -1,4 +1,4 @@
-0x02200017  0 aidan-Lenovo-N50-70 AidanAcartis/taskMonitor: Report the activities practicing on the machine. - Google Chrome
+0x02200017  0 aidan-Lenovo-N50-70 Push sur repo GitHub - Google Chrome
 0x03000004  0 aidan-Lenovo-N50-70 taskMonitor
 0x0320000a  0 aidan-Lenovo-N50-70 aidan@aidan-Lenovo-N50-70: ~/Documents/Projects/Visualization/taskMonitor
 0x02200022  0 aidan-Lenovo-N50-70 Configuration Docker et lancement de TaskMonitor - Claude - Google Chrome
