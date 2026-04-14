@@ -1,5 +1,15 @@
+2026-04-13	13:41:51	19:54:21	372.50	file-directory-App	Configuration Docker et lancement de TaskMonitor - Claude - Google Chrome
 2026-04-13	13:20:59	17:36:24	255.42	directory/App	PICS
+2026-04-13	19:53:16	23:24:33	211.28	directory/App	Visualization
+2026-04-13	17:36:24	19:53:16	136.87	directory/App	COLLECT_COMMAND_LOGS
+2026-04-13	20:00:24	22:07:30	127.47	file-directory-App	window_changes.log - taskMonitor - Visual Studio Code
+2026-04-13	20:03:32	21:53:09	109.62	directory/App	Settings
+2026-04-13	20:31:59	21:52:55	80.93	file-directory-App	Luffy our hope - Recherche Google - Google Chrome
 2026-04-13	17:44:25	18:52:30	69.10	file-directory-App	Preview CORRECTION.md - taskMonitor - Visual Studio Code
+2026-04-13	21:49:26	21:53:30	60.63	directory/App	TaskMonitor
+2026-04-13	19:40:36	20:31:41	51.08	file-directory-App	(13) Enemy - Imagine Dragons // jinx // Arcane [AMV] - YouTube - Google Chrome
+2026-04-13	22:07:30	22:07:38	48.47	file-directory-App	Preview deploy_docker.md - taskMonitor - Visual Studio Code
+2026-04-13	19:41:16	20:00:24	19.13	file-directory-App	clusters_with_intentions.txt - taskMonitor - Visual Studio Code
 2026-04-13	13:36:20	13:40:42	18.93	file-directory-App	UNDEFEATED · XG & VALORANT #Dance Cover.mp4 - VLC media player
 2026-04-13	19:11:41	19:17:07	5.43	file-directory-App	Search results for 'pretty lethal' on FlixHQ - Google Chrome
 2026-04-13	18:10:44	18:16:06	5.37	file-directory-App	(13) Taylor Swift - Long Live (Taylor's Version) (Lyric Video) - YouTube - Google Chrome
@@ -9,13 +19,21 @@
 2026-04-13	18:06:29	18:10:44	4.25	file-directory-App	(13) Taylor Swift - How You Get The Girl (Taylor's Version) (Lyric Video) - YouTube - Google Chrome
 2026-04-13	18:22:57	18:26:53	3.93	file-directory-App	(13) Taylor Swift - Miss Americana & The Heartbreak Prince (Official Audio) - YouTube - Google Chrome
 2026-04-13	17:54:33	17:58:21	3.80	file-directory-App	(13) The Police Every Breath You Take (Lyrics) - YouTube - Google Chrome
+2026-04-13	19:25:28	19:29:01	3.55	file-directory-App	(13) Jinx // Arcane「AMV」Calm Down - YouTube - Google Chrome
 2026-04-13	18:16:06	18:19:38	3.53	file-directory-App	(13) Taylor Swift - Wi$h Li$t (Lyric Video) - YouTube - Google Chrome
+2026-04-13	19:21:56	19:25:28	3.53	file-directory-App	(13) Jinx || Are You Insane Like Me? - YouTube - Google Chrome
 2026-04-13	18:26:53	18:30:20	3.45	file-directory-App	(13) Taylor Swift - Call It What You Want (Lyric Video) - YouTube - Google Chrome
 2026-04-13	17:51:17	17:54:33	3.33	file-directory-App	(13) Billy Joel - Uptown Girl (Lyrics) - YouTube - Google Chrome
 2026-04-13	18:19:38	18:22:57	3.32	file-directory-App	(13) Taylor Swift - Bejeweled (Lyric Video) - YouTube - Google Chrome
+2026-04-13	19:18:23	19:21:41	3.30	file-directory-App	(13) Jinx’s Ultimate Test 💔🔫 | Arcane Season 2 - YouTube - Google Chrome
+2026-04-13	19:37:25	19:40:36	3.18	file-directory-App	(13) Vi | Whatever It Takes - YouTube - Google Chrome
+2026-04-13	19:29:01	19:32:06	3.08	file-directory-App	(13) Arcane AMV: Little Girl Gone - YouTube - Google Chrome
+2026-04-13	19:54:29	19:57:31	3.03	file-directory-App	Fil d’actualité | LinkedIn - Google Chrome
 2026-04-13	18:06:27	18:06:29	3.02	file-directory-App	(13) George Michael - Careless Whisper (Official Video) - YouTube - Google Chrome
 2026-04-13	18:35:22	18:35:24	2.83	file-directory-App	(13) Anna Shcherbakova 💓 #аннащербакова #annashcherbakova #figureskating #skating #shorts - YouTube - Google Chrome
+2026-04-13	19:34:38	19:37:25	2.78	file-directory-App	(13) [AMV] Arcane - Bones (Imagine Dragons) - YouTube - Google Chrome
 2026-04-13	19:11:21	19:11:41	2.68	file-directory-App	Watch Movies and Watch Series HD Online on FlixHQ - Google Chrome
+2026-04-13	19:32:06	19:34:38	2.53	file-directory-App	(13) Jinx | MARINA - Bubblegum B*tch | Arcane [4K] - YouTube - Google Chrome
 2026-04-13	19:06:29	19:08:53	2.40	file-directory-App	ww7.123moviesfree.net - Google Chrome
 2026-04-13	17:39:43	17:41:02	2.27	file-directory-App	processing.py - taskMonitor - Visual Studio Code
 2026-04-13	18:34:50	18:35:22	2.13	file-directory-App	(13) Taylor Swift - Afterglow (Official Audio) - YouTube - Google Chrome
@@ -34,31 +52,37 @@
 2026-04-13	18:58:30	18:59:19	0.82	file-directory-App	(13) The moment real life turned into a kdrama 😭🥲 so cuteee😭 #kdrama #short #kimyoojung #varshow - YouTube - Google Chrome
 2026-04-13	18:39:15	18:40:03	0.80	file-directory-App	(13) The “noooooooo” killed me 😂 #edm #electronicdancemusic #dj #rave #gryffin - YouTube - Google Chrome
 2026-04-13	17:43:42	17:44:25	0.78	file-directory-App	docker-compose.yml - taskMonitor - Visual Studio Code
+2026-04-13	21:52:08	21:52:53	0.75	directory/App	aidan-Lenovo-N50-70
 2026-04-13	18:54:59	18:55:42	0.72	file-directory-App	(13) Have you ever wondered why Eteri Tutberidze's skaters have short careers? - YouTube - Google Chrome
 2026-04-13	18:43:28	18:44:09	0.68	file-directory-App	(13) I prefer trusova #fypviralシ#iceskating #alexandratrusova #keşfetbeniöneçıkar #keşfet - YouTube - Google Chrome
 2026-04-13	19:01:11	19:01:51	0.67	file-directory-App	(13) That's how I met your mom 🤌🥲 #youtube #fyp #shorts #edit - YouTube - Google Chrome
 2026-04-13	18:57:54	18:58:31	0.62	file-directory-App	(13) Proof we made the right people famous ❤️‍🩹 | #taylorswift #selenagomez #ladygaga #shorts - YouTube - Google Chrome
 2026-04-13	18:35:24	18:36:00	0.60	file-directory-App	(13) Whose program should be analyzed in the next video? #figureskating - YouTube - Google Chrome
 2026-04-13	19:00:12	19:00:46	0.57	file-directory-App	(13) Alexandra Trusova❤️ #keşfetol #figureskating #iceskating #kesfet #olympics #keşfet #keşfetol #fyp - YouTube - Google Chrome
+2026-04-13	19:57:46	19:58:20	0.57	file-directory-App	Notifications | LinkedIn - Google Chrome
+2026-04-13	19:21:54	19:21:56	0.55	file-directory-App	(13) YouTube - Google Chrome
 2026-04-13	18:44:31	18:45:02	0.52	file-directory-App	(13) She turned sadness into smile. A true winner. Her parents raised her well ❤️‍🩹 - YouTube - Google Chrome
-2026-04-13	18:53:03	18:53:32	0.52	file-directory-App	(13) YouTube - Google Chrome
 2026-04-13	18:45:02	18:45:31	0.48	file-directory-App	(13) Can hate me but fact is fact #btsarmy #bts #rm #jhope #suga - YouTube - Google Chrome
 2026-04-13	18:57:25	18:57:54	0.48	file-directory-App	(13) Ball Kids vs. Insects: The Last One is SAVAGE 💀🦗 - YouTube - Google Chrome
 2026-04-13	19:02:48	19:03:14	0.43	file-directory-App	(13) #figureskating #вращения #фигурноекатание #шоунальду #shorts #iceskating - YouTube - Google Chrome
+2026-04-13	19:21:41	19:21:54	0.43	file-directory-App	(13) Jinx - YouTube - Google Chrome
 2026-04-13	18:42:44	18:43:09	0.42	file-directory-App	(13) She’s insane 😳🪽 @Flying_Daria #freedom #fear #performance #artist #split #circus #gymnasticsgirl - YouTube - Google Chrome
 2026-04-13	19:00:46	19:01:11	0.42	file-directory-App	(13) First days on the job can be tough - YouTube - Google Chrome
 2026-04-13	19:02:24	19:02:48	0.40	file-directory-App	(13) Ranking Best I'm Just A Kid Trend#shortsviral - YouTube - Google Chrome
+2026-04-13	20:31:41	20:31:59	0.40	file-directory-App	New Tab - Google Chrome
 2026-04-13	18:44:09	18:44:31	0.37	file-directory-App	(13) Look alike cam #lookalike - YouTube - Google Chrome
 2026-04-13	18:42:24	18:42:44	0.33	file-directory-App	(13) New gen energy vs OG vibes 💀 #supermodel #fashion #shorts #runway - YouTube - Google Chrome
 2026-04-13	18:56:45	18:57:05	0.33	file-directory-App	(13) My birthday edit (skatersxeditsx) - YouTube - Google Chrome
 2026-04-13	18:57:05	18:57:25	0.33	file-directory-App	(13) When an 8-Time Olympic Medalist Showed Up for the Parents' Race at School 🏃‍♀️🥇#shorts #viral #fyp - YouTube - Google Chrome
+2026-04-13	19:58:22	19:58:42	0.33	file-directory-App	ISC2 Up2Date: April 7th, 2026 | LinkedIn - Google Chrome
 2026-04-13	18:38:56	18:39:15	0.32	file-directory-App	(13) ✨Нереально мощный элемент на Олимпиаде 2012🔥👏🏻 #художественнаягимнастика #gimnasiaritmica - YouTube - Google Chrome
 2026-04-13	18:43:09	18:43:28	0.32	file-directory-App	(13) Jin Woo Edit ...🫠✨|| Solo Leveling || #sololeveling #jinwoo #edit #anime #fypシ゚viral - YouTube - Google Chrome
 2026-04-13	13:37:37	13:37:55	0.30	file-directory-App	chart.py - taskMonitor - Visual Studio Code
 2026-04-13	18:42:07	18:42:24	0.28	file-directory-App	(13) He Feels Nothing… And That’s the Saddest Part 💔 - YouTube - Google Chrome
 2026-04-13	19:02:07	19:02:24	0.28	file-directory-App	(13) infanta Sofia of Spain #short - YouTube - Google Chrome
 2026-04-13	19:01:51	19:02:07	0.27	file-directory-App	(13) The hardest jump in the history of figure skating #figureskating #quadaxel - YouTube - Google Chrome
-2026-04-13	19:18:10	19:18:23	0.22	file-directory-App	(13) Jinx - YouTube - Google Chrome
+2026-04-13	19:57:31	19:57:46	0.25	file-directory-App	linkedin.com/analytics/profile-views/ - Google Chrome
+2026-04-13	19:58:42	19:58:55	0.22	file-directory-App	ISC2 Membership and Certification as a Certified Cybersecurity Professional (CC) | LinkedIn - Google Chrome
 2026-04-13	19:11:20	19:11:21	0.18	file-directory-App	Working Free Movies and TV Shows Websites List - YarrList - Google Chrome
 2026-04-13	13:37:27	13:37:37	0.17	file-directory-App	dashboard.py - taskMonitor - Visual Studio Code
 2026-04-13	13:36:18	13:36:20	0.13	directory/App	VLC media player
@@ -66,9 +90,10 @@
 2026-04-13	18:45:41	18:45:49	0.13	file-directory-App	(13) bts new song - YouTube - Google Chrome
 2026-04-13	18:31:56	18:32:02	0.10	file-directory-App	Anna Shcherbakova 💓 #аннащербакова #annashcherbakova #figureskating #skating #shorts - YouTube - Google Chrome
 2026-04-13	18:53:32	18:53:38	0.10	file-directory-App	anna shcherbakova At this moment!!! Two Satanic Queens 💖 - YouTube - Google Chrome
+2026-04-13	19:53:24	19:53:30	0.10	directory/App	Properties
+2026-04-13	19:54:23	19:54:29	0.10	file-directory-App	linkedin - Recherche Google - Google Chrome
 2026-04-13	18:06:23	18:06:27	0.07	file-directory-App	(13) taylor swift how you get the girl - YouTube - Google Chrome
 2026-04-13	18:52:30	18:52:34	0.07	file-directory-App	deploy_docker.md - taskMonitor - Visual Studio Code
-2026-04-13	19:04:54	19:04:58	0.07	file-directory-App	New Tab - Google Chrome
 2026-04-13	19:08:53	19:08:57	0.07	file-directory-App	123Movies - Watch HD Movies Online Free | 123movie | 123 movies - Google Chrome
 2026-04-13	13:37:55	13:37:57	0.03	file-directory-App	monitoring.py - taskMonitor - Visual Studio Code
 2026-04-13	13:41:47	13:41:49	0.03	file-directory-App	TryHackMe | Introduction to DevSecOps - Google Chrome
@@ -78,10 +103,11 @@
 2026-04-13	19:05:00	19:05:02	0.03	file-directory-App	yarrlist.net - Google Chrome
 2026-04-13	19:05:02	19:05:04	0.03	file-directory-App	YarrList - Ahoy, Mateys! - Google Chrome
 2026-04-13	19:08:57	19:08:59	0.03	file-directory-App	flixhq.to - Google Chrome
+2026-04-13	19:58:20	19:58:22	0.03	file-directory-App	LinkedIn - Google Chrome
+2026-04-13	21:52:06	21:52:08	0.03	directory/App	Devices & Locations
 2026-04-13	19:08:53	19:08:53	0.00	file-directory-App	ww8.123moviesfree.net/home/ - Google Chrome
 2026-04-13	17:47:18	17:47:14	-0.07	file-directory-App	(13) George Benson - Nothing's Gonna Change My Love For You • TopPop - YouTube - Google Chrome
-2026-04-13	19:17:00	19:16:49	-0.18	directory/App	Desktop Icons 1
-2026-04-13	17:38:50	17:38:34	-1.88	directory/App	TaskMonitor
+2026-04-13	23:24:24	22:26:46	-105.67	directory/App	Desktop Icons 1
 2026-04-13	05:51:03	05:51:05	0.033	Commande	conda env list
 2026-04-13	05:51:14	05:51:16	0.033	Commande	conda activate MLproject_py311
 2026-04-13	05:51:17	05:51:19	0.033	Commande	clear

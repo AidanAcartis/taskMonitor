@@ -1,225 +1,271 @@
 ============================================================
 TASK CLUSTERING REPORT
 ============================================================
-Total tasks          : 127
-Number of clusters      : 22
-Final silhouette       : 0.220
-Final average cohesion : 0.334
+Total tasks          : 153
+Number of clusters      : 27
+Final silhouette       : 0.206
+Final average cohesion : 0.346
 
 ────────────────────────────────────────────────────────────
-Cluster 0  |  11 task(s)  |  cohesion = 0.309
+Cluster 0  |  4 task(s)  |  cohesion = 0.270
 ────────────────────────────────────────────────────────────
-  • google chrome, application, used to watch (13) taylor swift - miss americana & the heartbreak prince (official audio) - youtube
-  • google chrome, application, used to watch (13) bts new song - youtube
+  • sudo apt update && sudo apt upgrade -y, command, executed in terminal, used to update list of available packages |
+  • sudo apt update && sudo apt upgrade, command, executed in terminal, used to update list of available packages |
+  • pip list, command, executed in terminal, used to list installed packages
+  • pip install, command, executed in terminal, used to install a package (see `pip install` for more install examples)
+
+────────────────────────────────────────────────────────────
+Cluster 1  |  11 task(s)  |  cohesion = 0.318
+────────────────────────────────────────────────────────────
+  • cat dockerfile, command, executed in terminal
+  • cat docker-compose.yml, command, executed in terminal, used to print the contents of a file to `stdout` with the docker-compose.yml file which is a yaml document, yaml configuration, it serves as a docker-compose., container tool, container management software
+  • sudo usermod -ag docker $user, command, executed in terminal
+  • deploy_docker.md, file, opened with visual studio code, contains data related to markdown document, text files, it serves as a deployment document.
+  • docker-compose.yml, file, opened with visual studio code, contains data related to yaml document, yaml configuration, it serves as a docker-compose., container tool, container management software
+  • sudo apt install docker.io, command, executed in terminal, used to install packages + website / domain 'docker.io' with the docker.io file which is a it serves as a docker for a system., container management software
+  • newgrp docker, command, executed in terminal
+  • docker --version, command, executed in terminal
+  • preview deploy_docker.md, file, opened with visual studio code, contains data related to markdown document, text files, it serves as a preview deployment document., image and document viewing software
+  • docker ps, command, executed in terminal
+  • docker build -t taskmonitor:latest ., command, executed in terminal, used to option to tag the resulting docker image with a name and optionally a version
+
+────────────────────────────────────────────────────────────
+Cluster 2  |  2 task(s)  |  cohesion = 0.000
+────────────────────────────────────────────────────────────
+  • du -ah / 2>/dev/null | sort -rh | head -20, command, executed in terminal, used to write counts for all files, not just directories --apparent-size print apparent sizes rather than device usage; although the apparent size is usually smaller, it may be larger due to holes in ('sparse') files, internal fragmentation, indirect blocks, and the like + list the sizes of a directory and any subdirectories, in human-readable form (i.e. auto-selecting the appropriate unit for each size) | sort a file in descending order + compare human readable numbers (e.g., 2k 1g) in / and in 2>/dev/null
+  • du -ah / 2>/dev/null | sort -rh | head -10, command, executed in terminal, used to write counts for all files, not just directories --apparent-size print apparent sizes rather than device usage; although the apparent size is usually smaller, it may be larger due to holes in ('sparse') files, internal fragmentation, indirect blocks, and the like + list the sizes of a directory and any subdirectories, in human-readable form (i.e. auto-selecting the appropriate unit for each size) | sort a file in descending order + compare human readable numbers (e.g., 2k 1g) in / and in 2>/dev/null
+
+────────────────────────────────────────────────────────────
+Cluster 3  |  13 task(s)  |  cohesion = 0.419
+────────────────────────────────────────────────────────────
+  • google chrome, application, used to watch (13) jinx - youtube
+  • google chrome, application, used to watch (13) she needs a better audience 🔥 - youtube
+  • google chrome, application, used to watch (13) bts (방탄소년단) '2.0' official mv - youtube
+  • google chrome, application, used to watch (13) ✨нереально мощный элемент на олимпиаде 2012🔥👏🏻 #художественнаягимнастика #gimnasiaritmica - youtube
+  • google chrome, application, used to watch (13) anna shcherbakova - youtube
+  • google chrome, application, used to watch (13) whose program should be analyzed in the next video? #figureskating - youtube
+  • google chrome, application, used to watch (13) jinx | marina - bubblegum b*tch | arcane [4k] - youtube
+  • google chrome, application, used to watch (13) youtube
+  • google chrome, application, used to watch (13) vi | whatever it takes - youtube
+  • google chrome, application, used to watch (13) look alike cam #lookalike - youtube
+  • google chrome, application, used to watch (13) first days on the job can be tough - youtube
+  • google chrome, application, used to watch (13) jinx’s ultimate test 💔🔫 | arcane season 2 - youtube
+  • google chrome, application, used to watch (13) they wanted her to quit 🥺 - youtube
+
+────────────────────────────────────────────────────────────
+Cluster 4  |  8 task(s)  |  cohesion = 0.230
+────────────────────────────────────────────────────────────
+  • ls taskmonitor/external/command_desc/command_describer_project/cmddesc_executable/, command, executed in terminal, used to list directory contents in taskmonitor/external/command_desc/command_describer_project/cmddesc_executable/
+  • ls taskmonitor/external/, command, executed in terminal, used to list directory contents in taskmonitor/external/
+  • ls taskmonitor/external/command_desc/command_describer_project/, command, executed in terminal, used to list directory contents in taskmonitor/external/command_desc/command_describer_project/
+  • ls taskmonitor/external/command_desc/command_describer_project/dist/, command, executed in terminal, used to list directory contents in taskmonitor/external/command_desc/command_describer_project/dist/
+  • ls taskmonitor/external/command_desc/, command, executed in terminal, used to list directory contents in taskmonitor/external/command_desc/
+  • chmod +x run_taskmonitor.sh, command, executed in terminal, used to give the [u]ser who owns a file the right to e[x]ecute it with the run_taskmonitor.sh file which is a shell script, it monitors run tasks., sh
+  • ls taskmonitor/, command, executed in terminal, used to list directory contents in taskmonitor/
+  • ls taskmonitor/external/command_desc/command_describer_project/command_describer, command, executed in terminal, used to list directory contents in taskmonitor/external/command_desc/command_describer_project/command_describer
+
+────────────────────────────────────────────────────────────
+Cluster 5  |  11 task(s)  |  cohesion = 0.309
+────────────────────────────────────────────────────────────
   • google chrome, application, used to watch (13) taylor swift - how you get the girl (taylor's version) (lyric video) - youtube
-  • google chrome, application, used to watch (13) taylor swift how you get the girl - youtube
-  • google chrome, application, used to watch (13) taylor swift - call it what you want (lyric video) - youtube
   • google chrome, application, used to watch (13) taylor swift - afterglow (official audio) - youtube
+  • google chrome, application, used to watch (13) taylor swift how you get the girl - youtube
   • google chrome, application, used to watch (13) taylor swift - long live (taylor's version) (lyric video) - youtube
+  • google chrome, application, used to watch (13) bts new song - youtube
+  • google chrome, application, used to watch (13) taylor swift - call it what you want (lyric video) - youtube
+  • google chrome, application, used to watch (13) taylor swift - miss americana & the heartbreak prince (official audio) - youtube
   • google chrome, application, used to watch (13) taylor swift - wi$h li$t (lyric video) - youtube
   • google chrome, application, used to watch (13) taylor swift - bejeweled (lyric video) - youtube
   • google chrome, application, used to watch (13) taylor swift’s secret eras tour entrance 😳 - youtube
   • google chrome, application, used to watch (13) george michael - careless whisper (official video) - youtube
 
 ────────────────────────────────────────────────────────────
-Cluster 1  |  6 task(s)  |  cohesion = 0.348
+Cluster 6  |  5 task(s)  |  cohesion = 0.357
 ────────────────────────────────────────────────────────────
-  • ls, command, executed in terminal, used to list directory contents
-  • ls data/, command, executed in terminal, used to list directory contents in data/
-  • ls data/exports/, command, executed in terminal, used to list directory contents in data/exports/
-  • ls data/processed/, command, executed in terminal, used to list directory contents in data/processed/
-  • cat .dockerignore, command, executed in terminal, used to print the contents of a file to `stdout` with the .dockerignore file which is a it is used for storing information related to a file.
-  • ls ../vis_models/, command, executed in terminal, used to list directory contents in ../vis_models/
+  • google chrome, application, used to checked out 123movies - watch hd movies online free | 123movie | 123 movies
+  • ww7.123moviesfree.net, file, opened with google chrome, contains data related to it contains information about ww7.123 movies.
+  • google chrome, application, used to checked out working free movies and tv shows websites list - yarrlist
+  • google chrome, application, used to checked out watch movies and watch series hd online on flixhq
+  • google chrome, application, used to checked out ww8.123moviesfree.net/home/
 
 ────────────────────────────────────────────────────────────
-Cluster 2  |  2 task(s)  |  cohesion = 0.057
+Cluster 7  |  2 task(s)  |  cohesion = 0.337
 ────────────────────────────────────────────────────────────
-  • google chrome, application, used to checked out yarrlist - google search
-  • google chrome, application, used to checked out yarrlist - ahoy, mateys!
+  • google chrome, application, used to checked out configuration docker et lancement de taskmonitor - claude
+  • taskmonitor, directory, navigated by the user
 
 ────────────────────────────────────────────────────────────
-Cluster 3  |  9 task(s)  |  cohesion = 0.412
+Cluster 8  |  2 task(s)  |  cohesion = 0.128
 ────────────────────────────────────────────────────────────
+  • requirements_docker.txt, command, executed in terminal
+  • cat requirements_docker.txt, command, executed in terminal, used to print the contents of a file to `stdout` with the requirements_docker.txt file which is a plain text document, text files, it serves as a reference for the requirements document.
+
+────────────────────────────────────────────────────────────
+Cluster 9  |  3 task(s)  |  cohesion = 0.317
+────────────────────────────────────────────────────────────
+  • google chrome, application, used to watch (13) anna shcherbakova at this moment!!! two satanic queens 💖 - youtube
+  • google chrome, application, used to watch anna shcherbakova at this moment!!! two satanic queens 💖 - youtube
+  • google chrome, application, used to watch (13) she’s insane 😳🪽 @flying_daria #freedom #fear #performance #artist #split #circus #gymnasticsgirl - youtube
+
+────────────────────────────────────────────────────────────
+Cluster 10  |  4 task(s)  |  cohesion = 0.315
+────────────────────────────────────────────────────────────
+  • google chrome, application, used to checked out fil d’actualité | linkedin
+  • google chrome, application, used to checked out linkedin.com/analytics/profile-views/
+  • google chrome, application, used to checked out linkedin
+  • google chrome, application, used to checked out linkedin - recherche google
+
+────────────────────────────────────────────────────────────
+Cluster 11  |  9 task(s)  |  cohesion = 0.412
+────────────────────────────────────────────────────────────
+  • google chrome, application, used to watch (13) they did them dirty😭 #skating #figureskating #olympics #trending #shorts #viral #viralshorts #sports - youtube
   • google chrome, application, used to watch (13) anna shcherbakova 💓 #аннащербакова #annashcherbakova #figureskating #skating #shorts - youtube
-  • google chrome, application, used to watch anna shcherbakova 💓 #аннащербакова #annashcherbakova #figureskating #skating #shorts - youtube
-  • google chrome, application, used to watch (13) the hardest jump in the history of figure skating #figureskating #quadaxel - youtube
   • google chrome, application, used to watch (13) #figureskating #вращения #фигурноекатание #шоунальду #shorts #iceskating - youtube
   • google chrome, application, used to watch (13) when an 8-time olympic medalist showed up for the parents' race at school 🏃‍♀️🥇#shorts #viral #fyp - youtube
-  • google chrome, application, used to watch (13) they did them dirty😭 #skating #figureskating #olympics #trending #shorts #viral #viralshorts #sports - youtube
+  • google chrome, application, used to watch (13) the hardest jump in the history of figure skating #figureskating #quadaxel - youtube
+  • google chrome, application, used to watch anna shcherbakova 💓 #аннащербакова #annashcherbakova #figureskating #skating #shorts - youtube
   • google chrome, application, used to watch (13) who deserved the olympic gold medal in ladies singles skating at the 2022 olympics? 🥇 - youtube
-  • google chrome, application, used to watch (13) have you ever wondered why eteri tutberidze's skaters have short careers? - youtube
   • google chrome, application, used to watch (13) my birthday edit (skatersxeditsx) - youtube
+  • google chrome, application, used to watch (13) have you ever wondered why eteri tutberidze's skaters have short careers? - youtube
 
 ────────────────────────────────────────────────────────────
-Cluster 4  |  3 task(s)  |  cohesion = 0.413
+Cluster 12  |  7 task(s)  |  cohesion = 0.432
+────────────────────────────────────────────────────────────
+  • visualization, directory, navigated by the user
+  • properties, directory, navigated by the user
+  • settings, directory, navigated by the user
+  • pics, directory, navigated by the user
+  • desktop icons 1, directory, navigated by the user
+  • google chrome, application, used to checked out untitled
+  • vlc media player, directory, navigated by the user
+
+────────────────────────────────────────────────────────────
+Cluster 13  |  3 task(s)  |  cohesion = 0.303
+────────────────────────────────────────────────────────────
+  • cd ~/documents/projects/visualization/taskmonitor, command, executed in terminal, used to go to the specified directory in ~/documents/projects/visualization/taskmonitor
+  • cat run_taskmonitor.sh, command, executed in terminal, used to print the contents of a file to `stdout` with the run_taskmonitor.sh file which is a shell script, it monitors run tasks., sh
+  • vis_models_path=~/documents/projects/visualization/vis_models ./run_taskmonitor.sh, command, executed in terminal, used to run the script './run_taskmonitor.sh' with the ./run_taskmonitor.sh file which is a shell script, it monitors run tasks., sh
+
+────────────────────────────────────────────────────────────
+Cluster 14  |  3 task(s)  |  cohesion = 0.313
+────────────────────────────────────────────────────────────
+  • rm -rf /home/aidan/virtualbox vms/ethical-hacker-kali, command, executed in terminal, used to remove specific files and directories recursively + remove specific files ignoring nonexistent ones in /home/aidan/virtualbox and in vms/ethical-hacker-kali
+  • ls /home/aidan/virtualbox vms/, command, executed in terminal, used to list directory contents in /home/aidan/virtualbox and in vms/
+  • rm -rf /home/aidan/virtualbox vms, command, executed in terminal, used to remove specific files and directories recursively + remove specific files ignoring nonexistent ones in /home/aidan/virtualbox
+
+────────────────────────────────────────────────────────────
+Cluster 15  |  3 task(s)  |  cohesion = 0.413
 ────────────────────────────────────────────────────────────
   • dashboard.py, file, opened with visual studio code, contains data related to python 3 script, text files, it serves as a dashboard for users.
   • chart.py, file, opened with visual studio code, contains data related to python 3 script, text files, it serves as a chart for a project.
   • main_window.py, file, opened with visual studio code, contains data related to python 3 script, text files, it serves as a main window.
 
 ────────────────────────────────────────────────────────────
-Cluster 5  |  4 task(s)  |  cohesion = 0.303
-────────────────────────────────────────────────────────────
-  • cat run_taskmonitor.sh, command, executed in terminal, used to print the contents of a file to `stdout` with the run_taskmonitor.sh file which is a shell script, it monitors run tasks., sh
-  • vis_models_path=~/documents/projects/visualization/vis_models ./run_taskmonitor.sh, command, executed in terminal, used to run the script './run_taskmonitor.sh' with the ./run_taskmonitor.sh file which is a shell script, it monitors run tasks., sh
-  • cd ~/documents/projects/visualization/taskmonitor, command, executed in terminal, used to go to the specified directory in ~/documents/projects/visualization/taskmonitor
-  • taskmonitor, application, used by the user
-
-────────────────────────────────────────────────────────────
-Cluster 6  |  3 task(s)  |  cohesion = 0.317
-────────────────────────────────────────────────────────────
-  • google chrome, application, used to watch (13) she’s insane 😳🪽 @flying_daria #freedom #fear #performance #artist #split #circus #gymnasticsgirl - youtube
-  • google chrome, application, used to watch anna shcherbakova at this moment!!! two satanic queens 💖 - youtube
-  • google chrome, application, used to watch (13) anna shcherbakova at this moment!!! two satanic queens 💖 - youtube
-
-────────────────────────────────────────────────────────────
-Cluster 7  |  3 task(s)  |  cohesion = 0.367
-────────────────────────────────────────────────────────────
-  • google chrome, application, used to watch (13) she literally nailed it 😻🔥 || cdrama 🎭 #fy #shortsfeed - youtube
-  • google chrome, application, used to watch (13) that's how i met your mom 🤌🥲 #youtube #fyp #shorts #edit - youtube
-  • google chrome, application, used to watch (13) ranking best i'm just a kid trend#shortsviral - youtube
-
-────────────────────────────────────────────────────────────
-Cluster 8  |  3 task(s)  |  cohesion = 0.313
-────────────────────────────────────────────────────────────
-  • rm -rf /home/aidan/virtualbox vms, command, executed in terminal, used to remove specific files and directories recursively + remove specific files ignoring nonexistent ones in /home/aidan/virtualbox
-  • rm -rf /home/aidan/virtualbox vms/ethical-hacker-kali, command, executed in terminal, used to remove specific files and directories recursively + remove specific files ignoring nonexistent ones in /home/aidan/virtualbox and in vms/ethical-hacker-kali
-  • ls /home/aidan/virtualbox vms/, command, executed in terminal, used to list directory contents in /home/aidan/virtualbox and in vms/
-
-────────────────────────────────────────────────────────────
-Cluster 9  |  10 task(s)  |  cohesion = 0.306
-────────────────────────────────────────────────────────────
-  • newgrp docker, command, executed in terminal
-  • docker --version, command, executed in terminal
-  • cat docker-compose.yml, command, executed in terminal, used to print the contents of a file to `stdout` with the docker-compose.yml file which is a yaml document, yaml configuration, it serves as a docker-compose., container tool, container management software
-  • cat dockerfile, command, executed in terminal
-  • docker ps, command, executed in terminal
-  • sudo apt install docker.io, command, executed in terminal, used to install packages + website / domain 'docker.io' with the docker.io file which is a it serves as a docker for a system., container management software
-  • deploy_docker.md, file, opened with visual studio code, contains data related to markdown document, text files, it serves as a deployment document.
-  • sudo usermod -ag docker $user, command, executed in terminal
-  • docker-compose.yml, file, opened with visual studio code, contains data related to yaml document, yaml configuration, it serves as a docker-compose., container tool, container management software
-  • docker build -t taskmonitor:latest ., command, executed in terminal, used to option to tag the resulting docker image with a name and optionally a version
-
-────────────────────────────────────────────────────────────
-Cluster 10  |  5 task(s)  |  cohesion = 0.357
-────────────────────────────────────────────────────────────
-  • ww7.123moviesfree.net, file, opened with google chrome, contains data related to it contains information about ww7.123 movies.
-  • google chrome, application, used to checked out working free movies and tv shows websites list - yarrlist
-  • google chrome, application, used to checked out 123movies - watch hd movies online free | 123movie | 123 movies
-  • google chrome, application, used to checked out watch movies and watch series hd online on flixhq
-  • google chrome, application, used to checked out ww8.123moviesfree.net/home/
-
-────────────────────────────────────────────────────────────
-Cluster 11  |  12 task(s)  |  cohesion = 0.459
-────────────────────────────────────────────────────────────
-  • google chrome, application, used to watch (13) bts (방탄소년단) '2.0' official mv - youtube
-  • google chrome, application, used to watch (13) anna shcherbakova - youtube
-  • google chrome, application, used to watch (13) jinx - youtube
-  • google chrome, application, used to watch (13) whose program should be analyzed in the next video? #figureskating - youtube
-  • google chrome, application, used to watch (13) youtube
-  • google chrome, application, used to watch (13) ✨нереально мощный элемент на олимпиаде 2012🔥👏🏻 #художественнаягимнастика #gimnasiaritmica - youtube
-  • google chrome, application, used to watch (13) she needs a better audience 🔥 - youtube
-  • google chrome, application, used to watch (13) best graduation ranking #funny #haaha #funnyprank #ranking #graduation - youtube
-  • google chrome, application, used to watch (13) look alike cam #lookalike - youtube
-  • google chrome, application, used to watch (13) first days on the job can be tough - youtube
-  • google chrome, application, used to watch (13) the moment real life turned into a kdrama 😭🥲 so cuteee😭 #kdrama #short #kimyoojung #varshow - youtube
-  • google chrome, application, used to watch (13) they wanted her to quit 🥺 - youtube
-
-────────────────────────────────────────────────────────────
-Cluster 12  |  8 task(s)  |  cohesion = 0.230
-────────────────────────────────────────────────────────────
-  • ls taskmonitor/external/command_desc/command_describer_project/cmddesc_executable/, command, executed in terminal, used to list directory contents in taskmonitor/external/command_desc/command_describer_project/cmddesc_executable/
-  • ls taskmonitor/external/, command, executed in terminal, used to list directory contents in taskmonitor/external/
-  • ls taskmonitor/external/command_desc/command_describer_project/dist/, command, executed in terminal, used to list directory contents in taskmonitor/external/command_desc/command_describer_project/dist/
-  • ls taskmonitor/external/command_desc/command_describer_project/, command, executed in terminal, used to list directory contents in taskmonitor/external/command_desc/command_describer_project/
-  • ls taskmonitor/external/command_desc/command_describer_project/command_describer, command, executed in terminal, used to list directory contents in taskmonitor/external/command_desc/command_describer_project/command_describer
-  • ls taskmonitor/, command, executed in terminal, used to list directory contents in taskmonitor/
-  • chmod +x run_taskmonitor.sh, command, executed in terminal, used to give the [u]ser who owns a file the right to e[x]ecute it with the run_taskmonitor.sh file which is a shell script, it monitors run tasks., sh
-  • ls taskmonitor/external/command_desc/, command, executed in terminal, used to list directory contents in taskmonitor/external/command_desc/
-
-────────────────────────────────────────────────────────────
-Cluster 13  |  4 task(s)  |  cohesion = 0.270
-────────────────────────────────────────────────────────────
-  • sudo apt update && sudo apt upgrade, command, executed in terminal, used to update list of available packages |
-  • pip install, command, executed in terminal, used to install a package (see `pip install` for more install examples)
-  • sudo apt update && sudo apt upgrade -y, command, executed in terminal, used to update list of available packages |
-  • pip list, command, executed in terminal, used to list installed packages
-
-────────────────────────────────────────────────────────────
-Cluster 14  |  2 task(s)  |  cohesion = 0.325
-────────────────────────────────────────────────────────────
-  • google chrome, application, used to watch (13) alexandra trusova❤️ #keşfetol #figureskating #iceskating #kesfet #olympics #keşfet #keşfetol #fyp - youtube
-  • google chrome, application, used to watch (13) i prefer trusova #fypviralシ#iceskating #alexandratrusova #keşfetbeniöneçıkar #keşfet - youtube
-
-────────────────────────────────────────────────────────────
-Cluster 15  |  3 task(s)  |  cohesion = 0.404
+Cluster 16  |  3 task(s)  |  cohesion = 0.404
 ────────────────────────────────────────────────────────────
   • google chrome, application, used to watch (13) foreigner - i want to know what love is (lyrics) - youtube
   • google chrome, application, used to watch (13) billy joel - uptown girl (lyrics) - youtube
   • google chrome, application, used to watch (13) george benson - nothing's gonna change my love for you • toppop - youtube
 
 ────────────────────────────────────────────────────────────
-Cluster 16  |  2 task(s)  |  cohesion = 0.276
+Cluster 17  |  2 task(s)  |  cohesion = 0.325
 ────────────────────────────────────────────────────────────
-  • google chrome, application, used to watch (13) infanta sofia of spain #short - youtube
+  • google chrome, application, used to watch (13) alexandra trusova❤️ #keşfetol #figureskating #iceskating #kesfet #olympics #keşfet #keşfetol #fyp - youtube
+  • google chrome, application, used to watch (13) i prefer trusova #fypviralシ#iceskating #alexandratrusova #keşfetbeniöneçıkar #keşfet - youtube
+
+────────────────────────────────────────────────────────────
+Cluster 18  |  2 task(s)  |  cohesion = 0.057
+────────────────────────────────────────────────────────────
+  • google chrome, application, used to checked out yarrlist - google search
+  • google chrome, application, used to checked out yarrlist - ahoy, mateys!
+
+────────────────────────────────────────────────────────────
+Cluster 19  |  6 task(s)  |  cohesion = 0.348
+────────────────────────────────────────────────────────────
+  • ls data/, command, executed in terminal, used to list directory contents in data/
+  • cat .dockerignore, command, executed in terminal, used to print the contents of a file to `stdout` with the .dockerignore file which is a it is used for storing information related to a file.
+  • ls, command, executed in terminal, used to list directory contents
+  • ls data/exports/, command, executed in terminal, used to list directory contents in data/exports/
+  • ls data/processed/, command, executed in terminal, used to list directory contents in data/processed/
+  • ls ../vis_models/, command, executed in terminal, used to list directory contents in ../vis_models/
+
+────────────────────────────────────────────────────────────
+Cluster 20  |  4 task(s)  |  cohesion = 0.416
+────────────────────────────────────────────────────────────
+  • google chrome, application, used to watch (13) enemy - imagine dragons // jinx // arcane [amv] - youtube
+  • google chrome, application, used to watch (13) arcane amv: little girl gone - youtube
+  • google chrome, application, used to watch (13) [amv] arcane - bones (imagine dragons) - youtube
+  • google chrome, application, used to watch (13) the moment real life turned into a kdrama 😭🥲 so cuteee😭 #kdrama #short #kimyoojung #varshow - youtube
+
+────────────────────────────────────────────────────────────
+Cluster 21  |  2 task(s)  |  cohesion = 0.276
+────────────────────────────────────────────────────────────
   • google chrome, application, used to watch (13) infanta sofia 💔🥲#infantasofia #leonor #royalfamily #royal #king #spain #spain #royalfamily - youtube
+  • google chrome, application, used to watch (13) infanta sofia of spain #short - youtube
 
 ────────────────────────────────────────────────────────────
-Cluster 17  |  2 task(s)  |  cohesion = 0.128
+Cluster 22  |  3 task(s)  |  cohesion = 0.367
 ────────────────────────────────────────────────────────────
-  • cat requirements_docker.txt, command, executed in terminal, used to print the contents of a file to `stdout` with the requirements_docker.txt file which is a plain text document, text files, it serves as a reference for the requirements document.
-  • requirements_docker.txt, command, executed in terminal
+  • google chrome, application, used to watch (13) she literally nailed it 😻🔥 || cdrama 🎭 #fy #shortsfeed - youtube
+  • google chrome, application, used to watch (13) that's how i met your mom 🤌🥲 #youtube #fyp #shorts #edit - youtube
+  • google chrome, application, used to watch (13) ranking best i'm just a kid trend#shortsviral - youtube
 
 ────────────────────────────────────────────────────────────
-Cluster 18  |  2 task(s)  |  cohesion = 0.000
+Cluster 23  |  3 task(s)  |  cohesion = 0.482
 ────────────────────────────────────────────────────────────
-  • du -ah / 2>/dev/null | sort -rh | head -20, command, executed in terminal, used to write counts for all files, not just directories --apparent-size print apparent sizes rather than device usage; although the apparent size is usually smaller, it may be larger due to holes in ('sparse') files, internal fragmentation, indirect blocks, and the like + list the sizes of a directory and any subdirectories, in human-readable form (i.e. auto-selecting the appropriate unit for each size) | sort a file in descending order + compare human readable numbers (e.g., 2k 1g) in / and in 2>/dev/null
-  • du -ah / 2>/dev/null | sort -rh | head -10, command, executed in terminal, used to write counts for all files, not just directories --apparent-size print apparent sizes rather than device usage; although the apparent size is usually smaller, it may be larger due to holes in ('sparse') files, internal fragmentation, indirect blocks, and the like + list the sizes of a directory and any subdirectories, in human-readable form (i.e. auto-selecting the appropriate unit for each size) | sort a file in descending order + compare human readable numbers (e.g., 2k 1g) in / and in 2>/dev/null
+  • google chrome, application, used to watch (13) jinx // arcane「amv」calm down - youtube
+  • google chrome, application, used to watch (13) jinx || are you insane like me? - youtube
+  • google chrome, application, used to watch (13) can hate me but fact is fact #btsarmy #bts #rm #jhope #suga - youtube
 
 ────────────────────────────────────────────────────────────
-Cluster 19  |  2 task(s)  |  cohesion = 0.442
+Cluster 24  |  2 task(s)  |  cohesion = 0.442
 ────────────────────────────────────────────────────────────
   • google chrome, application, used to watch (13) she turned sadness into smile. a true winner. her parents raised her well ❤️‍🩹 - youtube
   • google chrome, application, used to watch (13) he feels nothing… and that’s the saddest part 💔 - youtube
 
 ────────────────────────────────────────────────────────────
-Cluster 20  |  2 task(s)  |  cohesion = 0.438
+Cluster 25  |  2 task(s)  |  cohesion = 0.438
 ────────────────────────────────────────────────────────────
   • conda env list, command, executed in terminal
   • conda activate mlproject_py311, command, executed in terminal, used to activate an environment
 
 ────────────────────────────────────────────────────────────
-Other small tasks  |  29 task(s)  |  cohesion = 0.876
+Other small tasks  |  34 task(s)  |  cohesion = 0.899
 ────────────────────────────────────────────────────────────
-  • docker images | grep taskmonitor, command, executed in terminal, used to display the list of already downloaded images
+  • google chrome, application, used to watch (13) inside the training of china's elite honor guard #military #army #parade - youtube
   • google chrome, application, used to watch (13) the police every breath you take (lyrics) - youtube
   • google chrome, application, used to watch (13) jin woo edit ...🫠✨|| solo leveling || #sololeveling #jinwoo #edit #anime #fypシ゚viral - youtube
-  • google chrome, application, used to watch (13) actor’s gentlemanly behavior #koreanactor #actor #ahnhyoseop #fyp #start - youtube
-  • google chrome, application, used to watch (13) proof we made the right people famous ❤️‍🩹 | #taylorswift #selenagomez #ladygaga #shorts - youtube
-  • google chrome, application, used to watch (13) can hate me but fact is fact #btsarmy #bts #rm #jhope #suga - youtube
   • google chrome, application, used to watch (13) the “noooooooo” killed me 😂 #edm #electronicdancemusic #dj #rave #gryffin - youtube
-  • google chrome, application, used to watch (13) 😌💕👸 one shoe. one bare foot. one moment that made us fall in love with princess anne - youtube
-  • google chrome, application, used to checked out login | networking academy with cisco
-  • google chrome, application, used to watch (13) inside the training of china's elite honor guard #military #army #parade - youtube
-  • flixhq.to, file, opened with google chrome, contains data related to it serves as a database for flixhq.
-  • yarrlist.net, file, opened with google chrome, contains data related to a list of items related to a project.
-  • code ., command, executed in terminal, used to start visual studio code
-  • vlc media player, application, used by the user
   • undefeated · xg & valorant #dance cover.mp4, file, opened with vlc media player, contains data related to mpeg-4 video, video files, it contains a cover for xg & valorant #dance.
+  • google chrome, application, used to watch (13) best graduation ranking #funny #haaha #funnyprank #ranking #graduation - youtube
+  • google chrome, application, used to watch (13) proof we made the right people famous ❤️‍🩹 | #taylorswift #selenagomez #ladygaga #shorts - youtube
+  • google chrome, application, used to watch (13) actor’s gentlemanly behavior #koreanactor #actor #ahnhyoseop #fyp #start - youtube
+  • google chrome, application, used to watch (13) 😌💕👸 one shoe. one bare foot. one moment that made us fall in love with princess anne - youtube
+  • docker images | grep taskmonitor, command, executed in terminal, used to display the list of already downloaded images
+  • aidan-lenovo-n50-70, directory, navigated by the user
+  • google chrome, application, used to checked out login | networking academy with cisco
   • clear, command, executed in terminal, used to clear the screen
+  • window_changes.log, file, opened with visual studio code, contains data related to application log, text files, it contains changes in window settings.
   • preview correction.md, file, opened with visual studio code, contains data related to markdown document, text files, it serves as a preview for a project., image and document viewing software
   • google chrome, application, used to checked out new tab
-  • desktop icons 1, application, used by the user
-  • pics, application, used by the user
-  • google chrome, application, used to checked out untitled
-  • google chrome, application, used to checked out search results for 'pretty lethal' on flixhq
+  • flixhq.to, file, opened with google chrome, contains data related to it serves as a database for flixhq.
+  • code ., command, executed in terminal, used to start visual studio code
+  • yarrlist.net, file, opened with google chrome, contains data related to a list of items related to a project.
+  • devices & locations, directory, navigated by the user
   • google chrome, application, used to checked out tryhackme | introduction to devsecops
+  • google chrome, application, used to checked out luffy our hope - recherche google
   • google chrome, application, used to watch (13) ball kids vs. insects: the last one is savage 💀🦗 - youtube
-  • monitoring.py, file, opened with visual studio code, contains data related to python 3 script, text files, it monitors the performance or performance of a system., monitoring application
+  • google chrome, application, used to checked out search results for 'pretty lethal' on flixhq
   • processing.py, file, opened with visual studio code, contains data related to python 3 script, text files, it contains data related to processing processes.
+  • monitoring.py, file, opened with visual studio code, contains data related to python 3 script, text files, it monitors the performance or performance of a system., monitoring application
+  • google chrome, application, used to checked out notifications | linkedin
+  • collect_command_logs, directory, navigated by the user
   • google chrome, application, used to watch (13) new gen energy vs og vibes 💀 #supermodel #fashion #shorts #runway - youtube
+  • clusters_with_intentions.txt, file, opened with visual studio code, contains data related to plain text document, text files, it serves as a cluster with intentions.
+  • google chrome, application, used to checked out isc2 up2date: april 7th, 2026 | linkedin
   • sudo systemctl enable docker, command, executed in terminal, used to enable/disable a unit to be started on bootup
   • sudo systemctl start docker, command, executed in terminal, used to start/stop/restart/reload/show the status a service
+  • google chrome, application, used to checked out isc2 membership and certification as a certified cybersecurity professional (cc) | linkedin
 
 ============================================================
 END OF REPORT

@@ -33,7 +33,18 @@ class EventParser:
             if raw in config.KNOWN_DIRS:
                 return "directory", "", raw, ""
             else:
-                return "app", "", raw, ""
+                # Vérifier dans TOOLS.json
+                tools_path = Path(__file__).resolve().parent.parent / "dicts" / "TOOLS.json"
+                try:
+                    import json
+                    with open(tools_path, encoding="utf-8") as f:
+                        tools = json.load(f)
+                    if raw.lower() in {k.lower() for k in tools.keys()}:
+                        return "app", "", raw, ""
+                except Exception:
+                    pass
+                # Pas dans TOOLS → c'est un directory
+                return "directory", "", raw, ""
 
         # Cas général : split " - " pour détecter fichier et app
         parts = raw.split(" - ")

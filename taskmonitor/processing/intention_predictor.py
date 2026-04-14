@@ -53,11 +53,27 @@ def load_model(model_path: str):
     model.eval()
     return model, tokenizer, device
 
+def clean_item(item: str) -> str:
+    """Supprime emojis, hashtags, mentions et caractères parasites."""
+    # Supprimer hashtags et mentions
+    item = re.sub(r"#\S+", "", item)
+    item = re.sub(r"@\S+", "", item)
+    # Supprimer emojis et caractères non-ASCII parasites
+    item = re.sub(r"[^\x00-\x7F]+", "", item)
+    # Supprimer les numéros entre parenthèses ex: "(13)"
+    item = re.sub(r"\(\d+\)", "", item)
+    # Nettoyer espaces multiples
+    item = re.sub(r"\s{2,}", " ", item).strip()
+    return item
+
 # ── PREDICTION ───────────────────────────────────────────
 def predict(model, tokenizer, device, items):
     if not items:
         return "(cluster vide — pas de prediction)"
-    prompt = format_prompt(items)
+
+    cleaned_items = [clean_item(i) for i in items]
+    
+    prompt = format_prompt(cleaned_items)
     inputs = tokenizer(
         prompt,
         return_tensors="pt",
@@ -66,7 +82,26 @@ def predict(model, tokenizer, device, items):
     ).to(device)
     with torch.no_grad():
         outputs = model.generate(**inputs, **INTENTION_CONFIG)
-    return tokenizer.decode(outputs[0], skip_special_tokens=True)
+    intention = tokenizer.decode(outputs[0], skip_special_tokens=True)
+
+    # ── Post-correction : forcer "Watch" si majorité YouTube ──
+    youtube_items = [i for i in items if i.lower().strip().endswith("- youtube")]
+    ratio = len(youtube_items) / len(items) if items else 0
+
+    if ratio >= 0.6:
+        # Remplacer le verbe de début par "Watch"
+        intention = re.sub(
+            r"^(Monitor|Use|Browse|Manage|Create|Run|Check|Deploy|Search|Display)\b",
+            "Watch",
+            intention,
+            flags=re.IGNORECASE
+        )
+        # Si le modèle n'a pas généré un verbe connu, forcer "Watch" en préfixe
+        first_word = intention.split()[0].lower() if intention else ""
+        if first_word != "watch":
+            intention = "Watch videos about " + intention[0].lower() + intention[1:]
+
+    return intention
 
 # ── CLEAN & DETECT VERB ───────────────────────────────────
 def clean_segment(seg):
@@ -166,29 +201,26 @@ def generate_simple_intention(item: str) -> str:
 
 # ── POST-PROCESS INTENTION ────────────────────────────────
 def clean_intention(intention: str) -> str:
-    """
-    Removes redundant 'and X' patterns where X repeats or mirrors
-    the first part of the intention.
-    e.g. 'Monitor and monitor task monitoring' -> 'Monitor task monitoring'
-    e.g. 'Monitor and manage task monitoring' -> kept as-is (different verbs)
-    """
     import re
 
-    # Normalize
     text = intention.strip()
 
-    # Pattern: "VERB and SAME_VERB ..." => remove "and SAME_VERB"
+    # ── Supprimer les doublons "Watch for and watch" → "Watch" ──
+    text = re.sub(r"\bwatch\s+for\s+and\s+watch\b", "Watch", text, flags=re.IGNORECASE)
+    text = re.sub(r"\bwatch\s+and\s+watch\b", "Watch", text, flags=re.IGNORECASE)
+    text = re.sub(r"\bbrowse\s+for\s+and\s+watch\b", "Watch", text, flags=re.IGNORECASE)
+    text = re.sub(r"\bsearch\s+for\s+and\s+watch\b", "Watch", text, flags=re.IGNORECASE)
+
+    # ── Pattern existant : "VERB and SAME_VERB ..." ──
     m = re.match(r'^(\w+)\s+and\s+(\w+)\s+(.*)', text, re.IGNORECASE)
     if m:
         verb1 = m.group(1).lower()
         verb2 = m.group(2).lower()
         rest  = m.group(3)
 
-        # Same verb repeated
         if verb1 == verb2:
             return f"{m.group(1)} {rest}".strip()
 
-        # verb2 is contained in rest (e.g. "monitor and monitor task monitoring")
         if verb2 in rest.lower():
             return f"{m.group(1)} {rest}".strip()
 

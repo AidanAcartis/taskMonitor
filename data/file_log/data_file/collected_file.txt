@@ -15,6 +15,8 @@
 2026-04-13 13:37:57 13:38:30 processing.py - taskMonitor - Visual Studio Code
 2026-04-13 13:41:47 13:41:49 TryHackMe | Introduction to DevSecOps - Google Chrome
 2026-04-13 13:41:49 13:41:51 Login | Networking Academy with Cisco - Google Chrome
+2026-04-13 13:41:51 19:54:21 Configuration Docker et lancement de TaskMonitor - Claude - Google Chrome
+2026-04-13 17:36:24 19:53:16 COLLECT_COMMAND_LOGS
 2026-04-13 17:37:29 17:38:22 main_window.py - taskMonitor - Visual Studio Code
 2026-04-13 17:38:22 17:38:28 ● main_window.py - taskMonitor - Visual Studio Code
 2026-04-13 17:38:28 17:39:19 main_window.py - taskMonitor - Visual Studio Code
@@ -72,9 +74,11 @@
 2026-04-13 18:50:07 18:51:53 (13) They wanted her to quit 🥺 - YouTube - Google Chrome
 2026-04-13 18:51:53 18:53:03 (13) anna shcherbakova - YouTube - Google Chrome
 2026-04-13 18:52:30 18:52:34 deploy_docker.md - taskMonitor - Visual Studio Code
+2026-04-13 18:52:34 19:40:54 Preview deploy_docker.md - taskMonitor - Visual Studio Code
 2026-04-13 18:53:03 18:53:32 (13) YouTube - Google Chrome
 2026-04-13 18:53:32 18:53:38 anna shcherbakova At this moment!!! Two Satanic Queens 💖 - YouTube - Google Chrome
 2026-04-13 18:53:38 18:54:59 (13) anna shcherbakova At this moment!!! Two Satanic Queens 💖 - YouTube - Google Chrome
+2026-04-13 18:53:44 19:52:11 TaskMonitor
 2026-04-13 18:54:59 18:55:42 (13) Have you ever wondered why Eteri Tutberidze's skaters have short careers? - YouTube - Google Chrome
 2026-04-13 18:55:42 18:56:45 (13) infanta Sofia 💔🥲#infantasofia #Leonor #Royalfamily #Royal #king #spain #spain #Royalfamily - YouTube - Google Chrome
 2026-04-13 18:56:45 18:57:05 (13) My birthday edit (skatersxeditsx) - YouTube - Google Chrome
@@ -111,3 +115,38 @@
 2026-04-13 19:17:00 19:16:49 Desktop Icons 1
 2026-04-13 19:17:07 19:18:10 (13) Taylor Swift’s Secret Eras Tour Entrance 😳 - YouTube - Google Chrome
 2026-04-13 19:18:10 19:18:23 (13) Jinx - YouTube - Google Chrome
+2026-04-13 19:18:23 19:21:41 (13) Jinx’s Ultimate Test 💔🔫 | Arcane Season 2 - YouTube - Google Chrome
+2026-04-13 19:21:41 19:21:54 (13) Jinx - YouTube - Google Chrome
+2026-04-13 19:21:54 19:21:56 (13) YouTube - Google Chrome
+2026-04-13 19:21:56 19:25:28 (13) Jinx || Are You Insane Like Me? - YouTube - Google Chrome
+2026-04-13 19:25:28 19:29:01 (13) Jinx // Arcane「AMV」Calm Down - YouTube - Google Chrome
+2026-04-13 19:29:01 19:32:06 (13) Arcane AMV: Little Girl Gone - YouTube - Google Chrome
+2026-04-13 19:32:06 19:34:38 (13) Jinx | MARINA - Bubblegum B*tch | Arcane [4K] - YouTube - Google Chrome
+2026-04-13 19:34:38 19:37:25 (13) [AMV] Arcane - Bones (Imagine Dragons) - YouTube - Google Chrome
+2026-04-13 19:37:25 19:40:36 (13) Vi | Whatever It Takes - YouTube - Google Chrome
+2026-04-13 19:40:36 20:31:41 (13) Enemy - Imagine Dragons // jinx // Arcane [AMV] - YouTube - Google Chrome
+2026-04-13 19:40:54 19:41:16 window_changes.log - taskMonitor - Visual Studio Code
+2026-04-13 19:41:16 20:00:24 clusters_with_intentions.txt - taskMonitor - Visual Studio Code
+2026-04-13 19:53:16 23:24:33 Visualization
+2026-04-13 19:53:24 19:53:30 Properties
+2026-04-13 19:54:21 19:54:23 New Tab - Google Chrome
+2026-04-13 19:54:23 19:54:29 linkedin - Recherche Google - Google Chrome
+2026-04-13 19:54:29 19:57:31 Fil d’actualité | LinkedIn - Google Chrome
+2026-04-13 19:57:31 19:57:46 linkedin.com/analytics/profile-views/ - Google Chrome
+2026-04-13 19:57:46 19:58:20 Notifications | LinkedIn - Google Chrome
+2026-04-13 19:58:20 19:58:22 LinkedIn - Google Chrome
+2026-04-13 19:58:22 19:58:42 ISC2 Up2Date: April 7th, 2026 | LinkedIn - Google Chrome
+2026-04-13 19:58:42 19:58:55 ISC2 Membership and Certification as a Certified Cybersecurity Professional (CC) | LinkedIn - Google Chrome
+2026-04-13 20:00:24 22:07:30 window_changes.log - taskMonitor - Visual Studio Code
+2026-04-13 20:03:32 21:53:09 Settings
+2026-04-13 20:31:33 20:08:48 Desktop Icons 1
+2026-04-13 20:31:41 20:31:59 New Tab - Google Chrome
+2026-04-13 20:31:59 21:52:55 Luffy our hope - Recherche Google - Google Chrome
+2026-04-13 20:55:19 20:39:07 Desktop Icons 1
+2026-04-13 21:05:57 21:05:45 Desktop Icons 1
+2026-04-13 21:44:45 21:36:03 Desktop Icons 1
+2026-04-13 21:49:26 21:53:30 TaskMonitor
+2026-04-13 21:52:06 21:52:08 Devices & Locations
+2026-04-13 21:52:08 21:52:53 aidan-Lenovo-N50-70
+2026-04-13 22:07:30 22:07:38 Preview deploy_docker.md - taskMonitor - Visual Studio Code
+2026-04-13 23:24:24 22:26:46 Desktop Icons 1

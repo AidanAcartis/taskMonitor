@@ -1,7 +1,7 @@
 {
   "clusters": [
     {
-      "cluster_id": "Cluster 20",
+      "cluster_id": "Cluster 25",
       "global_task_intention": "Active an environment",
       "cohesion": 0.438,
       "stats": {
@@ -38,7 +38,7 @@
       ],
       "events": [
         {
-          "event_id": 84,
+          "event_id": 110,
           "date": "2026-04-13",
           "start": "05:51:03",
           "end": "05:51:05",
@@ -51,7 +51,7 @@
           "description": "conda env list, command, executed in terminal"
         },
         {
-          "event_id": 85,
+          "event_id": 111,
           "date": "2026-04-13",
           "start": "05:51:14",
           "end": "05:51:16",
@@ -64,7 +64,7 @@
           "description": "conda activate MLproject_py311, command, executed in terminal, used to activate an environment"
         },
         {
-          "event_id": 135,
+          "event_id": 161,
           "date": "2026-04-13",
           "start": "08:04:59",
           "end": "08:05:01",
@@ -77,7 +77,7 @@
           "description": "conda env list, command, executed in terminal"
         },
         {
-          "event_id": 136,
+          "event_id": 162,
           "date": "2026-04-13",
           "start": "08:05:17",
           "end": "08:05:19",
@@ -92,9 +92,9 @@
       ]
     },
     {
-      "cluster_id": "Other small tasks \u2014 singleton 16",
+      "cluster_id": "Other small tasks \u2014 singleton 13",
       "global_task_intention": "clear the screen",
-      "cohesion": 0.876,
+      "cohesion": 0.899,
       "stats": {
         "total_duration": 0.66,
         "active_duration": 0.66,
@@ -194,7 +194,7 @@
       ],
       "events": [
         {
-          "event_id": 86,
+          "event_id": 112,
           "date": "2026-04-13",
           "start": "05:51:17",
           "end": "05:51:19",
@@ -207,7 +207,7 @@
           "description": "clear, command, executed in terminal, used to clear the screen"
         },
         {
-          "event_id": 88,
+          "event_id": 114,
           "date": "2026-04-13",
           "start": "06:03:19",
           "end": "06:03:21",
@@ -220,7 +220,7 @@
           "description": "clear, command, executed in terminal, used to clear the screen"
         },
         {
-          "event_id": 90,
+          "event_id": 116,
           "date": "2026-04-13",
           "start": "06:03:26",
           "end": "06:03:28",
@@ -233,7 +233,7 @@
           "description": "clear, command, executed in terminal, used to clear the screen"
         },
         {
-          "event_id": 92,
+          "event_id": 118,
           "date": "2026-04-13",
           "start": "06:30:06",
           "end": "06:30:08",
@@ -246,7 +246,7 @@
           "description": "clear, command, executed in terminal, used to clear the screen"
         },
         {
-          "event_id": 95,
+          "event_id": 121,
           "date": "2026-04-13",
           "start": "06:30:38",
           "end": "06:30:40",
@@ -259,7 +259,7 @@
           "description": "clear, command, executed in terminal, used to clear the screen"
         },
         {
-          "event_id": 104,
+          "event_id": 130,
           "date": "2026-04-13",
           "start": "07:02:50",
           "end": "07:02:52",
@@ -272,7 +272,7 @@
           "description": "clear, command, executed in terminal, used to clear the screen"
         },
         {
-          "event_id": 106,
+          "event_id": 132,
           "date": "2026-04-13",
           "start": "07:41:16",
           "end": "07:41:18",
@@ -285,7 +285,7 @@
           "description": "clear, command, executed in terminal, used to clear the screen"
         },
         {
-          "event_id": 110,
+          "event_id": 136,
           "date": "2026-04-13",
           "start": "07:43:13",
           "end": "07:43:15",
@@ -298,7 +298,7 @@
           "description": "clear, command, executed in terminal, used to clear the screen"
         },
         {
-          "event_id": 114,
+          "event_id": 140,
           "date": "2026-04-13",
           "start": "07:48:00",
           "end": "07:48:02",
@@ -311,7 +311,7 @@
           "description": "clear, command, executed in terminal, used to clear the screen"
         },
         {
-          "event_id": 120,
+          "event_id": 146,
           "date": "2026-04-13",
           "start": "07:54:24",
           "end": "07:54:26",
@@ -324,7 +324,7 @@
           "description": "clear, command, executed in terminal, used to clear the screen"
         },
         {
-          "event_id": 122,
+          "event_id": 148,
           "date": "2026-04-13",
           "start": "07:56:10",
           "end": "07:56:12",
@@ -337,7 +337,7 @@
           "description": "clear, command, executed in terminal, used to clear the screen"
         },
         {
-          "event_id": 125,
+          "event_id": 151,
           "date": "2026-04-13",
           "start": "08:01:31",
           "end": "08:01:33",
@@ -350,7 +350,7 @@
           "description": "clear, command, executed in terminal, used to clear the screen"
         },
         {
-          "event_id": 127,
+          "event_id": 153,
           "date": "2026-04-13",
           "start": "08:02:32",
           "end": "08:02:34",
@@ -363,7 +363,7 @@
           "description": "clear, command, executed in terminal, used to clear the screen"
         },
         {
-          "event_id": 134,
+          "event_id": 160,
           "date": "2026-04-13",
           "start": "08:03:46",
           "end": "08:03:48",
@@ -376,7 +376,7 @@
           "description": "clear, command, executed in terminal, used to clear the screen"
         },
         {
-          "event_id": 137,
+          "event_id": 163,
           "date": "2026-04-13",
           "start": "08:05:20",
           "end": "08:05:22",
@@ -389,7 +389,7 @@
           "description": "clear, command, executed in terminal, used to clear the screen"
         },
         {
-          "event_id": 140,
+          "event_id": 166,
           "date": "2026-04-13",
           "start": "08:05:30",
           "end": "08:05:32",
@@ -402,7 +402,7 @@
           "description": "clear, command, executed in terminal, used to clear the screen"
         },
         {
-          "event_id": 142,
+          "event_id": 168,
           "date": "2026-04-13",
           "start": "08:08:01",
           "end": "08:08:03",
@@ -415,7 +415,7 @@
           "description": "clear, command, executed in terminal, used to clear the screen"
         },
         {
-          "event_id": 149,
+          "event_id": 175,
           "date": "2026-04-13",
           "start": "08:19:45",
           "end": "08:19:47",
@@ -428,7 +428,7 @@
           "description": "clear, command, executed in terminal, used to clear the screen"
         },
         {
-          "event_id": 155,
+          "event_id": 181,
           "date": "2026-04-13",
           "start": "09:41:57",
           "end": "09:41:59",
@@ -441,7 +441,7 @@
           "description": "clear, command, executed in terminal, used to clear the screen"
         },
         {
-          "event_id": 158,
+          "event_id": 184,
           "date": "2026-04-13",
           "start": "09:44:57",
           "end": "09:44:59",
@@ -456,9 +456,9 @@
       ]
     },
     {
-      "cluster_id": "Other small tasks \u2014 singleton 13",
+      "cluster_id": "Other small tasks \u2014 singleton 18",
       "global_task_intention": "start visual studio code",
-      "cohesion": 0.876,
+      "cohesion": 0.899,
       "stats": {
         "total_duration": 0.033,
         "active_duration": 0.033,
@@ -483,7 +483,7 @@
       ],
       "events": [
         {
-          "event_id": 87,
+          "event_id": 113,
           "date": "2026-04-13",
           "start": "05:51:20",
           "end": "05:51:22",
@@ -498,7 +498,7 @@
       ]
     },
     {
-      "cluster_id": "Cluster 13",
+      "cluster_id": "Cluster 0",
       "global_task_intention": "Update available packages",
       "cohesion": 0.27,
       "stats": {
@@ -550,7 +550,7 @@
       ],
       "events": [
         {
-          "event_id": 89,
+          "event_id": 115,
           "date": "2026-04-13",
           "start": "06:03:22",
           "end": "06:03:24",
@@ -563,7 +563,7 @@
           "description": "pip install, command, executed in terminal, used to install a package (see `pip install` for more install examples)"
         },
         {
-          "event_id": 91,
+          "event_id": 117,
           "date": "2026-04-13",
           "start": "06:03:30",
           "end": "06:03:32",
@@ -576,7 +576,7 @@
           "description": "pip list, command, executed in terminal, used to list installed packages"
         },
         {
-          "event_id": 105,
+          "event_id": 131,
           "date": "2026-04-13",
           "start": "07:02:52",
           "end": "07:02:54",
@@ -589,7 +589,7 @@
           "description": "pip list, command, executed in terminal, used to list installed packages"
         },
         {
-          "event_id": 123,
+          "event_id": 149,
           "date": "2026-04-13",
           "start": "07:56:59",
           "end": "07:57:01",
@@ -602,7 +602,7 @@
           "description": "sudo apt update && sudo apt upgrade, command, executed in terminal, used to update list of available packages |"
         },
         {
-          "event_id": 124,
+          "event_id": 150,
           "date": "2026-04-13",
           "start": "07:57:04",
           "end": "07:57:06",
@@ -617,7 +617,7 @@
       ]
     },
     {
-      "cluster_id": "Cluster 1",
+      "cluster_id": "Cluster 19",
       "global_task_intention": "Review data in processes",
       "cohesion": 0.348,
       "stats": {
@@ -684,7 +684,7 @@
       ],
       "events": [
         {
-          "event_id": 93,
+          "event_id": 119,
           "date": "2026-04-13",
           "start": "06:30:07",
           "end": "06:30:09",
@@ -697,7 +697,7 @@
           "description": "ls, command, executed in terminal, used to list directory contents"
         },
         {
-          "event_id": 94,
+          "event_id": 120,
           "date": "2026-04-13",
           "start": "06:30:16",
           "end": "06:30:18",
@@ -710,7 +710,7 @@
           "description": "ls ../Vis_Models/, command, executed in terminal, used to list directory contents in ../Vis_Models/"
         },
         {
-          "event_id": 96,
+          "event_id": 122,
           "date": "2026-04-13",
           "start": "06:30:44",
           "end": "06:30:46",
@@ -723,7 +723,7 @@
           "description": "ls, command, executed in terminal, used to list directory contents"
         },
         {
-          "event_id": 109,
+          "event_id": 135,
           "date": "2026-04-13",
           "start": "07:43:11",
           "end": "07:43:13",
@@ -736,7 +736,7 @@
           "description": "ls, command, executed in terminal, used to list directory contents"
         },
         {
-          "event_id": 111,
+          "event_id": 137,
           "date": "2026-04-13",
           "start": "07:43:14",
           "end": "07:43:16",
@@ -749,7 +749,7 @@
           "description": "ls data/, command, executed in terminal, used to list directory contents in data/"
         },
         {
-          "event_id": 112,
+          "event_id": 138,
           "date": "2026-04-13",
           "start": "07:43:21",
           "end": "07:43:23",
@@ -762,7 +762,7 @@
           "description": "ls data/exports/, command, executed in terminal, used to list directory contents in data/exports/"
         },
         {
-          "event_id": 113,
+          "event_id": 139,
           "date": "2026-04-13",
           "start": "07:43:26",
           "end": "07:43:28",
@@ -775,7 +775,7 @@
           "description": "ls data/processed/, command, executed in terminal, used to list directory contents in data/processed/"
         },
         {
-          "event_id": 115,
+          "event_id": 141,
           "date": "2026-04-13",
           "start": "07:48:00",
           "end": "07:48:02",
@@ -788,7 +788,7 @@
           "description": "ls, command, executed in terminal, used to list directory contents"
         },
         {
-          "event_id": 121,
+          "event_id": 147,
           "date": "2026-04-13",
           "start": "07:54:27",
           "end": "07:54:29",
@@ -803,7 +803,7 @@
       ]
     },
     {
-      "cluster_id": "Cluster 12",
+      "cluster_id": "Cluster 4",
       "global_task_intention": "Monitor run tasks",
       "cohesion": 0.23,
       "stats": {
@@ -875,7 +875,7 @@
       ],
       "events": [
         {
-          "event_id": 97,
+          "event_id": 123,
           "date": "2026-04-13",
           "start": "06:30:48",
           "end": "06:30:50",
@@ -888,7 +888,7 @@
           "description": "ls taskmonitor/, command, executed in terminal, used to list directory contents in taskmonitor/"
         },
         {
-          "event_id": 98,
+          "event_id": 124,
           "date": "2026-04-13",
           "start": "06:30:51",
           "end": "06:30:53",
@@ -901,7 +901,7 @@
           "description": "ls taskmonitor/external/, command, executed in terminal, used to list directory contents in taskmonitor/external/"
         },
         {
-          "event_id": 99,
+          "event_id": 125,
           "date": "2026-04-13",
           "start": "06:30:53",
           "end": "06:30:55",
@@ -914,7 +914,7 @@
           "description": "ls taskmonitor/external/command_desc/, command, executed in terminal, used to list directory contents in taskmonitor/external/command_desc/"
         },
         {
-          "event_id": 100,
+          "event_id": 126,
           "date": "2026-04-13",
           "start": "06:30:57",
           "end": "06:30:59",
@@ -927,7 +927,7 @@
           "description": "ls taskmonitor/external/command_desc/command_describer_project/, command, executed in terminal, used to list directory contents in taskmonitor/external/command_desc/command_describer_project/"
         },
         {
-          "event_id": 101,
+          "event_id": 127,
           "date": "2026-04-13",
           "start": "06:32:17",
           "end": "06:32:19",
@@ -940,7 +940,7 @@
           "description": "ls taskmonitor/external/command_desc/command_describer_project/command_describer, command, executed in terminal, used to list directory contents in taskmonitor/external/command_desc/command_describer_project/command_describer"
         },
         {
-          "event_id": 102,
+          "event_id": 128,
           "date": "2026-04-13",
           "start": "06:32:29",
           "end": "06:32:31",
@@ -953,7 +953,7 @@
           "description": "ls taskmonitor/external/command_desc/command_describer_project/cmddesc_executable/, command, executed in terminal, used to list directory contents in taskmonitor/external/command_desc/command_describer_project/cmddesc_executable/"
         },
         {
-          "event_id": 103,
+          "event_id": 129,
           "date": "2026-04-13",
           "start": "06:32:37",
           "end": "06:32:39",
@@ -966,7 +966,7 @@
           "description": "ls taskmonitor/external/command_desc/command_describer_project/dist/, command, executed in terminal, used to list directory contents in taskmonitor/external/command_desc/command_describer_project/dist/"
         },
         {
-          "event_id": 154,
+          "event_id": 180,
           "date": "2026-04-13",
           "start": "09:41:55",
           "end": "09:41:57",
@@ -981,16 +981,16 @@
       ]
     },
     {
-      "cluster_id": "Cluster 5",
+      "cluster_id": "Cluster 13",
       "global_task_intention": "Monitor run tasks",
       "cohesion": 0.303,
       "stats": {
-        "total_duration": -1.781,
-        "active_duration": -1.781,
-        "time_span": 9.953,
-        "num_events": 4,
+        "total_duration": 0.099,
+        "active_duration": 0.099,
+        "time_span": 2.059,
+        "num_events": 3,
         "start": "2026-04-13 07:41:23",
-        "end": "2026-04-13 17:38:34"
+        "end": "2026-04-13 09:44:54"
       },
       "segments": [
         {
@@ -1002,11 +1002,6 @@
           "start": "2026-04-13 09:44:20",
           "end": "2026-04-13 09:44:54",
           "duration": 0.066
-        },
-        {
-          "start": "2026-04-13 17:38:50",
-          "end": "2026-04-13 17:38:34",
-          "duration": -1.88
         }
       ],
       "task_items": [
@@ -1024,16 +1019,11 @@
           "description": "cat run_taskmonitor.sh, command, executed in terminal, used to print the contents of a file to `stdout` with the run_taskmonitor.sh file which is a Shell script, It monitors run tasks., SH",
           "total_duration": 0.033,
           "occurrences": 1
-        },
-        {
-          "description": "TaskMonitor, application, used by the user",
-          "total_duration": -1.88,
-          "occurrences": 1
         }
       ],
       "events": [
         {
-          "event_id": 107,
+          "event_id": 133,
           "date": "2026-04-13",
           "start": "07:41:23",
           "end": "07:41:25",
@@ -1046,7 +1036,7 @@
           "description": "cd ~/Documents/Projects/Visualization/taskMonitor, command, executed in terminal, used to go to the specified directory in ~/Documents/Projects/Visualization/taskMonitor"
         },
         {
-          "event_id": 156,
+          "event_id": 182,
           "date": "2026-04-13",
           "start": "09:44:20",
           "end": "09:44:22",
@@ -1059,7 +1049,7 @@
           "description": "VIS_MODELS_PATH=~/Documents/Projects/Visualization/Vis_Models ./run_taskmonitor.sh, command, executed in terminal, used to run the script './run_taskmonitor.sh' with the ./run_taskmonitor.sh file which is a Shell script, It monitors run tasks., SH"
         },
         {
-          "event_id": 157,
+          "event_id": 183,
           "date": "2026-04-13",
           "start": "09:44:52",
           "end": "09:44:54",
@@ -1070,33 +1060,20 @@
           "command": "cat run_taskmonitor.sh",
           "raw": "cat run_taskmonitor.sh",
           "description": "cat run_taskmonitor.sh, command, executed in terminal, used to print the contents of a file to `stdout` with the run_taskmonitor.sh file which is a Shell script, It monitors run tasks., SH"
-        },
-        {
-          "event_id": 83,
-          "date": "2026-04-13",
-          "start": "17:38:50",
-          "end": "17:38:34",
-          "duration": -1.88,
-          "event_type": "app",
-          "file": "",
-          "app": "TaskMonitor",
-          "command": "",
-          "raw": "TaskMonitor",
-          "description": "TaskMonitor, application, used by the user"
         }
       ]
     },
     {
-      "cluster_id": "Cluster 9",
-      "global_task_intention": "Deploy and manage docker for a system",
-      "cohesion": 0.306,
+      "cluster_id": "Cluster 1",
+      "global_task_intention": "Deploy docker for a system",
+      "cohesion": 0.318,
       "stats": {
-        "total_duration": 1.246,
-        "active_duration": 1.246,
-        "time_span": 11.182,
-        "num_events": 14,
+        "total_duration": 49.716,
+        "active_duration": 49.716,
+        "time_span": 14.433,
+        "num_events": 15,
         "start": "2026-04-13 07:41:39",
-        "end": "2026-04-13 18:52:34"
+        "end": "2026-04-13 22:07:38"
       },
       "segments": [
         {
@@ -1138,9 +1115,19 @@
           "start": "2026-04-13 18:52:30",
           "end": "2026-04-13 18:52:34",
           "duration": 0.07
+        },
+        {
+          "start": "2026-04-13 22:07:30",
+          "end": "2026-04-13 22:07:38",
+          "duration": 48.47
         }
       ],
       "task_items": [
+        {
+          "description": "Preview deploy_docker.md, file, opened with Visual Studio Code, contains data related to Markdown document, text files, It serves as a preview deployment document., Image and document viewing software",
+          "total_duration": 48.47,
+          "occurrences": 1
+        },
         {
           "description": "docker-compose.yml, file, opened with Visual Studio Code, contains data related to YAML document, YAML configuration, It serves as a docker-compose., container tool, Container management software",
           "total_duration": 0.78,
@@ -1194,7 +1181,7 @@
       ],
       "events": [
         {
-          "event_id": 108,
+          "event_id": 134,
           "date": "2026-04-13",
           "start": "07:41:39",
           "end": "07:41:41",
@@ -1207,7 +1194,7 @@
           "description": "docker build -t taskmonitor:latest ., command, executed in terminal, used to option to tag the resulting docker image with a name and optionally a version"
         },
         {
-          "event_id": 116,
+          "event_id": 142,
           "date": "2026-04-13",
           "start": "07:48:14",
           "end": "07:48:16",
@@ -1220,7 +1207,7 @@
           "description": "cat docker-compose.yml, command, executed in terminal, used to print the contents of a file to `stdout` with the docker-compose.yml file which is a YAML document, YAML configuration, It serves as a docker-compose., container tool, Container management software"
         },
         {
-          "event_id": 117,
+          "event_id": 143,
           "date": "2026-04-13",
           "start": "07:48:28",
           "end": "07:48:30",
@@ -1233,7 +1220,7 @@
           "description": "cat Dockerfile, command, executed in terminal"
         },
         {
-          "event_id": 126,
+          "event_id": 152,
           "date": "2026-04-13",
           "start": "08:01:41",
           "end": "08:01:43",
@@ -1246,7 +1233,7 @@
           "description": "sudo apt install docker.io, command, executed in terminal, used to install packages + website / domain 'docker.io' with the docker.io file which is a It serves as a docker for a system., Container management software"
         },
         {
-          "event_id": 130,
+          "event_id": 156,
           "date": "2026-04-13",
           "start": "08:02:50",
           "end": "08:02:52",
@@ -1259,7 +1246,7 @@
           "description": "sudo usermod -aG docker $USER, command, executed in terminal"
         },
         {
-          "event_id": 131,
+          "event_id": 157,
           "date": "2026-04-13",
           "start": "08:03:08",
           "end": "08:03:10",
@@ -1272,7 +1259,7 @@
           "description": "newgrp docker, command, executed in terminal"
         },
         {
-          "event_id": 132,
+          "event_id": 158,
           "date": "2026-04-13",
           "start": "08:03:16",
           "end": "08:03:18",
@@ -1285,7 +1272,7 @@
           "description": "docker --version, command, executed in terminal"
         },
         {
-          "event_id": 133,
+          "event_id": 159,
           "date": "2026-04-13",
           "start": "08:03:24",
           "end": "08:03:26",
@@ -1298,7 +1285,7 @@
           "description": "docker ps, command, executed in terminal"
         },
         {
-          "event_id": 138,
+          "event_id": 164,
           "date": "2026-04-13",
           "start": "08:05:24",
           "end": "08:05:26",
@@ -1311,7 +1298,7 @@
           "description": "docker --version, command, executed in terminal"
         },
         {
-          "event_id": 139,
+          "event_id": 165,
           "date": "2026-04-13",
           "start": "08:05:28",
           "end": "08:05:30",
@@ -1324,7 +1311,7 @@
           "description": "docker ps, command, executed in terminal"
         },
         {
-          "event_id": 141,
+          "event_id": 167,
           "date": "2026-04-13",
           "start": "08:05:36",
           "end": "08:05:38",
@@ -1337,7 +1324,7 @@
           "description": "docker build -t taskmonitor:latest ., command, executed in terminal, used to option to tag the resulting docker image with a name and optionally a version"
         },
         {
-          "event_id": 143,
+          "event_id": 169,
           "date": "2026-04-13",
           "start": "08:08:03",
           "end": "08:08:05",
@@ -1350,7 +1337,7 @@
           "description": "docker build -t taskmonitor:latest ., command, executed in terminal, used to option to tag the resulting docker image with a name and optionally a version"
         },
         {
-          "event_id": 35,
+          "event_id": 53,
           "date": "2026-04-13",
           "start": "17:43:42",
           "end": "17:44:25",
@@ -1363,7 +1350,7 @@
           "description": "docker-compose.yml, file, opened with Visual Studio Code, contains data related to YAML document, YAML configuration, It serves as a docker-compose., container tool, Container management software"
         },
         {
-          "event_id": 69,
+          "event_id": 95,
           "date": "2026-04-13",
           "start": "18:52:30",
           "end": "18:52:34",
@@ -1374,12 +1361,25 @@
           "command": "",
           "raw": "deploy_docker.md - taskMonitor - Visual Studio Code",
           "description": "deploy_docker.md, file, opened with Visual Studio Code, contains data related to Markdown document, text files, It serves as a deployment document."
+        },
+        {
+          "event_id": 10,
+          "date": "2026-04-13",
+          "start": "22:07:30",
+          "end": "22:07:38",
+          "duration": 48.47,
+          "event_type": "file",
+          "file": "Preview deploy_docker.md",
+          "app": "Visual Studio Code",
+          "command": "",
+          "raw": "Preview deploy_docker.md - taskMonitor - Visual Studio Code",
+          "description": "Preview deploy_docker.md, file, opened with Visual Studio Code, contains data related to Markdown document, text files, It serves as a preview deployment document., Image and document viewing software"
         }
       ]
     },
     {
-      "cluster_id": "Cluster 17",
-      "global_task_intention": "Deploy requirements docker",
+      "cluster_id": "Cluster 8",
+      "global_task_intention": "Deploy and test requirements docker",
       "cohesion": 0.128,
       "stats": {
         "total_duration": 0.066,
@@ -1410,7 +1410,7 @@
       ],
       "events": [
         {
-          "event_id": 118,
+          "event_id": 144,
           "date": "2026-04-13",
           "start": "07:48:48",
           "end": "07:48:50",
@@ -1423,7 +1423,7 @@
           "description": "requirements_docker.txt, command, executed in terminal"
         },
         {
-          "event_id": 119,
+          "event_id": 145,
           "date": "2026-04-13",
           "start": "07:48:54",
           "end": "07:48:56",
@@ -1438,9 +1438,9 @@
       ]
     },
     {
-      "cluster_id": "Other small tasks \u2014 singleton 29",
+      "cluster_id": "Other small tasks \u2014 singleton 33",
       "global_task_intention": "run sudo systemctl start docker",
-      "cohesion": 0.876,
+      "cohesion": 0.899,
       "stats": {
         "total_duration": 0.033,
         "active_duration": 0.033,
@@ -1465,7 +1465,7 @@
       ],
       "events": [
         {
-          "event_id": 128,
+          "event_id": 154,
           "date": "2026-04-13",
           "start": "08:02:34",
           "end": "08:02:36",
@@ -1480,9 +1480,9 @@
       ]
     },
     {
-      "cluster_id": "Other small tasks \u2014 singleton 28",
+      "cluster_id": "Other small tasks \u2014 singleton 32",
       "global_task_intention": "run sudo systemctl enable docker",
-      "cohesion": 0.876,
+      "cohesion": 0.899,
       "stats": {
         "total_duration": 0.033,
         "active_duration": 0.033,
@@ -1507,7 +1507,7 @@
       ],
       "events": [
         {
-          "event_id": 129,
+          "event_id": 155,
           "date": "2026-04-13",
           "start": "08:02:41",
           "end": "08:02:43",
@@ -1522,7 +1522,7 @@
       ]
     },
     {
-      "cluster_id": "Cluster 18",
+      "cluster_id": "Cluster 2",
       "global_task_intention": "Monitor file and directory size",
       "cohesion": 0.0,
       "stats": {
@@ -1559,7 +1559,7 @@
       ],
       "events": [
         {
-          "event_id": 144,
+          "event_id": 170,
           "date": "2026-04-13",
           "start": "08:17:43",
           "end": "08:17:45",
@@ -1572,7 +1572,7 @@
           "description": "du -ah / 2>/dev/null | sort -rh | head -10, command, executed in terminal, used to write counts for all files, not just directories --apparent-size print apparent sizes rather than device usage; although the apparent size is usually smaller, it may be larger due to holes in ('sparse') files, internal fragmentation, indirect blocks, and the like + list the sizes of a directory and any subdirectories, in human-readable form (i.e. auto-selecting the appropriate unit for each size) | sort a file in descending order + compare human readable numbers (e.g., 2k 1g) in / and in 2>/dev/null"
         },
         {
-          "event_id": 145,
+          "event_id": 171,
           "date": "2026-04-13",
           "start": "08:18:33",
           "end": "08:18:35",
@@ -1585,7 +1585,7 @@
           "description": "du -ah / 2>/dev/null | sort -rh | head -10, command, executed in terminal, used to write counts for all files, not just directories --apparent-size print apparent sizes rather than device usage; although the apparent size is usually smaller, it may be larger due to holes in ('sparse') files, internal fragmentation, indirect blocks, and the like + list the sizes of a directory and any subdirectories, in human-readable form (i.e. auto-selecting the appropriate unit for each size) | sort a file in descending order + compare human readable numbers (e.g., 2k 1g) in / and in 2>/dev/null"
         },
         {
-          "event_id": 151,
+          "event_id": 177,
           "date": "2026-04-13",
           "start": "08:19:49",
           "end": "08:19:51",
@@ -1598,7 +1598,7 @@
           "description": "du -ah / 2>/dev/null | sort -rh | head -10, command, executed in terminal, used to write counts for all files, not just directories --apparent-size print apparent sizes rather than device usage; although the apparent size is usually smaller, it may be larger due to holes in ('sparse') files, internal fragmentation, indirect blocks, and the like + list the sizes of a directory and any subdirectories, in human-readable form (i.e. auto-selecting the appropriate unit for each size) | sort a file in descending order + compare human readable numbers (e.g., 2k 1g) in / and in 2>/dev/null"
         },
         {
-          "event_id": 152,
+          "event_id": 178,
           "date": "2026-04-13",
           "start": "08:20:46",
           "end": "08:20:48",
@@ -1613,9 +1613,9 @@
       ]
     },
     {
-      "cluster_id": "Other small tasks \u2014 singleton 1",
+      "cluster_id": "Other small tasks \u2014 singleton 10",
       "global_task_intention": "display the list",
-      "cohesion": 0.876,
+      "cohesion": 0.899,
       "stats": {
         "total_duration": 0.033,
         "active_duration": 0.033,
@@ -1640,7 +1640,7 @@
       ],
       "events": [
         {
-          "event_id": 153,
+          "event_id": 179,
           "date": "2026-04-13",
           "start": "09:41:23",
           "end": "09:41:25",
@@ -1655,93 +1655,179 @@
       ]
     },
     {
-      "cluster_id": "Other small tasks \u2014 singleton 20",
-      "global_task_intention": "use pics",
-      "cohesion": 0.876,
+      "cluster_id": "Cluster 12",
+      "global_task_intention": "Browse and manage applications",
+      "cohesion": 0.432,
       "stats": {
-        "total_duration": 255.42,
-        "active_duration": 255.42,
-        "time_span": 4.257,
-        "num_events": 1,
+        "total_duration": 472.13,
+        "active_duration": 472.13,
+        "time_span": 10.059,
+        "num_events": 7,
         "start": "2026-04-13 13:20:59",
-        "end": "2026-04-13 17:36:24"
+        "end": "2026-04-13 23:24:33"
       },
       "segments": [
         {
           "start": "2026-04-13 13:20:59",
-          "end": "2026-04-13 17:36:24",
-          "duration": 255.42
+          "end": "2026-04-13 13:36:20",
+          "duration": 255.55
+        },
+        {
+          "start": "2026-04-13 19:05:48",
+          "end": "2026-04-13 19:06:29",
+          "duration": 1.25
+        },
+        {
+          "start": "2026-04-13 19:53:16",
+          "end": "2026-04-13 19:53:30",
+          "duration": 211.38
+        },
+        {
+          "start": "2026-04-13 20:03:32",
+          "end": "2026-04-13 21:53:09",
+          "duration": 109.62
+        },
+        {
+          "start": "2026-04-13 23:24:24",
+          "end": "2026-04-13 22:26:46",
+          "duration": -105.67
         }
       ],
       "task_items": [
         {
-          "description": "PICS, application, used by the user",
+          "description": "PICS, directory, navigated by the user",
           "total_duration": 255.42,
+          "occurrences": 1
+        },
+        {
+          "description": "Visualization, directory, navigated by the user",
+          "total_duration": 211.28,
+          "occurrences": 1
+        },
+        {
+          "description": "Settings, directory, navigated by the user",
+          "total_duration": 109.62,
+          "occurrences": 1
+        },
+        {
+          "description": "Google Chrome, application, used to checked out Untitled",
+          "total_duration": 1.25,
+          "occurrences": 1
+        },
+        {
+          "description": "VLC media player, directory, navigated by the user",
+          "total_duration": 0.13,
+          "occurrences": 1
+        },
+        {
+          "description": "Properties, directory, navigated by the user",
+          "total_duration": 0.1,
+          "occurrences": 1
+        },
+        {
+          "description": "Desktop Icons 1, directory, navigated by the user",
+          "total_duration": -105.67,
           "occurrences": 1
         }
       ],
       "events": [
         {
-          "event_id": 0,
+          "event_id": 1,
           "date": "2026-04-13",
           "start": "13:20:59",
           "end": "17:36:24",
           "duration": 255.42,
-          "event_type": "app",
+          "event_type": "directory",
           "file": "",
           "app": "PICS",
           "command": "",
           "raw": "PICS",
-          "description": "PICS, application, used by the user"
-        }
-      ]
-    },
-    {
-      "cluster_id": "Other small tasks \u2014 singleton 14",
-      "global_task_intention": "use vlc media player",
-      "cohesion": 0.876,
-      "stats": {
-        "total_duration": 0.13,
-        "active_duration": 0.13,
-        "time_span": 0.001,
-        "num_events": 1,
-        "start": "2026-04-13 13:36:18",
-        "end": "2026-04-13 13:36:20"
-      },
-      "segments": [
+          "description": "PICS, directory, navigated by the user"
+        },
         {
-          "start": "2026-04-13 13:36:18",
-          "end": "2026-04-13 13:36:20",
-          "duration": 0.13
-        }
-      ],
-      "task_items": [
-        {
-          "description": "VLC media player, application, used by the user",
-          "total_duration": 0.13,
-          "occurrences": 1
-        }
-      ],
-      "events": [
-        {
-          "event_id": 63,
+          "event_id": 87,
           "date": "2026-04-13",
           "start": "13:36:18",
           "end": "13:36:20",
           "duration": 0.13,
-          "event_type": "app",
+          "event_type": "directory",
           "file": "",
           "app": "VLC media player",
           "command": "",
           "raw": "VLC media player",
-          "description": "VLC media player, application, used by the user"
+          "description": "VLC media player, directory, navigated by the user"
+        },
+        {
+          "event_id": 43,
+          "date": "2026-04-13",
+          "start": "19:05:48",
+          "end": "19:06:29",
+          "duration": 1.25,
+          "event_type": "app",
+          "file": "",
+          "app": "Google Chrome",
+          "command": "",
+          "raw": "Untitled - Google Chrome",
+          "description": "Google Chrome, application, used to checked out Untitled"
+        },
+        {
+          "event_id": 2,
+          "date": "2026-04-13",
+          "start": "19:53:16",
+          "end": "23:24:33",
+          "duration": 211.28,
+          "event_type": "directory",
+          "file": "",
+          "app": "Visualization",
+          "command": "",
+          "raw": "Visualization",
+          "description": "Visualization, directory, navigated by the user"
+        },
+        {
+          "event_id": 92,
+          "date": "2026-04-13",
+          "start": "19:53:24",
+          "end": "19:53:30",
+          "duration": 0.1,
+          "event_type": "directory",
+          "file": "",
+          "app": "Properties",
+          "command": "",
+          "raw": "Properties",
+          "description": "Properties, directory, navigated by the user"
+        },
+        {
+          "event_id": 5,
+          "date": "2026-04-13",
+          "start": "20:03:32",
+          "end": "21:53:09",
+          "duration": 109.62,
+          "event_type": "directory",
+          "file": "",
+          "app": "Settings",
+          "command": "",
+          "raw": "Settings",
+          "description": "Settings, directory, navigated by the user"
+        },
+        {
+          "event_id": 109,
+          "date": "2026-04-13",
+          "start": "23:24:24",
+          "end": "22:26:46",
+          "duration": -105.67,
+          "event_type": "directory",
+          "file": "",
+          "app": "Desktop Icons 1",
+          "command": "",
+          "raw": "Desktop Icons 1",
+          "description": "Desktop Icons 1, directory, navigated by the user"
         }
       ]
     },
     {
-      "cluster_id": "Other small tasks \u2014 singleton 15",
+      "cluster_id": "Other small tasks \u2014 singleton 5",
       "global_task_intention": "open undefeated \u00b7 xg & valorant #dance cover.mp4 with Vlc Media Player",
-      "cohesion": 0.876,
+      "cohesion": 0.899,
       "stats": {
         "total_duration": 18.93,
         "active_duration": 18.93,
@@ -1766,7 +1852,7 @@
       ],
       "events": [
         {
-          "event_id": 2,
+          "event_id": 12,
           "date": "2026-04-13",
           "start": "13:36:20",
           "end": "13:40:42",
@@ -1781,7 +1867,7 @@
       ]
     },
     {
-      "cluster_id": "Cluster 4",
+      "cluster_id": "Cluster 15",
       "global_task_intention": "Build and test python applications",
       "cohesion": 0.413,
       "stats": {
@@ -1823,7 +1909,7 @@
       ],
       "events": [
         {
-          "event_id": 62,
+          "event_id": 86,
           "date": "2026-04-13",
           "start": "13:37:27",
           "end": "13:37:37",
@@ -1836,7 +1922,7 @@
           "description": "dashboard.py, file, opened with Visual Studio Code, contains data related to Python 3 script, text files, It serves as a dashboard for users."
         },
         {
-          "event_id": 56,
+          "event_id": 79,
           "date": "2026-04-13",
           "start": "13:37:37",
           "end": "13:37:55",
@@ -1849,7 +1935,7 @@
           "description": "chart.py, file, opened with Visual Studio Code, contains data related to Python 3 script, text files, It serves as a chart for a project."
         },
         {
-          "event_id": 5,
+          "event_id": 15,
           "date": "2026-04-13",
           "start": "17:41:02",
           "end": "17:42:37",
@@ -1864,9 +1950,9 @@
       ]
     },
     {
-      "cluster_id": "Other small tasks \u2014 singleton 25",
+      "cluster_id": "Other small tasks \u2014 singleton 26",
       "global_task_intention": "open monitoring.py with Visual Studio Code",
-      "cohesion": 0.876,
+      "cohesion": 0.899,
       "stats": {
         "total_duration": 0.03,
         "active_duration": 0.03,
@@ -1891,7 +1977,7 @@
       ],
       "events": [
         {
-          "event_id": 72,
+          "event_id": 97,
           "date": "2026-04-13",
           "start": "13:37:55",
           "end": "13:37:57",
@@ -1906,9 +1992,9 @@
       ]
     },
     {
-      "cluster_id": "Other small tasks \u2014 singleton 23",
+      "cluster_id": "Other small tasks \u2014 singleton 21",
       "global_task_intention": "check out tryhackme | introduction",
-      "cohesion": 0.876,
+      "cohesion": 0.899,
       "stats": {
         "total_duration": 0.03,
         "active_duration": 0.03,
@@ -1933,7 +2019,7 @@
       ],
       "events": [
         {
-          "event_id": 73,
+          "event_id": 98,
           "date": "2026-04-13",
           "start": "13:41:47",
           "end": "13:41:49",
@@ -1948,9 +2034,9 @@
       ]
     },
     {
-      "cluster_id": "Other small tasks \u2014 singleton 9",
+      "cluster_id": "Other small tasks \u2014 singleton 12",
       "global_task_intention": "check out login | networking academy",
-      "cohesion": 0.876,
+      "cohesion": 0.899,
       "stats": {
         "total_duration": 0.03,
         "active_duration": 0.03,
@@ -1975,7 +2061,7 @@
       ],
       "events": [
         {
-          "event_id": 74,
+          "event_id": 99,
           "date": "2026-04-13",
           "start": "13:41:49",
           "end": "13:41:51",
@@ -1990,9 +2076,116 @@
       ]
     },
     {
-      "cluster_id": "Other small tasks \u2014 singleton 26",
+      "cluster_id": "Cluster 7",
+      "global_task_intention": "Launch task monitor",
+      "cohesion": 0.337,
+      "stats": {
+        "total_duration": 433.13,
+        "active_duration": 433.13,
+        "time_span": 8.194,
+        "num_events": 2,
+        "start": "2026-04-13 13:41:51",
+        "end": "2026-04-13 21:53:30"
+      },
+      "segments": [
+        {
+          "start": "2026-04-13 13:41:51",
+          "end": "2026-04-13 19:54:21",
+          "duration": 372.5
+        },
+        {
+          "start": "2026-04-13 21:49:26",
+          "end": "2026-04-13 21:53:30",
+          "duration": 60.63
+        }
+      ],
+      "task_items": [
+        {
+          "description": "Google Chrome, application, used to checked out Configuration Docker et lancement de TaskMonitor - Claude",
+          "total_duration": 372.5,
+          "occurrences": 1
+        },
+        {
+          "description": "TaskMonitor, directory, navigated by the user",
+          "total_duration": 60.63,
+          "occurrences": 1
+        }
+      ],
+      "events": [
+        {
+          "event_id": 0,
+          "date": "2026-04-13",
+          "start": "13:41:51",
+          "end": "19:54:21",
+          "duration": 372.5,
+          "event_type": "app",
+          "file": "",
+          "app": "Google Chrome",
+          "command": "",
+          "raw": "Configuration Docker et lancement de TaskMonitor - Claude - Google Chrome",
+          "description": "Google Chrome, application, used to checked out Configuration Docker et lancement de TaskMonitor - Claude"
+        },
+        {
+          "event_id": 8,
+          "date": "2026-04-13",
+          "start": "21:49:26",
+          "end": "21:53:30",
+          "duration": 60.63,
+          "event_type": "directory",
+          "file": "",
+          "app": "TaskMonitor",
+          "command": "",
+          "raw": "TaskMonitor",
+          "description": "TaskMonitor, directory, navigated by the user"
+        }
+      ]
+    },
+    {
+      "cluster_id": "Other small tasks \u2014 singleton 28",
+      "global_task_intention": "navigate collect_command_logs",
+      "cohesion": 0.899,
+      "stats": {
+        "total_duration": 136.87,
+        "active_duration": 136.87,
+        "time_span": 2.281,
+        "num_events": 1,
+        "start": "2026-04-13 17:36:24",
+        "end": "2026-04-13 19:53:16"
+      },
+      "segments": [
+        {
+          "start": "2026-04-13 17:36:24",
+          "end": "2026-04-13 19:53:16",
+          "duration": 136.87
+        }
+      ],
+      "task_items": [
+        {
+          "description": "COLLECT_COMMAND_LOGS, directory, navigated by the user",
+          "total_duration": 136.87,
+          "occurrences": 1
+        }
+      ],
+      "events": [
+        {
+          "event_id": 3,
+          "date": "2026-04-13",
+          "start": "17:36:24",
+          "end": "19:53:16",
+          "duration": 136.87,
+          "event_type": "directory",
+          "file": "",
+          "app": "COLLECT_COMMAND_LOGS",
+          "command": "",
+          "raw": "COLLECT_COMMAND_LOGS",
+          "description": "COLLECT_COMMAND_LOGS, directory, navigated by the user"
+        }
+      ]
+    },
+    {
+      "cluster_id": "Other small tasks \u2014 singleton 25",
       "global_task_intention": "open processing.py with Visual Studio Code",
-      "cohesion": 0.876,
+      "cohesion": 0.899,
       "stats": {
         "total_duration": 2.27,
         "active_duration": 2.27,
@@ -2017,7 +2210,7 @@
       ],
       "events": [
         {
-          "event_id": 19,
+          "event_id": 37,
           "date": "2026-04-13",
           "start": "17:39:43",
           "end": "17:41:02",
@@ -2032,9 +2225,9 @@
       ]
     },
     {
-      "cluster_id": "Other small tasks \u2014 singleton 17",
+      "cluster_id": "Other small tasks \u2014 singleton 15",
       "global_task_intention": "open preview correction.md with Visual Studio Code",
-      "cohesion": 0.876,
+      "cohesion": 0.899,
       "stats": {
         "total_duration": 69.1,
         "active_duration": 69.1,
@@ -2059,7 +2252,7 @@
       ],
       "events": [
         {
-          "event_id": 1,
+          "event_id": 7,
           "date": "2026-04-13",
           "start": "17:44:25",
           "end": "18:52:30",
@@ -2074,8 +2267,8 @@
       ]
     },
     {
-      "cluster_id": "Cluster 15",
-      "global_task_intention": "Browse for and watch videos",
+      "cluster_id": "Cluster 16",
+      "global_task_intention": "Watch videos",
       "cohesion": 0.404,
       "stats": {
         "total_duration": 8.31,
@@ -2121,7 +2314,7 @@
       ],
       "events": [
         {
-          "event_id": 81,
+          "event_id": 108,
           "date": "2026-04-13",
           "start": "17:47:18",
           "end": "17:47:14",
@@ -2134,7 +2327,7 @@
           "description": "Google Chrome, application, used to watch (13) George Benson - Nothing's Gonna Change My Love For You \u2022 TopPop - YouTube"
         },
         {
-          "event_id": 13,
+          "event_id": 25,
           "date": "2026-04-13",
           "start": "17:51:17",
           "end": "17:54:33",
@@ -2147,7 +2340,7 @@
           "description": "Google Chrome, application, used to watch (13) Billy Joel - Uptown Girl (Lyrics) - YouTube"
         },
         {
-          "event_id": 6,
+          "event_id": 16,
           "date": "2026-04-13",
           "start": "17:58:21",
           "end": "18:03:24",
@@ -2164,7 +2357,7 @@
     {
       "cluster_id": "Other small tasks \u2014 singleton 2",
       "global_task_intention": "watch (13) the police every breath you take (lyrics) - youtube",
-      "cohesion": 0.876,
+      "cohesion": 0.899,
       "stats": {
         "total_duration": 3.8,
         "active_duration": 3.8,
@@ -2189,7 +2382,7 @@
       ],
       "events": [
         {
-          "event_id": 10,
+          "event_id": 20,
           "date": "2026-04-13",
           "start": "17:54:33",
           "end": "17:58:21",
@@ -2204,8 +2397,8 @@
       ]
     },
     {
-      "cluster_id": "Cluster 0",
-      "global_task_intention": "Use taylor swift",
+      "cluster_id": "Cluster 5",
+      "global_task_intention": "Watch taylor swift",
       "cohesion": 0.309,
       "stats": {
         "total_duration": 31.03,
@@ -2296,7 +2489,7 @@
       ],
       "events": [
         {
-          "event_id": 68,
+          "event_id": 94,
           "date": "2026-04-13",
           "start": "18:06:23",
           "end": "18:06:27",
@@ -2309,7 +2502,7 @@
           "description": "Google Chrome, application, used to watch (13) taylor swift how you get the girl - YouTube"
         },
         {
-          "event_id": 15,
+          "event_id": 31,
           "date": "2026-04-13",
           "start": "18:06:27",
           "end": "18:06:29",
@@ -2322,7 +2515,7 @@
           "description": "Google Chrome, application, used to watch (13) George Michael - Careless Whisper (Official Video) - YouTube"
         },
         {
-          "event_id": 8,
+          "event_id": 18,
           "date": "2026-04-13",
           "start": "18:06:29",
           "end": "18:10:44",
@@ -2335,7 +2528,7 @@
           "description": "Google Chrome, application, used to watch (13) Taylor Swift - How You Get The Girl (Taylor's Version) (Lyric Video) - YouTube"
         },
         {
-          "event_id": 4,
+          "event_id": 14,
           "date": "2026-04-13",
           "start": "18:10:44",
           "end": "18:16:06",
@@ -2348,7 +2541,7 @@
           "description": "Google Chrome, application, used to watch (13) Taylor Swift - Long Live (Taylor's Version) (Lyric Video) - YouTube"
         },
         {
-          "event_id": 11,
+          "event_id": 22,
           "date": "2026-04-13",
           "start": "18:16:06",
           "end": "18:19:38",
@@ -2361,7 +2554,7 @@
           "description": "Google Chrome, application, used to watch (13) Taylor Swift - Wi$h Li$t (Lyric Video) - YouTube"
         },
         {
-          "event_id": 14,
+          "event_id": 26,
           "date": "2026-04-13",
           "start": "18:19:38",
           "end": "18:22:57",
@@ -2374,7 +2567,7 @@
           "description": "Google Chrome, application, used to watch (13) Taylor Swift - Bejeweled (Lyric Video) - YouTube"
         },
         {
-          "event_id": 9,
+          "event_id": 19,
           "date": "2026-04-13",
           "start": "18:22:57",
           "end": "18:26:53",
@@ -2387,7 +2580,7 @@
           "description": "Google Chrome, application, used to watch (13) Taylor Swift - Miss Americana & The Heartbreak Prince (Official Audio) - YouTube"
         },
         {
-          "event_id": 12,
+          "event_id": 24,
           "date": "2026-04-13",
           "start": "18:26:53",
           "end": "18:30:20",
@@ -2400,7 +2593,7 @@
           "description": "Google Chrome, application, used to watch (13) Taylor Swift - Call It What You Want (Lyric Video) - YouTube"
         },
         {
-          "event_id": 20,
+          "event_id": 38,
           "date": "2026-04-13",
           "start": "18:34:50",
           "end": "18:35:22",
@@ -2413,7 +2606,7 @@
           "description": "Google Chrome, application, used to watch (13) Taylor Swift - Afterglow (Official Audio) - YouTube"
         },
         {
-          "event_id": 65,
+          "event_id": 89,
           "date": "2026-04-13",
           "start": "18:45:41",
           "end": "18:45:49",
@@ -2426,7 +2619,7 @@
           "description": "Google Chrome, application, used to watch (13) bts new song - YouTube"
         },
         {
-          "event_id": 22,
+          "event_id": 40,
           "date": "2026-04-13",
           "start": "19:17:07",
           "end": "19:18:10",
@@ -2441,8 +2634,8 @@
       ]
     },
     {
-      "cluster_id": "Cluster 3",
-      "global_task_intention": "Monitor figure skating",
+      "cluster_id": "Cluster 11",
+      "global_task_intention": "Watch figure skating videos",
       "cohesion": 0.412,
       "stats": {
         "total_duration": 7.01,
@@ -2538,7 +2731,7 @@
       ],
       "events": [
         {
-          "event_id": 66,
+          "event_id": 90,
           "date": "2026-04-13",
           "start": "18:31:56",
           "end": "18:32:02",
@@ -2551,7 +2744,7 @@
           "description": "Google Chrome, application, used to watch Anna Shcherbakova \ud83d\udc93 #\u0430\u043d\u043d\u0430\u0449\u0435\u0440\u0431\u0430\u043a\u043e\u0432\u0430 #annashcherbakova #figureskating #skating #shorts - YouTube"
         },
         {
-          "event_id": 16,
+          "event_id": 32,
           "date": "2026-04-13",
           "start": "18:35:22",
           "end": "18:35:24",
@@ -2564,7 +2757,7 @@
           "description": "Google Chrome, application, used to watch (13) Anna Shcherbakova \ud83d\udc93 #\u0430\u043d\u043d\u0430\u0449\u0435\u0440\u0431\u0430\u043a\u043e\u0432\u0430 #annashcherbakova #figureskating #skating #shorts - YouTube"
         },
         {
-          "event_id": 21,
+          "event_id": 39,
           "date": "2026-04-13",
           "start": "18:37:04",
           "end": "18:38:56",
@@ -2577,7 +2770,7 @@
           "description": "Google Chrome, application, used to watch (13) Who deserved the Olympic gold medal in ladies singles skating at the 2022 Olympics? \ud83e\udd47 - YouTube"
         },
         {
-          "event_id": 64,
+          "event_id": 88,
           "date": "2026-04-13",
           "start": "18:45:33",
           "end": "18:45:41",
@@ -2590,7 +2783,7 @@
           "description": "Google Chrome, application, used to watch (13) they did them dirty\ud83d\ude2d #skating #figureskating #olympics #trending #shorts #viral #viralshorts #sports - YouTube"
         },
         {
-          "event_id": 36,
+          "event_id": 55,
           "date": "2026-04-13",
           "start": "18:54:59",
           "end": "18:55:42",
@@ -2603,7 +2796,7 @@
           "description": "Google Chrome, application, used to watch (13) Have you ever wondered why Eteri Tutberidze's skaters have short careers? - YouTube"
         },
         {
-          "event_id": 52,
+          "event_id": 74,
           "date": "2026-04-13",
           "start": "18:56:45",
           "end": "18:57:05",
@@ -2616,7 +2809,7 @@
           "description": "Google Chrome, application, used to watch (13) My birthday edit (skatersxeditsx) - YouTube"
         },
         {
-          "event_id": 53,
+          "event_id": 75,
           "date": "2026-04-13",
           "start": "18:57:05",
           "end": "18:57:25",
@@ -2629,7 +2822,7 @@
           "description": "Google Chrome, application, used to watch (13) When an 8-Time Olympic Medalist Showed Up for the Parents' Race at School \ud83c\udfc3\u200d\u2640\ufe0f\ud83e\udd47#shorts #viral #fyp - YouTube"
         },
         {
-          "event_id": 59,
+          "event_id": 82,
           "date": "2026-04-13",
           "start": "19:01:51",
           "end": "19:02:07",
@@ -2642,7 +2835,7 @@
           "description": "Google Chrome, application, used to watch (13) The hardest jump in the history of figure skating #figureskating #quadaxel - YouTube"
         },
         {
-          "event_id": 46,
+          "event_id": 66,
           "date": "2026-04-13",
           "start": "19:02:48",
           "end": "19:03:14",
@@ -2657,22 +2850,22 @@
       ]
     },
     {
-      "cluster_id": "Cluster 11",
-      "global_task_intention": "Monitor and analyze program performance",
-      "cohesion": 0.459,
+      "cluster_id": "Cluster 3",
+      "global_task_intention": "Watch and analyze video on youtube",
+      "cohesion": 0.419,
       "stats": {
-        "total_duration": 11.58,
-        "active_duration": 11.58,
-        "time_span": 0.716,
-        "num_events": 12,
+        "total_duration": 18.94,
+        "active_duration": 18.94,
+        "time_span": 1.087,
+        "num_events": 13,
         "start": "2026-04-13 18:35:24",
-        "end": "2026-04-13 19:18:23"
+        "end": "2026-04-13 19:40:36"
       },
       "segments": [
         {
           "start": "2026-04-13 18:35:24",
-          "end": "2026-04-13 18:37:04",
-          "duration": 1.67
+          "end": "2026-04-13 18:36:00",
+          "duration": 0.6
         },
         {
           "start": "2026-04-13 18:38:56",
@@ -2681,13 +2874,8 @@
         },
         {
           "start": "2026-04-13 18:44:09",
-          "end": "2026-04-13 18:53:32",
-          "duration": 8.13
-        },
-        {
-          "start": "2026-04-13 18:58:30",
-          "end": "2026-04-13 18:59:19",
-          "duration": 0.82
+          "end": "2026-04-13 18:53:03",
+          "duration": 7.61
         },
         {
           "start": "2026-04-13 19:00:46",
@@ -2695,15 +2883,40 @@
           "duration": 0.42
         },
         {
-          "start": "2026-04-13 19:18:10",
-          "end": "2026-04-13 19:18:23",
-          "duration": 0.22
+          "start": "2026-04-13 19:18:23",
+          "end": "2026-04-13 19:21:56",
+          "duration": 4.28
+        },
+        {
+          "start": "2026-04-13 19:32:06",
+          "end": "2026-04-13 19:34:38",
+          "duration": 2.53
+        },
+        {
+          "start": "2026-04-13 19:37:25",
+          "end": "2026-04-13 19:40:36",
+          "duration": 3.18
         }
       ],
       "task_items": [
         {
           "description": "Google Chrome, application, used to watch (13) BTS (\ubc29\ud0c4\uc18c\ub144\ub2e8) '2.0' Official MV - YouTube",
           "total_duration": 4.27,
+          "occurrences": 1
+        },
+        {
+          "description": "Google Chrome, application, used to watch (13) Jinx\u2019s Ultimate Test \ud83d\udc94\ud83d\udd2b | Arcane Season 2 - YouTube",
+          "total_duration": 3.3,
+          "occurrences": 1
+        },
+        {
+          "description": "Google Chrome, application, used to watch (13) Vi | Whatever It Takes - YouTube",
+          "total_duration": 3.18,
+          "occurrences": 1
+        },
+        {
+          "description": "Google Chrome, application, used to watch (13) Jinx | MARINA - Bubblegum B*tch | Arcane [4K] - YouTube",
+          "total_duration": 2.53,
           "occurrences": 1
         },
         {
@@ -2717,23 +2930,18 @@
           "occurrences": 1
         },
         {
-          "description": "Google Chrome, application, used to watch (13) Best graduation ranking #funny #haaha #funnyprank #ranking #graduation - YouTube",
-          "total_duration": 1.07,
-          "occurrences": 1
-        },
-        {
-          "description": "Google Chrome, application, used to watch (13) The moment real life turned into a kdrama \ud83d\ude2d\ud83e\udd72 so cuteee\ud83d\ude2d #kdrama #short #kimyoojung #varshow - YouTube",
-          "total_duration": 0.82,
-          "occurrences": 1
-        },
-        {
           "description": "Google Chrome, application, used to watch (13) Whose program should be analyzed in the next video? #figureskating - YouTube",
           "total_duration": 0.6,
           "occurrences": 1
         },
         {
           "description": "Google Chrome, application, used to watch (13) YouTube",
-          "total_duration": 0.52,
+          "total_duration": 0.55,
+          "occurrences": 1
+        },
+        {
+          "description": "Google Chrome, application, used to watch (13) Jinx - YouTube",
+          "total_duration": 0.43,
           "occurrences": 1
         },
         {
@@ -2752,11 +2960,6 @@
           "occurrences": 1
         },
         {
-          "description": "Google Chrome, application, used to watch (13) Jinx - YouTube",
-          "total_duration": 0.22,
-          "occurrences": 1
-        },
-        {
           "description": "Google Chrome, application, used to watch (13) She Needs A Better Audience \ud83d\udd25 - YouTube",
           "total_duration": 0.03,
           "occurrences": 1
@@ -2764,7 +2967,7 @@
       ],
       "events": [
         {
-          "event_id": 40,
+          "event_id": 59,
           "date": "2026-04-13",
           "start": "18:35:24",
           "end": "18:36:00",
@@ -2777,20 +2980,7 @@
           "description": "Google Chrome, application, used to watch (13) Whose program should be analyzed in the next video? #figureskating - YouTube"
         },
         {
-          "event_id": 28,
-          "date": "2026-04-13",
-          "start": "18:36:00",
-          "end": "18:37:04",
-          "duration": 1.07,
-          "event_type": "app",
-          "file": "",
-          "app": "Google Chrome",
-          "command": "",
-          "raw": "(13) Best graduation ranking #funny #haaha #funnyprank #ranking #graduation - YouTube - Google Chrome",
-          "description": "Google Chrome, application, used to watch (13) Best graduation ranking #funny #haaha #funnyprank #ranking #graduation - YouTube"
-        },
-        {
-          "event_id": 54,
+          "event_id": 77,
           "date": "2026-04-13",
           "start": "18:38:56",
           "end": "18:39:15",
@@ -2803,7 +2993,7 @@
           "description": "Google Chrome, application, used to watch (13) \u2728\u041d\u0435\u0440\u0435\u0430\u043b\u044c\u043d\u043e \u043c\u043e\u0449\u043d\u044b\u0439 \u044d\u043b\u0435\u043c\u0435\u043d\u0442 \u043d\u0430 \u041e\u043b\u0438\u043c\u043f\u0438\u0430\u0434\u0435 2012\ud83d\udd25\ud83d\udc4f\ud83c\udffb #\u0445\u0443\u0434\u043e\u0436\u0435\u0441\u0442\u0432\u0435\u043d\u043d\u0430\u044f\u0433\u0438\u043c\u043d\u0430\u0441\u0442\u0438\u043a\u0430 #gimnasiaritmica - YouTube"
         },
         {
-          "event_id": 50,
+          "event_id": 72,
           "date": "2026-04-13",
           "start": "18:44:09",
           "end": "18:44:31",
@@ -2816,7 +3006,7 @@
           "description": "Google Chrome, application, used to watch (13) Look alike cam #lookalike - YouTube"
         },
         {
-          "event_id": 75,
+          "event_id": 100,
           "date": "2026-04-13",
           "start": "18:45:31",
           "end": "18:45:33",
@@ -2829,7 +3019,7 @@
           "description": "Google Chrome, application, used to watch (13) She Needs A Better Audience \ud83d\udd25 - YouTube"
         },
         {
-          "event_id": 7,
+          "event_id": 17,
           "date": "2026-04-13",
           "start": "18:45:51",
           "end": "18:50:07",
@@ -2842,7 +3032,7 @@
           "description": "Google Chrome, application, used to watch (13) BTS (\ubc29\ud0c4\uc18c\ub144\ub2e8) '2.0' Official MV - YouTube"
         },
         {
-          "event_id": 23,
+          "event_id": 41,
           "date": "2026-04-13",
           "start": "18:50:07",
           "end": "18:51:53",
@@ -2855,7 +3045,7 @@
           "description": "Google Chrome, application, used to watch (13) They wanted her to quit \ud83e\udd7a - YouTube"
         },
         {
-          "event_id": 26,
+          "event_id": 44,
           "date": "2026-04-13",
           "start": "18:51:53",
           "end": "18:53:03",
@@ -2868,33 +3058,7 @@
           "description": "Google Chrome, application, used to watch (13) anna shcherbakova - YouTube"
         },
         {
-          "event_id": 43,
-          "date": "2026-04-13",
-          "start": "18:53:03",
-          "end": "18:53:32",
-          "duration": 0.52,
-          "event_type": "app",
-          "file": "",
-          "app": "Google Chrome",
-          "command": "",
-          "raw": "(13) YouTube - Google Chrome",
-          "description": "Google Chrome, application, used to watch (13) YouTube"
-        },
-        {
-          "event_id": 33,
-          "date": "2026-04-13",
-          "start": "18:58:30",
-          "end": "18:59:19",
-          "duration": 0.82,
-          "event_type": "app",
-          "file": "",
-          "app": "Google Chrome",
-          "command": "",
-          "raw": "(13) The moment real life turned into a kdrama \ud83d\ude2d\ud83e\udd72 so cuteee\ud83d\ude2d #kdrama #short #kimyoojung #varshow - YouTube - Google Chrome",
-          "description": "Google Chrome, application, used to watch (13) The moment real life turned into a kdrama \ud83d\ude2d\ud83e\udd72 so cuteee\ud83d\ude2d #kdrama #short #kimyoojung #varshow - YouTube"
-        },
-        {
-          "event_id": 48,
+          "event_id": 69,
           "date": "2026-04-13",
           "start": "19:00:46",
           "end": "19:01:11",
@@ -2907,24 +3071,118 @@
           "description": "Google Chrome, application, used to watch (13) First days on the job can be tough - YouTube"
         },
         {
-          "event_id": 60,
+          "event_id": 27,
           "date": "2026-04-13",
-          "start": "19:18:10",
-          "end": "19:18:23",
-          "duration": 0.22,
+          "start": "19:18:23",
+          "end": "19:21:41",
+          "duration": 3.3,
+          "event_type": "app",
+          "file": "",
+          "app": "Google Chrome",
+          "command": "",
+          "raw": "(13) Jinx\u2019s Ultimate Test \ud83d\udc94\ud83d\udd2b | Arcane Season 2 - YouTube - Google Chrome",
+          "description": "Google Chrome, application, used to watch (13) Jinx\u2019s Ultimate Test \ud83d\udc94\ud83d\udd2b | Arcane Season 2 - YouTube"
+        },
+        {
+          "event_id": 67,
+          "date": "2026-04-13",
+          "start": "19:21:41",
+          "end": "19:21:54",
+          "duration": 0.43,
           "event_type": "app",
           "file": "",
           "app": "Google Chrome",
           "command": "",
           "raw": "(13) Jinx - YouTube - Google Chrome",
           "description": "Google Chrome, application, used to watch (13) Jinx - YouTube"
+        },
+        {
+          "event_id": 62,
+          "date": "2026-04-13",
+          "start": "19:21:54",
+          "end": "19:21:56",
+          "duration": 0.55,
+          "event_type": "app",
+          "file": "",
+          "app": "Google Chrome",
+          "command": "",
+          "raw": "(13) YouTube - Google Chrome",
+          "description": "Google Chrome, application, used to watch (13) YouTube"
+        },
+        {
+          "event_id": 35,
+          "date": "2026-04-13",
+          "start": "19:32:06",
+          "end": "19:34:38",
+          "duration": 2.53,
+          "event_type": "app",
+          "file": "",
+          "app": "Google Chrome",
+          "command": "",
+          "raw": "(13) Jinx | MARINA - Bubblegum B*tch | Arcane [4K] - YouTube - Google Chrome",
+          "description": "Google Chrome, application, used to watch (13) Jinx | MARINA - Bubblegum B*tch | Arcane [4K] - YouTube"
+        },
+        {
+          "event_id": 28,
+          "date": "2026-04-13",
+          "start": "19:37:25",
+          "end": "19:40:36",
+          "duration": 3.18,
+          "event_type": "app",
+          "file": "",
+          "app": "Google Chrome",
+          "command": "",
+          "raw": "(13) Vi | Whatever It Takes - YouTube - Google Chrome",
+          "description": "Google Chrome, application, used to watch (13) Vi | Whatever It Takes - YouTube"
         }
       ]
     },
     {
-      "cluster_id": "Other small tasks \u2014 singleton 7",
+      "cluster_id": "Other small tasks \u2014 singleton 6",
+      "global_task_intention": "watch (13) best graduation ranking #funny #haaha #funnyprank #ranking #graduation - youtube",
+      "cohesion": 0.899,
+      "stats": {
+        "total_duration": 1.07,
+        "active_duration": 1.07,
+        "time_span": 0.018,
+        "num_events": 1,
+        "start": "2026-04-13 18:36:00",
+        "end": "2026-04-13 18:37:04"
+      },
+      "segments": [
+        {
+          "start": "2026-04-13 18:36:00",
+          "end": "2026-04-13 18:37:04",
+          "duration": 1.07
+        }
+      ],
+      "task_items": [
+        {
+          "description": "Google Chrome, application, used to watch (13) Best graduation ranking #funny #haaha #funnyprank #ranking #graduation - YouTube",
+          "total_duration": 1.07,
+          "occurrences": 1
+        }
+      ],
+      "events": [
+        {
+          "event_id": 46,
+          "date": "2026-04-13",
+          "start": "18:36:00",
+          "end": "18:37:04",
+          "duration": 1.07,
+          "event_type": "app",
+          "file": "",
+          "app": "Google Chrome",
+          "command": "",
+          "raw": "(13) Best graduation ranking #funny #haaha #funnyprank #ranking #graduation - YouTube - Google Chrome",
+          "description": "Google Chrome, application, used to watch (13) Best graduation ranking #funny #haaha #funnyprank #ranking #graduation - YouTube"
+        }
+      ]
+    },
+    {
+      "cluster_id": "Other small tasks \u2014 singleton 4",
       "global_task_intention": "watch (13) the \u201cnoooooooo\u201d killed me \ud83d\ude02 #edm #electronicdancemusic #dj #rave #gryffin - youtube",
-      "cohesion": 0.876,
+      "cohesion": 0.899,
       "stats": {
         "total_duration": 0.8,
         "active_duration": 0.8,
@@ -2949,7 +3207,7 @@
       ],
       "events": [
         {
-          "event_id": 34,
+          "event_id": 52,
           "date": "2026-04-13",
           "start": "18:39:15",
           "end": "18:40:03",
@@ -2964,9 +3222,9 @@
       ]
     },
     {
-      "cluster_id": "Other small tasks \u2014 singleton 4",
+      "cluster_id": "Other small tasks \u2014 singleton 8",
       "global_task_intention": "watch (13) actor\u2019s gentlemanly behavior #koreanactor #actor #ahnhyoseop #fyp #start - youtube",
-      "cohesion": 0.876,
+      "cohesion": 0.899,
       "stats": {
         "total_duration": 0.98,
         "active_duration": 0.98,
@@ -2991,7 +3249,7 @@
       ],
       "events": [
         {
-          "event_id": 30,
+          "event_id": 48,
           "date": "2026-04-13",
           "start": "18:40:03",
           "end": "18:41:02",
@@ -3006,9 +3264,9 @@
       ]
     },
     {
-      "cluster_id": "Other small tasks \u2014 singleton 8",
+      "cluster_id": "Other small tasks \u2014 singleton 9",
       "global_task_intention": "watch (13) \ud83d\ude0c\ud83d\udc95\ud83d\udc78 one shoe. one bare foot. one moment that made us fall",
-      "cohesion": 0.876,
+      "cohesion": 0.899,
       "stats": {
         "total_duration": 1.08,
         "active_duration": 1.08,
@@ -3033,7 +3291,7 @@
       ],
       "events": [
         {
-          "event_id": 27,
+          "event_id": 45,
           "date": "2026-04-13",
           "start": "18:41:02",
           "end": "18:42:07",
@@ -3048,8 +3306,8 @@
       ]
     },
     {
-      "cluster_id": "Cluster 19",
-      "global_task_intention": "Create an app for sadness",
+      "cluster_id": "Cluster 24",
+      "global_task_intention": "Watch videos about open a web browser",
       "cohesion": 0.442,
       "stats": {
         "total_duration": 0.8,
@@ -3085,7 +3343,7 @@
       ],
       "events": [
         {
-          "event_id": 57,
+          "event_id": 80,
           "date": "2026-04-13",
           "start": "18:42:07",
           "end": "18:42:24",
@@ -3098,7 +3356,7 @@
           "description": "Google Chrome, application, used to watch (13) He Feels Nothing\u2026 And That\u2019s the Saddest Part \ud83d\udc94 - YouTube"
         },
         {
-          "event_id": 42,
+          "event_id": 63,
           "date": "2026-04-13",
           "start": "18:44:31",
           "end": "18:45:02",
@@ -3113,9 +3371,9 @@
       ]
     },
     {
-      "cluster_id": "Other small tasks \u2014 singleton 27",
+      "cluster_id": "Other small tasks \u2014 singleton 29",
       "global_task_intention": "watch (13) new gen energy vs og vibes \ud83d\udc80 #supermodel #fashion #shorts #runway - youtube",
-      "cohesion": 0.876,
+      "cohesion": 0.899,
       "stats": {
         "total_duration": 0.33,
         "active_duration": 0.33,
@@ -3140,7 +3398,7 @@
       ],
       "events": [
         {
-          "event_id": 51,
+          "event_id": 73,
           "date": "2026-04-13",
           "start": "18:42:24",
           "end": "18:42:44",
@@ -3155,8 +3413,8 @@
       ]
     },
     {
-      "cluster_id": "Cluster 6",
-      "global_task_intention": "Watch performance artist",
+      "cluster_id": "Cluster 9",
+      "global_task_intention": "Watch video on youtube",
       "cohesion": 0.317,
       "stats": {
         "total_duration": 1.87,
@@ -3197,7 +3455,7 @@
       ],
       "events": [
         {
-          "event_id": 47,
+          "event_id": 68,
           "date": "2026-04-13",
           "start": "18:42:44",
           "end": "18:43:09",
@@ -3210,7 +3468,7 @@
           "description": "Google Chrome, application, used to watch (13) She\u2019s insane \ud83d\ude33\ud83e\udebd @Flying_Daria #freedom #fear #performance #artist #split #circus #gymnasticsgirl - YouTube"
         },
         {
-          "event_id": 67,
+          "event_id": 91,
           "date": "2026-04-13",
           "start": "18:53:32",
           "end": "18:53:38",
@@ -3223,7 +3481,7 @@
           "description": "Google Chrome, application, used to watch anna shcherbakova At this moment!!! Two Satanic Queens \ud83d\udc96 - YouTube"
         },
         {
-          "event_id": 24,
+          "event_id": 42,
           "date": "2026-04-13",
           "start": "18:53:38",
           "end": "18:54:59",
@@ -3240,7 +3498,7 @@
     {
       "cluster_id": "Other small tasks \u2014 singleton 3",
       "global_task_intention": "watch (13) jin woo edit ...\ud83e\udee0\u2728|| solo leveling || #sololeveling #jinwoo #edit #anime #fyp\u30b7\u309aviral - youtube",
-      "cohesion": 0.876,
+      "cohesion": 0.899,
       "stats": {
         "total_duration": 0.32,
         "active_duration": 0.32,
@@ -3265,7 +3523,7 @@
       ],
       "events": [
         {
-          "event_id": 55,
+          "event_id": 78,
           "date": "2026-04-13",
           "start": "18:43:09",
           "end": "18:43:28",
@@ -3280,8 +3538,8 @@
       ]
     },
     {
-      "cluster_id": "Cluster 14",
-      "global_task_intention": "Use figure skating to compete in the Olympics",
+      "cluster_id": "Cluster 17",
+      "global_task_intention": "Watch video content",
       "cohesion": 0.325,
       "stats": {
         "total_duration": 1.25,
@@ -3317,7 +3575,7 @@
       ],
       "events": [
         {
-          "event_id": 37,
+          "event_id": 56,
           "date": "2026-04-13",
           "start": "18:43:28",
           "end": "18:44:09",
@@ -3330,7 +3588,7 @@
           "description": "Google Chrome, application, used to watch (13) I prefer trusova #fypviral\u30b7#iceskating #alexandratrusova #ke\u015ffetbeni\u00f6ne\u00e7\u0131kar #ke\u015ffet - YouTube"
         },
         {
-          "event_id": 41,
+          "event_id": 60,
           "date": "2026-04-13",
           "start": "19:00:12",
           "end": "19:00:46",
@@ -3345,25 +3603,40 @@
       ]
     },
     {
-      "cluster_id": "Other small tasks \u2014 singleton 6",
-      "global_task_intention": "watch (13) can hate me but fact is fact #btsarmy #bts #rm #jhope #suga - youtube",
-      "cohesion": 0.876,
+      "cluster_id": "Cluster 23",
+      "global_task_intention": "Watch video on youtube",
+      "cohesion": 0.482,
       "stats": {
-        "total_duration": 0.48,
-        "active_duration": 0.48,
-        "time_span": 0.008,
-        "num_events": 1,
+        "total_duration": 7.56,
+        "active_duration": 7.56,
+        "time_span": 0.733,
+        "num_events": 3,
         "start": "2026-04-13 18:45:02",
-        "end": "2026-04-13 18:45:31"
+        "end": "2026-04-13 19:29:01"
       },
       "segments": [
         {
           "start": "2026-04-13 18:45:02",
           "end": "2026-04-13 18:45:31",
           "duration": 0.48
+        },
+        {
+          "start": "2026-04-13 19:21:56",
+          "end": "2026-04-13 19:29:01",
+          "duration": 7.08
         }
       ],
       "task_items": [
+        {
+          "description": "Google Chrome, application, used to watch (13) Jinx // Arcane\u300cAMV\u300dCalm Down - YouTube",
+          "total_duration": 3.55,
+          "occurrences": 1
+        },
+        {
+          "description": "Google Chrome, application, used to watch (13) Jinx || Are You Insane Like Me? - YouTube",
+          "total_duration": 3.53,
+          "occurrences": 1
+        },
         {
           "description": "Google Chrome, application, used to watch (13) Can hate me but fact is fact #btsarmy #bts #rm #jhope #suga - YouTube",
           "total_duration": 0.48,
@@ -3372,7 +3645,7 @@
       ],
       "events": [
         {
-          "event_id": 44,
+          "event_id": 64,
           "date": "2026-04-13",
           "start": "18:45:02",
           "end": "18:45:31",
@@ -3383,12 +3656,38 @@
           "command": "",
           "raw": "(13) Can hate me but fact is fact #btsarmy #bts #rm #jhope #suga - YouTube - Google Chrome",
           "description": "Google Chrome, application, used to watch (13) Can hate me but fact is fact #btsarmy #bts #rm #jhope #suga - YouTube"
+        },
+        {
+          "event_id": 23,
+          "date": "2026-04-13",
+          "start": "19:21:56",
+          "end": "19:25:28",
+          "duration": 3.53,
+          "event_type": "app",
+          "file": "",
+          "app": "Google Chrome",
+          "command": "",
+          "raw": "(13) Jinx || Are You Insane Like Me? - YouTube - Google Chrome",
+          "description": "Google Chrome, application, used to watch (13) Jinx || Are You Insane Like Me? - YouTube"
+        },
+        {
+          "event_id": 21,
+          "date": "2026-04-13",
+          "start": "19:25:28",
+          "end": "19:29:01",
+          "duration": 3.55,
+          "event_type": "app",
+          "file": "",
+          "app": "Google Chrome",
+          "command": "",
+          "raw": "(13) Jinx // Arcane\u300cAMV\u300dCalm Down - YouTube - Google Chrome",
+          "description": "Google Chrome, application, used to watch (13) Jinx // Arcane\u300cAMV\u300dCalm Down - YouTube"
         }
       ]
     },
     {
-      "cluster_id": "Cluster 16",
-      "global_task_intention": "Download and use web services",
+      "cluster_id": "Cluster 21",
+      "global_task_intention": "Watch videos about open a web page",
       "cohesion": 0.276,
       "stats": {
         "total_duration": 1.33,
@@ -3424,7 +3723,7 @@
       ],
       "events": [
         {
-          "event_id": 29,
+          "event_id": 47,
           "date": "2026-04-13",
           "start": "18:55:42",
           "end": "18:56:45",
@@ -3437,7 +3736,7 @@
           "description": "Google Chrome, application, used to watch (13) infanta Sofia \ud83d\udc94\ud83e\udd72#infantasofia #Leonor #Royalfamily #Royal #king #spain #spain #Royalfamily - YouTube"
         },
         {
-          "event_id": 58,
+          "event_id": 81,
           "date": "2026-04-13",
           "start": "19:02:07",
           "end": "19:02:24",
@@ -3452,9 +3751,9 @@
       ]
     },
     {
-      "cluster_id": "Other small tasks \u2014 singleton 24",
+      "cluster_id": "Other small tasks \u2014 singleton 23",
       "global_task_intention": "watch (13) ball kids vs. insects: the last one is savage \ud83d\udc80\ud83e\udd97 - youtube",
-      "cohesion": 0.876,
+      "cohesion": 0.899,
       "stats": {
         "total_duration": 0.48,
         "active_duration": 0.48,
@@ -3479,7 +3778,7 @@
       ],
       "events": [
         {
-          "event_id": 45,
+          "event_id": 65,
           "date": "2026-04-13",
           "start": "18:57:25",
           "end": "18:57:54",
@@ -3494,9 +3793,9 @@
       ]
     },
     {
-      "cluster_id": "Other small tasks \u2014 singleton 5",
+      "cluster_id": "Other small tasks \u2014 singleton 7",
       "global_task_intention": "watch (13) proof we made the right people famous \u2764\ufe0f\u200d\ud83e\ude79 | #taylorswift #selenagomez #ladygaga #shorts - youtube",
-      "cohesion": 0.876,
+      "cohesion": 0.899,
       "stats": {
         "total_duration": 0.62,
         "active_duration": 0.62,
@@ -3521,7 +3820,7 @@
       ],
       "events": [
         {
-          "event_id": 39,
+          "event_id": 58,
           "date": "2026-04-13",
           "start": "18:57:54",
           "end": "18:58:31",
@@ -3536,9 +3835,120 @@
       ]
     },
     {
-      "cluster_id": "Other small tasks \u2014 singleton 10",
+      "cluster_id": "Cluster 20",
+      "global_task_intention": "Watch online videos",
+      "cohesion": 0.416,
+      "stats": {
+        "total_duration": 57.76,
+        "active_duration": 57.76,
+        "time_span": 1.553,
+        "num_events": 4,
+        "start": "2026-04-13 18:58:30",
+        "end": "2026-04-13 20:31:41"
+      },
+      "segments": [
+        {
+          "start": "2026-04-13 18:58:30",
+          "end": "2026-04-13 18:59:19",
+          "duration": 0.82
+        },
+        {
+          "start": "2026-04-13 19:29:01",
+          "end": "2026-04-13 19:32:06",
+          "duration": 3.08
+        },
+        {
+          "start": "2026-04-13 19:34:38",
+          "end": "2026-04-13 19:37:25",
+          "duration": 2.78
+        },
+        {
+          "start": "2026-04-13 19:40:36",
+          "end": "2026-04-13 20:31:41",
+          "duration": 51.08
+        }
+      ],
+      "task_items": [
+        {
+          "description": "Google Chrome, application, used to watch (13) Enemy - Imagine Dragons // jinx // Arcane [AMV] - YouTube",
+          "total_duration": 51.08,
+          "occurrences": 1
+        },
+        {
+          "description": "Google Chrome, application, used to watch (13) Arcane AMV: Little Girl Gone - YouTube",
+          "total_duration": 3.08,
+          "occurrences": 1
+        },
+        {
+          "description": "Google Chrome, application, used to watch (13) [AMV] Arcane - Bones (Imagine Dragons) - YouTube",
+          "total_duration": 2.78,
+          "occurrences": 1
+        },
+        {
+          "description": "Google Chrome, application, used to watch (13) The moment real life turned into a kdrama \ud83d\ude2d\ud83e\udd72 so cuteee\ud83d\ude2d #kdrama #short #kimyoojung #varshow - YouTube",
+          "total_duration": 0.82,
+          "occurrences": 1
+        }
+      ],
+      "events": [
+        {
+          "event_id": 51,
+          "date": "2026-04-13",
+          "start": "18:58:30",
+          "end": "18:59:19",
+          "duration": 0.82,
+          "event_type": "app",
+          "file": "",
+          "app": "Google Chrome",
+          "command": "",
+          "raw": "(13) The moment real life turned into a kdrama \ud83d\ude2d\ud83e\udd72 so cuteee\ud83d\ude2d #kdrama #short #kimyoojung #varshow - YouTube - Google Chrome",
+          "description": "Google Chrome, application, used to watch (13) The moment real life turned into a kdrama \ud83d\ude2d\ud83e\udd72 so cuteee\ud83d\ude2d #kdrama #short #kimyoojung #varshow - YouTube"
+        },
+        {
+          "event_id": 29,
+          "date": "2026-04-13",
+          "start": "19:29:01",
+          "end": "19:32:06",
+          "duration": 3.08,
+          "event_type": "app",
+          "file": "",
+          "app": "Google Chrome",
+          "command": "",
+          "raw": "(13) Arcane AMV: Little Girl Gone - YouTube - Google Chrome",
+          "description": "Google Chrome, application, used to watch (13) Arcane AMV: Little Girl Gone - YouTube"
+        },
+        {
+          "event_id": 33,
+          "date": "2026-04-13",
+          "start": "19:34:38",
+          "end": "19:37:25",
+          "duration": 2.78,
+          "event_type": "app",
+          "file": "",
+          "app": "Google Chrome",
+          "command": "",
+          "raw": "(13) [AMV] Arcane - Bones (Imagine Dragons) - YouTube - Google Chrome",
+          "description": "Google Chrome, application, used to watch (13) [AMV] Arcane - Bones (Imagine Dragons) - YouTube"
+        },
+        {
+          "event_id": 9,
+          "date": "2026-04-13",
+          "start": "19:40:36",
+          "end": "20:31:41",
+          "duration": 51.08,
+          "event_type": "app",
+          "file": "",
+          "app": "Google Chrome",
+          "command": "",
+          "raw": "(13) Enemy - Imagine Dragons // jinx // Arcane [AMV] - YouTube - Google Chrome",
+          "description": "Google Chrome, application, used to watch (13) Enemy - Imagine Dragons // jinx // Arcane [AMV] - YouTube"
+        }
+      ]
+    },
+    {
+      "cluster_id": "Other small tasks \u2014 singleton 1",
       "global_task_intention": "watch (13) inside the training",
-      "cohesion": 0.876,
+      "cohesion": 0.899,
       "stats": {
         "total_duration": 0.88,
         "active_duration": 0.88,
@@ -3563,7 +3973,7 @@
       ],
       "events": [
         {
-          "event_id": 31,
+          "event_id": 49,
           "date": "2026-04-13",
           "start": "18:59:19",
           "end": "19:00:12",
@@ -3578,8 +3988,8 @@
       ]
     },
     {
-      "cluster_id": "Cluster 7",
-      "global_task_intention": "Watch shorts on youtube",
+      "cluster_id": "Cluster 22",
+      "global_task_intention": "Watch video on youtube",
       "cohesion": 0.367,
       "stats": {
         "total_duration": 1.95,
@@ -3615,7 +4025,7 @@
       ],
       "events": [
         {
-          "event_id": 38,
+          "event_id": 57,
           "date": "2026-04-13",
           "start": "19:01:11",
           "end": "19:01:51",
@@ -3628,7 +4038,7 @@
           "description": "Google Chrome, application, used to watch (13) That's how I met your mom \ud83e\udd0c\ud83e\udd72 #youtube #fyp #shorts #edit - YouTube"
         },
         {
-          "event_id": 49,
+          "event_id": 70,
           "date": "2026-04-13",
           "start": "19:02:24",
           "end": "19:02:48",
@@ -3641,7 +4051,7 @@
           "description": "Google Chrome, application, used to watch (13) Ranking Best I'm Just A Kid Trend#shortsviral - YouTube"
         },
         {
-          "event_id": 32,
+          "event_id": 50,
           "date": "2026-04-13",
           "start": "19:03:14",
           "end": "19:04:07",
@@ -3656,49 +4066,7 @@
       ]
     },
     {
-      "cluster_id": "Other small tasks \u2014 singleton 18",
-      "global_task_intention": "check out new tab",
-      "cohesion": 0.876,
-      "stats": {
-        "total_duration": 0.07,
-        "active_duration": 0.07,
-        "time_span": 0.001,
-        "num_events": 1,
-        "start": "2026-04-13 19:04:54",
-        "end": "2026-04-13 19:04:58"
-      },
-      "segments": [
-        {
-          "start": "2026-04-13 19:04:54",
-          "end": "2026-04-13 19:04:58",
-          "duration": 0.07
-        }
-      ],
-      "task_items": [
-        {
-          "description": "Google Chrome, application, used to checked out New Tab",
-          "total_duration": 0.07,
-          "occurrences": 1
-        }
-      ],
-      "events": [
-        {
-          "event_id": 70,
-          "date": "2026-04-13",
-          "start": "19:04:54",
-          "end": "19:04:58",
-          "duration": 0.07,
-          "event_type": "app",
-          "file": "",
-          "app": "Google Chrome",
-          "command": "",
-          "raw": "New Tab - Google Chrome",
-          "description": "Google Chrome, application, used to checked out New Tab"
-        }
-      ]
-    },
-    {
-      "cluster_id": "Cluster 2",
+      "cluster_id": "Cluster 18",
       "global_task_intention": "Search the web",
       "cohesion": 0.057,
       "stats": {
@@ -3730,7 +4098,7 @@
       ],
       "events": [
         {
-          "event_id": 76,
+          "event_id": 101,
           "date": "2026-04-13",
           "start": "19:04:58",
           "end": "19:05:00",
@@ -3743,7 +4111,7 @@
           "description": "Google Chrome, application, used to checked out yarrlist - Google Search"
         },
         {
-          "event_id": 78,
+          "event_id": 103,
           "date": "2026-04-13",
           "start": "19:05:02",
           "end": "19:05:04",
@@ -3758,9 +4126,9 @@
       ]
     },
     {
-      "cluster_id": "Other small tasks \u2014 singleton 12",
+      "cluster_id": "Other small tasks \u2014 singleton 19",
       "global_task_intention": "open yarrlist.net with Google Chrome",
-      "cohesion": 0.876,
+      "cohesion": 0.899,
       "stats": {
         "total_duration": 0.03,
         "active_duration": 0.03,
@@ -3785,7 +4153,7 @@
       ],
       "events": [
         {
-          "event_id": 77,
+          "event_id": 102,
           "date": "2026-04-13",
           "start": "19:05:00",
           "end": "19:05:02",
@@ -3800,50 +4168,8 @@
       ]
     },
     {
-      "cluster_id": "Other small tasks \u2014 singleton 21",
-      "global_task_intention": "check out untitled",
-      "cohesion": 0.876,
-      "stats": {
-        "total_duration": 1.25,
-        "active_duration": 1.25,
-        "time_span": 0.011,
-        "num_events": 1,
-        "start": "2026-04-13 19:05:48",
-        "end": "2026-04-13 19:06:29"
-      },
-      "segments": [
-        {
-          "start": "2026-04-13 19:05:48",
-          "end": "2026-04-13 19:06:29",
-          "duration": 1.25
-        }
-      ],
-      "task_items": [
-        {
-          "description": "Google Chrome, application, used to checked out Untitled",
-          "total_duration": 1.25,
-          "occurrences": 1
-        }
-      ],
-      "events": [
-        {
-          "event_id": 25,
-          "date": "2026-04-13",
-          "start": "19:05:48",
-          "end": "19:06:29",
-          "duration": 1.25,
-          "event_type": "app",
-          "file": "",
-          "app": "Google Chrome",
-          "command": "",
-          "raw": "Untitled - Google Chrome",
-          "description": "Google Chrome, application, used to checked out Untitled"
-        }
-      ]
-    },
-    {
-      "cluster_id": "Cluster 10",
-      "global_task_intention": "Browse free movies and TV shows",
+      "cluster_id": "Cluster 6",
+      "global_task_intention": "Monitor free movies and TV shows",
       "cohesion": 0.357,
       "stats": {
         "total_duration": 5.33,
@@ -3894,7 +4220,7 @@
       ],
       "events": [
         {
-          "event_id": 18,
+          "event_id": 36,
           "date": "2026-04-13",
           "start": "19:06:29",
           "end": "19:08:53",
@@ -3907,7 +4233,7 @@
           "description": "ww7.123moviesfree.net, file, opened with Google Chrome, contains data related to It contains information about ww7.123 movies."
         },
         {
-          "event_id": 71,
+          "event_id": 96,
           "date": "2026-04-13",
           "start": "19:08:53",
           "end": "19:08:57",
@@ -3920,7 +4246,7 @@
           "description": "Google Chrome, application, used to checked out 123Movies - Watch HD Movies Online Free | 123movie | 123 movies"
         },
         {
-          "event_id": 80,
+          "event_id": 107,
           "date": "2026-04-13",
           "start": "19:08:53",
           "end": "19:08:53",
@@ -3933,7 +4259,7 @@
           "description": "Google Chrome, application, used to checked out ww8.123moviesfree.net/home/"
         },
         {
-          "event_id": 61,
+          "event_id": 85,
           "date": "2026-04-13",
           "start": "19:11:20",
           "end": "19:11:21",
@@ -3946,7 +4272,7 @@
           "description": "Google Chrome, application, used to checked out Working Free Movies and TV Shows Websites List - YarrList"
         },
         {
-          "event_id": 17,
+          "event_id": 34,
           "date": "2026-04-13",
           "start": "19:11:21",
           "end": "19:11:41",
@@ -3961,9 +4287,9 @@
       ]
     },
     {
-      "cluster_id": "Other small tasks \u2014 singleton 11",
+      "cluster_id": "Other small tasks \u2014 singleton 17",
       "global_task_intention": "open flixhq.to with Google Chrome",
-      "cohesion": 0.876,
+      "cohesion": 0.899,
       "stats": {
         "total_duration": 0.03,
         "active_duration": 0.03,
@@ -3988,7 +4314,7 @@
       ],
       "events": [
         {
-          "event_id": 79,
+          "event_id": 104,
           "date": "2026-04-13",
           "start": "19:08:57",
           "end": "19:08:59",
@@ -4003,9 +4329,9 @@
       ]
     },
     {
-      "cluster_id": "Other small tasks \u2014 singleton 22",
+      "cluster_id": "Other small tasks \u2014 singleton 24",
       "global_task_intention": "check out search results",
-      "cohesion": 0.876,
+      "cohesion": 0.899,
       "stats": {
         "total_duration": 5.43,
         "active_duration": 5.43,
@@ -4030,7 +4356,7 @@
       ],
       "events": [
         {
-          "event_id": 3,
+          "event_id": 13,
           "date": "2026-04-13",
           "start": "19:11:41",
           "end": "19:17:07",
@@ -4045,44 +4371,476 @@
       ]
     },
     {
-      "cluster_id": "Other small tasks \u2014 singleton 19",
-      "global_task_intention": "use desktop icons 1",
-      "cohesion": 0.876,
+      "cluster_id": "Other small tasks \u2014 singleton 30",
+      "global_task_intention": "open clusters_with_intentions.txt with Visual Studio Code",
+      "cohesion": 0.899,
       "stats": {
-        "total_duration": -0.18,
-        "active_duration": -0.18,
-        "time_span": -0.003,
+        "total_duration": 19.13,
+        "active_duration": 19.13,
+        "time_span": 0.319,
         "num_events": 1,
-        "start": "2026-04-13 19:17:00",
-        "end": "2026-04-13 19:16:49"
+        "start": "2026-04-13 19:41:16",
+        "end": "2026-04-13 20:00:24"
       },
       "segments": [
         {
-          "start": "2026-04-13 19:17:00",
-          "end": "2026-04-13 19:16:49",
-          "duration": -0.18
+          "start": "2026-04-13 19:41:16",
+          "end": "2026-04-13 20:00:24",
+          "duration": 19.13
         }
       ],
       "task_items": [
         {
-          "description": "Desktop Icons 1, application, used by the user",
-          "total_duration": -0.18,
+          "description": "clusters_with_intentions.txt, file, opened with Visual Studio Code, contains data related to Plain text document, text files, It serves as a cluster with intentions.",
+          "total_duration": 19.13,
           "occurrences": 1
         }
       ],
       "events": [
         {
-          "event_id": 82,
+          "event_id": 11,
           "date": "2026-04-13",
-          "start": "19:17:00",
-          "end": "19:16:49",
-          "duration": -0.18,
+          "start": "19:41:16",
+          "end": "20:00:24",
+          "duration": 19.13,
+          "event_type": "file",
+          "file": "clusters_with_intentions.txt",
+          "app": "Visual Studio Code",
+          "command": "",
+          "raw": "clusters_with_intentions.txt - taskMonitor - Visual Studio Code",
+          "description": "clusters_with_intentions.txt, file, opened with Visual Studio Code, contains data related to Plain text document, text files, It serves as a cluster with intentions."
+        }
+      ]
+    },
+    {
+      "cluster_id": "Cluster 10",
+      "global_task_intention": "Browse linkedin",
+      "cohesion": 0.315,
+      "stats": {
+        "total_duration": 3.41,
+        "active_duration": 3.41,
+        "time_span": 0.066,
+        "num_events": 4,
+        "start": "2026-04-13 19:54:23",
+        "end": "2026-04-13 19:58:22"
+      },
+      "segments": [
+        {
+          "start": "2026-04-13 19:54:23",
+          "end": "2026-04-13 19:58:22",
+          "duration": 3.41
+        }
+      ],
+      "task_items": [
+        {
+          "description": "Google Chrome, application, used to checked out Fil d\u2019actualit\u00e9 | LinkedIn",
+          "total_duration": 3.03,
+          "occurrences": 1
+        },
+        {
+          "description": "Google Chrome, application, used to checked out linkedin.com/analytics/profile-views/",
+          "total_duration": 0.25,
+          "occurrences": 1
+        },
+        {
+          "description": "Google Chrome, application, used to checked out linkedin - Recherche Google",
+          "total_duration": 0.1,
+          "occurrences": 1
+        },
+        {
+          "description": "Google Chrome, application, used to checked out LinkedIn",
+          "total_duration": 0.03,
+          "occurrences": 1
+        }
+      ],
+      "events": [
+        {
+          "event_id": 93,
+          "date": "2026-04-13",
+          "start": "19:54:23",
+          "end": "19:54:29",
+          "duration": 0.1,
           "event_type": "app",
           "file": "",
-          "app": "Desktop Icons 1",
+          "app": "Google Chrome",
           "command": "",
-          "raw": "Desktop Icons 1",
-          "description": "Desktop Icons 1, application, used by the user"
+          "raw": "linkedin - Recherche Google - Google Chrome",
+          "description": "Google Chrome, application, used to checked out linkedin - Recherche Google"
+        },
+        {
+          "event_id": 30,
+          "date": "2026-04-13",
+          "start": "19:54:29",
+          "end": "19:57:31",
+          "duration": 3.03,
+          "event_type": "app",
+          "file": "",
+          "app": "Google Chrome",
+          "command": "",
+          "raw": "Fil d\u2019actualit\u00e9 | LinkedIn - Google Chrome",
+          "description": "Google Chrome, application, used to checked out Fil d\u2019actualit\u00e9 | LinkedIn"
+        },
+        {
+          "event_id": 83,
+          "date": "2026-04-13",
+          "start": "19:57:31",
+          "end": "19:57:46",
+          "duration": 0.25,
+          "event_type": "app",
+          "file": "",
+          "app": "Google Chrome",
+          "command": "",
+          "raw": "linkedin.com/analytics/profile-views/ - Google Chrome",
+          "description": "Google Chrome, application, used to checked out linkedin.com/analytics/profile-views/"
+        },
+        {
+          "event_id": 105,
+          "date": "2026-04-13",
+          "start": "19:58:20",
+          "end": "19:58:22",
+          "duration": 0.03,
+          "event_type": "app",
+          "file": "",
+          "app": "Google Chrome",
+          "command": "",
+          "raw": "LinkedIn - Google Chrome",
+          "description": "Google Chrome, application, used to checked out LinkedIn"
+        }
+      ]
+    },
+    {
+      "cluster_id": "Other small tasks \u2014 singleton 27",
+      "global_task_intention": "check out notifications | linkedin",
+      "cohesion": 0.899,
+      "stats": {
+        "total_duration": 0.57,
+        "active_duration": 0.57,
+        "time_span": 0.009,
+        "num_events": 1,
+        "start": "2026-04-13 19:57:46",
+        "end": "2026-04-13 19:58:20"
+      },
+      "segments": [
+        {
+          "start": "2026-04-13 19:57:46",
+          "end": "2026-04-13 19:58:20",
+          "duration": 0.57
+        }
+      ],
+      "task_items": [
+        {
+          "description": "Google Chrome, application, used to checked out Notifications | LinkedIn",
+          "total_duration": 0.57,
+          "occurrences": 1
+        }
+      ],
+      "events": [
+        {
+          "event_id": 61,
+          "date": "2026-04-13",
+          "start": "19:57:46",
+          "end": "19:58:20",
+          "duration": 0.57,
+          "event_type": "app",
+          "file": "",
+          "app": "Google Chrome",
+          "command": "",
+          "raw": "Notifications | LinkedIn - Google Chrome",
+          "description": "Google Chrome, application, used to checked out Notifications | LinkedIn"
+        }
+      ]
+    },
+    {
+      "cluster_id": "Other small tasks \u2014 singleton 31",
+      "global_task_intention": "check out isc2 up2date: april 7th",
+      "cohesion": 0.899,
+      "stats": {
+        "total_duration": 0.33,
+        "active_duration": 0.33,
+        "time_span": 0.006,
+        "num_events": 1,
+        "start": "2026-04-13 19:58:22",
+        "end": "2026-04-13 19:58:42"
+      },
+      "segments": [
+        {
+          "start": "2026-04-13 19:58:22",
+          "end": "2026-04-13 19:58:42",
+          "duration": 0.33
+        }
+      ],
+      "task_items": [
+        {
+          "description": "Google Chrome, application, used to checked out ISC2 Up2Date: April 7th, 2026 | LinkedIn",
+          "total_duration": 0.33,
+          "occurrences": 1
+        }
+      ],
+      "events": [
+        {
+          "event_id": 76,
+          "date": "2026-04-13",
+          "start": "19:58:22",
+          "end": "19:58:42",
+          "duration": 0.33,
+          "event_type": "app",
+          "file": "",
+          "app": "Google Chrome",
+          "command": "",
+          "raw": "ISC2 Up2Date: April 7th, 2026 | LinkedIn - Google Chrome",
+          "description": "Google Chrome, application, used to checked out ISC2 Up2Date: April 7th, 2026 | LinkedIn"
+        }
+      ]
+    },
+    {
+      "cluster_id": "Other small tasks \u2014 singleton 34",
+      "global_task_intention": "check out isc2 membership and certification",
+      "cohesion": 0.899,
+      "stats": {
+        "total_duration": 0.22,
+        "active_duration": 0.22,
+        "time_span": 0.004,
+        "num_events": 1,
+        "start": "2026-04-13 19:58:42",
+        "end": "2026-04-13 19:58:55"
+      },
+      "segments": [
+        {
+          "start": "2026-04-13 19:58:42",
+          "end": "2026-04-13 19:58:55",
+          "duration": 0.22
+        }
+      ],
+      "task_items": [
+        {
+          "description": "Google Chrome, application, used to checked out ISC2 Membership and Certification as a Certified Cybersecurity Professional (CC) | LinkedIn",
+          "total_duration": 0.22,
+          "occurrences": 1
+        }
+      ],
+      "events": [
+        {
+          "event_id": 84,
+          "date": "2026-04-13",
+          "start": "19:58:42",
+          "end": "19:58:55",
+          "duration": 0.22,
+          "event_type": "app",
+          "file": "",
+          "app": "Google Chrome",
+          "command": "",
+          "raw": "ISC2 Membership and Certification as a Certified Cybersecurity Professional (CC) | LinkedIn - Google Chrome",
+          "description": "Google Chrome, application, used to checked out ISC2 Membership and Certification as a Certified Cybersecurity Professional (CC) | LinkedIn"
+        }
+      ]
+    },
+    {
+      "cluster_id": "Other small tasks \u2014 singleton 14",
+      "global_task_intention": "open window_changes.log with Visual Studio Code",
+      "cohesion": 0.899,
+      "stats": {
+        "total_duration": 127.47,
+        "active_duration": 127.47,
+        "time_span": 2.118,
+        "num_events": 1,
+        "start": "2026-04-13 20:00:24",
+        "end": "2026-04-13 22:07:30"
+      },
+      "segments": [
+        {
+          "start": "2026-04-13 20:00:24",
+          "end": "2026-04-13 22:07:30",
+          "duration": 127.47
+        }
+      ],
+      "task_items": [
+        {
+          "description": "window_changes.log, file, opened with Visual Studio Code, contains data related to Application log, text files, It contains changes in window settings.",
+          "total_duration": 127.47,
+          "occurrences": 1
+        }
+      ],
+      "events": [
+        {
+          "event_id": 4,
+          "date": "2026-04-13",
+          "start": "20:00:24",
+          "end": "22:07:30",
+          "duration": 127.47,
+          "event_type": "file",
+          "file": "window_changes.log",
+          "app": "Visual Studio Code",
+          "command": "",
+          "raw": "window_changes.log - taskMonitor - Visual Studio Code",
+          "description": "window_changes.log, file, opened with Visual Studio Code, contains data related to Application log, text files, It contains changes in window settings."
+        }
+      ]
+    },
+    {
+      "cluster_id": "Other small tasks \u2014 singleton 16",
+      "global_task_intention": "check out new tab",
+      "cohesion": 0.899,
+      "stats": {
+        "total_duration": 0.4,
+        "active_duration": 0.4,
+        "time_span": 0.005,
+        "num_events": 1,
+        "start": "2026-04-13 20:31:41",
+        "end": "2026-04-13 20:31:59"
+      },
+      "segments": [
+        {
+          "start": "2026-04-13 20:31:41",
+          "end": "2026-04-13 20:31:59",
+          "duration": 0.4
+        }
+      ],
+      "task_items": [
+        {
+          "description": "Google Chrome, application, used to checked out New Tab",
+          "total_duration": 0.4,
+          "occurrences": 1
+        }
+      ],
+      "events": [
+        {
+          "event_id": 71,
+          "date": "2026-04-13",
+          "start": "20:31:41",
+          "end": "20:31:59",
+          "duration": 0.4,
+          "event_type": "app",
+          "file": "",
+          "app": "Google Chrome",
+          "command": "",
+          "raw": "New Tab - Google Chrome",
+          "description": "Google Chrome, application, used to checked out New Tab"
+        }
+      ]
+    },
+    {
+      "cluster_id": "Other small tasks \u2014 singleton 22",
+      "global_task_intention": "check out luffy our hope - recherche google",
+      "cohesion": 0.899,
+      "stats": {
+        "total_duration": 80.93,
+        "active_duration": 80.93,
+        "time_span": 1.349,
+        "num_events": 1,
+        "start": "2026-04-13 20:31:59",
+        "end": "2026-04-13 21:52:55"
+      },
+      "segments": [
+        {
+          "start": "2026-04-13 20:31:59",
+          "end": "2026-04-13 21:52:55",
+          "duration": 80.93
+        }
+      ],
+      "task_items": [
+        {
+          "description": "Google Chrome, application, used to checked out Luffy our hope - Recherche Google",
+          "total_duration": 80.93,
+          "occurrences": 1
+        }
+      ],
+      "events": [
+        {
+          "event_id": 6,
+          "date": "2026-04-13",
+          "start": "20:31:59",
+          "end": "21:52:55",
+          "duration": 80.93,
+          "event_type": "app",
+          "file": "",
+          "app": "Google Chrome",
+          "command": "",
+          "raw": "Luffy our hope - Recherche Google - Google Chrome",
+          "description": "Google Chrome, application, used to checked out Luffy our hope - Recherche Google"
+        }
+      ]
+    },
+    {
+      "cluster_id": "Other small tasks \u2014 singleton 20",
+      "global_task_intention": "navigate devices & locations",
+      "cohesion": 0.899,
+      "stats": {
+        "total_duration": 0.03,
+        "active_duration": 0.03,
+        "time_span": 0.001,
+        "num_events": 1,
+        "start": "2026-04-13 21:52:06",
+        "end": "2026-04-13 21:52:08"
+      },
+      "segments": [
+        {
+          "start": "2026-04-13 21:52:06",
+          "end": "2026-04-13 21:52:08",
+          "duration": 0.03
+        }
+      ],
+      "task_items": [
+        {
+          "description": "Devices & Locations, directory, navigated by the user",
+          "total_duration": 0.03,
+          "occurrences": 1
+        }
+      ],
+      "events": [
+        {
+          "event_id": 106,
+          "date": "2026-04-13",
+          "start": "21:52:06",
+          "end": "21:52:08",
+          "duration": 0.03,
+          "event_type": "directory",
+          "file": "",
+          "app": "Devices & Locations",
+          "command": "",
+          "raw": "Devices & Locations",
+          "description": "Devices & Locations, directory, navigated by the user"
+        }
+      ]
+    },
+    {
+      "cluster_id": "Other small tasks \u2014 singleton 11",
+      "global_task_intention": "navigate aidan-lenovo-n50-70",
+      "cohesion": 0.899,
+      "stats": {
+        "total_duration": 0.75,
+        "active_duration": 0.75,
+        "time_span": 0.013,
+        "num_events": 1,
+        "start": "2026-04-13 21:52:08",
+        "end": "2026-04-13 21:52:53"
+      },
+      "segments": [
+        {
+          "start": "2026-04-13 21:52:08",
+          "end": "2026-04-13 21:52:53",
+          "duration": 0.75
+        }
+      ],
+      "task_items": [
+        {
+          "description": "aidan-Lenovo-N50-70, directory, navigated by the user",
+          "total_duration": 0.75,
+          "occurrences": 1
+        }
+      ],
+      "events": [
+        {
+          "event_id": 54,
+          "date": "2026-04-13",
+          "start": "21:52:08",
+          "end": "21:52:53",
+          "duration": 0.75,
+          "event_type": "directory",
+          "file": "",
+          "app": "aidan-Lenovo-N50-70",
+          "command": "",
+          "raw": "aidan-Lenovo-N50-70",
+          "description": "aidan-Lenovo-N50-70, directory, navigated by the user"
         }
       ]
     }
