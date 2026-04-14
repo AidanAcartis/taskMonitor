@@ -1,25 +1,25 @@
-## Déploiement Docker — Guide complet
+## Docker Deployment — Complete Guide
 
 ---
 
-### Étape 1 — Fichiers à créer dans le projet
+### Step 1 — Files to create in the project
 
-**Structure finale :**
+**Final structure:**
 ```
 taskMonitor/
 ├── Dockerfile
 ├── docker-compose.yml
 ├── requirements_docker.txt
-├── run_taskmonitor.sh          ← script pour l'utilisateur final
+├── run_taskmonitor.sh          <- script for the end user
 ├── .dockerignore
 └── taskmonitor/
     └── core/
-        └── config.py           ← à modifier légèrement
+        └── config.py           <- slightly modified
 ```
 
 ---
 
-**`requirements_docker.txt`** — uniquement ce qui est utile :
+**`requirements_docker.txt`** — only what is needed:
 
 ```
 PyQt6==6.11.0
@@ -55,19 +55,19 @@ rich==14.3.3
 
 ---
 
-**`Dockerfile`** :
+**`Dockerfile`**:
 
 ```dockerfile
 FROM python:3.11-slim
 
-# ── Variables build ───────────────────────────────────────────────────────────
+# -- Build variables ----------------------------------------------------------
 ENV DEBIAN_FRONTEND=noninteractive
 ENV PYTHONUNBUFFERED=1
 ENV PYTHONDONTWRITEBYTECODE=1
 
-# ── Dépendances système ───────────────────────────────────────────────────────
+# -- System dependencies ------------------------------------------------------
 RUN apt-get update && apt-get install -y \
-    # Monitoring fenêtres X11
+    # X11 window monitoring
     wmctrl \
     xdotool \
     x11-utils \
@@ -77,7 +77,7 @@ RUN apt-get update && apt-get install -y \
     libdbus-1-3 \
     libdbus-1-dev \
     pkg-config \
-    # XCB plugins Qt
+    # XCB plugins for Qt
     libxcb-xinerama0 \
     libxcb-icccm4 \
     libxcb-image0 \
@@ -86,6 +86,7 @@ RUN apt-get update && apt-get install -y \
     libxcb-render-util0 \
     libxcb-shape0 \
     libxcb-xfixes0 \
+    libxcb-cursor0 \
     libxkbcommon-x11-0 \
     libxkbcommon0 \
     libegl1 \
@@ -100,42 +101,43 @@ RUN apt-get update && apt-get install -y \
     libxrender1 \
     libxss1 \
     libxtst6 \
-    # Utilitaires
+    # Utilities
     bash \
     curl \
     git \
+    tzdata \
     && rm -rf /var/lib/apt/lists/*
 
-# ── Répertoire de travail ─────────────────────────────────────────────────────
+# -- Working directory ---------------------------------------------------------
 WORKDIR /app
 
-# ── Installer les dépendances Python ─────────────────────────────────────────
+# -- Install Python dependencies -----------------------------------------------
 COPY requirements_docker.txt .
 RUN pip install --no-cache-dir --upgrade pip && \
     pip install --no-cache-dir -r requirements_docker.txt
 
-# ── Copier le projet ──────────────────────────────────────────────────────────
+# -- Copy project --------------------------------------------------------------
 COPY taskmonitor/ ./taskmonitor/
 COPY data/ ./data/
 
-# ── Installer cmddesc ─────────────────────────────────────────────────────────
+# -- Install cmddesc -----------------------------------------------------------
 RUN pip install --no-cache-dir -e \
     taskmonitor/external/command_desc/command_describer_project/
 
-# ── Variables Qt ──────────────────────────────────────────────────────────────
+# -- Qt environment variables --------------------------------------------------
 ENV QT_PLUGIN_PATH=/usr/local/lib/python3.11/site-packages/PyQt6/Qt6/plugins
 ENV QML2_IMPORT_PATH=/usr/local/lib/python3.11/site-packages/PyQt6/Qt6/qml
 ENV LD_LIBRARY_PATH=/usr/local/lib/python3.11/site-packages/PyQt6/Qt6/lib
 ENV QT_XCB_GL_INTEGRATION=xcb-egl
 ENV QT_DEBUG_PLUGINS=0
 
-# ── Point d'entrée ────────────────────────────────────────────────────────────
+# -- Entry point ---------------------------------------------------------------
 CMD ["python", "-m", "taskmonitor.gui.app"]
 ```
 
 ---
 
-**`.dockerignore`** :
+**`.dockerignore`**:
 
 ```
 MLproject_py311/
@@ -157,11 +159,9 @@ data/file_log/
 
 ---
 
-**`docker-compose.yml`** :
+**`docker-compose.yml`**:
 
 ```yaml
-version: "3.9"
-
 services:
   taskmonitor:
     image: taskmonitor:latest
@@ -176,18 +176,21 @@ services:
       - VIS_MODELS_DIR=/Vis_Models
       - MKL_THREADING_LAYER=GNU
       - MKL_SERVICE_FORCE_INTEL=0
+      - TZ=Indian/Antananarivo
 
     volumes:
-      # Accès X11 pour l'interface graphique
+      # X11 access for the graphical interface
       - /tmp/.X11-unix:/tmp/.X11-unix:rw
       - /tmp/.docker.xauth:/tmp/.docker.xauth:rw
-      # Modèles AI (montés en lecture seule)
+      # AI models (mounted read-only)
       - ${VIS_MODELS_PATH}:/Vis_Models:ro
-      # Base de données SQLite (persistance entre sessions)
+      # SQLite database (persistent across sessions)
       - ${HOME}/.taskmonitor:/root/.taskmonitor:rw
-      # Logs de monitoring (wmctrl écrit ici)
+      # Bash history (for command collection)
+      - ${HOME}/.bash_history:/root/.bash_history:ro
+      # Monitoring logs
       - ./data/logs:/app/data/logs:rw
-      # Exports du processing
+      # Processing exports
       - ./data/exports:/app/data/exports:rw
       - ./data/processed:/app/data/processed:rw
       - ./data/command_log:/app/data/command_log:rw
@@ -205,35 +208,34 @@ services:
 
 ---
 
-**`run_taskmonitor.sh`** — script de lancement pour l'utilisateur :
+**`run_taskmonitor.sh`** — launch script for the end user:
 
 ```bash
 #!/bin/bash
 set -e
 
-# ── Vérifications préliminaires ───────────────────────────────────────────────
+# -- Preliminary checks -------------------------------------------------------
 if [ -z "$DISPLAY" ]; then
-    echo "❌ No DISPLAY variable found. Make sure you are on Xorg."
+    echo "No DISPLAY variable found. Make sure you are on Xorg."
     exit 1
 fi
 
 if ! command -v docker &> /dev/null; then
-    echo "❌ Docker is not installed."
+    echo "Docker is not installed."
     echo "   Install it with: sudo apt install docker.io"
     exit 1
 fi
 
 if ! xset q &>/dev/null; then
-    echo "❌ Cannot connect to X server."
+    echo "Cannot connect to X server."
     exit 1
 fi
 
-# ── Chemin des modèles ────────────────────────────────────────────────────────
-# Modifiable par l'utilisateur
+# -- Model path ---------------------------------------------------------------
 VIS_MODELS_PATH="${VIS_MODELS_PATH:-$HOME/Vis_Models}"
 
 if [ ! -d "$VIS_MODELS_PATH/final_model" ]; then
-    echo "❌ AI models not found in: $VIS_MODELS_PATH"
+    echo "AI models not found in: $VIS_MODELS_PATH"
     echo ""
     echo "   Expected structure:"
     echo "   $VIS_MODELS_PATH/"
@@ -246,44 +248,43 @@ if [ ! -d "$VIS_MODELS_PATH/final_model" ]; then
     exit 1
 fi
 
-# ── Autorisation X11 ──────────────────────────────────────────────────────────
-echo "🔑 Setting up X11 authentication..."
+# -- X11 authentication -------------------------------------------------------
+echo "Setting up X11 authentication..."
 touch /tmp/.docker.xauth
 xauth nlist $DISPLAY | sed -e 's/^..../ffff/' | \
     xauth -f /tmp/.docker.xauth nmerge -
 
-# Autoriser Docker à accéder à X11
 xhost +local:docker > /dev/null 2>&1
 
-# ── Créer les répertoires nécessaires ────────────────────────────────────────
+# -- Create required directories ----------------------------------------------
 mkdir -p ~/.taskmonitor/db
 mkdir -p data/logs data/exports data/processed data/command_log data/file_log
 
-# ── Lancer ───────────────────────────────────────────────────────────────────
-echo "🚀 Starting TaskMonitor..."
+# -- Launch -------------------------------------------------------------------
+echo "Starting TaskMonitor..."
 echo "   Models: $VIS_MODELS_PATH"
 echo "   Display: $DISPLAY"
 echo ""
 
-VIS_MODELS_PATH="$VIS_MODELS_PATH" docker-compose up
+VIS_MODELS_PATH="$VIS_MODELS_PATH" docker compose up
 
-# ── Nettoyage ─────────────────────────────────────────────────────────────────
+# -- Cleanup ------------------------------------------------------------------
 xhost -local:docker > /dev/null 2>&1
 echo ""
-echo "👋 TaskMonitor stopped."
+echo "TaskMonitor stopped."
 ```
 
 ---
 
-**Modifier `config.py`** — rendre le chemin des modèles configurable :
+**Modify `config.py`** — make the model path configurable:
 
 ```python
 import os
 
-# Remplacer cette ligne :
+# Replace this line:
 # MODELS_DIR = BASE_DIR.parent / "Vis_Models"
 
-# Par :
+# With:
 MODELS_DIR = Path(os.environ.get(
     "VIS_MODELS_DIR",
     str(BASE_DIR.parent / "Vis_Models")
@@ -292,37 +293,37 @@ MODELS_DIR = Path(os.environ.get(
 
 ---
 
-### Étape 2 — Builder l'image sur ta machine
+### Step 2 — Build the image on your machine
 
 ```bash
-# Dans le dossier taskMonitor/
+# From the taskMonitor/ directory
 cd ~/Documents/Projects/Visualization/taskMonitor
 
-# Builder l'image (prend 10-20 min la première fois)
+# Build the image (takes 10-20 minutes the first time)
 docker build -t taskmonitor:latest .
 
-# Vérifier que l'image est créée
+# Verify the image was created
 docker images | grep taskmonitor
 ```
 
 ---
 
-### Étape 3 — Tester sur ta machine avant d'envoyer
+### Step 3 — Test on your machine before transferring
 
 ```bash
 chmod +x run_taskmonitor.sh
 
-# Tester avec tes modèles
+# Test with your models
 VIS_MODELS_PATH=~/Documents/Projects/Visualization/Vis_Models ./run_taskmonitor.sh
 ```
 
 ---
 
-### Étape 4 — Exporter l'image pour l'autre machine
+### Step 4 — Export the image for the target machine
 
 ```bash
-# Sauvegarder l'image en fichier compressé
-# (va prendre du temps et de l'espace ~3-5 Go)
+# Save the image as a compressed file
+# (takes time and disk space, approximately 3-5 GB)
 docker save taskmonitor:latest | gzip > taskmonitor_image.tar.gz
 
 echo "Image size:"
@@ -331,77 +332,86 @@ du -sh taskmonitor_image.tar.gz
 
 ---
 
-### Étape 5 — Transférer sur l'autre machine
+### Step 5 — Transfer to the target machine
 
 ```bash
-# Option A — via réseau local (SSH)
+# Option A — via local network (SSH)
 rsync -avz --progress taskmonitor_image.tar.gz user@192.168.x.x:~/
 
-# Option B — via clé USB
+# Option B — via USB drive
 cp taskmonitor_image.tar.gz /media/usb/
 
-# Transférer aussi les modèles si pas déjà présents
+# Transfer the AI models if not already present
 rsync -avz --progress \
     ~/Documents/Projects/Visualization/Vis_Models/ \
     user@192.168.x.x:~/Vis_Models/
 
-# Transférer le script de lancement et docker-compose
+# Transfer the launch script and docker-compose
 scp run_taskmonitor.sh docker-compose.yml user@192.168.x.x:~/taskmonitor/
 ```
 
 ---
 
-### Étape 6 — Installation sur la machine cible
+### Step 6 — Installation on the target machine
 
-Sur la **machine cible**, exécuter dans l'ordre :
+Run the following commands in order on the **target machine**:
 
 ```bash
-# 1. Installer Docker
+# 1. Install Docker
 sudo apt update
-sudo apt install -y docker.io docker-compose
-sudo systemctl start docker
-sudo systemctl enable docker
+sudo apt install -y ca-certificates curl gnupg lsb-release
 
-# 2. Ajouter l'utilisateur au groupe docker
-# (évite de devoir mettre sudo à chaque fois)
+sudo mkdir -p /etc/apt/keyrings
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | \
+    sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+
+echo \
+  "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] \
+  https://download.docker.com/linux/ubuntu \
+  $(lsb_release -cs) stable" | \
+  sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+
+sudo apt update
+sudo apt install -y docker-ce docker-ce-cli containerd.io docker-compose-plugin
+
+# 2. Add your user to the docker group
 sudo usermod -aG docker $USER
 newgrp docker
 
-# 3. Charger l'image TaskMonitor
+# 3. Load the TaskMonitor image
 docker load < taskmonitor_image.tar.gz
 
-# Vérifier
+# Verify
 docker images | grep taskmonitor
 
-# 4. Créer la structure de dossiers
+# 4. Create the working directory
 mkdir -p ~/taskmonitor
 cd ~/taskmonitor
 
-# 5. Copier les fichiers de lancement
-# (copiés depuis l'étape 5)
+# 5. Copy the launch files (transferred in step 5)
 chmod +x run_taskmonitor.sh
 
-# 6. Vérifier que les modèles sont là
+# 6. Verify the models are in place
 ls ~/Vis_Models/
-# Doit afficher : Gen_Desc_Model  final_model  final_Model_V3
+# Expected: Gen_Desc_Model  final_model  final_Model_V3
 
-# 7. Lancer
+# 7. Launch
 VIS_MODELS_PATH=~/Vis_Models ./run_taskmonitor.sh
 ```
 
 ---
 
-### Résumé de ce que tu distribues
+### Summary of what to distribute
 
 ```
-📦 À transférer sur la machine cible :
-├── taskmonitor_image.tar.gz    (~3-5 Go) ← l'image Docker
-├── run_taskmonitor.sh          (< 1 Ko)  ← script de lancement
-├── docker-compose.yml          (< 1 Ko)  ← configuration
-└── Vis_Models/                 (~plusieurs Go) ← modèles AI
+Files to transfer to the target machine:
+├── taskmonitor_image.tar.gz    (~3-5 GB)  <- Docker image
+├── run_taskmonitor.sh          (< 1 KB)   <- launch script
+├── docker-compose.yml          (< 1 KB)   <- configuration
+└── Vis_Models/                 (~several GB) <- AI models
     ├── Gen_Desc_Model/
     ├── final_model/
     └── final_Model_V3/
 ```
 
-L'utilisateur final n'a besoin que de **Docker installé** et de **lancer `run_taskmonitor.sh`**. Tout le reste (Python, PyQt6, torch, wmctrl...) est dans l'image.
+The end user only needs **Docker installed** and to run `run_taskmonitor.sh`. Everything else (Python, PyQt6, torch, wmctrl...) is packaged inside the image.
